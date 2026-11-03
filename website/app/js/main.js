@@ -95,6 +95,34 @@ function svg(tag, attrs, ...kids) {
   return el;
 }
 
+/* Decorative line icons, the same set as the site (website/templates/icons.html). */
+const ICONS = {
+  rhythm: "M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4 3 5.5l7 7Z M3.2 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.3",
+  blocks: "M3 5h18 M3 19h18 M7 5l3 14 M14 5l1.6 7.5 M13 15h5.5",
+  ischaemia: "M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4 3 5.5l7 7Z M12 5l-2 3.5 3 2.5-2 3.5",
+  tachy: "M13 2 3 14h9l-1 8 10-12h-9l1-8Z",
+  patterns: "M2 17h4.5l1.5-2.5L11.5 3l3.5 18 2-5H22",
+  pacing: "M3 11a2 2 0 0 1 2-2h5a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z M12 14h3l1.5-10L18 14h3",
+  "pacing-site": "M3 11a2 2 0 0 1 2-2h5a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z M12 14h3l1.5-10L18 14h3",
+  "pacing-trouble": "M3 11a2 2 0 0 1 2-2h5a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z M12 14h3l1.5-10L18 14h3",
+  arrest: "M2 12c1.5-5 2.5 5 4 0s2.5-6 4 0 2.5 6 4 0 2.5-5 4 0 2 3 4 0",
+  compass: "M22 12a10 10 0 1 1-20 0 10 10 0 0 1 20 0Z M16.2 7.8l-2.1 6.3-6.3 2.1 2.1-6.3 6.3-2.1Z",
+  arrow: "M5 12h14 M13 6l6 6-6 6",
+  home: "M3 10.5 12 3l9 7.5 M5 9v11h14V9 M10 20v-6h4v6",
+  learn: "M2 5.5C4.5 4 8 4 12 6c4-2 7.5-2 10-.5V19c-2.5-1.5-6-1.5-10 .5-4-2-7.5-2-10-.5Z M12 6v13.5",
+  practice: "M2 12h4l2.5-6 4 12 2.5-6H22",
+  drills: "M6 3v18 M18 3v18 M6 12h12 M9 9l-3 3 3 3 M15 9l3 3-3 3",
+  library: "M4 4h4v16H4Z M10 4h4v16h-4Z M16.5 4.5l3.7-.9 3 15.5-3.7.9Z",
+  progress: "M3 3v18h18 M7 15l4-4 3 3 6-6",
+  review: "M22 12a10 10 0 1 1-20 0 10 10 0 0 1 20 0Z M8 12.3l2.7 2.7L16 9.5",
+  globe: "M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z M3 12h18 M12 3c2.5 2.5 3.6 5.5 3.6 9s-1.1 6.5-3.6 9 M12 3C9.5 5.5 8.4 8.5 8.4 12s1.1 6.5 3.6 9",
+};
+function icon(name, cls = "icon") {
+  return svg("svg", { class: cls, viewBox: "0 0 24 24", "aria-hidden": "true", focusable: "false", fill: "none",
+    stroke: "currentColor", "stroke-width": "1.75", "stroke-linecap": "round", "stroke-linejoin": "round" },
+  svg("path", { d: ICONS[name] || ICONS.compass }));
+}
+
 function shuffle(arr) {
   const a = arr.slice();
   for (let i = a.length - 1; i > 0; i--) {
@@ -332,7 +360,7 @@ function renderChrome(view) {
   previewEl.textContent = t("preview_note");
   navEl.replaceChildren(
     ...NAV.map(([href, key, views]) =>
-      h("a", { href: `#${href}`, "aria-current": views.includes(view) ? "page" : null, text: t(key) }),
+      h("a", { href: `#${href}`, "aria-current": views.includes(view) ? "page" : null }, icon(href), h("span", { text: t(key) })),
     ),
   );
 }
@@ -399,7 +427,7 @@ function makeViewer(c, { look = [], revealed = false, calipers = "off", span = 0
       }),
     );
     return h("div", { class: "vw-group", role: "group", "aria-label": label },
-      h("span", { class: "vw-label", text: label }), btns);
+      h("span", { class: "vw-label", text: label }), h("span", { class: "vw-seg" }, btns));
   }
 
   function setZoom(z) {
@@ -417,13 +445,13 @@ function makeViewer(c, { look = [], revealed = false, calipers = "off", span = 0
     else readout.textContent = t("cal_volt", r.mv.toFixed(2), r.mm.toFixed(1));
   }
 
-  const zoom = h("div", { class: "vw-group", role: "group", "aria-label": t("tool_zoom_in") },
+  const zoom = h("div", { class: "vw-group", role: "group", "aria-label": t("tool_zoom_in") }, h("span", { class: "vw-seg" },
     h("button", { type: "button", class: "vw-btn", "aria-label": t("tool_zoom_out"), text: "−",
       onclick: () => setZoom(ZOOMS[Math.max(0, ZOOMS.indexOf(st.zoom) - 1)] || 1) }),
     h("button", { type: "button", class: "vw-btn", text: t("tool_fit"), onclick: () => setZoom(1) }),
     h("button", { type: "button", class: "vw-btn", "aria-label": t("tool_zoom_in"), text: "+",
       onclick: () => setZoom(ZOOMS[Math.min(ZOOMS.length - 1, ZOOMS.indexOf(st.zoom) + 1)]) }),
-  );
+  ));
   const gain = group(t("tool_gain"), [[5, "5"], [10, "10"], [20, "20"]], () => st.gain, (g) => {
     st.gain = g;
     view?.setGain(g);
@@ -554,7 +582,7 @@ function viewHome() {
       h("h1", { text: t("home_title") }),
       h("ul", { class: "tr-stats" }, stats.map((s) => h("li", { text: s }))),
       planDue + planNew
-        ? h("p", null, h("a", { class: "btn", href: "#practice", text: t("home_start") }))
+        ? h("p", null, h("a", { class: "btn btn-lg", href: "#practice" }, t("home_start"), icon("arrow")))
         : h("p", { class: "tr-note", text: t("home_nothing_due") }),
       !store.persistent && h("p", { class: "tr-note", text: t("progress_storage_off") }),
     ),
@@ -565,6 +593,7 @@ function viewHome() {
         if (!s.total) return null;
         return h("li", { class: "tr-module" },
           h("div", { class: "tr-module-top" },
+            h("span", { class: "tr-module-icon" }, icon(m.id)),
             h("h3", { text: tx(m.title) }),
             m.free && h("span", { class: "tag", text: t("badge_free") }),
             m.signature && h("span", { class: "tag tag-accent", text: t("badge_signature") }),
@@ -575,7 +604,7 @@ function viewHome() {
             h("span", { class: "tr-bar-done", style: `width:${(100 * s.mastered) / s.total}%` }),
           ),
           h("p", { class: "tr-module-meta" }, `${t("module_cases", s.total)}${s.stretch ? ` · ${t("module_stretch", s.stretch)}` : ""} · ${t("module_mastered", s.mastered, s.total)}`),
-          h("a", { class: "btn btn-quiet", href: `#practice-${m.id}`, text: t("home_start_module") }),
+          h("a", { class: "btn btn-quiet tr-module-go", href: `#practice-${m.id}` }, t("home_start_module"), icon("arrow")),
         );
       })),
     ),
@@ -604,13 +633,13 @@ function viewProfile() {
         h("p", { class: "tr-module-meta", text: t("module_cases", n) }),
         tr.focus?.length && tr.id === cur ? h("div", { class: "vw-group tier-focus", role: "group", "aria-label": t("profile_focus") },
           h("span", { class: "vw-label", text: t("profile_focus") }),
-          tr.focus.map((f, k) => h("button", { type: "button", class: "vw-btn",
+          h("span", { class: "vw-seg" }, tr.focus.map((f, k) => h("button", { type: "button", class: "vw-btn",
             "aria-pressed": String((store.focus || tr.focus[0].id) === f.id), text: tx(f.name),
             onclick: () => {
               store.setFocus(f.id);
               session = null;
               render(false);
-            } }))) : null,
+            } })))) : null,
         tr.id === cur
           ? h("p", { class: "tier-mine" }, h("span", { class: "chip chip-ok", text: t("profile_current") }), " ",
             h("a", { href: "#home", text: t("back_home") }))
@@ -746,7 +775,7 @@ function lessonFigure(step) {
     step.heading && h("h2", { text: tx(step.heading) }),
     paragraphs(step.body),
     btns.length > 1 && h("div", { class: "vw-group ls-sets", role: "group", "aria-label": t("lesson_show") },
-      h("span", { class: "vw-label", text: t("lesson_show") }), btns),
+      h("span", { class: "vw-label", text: t("lesson_show") }), h("span", { class: "vw-seg" }, btns)),
     viewer.el,
     note,
     step.caption && h("p", { class: "cs-small", text: tx(step.caption) }));
@@ -1298,11 +1327,11 @@ function viewDrills() {
       const mine = stats.filter((d) => type === "mixed" || d.type === type);
       const ok = mine.filter((d) => d.ok).length;
       return h("li", { class: "tr-module" },
-        h("div", { class: "tr-module-top" }, h("h3", { text: t(`drill_${type}`) })),
+        h("div", { class: "tr-module-top" }, h("span", { class: "tr-module-icon" }, icon("drills")), h("h3", { text: t(`drill_${type}`) })),
         type !== "mixed" && h("p", { class: "tr-module-blurb", text: t(`drill_task_${type}`) }),
         h("p", { class: "tr-module-meta" }, t("drill_count", n),
           mine.length ? ` · ${t("drill_session", ok, mine.length)}` : ""),
-        h("a", { class: "btn btn-quiet", href: `#drill-${type}`, text: t("drill_start") }),
+        h("a", { class: "btn btn-quiet tr-module-go", href: `#drill-${type}` }, t("drill_start"), icon("arrow")),
       );
     })),
   );

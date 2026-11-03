@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% from "icons.html" import icon %}
 {% set d = s.free.digest %}
 {% block title %}{{ f(s.free.meta.digest_title) }}{% endblock %}
 {% block description %}{{ s.free.meta.digest_description }}{% endblock %}
@@ -18,7 +19,7 @@
       <li>
         <a href="{{ url(i.slug) }}">
           <span class="get-who">{{ f(d.issue_title, n=i.number) }}{% if i.week %} · {{ i.week }}{% endif %}{% if i.sample %} · {{ d.sample_tag }}{% endif %}</span>
-          <strong>{{ i.subject }}</strong>
+          <strong>{{ i.subject }}</strong>{{ icon("arrow", "icon issue-go") }}
         </a>
       </li>
       {% endfor %}

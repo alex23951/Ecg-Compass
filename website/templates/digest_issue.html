@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% from "icons.html" import icon %}
 {% set d = s.free.digest %}
 {% block title %}{{ issue.subject }} · {{ c.brand }}{% endblock %}
 {% block description %}{{ issue.preheader }}{% endblock %}
@@ -18,7 +19,7 @@
     <div class="quiz" data-answer="{{ q.answer_index }}">
       <a class="quiz-ecg" href="{{ url(issue.images.full_image or issue.images.image) }}" target="_blank" rel="noopener">
         <img src="{{ url(issue.images.image) }}" alt="ECG" width="1200" height="600" loading="lazy">
-        <span class="quiz-zoom">{{ s.home.quiz_open_full }}</span>
+        <span class="quiz-zoom">{{ icon("expand") }}{{ s.home.quiz_open_full }}</span>
       </a>
       <div class="quiz-body">
         <p class="quiz-prompt">{{ q.prompt }}</p>

@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% from "icons.html" import icon %}
 {% set z = s.free.az %}
 {% block title %}{{ f(z.title) }}{% endblock %}
 {% block description %}{{ z.description }}{% endblock %}
@@ -10,7 +11,7 @@
     <p class="lead">{{ z.intro }}</p>
     <div class="az-search">
       <label for="az-q">{{ z.search }}</label>
-      <input id="az-q" type="search" placeholder="{{ z.search_placeholder }}" autocomplete="off">
+      <span class="az-field">{{ icon("search") }}<input id="az-q" type="search" placeholder="{{ z.search_placeholder }}" autocomplete="off"></span>
     </div>
     <nav class="az-letters" aria-label="A–Z">
       {% for letter in letters %}<a href="#az-{{ letter }}">{{ letter }}</a>{% endfor %}

@@ -12,9 +12,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 CSS_URL = ("https://fonts.googleapis.com/css2?"
-           "family=Archivo:wdth,wght@100..125,500..800"
-           "&family=Source+Sans+3:ital,wght@0,400..700;1,400"
-           "&family=IBM+Plex+Mono:wght@400;500&display=swap")
+           "family=Figtree:wght@400..800"
+           "&family=IBM+Plex+Mono:wght@500&display=swap")
 UA = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36"
 KEEP = {"latin", "latin-ext"}
 
@@ -35,7 +34,10 @@ def main():
         family = re.search(r"font-family: '([^']+)'", block).group(1)
         style = re.search(r"font-style: (\w+)", block).group(1)
         src = re.search(r"url\((https://[^)]+\.woff2)\)", block).group(1)
-        name = f"{family.lower().replace(' ', '-')}-{style}-{subset}.woff2"
+        weight = re.search(r"font-weight: ([\d ]+);", block).group(1)
+        # static fonts come one file per weight: keep the weight in the name
+        wtag = "" if " " in weight else f"-{weight}"
+        name = f"{family.lower().replace(' ', '-')}{wtag}-{style}-{subset}.woff2"
         (ROOT / "static" / "fonts" / name).write_bytes(get(src))
         out.append(block.replace(src, f"../fonts/{name}"))
         n += 1
