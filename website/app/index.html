@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ECG Compass Trainer</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#fdf8f6" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0b1210" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="../static/img/icon.svg" type="image/svg+xml">
+<!-- fonts: the preview swaps this line for Google Fonts -->
+<link rel="stylesheet" href="../static/css/fonts.css">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<!-- trainer:start -->
+<div class="tr" data-trainer data-lang="ro" data-mode="live">
+  <p class="tr-preview" role="note" hidden></p>
+  <header class="tr-head">
+    <div class="tr-wrap tr-head-row">
+      <a class="tr-brand" href="#home">
+        <svg viewBox="0 0 40 24" aria-hidden="true"><path d="M1 15h9l3-4 3 4h3l3-13 4 21 3-8h11" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/></svg>
+        <span class="tr-brand-name">ECG Compass</span>
+        <span class="tr-brand-suffix"></span>
+      </a>
+      <nav class="tr-nav" aria-label="Trainer"></nav>
+      <button class="tr-lang" type="button"></button>
+    </div>
+  </header>
+  <main class="tr-wrap tr-main" tabindex="-1"><p class="tr-msg">Se încarcă…</p></main>
+</div>
+<script type="module" src="js/main.js"></script>
+<!-- trainer:end -->
+</body>
+</html>

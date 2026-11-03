@@ -1,0 +1,165 @@
+{
+  "_note": "Textele site-ului gratuit (free_launch: true în site.config.json). Urmează trainer/STYLE-RO.md.",
+  "meta": {
+    "home_title": "{brand}: exersați ECG-uri, gratuit",
+    "home_description": "ECG-uri reale de citit, cu explicații verificate de un cardiolog cu pregătire în electrofiziologie, compas digital și repetiție spațiată. Gratuit, fără cont, în română și engleză.",
+    "digest_title": "ECG-ul săptămânii · {brand}",
+    "digest_description": "În fiecare săptămână: un ECG real de citit, trei studii noi pe scurt și un sfat pentru asistenți medicali."
+  },
+  "preview_banner": "Previzualizare a site-ului gratuit. Textele marcate „ciornă” așteaptă verificarea medicului.",
+  "nav": {
+    "trainer": "Exersați",
+    "digest": "ECG-ul săptămânii",
+    "about": "Despre",
+    "az": "ECG de la A la Z"
+  },
+  "home": {
+    "title": "Locul unde exersați ECG-uri. Gratuit.",
+    "lead": "ECG-uri reale de citit, cu răspunsul explicat pas cu pas de un cardiolog cu pregătire în electrofiziologie. Fără cont, fără plată, direct din browser.",
+    "cta_trainer": "Începeți să exersați",
+    "cta_digest": "ECG-ul săptămânii",
+    "hero_note": "Versiune beta: adăugăm module noi pe măsură ce sunt verificate.",
+    "weekly_heading": "ECG-ul săptămânii, nr. {n}",
+    "weekly_intro": "Un traseu real, patru variante și răspunsul explicat pas cu pas. Un ECG nou în fiecare săptămână.",
+    "weekly_cta": "Toate numerele",
+    "trainer_eyebrow": "Antrenorul ECG · beta",
+    "trainer_heading": "Exersați, nu doar priviți.",
+    "trainer_intro": "Cursurile vă arată traseele. Aici le citiți dumneavoastră: alegeți diagnosticul, măsurați pe hârtie la scară reală și primiți imediat explicația.",
+    "modules_heading": "Ce puteți exersa acum",
+    "module_count": "{n} ECG-uri",
+    "trainer_cta": "Deschideți antrenorul",
+    "features": [
+      {
+        "title": "ECG-uri reale, explicate",
+        "text": "Trasee din baze de date deschise, cu licență. Fiecare răspuns și fiecare explicație sunt verificate de medic înainte de publicare."
+      },
+      {
+        "title": "Compas digital și exerciții de măsurare",
+        "text": "PR, QRS, QT și QTc, axul QRS. Măsurați direct pe traseu și vedeți cât de aproape ați fost de valoarea de referință."
+      },
+      {
+        "title": "Repetiție spațiată",
+        "text": "Revedeți fiecare ECG exact când sunteți pe cale să-l uitați. Zece minute pe zi ajung."
+      },
+      {
+        "title": "Pacemaker și stimulare cardiacă",
+        "text": "Spike-uri, captură, moduri de stimulare. Ce lipsește din majoritatea cursurilor, explicat de un electrofiziolog."
+      }
+    ],
+    "privacy_line": "Progresul dumneavoastră rămâne în acest browser. Nu cerem cont, email sau alte date personale.",
+    "who_eyebrow": "Pentru cine",
+    "who_heading": "Pentru cei care citesc ECG-uri în gardă, pe secție sau pe ambulanță",
+    "who": [
+      "Studenți la medicină",
+      "Asistenți medicali",
+      "Paramedici",
+      "Medici rezidenți",
+      "Medici specialiști"
+    ],
+    "faq": [
+      {
+        "q": "Cât costă?",
+        "a": "Nimic. Antrenorul ECG și ECG-ul săptămânii sunt gratuite și nu au nevoie de cont."
+      },
+      {
+        "q": "Ce date păstrați despre mine?",
+        "a": "Niciuna. Nu avem formulare și nici conturi. Progresul din antrenor se salvează doar în browserul dumneavoastră și îl puteți șterge oricând."
+      },
+      {
+        "q": "Pot trimite ECG-ul meu sau al unui pacient?",
+        "a": "Nu. Conținutul este exclusiv educațional și nu înlocuiește consultul medical. Pentru un ECG real, adresați-vă medicului curant."
+      },
+      {
+        "q": "Primesc credite EMC?",
+        "a": "Nu, deocamdată nu."
+      },
+      {
+        "q": "Am găsit o greșeală. Cui îi spun?",
+        "a": "Scrieți-ne la {email}, cu codul cazului afișat în antrenor. Corectăm repede."
+      }
+    ],
+    "stats": [
+      "{cases} ECG-uri reale",
+      "{dx} diagnostice explicate",
+      "Verificat de un electrofiziolog",
+      "Gratuit, fără cont"
+    ],
+    "chips_label": "Începeți direct cu:",
+    "steps_eyebrow": "Metoda",
+    "steps_heading": "Citiți fiecare ECG în aceeași ordine",
+    "steps_intro": "Antrenorul vă obișnuiește cu citirea sistematică folosită în clinicile din România: aceiași pași, în aceeași ordine, la fiecare traseu.",
+    "steps": [
+      [
+        "Ritm",
+        "Sinusal sau nu? Regulat sau neregulat?"
+      ],
+      [
+        "Frecvență",
+        "Câte complexe pe minut? Bradicardie, normal, tahicardie."
+      ],
+      [
+        "Ax QRS",
+        "Normal, deviat la stânga sau la dreapta."
+      ],
+      [
+        "Unda P și intervalul PR",
+        "Există unde P? Fiecare e urmată de un QRS? PR normal, scurt sau alungit?"
+      ],
+      [
+        "Complexul QRS",
+        "Îngust sau larg? Bloc de ramură, hipertrofie, unde Q?"
+      ],
+      [
+        "Segmentul ST și unda T",
+        "Supra- sau subdenivelare ST, unde T negative, modificări în oglindă."
+      ],
+      [
+        "QT și QTc",
+        "Măsurat și corectat pentru frecvență."
+      ],
+      [
+        "Concluzie",
+        "Totul într-un rând, ca în foaia de observație."
+      ]
+    ],
+    "az_eyebrow": "ECG de la A la Z",
+    "az_heading": "Fiecare diagnostic, pe scurt",
+    "az_intro": "Criteriile, capcanele și un ECG real de exersat pentru fiecare diagnostic din antrenor.",
+    "az_cta": "Deschideți lista"
+  },
+  "digest": {
+    "eyebrow": "ECG-ul săptămânii",
+    "heading": "Un ECG pe săptămână, plus ce s-a publicat important",
+    "intro": "În fiecare număr: un ECG real de citit, trei studii noi rezumate în două minute și un sfat practic pentru asistenți medicali și paramedici.",
+    "empty": "Primul număr apare în curând.",
+    "issue_title": "Nr. {n}",
+    "open": "Deschideți",
+    "back": "Toate numerele",
+    "ecg_heading": "ECG-ul",
+    "papers_heading": "Trei studii pe scurt",
+    "practice": "Pentru practică",
+    "read_source": "Articolul",
+    "tip_heading": "Pentru asistenți medicali și paramedici",
+    "sample_tag": "număr de probă",
+    "sample_note": "Număr de probă, neverificat încă de medic. Apare doar în previzualizare.",
+    "ai_note": "Rezumatele de studii sunt redactate cu ajutorul AI și verificate de medic, cu link spre sursă."
+  },
+  "footer": {
+    "free_line": "Proiect educațional gratuit, realizat de un medic cardiolog cu pregătire în electrofiziologie.",
+    "credits_prefix": "ECG-uri și măsurători:"
+  },
+  "az": {
+    "title": "ECG de la A la Z · {brand}",
+    "description": "Diagnosticele ECG explicate pe scurt: criterii, capcane și un ECG real de exersat pentru fiecare. Verificate de un cardiolog cu pregătire în electrofiziologie.",
+    "eyebrow": "ECG de la A la Z",
+    "heading": "Diagnosticele ECG, pe scurt",
+    "intro": "Pentru fiecare diagnostic: ce vedeți dintr-o privire, criteriile și capcanele. Apoi exersați pe un ECG real.",
+    "search": "Căutați un diagnostic",
+    "search_placeholder": "de ex. bloc, STEMI, flutter",
+    "none": "Niciun diagnostic nu se potrivește căutării.",
+    "criteria": "Criterii",
+    "pitfalls": "Capcane",
+    "practise": "Exersați pe un ECG real",
+    "module": "Modul"
+  }
+}

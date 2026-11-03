@@ -1,0 +1,258 @@
+[
+  {
+    "id": "student",
+    "name": {
+      "ro": "Student la medicină",
+      "en": "Medical student"
+    },
+    "who": {
+      "ro": "Pentru studenții la medicină care învață ECG în stagiile clinice și se pregătesc pentru examenul de rezidențiat și pentru primele gărzi.",
+      "en": "For medical students who learn the ECG on their clinical rotations and are preparing for the Rezidențiat exam and their first nights on call."
+    },
+    "goals": {
+      "ro": [
+        "Veți citi un ECG în 12 derivații mereu în aceeași ordine, de la etalonare la concluzie.",
+        "Veți măsura frecvența, intervalul PR, durata QRS și QT/QTc și veți determina axul QRS.",
+        "Veți recunoaște diagnosticele de bază și veți ști care ECG-uri sunt urgențe."
+      ],
+      "en": [
+        "Read a 12-lead in the same order every time, from calibration to conclusion.",
+        "Measure rate, PR, QRS and QT/QTc, and work out the axis.",
+        "Name the core diagnoses, and know which ECGs are emergencies."
+      ]
+    },
+    "explain": "standard",
+    "drills": [
+      "pr",
+      "qrs",
+      "qt",
+      "axis"
+    ],
+    "hints": true,
+    "first_view": "12lead"
+  },
+  {
+    "id": "nurse",
+    "name": {
+      "ro": "Asistent medical",
+      "en": "Nurse"
+    },
+    "who": {
+      "ro": "Pentru asistenții medicali din secții, UPU, ATI, USTACC și dializă, care înregistrează ECG-ul, urmăresc monitoarele și acționează la indicația medicului sau conform protocolului unității.",
+      "en": "For nurses on wards and in the emergency department, intensive care, coronary care and dialysis, who record ECGs, watch the monitors and act on a doctor's order or the unit's protocol."
+    },
+    "goals": {
+      "ro": [
+        "Veți înregistra corect ECG-ul în 12 derivații, cu V4R și V7–V9 când este nevoie.",
+        "Veți recunoaște ritmurile de stop cardiac și ECG-urile care nu pot aștepta și veți ști pe cine să anunțați.",
+        "Veți verifica frecvența și QTc pe traseu și veți deosebi un artefact de o aritmie."
+      ],
+      "en": [
+        "Record a correct 12-lead, with V4R and V7–V9 when they are needed.",
+        "Recognise arrest rhythms and the ECGs that cannot wait, and know whom to call.",
+        "Check the rate and the QTc on the tracing, and tell artefact from arrhythmia."
+      ]
+    },
+    "explain": "action",
+    "drills": [
+      "qrs",
+      "qt"
+    ],
+    "hints": true,
+    "first_view": "strip",
+    "question": {
+      "ro": "Ce arată acest ECG?",
+      "en": "What does this ECG show?"
+    },
+    "action_set": [
+      {
+        "ro": "Începerea SVB cu DEA și alertarea echipei de resuscitare",
+        "en": "Start BLS with the AED and call the arrest team"
+      },
+      {
+        "ro": "Anunțarea imediată a medicului; monitorizare, defibrilator la îndemână, ECG în 12 derivații",
+        "en": "Call the doctor now; keep the patient monitored, defibrillator at hand, record a 12-lead"
+      },
+      {
+        "ro": "Verificarea electrozilor și a pacientului, apoi reînregistrarea traseului",
+        "en": "Check the electrodes and the patient, then record again"
+      },
+      {
+        "ro": "Consemnarea traseului și raportarea la vizita medicală",
+        "en": "Document it and report at the ward round"
+      }
+    ]
+  },
+  {
+    "id": "paramedic",
+    "name": {
+      "ro": "Paramedic / echipaj de ambulanță",
+      "en": "Paramedic / ambulance crew"
+    },
+    "who": {
+      "ro": "Pentru paramedicii SMURD și echipajele de ambulanță SAJ, care înregistrează și transmit ECG-ul, folosesc DEA sau monitorul-defibrilator și lucrează după protocoalele SAJ/SMURD și ghidurile ERC.",
+      "en": "For SMURD paramedics and SAJ ambulance crews who record and transmit ECGs, use the AED or the monitor-defibrillator, and work to SAJ/SMURD protocols and the ERC guidelines."
+    },
+    "goals": {
+      "ro": [
+        "Veți spune dacă un ritm este șocabil sau nu, în pauza scurtă pentru analiza ritmului.",
+        "Veți recunoaște un STEMI și echivalentele lui, veți transmite ECG-ul și veți anunța spitalul cu laborator de cateterism.",
+        "Veți evalua bradicardiile și tahicardiile după semnele de instabilitate și veți aplica la timp electrozii autoadezivi."
+      ],
+      "en": [
+        "Call a rhythm shockable or non-shockable within the brief rhythm check.",
+        "Recognise STEMI and its equivalents, transmit the ECG and pre-alert the PCI centre.",
+        "Judge bradycardia and tachycardia by adverse features, and put the pads on in time."
+      ]
+    },
+    "explain": "action",
+    "drills": [
+      "qrs"
+    ],
+    "hints": true,
+    "first_view": "strip",
+    "question": {
+      "ro": "Ce arată acest ECG?",
+      "en": "What does this ECG show?"
+    },
+    "action_set": [
+      {
+        "ro": "RCP, cu defibrilare dacă ritmul este șocabil, conform algoritmului ERC",
+        "en": "CPR, with a shock if the rhythm is shockable, per the ERC algorithm"
+      },
+      {
+        "ro": "Electrozi autoadezivi aplicați, stimulare sau cardioversie sincronă pregătite, medic solicitat",
+        "en": "Pads on, pacing or synchronised cardioversion ready, request physician support"
+      },
+      {
+        "ro": "Transmiterea ECG-ului în 12 derivații și anunțarea spitalului cu laborator de cateterism",
+        "en": "Transmit the 12-lead and pre-alert the PCI centre"
+      },
+      {
+        "ro": "Monitorizare, transport și predarea pacientului la spital",
+        "en": "Monitor, transport and hand over at the hospital"
+      }
+    ]
+  },
+  {
+    "id": "resident",
+    "name": {
+      "ro": "Medic rezident",
+      "en": "Resident doctor"
+    },
+    "who": {
+      "ro": "Pentru medicii rezidenți de cardiologie, medicină de urgență, ATI, medicină internă și medicină de familie, care citesc adesea singuri ECG-ul în gardă.",
+      "en": "For residents in cardiology, emergency medicine, intensive care, internal medicine and family medicine, who often read ECGs alone on call."
+    },
+    "goals": {
+      "ro": [
+        "Veți redacta un raport ECG complet, cu măsurători, fără ajutor.",
+        "Veți localiza artera responsabilă de infarct, nivelul unui bloc AV și o cale accesorie.",
+        "Veți recunoaște modurile de stimulare și veți ști care este pasul următor conform ghidurilor ESC și ERC."
+      ],
+      "en": [
+        "Write a complete report with measurements, on your own.",
+        "Localise the culprit artery, the level of an AV block and an accessory pathway.",
+        "Recognise pacing modes, and know the next step in the ESC and ERC guidelines."
+      ]
+    },
+    "explain": "standard",
+    "drills": [
+      "pr",
+      "qrs",
+      "qt",
+      "axis"
+    ],
+    "hints": false,
+    "first_view": "12lead"
+  },
+  {
+    "id": "specialist",
+    "name": {
+      "ro": "Medic specialist / primar",
+      "en": "Specialist / consultant"
+    },
+    "who": {
+      "ro": "Pentru medicii specialiști și primari de cardiologie, medicină de urgență, ATI, medicină internă și medicină de familie, care iau decizii și îndrumă rezidenții.",
+      "en": "For specialists and consultants in cardiology, emergency medicine, intensive care, internal medicine and family medicine, who make decisions and supervise residents."
+    },
+    "goals": {
+      "ro": [
+        "Veți interpreta rapid ECG-uri din toate modulele, fără indicii, cu siguranța necesară unei decizii.",
+        "Veți recunoaște echivalentele de STEMI și aspectele care mimează un STEMI.",
+        "Veți deosebi o disfuncție a stimulatorului de funcționarea normală și veți decide trimiterea pentru stimulare, CRT sau ablație."
+      ],
+      "en": [
+        "Read ECGs from every module fast, without hints, well enough to decide.",
+        "Recognise STEMI equivalents and the patterns that mimic STEMI.",
+        "Tell device malfunction from normal behaviour, and decide on referral for pacing, CRT or ablation."
+      ]
+    },
+    "explain": "deep",
+    "drills": [
+      "pr",
+      "qrs",
+      "qt",
+      "axis"
+    ],
+    "hints": false,
+    "first_view": "12lead",
+    "focus": [
+      {
+        "id": "cardio",
+        "name": {
+          "ro": "Cardiologie",
+          "en": "Cardiology"
+        },
+        "stretch": []
+      },
+      {
+        "id": "acute",
+        "name": {
+          "ro": "Urgențe, ATI, medicină internă și de familie",
+          "en": "Emergency, intensive care, internal and family medicine"
+        },
+        "stretch": [
+          "site-04",
+          "site-05",
+          "site-06",
+          "site-07",
+          "site-08",
+          "site-09",
+          "site-10",
+          "site-11"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ep",
+    "name": {
+      "ro": "Electrofiziolog / specialist în dispozitive",
+      "en": "Electrophysiologist / device specialist"
+    },
+    "who": {
+      "ro": "Pentru cardiologii care implantează, urmăresc și programează dispozitive cardiace sau fac studii electrofiziologice și ablații, inclusiv candidații la certificarea EHRA.",
+      "en": "For cardiologists who implant, follow up and program cardiac devices or perform EP studies and ablation, including EHRA certification candidates."
+    },
+    "goals": {
+      "ro": [
+        "Veți măsura pe traseu ciclurile stimulatorului: intervalul de stimulare, intervalul de scăpare, intervalul AV programat.",
+        "Veți deduce locul de stimulare și captura biventriculară din ECG și veți ști ce poate arăta doar interogarea.",
+        "Veți alege reprogramarea potrivită și veți localiza căile accesorii și originea extrasistolelor."
+      ],
+      "en": [
+        "Measure the pacing cycles on the tracing: pacing interval, escape interval, programmed AV delay.",
+        "Judge pacing site and biventricular capture from the ECG, and know what only interrogation can show.",
+        "Choose the programming fix, and localise accessory pathways and the origin of ectopic beats."
+      ]
+    },
+    "explain": "deep",
+    "drills": [
+      "qrs",
+      "axis"
+    ],
+    "hints": false,
+    "first_view": "12lead"
+  }
+]

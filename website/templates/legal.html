@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}{{ s.footer[which] }} · {{ c.brand }}{% endblock %}
+{% block description %}{{ s.footer[which] }} · {{ c.brand }}{% endblock %}
+{% block main %}
+<section class="page-head">
+  <div class="wrap narrow">
+    <h1>{{ s.footer[which] }}{% if preview and not c.legal_pages_reviewed %} <span class="tag">{{ s.draft_tag }}</span>{% endif %}</h1>
+  </div>
+</section>
+<section class="section prose-section">
+  <div class="wrap narrow prose">
+    {{ body }}
+  </div>
+</section>
+{% endblock %}

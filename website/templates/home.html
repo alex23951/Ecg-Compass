@@ -1,0 +1,142 @@
+{% extends "base.html" %}
+{% from "macros.html" import signup_form %}
+{% block main %}
+<section class="hero" aria-labelledby="hero-title">
+  <figure class="strip" aria-label="{{ s.home.trace_caption }}">
+    <canvas id="hero-trace" class="strip-canvas" role="img" aria-label="{{ s.home.trace_caption }}"></canvas>
+    <figcaption class="strip-label"><span>{{ s.home.trace_label }}</span><span class="strip-rate" aria-hidden="true">75/min</span></figcaption>
+  </figure>
+  <script type="application/json" id="trace-data">{{ trace_json }}</script>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <h1 id="hero-title">{{ s.home.title }}</h1>
+      <p class="lead">{{ s.home.lead }}</p>
+    </div>
+    <div class="signup-card" id="signup">
+      <h2 class="card-title">{{ s.home.signup_heading }}</h2>
+      {{ signup_form(s, 'newsletter', link, html, 'hero') }}
+    </div>
+  </div>
+</section>
+
+{% if quiz %}
+<section class="section" id="weekly" aria-labelledby="weekly-title">
+  <div class="wrap">
+    <p class="eyebrow">{{ s.home.weekly_eyebrow }}</p>
+    <h2 id="weekly-title">{{ f(s.home.weekly_heading, n=quiz.number) }}</h2>
+    <p class="section-intro">{{ s.home.weekly_intro }}{% if quiz.sample %} <span class="tag">{{ s.home.weekly_sample_note }}</span>{% endif %}</p>
+    <div class="quiz" data-answer="{{ quiz.q.answer_index }}">
+      <a class="quiz-ecg" href="{{ url(quiz.images.full_image or quiz.images.image) }}" target="_blank" rel="noopener">
+        <img src="{{ url(quiz.images.image) }}" alt="ECG" width="1200" height="600" loading="lazy">
+        <span class="quiz-zoom">{{ s.home.quiz_open_full }}</span>
+      </a>
+      <div class="quiz-body">
+        <p class="quiz-prompt">{{ quiz.q.prompt }}</p>
+        <ol class="quiz-options" type="A">
+          {% for opt in quiz.q.options %}
+          <li><button type="button" class="quiz-option" data-index="{{ loop.index0 }}"><span class="quiz-letter">{{ "ABCDEFGH"[loop.index0] }}</span><span>{{ opt }}</span></button></li>
+          {% endfor %}
+        </ol>
+        <div class="quiz-answer" hidden>
+          <p class="quiz-verdict" data-correct="{{ s.home.quiz_correct }}" data-wrong="{{ s.home.quiz_wrong }} {{ 'ABCDEFGH'[quiz.q.answer_index] }}. {{ quiz.q.options[quiz.q.answer_index] }}"></p>
+          <h3>{{ s.home.quiz_why }}</h3>
+          <ul>{% for p in quiz.q.answer_points %}<li>{{ p }}</li>{% endfor %}</ul>
+          {% if quiz.q.deeper %}<h3>{{ s.home.quiz_deeper }}</h3><p>{{ quiz.q.deeper }}</p>{% endif %}
+          {% if quiz.q.why_it_matters %}<h3>{{ s.home.quiz_matters }}</h3><p>{{ quiz.q.why_it_matters }}</p>{% endif %}
+          {% if quiz.q.pearl %}<p class="pearl"><strong>{{ s.home.quiz_pearl }}:</strong> {{ quiz.q.pearl }}</p>{% endif %}
+          <a class="button button-quiet" href="#signup">{{ s.home.quiz_cta }}</a>
+        </div>
+        <p class="credit">{{ f(s.home.quiz_credit, ecg_id=quiz.ecg_id) }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<section class="section section-alt" aria-labelledby="get-title">
+  <div class="wrap">
+    <p class="eyebrow">{{ s.home.get_eyebrow }}</p>
+    <h2 id="get-title">{{ s.home.get_heading }}</h2>
+    <div class="get-grid">
+      {% for item in s.home.get_items %}
+      <div class="get-item">
+        <p class="get-who">{{ item.who }}</p>
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.text }}</p>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="gift">
+      <svg class="gift-card" viewBox="0 0 74 105" aria-hidden="true"><rect x="1" y="1" width="72" height="103" rx="3"/><path d="M8 40h12l3-5 3 5h4l4-20 5 32 4-12h23"/><path d="M8 66h40M8 74h52M8 82h34M8 90h46"/></svg>
+      <div>
+        <h3>{{ s.home.gift_title }}</h3>
+        <p>{{ s.home.gift_text }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="app" aria-labelledby="app-title">
+  <div class="wrap">
+    <p class="eyebrow">{{ s.home.app_eyebrow }}</p>
+    <h2 id="app-title">{{ s.home.app_heading }}</h2>
+    <p class="section-intro">{{ s.home.app_intro }}</p>
+    <div class="calipers-demo">
+      <div class="calipers-head">
+        <h3>{{ s.home.calipers_title }}</h3>
+        <p>{{ s.home.calipers_text }}</p>
+      </div>
+      <div class="calipers-stage" id="calipers">
+        <canvas class="calipers-canvas" aria-hidden="true"></canvas>
+        <button type="button" class="caliper" data-which="a" role="slider" aria-label="{{ s.home.calipers_title }} 1" aria-valuemin="0" aria-valuemax="4000" aria-valuenow="0"></button>
+        <button type="button" class="caliper" data-which="b" role="slider" aria-label="{{ s.home.calipers_title }} 2" aria-valuemin="0" aria-valuemax="4000" aria-valuenow="0"></button>
+        <span class="calipers-hint">{{ s.home.calipers_hint }}</span>
+      </div>
+      <dl class="calipers-readout" aria-live="polite">
+        <div><dt>{{ s.home.calipers_interval }}</dt><dd><span data-out="ms">800</span> ms</dd></div>
+        <div><dt>{{ s.home.calipers_rate }}</dt><dd><span data-out="bpm">75</span>/min</dd></div>
+      </dl>
+    </div>
+    <ul class="features">
+      {% for feat in s.home.features %}
+      <li><h3>{{ feat.title }}</h3><p>{{ feat.text }}</p></li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section founding-band" aria-labelledby="founding-title">
+  <div class="wrap founding-inner">
+    <div>
+      <p class="eyebrow">{{ s.home.founding_eyebrow }}</p>
+      <h2 id="founding-title">{{ f(s.home.founding_heading) }}</h2>
+      <p>{{ f(s.home.founding_text) }}</p>
+    </div>
+    <a class="button" href="{{ link('founding') }}">{{ s.home.founding_cta }}</a>
+  </div>
+</section>
+
+<section class="section" id="about" aria-labelledby="about-title">
+  <div class="wrap about-grid">
+    <div>
+      <p class="eyebrow">{{ s.home.about_eyebrow }}</p>
+      <h2 id="about-title">{{ s.home.about_heading }}</h2>
+      <p>{{ s.home.about_text }}</p>
+    </div>
+    <ul class="rules">
+      {% for rule in s.home.rules %}<li>{{ rule }}</li>{% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section section-alt" aria-labelledby="faq-title">
+  <div class="wrap narrow">
+    <h2 id="faq-title">{{ s.home.faq_heading }}</h2>
+    <div class="faq">
+      {% for item in s.home.faq %}
+      <details><summary>{{ item.q }}</summary><p>{{ f(item.a) }}</p></details>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock %}

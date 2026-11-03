@@ -1,0 +1,16 @@
+{
+  "source": "PTB-XL 1.0.3",
+  "ecg_id": 23,
+  "age": "56",
+  "sex": "male",
+  "labels": [
+    {
+      "code": "AFLT",
+      "likelihood": 100.0,
+      "description": "atrial flutter"
+    }
+  ],
+  "report_original": "2:1 Überleitung bei vorhofflattern,jetzt unter 3x1  cordichin + 1x1 novodigal 0,2 etwas langsamer hf von 140 auf 128,sonst unverÄndert.",
+  "heart_axis": null,
+  "credit": "ECG from PTB-XL (Wagner P, Strodthoff N, et al. Sci Data 2020;7:154), PhysioNet, CC BY 4.0."
+}

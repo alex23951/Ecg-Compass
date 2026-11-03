@@ -1,0 +1,29 @@
+<p class="page-lead">Pe scurt: {{ c.brand }} este un instrument de învățare pentru profesioniști din sănătate și studenți. Nu oferă sfaturi medicale și nu interpretează ECG-uri personale.</p>
+
+<h2>Cine suntem</h2>
+<p>Site-ul este operat de {{ c.company.name }}, cu sediul în {{ c.company.address }}, înregistrată la Registrul Comerțului sub nr. {{ c.company.trade_register }}, CUI {{ c.company.cui }}. Contact: <span class="selectable">{{ c.contact_email }}</span>.</p>
+
+<h2>Doar educație</h2>
+<ul>
+  <li>Conținutul (ECG-uri, explicații, rezumate de studii, ghidul de buzunar, emailul săptămânal) are scop exclusiv educațional.</li>
+  <li>Nu înlocuiește judecata clinică, ghidurile în vigoare sau protocoalele locale. Deciziile despre pacienți vă aparțin.</li>
+  <li>Nu interpretăm ECG-uri personale sau ale pacienților și nu stabilim o relație medic–pacient.</li>
+  <li>Tutorul AI este marcat ca AI. Explică doar ECG-urile didactice din aplicație, pe baza explicațiilor aprobate de medic, și poate greși.</li>
+</ul>
+
+<h2>Corectitudinea conținutului</h2>
+<p>Fiecare ECG, răspuns și rezumat este verificat de un medic înainte de publicare. Dacă găsiți o greșeală, scrieți-ne și o corectăm.</p>
+
+<h2>Drepturi de autor</h2>
+<p>Textele, explicațiile și materialele {{ c.brand }} aparțin {{ c.company.name }}. Le puteți folosi pentru învățarea personală și le puteți printa. Ghidul de buzunar poate fi împărțit colegilor, nemodificat. ECG-urile din baza PTB-XL sunt folosite sub licența CC BY 4.0 (Wagner P, Strodthoff N și colab., Scientific Data 2020;7:154, PhysioNet).</p>
+
+<h2>Rezervările de membru fondator</h2>
+<ul>
+  <li>Rezervarea este gratuită și nu vă obligă la plată.</li>
+  <li>La lansare primiți un link de plată la prețul de fondator ({{ c.founding.price_ron }} lei sau {{ c.founding.price_eur }} € pentru primul an de Pro). Plătiți doar dacă doriți.</li>
+  <li>Condițiile abonamentului plătit (prețuri, reînnoire, dreptul de retragere) vor fi publicate înainte de lansare.</li>
+</ul>
+
+<h2>Legea aplicabilă</h2>
+<p>Acești termeni sunt guvernați de legea română. Dacă sunteți consumator, păstrați protecția legilor din țara în care locuiți.</p>
+<p class="page-meta">Ultima actualizare: {{ updated }}</p>

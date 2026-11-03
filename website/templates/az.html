@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+{% set z = s.free.az %}
+{% block title %}{{ f(z.title) }}{% endblock %}
+{% block description %}{{ z.description }}{% endblock %}
+{% block main %}
+<section class="page-head">
+  <div class="wrap narrow">
+    <p class="eyebrow">{{ z.eyebrow }}</p>
+    <h1>{{ z.heading }}</h1>
+    <p class="lead">{{ z.intro }}</p>
+    <div class="az-search">
+      <label for="az-q">{{ z.search }}</label>
+      <input id="az-q" type="search" placeholder="{{ z.search_placeholder }}" autocomplete="off">
+    </div>
+    <nav class="az-letters" aria-label="A–Z">
+      {% for letter in letters %}<a href="#az-{{ letter }}">{{ letter }}</a>{% endfor %}
+    </nav>
+  </div>
+</section>
+<section class="section prose-section">
+  <div class="wrap narrow az-list">
+    {% for letter, items in groups %}
+    <div class="az-group" id="az-{{ letter }}">
+      <h2 class="az-letter">{{ letter }}</h2>
+      {% for d in items %}
+      <details class="az-item" id="{{ d.key | lower }}" data-q="{{ d.search }}">
+        <summary><span class="az-name">{{ d.name }}</span><span class="az-tell">{{ d.tell }}</span></summary>
+        <div class="az-body prose">
+          <h3>{{ z.criteria }}</h3>
+          <ul>{% for x in d.criteria %}<li>{{ x }}</li>{% endfor %}</ul>
+          {% if d.pitfalls %}<h3>{{ z.pitfalls }}</h3>
+          <ul>{% for x in d.pitfalls %}<li>{{ x }}</li>{% endfor %}</ul>{% endif %}
+          {% if d.case %}<p><a class="button button-quiet" href="{{ app_url('#case-' + d.case) }}">{{ z.practise }}</a> <span class="muted">{{ z.module }}: {{ d.module }}</span></p>{% endif %}
+        </div>
+      </details>
+      {% endfor %}
+    </div>
+    {% endfor %}
+    <p class="az-none muted" hidden>{{ z.none }}</p>
+  </div>
+</section>
+<script>
+(function () {
+  var q = document.getElementById("az-q");
+  if (!q) return;
+  var items = document.querySelectorAll(".az-item"), groups = document.querySelectorAll(".az-group");
+  var none = document.querySelector(".az-none");
+  function norm(t) { return t.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, ""); }
+  q.addEventListener("input", function () {
+    var v = norm(q.value.trim()), shown = 0;
+    items.forEach(function (it) { var ok = !v || norm(it.dataset.q).indexOf(v) >= 0; it.hidden = !ok; if (ok) shown++; });
+    groups.forEach(function (g) { g.hidden = !g.querySelector(".az-item:not([hidden])"); });
+    none.hidden = shown > 0;
+  });
+  if (location.hash.length > 1) { var t = document.getElementById(location.hash.slice(1)); if (t && t.tagName === "DETAILS") t.open = true; }
+})();
+</script>
+{% endblock %}

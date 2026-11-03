@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% set d = s.free.digest %}
+{% block title %}{{ f(s.free.meta.digest_title) }}{% endblock %}
+{% block description %}{{ s.free.meta.digest_description }}{% endblock %}
+{% block main %}
+<section class="page-head">
+  <div class="wrap narrow">
+    <p class="eyebrow">{{ d.eyebrow }}</p>
+    <h1>{{ d.heading }}</h1>
+    <p class="lead">{{ d.intro }}</p>
+  </div>
+</section>
+<section class="section prose-section">
+  <div class="wrap narrow">
+    {% if issues %}
+    <ul class="issue-list">
+      {% for i in issues %}
+      <li>
+        <a href="{{ url(i.slug) }}">
+          <span class="get-who">{{ f(d.issue_title, n=i.number) }}{% if i.week %} · {{ i.week }}{% endif %}{% if i.sample %} · {{ d.sample_tag }}{% endif %}</span>
+          <strong>{{ i.subject }}</strong>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <p>{{ d.empty }}</p>
+    {% endif %}
+  </div>
+</section>
+{% endblock %}

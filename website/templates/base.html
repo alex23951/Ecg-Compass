@@ -1,0 +1,101 @@
+{% if not fragment %}<!doctype html>
+<html lang="{{ lang }}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+{% endif %}
+<title>{% if fragment %}{{ c.brand }} Website{% else %}{% block title %}{{ f(s.meta.home_title) }}{% endblock %}{% endif %}</title>
+<meta name="description" content="{% block description %}{{ f(s.meta.home_description) }}{% endblock %}">
+<link rel="canonical" href="{{ canonical }}">
+{% for l, href in alternates.items() %}
+<link rel="alternate" hreflang="{{ l }}" href="{{ href }}">
+{% endfor %}
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{{ c.brand }}">
+<meta property="og:locale" content="{{ s.locale }}">
+<meta property="og:title" content="{{ self.title() }}">
+<meta property="og:description" content="{{ self.description() }}">
+<meta property="og:url" content="{{ canonical }}">
+<meta name="theme-color" content="#fdf8f6" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0b1210" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="{{ url('static/img/icon.svg') }}" type="image/svg+xml">
+{% if preview %}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..800&family=Source+Sans+3:ital,wght@0,400..700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+{% else %}
+<link rel="stylesheet" href="{{ url('static/css/fonts.css') }}">
+{% endif %}
+<link rel="stylesheet" href="{{ url('static/css/site.css') }}">
+{% if not fragment %}
+</head>
+<body>
+{% endif %}
+<div class="site" id="top" data-endpoint="{{ '' if preview else '/api/subscribe' }}" data-lang="{{ lang }}">
+<a class="skip" href="#main">{{ s.skip }}</a>
+{% if preview %}
+<p class="preview-banner" role="note">{{ s.free.preview_banner if c.free_launch else s.preview_banner }}</p>
+{% endif %}
+<header class="masthead">
+  <div class="wrap masthead-row">
+    <a class="brand" href="{{ link('home') }}" aria-label="{{ c.brand }}">
+      <svg class="brand-mark" viewBox="0 0 40 24" aria-hidden="true"><path d="M1 15h9l3-4 3 4h3l3-13 4 21 3-8h11" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/></svg>
+      <span class="brand-name">{{ c.brand }}</span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      {% block nav %}
+      {% if c.free_launch %}
+      <a href="{{ app_url() }}">{{ s.free.nav.trainer }}</a>
+      <a href="{{ link('az') }}">{{ s.free.nav.az }}</a>
+      {% if has_digest %}<a href="{{ link('digest') }}">{{ s.free.nav.digest }}</a>{% endif %}
+      {% else %}
+      {% if has_quiz %}<a href="{{ link('home') }}#weekly">{{ s.nav.weekly }}</a>{% endif %}
+      <a href="{{ link('home') }}#app">{{ s.nav.app }}</a>
+      <a href="{{ link('founding') }}">{{ s.nav.founding }}</a>
+      {% endif %}
+      {% endblock %}
+    </nav>
+    <a class="lang" href="{{ other_url }}" hreflang="{{ other_lang }}" lang="{{ other_lang }}" title="{{ s.other_lang_label }}">{{ s.other_lang_short }}</a>
+  </div>
+</header>
+<main id="main">
+{% block main %}{% endblock %}
+</main>
+<footer class="footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <p class="brand-name">{{ c.brand }}</p>
+      <p class="footer-disclaimer">{{ s.footer.disclaimer }}</p>
+      {% if c.free_launch %}<p class="footer-disclaimer">{{ s.free.footer.free_line }}</p>{% endif %}
+    </div>
+    <ul class="footer-links">
+      {% if c.free_launch %}
+      <li><a href="{{ app_url() }}">{{ s.free.nav.trainer }}</a></li>
+      <li><a href="{{ link('az') }}">{{ s.free.nav.az }}</a></li>
+      <li><a href="{{ link('home') }}#about">{{ s.free.nav.about }}</a></li>
+      {% if has_digest %}<li><a href="{{ link('digest') }}">{{ s.free.nav.digest }}</a></li>{% endif %}
+      {% else %}
+      <li><a href="{{ link('founding') }}">{{ s.nav.founding }}</a></li>
+      {% endif %}
+      <li><a href="{{ link('privacy') }}">{{ s.footer.privacy }}</a></li>
+      <li><a href="{{ link('terms') }}">{{ s.footer.terms }}</a></li>
+      <li>{{ s.footer.contact }}: <span class="selectable">{{ c.contact_email }}</span></li>
+    </ul>
+    <div class="footer-small">
+      {% if c.free_launch %}
+      <p>{{ s.free.footer.credits_prefix }} {{ credits | join('; ') }}.</p>
+      <p>© {{ year }} {{ c.brand }}</p>
+      {% else %}
+      <p>{{ s.footer.credits }}</p>
+      <p>{{ f(s.footer.company) }}</p>
+      <p>© {{ year }} {{ c.company.name }}</p>
+      {% endif %}
+    </div>
+  </div>
+</footer>
+</div>
+<script src="{{ url('static/js/site.js') }}" defer></script>
+{% if not fragment %}
+</body>
+</html>
+{% endif %}

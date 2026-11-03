@@ -1,0 +1,29 @@
+<p class="page-lead">In short: {{ c.brand }} is a learning tool for healthcare professionals and students. It gives no medical advice and never reads personal ECGs.</p>
+
+<h2>Who we are</h2>
+<p>This site is run by {{ c.company.name }}, registered office {{ c.company.address }}, Romanian Trade Register no. {{ c.company.trade_register }}, tax ID (CUI) {{ c.company.cui }}. Contact: <span class="selectable">{{ c.contact_email }}</span>.</p>
+
+<h2>Education only</h2>
+<ul>
+  <li>All content (ECGs, explanations, paper summaries, the pocket guide, the weekly email) is for education only.</li>
+  <li>It doesn't replace clinical judgement, current guidelines or local protocols. Decisions about patients are yours.</li>
+  <li>We don't read your own or your patients' ECGs, and no doctor–patient relationship is created.</li>
+  <li>The AI tutor is labelled as AI. It explains only the app's teaching ECGs, from explanations the doctor has approved, and it can make mistakes.</li>
+</ul>
+
+<h2>Accuracy</h2>
+<p>A doctor checks every ECG, answer and summary before it's published. If you find a mistake, tell us and we'll fix it.</p>
+
+<h2>Copyright</h2>
+<p>{{ c.brand }} texts, explanations and materials belong to {{ c.company.name }}. You may use and print them for your own learning. You may share the pocket guide with colleagues, unchanged. ECGs from the PTB-XL database are used under the CC BY 4.0 licence (Wagner P, Strodthoff N, et al., Scientific Data 2020;7:154, PhysioNet).</p>
+
+<h2>Founding reservations</h2>
+<ul>
+  <li>A reservation is free and doesn't commit you to pay.</li>
+  <li>At launch you get a payment link at the founding price (€{{ c.founding.price_eur }} or {{ c.founding.price_ron }} lei for the first year of Pro). You pay only if you want to.</li>
+  <li>The terms of the paid subscription (prices, renewal, right of withdrawal) will be published before launch.</li>
+</ul>
+
+<h2>Governing law</h2>
+<p>These terms are governed by Romanian law. If you are a consumer, you keep the protection of the laws of the country where you live.</p>
+<p class="page-meta">Last updated: {{ updated }}</p>

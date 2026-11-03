@@ -1,0 +1,191 @@
+{
+  "lang": "en",
+  "locale": "en_GB",
+  "other_lang_label": "Română",
+  "other_lang_short": "RO",
+  "skip": "Skip to content",
+  "nav": {
+    "weekly": "ECG of the week",
+    "app": "The app",
+    "founding": "Founding members",
+    "about": "About",
+    "signup": "Free sign-up"
+  },
+  "meta": {
+    "home_title": "{brand}: the place you practise ECGs",
+    "home_description": "A real ECG every week, three new papers explained in two minutes, and an ECG practice app checked by an electrophysiologist. In English and Romanian."
+  },
+  "preview_banner": "Preview. The forms don't send anything yet, and text marked \"draft\" is waiting for the doctor's check.",
+  "draft_tag": "draft",
+  "form": {
+    "email": "Email address",
+    "email_placeholder": "name@example.com",
+    "first_name": "First name (optional)",
+    "role": "What do you do?",
+    "role_choose": "Choose",
+    "roles": {
+      "doctor": "Doctor (specialist or consultant)",
+      "resident": "Resident or junior doctor",
+      "student": "Medical student",
+      "nurse": "Nurse",
+      "paramedic": "Paramedic or EMT",
+      "other": "Something else"
+    },
+    "consent_newsletter": "Send me the weekly email. I can unsubscribe any time with one click. I have read the <a href=\"{privacy}\">privacy policy</a>.",
+    "consent_founding": "Reserve a founding place and send me the weekly email. The reservation does not commit me to pay. I have read the <a href=\"{privacy}\">privacy policy</a>.",
+    "interview": "I'm happy to have a 15-minute online chat about how I learn ECGs (it helps us a lot).",
+    "wish": "What would you most like to practise? (optional)",
+    "wish_placeholder": "For example: heart blocks, wide-complex tachycardias, pacemakers…",
+    "honeypot": "Leave this field empty",
+    "submit_newsletter": "Send me the ECG of the week",
+    "submit_founding": "Reserve my place (no payment)",
+    "sending": "Sending…",
+    "gift_note": "Free. Sign-up gift: the ECG pocket guide, as a printable PDF.",
+    "error_email": "Enter a valid email address, like name@example.com.",
+    "error_role": "Choose what you do, so you get the right version of the email.",
+    "error_consent": "Tick the box to agree, otherwise we can't send you the email.",
+    "error_server": "We couldn't send the form. Try again in a minute or write to us at {email}.",
+    "done_title": "Check your inbox",
+    "done_text": "We've sent you a confirmation link. Once you confirm, you get the ECG pocket guide. Can't find it? Look in Spam or Promotions.",
+    "done_title_founding": "Your place is reserved",
+    "done_text_founding": "Thank you! Confirm your address in the email we just sent. We'll write when the beta opens, with your access link.",
+    "done_title_known": "You're already on the list",
+    "done_text_known": "We've updated your details. The next ECG arrives in your inbox as usual.",
+    "preview_done": "Preview: on the public site, this is where the form is sent. Nothing was sent now."
+  },
+  "home": {
+    "trace_label": "II · 25 mm/s · 10 mm/mV",
+    "trace_caption": "Sinus rhythm, 75/min. Lead II from a real ECG in the PTB-XL database.",
+    "title": "The place you practise ECGs.",
+    "lead": "A real ECG every week, three new papers explained in two minutes and, soon, an app with hundreds of ECGs marked by a cardiologist trained in electrophysiology. In English and Romanian.",
+    "signup_heading": "Get the ECG of the week",
+    "weekly_eyebrow": "ECG of the week",
+    "weekly_heading": "Try the one from issue {n}",
+    "weekly_intro": "Every email looks like this: a real trace, four options and the answer explained step by step.",
+    "weekly_sample_note": "Sample issue.",
+    "quiz_open_full": "Open the ECG full size",
+    "quiz_correct": "Correct.",
+    "quiz_wrong": "Not this time. The answer:",
+    "quiz_why": "What we see",
+    "quiz_deeper": "For those who want more",
+    "quiz_matters": "Why it matters",
+    "quiz_pearl": "Take-home point",
+    "quiz_credit": "ECG from PTB-XL, record {ecg_id} (Wagner P, Strodthoff N, et al. Sci Data 2020;7:154), PhysioNet, CC BY 4.0 licence.",
+    "quiz_cta": "Send me one every week",
+    "get_eyebrow": "The weekly email",
+    "get_heading": "What you get, free, once a week",
+    "get_items": [
+      {"who": "Everyone", "title": "One ECG to read", "text": "A real trace, one question, four options. The answer comes at the end of the email, explained step by step."},
+      {"who": "Doctors, residents, students", "title": "Three papers in two minutes", "text": "The week's important new papers, summarised in our own words, with a link to each article."},
+      {"who": "Nurses, paramedics", "title": "One practical tip", "text": "What to watch on the monitor, where the electrodes go, when to call the doctor. Short and concrete."}
+    ],
+    "gift_title": "Sign-up gift: the ECG pocket guide",
+    "gift_text": "11 printable cards: the systematic read, normal values, axis, blocks, STEMI criteria, tachycardias, electrolytes and pacemakers.",
+    "app_eyebrow": "The app · in progress",
+    "app_heading": "Practise, don't just watch.",
+    "app_intro": "ECG courses show you traces. The app makes you read them: a few minutes a day, with instant feedback.",
+    "calipers_title": "Try the calipers",
+    "calipers_text": "Drag the two lines onto the peaks of two R waves. We measure the interval and the rate, just like on paper.",
+    "calipers_interval": "Interval",
+    "calipers_rate": "Rate",
+    "calipers_hint": "Drag the red lines",
+    "features": [
+      {"title": "Hundreds of real, marked ECGs", "text": "From open databases and anonymised teaching cases. Every answer is checked by a cardiologist."},
+      {"title": "Spaced repetition", "text": "See each ECG again just as you're about to forget it. Ten minutes a day is enough."},
+      {"title": "Digital calipers and measurement drills", "text": "PR, QRS, QT and QTc, axis. Measure on the trace and see how close you were."},
+      {"title": "Pacemakers and devices", "text": "Pacing, capture, sensing, pacing modes. What's missing almost everywhere, explained by an electrophysiologist."},
+      {"title": "An AI tutor, labelled as AI", "text": "It explains the teaching ECGs from explanations the doctor has approved. It never reads your own or your patients' ECGs."},
+      {"title": "Rhythm strips and monitor mode", "text": "For ICU, emergency and ambulance staff: rhythms that scroll like the bedside monitor."}
+    ],
+    "founding_eyebrow": "Founding members",
+    "founding_heading": "Your first year of Pro for €{price_eur} instead of €{regular_eur}.",
+    "founding_text": "Reserve your place now, with no payment. Get into the beta first, vote on what we build and keep the founding price for your first year.",
+    "founding_cta": "Reserve your place",
+    "about_eyebrow": "Who stands behind the content",
+    "about_heading": "A cardiologist trained in electrophysiology",
+    "about_text": "Every ECG, every answer and every paper summary passes the doctor's desk before it reaches you.",
+    "rules": [
+      "Education only: we never read personal ECGs or give individual medical advice.",
+      "Paper summaries are drafted with AI and checked by the doctor, with a link to the source.",
+      "ECGs come from licensed open databases (PTB-XL, CC BY 4.0) or from anonymised cases published with permission."
+    ],
+    "faq_heading": "Questions",
+    "faq": [
+      {"q": "What does the email cost?", "a": "Nothing. The weekly email and the ECG pocket guide are free."},
+      {"q": "Do I get CME credits?", "a": "Not yet. We're working on a credited programme with an accredited partner and will tell you by email when it exists."},
+      {"q": "Can I send you my own or a patient's ECG?", "a": "No. Everything here is education only and doesn't replace medical care. For a real ECG, see your own doctor."},
+      {"q": "How often do you write?", "a": "Once a week. Unsubscribe with one click from any email."},
+      {"q": "What data do you keep about me?", "a": "Your email address, your first name if you give it, and your role, so you get the right version. The data stays on servers in the European Union."}
+    ]
+  },
+  "founding": {
+    "title": "Founding members",
+    "meta_description": "Reserve your first year of {brand} Pro at the founding price, with no payment now.",
+    "heading": "Become a founding member",
+    "lead": "We're building the app with its first users. Reserve your place now, with no payment, and keep the founding price for your first year.",
+    "price_label": "first year of Pro",
+    "price_unit": "€",
+    "price_was": "€{regular_eur} at launch",
+    "includes": [
+      "Every module, including pacemakers and devices",
+      "Digital calipers and measurement drills",
+      "The AI tutor for the teaching ECGs",
+      "Rhythm strips and monitor mode",
+      "Beta access before everyone else",
+      "A vote on which module we build next"
+    ],
+    "steps_heading": "How it works",
+    "steps": [
+      {"title": "Reserve now", "text": "Fill in the form. You pay nothing and commit to nothing."},
+      {"title": "Try the beta", "text": "Get in before everyone else and tell us what doesn't work or what's missing."},
+      {"title": "Decide at launch", "text": "We send you a payment link at the founding price. If you've changed your mind, you pay nothing."}
+    ],
+    "form_heading": "Reserve your place",
+    "faq": [
+      {"q": "When do I pay?", "a": "Only at launch, and only if you want to. You get a payment link at the founding price. We don't ask for card details before then."},
+      {"q": "What happens after the first year?", "a": "We write to you before renewal, with the price at that time, and you decide whether to continue."},
+      {"q": "Do I get an invoice?", "a": "Yes. Payment goes through our payment provider, which issues the invoice."},
+      {"q": "Can I cancel my reservation?", "a": "Any time: reply to any email or write to us at {email}."}
+    ]
+  },
+  "thanks": {
+    "title": "Thank you",
+    "heading": "Check your inbox",
+    "text": "We've sent you a confirmation link. Once you confirm, you get the ECG pocket guide. Can't find the email? Look in Spam or Promotions.",
+    "back": "Back to the home page"
+  },
+  "confirmed": {
+    "title": "Subscription confirmed",
+    "heading": "Done, you're on the list.",
+    "text": "Your first ECG arrives with the next issue. Until then, the pocket guide is yours.",
+    "download": "Download the ECG pocket guide (PDF)",
+    "download_note": "11 A6 cards plus a cover. Print four to an A4 sheet and cut along the lines.",
+    "download_sheet": "A4 version with cutting lines (PDF)",
+    "founding_nudge": "Want the app too? Founding members get their first year of Pro for €{price_eur}.",
+    "founding_link": "Reserve your place"
+  },
+  "notfound": {
+    "title": "Page not found",
+    "heading": "Flatline.",
+    "text": "The page you're looking for doesn't exist or has moved.",
+    "back": "Back to the home page"
+  },
+  "footer": {
+    "disclaimer": "Education only, for healthcare professionals and students. It doesn't replace medical care and never reads personal ECGs.",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "contact": "Contact",
+    "credits": "ECGs: PTB-XL (Wagner et al., 2020), PhysioNet, CC BY 4.0 licence.",
+    "company": "{company_name} · Tax ID (CUI) {cui} · {trade_register} · {address}"
+  },
+  "slugs": {
+    "home": "en/",
+    "founding": "en/founding/",
+    "thanks": "en/thanks/",
+    "confirmed": "en/confirmed/",
+    "privacy": "en/privacy/",
+    "terms": "en/terms/",
+    "guide_pdf": "downloads/ecg-pocket-guide.pdf",
+    "guide_sheet_pdf": "downloads/ecg-pocket-guide-a4.pdf"
+  }
+}

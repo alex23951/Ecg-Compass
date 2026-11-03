@@ -1,0 +1,137 @@
+{
+  "issue_number": 1,
+  "sample_note": {
+    "en": "Sample issue. PubMed could not be reached from the build machine, so the three papers are well-known 2023–2024 trials standing in for this week's new papers. Check every number against the abstract before sending.",
+    "ro": "Număr de probă. PubMed nu a putut fi accesat de pe serverul de lucru, așa că cele trei articole sunt studii cunoscute din 2023–2024, folosite în locul articolelor noi ale săptămânii. Verificați fiecare cifră în abstract înainte de trimitere."
+  },
+  "subject": {
+    "en": "ECG of the week: 20-year-old man, what do you see? + device-detected AF",
+    "ro": "ECG-ul săptămânii: bărbat, 20 de ani – ce vedeți? + FA detectată de dispozitive"
+  },
+  "preheader": {
+    "en": "One ECG to read, three papers in two minutes.",
+    "ro": "Un ECG de citit, trei studii în două minute."
+  },
+  "ecg": {
+    "image": "ecg-email.png",
+    "full_image": "ecg.png",
+    "meta": "ecg.json",
+    "en": {
+      "prompt": "A 20-year-old man. No clinical details, just the trace. What is the main finding?",
+      "options": [
+        "Right bundle branch block",
+        "Ventricular pre-excitation (Wolff-Parkinson-White pattern)",
+        "Inferior myocardial infarction",
+        "Normal ECG of an athlete"
+      ],
+      "zoom_hint": "Tap the ECG to open it full size. The answer is at the end of this email.",
+      "answer_index": 1,
+      "answer_points": [
+        "Short PR: the QRS starts about 110 ms after the P wave begins (normal 120–200 ms).",
+        "Delta wave: the QRS starts with a slow, slurred upstroke, best seen in II, III, aVF and V2–V4.",
+        "Wide QRS (about 140 ms) because of the slurred start, with secondary ST–T changes.",
+        "Sinus rhythm at about 50/min, slightly irregular (sinus arrhythmia)."
+      ],
+      "deeper": "A tall R in V1 (\"type A\") with a negative delta wave in I and aVL points to a left lateral accessory pathway.",
+      "why_it_matters": "With palpitations or a documented tachycardia, this is WPW syndrome. The danger is atrial fibrillation conducting down the pathway: a fast, irregular, wide-complex tachycardia that can degenerate into VF. In that rhythm, avoid drugs that block the AV node (adenosine, verapamil, diltiazem, beta-blockers, digoxin). Even without symptoms, refer to cardiology for risk assessment.",
+      "pearl": "Short PR plus a slurred start to the QRS: look for a delta wave in every lead."
+    },
+    "ro": {
+      "prompt": "Bărbat, 20 de ani. Fără date clinice, doar traseul. Care este modificarea principală?",
+      "options": [
+        "Bloc de ramură dreaptă",
+        "Preexcitație ventriculară (pattern Wolff-Parkinson-White)",
+        "Infarct miocardic inferior",
+        "ECG normal de sportiv"
+      ],
+      "zoom_hint": "Atingeți ECG-ul pentru a-l deschide la dimensiune completă. Răspunsul este la finalul emailului.",
+      "answer_index": 1,
+      "answer_points": [
+        "PR scurt: QRS-ul începe la aproximativ 110 ms de la debutul undei P (normal 120–200 ms).",
+        "Undă delta: QRS-ul începe cu o pantă lentă, empastată, vizibilă cel mai bine în II, III, aVF și V2–V4.",
+        "QRS larg (aproximativ 140 ms) din cauza undei delta, cu modificări secundare de ST–T.",
+        "Ritm sinusal, aproximativ 50/min, ușor neregulat (aritmie sinusală)."
+      ],
+      "deeper": "Unda R înaltă în V1 („tip A”) și unda delta negativă în I și aVL sugerează o cale accesorie laterală stângă.",
+      "why_it_matters": "Dacă pacientul are palpitații sau o tahicardie documentată, vorbim de sindrom WPW. Pericolul este fibrilația atrială condusă pe calea accesorie: o tahicardie rapidă, neregulată, cu complexe largi, care poate degenera în fibrilație ventriculară. În acest ritm evitați medicamentele care blochează nodul atrioventricular (adenozină, verapamil, diltiazem, betablocante, digoxină). Chiar fără simptome, trimiteți pacientul la cardiolog pentru evaluarea riscului.",
+      "pearl": "PR scurt plus debut empastat al QRS-ului: căutați unda delta în fiecare derivație."
+    }
+  },
+  "papers_intro": {
+    "en": "Should short AF episodes picked up by pacemakers and implanted monitors be anticoagulated? Two trials and one meta-analysis.",
+    "ro": "Trebuie anticoagulate episoadele scurte de FA detectate de pacemakere și monitoare implantabile? Două studii și o meta-analiză."
+  },
+  "papers": [
+    {
+      "title_original": "Apixaban for Stroke Prevention in Subclinical Atrial Fibrillation",
+      "citation": "Healey JS et al. N Engl J Med 2024 (ARTESiA)",
+      "type": {"en": "Randomised trial", "ro": "Studiu randomizat"},
+      "url": "https://pubmed.ncbi.nlm.nih.gov/?term=Apixaban+for+Stroke+Prevention+in+Subclinical+Atrial+Fibrillation",
+      "checked_by_alex": false,
+      "en": {
+        "headline": "Apixaban lowers stroke in device-detected AF, at the price of more bleeding",
+        "summary": "ARTESiA randomised 4,012 people aged 55 or over with short AF episodes (6 minutes to 24 hours), seen only on a pacemaker, defibrillator or implanted monitor, to apixaban or aspirin. Over about 3.5 years, stroke or systemic embolism fell from 1.24% to 0.78% a year (hazard ratio 0.63). Major bleeding rose from 0.94% to 1.71% a year.",
+        "practice": "The absolute stroke risk is low, so the decision is individual: stroke risk factors against bleeding risk."
+      },
+      "ro": {
+        "headline": "Apixabanul reduce AVC-urile în FA detectată de dispozitive, cu prețul mai multor sângerări",
+        "summary": "ARTESiA a randomizat 4.012 pacienți de cel puțin 55 de ani, cu episoade scurte de FA (între 6 minute și 24 de ore) văzute doar pe pacemaker, defibrilator sau monitor implantabil, la apixaban sau aspirină. În aproximativ 3,5 ani, AVC-ul sau embolia sistemică au scăzut de la 1,24% la 0,78% pe an (hazard ratio 0,63). Sângerările majore au crescut de la 0,94% la 1,71% pe an.",
+        "practice": "Riscul absolut de AVC este mic, deci decizia se ia individual: factorii de risc embolic contra riscului de sângerare."
+      }
+    },
+    {
+      "title_original": "Anticoagulation with Edoxaban in Patients with Atrial High-Rate Episodes",
+      "citation": "Kirchhof P et al. N Engl J Med 2023 (NOAH-AFNET 6)",
+      "type": {"en": "Randomised trial", "ro": "Studiu randomizat"},
+      "url": "https://pubmed.ncbi.nlm.nih.gov/?term=Anticoagulation+with+Edoxaban+in+Patients+with+Atrial+High-Rate+Episodes",
+      "checked_by_alex": false,
+      "en": {
+        "headline": "Edoxaban for atrial high-rate episodes: no clear benefit, more harm",
+        "summary": "NOAH-AFNET 6 randomised 2,536 people aged 65 or over with device-detected atrial high-rate episodes of at least 6 minutes to edoxaban or placebo. It stopped early, after a median of 21 months. Cardiovascular death, stroke or systemic embolism was not significantly lower (3.2% vs 4.0% a year, hazard ratio 0.81, P=0.15), while death or major bleeding was higher with edoxaban (5.9% vs 4.5% a year).",
+        "practice": "Stroke rates were low in both groups, which does not support routine anticoagulation for short device-detected episodes."
+      },
+      "ro": {
+        "headline": "Edoxaban pentru episoadele atriale cu frecvență înaltă: fără beneficiu clar, cu mai multe riscuri",
+        "summary": "NOAH-AFNET 6 a randomizat 2.536 de pacienți de cel puțin 65 de ani, cu episoade atriale cu frecvență înaltă de minimum 6 minute detectate de dispozitive, la edoxaban sau placebo. Studiul a fost oprit precoce, după o mediană de 21 de luni. Decesul cardiovascular, AVC-ul sau embolia sistemică nu au scăzut semnificativ (3,2% vs 4,0% pe an, hazard ratio 0,81, p=0,15), iar decesul sau sângerarea majoră au fost mai frecvente cu edoxaban (5,9% vs 4,5% pe an).",
+        "practice": "Rata AVC-urilor a fost mică în ambele grupuri, ceea ce nu susține anticoagularea de rutină pentru episoadele scurte detectate de dispozitive."
+      }
+    },
+    {
+      "title_original": "Direct Oral Anticoagulants for Stroke Prevention in Patients With Device-Detected Atrial Fibrillation: A Study-Level Meta-Analysis of the NOAH-AFNET 6 and ARTESiA Trials",
+      "citation": "McIntyre WF et al. Circulation 2024",
+      "type": {"en": "Meta-analysis", "ro": "Meta-analiză"},
+      "url": "https://pubmed.ncbi.nlm.nih.gov/?term=Direct+Oral+Anticoagulants+for+Stroke+Prevention+in+Patients+With+Device-Detected+Atrial+Fibrillation+NOAH-AFNET+6+ARTESiA",
+      "checked_by_alex": false,
+      "en": {
+        "headline": "Both trials together: about a third fewer strokes, about 60% more major bleeding",
+        "summary": "A meta-analysis of the two trials (6,548 patients) found that a DOAC reduced stroke by about a third (relative risk 0.68) and raised major bleeding by about 60% (relative risk 1.62), with no effect on cardiovascular or overall death.",
+        "practice": "The 2024 ESC AF guideline makes this a class IIb: a DOAC may be considered for device-detected subclinical AF with high stroke risk and low bleeding risk."
+      },
+      "ro": {
+        "headline": "Ambele studii la un loc: cu o treime mai puține AVC-uri, cu circa 60% mai multe sângerări majore",
+        "summary": "O meta-analiză a celor două studii (6.548 de pacienți) a arătat că anticoagulantele orale directe reduc AVC-ul cu aproximativ o treime (risc relativ 0,68) și cresc sângerările majore cu aproximativ 60% (risc relativ 1,62), fără efect asupra mortalității cardiovasculare sau totale.",
+        "practice": "Ghidul ESC 2024 pentru FA dă o recomandare de clasă IIb: un anticoagulant oral direct poate fi luat în considerare în FA subclinică detectată de dispozitive, la pacienții cu risc embolic crescut și risc hemoragic mic."
+      }
+    }
+  ],
+  "nurse_tip": {
+    "en": {
+      "title": "Arm electrodes swapped? Spot it in 10 seconds",
+      "points": [
+        "Lead I is upside down: the P wave, QRS and T wave are all negative.",
+        "aVR looks upright, like a normal lead.",
+        "The chest leads (V1–V6) look normal. That is the clue that tells it apart from dextrocardia."
+      ],
+      "action": "Check the electrodes (red on the right arm, yellow on the left arm) and repeat the ECG before you report it."
+    },
+    "ro": {
+      "title": "Electrozii de la brațe inversați? Îi recunoașteți în 10 secunde",
+      "points": [
+        "Derivația I este „cu capul în jos”: unda P, QRS-ul și unda T sunt toate negative.",
+        "aVR arată pozitiv, ca o derivație normală.",
+        "Derivațiile precordiale (V1–V6) arată normal. Acesta este indiciul care o deosebește de dextrocardie."
+      ],
+      "action": "Verificați electrozii (roșu pe brațul drept, galben pe brațul stâng) și repetați ECG-ul înainte de a-l raporta."
+    }
+  }
+}

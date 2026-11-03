@@ -1,0 +1,139 @@
+{
+  "issue_number": 1,
+  "week": "2026-W42",
+  "subject": {
+    "en": "ECG of the week: regular tachycardia at 128/min, what is it? + pacing after AV node ablation",
+    "ro": "ECG-ul săptămânii: tahicardie regulată la 128/min – ce ritm este? + stimularea după ablația nodului AV"
+  },
+  "preheader": {
+    "en": "One ECG to read, three new papers in two minutes.",
+    "ro": "Un ECG de citit, trei studii noi în două minute."
+  },
+  "ecg": {
+    "image": "ecg-email.png",
+    "full_image": "ecg.png",
+    "meta": "ecg.json",
+    "en": {
+      "prompt": "A 56-year-old man. The monitor shows a regular tachycardia that does not change. What is the rhythm?",
+      "options": [
+        "Sinus tachycardia",
+        "Atrial flutter with 2:1 conduction",
+        "Atrial fibrillation with a fast ventricular rate",
+        "AV nodal re-entrant tachycardia (AVNRT)"
+      ],
+      "zoom_hint": "Tap the ECG to open it full size. The answer is at the end of this email.",
+      "answer_index": 1,
+      "answer_points": [
+        "Regular narrow-QRS tachycardia at about 128/min: the RR interval stays at about 470 ms through the whole strip.",
+        "Sawtooth baseline in II, III and aVF, and small, sharp, upright flutter waves in V1 at about 260/min: exactly twice the ventricular rate, so 2:1 conduction.",
+        "Every second flutter wave sits on the QRS or the T wave, so the eye sees only one \"P wave\" per beat. That is why 2:1 flutter is so often read as sinus tachycardia.",
+        "Lead I is almost flat between the QRS complexes: no clear P wave there either."
+      ],
+      "deeper": "The flutter rate here is about 260/min, slower than the textbook 300. According to the original report, this patient was on verapamil–quinidine and digoxin. Drugs that slow the flutter circuit (class IA and IC, such as quinidine or flecainide) can let the AV node conduct 1:1, with a sudden very fast, sometimes wide-QRS tachycardia. That is why they are given together with an AV-node blocker in flutter.",
+      "why_it_matters": "A regular narrow-complex tachycardia that sits at about 150/min (or a little slower on drugs) and does not vary is flutter with 2:1 block until proven otherwise. Vagal manoeuvres or adenosine can briefly increase the block and unmask the flutter waves; this helps the diagnosis but does not end the flutter. Stroke prevention follows the same rules as in AF, and typical flutter is cured by cavotricuspid isthmus ablation in most patients.",
+      "pearl": "Regular, about 150/min, and it never changes? Look for the second flutter wave hidden in the QRS or T wave."
+    },
+    "ro": {
+      "prompt": "Bărbat, 56 de ani. Monitorul arată o tahicardie regulată, care nu se modifică. Care este ritmul?",
+      "options": [
+        "Tahicardie sinusală",
+        "Flutter atrial cu conducere 2:1",
+        "Fibrilație atrială cu alură ventriculară rapidă",
+        "Tahicardie prin reintrare în nodul atrioventricular (TRNAV)"
+      ],
+      "zoom_hint": "Atingeți ECG-ul pentru a-l deschide la dimensiune completă. Răspunsul este la finalul emailului.",
+      "answer_index": 1,
+      "answer_points": [
+        "Tahicardie regulată cu QRS îngust, aproximativ 128/min: intervalul RR rămâne la circa 470 ms pe tot traseul.",
+        "Linie de bază „în dinți de fierăstrău” în II, III și aVF, și unde de flutter mici, ascuțite și pozitive în V1, cu o frecvență de aproximativ 260/min: exact dublul frecvenței ventriculare, deci conducere 2:1.",
+        "Una din două unde de flutter cade pe QRS sau pe unda T, așa că ochiul vede o singură „undă P” pe bătaie. De aceea flutterul 2:1 este citit atât de des drept tahicardie sinusală.",
+        "Derivația I este aproape plată între complexele QRS: nici acolo nu se vede o undă P clară."
+      ],
+      "deeper": "Frecvența flutterului este aici de circa 260/min, mai mică decât cei 300/min din manual. Conform raportului original, pacientul primea verapamil–chinidină și digoxină. Medicamentele care încetinesc circuitul de flutter (clasa IA și IC, de exemplu chinidina sau flecainida) pot permite nodului atrioventricular să conducă 1:1, cu o tahicardie brusc foarte rapidă, uneori cu QRS larg. De aceea, în flutter ele se asociază cu un medicament care blochează nodul atrioventricular.",
+      "why_it_matters": "O tahicardie regulată cu QRS îngust, care stă în jur de 150/min (sau puțin mai lent sub tratament) și nu variază, este flutter cu bloc 2:1 până la proba contrarie. Manevrele vagale sau adenozina pot crește pentru scurt timp gradul de bloc și pot demasca undele de flutter; ajută la diagnostic, dar nu opresc flutterul. Prevenția AVC-ului urmează aceleași reguli ca în FA, iar flutterul tipic se vindecă prin ablația istmului cavo-tricuspidian la majoritatea pacienților.",
+      "pearl": "Regulată, în jur de 150/min și nu se schimbă niciodată? Căutați a doua undă de flutter, ascunsă în QRS sau în unda T."
+    }
+  },
+  "papers_intro": {
+    "en": "Three papers published in the past week: a simpler way to pace after AV node ablation, an old drug tested again in the emergency department, and what an early recurrence after pulsed field ablation means.",
+    "ro": "Trei articole publicate săptămâna trecută: o stimulare mai simplă după ablația nodului AV, un medicament vechi testat din nou în urgență și ce înseamnă o recidivă precoce după ablația cu câmp pulsat."
+  },
+  "papers": [
+    {
+      "title_original": "Biventricular vs conduction system pacing after atrioventricular node ablation for heart failure with atrial fibrillation: the CONDUCT-AF trial.",
+      "citation": "Žižek D et al. Eur Heart J 2026 (CONDUCT-AF)",
+      "pmid": "42834810",
+      "type": {"en": "Randomised trial", "ro": "Studiu randomizat"},
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42834810/",
+      "checked_by_alex": false,
+      "en": {
+        "headline": "Pace and ablate: left bundle branch area pacing works as well as biventricular pacing",
+        "summary": "CONDUCT-AF randomised 82 patients in 10 European centres who had AF that could not be controlled, heart failure with an ejection fraction under 50% and a narrow QRS, and who were having AV node ablation. They got either conduction system pacing (left bundle branch area) or a biventricular device. At 6 months the ejection fraction had risen by about 10 points in both groups (36% to 46% vs 34% to 46%; difference 0.4 points, non-inferior). The paced QRS was 14 ms narrower, and the procedure and fluoroscopy times were shorter with conduction system pacing. Heart failure events were similar.",
+        "practice": "Supports conduction system pacing as an alternative to a biventricular device in \"pace and ablate\". The trial is small and its main endpoint is an echo measurement at 6 months, not hard outcomes."
+      },
+      "ro": {
+        "headline": "Stimulare și ablație: stimularea zonei ramului stâng funcționează la fel de bine ca stimularea biventriculară",
+        "summary": "CONDUCT-AF a randomizat 82 de pacienți din 10 centre europene, cu FA imposibil de controlat, insuficiență cardiacă cu fracție de ejecție sub 50% și QRS îngust, la care se făcea ablația nodului atrioventricular. Aceștia au primit fie stimulare a sistemului de conducere (zona ramului stâng), fie un dispozitiv biventricular. La 6 luni, fracția de ejecție a crescut cu aproximativ 10 puncte în ambele grupuri (de la 36% la 46% vs de la 34% la 46%; diferență de 0,4 puncte, non-inferioritate). QRS-ul stimulat a fost mai îngust cu 14 ms, iar durata procedurii și a fluoroscopiei au fost mai scurte cu stimularea sistemului de conducere. Evenimentele de insuficiență cardiacă au fost similare.",
+        "practice": "Susține stimularea sistemului de conducere ca alternativă la dispozitivul biventricular în strategia „stimulare și ablație”. Studiul este mic, iar obiectivul principal este o măsurătoare ecografică la 6 luni, nu evenimente clinice majore."
+      }
+    },
+    {
+      "title_original": "Efficacy and Safety of Flecainide Versus Amiodarone for the Cardioversion of paroxysmal Atrial Fibrillation in Patients with Coronary Artery Disease without evidence of residual ischemia: The FLECA-ED Randomized Clinical Trial.",
+      "citation": "Tsioufis PA et al. Heart Rhythm 2026 (FLECA-ED)",
+      "pmid": "42838320",
+      "type": {"en": "Randomised trial", "ro": "Studiu randomizat"},
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42838320/",
+      "checked_by_alex": false,
+      "en": {
+        "headline": "Flecainide in coronary disease? A small trial challenges an old rule",
+        "summary": "FLECA-ED was an open-label trial in emergency departments. It randomised 87 patients with recent-onset paroxysmal AF and known coronary artery disease, but no active or residual ischaemia, to IV flecainide or IV amiodarone. Within 6 hours, 86% converted to sinus rhythm with flecainide vs 40% with amiodarone. The median time to sinus rhythm was 20 vs 244 minutes, and 14% vs 60% were admitted. On 24-hour Holter there was no ventricular proarrhythmia in either group, and no one died within 30 days.",
+        "practice": "Not practice-changing yet: flecainide stays contraindicated in coronary and structural heart disease. The trial was small and too short to detect rare, late proarrhythmia; the authors call the safety result hypothesis-generating."
+      },
+      "ro": {
+        "headline": "Flecainidă în boala coronariană? Un studiu mic pune la îndoială o regulă veche",
+        "summary": "FLECA-ED a fost un studiu deschis, făcut în departamente de urgență. A randomizat 87 de pacienți cu FA paroxistică recent instalată și boală coronariană cunoscută, dar fără ischemie activă sau reziduală, la flecainidă i.v. sau amiodaronă i.v. În 6 ore, 86% au trecut în ritm sinusal cu flecainidă, față de 40% cu amiodaronă. Timpul median până la ritm sinusal a fost de 20 vs 244 de minute, iar 14% vs 60% au fost internați. Pe Holterul de 24 de ore nu a apărut proaritmie ventriculară în niciun grup și nimeni nu a decedat în 30 de zile.",
+        "practice": "Nu schimbă încă practica: flecainida rămâne contraindicată în boala coronariană și în boala cardiacă structurală. Studiul a fost mic și prea scurt pentru a surprinde proaritmia rară sau tardivă; autorii consideră rezultatul de siguranță doar generator de ipoteze."
+      }
+    },
+    {
+      "title_original": "Impact of Early Atrial Tachyarrhythmia Within the Blanking Period on Late Recurrence After Pulsed Field Ablation of Atrial Fibrillation.",
+      "citation": "Dakik A et al. JACC Clin Electrophysiol 2026",
+      "pmid": "42848331",
+      "type": {"en": "Registry study", "ro": "Studiu de registru"},
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42848331/",
+      "checked_by_alex": false,
+      "en": {
+        "headline": "After pulsed field ablation, an early AF recurrence is not just \"blanking\"",
+        "summary": "In a single-centre registry of 1,608 patients followed for a year after pulsed field ablation for AF, 21% had AF or flutter lasting 30 seconds or more in the first 90 days. Of these, 68% had a late recurrence, against 20% of those without an early episode (adjusted hazard ratio 4.9). It did not matter whether the early episode came in the first month or the third, or whether it was cardioverted.",
+        "practice": "The 3-month blanking period comes from thermal ablation. After pulsed field ablation, an early recurrence is a warning sign: monitor more closely and plan follow-up early. This is observational data from one centre."
+      },
+      "ro": {
+        "headline": "După ablația cu câmp pulsat, o recidivă precoce de FA nu este doar „perioadă de blanking”",
+        "summary": "Într-un registru dintr-un singur centru, cu 1.608 pacienți urmăriți un an după ablația FA cu câmp pulsat, 21% au avut FA sau flutter de cel puțin 30 de secunde în primele 90 de zile. Dintre aceștia, 68% au avut o recidivă tardivă, față de 20% dintre cei fără episod precoce (hazard ratio ajustat 4,9). Nu a contat dacă episodul precoce a apărut în prima sau în a treia lună, nici dacă a necesitat cardioversie.",
+        "practice": "Perioada de blanking de 3 luni provine din ablația termică. După ablația cu câmp pulsat, o recidivă precoce este un semnal de alarmă: monitorizați mai atent și planificați din timp controlul. Datele sunt observaționale, dintr-un singur centru."
+      }
+    }
+  ],
+  "nurse_tip": {
+    "en": {
+      "title": "IV drug to convert AF: what to watch at the bedside",
+      "points": [
+        "Keep the patient on a cardiac monitor for the whole infusion, with defibrillator pads within reach.",
+        "Check blood pressure often (for example every 15 minutes, or as your protocol says).",
+        "Watch for a slow rate, pauses or a QRS that becomes clearly wider; with flecainide, also for flutter with a sudden very fast rate.",
+        "Amiodarone irritates small veins: use a large vein, check the cannula site often and report redness or pain."
+      ],
+      "action": "Record a 12-lead ECG when the rhythm changes, and call the doctor at once for hypotension, a rate under 50 or a widening QRS."
+    },
+    "ro": {
+      "title": "Medicament i.v. pentru conversia FA: ce urmăriți la patul pacientului",
+      "points": [
+        "Țineți pacientul pe monitor pe toată durata perfuziei, cu padelele de defibrilator la îndemână.",
+        "Măsurați tensiunea arterială des (de exemplu la 15 minute sau conform protocolului secției).",
+        "Urmăriți alura lentă, pauzele sau un QRS care se lărgește vizibil; la flecainidă, și apariția unui flutter cu alură brusc foarte rapidă.",
+        "Amiodarona irită venele mici: folosiți o venă mare, verificați des locul branulei și semnalați roșeața sau durerea."
+      ],
+      "action": "Înregistrați un ECG cu 12 derivații când se schimbă ritmul și anunțați imediat medicul la hipotensiune, alură sub 50/min sau QRS care se lărgește."
+    }
+  }
+}

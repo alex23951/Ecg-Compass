@@ -1,0 +1,7296 @@
+[
+{
+"subject_id": "10999354",
+"study_id": "43949413",
+"time": "2146-12-23 16:12:00",
+"report": "Possible atrial flutter | Demand pacing | --- Suspect arm lead reversal - only aVF, V1-V6 analyzed --- | IV conduction defect | Extensive ST-T changes are nonspecific | Abnormal ECG",
+"qrs": 154.0,
+"axis": 110.0,
+"rr": 638.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -17.8,
+"V1": -2.4,
+"aVF": 40.0,
+"II": 31.0,
+"beats": 16
+},
+"path": "files/p1099/p10999354/s43949413/43949413"
+},
+{
+"subject_id": "16205152",
+"study_id": "43016016",
+"time": "2130-10-04 14:08:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 152.0,
+"axis": 134.0,
+"rr": 779.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -5.2,
+"V1": -16.0,
+"aVF": 20.5,
+"II": 16.7,
+"beats": 13
+},
+"path": "files/p1620/p16205152/s43016016/43016016"
+},
+{
+"subject_id": "12294892",
+"study_id": "46741498",
+"time": "2121-11-06 22:43:00",
+"report": "Regular ventricular pacing | *** report made without knowing patient's sex or age *** | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 150.0,
+"axis": 178.0,
+"rr": 530.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -21.9,
+"V1": 20.3,
+"aVF": -13.5,
+"II": -23.4,
+"beats": 19
+},
+"path": "files/p1229/p12294892/s46741498/46741498"
+},
+{
+"subject_id": "13950979",
+"study_id": "40733408",
+"time": "2168-08-15 15:48:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 164.0,
+"axis": -149.0,
+"rr": 666.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -8.1,
+"V1": 14.7,
+"aVF": -7.4,
+"II": -11.2,
+"beats": 15
+},
+"path": "files/p1395/p13950979/s40733408/40733408"
+},
+{
+"subject_id": "11968004",
+"study_id": "45889835",
+"time": "2141-08-15 10:46:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 170.0,
+"axis": -109.0,
+"rr": 967.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -3.3,
+"V1": 17.2,
+"aVF": -17.8,
+"II": -22.0,
+"beats": 10
+},
+"path": "files/p1196/p11968004/s45889835/45889835"
+},
+{
+"subject_id": "14219343",
+"study_id": "40433827",
+"time": "2162-01-03 03:12:00",
+"report": "A-V sequential pacemaker | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 136.0,
+"axis": 124.0,
+"rr": 1000.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": 0.6,
+"V1": 31.6,
+"aVF": 3.0,
+"II": 4.9,
+"beats": 9
+},
+"path": "files/p1421/p14219343/s40433827/40433827"
+},
+{
+"subject_id": "13552058",
+"study_id": "45362054",
+"time": "2137-10-22 12:19:00",
+"report": "Demand pacing | Right axis deviation | Right bundle branch block | Lateral infarct - age undetermined | Inferior ST-T changes are nonspecific | Abnormal ECG",
+"qrs": 170.0,
+"axis": 111.0,
+"rr": 705.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -14.6,
+"V1": 3.6,
+"aVF": -10.0,
+"II": -16.6,
+"beats": 11
+},
+"path": "files/p1355/p13552058/s45362054/45362054"
+},
+{
+"subject_id": "11692282",
+"study_id": "41852236",
+"time": "2169-04-23 15:20:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 114.0,
+"axis": -119.0,
+"rr": 810.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -22.0,
+"V1": 8.3,
+"aVF": -26.0,
+"II": -36.0,
+"beats": 12
+},
+"path": "files/p1169/p11692282/s41852236/41852236"
+},
+{
+"subject_id": "13098385",
+"study_id": "49650672",
+"time": "2173-12-30 14:11:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 150.0,
+"axis": 104.0,
+"rr": 967.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -8.7,
+"V1": 5.8,
+"aVF": -8.0,
+"II": -12.0,
+"beats": 10
+},
+"path": "files/p1309/p13098385/s49650672/49650672"
+},
+{
+"subject_id": "16289699",
+"study_id": "46613019",
+"time": "2149-04-06 12:50:00",
+"report": "A-V sequential pacemaker | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 144.0,
+"axis": -128.0,
+"rr": 869.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -16.4,
+"V1": 1.5,
+"aVF": 4.2,
+"II": -3.8,
+"beats": 12
+},
+"path": "files/p1628/p16289699/s46613019/46613019"
+},
+{
+"subject_id": "13791328",
+"study_id": "41053761",
+"time": "2185-01-07 10:24:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 162.0,
+"axis": -107.0,
+"rr": 618.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -16.5,
+"V1": -18.5,
+"aVF": -10.3,
+"II": -19.8,
+"beats": 16
+},
+"path": "files/p1379/p13791328/s41053761/41053761"
+},
+{
+"subject_id": "14380975",
+"study_id": "49766361",
+"time": "2188-08-18 14:42:00",
+"report": "Ventricular pacing. | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 146.0,
+"axis": -121.0,
+"rr": 779.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -17.7,
+"V1": 0.7,
+"aVF": -10.6,
+"II": -16.4,
+"beats": 13
+},
+"path": "files/p1438/p14380975/s49766361/49766361"
+},
+{
+"subject_id": "13640324",
+"study_id": "44697291",
+"time": "2155-04-02 20:41:00",
+"report": "Atrial fibrillation | Demand pacing | Right axis deviation | Possible lateral infarct - age undetermined | Tall R V1/V2 probably reflect the infarct | Inferior and ant/septal ST-T changes are nonspecific | Abnormal ECG",
+"qrs": 104.0,
+"axis": 150.0,
+"rr": 697.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": 10.9,
+"V1": -15.5,
+"aVF": -4.1,
+"II": 0.1,
+"beats": 15
+},
+"path": "files/p1364/p13640324/s44697291/44697291"
+},
+{
+"subject_id": "14748547",
+"study_id": "42077294",
+"time": "2174-10-26 19:38:00",
+"report": "Demand pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 168.0,
+"axis": 156.0,
+"rr": 1016.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -99.3,
+"V1": 34.9,
+"aVF": 58.5,
+"II": 7.6,
+"beats": 9
+},
+"path": "files/p1474/p14748547/s42077294/42077294"
+},
+{
+"subject_id": "12992448",
+"study_id": "41788025",
+"time": "2185-01-05 15:11:00",
+"report": "Dual chamber pacemaker | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 156.0,
+"axis": -130.0,
+"rr": 659.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -11.9,
+"V1": 17.3,
+"aVF": -14.2,
+"II": -20.3,
+"beats": 15
+},
+"path": "files/p1299/p12992448/s41788025/41788025"
+},
+{
+"subject_id": "13654705",
+"study_id": "41991716",
+"time": "2184-11-07 08:34:00",
+"report": "Demand pacing. | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 140.0,
+"axis": 107.0,
+"rr": 895.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": 1.3,
+"V1": -2.1,
+"aVF": -7.3,
+"II": -6.9,
+"beats": 11
+},
+"path": "files/p1365/p13654705/s41991716/41991716"
+},
+{
+"subject_id": "13277770",
+"study_id": "41643522",
+"time": "2161-01-15 08:54:00",
+"report": "Demand pacing. | Rightward axis | IV conduction defect | LVH with secondary repolarization abnormality | Extensive ST-T changes are probably due to ventricular hypertrophy | Abnormal ECG",
+"qrs": 160.0,
+"axis": 95.0,
+"rr": 689.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -1.2,
+"V1": 8.0,
+"aVF": -10.5,
+"II": -12.2,
+"beats": 15
+},
+"path": "files/p1327/p13277770/s41643522/41643522"
+},
+{
+"subject_id": "14224696",
+"study_id": "43244822",
+"time": "2134-04-29 14:59:00",
+"report": "Atrial-ventricular dual-paced complexes",
+"qrs": 163.0,
+"axis": 132.0,
+"rr": 1200.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -17.5,
+"V1": -3.8,
+"aVF": 2.8,
+"II": -4.5,
+"beats": 9
+},
+"path": "files/p1422/p14224696/s43244822/43244822"
+},
+{
+"subject_id": "11607177",
+"study_id": "46124503",
+"time": "2148-10-04 21:22:00",
+"report": "*** CONSIDER ACUTE ST ELEVATION MI *** | Demand pacing | Rightward axis | IV conduction defect | Inferior ST elevation, CONSIDER ACUTE INFARCT | Anteroseptal ST depression is probably reciprocal to inferior infarct | Lateral ST-T changes are nonspecific | Abnormal ECG",
+"qrs": 160.0,
+"axis": 104.0,
+"rr": 740.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -24.6,
+"V1": 2.9,
+"aVF": 11.5,
+"II": -0.6,
+"beats": 10
+},
+"path": "files/p1160/p11607177/s46124503/46124503"
+},
+{
+"subject_id": "10286998",
+"study_id": "49448854",
+"time": "2172-07-12 16:13:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 142.0,
+"axis": -101.0,
+"rr": 1000.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -305.6,
+"V1": -22.6,
+"aVF": -24.7,
+"II": -331.5,
+"beats": 5
+},
+"path": "files/p1028/p10286998/s49448854/49448854"
+},
+{
+"subject_id": "10013569",
+"study_id": "46051221",
+"time": "2167-12-10 13:37:00",
+"report": "Ventricular pacing. | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 170.0,
+"axis": 123.0,
+"rr": 666.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -46.0,
+"V1": -28.5,
+"aVF": 56.6,
+"II": 34.8,
+"beats": 15
+},
+"path": "files/p1001/p10013569/s46051221/46051221"
+},
+{
+"subject_id": "13627620",
+"study_id": "46614776",
+"time": "2160-10-22 14:26:00",
+"report": "Ventricular pacing. | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 160.0,
+"axis": 156.0,
+"rr": 821.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -15.3,
+"V1": 3.4,
+"aVF": 10.8,
+"II": 2.8,
+"beats": 12
+},
+"path": "files/p1362/p13627620/s46614776/46614776"
+},
+{
+"subject_id": "15525414",
+"study_id": "42092759",
+"time": "2174-07-21 14:27:00",
+"report": "Atrial fibrillation with slow ventricular response | Demand pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 142.0,
+"axis": 100.0,
+"rr": 1111.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": 7.7,
+"V1": -6.5,
+"aVF": -4.7,
+"II": -0.5,
+"beats": 9
+},
+"path": "files/p1552/p15525414/s42092759/42092759"
+},
+{
+"subject_id": "16028682",
+"study_id": "40488572",
+"time": "2186-07-17 07:50:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 164.0,
+"axis": -160.0,
+"rr": 869.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -3.0,
+"V1": 8.5,
+"aVF": -8.9,
+"II": -10.6,
+"beats": 12
+},
+"path": "files/p1602/p16028682/s40488572/40488572"
+},
+{
+"subject_id": "13909425",
+"study_id": "49157711",
+"time": "2152-12-25 09:29:00",
+"report": "Demand pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 162.0,
+"axis": 117.0,
+"rr": 800.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": 23.8,
+"V1": -82.4,
+"aVF": -32.7,
+"II": -18.8,
+"beats": 12
+},
+"path": "files/p1390/p13909425/s49157711/49157711"
+},
+{
+"subject_id": "13033761",
+"study_id": "46782503",
+"time": "2139-06-21 08:46:00",
+"report": "Atrial fibrillation | Demand pacing | Right axis deviation | Right bundle branch block | Left ventricular hypertrophy | Marked precordial ST depression, CONSIDER ACUTE INFARCT | Inferior/lateral ST-T changes may be due to hypertrophy and/or ischemia | Abnormal ECG",
+"qrs": 154.0,
+"axis": 114.0,
+"rr": 705.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -3.9,
+"V1": 6.2,
+"aVF": 7.8,
+"II": -2.8,
+"beats": 13
+},
+"path": "files/p1303/p13033761/s46782503/46782503"
+},
+{
+"subject_id": "16257560",
+"study_id": "40921557",
+"time": "2140-10-01 22:49:00",
+"report": "Sinus tachycardia | Demand pacing. | Possible right atrial abnormality | Rightward axis | IV conduction defect | LVH with secondary repolarization abnormality | Marked precordial ST depression, CONSIDER ACUTE INFARCT | Extensive ST-T changes are probably due to ventricular hypertrophy | Abnormal ECG",
+"qrs": 138.0,
+"axis": 99.0,
+"rr": 571.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -50.4,
+"V1": 14.4,
+"aVF": 28.5,
+"II": 3.1,
+"beats": 17
+},
+"path": "files/p1625/p16257560/s40921557/40921557"
+},
+{
+"subject_id": "12414328",
+"study_id": "49086798",
+"time": "2167-08-02 07:07:00",
+"report": "Ventricular pacing. | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 148.0,
+"axis": -145.0,
+"rr": 652.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -11.2,
+"V1": -42.9,
+"aVF": -25.3,
+"II": -31.6,
+"beats": 15
+},
+"path": "files/p1241/p12414328/s49086798/49086798"
+},
+{
+"subject_id": "14982902",
+"study_id": "49868749",
+"time": "2131-10-30 15:14:00",
+"report": "Demand pacing. | Right bundle branch block | Inferior ST elevation - cannot rule out myocardial injury | Inferior/lateral ST-T changes are nonspecific | Abnormal ECG",
+"qrs": 140.0,
+"axis": 108.0,
+"rr": 952.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": 20.5,
+"V1": 38.5,
+"aVF": -75.1,
+"II": -62.3,
+"beats": 10
+},
+"path": "files/p1498/p14982902/s49868749/49868749"
+},
+{
+"subject_id": "13333170",
+"study_id": "46912909",
+"time": "2149-10-23 18:21:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 124.0,
+"axis": -167.0,
+"rr": 869.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -20.6,
+"V1": 22.9,
+"aVF": -17.3,
+"II": -28.0,
+"beats": 11
+},
+"path": "files/p1333/p13333170/s46912909/46912909"
+},
+{
+"subject_id": "10237315",
+"study_id": "47231484",
+"time": "2128-10-07 08:42:00",
+"report": "Demand pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 148.0,
+"axis": -104.0,
+"rr": 882.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -9.8,
+"V1": -38.7,
+"aVF": -34.2,
+"II": -40.6,
+"beats": 12
+},
+"path": "files/p1023/p10237315/s47231484/47231484"
+},
+{
+"subject_id": "15866068",
+"study_id": "47224727",
+"time": "2150-12-30 14:25:00",
+"report": "Demand pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 154.0,
+"axis": 95.0,
+"rr": 882.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": 37.7,
+"V1": -30.1,
+"aVF": -43.5,
+"II": -29.0,
+"beats": 12
+},
+"path": "files/p1586/p15866068/s47224727/47224727"
+},
+{
+"subject_id": "14774414",
+"study_id": "43155662",
+"time": "2137-11-28 14:29:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 102.0,
+"axis": -99.0,
+"rr": 625.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -20.3,
+"V1": -5.9,
+"aVF": -30.3,
+"II": -41.4,
+"beats": 15
+},
+"path": "files/p1477/p14774414/s43155662/43155662"
+},
+{
+"subject_id": "12993525",
+"study_id": "42424112",
+"time": "2172-10-09 17:52:00",
+"report": "Ventricular pacing. | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 158.0,
+"axis": 149.0,
+"rr": 882.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -13.9,
+"V1": -13.5,
+"aVF": -4.5,
+"II": -11.8,
+"beats": 11
+},
+"path": "files/p1299/p12993525/s42424112/42424112"
+},
+{
+"subject_id": "10558918",
+"study_id": "44925600",
+"time": "2152-06-04 17:20:00",
+"report": "Afib/flutter and ventricular-paced rhythm",
+"qrs": 142.0,
+"axis": 251.0,
+"rr": 909.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": 43.4,
+"V1": 3.9,
+"aVF": -52.5,
+"II": -28.4,
+"beats": 11
+},
+"path": "files/p1055/p10558918/s44925600/44925600"
+},
+{
+"subject_id": "12591968",
+"study_id": "45643815",
+"time": "2133-04-27 12:05:00",
+"report": "Ventricular pacing. | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 162.0,
+"axis": 142.0,
+"rr": 952.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -1.1,
+"V1": -9.8,
+"aVF": -21.5,
+"II": -20.7,
+"beats": 9
+},
+"path": "files/p1259/p12591968/s45643815/45643815"
+},
+{
+"subject_id": "16672169",
+"study_id": "48835418",
+"time": "2169-07-31 13:26:00",
+"report": "Dual chamber pacemaker | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 126.0,
+"axis": 126.0,
+"rr": 779.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -14.4,
+"V1": 10.6,
+"aVF": -21.2,
+"II": -29.2,
+"beats": 13
+},
+"path": "files/p1667/p16672169/s48835418/48835418"
+},
+{
+"subject_id": "12876817",
+"study_id": "47013796",
+"time": "2157-01-18 11:59:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 126.0,
+"axis": -131.0,
+"rr": 845.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -31.2,
+"V1": 26.6,
+"aVF": -31.5,
+"II": -47.7,
+"beats": 12
+},
+"path": "files/p1287/p12876817/s47013796/47013796"
+},
+{
+"subject_id": "14782354",
+"study_id": "43569153",
+"time": "2131-06-30 13:42:00",
+"report": "A-V sequential pacemaker | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 142.0,
+"axis": -177.0,
+"rr": 845.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -14.1,
+"V1": 21.6,
+"aVF": -2.1,
+"II": -8.2,
+"beats": 12
+},
+"path": "files/p1478/p14782354/s43569153/43569153"
+},
+{
+"subject_id": "14300144",
+"study_id": "46664075",
+"time": "2131-10-01 04:23:00",
+"report": "Ventricular-paced complexes",
+"qrs": 133.0,
+"axis": 228.0,
+"rr": 769.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -20.2,
+"V1": 7.3,
+"aVF": -25.8,
+"II": -29.1,
+"beats": 13
+},
+"path": "files/p1430/p14300144/s46664075/46664075"
+},
+{
+"subject_id": "13339190",
+"study_id": "42730794",
+"time": "2134-03-12 14:04:00",
+"report": "Demand pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 82.0,
+"axis": -149.0,
+"rr": 689.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -9.3,
+"V1": -28.2,
+"aVF": -41.9,
+"II": -53.8,
+"beats": 12
+},
+"path": "files/p1333/p13339190/s42730794/42730794"
+},
+{
+"subject_id": "12519724",
+"study_id": "48124007",
+"time": "2117-11-02 12:57:00",
+"report": "AV sequential pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 164.0,
+"axis": -95.0,
+"rr": 1000.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -14.1,
+"V1": 34.9,
+"aVF": -40.5,
+"II": -46.2,
+"beats": 10
+},
+"path": "files/p1251/p12519724/s48124007/48124007"
+},
+{
+"subject_id": "12319700",
+"study_id": "41719192",
+"time": "2200-12-29 12:11:00",
+"report": "Demand pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 168.0,
+"axis": 96.0,
+"rr": 833.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -49.2,
+"V1": 42.2,
+"aVF": -20.3,
+"II": -44.9,
+"beats": 12
+},
+"path": "files/p1231/p12319700/s41719192/41719192"
+},
+{
+"subject_id": "13896341",
+"study_id": "47415235",
+"time": "2155-10-03 21:27:00",
+"report": "Atrial-sensed ventricular-paced rhythm",
+"qrs": 144.0,
+"axis": 258.0,
+"rr": 779.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -11.6,
+"V1": 7.3,
+"aVF": -7.1,
+"II": -13.5,
+"beats": 13
+},
+"path": "files/p1389/p13896341/s47415235/47415235"
+},
+{
+"subject_id": "14422629",
+"study_id": "46806650",
+"time": "2189-01-21 10:21:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 138.0,
+"axis": 145.0,
+"rr": 845.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -8.7,
+"V1": -10.6,
+"aVF": -21.2,
+"II": -25.1,
+"beats": 12
+},
+"path": "files/p1442/p14422629/s46806650/46806650"
+},
+{
+"subject_id": "15016682",
+"study_id": "47127665",
+"time": "2138-06-24 10:36:00",
+"report": "*** CONSIDER ACUTE ST ELEVATION MI *** | Demand pacing | Severe right axis deviation | Right bundle branch block | Inferior infarct - age undetermined | Septal ST elevation, CONSIDER ACUTE INFARCT | Lateral ST-T changes are nonspecific | Abnormal ECG",
+"qrs": 134.0,
+"axis": -146.0,
+"rr": 689.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": 0.5,
+"V1": -24.7,
+"aVF": -50.1,
+"II": -55.6,
+"beats": 14
+},
+"path": "files/p1501/p15016682/s47127665/47127665"
+},
+{
+"subject_id": "10206502",
+"study_id": "45706640",
+"time": "2127-02-16 15:07:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 118.0,
+"axis": 177.0,
+"rr": 983.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -16.2,
+"V1": 9.2,
+"aVF": 1.0,
+"II": -5.7,
+"beats": 10
+},
+"path": "files/p1020/p10206502/s45706640/45706640"
+},
+{
+"subject_id": "13896515",
+"study_id": "44621908",
+"time": "2173-09-12 14:13:00",
+"report": "A-V dual-paced rhythm with some inhibition",
+"qrs": 155.0,
+"axis": 266.0,
+"rr": 833.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -8.0,
+"V1": 21.8,
+"aVF": -29.5,
+"II": -33.5,
+"beats": 11
+},
+"path": "files/p1389/p13896515/s44621908/44621908"
+},
+{
+"subject_id": "14568429",
+"study_id": "41527059",
+"time": "2122-07-10 12:04:00",
+"report": "--- Warning: Data quality may affect interpretation --- | Demand pacing. | --- Suspect limb lead reversal - only aVF, V1-V6 analyzed --- | LVH with secondary repolarization abnormality | Extensive ST-T changes are probably due to ventricular hypertrophy | Abnormal ECG",
+"qrs": 114.0,
+"axis": 96.0,
+"rr": 545.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": 19.7,
+"V1": 4.0,
+"aVF": -24.7,
+"II": -14.2,
+"beats": 18
+},
+"path": "files/p1456/p14568429/s41527059/41527059"
+},
+{
+"subject_id": "10297774",
+"study_id": "46068664",
+"time": "2195-01-18 08:46:00",
+"report": "Regular supraventricular rhythm | Demand atrial pacing. | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 110.0,
+"axis": 126.0,
+"rr": 869.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -23.5,
+"V1": -12.8,
+"aVF": 4.2,
+"II": -8.6,
+"beats": 13
+},
+"path": "files/p1029/p10297774/s46068664/46068664"
+},
+{
+"subject_id": "12856621",
+"study_id": "45728547",
+"time": "2125-08-26 11:05:00",
+"report": "A-V sequential pacemaker | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 136.0,
+"axis": -95.0,
+"rr": 869.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": 0.7,
+"V1": 9.9,
+"aVF": -16.2,
+"II": -15.8,
+"beats": 12
+},
+"path": "files/p1285/p12856621/s45728547/45728547"
+},
+{
+"subject_id": "15795108",
+"study_id": "44375504",
+"time": "2171-09-28 07:48:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 154.0,
+"axis": 133.0,
+"rr": 1000.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -36.0,
+"V1": 14.9,
+"aVF": 20.9,
+"II": 2.2,
+"beats": 10
+},
+"path": "files/p1579/p15795108/s44375504/44375504"
+},
+{
+"subject_id": "14846288",
+"study_id": "48130008",
+"time": "2140-08-25 07:30:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 146.0,
+"axis": -123.0,
+"rr": 750.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -13.1,
+"V1": 14.7,
+"aVF": -27.9,
+"II": -35.2,
+"beats": 13
+},
+"path": "files/p1484/p14846288/s48130008/48130008"
+},
+{
+"subject_id": "11816620",
+"study_id": "45621138",
+"time": "2158-06-22 01:28:00",
+"report": "Demand pacing. | Left axis deviation | RBBB with left anterior fascicular block | Inferior infarct - age undetermined | Lateral ST-T changes are nonspecific | Abnormal ECG",
+"qrs": 144.0,
+"axis": -111.0,
+"rr": 375.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -37.4,
+"V1": 63.6,
+"aVF": -54.6,
+"II": -73.1,
+"beats": 26
+},
+"path": "files/p1181/p11816620/s45621138/45621138"
+},
+{
+"subject_id": "10551762",
+"study_id": "41996960",
+"time": "2141-08-02 11:14:00",
+"report": "Afib/flutter and ventricular-paced rhythm",
+"qrs": 136.0,
+"axis": 244.0,
+"rr": 938.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -18.2,
+"V1": 43.9,
+"aVF": -59.6,
+"II": -68.4,
+"beats": 10
+},
+"path": "files/p1055/p10551762/s41996960/41996960"
+},
+{
+"subject_id": "11173810",
+"study_id": "48924976",
+"time": "2175-05-09 16:33:00",
+"report": "Ventricular pacing. | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 130.0,
+"axis": 137.0,
+"rr": 750.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -28.5,
+"V1": 7.2,
+"aVF": 23.3,
+"II": 1.3,
+"beats": 22
+},
+"path": "files/p1117/p11173810/s48924976/48924976"
+},
+{
+"subject_id": "10595153",
+"study_id": "45412129",
+"time": "2122-06-20 06:47:00",
+"report": "A-V sequential pacemaker. | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 164.0,
+"axis": -148.0,
+"rr": 923.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -8.1,
+"V1": 14.0,
+"aVF": -14.9,
+"II": -19.1,
+"beats": 11
+},
+"path": "files/p1059/p10595153/s45412129/45412129"
+},
+{
+"subject_id": "11445908",
+"study_id": "43229920",
+"time": "2165-12-30 14:00:00",
+"report": "Demand pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 112.0,
+"axis": 154.0,
+"rr": 705.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -23.5,
+"V1": 23.0,
+"aVF": -3.7,
+"II": -11.3,
+"beats": 18
+},
+"path": "files/p1144/p11445908/s43229920/43229920"
+},
+{
+"subject_id": "11102262",
+"study_id": "43814978",
+"time": "2120-12-18 08:19:00",
+"report": "A-V sequential pacemaker | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 150.0,
+"axis": -95.0,
+"rr": 800.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -14.2,
+"V1": 33.2,
+"aVF": -84.2,
+"II": -91.5,
+"beats": 13
+},
+"path": "files/p1110/p11102262/s43814978/43814978"
+},
+{
+"subject_id": "13310560",
+"study_id": "48141381",
+"time": "2198-01-15 10:30:00",
+"report": "Ventricular-paced rhythm",
+"qrs": 143.0,
+"axis": 211.0,
+"rr": 750.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -29.1,
+"V1": 19.8,
+"aVF": -12.8,
+"II": -26.4,
+"beats": 13
+},
+"path": "files/p1331/p13310560/s48141381/48141381"
+},
+{
+"subject_id": "13767422",
+"study_id": "40000162",
+"time": "2183-07-24 15:53:00",
+"report": "Demand pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 134.0,
+"axis": 107.0,
+"rr": 952.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": 8.4,
+"V1": 7.3,
+"aVF": -45.9,
+"II": -42.5,
+"beats": 10
+},
+"path": "files/p1376/p13767422/s40000162/40000162"
+},
+{
+"subject_id": "11058552",
+"study_id": "47479501",
+"time": "2180-10-21 00:52:00",
+"report": "Age not entered, assumed to be  50 years old for purpose of ECG interpretation | Atrial-sensed ventricular-paced rhythm",
+"qrs": 138.0,
+"axis": 157.0,
+"rr": 1017.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -32.4,
+"V1": -12.6,
+"aVF": 8.6,
+"II": -7.8,
+"beats": 10
+},
+"path": "files/p1105/p11058552/s47479501/47479501"
+},
+{
+"subject_id": "14303278",
+"study_id": "42834052",
+"time": "2163-06-18 17:41:00",
+"report": "Ventricular pacing. | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 152.0,
+"axis": -132.0,
+"rr": 923.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -16.2,
+"V1": -7.3,
+"aVF": -11.2,
+"II": -18.8,
+"beats": 11
+},
+"path": "files/p1430/p14303278/s42834052/42834052"
+},
+{
+"subject_id": "11120733",
+"study_id": "45899657",
+"time": "2184-12-10 12:47:00",
+"report": "Regular ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 146.0,
+"axis": -112.0,
+"rr": 1000.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -8.6,
+"V1": 24.1,
+"aVF": -8.2,
+"II": -12.6,
+"beats": 10
+},
+"path": "files/p1112/p11120733/s45899657/45899657"
+},
+{
+"subject_id": "15667641",
+"study_id": "42726775",
+"time": "2181-11-09 15:39:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 168.0,
+"axis": 159.0,
+"rr": 810.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": 2.8,
+"V1": -5.0,
+"aVF": -19.0,
+"II": -17.1,
+"beats": 12
+},
+"path": "files/p1566/p15667641/s42726775/42726775"
+},
+{
+"subject_id": "12515935",
+"study_id": "48798899",
+"time": "2187-03-24 14:17:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 128.0,
+"axis": 140.0,
+"rr": 923.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -19.4,
+"V1": 33.3,
+"aVF": -11.5,
+"II": -21.0,
+"beats": 11
+},
+"path": "files/p1251/p12515935/s48798899/48798899"
+},
+{
+"subject_id": "15690068",
+"study_id": "48652413",
+"time": "2138-08-09 11:34:00",
+"report": "Demand pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 158.0,
+"axis": 129.0,
+"rr": 952.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": 106.8,
+"V1": -69.1,
+"aVF": -108.9,
+"II": -55.1,
+"beats": 10
+},
+"path": "files/p1569/p15690068/s48652413/48652413"
+},
+{
+"subject_id": "12908337",
+"study_id": "43223687",
+"time": "2130-11-10 08:01:00",
+"report": "Ventricular pacing. | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 106.0,
+"axis": -98.0,
+"rr": 612.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -3.2,
+"V1": -12.2,
+"aVF": -20.4,
+"II": -20.5,
+"beats": 16
+},
+"path": "files/p1290/p12908337/s43223687/43223687"
+},
+{
+"subject_id": "14122424",
+"study_id": "45107171",
+"time": "2149-11-08 11:35:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 126.0,
+"axis": -95.0,
+"rr": 779.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -15.4,
+"V1": 17.5,
+"aVF": -28.3,
+"II": -36.6,
+"beats": 13
+},
+"path": "files/p1412/p14122424/s45107171/45107171"
+},
+{
+"subject_id": "13581631",
+"study_id": "40932495",
+"time": "2195-07-22 13:24:00",
+"report": "--- Warning: Data quality may affect interpretation --- | Atrial fibrillation | Demand pacing | Left axis deviation | RBBB with left anterior fascicular block | Possible extensive infarct - age undetermined | Abnormal ECG",
+"qrs": 124.0,
+"axis": -95.0,
+"rr": 731.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -5.8,
+"V1": 18.6,
+"aVF": -21.4,
+"II": -23.4,
+"beats": 14
+},
+"path": "files/p1358/p13581631/s40932495/40932495"
+},
+{
+"subject_id": "15435418",
+"study_id": "44406046",
+"time": "2172-05-27 16:28:00",
+"report": "Afib/flut and V-paced complexes | Right axis deviation | Nonspecific repol abnormality, diffuse leads",
+"qrs": 103.0,
+"axis": 93.0,
+"rr": 1091.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": 3.2,
+"V1": -5.0,
+"aVF": 0.9,
+"II": -0.8,
+"beats": 9
+},
+"path": "files/p1543/p15435418/s44406046/44406046"
+},
+{
+"subject_id": "16432211",
+"study_id": "47154469",
+"time": "2122-02-14 23:53:00",
+"report": "Ventricular pacing. | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 144.0,
+"axis": 123.0,
+"rr": 759.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -13.9,
+"V1": -22.6,
+"aVF": 18.9,
+"II": 12.6,
+"beats": 13
+},
+"path": "files/p1643/p16432211/s47154469/47154469"
+},
+{
+"subject_id": "16006352",
+"study_id": "45645366",
+"time": "2121-01-19 14:01:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 134.0,
+"axis": -137.0,
+"rr": 869.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -9.2,
+"V1": -6.0,
+"aVF": 2.7,
+"II": -1.8,
+"beats": 12
+},
+"path": "files/p1600/p16006352/s45645366/45645366"
+},
+{
+"subject_id": "14120064",
+"study_id": "46900174",
+"time": "2146-04-23 11:02:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 140.0,
+"axis": 142.0,
+"rr": 1071.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -497.7,
+"V1": -11.2,
+"aVF": -334.5,
+"II": -30.4,
+"beats": 12
+},
+"path": "files/p1412/p14120064/s46900174/46900174"
+},
+{
+"subject_id": "15477562",
+"study_id": "40817477",
+"time": "2129-05-09 14:21:00",
+"report": "Demand pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 154.0,
+"axis": -135.0,
+"rr": 833.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -29.7,
+"V1": 22.6,
+"aVF": -0.1,
+"II": -14.2,
+"beats": 13
+},
+"path": "files/p1547/p15477562/s40817477/40817477"
+},
+{
+"subject_id": "15770196",
+"study_id": "45907831",
+"time": "2119-11-22 07:01:00",
+"report": "Demand pacing. | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 138.0,
+"axis": -132.0,
+"rr": 674.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": 22.6,
+"V1": -89.2,
+"aVF": 17.9,
+"II": 29.5,
+"beats": 14
+},
+"path": "files/p1577/p15770196/s45907831/45907831"
+},
+{
+"subject_id": "10013643",
+"study_id": "41153744",
+"time": "2200-10-07 02:25:00",
+"report": "Demand pacing. | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 122.0,
+"axis": 113.0,
+"rr": 697.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -1.3,
+"V1": 4.3,
+"aVF": -16.8,
+"II": -16.6,
+"beats": 14
+},
+"path": "files/p1001/p10013643/s41153744/41153744"
+},
+{
+"subject_id": "12292383",
+"study_id": "49489142",
+"time": "2189-02-04 08:50:00",
+"report": "Ventricular-paced rhythm",
+"qrs": 169.0,
+"axis": 192.0,
+"rr": 1000.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -11.1,
+"V1": 1.8,
+"aVF": 7.3,
+"II": 2.6,
+"beats": 10
+},
+"path": "files/p1229/p12292383/s49489142/49489142"
+},
+{
+"subject_id": "11581510",
+"study_id": "46376005",
+"time": "2149-01-14 15:28:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 146.0,
+"axis": -93.0,
+"rr": 779.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -12.0,
+"V1": 5.3,
+"aVF": -18.3,
+"II": -24.6,
+"beats": 13
+},
+"path": "files/p1158/p11581510/s46376005/46376005"
+},
+{
+"subject_id": "12454546",
+"study_id": "48179639",
+"time": "2139-08-08 09:20:00",
+"report": "A-V sequential pacemaker | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 120.0,
+"axis": -95.0,
+"rr": 612.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -3.4,
+"V1": 13.4,
+"aVF": -35.8,
+"II": -38.2,
+"beats": 16
+},
+"path": "files/p1245/p12454546/s48179639/48179639"
+},
+{
+"subject_id": "12724352",
+"study_id": "45178092",
+"time": "2190-02-06 10:05:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 152.0,
+"axis": 154.0,
+"rr": 895.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -35.5,
+"V1": 3.6,
+"aVF": 14.0,
+"II": -5.1,
+"beats": 19
+},
+"path": "files/p1272/p12724352/s45178092/45178092"
+},
+{
+"subject_id": "15071083",
+"study_id": "45176550",
+"time": "2157-01-24 15:25:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 164.0,
+"axis": -101.0,
+"rr": 800.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -9.4,
+"V1": 18.3,
+"aVF": -10.8,
+"II": -15.7,
+"beats": 12
+},
+"path": "files/p1507/p15071083/s45176550/45176550"
+},
+{
+"subject_id": "16900046",
+"study_id": "41897166",
+"time": "2177-02-25 15:51:00",
+"report": "Demand pacing. | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 128.0,
+"axis": 165.0,
+"rr": 789.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -19.1,
+"V1": 4.0,
+"aVF": 5.0,
+"II": -4.6,
+"beats": 12
+},
+"path": "files/p1690/p16900046/s41897166/41897166"
+},
+{
+"subject_id": "11257115",
+"study_id": "42809280",
+"time": "2143-06-17 14:25:00",
+"report": "Demand pacing. | Lead(s) unsuitable for analysis: I II III aVR aVL V4 | --- Suspect limb lead reversal - only aVF, V1-V6 analyzed --- | Inferior infarct - age undetermined | Septal ST elevation, CONSIDER ACUTE INFARCT | Abnormal ECG",
+"qrs": 110.0,
+"axis": -107.0,
+"rr": 882.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": 29.3,
+"V1": -15.2,
+"aVF": -33.9,
+"II": -19.2,
+"beats": 11
+},
+"path": "files/p1125/p11257115/s42809280/42809280"
+},
+{
+"subject_id": "13225183",
+"study_id": "44375271",
+"time": "2149-09-24 12:30:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 112.0,
+"axis": -133.0,
+"rr": 800.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": null,
+"path": "files/p1322/p13225183/s44375271/44375271"
+},
+{
+"subject_id": "13162061",
+"study_id": "45082514",
+"time": "2150-04-12 08:57:00",
+"report": "A-V sequential pacemaker | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 144.0,
+"axis": -157.0,
+"rr": 1000.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -18.6,
+"V1": 21.7,
+"aVF": 0.5,
+"II": -7.9,
+"beats": 10
+},
+"path": "files/p1316/p13162061/s45082514/45082514"
+},
+{
+"subject_id": "16580488",
+"study_id": "43807987",
+"time": "2173-07-28 20:48:00",
+"report": "*** CONSIDER ACUTE ST ELEVATION MI *** | Demand pacing | Right axis deviation | Right bundle branch block | Inferior and septal ST elevation, CONSIDER ACUTE INFARCT | Lateral ST-T changes are nonspecific | Abnormal ECG",
+"qrs": 140.0,
+"axis": 150.0,
+"rr": 983.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": 4.7,
+"V1": 3.1,
+"aVF": -25.1,
+"II": -21.9,
+"beats": 11
+},
+"path": "files/p1658/p16580488/s43807987/43807987"
+},
+{
+"subject_id": "14811786",
+"study_id": "46327687",
+"time": "2194-12-03 13:35:00",
+"report": "Demand pacing. | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 148.0,
+"axis": 97.0,
+"rr": 789.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -7.1,
+"V1": -47.3,
+"aVF": 25.5,
+"II": 22.1,
+"beats": 12
+},
+"path": "files/p1481/p14811786/s46327687/46327687"
+},
+{
+"subject_id": "12116250",
+"study_id": "47733044",
+"time": "2175-08-25 15:11:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 166.0,
+"axis": 153.0,
+"rr": 1500.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -363.3,
+"V1": 18.5,
+"aVF": -34.7,
+"II": -37.5,
+"beats": 10
+},
+"path": "files/p1211/p12116250/s47733044/47733044"
+},
+{
+"subject_id": "13050109",
+"study_id": "47500227",
+"time": "2173-06-26 15:21:00",
+"report": "A-V sequential pacemaker | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 142.0,
+"axis": -94.0,
+"rr": 869.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": 13.2,
+"V1": -39.8,
+"aVF": -43.0,
+"II": -35.5,
+"beats": 12
+},
+"path": "files/p1305/p13050109/s47500227/47500227"
+},
+{
+"subject_id": "12475198",
+"study_id": "45500289",
+"time": "2151-05-09 07:57:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 138.0,
+"axis": 161.0,
+"rr": 895.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -39.5,
+"V1": -2.9,
+"aVF": 9.4,
+"II": -10.2,
+"beats": 11
+},
+"path": "files/p1247/p12475198/s45500289/45500289"
+},
+{
+"subject_id": "16733219",
+"study_id": "41770897",
+"time": "2142-04-05 09:06:00",
+"report": "Sinus rhythm with 1st degree A-V block | Demand pacing. | --- Suspect arm lead reversal - only aVF, V1-V6 analyzed --- | Possible biatrial enlargement | IV conduction defect | Possible anterolateral infarct - age undetermined | Inferior ST-T changes are nonspecific | Abnormal ECG",
+"qrs": 160.0,
+"axis": 102.0,
+"rr": 810.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -3.0,
+"V1": -8.8,
+"aVF": 11.8,
+"II": 6.3,
+"beats": 17
+},
+"path": "files/p1673/p16733219/s41770897/41770897"
+},
+{
+"subject_id": "12677040",
+"study_id": "49445208",
+"time": "2184-08-24 09:05:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 134.0,
+"axis": -102.0,
+"rr": 857.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -2.7,
+"V1": -14.0,
+"aVF": -23.2,
+"II": -24.3,
+"beats": 12
+},
+"path": "files/p1267/p12677040/s49445208/49445208"
+},
+{
+"subject_id": "15394042",
+"study_id": "46940907",
+"time": "2165-12-22 09:05:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 122.0,
+"axis": -95.0,
+"rr": 923.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": 6.4,
+"V1": 9.3,
+"aVF": -60.6,
+"II": -57.1,
+"beats": 11
+},
+"path": "files/p1539/p15394042/s46940907/46940907"
+},
+{
+"subject_id": "10421607",
+"study_id": "41016683",
+"time": "2192-07-27 13:53:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 152.0,
+"axis": 154.0,
+"rr": 895.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -2.7,
+"V1": -13.0,
+"aVF": -47.6,
+"II": -49.0,
+"beats": 11
+},
+"path": "files/p1042/p10421607/s41016683/41016683"
+},
+{
+"subject_id": "17049500",
+"study_id": "40954503",
+"time": "2182-01-31 14:42:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 144.0,
+"axis": -151.0,
+"rr": 857.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -18.5,
+"V1": 8.0,
+"aVF": -1.6,
+"II": -11.5,
+"beats": 12
+},
+"path": "files/p1704/p17049500/s40954503/40954503"
+},
+{
+"subject_id": "16297362",
+"study_id": "46129527",
+"time": "2151-03-27 04:27:00",
+"report": "Demand pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 138.0,
+"axis": -111.0,
+"rr": 750.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -9.4,
+"V1": -5.5,
+"aVF": -4.6,
+"II": -9.4,
+"beats": 14
+},
+"path": "files/p1629/p16297362/s46129527/46129527"
+},
+{
+"subject_id": "13026790",
+"study_id": "44173880",
+"time": "2150-09-18 14:20:00",
+"report": "Ventricular pacing | Possible faulty V3 - omitted from analysis | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 152.0,
+"axis": -117.0,
+"rr": 750.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -15.1,
+"V1": 26.5,
+"aVF": -16.2,
+"II": -23.8,
+"beats": 11
+},
+"path": "files/p1302/p13026790/s44173880/44173880"
+},
+{
+"subject_id": "15375544",
+"study_id": "49993135",
+"time": "2149-10-24 10:28:00",
+"report": "A-V dual-paced rhythm with some inhibition",
+"qrs": 161.0,
+"axis": 93.0,
+"rr": 652.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": 0.4,
+"V1": -62.4,
+"aVF": 27.5,
+"II": 26.3,
+"beats": 18
+},
+"path": "files/p1537/p15375544/s49993135/49993135"
+},
+{
+"subject_id": "10553622",
+"study_id": "49289860",
+"time": "2132-02-18 21:12:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 136.0,
+"axis": -163.0,
+"rr": 779.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": 5.1,
+"V1": -37.7,
+"aVF": -21.1,
+"II": -16.3,
+"beats": 13
+},
+"path": "files/p1055/p10553622/s49289860/49289860"
+},
+{
+"subject_id": "12178737",
+"study_id": "41103414",
+"time": "2130-01-17 15:04:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 118.0,
+"axis": 119.0,
+"rr": 705.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -33.4,
+"V1": -61.8,
+"aVF": 50.0,
+"II": 33.3,
+"beats": 14
+},
+"path": "files/p1217/p12178737/s41103414/41103414"
+},
+{
+"subject_id": "15792283",
+"study_id": "49121093",
+"time": "2147-12-25 15:32:00",
+"report": "Demand pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 116.0,
+"axis": 107.0,
+"rr": 882.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -10.4,
+"V1": 2.5,
+"aVF": 12.2,
+"II": 3.5,
+"beats": 11
+},
+"path": "files/p1579/p15792283/s49121093/49121093"
+},
+{
+"subject_id": "14070216",
+"study_id": "40504065",
+"time": "2167-10-06 19:52:00",
+"report": "Demand pacing | --- Suspect arm lead reversal - only aVF, V1-V6 analyzed --- | IV conduction defect | Possible septal infarct - age undetermined | LVH with secondary repolarization abnormality | Inferior/lateral ST-T changes may be due to hypertrophy and/or ischemia | Abnormal ECG",
+"qrs": 132.0,
+"axis": 100.0,
+"rr": 800.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -4.1,
+"V1": -20.1,
+"aVF": 23.6,
+"II": 22.2,
+"beats": 13
+},
+"path": "files/p1407/p14070216/s40504065/40504065"
+},
+{
+"subject_id": "17041931",
+"study_id": "44371295",
+"time": "2189-02-13 18:58:00",
+"report": "*** CONSIDER ACUTE ST ELEVATION MI *** | Demand pacing | Right axis deviation | IV conduction defect | Inferior and septal ST elevation, CONSIDER ACUTE INFARCT | Anteroseptal ST depression is probably reciprocal to inferior infarct | Lateral ST-T changes are nonspecific | Abnormal ECG",
+"qrs": 170.0,
+"axis": 141.0,
+"rr": 625.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -19.8,
+"V1": 27.9,
+"aVF": -8.4,
+"II": -19.4,
+"beats": 16
+},
+"path": "files/p1704/p17041931/s44371295/44371295"
+},
+{
+"subject_id": "10953601",
+"study_id": "41473261",
+"time": "2169-01-27 14:07:00",
+"report": "A-V sequential pacemaker | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 154.0,
+"axis": -105.0,
+"rr": 1000.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -9.3,
+"V1": 0.5,
+"aVF": 4.9,
+"II": 1.3,
+"beats": 10
+},
+"path": "files/p1095/p10953601/s41473261/41473261"
+},
+{
+"subject_id": "15460870",
+"study_id": "43452021",
+"time": "2128-10-13 09:42:00",
+"report": "Ventricular-paced complexes | Nonspecific IVCD with LAD | Inferolateral infarct, acute | Anterior infarct, old",
+"qrs": 158.0,
+"axis": 263.0,
+"rr": 800.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -34.8,
+"V1": 20.6,
+"aVF": -1.3,
+"II": -19.3,
+"beats": 12
+},
+"path": "files/p1546/p15460870/s43452021/43452021"
+},
+{
+"subject_id": "12975635",
+"study_id": "42267572",
+"time": "2114-10-03 09:27:00",
+"report": "A-V sequential pacemaker | Demand pacing | Severe right axis deviation | Incomplete LBBB | Extensive infarct - age undetermined | Low QRS voltages in precordial leads | Abnormal ECG",
+"qrs": 142.0,
+"axis": -122.0,
+"rr": 857.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": 38.3,
+"V1": 4.7,
+"aVF": 27.8,
+"II": 48.3,
+"beats": 12
+},
+"path": "files/p1297/p12975635/s42267572/42267572"
+},
+{
+"subject_id": "17009014",
+"study_id": "42733004",
+"time": "2132-10-02 10:23:00",
+"report": "A-V sequential pacemaker | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 154.0,
+"axis": -98.0,
+"rr": 857.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -0.7,
+"V1": -0.1,
+"aVF": -55.5,
+"II": -56.1,
+"beats": 12
+},
+"path": "files/p1700/p17009014/s42733004/42733004"
+},
+{
+"subject_id": "16425533",
+"study_id": "43353675",
+"time": "2197-01-08 14:40:00",
+"report": "Atrial-sensed ventricular-paced rhythm",
+"qrs": 134.0,
+"axis": 150.0,
+"rr": 690.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -52.1,
+"V1": 19.7,
+"aVF": -2.2,
+"II": -28.2,
+"beats": 14
+},
+"path": "files/p1642/p16425533/s43353675/43353675"
+},
+{
+"subject_id": "11538723",
+"study_id": "44301103",
+"time": "2166-05-05 19:01:00",
+"report": "Demand pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 128.0,
+"axis": -98.0,
+"rr": 857.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -2.6,
+"V1": 12.0,
+"aVF": -45.3,
+"II": -47.8,
+"beats": 13
+},
+"path": "files/p1153/p11538723/s44301103/44301103"
+},
+{
+"subject_id": "11148678",
+"study_id": "47437939",
+"time": "2147-09-21 14:48:00",
+"report": "Ventricular pacing. | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 136.0,
+"axis": -106.0,
+"rr": 857.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": 4.3,
+"V1": -24.6,
+"aVF": -34.2,
+"II": -29.1,
+"beats": 12
+},
+"path": "files/p1114/p11148678/s47437939/47437939"
+},
+{
+"subject_id": "10798368",
+"study_id": "46146064",
+"time": "2131-03-25 16:11:00",
+"report": "Ventricular pacing. | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 128.0,
+"axis": 128.0,
+"rr": 750.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -25.4,
+"V1": 5.7,
+"aVF": 20.2,
+"II": 7.6,
+"beats": 13
+},
+"path": "files/p1079/p10798368/s46146064/46146064"
+},
+{
+"subject_id": "12738850",
+"study_id": "40119336",
+"time": "2147-02-25 11:46:00",
+"report": "Demand pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 156.0,
+"axis": 164.0,
+"rr": 833.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -37.3,
+"V1": 12.7,
+"aVF": 8.0,
+"II": -12.2,
+"beats": 12
+},
+"path": "files/p1273/p12738850/s40119336/40119336"
+},
+{
+"subject_id": "13487357",
+"study_id": "46577117",
+"time": "2198-08-25 11:24:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 134.0,
+"axis": -100.0,
+"rr": 1090.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -8.6,
+"V1": 10.9,
+"aVF": -20.6,
+"II": -25.1,
+"beats": 9
+},
+"path": "files/p1348/p13487357/s46577117/46577117"
+},
+{
+"subject_id": "16808621",
+"study_id": "46055333",
+"time": "2128-07-30 09:11:00",
+"report": "Demand pacing | Rightward axis | Right bundle branch block | Possible left ventricular hypertrophy | Marked precordial ST depression, CONSIDER ACUTE INFARCT | Inferior/lateral ST-T changes may be due to hypertrophy and/or ischemia | Abnormal ECG",
+"qrs": 162.0,
+"axis": 98.0,
+"rr": 750.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -11.8,
+"V1": 25.4,
+"aVF": -16.0,
+"II": -21.7,
+"beats": 13
+},
+"path": "files/p1680/p16808621/s46055333/46055333"
+},
+{
+"subject_id": "15423205",
+"study_id": "45700955",
+"time": "2124-03-13 19:44:00",
+"report": "A-V dual-paced rhythm with some inhibition",
+"qrs": 133.0,
+"axis": 234.0,
+"rr": 984.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -0.2,
+"V1": -15.2,
+"aVF": -10.8,
+"II": -12.3,
+"beats": 15
+},
+"path": "files/p1542/p15423205/s45700955/45700955"
+},
+{
+"subject_id": "12930251",
+"study_id": "45295807",
+"time": "2135-12-18 08:21:00",
+"report": "A-V dual-paced rhythm with some inhibition",
+"qrs": 157.0,
+"axis": 241.0,
+"rr": 1000.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -13.0,
+"V1": -4.8,
+"aVF": -24.4,
+"II": -30.9,
+"beats": 10
+},
+"path": "files/p1293/p12930251/s45295807/45295807"
+},
+{
+"subject_id": "13423238",
+"study_id": "43557740",
+"time": "2130-08-07 23:27:00",
+"report": "Atrial fibrillation | Demand pacing | Rightward axis | Right bundle branch block | Inferior/lateral ST-T changes are nonspecific | Low QRS voltages in limb leads | Abnormal ECG",
+"qrs": 140.0,
+"axis": 95.0,
+"rr": 750.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -6.3,
+"V1": 17.2,
+"aVF": 19.8,
+"II": 16.2,
+"beats": 14
+},
+"path": "files/p1342/p13423238/s43557740/43557740"
+},
+{
+"subject_id": "12705612",
+"study_id": "42994117",
+"time": "2138-10-12 10:13:00",
+"report": "Ventricular pacing. | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 120.0,
+"axis": 135.0,
+"rr": 869.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -38.4,
+"V1": -0.3,
+"aVF": 35.7,
+"II": 17.8,
+"beats": 12
+},
+"path": "files/p1270/p12705612/s42994117/42994117"
+},
+{
+"subject_id": "11220334",
+"study_id": "44043586",
+"time": "2165-02-16 17:25:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 170.0,
+"axis": -99.0,
+"rr": 967.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": 10.2,
+"V1": -2.5,
+"aVF": -32.7,
+"II": -26.8,
+"beats": 8
+},
+"path": "files/p1122/p11220334/s44043586/44043586"
+},
+{
+"subject_id": "11107643",
+"study_id": "46702752",
+"time": "2160-10-15 23:46:00",
+"report": "Demand pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 164.0,
+"axis": -100.0,
+"rr": 612.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": 19.7,
+"V1": -3.3,
+"aVF": -32.3,
+"II": -23.2,
+"beats": 16
+},
+"path": "files/p1110/p11107643/s46702752/46702752"
+},
+{
+"subject_id": "15384508",
+"study_id": "46717460",
+"time": "2177-02-17 20:04:00",
+"report": "Age not entered, assumed to be  50 years old for purpose of ECG interpretation | Afib/flut and V-paced complexes | Nonspecific repol abnormality, diffuse leads",
+"qrs": 97.0,
+"axis": 91.0,
+"rr": 531.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": 0.8,
+"V1": -14.2,
+"aVF": 25.0,
+"II": 24.1,
+"beats": 18
+},
+"path": "files/p1538/p15384508/s46717460/46717460"
+},
+{
+"subject_id": "12305811",
+"study_id": "44351423",
+"time": "2136-08-22 08:25:00",
+"report": "Afib/flutter and ventricular-paced rhythm",
+"qrs": 170.0,
+"axis": 264.0,
+"rr": 845.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -3.7,
+"V1": 6.6,
+"aVF": -2.2,
+"II": -4.7,
+"beats": 12
+},
+"path": "files/p1230/p12305811/s44351423/44351423"
+},
+{
+"subject_id": "12430513",
+"study_id": "46212434",
+"time": "2114-09-27 15:08:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 128.0,
+"axis": -108.0,
+"rr": 1000.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -15.1,
+"V1": -11.8,
+"aVF": -35.9,
+"II": -43.5,
+"beats": 10
+},
+"path": "files/p1243/p12430513/s46212434/46212434"
+},
+{
+"subject_id": "15870527",
+"study_id": "48079684",
+"time": "2160-11-05 00:07:00",
+"report": "Atrial-sensed ventricular-paced rhythm",
+"qrs": 140.0,
+"axis": 147.0,
+"rr": 923.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -33.9,
+"V1": 16.5,
+"aVF": -6.6,
+"II": -23.4,
+"beats": 10
+},
+"path": "files/p1587/p15870527/s48079684/48079684"
+},
+{
+"subject_id": "15305912",
+"study_id": "48873445",
+"time": "2137-12-16 14:51:00",
+"report": "A-V sequential pacemaker | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 122.0,
+"axis": 107.0,
+"rr": 810.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -8.8,
+"V1": -19.4,
+"aVF": 36.8,
+"II": 32.2,
+"beats": 11
+},
+"path": "files/p1530/p15305912/s48873445/48873445"
+},
+{
+"subject_id": "13785095",
+"study_id": "45690722",
+"time": "2115-02-25 16:56:00",
+"report": "Demand pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 158.0,
+"axis": -110.0,
+"rr": 857.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -18.7,
+"V1": 7.3,
+"aVF": -28.9,
+"II": -39.9,
+"beats": 11
+},
+"path": "files/p1378/p13785095/s45690722/45690722"
+},
+{
+"subject_id": "15121137",
+"study_id": "42915457",
+"time": "2131-03-25 13:38:00",
+"report": "Ventricular-paced complexes",
+"qrs": 158.0,
+"axis": 107.0,
+"rr": 741.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": 26.5,
+"V1": -38.7,
+"aVF": -43.0,
+"II": -31.5,
+"beats": 13
+},
+"path": "files/p1512/p15121137/s42915457/42915457"
+},
+{
+"subject_id": "13931777",
+"study_id": "48611694",
+"time": "2141-09-04 08:48:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 136.0,
+"axis": -129.0,
+"rr": 666.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": 6.0,
+"V1": -18.0,
+"aVF": -9.4,
+"II": -7.1,
+"beats": 15
+},
+"path": "files/p1393/p13931777/s48611694/48611694"
+},
+{
+"subject_id": "16499140",
+"study_id": "45215979",
+"time": "2173-09-29 20:38:00",
+"report": "Atrial-sensed ventricular-paced rhythm",
+"qrs": 153.0,
+"axis": 156.0,
+"rr": 759.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -25.7,
+"V1": 29.8,
+"aVF": -5.7,
+"II": -17.4,
+"beats": 13
+},
+"path": "files/p1649/p16499140/s45215979/45215979"
+},
+{
+"subject_id": "12215883",
+"study_id": "42097883",
+"time": "2144-07-23 14:31:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 136.0,
+"axis": 95.0,
+"rr": 882.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -3.4,
+"V1": -36.6,
+"aVF": 42.2,
+"II": 39.5,
+"beats": 11
+},
+"path": "files/p1221/p12215883/s42097883/42097883"
+},
+{
+"subject_id": "11482557",
+"study_id": "44706996",
+"time": "2180-06-06 14:39:00",
+"report": "Dual chamber pacemaker | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 164.0,
+"axis": -119.0,
+"rr": 821.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -27.9,
+"V1": 11.9,
+"aVF": -24.8,
+"II": -38.9,
+"beats": 12
+},
+"path": "files/p1148/p11482557/s44706996/44706996"
+},
+{
+"subject_id": "13098632",
+"study_id": "45743844",
+"time": "2160-06-10 14:40:00",
+"report": "Atrial fibrillation | Demand pacing | Rightward axis | Incomplete LBBB | Lateral infarct - age undetermined | Inferior and anterior ST-T changes are nonspecific | Abnormal ECG",
+"qrs": 132.0,
+"axis": 99.0,
+"rr": 714.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": 15.4,
+"V1": -64.7,
+"aVF": -0.1,
+"II": 8.8,
+"beats": 14
+},
+"path": "files/p1309/p13098632/s45743844/45743844"
+},
+{
+"subject_id": "13496639",
+"study_id": "48563221",
+"time": "2170-04-04 18:47:00",
+"report": "Undetermined rhythm | - demand ventricular pacing | *** report made without knowing patient's sex or age *** | *** complex QRS morphology - no further analysis *** | Abnormal ECG",
+"qrs": 130.0,
+"axis": -122.0,
+"rr": 631.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": 7.6,
+"V1": 29.3,
+"aVF": -405.5,
+"II": -95.7,
+"beats": 6
+},
+"path": "files/p1349/p13496639/s48563221/48563221"
+},
+{
+"subject_id": "14089595",
+"study_id": "47810920",
+"time": "2191-05-26 10:11:00",
+"report": "Demand pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 130.0,
+"axis": -128.0,
+"rr": 869.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -18.0,
+"V1": 11.6,
+"aVF": 3.9,
+"II": -4.9,
+"beats": 12
+},
+"path": "files/p1408/p14089595/s47810920/47810920"
+},
+{
+"subject_id": "13410750",
+"study_id": "48278831",
+"time": "2145-03-01 11:36:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 142.0,
+"axis": -171.0,
+"rr": 882.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": 1.2,
+"V1": 8.8,
+"aVF": -0.5,
+"II": -0.4,
+"beats": 13
+},
+"path": "files/p1341/p13410750/s48278831/48278831"
+},
+{
+"subject_id": "12211901",
+"study_id": "47246579",
+"time": "2145-12-27 09:55:00",
+"report": "Atrial-sensed ventricular-paced rhythm",
+"qrs": 157.0,
+"axis": 252.0,
+"rr": 682.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -3.2,
+"V1": -7.3,
+"aVF": 1.0,
+"II": 3.5,
+"beats": 15
+},
+"path": "files/p1221/p12211901/s47246579/47246579"
+},
+{
+"subject_id": "16884448",
+"study_id": "48315016",
+"time": "2127-12-07 20:33:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 152.0,
+"axis": -141.0,
+"rr": 1090.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -9.8,
+"V1": 21.0,
+"aVF": -10.7,
+"II": -15.1,
+"beats": 9
+},
+"path": "files/p1688/p16884448/s48315016/48315016"
+},
+{
+"subject_id": "12372526",
+"study_id": "47123555",
+"time": "2135-04-27 14:55:00",
+"report": "Regular A-V sequential pacing | *** report made without knowing patient's sex or age *** | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 168.0,
+"axis": -93.0,
+"rr": 631.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": 1.6,
+"V1": -1.3,
+"aVF": -34.1,
+"II": -32.1,
+"beats": 16
+},
+"path": "files/p1237/p12372526/s47123555/47123555"
+},
+{
+"subject_id": "11145090",
+"study_id": "40789381",
+"time": "2139-06-21 18:05:00",
+"report": "A-V sequential pacemaker. | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 132.0,
+"axis": 130.0,
+"rr": 833.0,
+"vent": true,
+"malf": false,
+"guess": "biv?",
+"pol": {
+"I": -29.1,
+"V1": 14.3,
+"aVF": 23.1,
+"II": 8.5,
+"beats": 12
+},
+"path": "files/p1114/p11145090/s40789381/40789381"
+},
+{
+"subject_id": "12643557",
+"study_id": "48999665",
+"time": "2167-01-25 07:16:00",
+"report": "Atrial-sensed ventricular-paced rhythm",
+"qrs": 174.0,
+"axis": 137.0,
+"rr": 952.0,
+"vent": true,
+"malf": false,
+"guess": "lv?",
+"pol": {
+"I": -5.0,
+"V1": -17.2,
+"aVF": -5.5,
+"II": -8.6,
+"beats": 10
+},
+"path": "files/p1264/p12643557/s48999665/48999665"
+},
+{
+"subject_id": "12227507",
+"study_id": "40461008",
+"time": "2187-03-25 13:31:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 172.0,
+"axis": -138.0,
+"rr": 750.0,
+"vent": true,
+"malf": false,
+"guess": "lv?",
+"pol": {
+"I": -19.1,
+"V1": -1.7,
+"aVF": -2.5,
+"II": -12.1,
+"beats": 13
+},
+"path": "files/p1222/p12227507/s40461008/40461008"
+},
+{
+"subject_id": "16345787",
+"study_id": "47852937",
+"time": "2174-03-05 11:21:00",
+"report": "Dual chamber pacemaker | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 174.0,
+"axis": 114.0,
+"rr": 869.0,
+"vent": true,
+"malf": false,
+"guess": "lv?",
+"pol": {
+"I": -11.8,
+"V1": 4.9,
+"aVF": 9.8,
+"II": 4.6,
+"beats": 11
+},
+"path": "files/p1634/p16345787/s47852937/47852937"
+},
+{
+"subject_id": "16289699",
+"study_id": "40836342",
+"time": "2149-08-24 13:23:00",
+"report": "Demand pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 182.0,
+"axis": 168.0,
+"rr": 857.0,
+"vent": true,
+"malf": false,
+"guess": "lv?",
+"pol": {
+"I": -18.1,
+"V1": 2.9,
+"aVF": 7.3,
+"II": -1.6,
+"beats": 12
+},
+"path": "files/p1628/p16289699/s40836342/40836342"
+},
+{
+"subject_id": "15795108",
+"study_id": "47315666",
+"time": "2171-09-27 15:35:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 192.0,
+"axis": 157.0,
+"rr": 1000.0,
+"vent": true,
+"malf": false,
+"guess": "lv?",
+"pol": {
+"I": -39.9,
+"V1": 17.9,
+"aVF": 27.5,
+"II": 6.0,
+"beats": 10
+},
+"path": "files/p1579/p15795108/s47315666/47315666"
+},
+{
+"subject_id": "11607177",
+"study_id": "44749943",
+"time": "2148-12-12 09:06:00",
+"report": "*** CONSIDER ACUTE ST ELEVATION MI *** | Demand pacing | Rightward axis | IV conduction defect | Inferior ST elevation, CONSIDER ACUTE INFARCT | Anteroseptal ST depression is probably reciprocal to inferior infarct | Lateral ST-T changes are nonspecific | Abnormal ECG",
+"qrs": 172.0,
+"axis": 100.0,
+"rr": 731.0,
+"vent": true,
+"malf": false,
+"guess": "lv?",
+"pol": {
+"I": -19.9,
+"V1": 10.8,
+"aVF": 2.0,
+"II": -8.5,
+"beats": 10
+},
+"path": "files/p1160/p11607177/s44749943/44749943"
+},
+{
+"subject_id": "11386787",
+"study_id": "49877283",
+"time": "2143-04-13 09:51:00",
+"report": "Demand pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 178.0,
+"axis": 159.0,
+"rr": 833.0,
+"vent": true,
+"malf": false,
+"guess": "lv?",
+"pol": {
+"I": -12.8,
+"V1": 0.8,
+"aVF": -7.5,
+"II": -14.7,
+"beats": 12
+},
+"path": "files/p1138/p11386787/s49877283/49877283"
+},
+{
+"subject_id": "16663465",
+"study_id": "44350828",
+"time": "2144-03-17 14:38:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 178.0,
+"axis": -95.0,
+"rr": 967.0,
+"vent": true,
+"malf": false,
+"guess": "lv?",
+"pol": {
+"I": 5.5,
+"V1": -29.3,
+"aVF": -53.1,
+"II": -49.9,
+"beats": 10
+},
+"path": "files/p1666/p16663465/s44350828/44350828"
+},
+{
+"subject_id": "12317833",
+"study_id": "43289190",
+"time": "2138-09-07 08:53:00",
+"report": "A-V sequential pacemaker | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 182.0,
+"axis": -110.0,
+"rr": 869.0,
+"vent": true,
+"malf": false,
+"guess": "lv?",
+"pol": {
+"I": -29.5,
+"V1": 28.4,
+"aVF": -19.1,
+"II": -33.8,
+"beats": 12
+},
+"path": "files/p1231/p12317833/s43289190/43289190"
+},
+{
+"subject_id": "10538657",
+"study_id": "49063116",
+"time": "2149-08-15 11:46:00",
+"report": "Demand pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 184.0,
+"axis": 139.0,
+"rr": 740.0,
+"vent": true,
+"malf": false,
+"guess": "lv?",
+"pol": {
+"I": 8.7,
+"V1": -6.2,
+"aVF": -19.1,
+"II": -13.1,
+"beats": 15
+},
+"path": "files/p1053/p10538657/s49063116/49063116"
+},
+{
+"subject_id": "13896515",
+"study_id": "48168845",
+"time": "2173-01-13 17:54:00",
+"report": "Age not entered, assumed to be  50 years old for purpose of ECG interpretation | Atrial-sensed ventricular-paced complexes | Consider dextrocardia",
+"qrs": 238.0,
+"axis": 156.0,
+"rr": 723.0,
+"vent": true,
+"malf": false,
+"guess": "lv?",
+"pol": {
+"I": -8.8,
+"V1": 20.4,
+"aVF": -23.4,
+"II": -27.9,
+"beats": 13
+},
+"path": "files/p1389/p13896515/s48168845/48168845"
+},
+{
+"subject_id": "12885531",
+"study_id": "41005111",
+"time": "2125-08-23 13:03:00",
+"report": "*** CONSIDER ACUTE ST ELEVATION MI *** | Demand pacing | --- Possible measurement error --- | Right axis deviation | Right bundle branch block | Lateral infarct - age undetermined | Septal ST elevation, CONSIDER ACUTE INFARCT | Inferior T wave changes are nonspecific | Abnormal ECG",
+"qrs": 176.0,
+"axis": 167.0,
+"rr": 714.0,
+"vent": true,
+"malf": false,
+"guess": "lv?",
+"pol": {
+"I": 33.5,
+"V1": -7.5,
+"aVF": -52.0,
+"II": -35.3,
+"beats": 15
+},
+"path": "files/p1288/p12885531/s41005111/41005111"
+},
+{
+"subject_id": "14297125",
+"study_id": "49979079",
+"time": "2177-06-21 06:38:00",
+"report": "Ventricular-paced complexes",
+"qrs": 172.0,
+"axis": 116.0,
+"rr": 1000.0,
+"vent": true,
+"malf": false,
+"guess": "lv?",
+"pol": {
+"I": -3.7,
+"V1": 8.1,
+"aVF": 13.7,
+"II": 11.0,
+"beats": 11
+},
+"path": "files/p1429/p14297125/s49979079/49979079"
+},
+{
+"subject_id": "10023117",
+"study_id": "41824954",
+"time": "2175-07-06 15:14:00",
+"report": "Ventricular-paced rhythm",
+"qrs": 180.0,
+"axis": 132.0,
+"rr": 550.0,
+"vent": true,
+"malf": false,
+"guess": "lv?",
+"pol": {
+"I": -22.9,
+"V1": -54.2,
+"aVF": 24.3,
+"II": 11.8,
+"beats": 18
+},
+"path": "files/p1002/p10023117/s41824954/41824954"
+},
+{
+"subject_id": "13674486",
+"study_id": "43698838",
+"time": "2155-05-09 11:18:00",
+"report": "Ventricular pacing. | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 180.0,
+"axis": -114.0,
+"rr": 800.0,
+"vent": true,
+"malf": false,
+"guess": "lv?",
+"pol": {
+"I": 1.2,
+"V1": -5.9,
+"aVF": 3.1,
+"II": 3.9,
+"beats": 13
+},
+"path": "files/p1367/p13674486/s43698838/43698838"
+},
+{
+"subject_id": "16045829",
+"study_id": "46403938",
+"time": "2135-08-06 16:52:00",
+"report": "Atrial-sensed ventricular-paced rhythm",
+"qrs": 171.0,
+"axis": 202.0,
+"rr": 882.0,
+"vent": true,
+"malf": false,
+"guess": "lv?",
+"pol": {
+"I": -19.9,
+"V1": 23.2,
+"aVF": -13.8,
+"II": -25.6,
+"beats": 11
+},
+"path": "files/p1604/p16045829/s46403938/46403938"
+},
+{
+"subject_id": "15696189",
+"study_id": "45080333",
+"time": "2161-09-27 09:52:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 172.0,
+"axis": -135.0,
+"rr": 857.0,
+"vent": true,
+"malf": false,
+"guess": "lv?",
+"pol": {
+"I": -32.4,
+"V1": 14.2,
+"aVF": 1.8,
+"II": -14.9,
+"beats": 12
+},
+"path": "files/p1569/p15696189/s45080333/45080333"
+},
+{
+"subject_id": "13282748",
+"study_id": "42761894",
+"time": "2200-08-02 16:02:00",
+"report": "Atrial-sensed ventricular-paced rhythm",
+"qrs": 180.0,
+"axis": 266.0,
+"rr": 667.0,
+"vent": true,
+"malf": false,
+"guess": "lv?",
+"pol": {
+"I": -3.3,
+"V1": 32.3,
+"aVF": -12.2,
+"II": -13.7,
+"beats": 16
+},
+"path": "files/p1328/p13282748/s42761894/42761894"
+},
+{
+"subject_id": "12899438",
+"study_id": "41683031",
+"time": "2122-08-02 09:02:00",
+"report": "Demand pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 178.0,
+"axis": -105.0,
+"rr": 909.0,
+"vent": true,
+"malf": false,
+"guess": "lv?",
+"pol": {
+"I": 20.7,
+"V1": -56.0,
+"aVF": -54.6,
+"II": -44.8,
+"beats": 11
+},
+"path": "files/p1289/p12899438/s41683031/41683031"
+},
+{
+"subject_id": "15207316",
+"study_id": "49925476",
+"time": "2129-07-30 18:18:00",
+"report": "A-V sequential pacemaker | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 180.0,
+"axis": -105.0,
+"rr": 1000.0,
+"vent": true,
+"malf": false,
+"guess": "lv?",
+"pol": {
+"I": -8.1,
+"V1": 32.5,
+"aVF": -13.0,
+"II": -16.8,
+"beats": 10
+},
+"path": "files/p1520/p15207316/s49925476/49925476"
+},
+{
+"subject_id": "11512649",
+"study_id": "40619386",
+"time": "2120-11-06 10:22:00",
+"report": "with fusion complexes or aberrant ventricular conduction | Demand pacing | Right axis deviation | Right bundle branch block | Lateral infarct - age undetermined | Possible anterior infarct - age undetermined | Low QRS voltages in limb leads | Abnormal ECG",
+"qrs": 196.0,
+"axis": 134.0,
+"rr": 779.0,
+"vent": true,
+"malf": false,
+"guess": "lv?",
+"pol": {
+"I": 25.6,
+"V1": -33.2,
+"aVF": -45.7,
+"II": -32.9,
+"beats": 2
+},
+"path": "files/p1151/p11512649/s40619386/40619386"
+},
+{
+"subject_id": "16381819",
+"study_id": "44767658",
+"time": "2164-03-17 18:03:00",
+"report": "A-V sequential and ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 236.0,
+"axis": -146.0,
+"rr": 1000.0,
+"vent": true,
+"malf": false,
+"guess": "lv?",
+"pol": {
+"I": -32.3,
+"V1": 21.9,
+"aVF": 4.3,
+"II": -11.5,
+"beats": 10
+},
+"path": "files/p1638/p16381819/s44767658/44767658"
+},
+{
+"subject_id": "15477562",
+"study_id": "41815607",
+"time": "2128-03-29 09:38:00",
+"report": "Demand pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 184.0,
+"axis": 110.0,
+"rr": 821.0,
+"vent": true,
+"malf": false,
+"guess": "lv?",
+"pol": {
+"I": -30.2,
+"V1": 22.7,
+"aVF": 1.0,
+"II": -14.8,
+"beats": 12
+},
+"path": "files/p1547/p15477562/s41815607/41815607"
+},
+{
+"subject_id": "10684044",
+"study_id": "49162135",
+"time": "2118-03-10 10:24:00",
+"report": "Atrial fibrillation | Demand pacing | Right axis deviation | Right bundle branch block | Possible septal infarct - age undetermined | BVH with secondary repolarization abnormality | Inferior/lateral ST-T changes may be due to hypertrophy and/or ischemia | Abnormal ECG",
+"qrs": 172.0,
+"axis": 144.0,
+"rr": 714.0,
+"vent": true,
+"malf": false,
+"guess": "lv?",
+"pol": {
+"I": -66.9,
+"V1": 93.8,
+"aVF": -1.7,
+"II": -27.9,
+"beats": 14
+},
+"path": "files/p1068/p10684044/s49162135/49162135"
+},
+{
+"subject_id": "11144031",
+"study_id": "44333420",
+"time": "2112-04-06 14:40:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 198.0,
+"axis": 120.0,
+"rr": 967.0,
+"vent": true,
+"malf": false,
+"guess": "lv?",
+"pol": {
+"I": 2.2,
+"V1": 87.0,
+"aVF": 4.4,
+"II": 5.6,
+"beats": 10
+},
+"path": "files/p1114/p11144031/s44333420/44333420"
+},
+{
+"subject_id": "16900046",
+"study_id": "42800311",
+"time": "2177-05-13 03:51:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 180.0,
+"axis": 164.0,
+"rr": 869.0,
+"vent": true,
+"malf": false,
+"guess": "lv?",
+"pol": {
+"I": -19.2,
+"V1": 6.5,
+"aVF": 5.0,
+"II": -4.9,
+"beats": 12
+},
+"path": "files/p1690/p16900046/s42800311/42800311"
+},
+{
+"subject_id": "10978213",
+"study_id": "44156346",
+"time": "2175-02-17 14:57:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 176.0,
+"axis": 180.0,
+"rr": 714.0,
+"vent": true,
+"malf": false,
+"guess": "lv?",
+"pol": {
+"I": -22.2,
+"V1": 13.8,
+"aVF": 2.7,
+"II": -8.2,
+"beats": 14
+},
+"path": "files/p1097/p10978213/s44156346/44156346"
+},
+{
+"subject_id": "12573789",
+"study_id": "46646930",
+"time": "2141-12-30 09:29:00",
+"report": "Demand pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 194.0,
+"axis": 116.0,
+"rr": 1071.0,
+"vent": true,
+"malf": false,
+"guess": "lv?",
+"pol": {
+"I": 18.4,
+"V1": -74.5,
+"aVF": 17.7,
+"II": 27.0,
+"beats": 9
+},
+"path": "files/p1257/p12573789/s46646930/46646930"
+},
+{
+"subject_id": "13552058",
+"study_id": "40497798",
+"time": "2138-04-25 17:02:00",
+"report": "Undetermined rhythm | - demand ventricular pacing | Marked right axis deviation | Intraventricular conduction defect | Lateral infarct - age undetermined | Probable old septal infarct | Tall R V1/V2 consistent with the infarct | Inferior + anterior ST-T change may be related to electronic pacemaker | Abnormal ECG",
+"qrs": 212.0,
+"axis": 122.0,
+"rr": 821.0,
+"vent": true,
+"malf": false,
+"guess": "lv?",
+"pol": {
+"I": -27.8,
+"V1": 4.0,
+"aVF": -0.6,
+"II": -9.6,
+"beats": 11
+},
+"path": "files/p1355/p13552058/s40497798/40497798"
+},
+{
+"subject_id": "12056448",
+"study_id": "42480660",
+"time": "2148-12-07 10:22:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 174.0,
+"axis": -98.0,
+"rr": 1000.0,
+"vent": true,
+"malf": false,
+"guess": "lv?",
+"pol": {
+"I": -23.5,
+"V1": 28.3,
+"aVF": -3.7,
+"II": -16.2,
+"beats": 10
+},
+"path": "files/p1205/p12056448/s42480660/42480660"
+},
+{
+"subject_id": "14933845",
+"study_id": "43901949",
+"time": "2151-02-23 10:19:00",
+"report": "A-V sequential pacemaker | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 182.0,
+"axis": -104.0,
+"rr": 845.0,
+"vent": true,
+"malf": false,
+"guess": "lv?",
+"pol": {
+"I": -6.6,
+"V1": -7.0,
+"aVF": -2.2,
+"II": -5.8,
+"beats": 12
+},
+"path": "files/p1493/p14933845/s43901949/43901949"
+},
+{
+"subject_id": "15723530",
+"study_id": "46225619",
+"time": "2155-04-24 14:37:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 172.0,
+"axis": -108.0,
+"rr": 857.0,
+"vent": true,
+"malf": false,
+"guess": "lv?",
+"pol": {
+"I": -10.1,
+"V1": 17.1,
+"aVF": -16.6,
+"II": -21.5,
+"beats": 16
+},
+"path": "files/p1572/p15723530/s46225619/46225619"
+},
+{
+"subject_id": "15728619",
+"study_id": "46226462",
+"time": "2145-06-23 07:45:00",
+"report": "A-V sequential pacemaker | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 186.0,
+"axis": -168.0,
+"rr": 800.0,
+"vent": true,
+"malf": false,
+"guess": "lv?",
+"pol": {
+"I": -11.9,
+"V1": 9.9,
+"aVF": 7.8,
+"II": 1.5,
+"beats": 13
+},
+"path": "files/p1572/p15728619/s46226462/46226462"
+},
+{
+"subject_id": "11268371",
+"study_id": "48320247",
+"time": "2172-10-28 08:12:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 174.0,
+"axis": 128.0,
+"rr": 857.0,
+"vent": true,
+"malf": false,
+"guess": "lv?",
+"pol": {
+"I": -0.5,
+"V1": -54.4,
+"aVF": 7.1,
+"II": 9.0,
+"beats": 20
+},
+"path": "files/p1126/p11268371/s48320247/48320247"
+},
+{
+"subject_id": "12288988",
+"study_id": "40713868",
+"time": "2143-09-21 18:44:00",
+"report": "A-V sequential pacemaker. | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 186.0,
+"axis": -95.0,
+"rr": 1000.0,
+"vent": true,
+"malf": false,
+"guess": "lv?",
+"pol": {
+"I": 9.4,
+"V1": -46.9,
+"aVF": 46.5,
+"II": 54.4,
+"beats": 16
+},
+"path": "files/p1228/p12288988/s40713868/40713868"
+},
+{
+"subject_id": "14880301",
+"study_id": "45815104",
+"time": "2171-05-11 10:17:00",
+"report": "Atrial fibrillation | Demand pacing. | Left axis deviation | IV conduction defect | Anterolateral infarct - age undetermined | Abnormal ECG",
+"qrs": 178.0,
+"axis": -116.0,
+"rr": 638.0,
+"vent": true,
+"malf": false,
+"guess": "lv?",
+"pol": {
+"I": -22.2,
+"V1": -33.3,
+"aVF": 59.3,
+"II": 47.5,
+"beats": 16
+},
+"path": "files/p1488/p14880301/s45815104/45815104"
+},
+{
+"subject_id": "12889151",
+"study_id": "42555831",
+"time": "2110-12-05 15:28:00",
+"report": "Demand pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 174.0,
+"axis": 140.0,
+"rr": 750.0,
+"vent": true,
+"malf": false,
+"guess": "lv?",
+"pol": {
+"I": -6.0,
+"V1": -11.1,
+"aVF": 13.0,
+"II": 9.1,
+"beats": 13
+},
+"path": "files/p1288/p12889151/s42555831/42555831"
+},
+{
+"subject_id": "12989843",
+"study_id": "45039782",
+"time": "2145-08-09 20:56:00",
+"report": "Demand pacing. | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 188.0,
+"axis": -95.0,
+"rr": 882.0,
+"vent": true,
+"malf": false,
+"guess": "lv?",
+"pol": {
+"I": -1.4,
+"V1": -3.6,
+"aVF": -24.5,
+"II": -23.8,
+"beats": 12
+},
+"path": "files/p1298/p12989843/s45039782/45039782"
+},
+{
+"subject_id": "13098632",
+"study_id": "42015880",
+"time": "2195-11-13 18:05:00",
+"report": "Atrial fibrillation | Demand pacing | Right axis deviation | RBBB with RAD - possible left posterior fascicular block | Inferior infarct - age undetermined | Lateral infarct - age undetermined | Marked precordial ST depression, CONSIDER ACUTE INFARCT | Abnormal ECG",
+"qrs": 172.0,
+"axis": 113.0,
+"rr": 857.0,
+"vent": true,
+"malf": false,
+"guess": "lv?",
+"pol": {
+"I": 12.1,
+"V1": -61.0,
+"aVF": 12.5,
+"II": 18.7,
+"beats": 23
+},
+"path": "files/p1309/p13098632/s42015880/42015880"
+},
+{
+"subject_id": "11829527",
+"study_id": "41777922",
+"time": "2140-07-04 15:02:00",
+"report": "Dual chamber pacemaker | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 182.0,
+"axis": 151.0,
+"rr": 750.0,
+"vent": true,
+"malf": false,
+"guess": "lv?",
+"pol": {
+"I": -18.0,
+"V1": 5.1,
+"aVF": -6.3,
+"II": -13.1,
+"beats": 13
+},
+"path": "files/p1182/p11829527/s41777922/41777922"
+},
+{
+"subject_id": "16928495",
+"study_id": "48668753",
+"time": "2147-12-16 10:44:00",
+"report": "Demand pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 188.0,
+"axis": 117.0,
+"rr": 740.0,
+"vent": true,
+"malf": false,
+"guess": "lv?",
+"pol": {
+"I": -1.5,
+"V1": 8.2,
+"aVF": -19.7,
+"II": -20.1,
+"beats": 13
+},
+"path": "files/p1692/p16928495/s48668753/48668753"
+},
+{
+"subject_id": "12982060",
+"study_id": "43431625",
+"time": "2188-07-07 10:27:00",
+"report": "Demand pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 190.0,
+"axis": 177.0,
+"rr": 952.0,
+"vent": true,
+"malf": false,
+"guess": "lv?",
+"pol": {
+"I": -3.4,
+"V1": 5.5,
+"aVF": -14.9,
+"II": -17.1,
+"beats": 15
+},
+"path": "files/p1298/p12982060/s43431625/43431625"
+},
+{
+"subject_id": "13527822",
+"study_id": "46807592",
+"time": "2148-02-10 13:01:00",
+"report": "Marked sinus bradycardia | Demand pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 178.0,
+"axis": -105.0,
+"rr": 2068.0,
+"vent": true,
+"malf": false,
+"guess": "lv?",
+"pol": {
+"I": -19.3,
+"V1": -0.4,
+"aVF": 6.1,
+"II": -3.6,
+"beats": 5
+},
+"path": "files/p1352/p13527822/s46807592/46807592"
+},
+{
+"subject_id": "14539442",
+"study_id": "47665476",
+"time": "2144-05-06 06:16:00",
+"report": "Ventricular pacing. | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 178.0,
+"axis": -113.0,
+"rr": 857.0,
+"vent": true,
+"malf": false,
+"guess": "lv?",
+"pol": {
+"I": -1.8,
+"V1": -6.0,
+"aVF": -16.3,
+"II": -17.8,
+"beats": 12
+},
+"path": "files/p1453/p14539442/s47665476/47665476"
+},
+{
+"subject_id": "14443106",
+"study_id": "49520601",
+"time": "2193-05-30 17:13:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 180.0,
+"axis": 159.0,
+"rr": 869.0,
+"vent": true,
+"malf": false,
+"guess": "lv?",
+"pol": {
+"I": -22.9,
+"V1": 7.9,
+"aVF": 20.6,
+"II": 9.0,
+"beats": 12
+},
+"path": "files/p1444/p14443106/s49520601/49520601"
+},
+{
+"subject_id": "12719524",
+"study_id": "47027695",
+"time": "2117-06-20 15:36:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 242.0,
+"axis": 127.0,
+"rr": 1000.0,
+"vent": true,
+"malf": false,
+"guess": "lv?",
+"pol": {
+"I": -35.2,
+"V1": 27.0,
+"aVF": 21.8,
+"II": 4.9,
+"beats": 6
+},
+"path": "files/p1271/p12719524/s47027695/47027695"
+},
+{
+"subject_id": "14308629",
+"study_id": "42692121",
+"time": "2129-11-18 04:22:00",
+"report": "Demand pacing | Right bundle branch block | LVH with secondary repolarization abnormality | Lateral ST elevation, CONSIDER ACUTE INFARCT | Inferior ST-T changes may be due to hypertrophy and/or ischemia | Abnormal ECG",
+"qrs": 182.0,
+"axis": 102.0,
+"rr": 681.0,
+"vent": true,
+"malf": false,
+"guess": "lv?",
+"pol": {
+"I": 10.1,
+"V1": -15.7,
+"aVF": -8.5,
+"II": -4.2,
+"beats": 15
+},
+"path": "files/p1430/p14308629/s42692121/42692121"
+},
+{
+"subject_id": "11968004",
+"study_id": "49944867",
+"time": "2146-07-31 10:05:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 172.0,
+"axis": 162.0,
+"rr": 882.0,
+"vent": true,
+"malf": false,
+"guess": "lv?",
+"pol": {
+"I": -8.0,
+"V1": 16.8,
+"aVF": -12.6,
+"II": -16.2,
+"beats": 11
+},
+"path": "files/p1196/p11968004/s49944867/49944867"
+},
+{
+"subject_id": "14752764",
+"study_id": "45446160",
+"time": "2124-03-24 14:01:00",
+"report": "Ventricular-paced rhythm",
+"qrs": 202.0,
+"axis": 269.0,
+"rr": 1000.0,
+"vent": true,
+"malf": false,
+"guess": "lv?",
+"pol": {
+"I": 4.6,
+"V1": -6.2,
+"aVF": -38.8,
+"II": -34.8,
+"beats": 18
+},
+"path": "files/p1475/p14752764/s45446160/45446160"
+},
+{
+"subject_id": "14089595",
+"study_id": "49130293",
+"time": "2192-05-18 11:22:00",
+"report": "Demand pacing | --- Suspect arm lead reversal - only aVF, V1-V6 analyzed --- | IV conduction defect | Extensive ST-T changes are nonspecific | Abnormal ECG",
+"qrs": 180.0,
+"axis": 129.0,
+"rr": 750.0,
+"vent": true,
+"malf": false,
+"guess": "lv?",
+"pol": {
+"I": -19.8,
+"V1": 7.8,
+"aVF": 4.0,
+"II": -4.5,
+"beats": 9
+},
+"path": "files/p1408/p14089595/s49130293/49130293"
+},
+{
+"subject_id": "10902076",
+"study_id": "45911249",
+"time": "2157-08-08 11:00:00",
+"report": "Atrial fibrillation | - demand ventricular pacing | Long QTc interval | Old anteroseptal infarct | Inferior/lateral ST-T changes may be related to electronic pacemaker | Repolarization changes may be partly due to rhythm | Abnormal ECG",
+"qrs": 102.0,
+"axis": -20.0,
+"rr": 779.0,
+"vent": true,
+"malf": false,
+"guess": "narrow?",
+"pol": {
+"I": 5.8,
+"V1": -16.8,
+"aVF": -0.3,
+"II": 1.8,
+"beats": 12
+},
+"path": "files/p1090/p10902076/s45911249/45911249"
+},
+{
+"subject_id": "11437519",
+"study_id": "45228787",
+"time": "2139-12-05 18:45:00",
+"report": "Regular supraventricular rhythm | Demand pacing | Abnormal ECG",
+"qrs": 66.0,
+"axis": 66.0,
+"rr": 461.0,
+"vent": true,
+"malf": false,
+"guess": "narrow?",
+"pol": {
+"I": 3.7,
+"V1": -10.9,
+"aVF": 3.7,
+"II": 5.4,
+"beats": 21
+},
+"path": "files/p1143/p11437519/s45228787/45228787"
+},
+{
+"subject_id": "11482500",
+"study_id": "41785367",
+"time": "2168-12-31 11:01:00",
+"report": "Sinus rhythm | Demand pacing | Short PR interval | Left ventricular hypertrophy by voltage only | Abnormal ECG",
+"qrs": 92.0,
+"axis": 31.0,
+"rr": 909.0,
+"vent": true,
+"malf": false,
+"guess": "narrow?",
+"pol": {
+"I": 22.5,
+"V1": -22.0,
+"aVF": 11.8,
+"II": 23.1,
+"beats": 11
+},
+"path": "files/p1148/p11482500/s41785367/41785367"
+},
+{
+"subject_id": "13019601",
+"study_id": "44203170",
+"time": "2194-08-25 13:25:00",
+"report": "Atrial fibrillation | Demand pacing. | Extensive ST-T changes are nonspecific | Abnormal ECG",
+"qrs": 96.0,
+"axis": -16.0,
+"rr": 666.0,
+"vent": true,
+"malf": false,
+"guess": "narrow?",
+"pol": {
+"I": 12.4,
+"V1": -23.7,
+"aVF": -4.8,
+"II": 0.9,
+"beats": 15
+},
+"path": "files/p1301/p13019601/s44203170/44203170"
+},
+{
+"subject_id": "13193136",
+"study_id": "43087828",
+"time": "2155-01-19 07:40:00",
+"report": "Demand pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 102.0,
+"axis": 33.0,
+"rr": 666.0,
+"vent": true,
+"malf": false,
+"guess": "narrow?",
+"pol": {
+"I": 13.1,
+"V1": -20.6,
+"aVF": 5.0,
+"II": 12.4,
+"beats": 15
+},
+"path": "files/p1319/p13193136/s43087828/43087828"
+},
+{
+"subject_id": "15785313",
+"study_id": "47275725",
+"time": "2163-10-18 19:19:00",
+"report": "Undetermined rhythm | - demand ventricular pacing | *** report made without knowing patient's age *** | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 76.0,
+"axis": 56.0,
+"rr": 750.0,
+"vent": true,
+"malf": false,
+"guess": "narrow?",
+"pol": {
+"I": 0.6,
+"V1": -21.2,
+"aVF": 24.2,
+"II": 22.5,
+"beats": 13
+},
+"path": "files/p1578/p15785313/s47275725/47275725"
+},
+{
+"subject_id": "16722520",
+"study_id": "41170782",
+"time": "2171-06-11 12:17:00",
+"report": "Demand pacing | Leftward axis | Anteroseptal infarct - age undetermined | Inferior/lateral ST-T changes are nonspecific | Abnormal ECG",
+"qrs": 92.0,
+"axis": -24.0,
+"rr": 923.0,
+"vent": true,
+"malf": false,
+"guess": "narrow?",
+"pol": {
+"I": -1.7,
+"V1": 1.7,
+"aVF": -54.0,
+"II": -56.0,
+"beats": 11
+},
+"path": "files/p1672/p16722520/s41170782/41170782"
+},
+{
+"subject_id": "14574530",
+"study_id": "43612148",
+"time": "2126-12-07 08:59:00",
+"report": "A-V sequential pacemaker | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 122.0,
+"axis": -63.0,
+"rr": 869.0,
+"vent": true,
+"malf": false,
+"guess": "narrow?",
+"pol": {
+"I": 14.3,
+"V1": -2.3,
+"aVF": -28.2,
+"II": -21.3,
+"beats": 12
+},
+"path": "files/p1457/p14574530/s43612148/43612148"
+},
+{
+"subject_id": "14269696",
+"study_id": "46810231",
+"time": "2163-10-16 09:15:00",
+"report": "*** CONSIDER ACUTE ST ELEVATION MI *** | Atrial fibrillation | Demand pacing. | Lead(s) unsuitable for analysis: aVL V5 | --- Possible measurement error --- | Inferior and lateral ST elevation, CONSIDER ACUTE INFARCT | Anteroseptal ST depression is probably reciprocal to inferior infarct | Low QRS voltages in limb leads | Abnormal ECG",
+"qrs": 78.0,
+"axis": 34.0,
+"rr": 606.0,
+"vent": true,
+"malf": false,
+"guess": "narrow?",
+"pol": {
+"I": -2.7,
+"V1": -1.4,
+"aVF": -18.2,
+"II": -10.8,
+"beats": 4
+},
+"path": "files/p1426/p14269696/s46810231/46810231"
+},
+{
+"subject_id": "11168639",
+"study_id": "46904525",
+"time": "2175-06-09 07:45:00",
+"report": "Demand pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 110.0,
+"axis": -69.0,
+"rr": 857.0,
+"vent": true,
+"malf": false,
+"guess": "narrow?",
+"pol": {
+"I": 33.7,
+"V1": -25.9,
+"aVF": -98.2,
+"II": -81.3,
+"beats": 12
+},
+"path": "files/p1116/p11168639/s46904525/46904525"
+},
+{
+"subject_id": "16106175",
+"study_id": "40060285",
+"time": "2143-06-19 10:54:00",
+"report": "Demand pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 86.0,
+"axis": 13.0,
+"rr": 937.0,
+"vent": true,
+"malf": false,
+"guess": "narrow?",
+"pol": {
+"I": 48.7,
+"V1": -44.6,
+"aVF": 6.8,
+"II": 30.8,
+"beats": 11
+},
+"path": "files/p1610/p16106175/s40060285/40060285"
+},
+{
+"subject_id": "12435748",
+"study_id": "47054689",
+"time": "2177-06-22 08:53:00",
+"report": "Undetermined rhythm | - demand ventricular pacing | *** report made without knowing patient's sex or age *** | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 100.0,
+"axis": 11.0,
+"rr": 810.0,
+"vent": true,
+"malf": false,
+"guess": "narrow?",
+"pol": {
+"I": 40.2,
+"V1": -44.8,
+"aVF": 1.1,
+"II": 17.2,
+"beats": 12
+},
+"path": "files/p1243/p12435748/s47054689/47054689"
+},
+{
+"subject_id": "14774414",
+"study_id": "41593281",
+"time": "2135-08-15 15:10:00",
+"report": "Demand pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 120.0,
+"axis": -73.0,
+"rr": 800.0,
+"vent": true,
+"malf": false,
+"guess": "narrow?",
+"pol": {
+"I": 10.2,
+"V1": -50.6,
+"aVF": -55.1,
+"II": -50.4,
+"beats": 12
+},
+"path": "files/p1477/p14774414/s41593281/41593281"
+},
+{
+"subject_id": "12514289",
+"study_id": "42194438",
+"time": "2134-03-19 13:39:00",
+"report": "Afib/flut and V-paced complexes | Incomplete left bundle branch block | LVH with secondary repolarization abnormality",
+"qrs": 116.0,
+"axis": -61.0,
+"rr": 952.0,
+"vent": true,
+"malf": false,
+"guess": "narrow?",
+"pol": {
+"I": 29.0,
+"V1": -47.9,
+"aVF": -56.8,
+"II": -41.8,
+"beats": 11
+},
+"path": "files/p1251/p12514289/s42194438/42194438"
+},
+{
+"subject_id": "11667015",
+"study_id": "40299739",
+"time": "2162-04-23 07:27:00",
+"report": "Ventricular pacing. | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 114.0,
+"axis": 45.0,
+"rr": 952.0,
+"vent": true,
+"malf": false,
+"guess": "narrow?",
+"pol": {
+"I": 32.8,
+"V1": -36.5,
+"aVF": 29.0,
+"II": 46.4,
+"beats": 11
+},
+"path": "files/p1166/p11667015/s40299739/40299739"
+},
+{
+"subject_id": "11360447",
+"study_id": "49095807",
+"time": "2155-01-04 05:41:00",
+"report": "Atrial fibrillation | Demand pacing | Possible septal infarct - age undetermined | Inferior/lateral ST-T changes are nonspecific | Abnormal ECG",
+"qrs": 96.0,
+"axis": 51.0,
+"rr": 789.0,
+"vent": true,
+"malf": false,
+"guess": "narrow?",
+"pol": {
+"I": 10.9,
+"V1": -15.8,
+"aVF": 9.3,
+"II": 14.8,
+"beats": 12
+},
+"path": "files/p1136/p11360447/s49095807/49095807"
+},
+{
+"subject_id": "14782354",
+"study_id": "42261104",
+"time": "2127-08-06 14:22:00",
+"report": "Demand pacing | Prolonged QT interval | Left axis deviation | Extensive infarct - age undetermined | Low QRS voltages in precordial leads | Abnormal ECG",
+"qrs": 40.0,
+"axis": -38.0,
+"rr": 821.0,
+"vent": true,
+"malf": false,
+"guess": "narrow?",
+"pol": {
+"I": -14.6,
+"V1": 5.1,
+"aVF": -2.8,
+"II": -9.7,
+"beats": 11
+},
+"path": "files/p1478/p14782354/s42261104/42261104"
+},
+{
+"subject_id": "16076788",
+"study_id": "42030456",
+"time": "2184-05-10 23:06:00",
+"report": "Atrial flutter with rapid ventricular response | Demand pacing | Inferior/lateral ST-T changes are nonspecific | Abnormal ECG",
+"qrs": 84.0,
+"axis": 57.0,
+"rr": 504.0,
+"vent": true,
+"malf": false,
+"guess": "narrow?",
+"pol": {
+"I": 6.7,
+"V1": -19.0,
+"aVF": 16.3,
+"II": 19.2,
+"beats": 20
+},
+"path": "files/p1607/p16076788/s42030456/42030456"
+},
+{
+"subject_id": "10546744",
+"study_id": "45786765",
+"time": "2136-01-06 14:49:00",
+"report": "Atrial fibrillation | Demand pacing | Indeterminate axis | Possible lateral infarct - age undetermined | Possible anterior infarct - age undetermined | Inferior T wave changes are nonspecific | Low QRS voltages in limb leads | Abnormal ECG",
+"qrs": 94.0,
+"axis": 0.0,
+"rr": 895.0,
+"vent": true,
+"malf": false,
+"guess": "narrow?",
+"pol": {
+"I": 33.0,
+"V1": -53.7,
+"aVF": -0.0,
+"II": 17.1,
+"beats": 11
+},
+"path": "files/p1054/p10546744/s45786765/45786765"
+},
+{
+"subject_id": "12928031",
+"study_id": "44120317",
+"time": "2196-01-11 01:28:00",
+"report": "Demand pacing | rSr'(V1) - probable normal variant | Inferior T wave changes are nonspecific | Abnormal ECG",
+"qrs": 80.0,
+"axis": 73.0,
+"rr": 800.0,
+"vent": true,
+"malf": false,
+"guess": "narrow?",
+"pol": {
+"I": 6.8,
+"V1": -6.4,
+"aVF": 15.5,
+"II": 19.2,
+"beats": 13
+},
+"path": "files/p1292/p12928031/s44120317/44120317"
+},
+{
+"subject_id": "12614200",
+"study_id": "49570606",
+"time": "2127-03-28 08:53:00",
+"report": "Sinus rhythm with borderline 1st degree A-V block | Demand pacing | Left ventricular hypertrophy by voltage only | Inferior T wave changes are nonspecific | Abnormal ECG",
+"qrs": 92.0,
+"axis": -13.0,
+"rr": 759.0,
+"vent": true,
+"malf": false,
+"guess": "narrow?",
+"pol": {
+"I": 72.0,
+"V1": -38.1,
+"aVF": -22.8,
+"II": 11.9,
+"beats": 13
+},
+"path": "files/p1261/p12614200/s49570606/49570606"
+},
+{
+"subject_id": "11320023",
+"study_id": "47583766",
+"time": "2141-08-06 08:13:00",
+"report": "Demand pacing | Possible BVH with secondary repolarization abnormality | Extensive ST-T changes may be due to hypertrophy and/or ischemia | Abnormal ECG",
+"qrs": 84.0,
+"axis": 45.0,
+"rr": 869.0,
+"vent": true,
+"malf": false,
+"guess": "narrow?",
+"pol": {
+"I": 14.1,
+"V1": -18.4,
+"aVF": -21.2,
+"II": -15.7,
+"beats": 12
+},
+"path": "files/p1132/p11320023/s47583766/47583766"
+},
+{
+"subject_id": "11848597",
+"study_id": "48227503",
+"time": "2182-05-08 09:36:00",
+"report": "Ventricular pacing. | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 118.0,
+"axis": -58.0,
+"rr": 779.0,
+"vent": true,
+"malf": false,
+"guess": "narrow?",
+"pol": {
+"I": 107.6,
+"V1": -54.8,
+"aVF": -135.6,
+"II": -71.8,
+"beats": 25
+},
+"path": "files/p1184/p11848597/s48227503/48227503"
+},
+{
+"subject_id": "13405151",
+"study_id": "42472178",
+"time": "2163-03-27 19:29:00",
+"report": "Atrial fibrillation with slow ventricular response | Demand pacing. | Possible anteroseptal infarct - age undetermined | Inferior/lateral ST-T changes are nonspecific | Abnormal ECG",
+"qrs": 80.0,
+"axis": 27.0,
+"rr": 1224.0,
+"vent": true,
+"malf": false,
+"guess": "narrow?",
+"pol": {
+"I": 7.6,
+"V1": 11.5,
+"aVF": -43.3,
+"II": -39.1,
+"beats": 8
+},
+"path": "files/p1340/p13405151/s42472178/42472178"
+},
+{
+"subject_id": "10192599",
+"study_id": "43291930",
+"time": "2118-05-25 15:33:00",
+"report": "Probable atrial fibrillation | Demand pacing | Left axis deviation | Abnormal ECG",
+"qrs": 80.0,
+"axis": -38.0,
+"rr": 779.0,
+"vent": true,
+"malf": false,
+"guess": "narrow?",
+"pol": {
+"I": 10.0,
+"V1": -12.4,
+"aVF": -3.5,
+"II": -1.9,
+"beats": 13
+},
+"path": "files/p1019/p10192599/s43291930/43291930"
+},
+{
+"subject_id": "10993131",
+"study_id": "45316902",
+"time": "2150-11-02 14:38:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 100.0,
+"axis": -13.0,
+"rr": 750.0,
+"vent": true,
+"malf": false,
+"guess": "narrow?",
+"pol": {
+"I": 4.0,
+"V1": -52.3,
+"aVF": -1.7,
+"II": -0.4,
+"beats": 13
+},
+"path": "files/p1099/p10993131/s45316902/45316902"
+},
+{
+"subject_id": "12454546",
+"study_id": "47971527",
+"time": "2139-08-10 09:04:00",
+"report": "Atrial fibrillation | Demand pacing. | Indeterminate axis | Lateral ST-T changes are nonspecific | Low QRS voltages in limb leads | Abnormal ECG",
+"qrs": 114.0,
+"axis": 0.0,
+"rr": 652.0,
+"vent": true,
+"malf": false,
+"guess": "narrow?",
+"pol": {
+"I": -4.0,
+"V1": -8.2,
+"aVF": -11.6,
+"II": -13.0,
+"beats": 20
+},
+"path": "files/p1245/p12454546/s47971527/47971527"
+},
+{
+"subject_id": "15650383",
+"study_id": "40411303",
+"time": "2144-08-06 13:22:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 114.0,
+"axis": -49.0,
+"rr": 857.0,
+"vent": true,
+"malf": false,
+"guess": "narrow?",
+"pol": {
+"I": 55.3,
+"V1": -86.7,
+"aVF": -44.5,
+"II": -16.4,
+"beats": 12
+},
+"path": "files/p1565/p15650383/s40411303/40411303"
+},
+{
+"subject_id": "11633616",
+"study_id": "43857201",
+"time": "2160-11-20 21:14:00",
+"report": "Atrial-sensed ventricular-paced rhythm",
+"qrs": 117.0,
+"axis": -39.0,
+"rr": 811.0,
+"vent": true,
+"malf": false,
+"guess": "narrow?",
+"pol": {
+"I": 9.8,
+"V1": 1.3,
+"aVF": -8.4,
+"II": -6.2,
+"beats": 12
+},
+"path": "files/p1163/p11633616/s43857201/43857201"
+},
+{
+"subject_id": "11240827",
+"study_id": "41813041",
+"time": "2143-07-21 15:27:00",
+"report": "Demand pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 116.0,
+"axis": -80.0,
+"rr": 705.0,
+"vent": true,
+"malf": false,
+"guess": "narrow?",
+"pol": {
+"I": -2.3,
+"V1": -2.8,
+"aVF": -7.2,
+"II": -11.4,
+"beats": 17
+},
+"path": "files/p1124/p11240827/s41813041/41813041"
+},
+{
+"subject_id": "11161509",
+"study_id": "46518463",
+"time": "2158-11-16 18:40:00",
+"report": "Ventricular pacing. | Lead(s) unsuitable for analysis: aVR | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 66.0,
+"axis": -51.0,
+"rr": 750.0,
+"vent": true,
+"malf": false,
+"guess": "narrow?",
+"pol": {
+"I": 2.8,
+"V1": 6.2,
+"aVF": -14.0,
+"II": -13.2,
+"beats": 13
+},
+"path": "files/p1116/p11161509/s46518463/46518463"
+},
+{
+"subject_id": "16690867",
+"study_id": "40258529",
+"time": "2150-11-11 23:07:00",
+"report": "Atrial-sensed ventricular-paced rhythm",
+"qrs": 105.0,
+"axis": 0.0,
+"rr": 714.0,
+"vent": true,
+"malf": false,
+"guess": "narrow?",
+"pol": {
+"I": 10.8,
+"V1": -69.9,
+"aVF": -0.5,
+"II": 5.7,
+"beats": 14
+},
+"path": "files/p1669/p16690867/s40258529/40258529"
+},
+{
+"subject_id": "15250828",
+"study_id": "43957157",
+"time": "2159-08-01 11:40:00",
+"report": "Demand pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 96.0,
+"axis": -8.0,
+"rr": 1111.0,
+"vent": true,
+"malf": false,
+"guess": "narrow?",
+"pol": {
+"I": 29.3,
+"V1": -14.9,
+"aVF": -4.1,
+"II": 10.6,
+"beats": 9
+},
+"path": "files/p1525/p15250828/s43957157/43957157"
+},
+{
+"subject_id": "13028855",
+"study_id": "43297031",
+"time": "2136-08-27 06:40:00",
+"report": "Demand pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 120.0,
+"axis": -33.0,
+"rr": 1000.0,
+"vent": true,
+"malf": false,
+"guess": "narrow?",
+"pol": {
+"I": 42.1,
+"V1": -54.9,
+"aVF": -26.3,
+"II": -3.8,
+"beats": 10
+},
+"path": "files/p1302/p13028855/s43297031/43297031"
+},
+{
+"subject_id": "12165607",
+"study_id": "41903772",
+"time": "2148-10-21 22:11:00",
+"report": "Atrial flutter with slow ventricular response | Demand pacing. | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 98.0,
+"axis": 43.0,
+"rr": 1034.0,
+"vent": true,
+"malf": false,
+"guess": "narrow?",
+"pol": {
+"I": 21.9,
+"V1": -22.8,
+"aVF": 10.8,
+"II": 25.0,
+"beats": 3
+},
+"path": "files/p1216/p12165607/s41903772/41903772"
+},
+{
+"subject_id": "14837186",
+"study_id": "46720618",
+"time": "2187-12-17 16:39:00",
+"report": "Atrial fibrillation with rapid ventricular response | Demand pacing. | Left ventricular hypertrophy | Inferior/lateral ST-T changes are probably due to ventricular hypertrophy | Abnormal ECG",
+"qrs": 116.0,
+"axis": -17.0,
+"rr": 521.0,
+"vent": true,
+"malf": false,
+"guess": "narrow?",
+"pol": {
+"I": 20.0,
+"V1": -30.1,
+"aVF": -10.1,
+"II": 0.2,
+"beats": 20
+},
+"path": "files/p1483/p14837186/s46720618/46720618"
+},
+{
+"subject_id": "13678052",
+"study_id": "46252681",
+"time": "2121-03-04 11:24:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 122.0,
+"axis": -83.0,
+"rr": 759.0,
+"vent": true,
+"malf": false,
+"guess": "narrow?",
+"pol": {
+"I": 5.1,
+"V1": 1.6,
+"aVF": -60.8,
+"II": -57.2,
+"beats": 13
+},
+"path": "files/p1367/p13678052/s46252681/46252681"
+},
+{
+"subject_id": "13826828",
+"study_id": "49254122",
+"time": "2127-04-20 20:53:00",
+"report": "Demand pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 90.0,
+"axis": 9.0,
+"rr": 895.0,
+"vent": true,
+"malf": false,
+"guess": "narrow?",
+"pol": {
+"I": 10.4,
+"V1": -10.0,
+"aVF": -4.3,
+"II": 2.6,
+"beats": 12
+},
+"path": "files/p1382/p13826828/s49254122/49254122"
+},
+{
+"subject_id": "16358152",
+"study_id": "42892531",
+"time": "2133-05-31 02:37:00",
+"report": "Demand pacing. | Left axis deviation | IV conduction defect | Inferior infarct - age undetermined | QRS changes V3/V4 may be due to LVH but cannot rule out anterior infarct | Lateral ST-T changes are nonspecific | Abnormal ECG",
+"qrs": 124.0,
+"axis": -31.0,
+"rr": 821.0,
+"vent": true,
+"malf": false,
+"guess": "narrow?",
+"pol": {
+"I": 20.7,
+"V1": -15.5,
+"aVF": -18.2,
+"II": -8.1,
+"beats": 11
+},
+"path": "files/p1635/p16358152/s42892531/42892531"
+},
+{
+"subject_id": "14308653",
+"study_id": "48814981",
+"time": "2160-06-02 05:40:00",
+"report": "Atrial fibrillation | Demand pacing | Cannot rule out anteroseptal infarct - age undetermined | LVH with secondary repolarization abnormality | Inferior/lateral ST-T changes may be due to hypertrophy and/or ischemia | Abnormal ECG",
+"qrs": 106.0,
+"axis": 6.0,
+"rr": 705.0,
+"vent": true,
+"malf": false,
+"guess": "narrow?",
+"pol": {
+"I": 18.0,
+"V1": -38.2,
+"aVF": -4.5,
+"II": 4.8,
+"beats": 15
+},
+"path": "files/p1430/p14308653/s48814981/48814981"
+},
+{
+"subject_id": "12287689",
+"study_id": "47883508",
+"time": "2204-03-13 20:31:00",
+"report": "Atrial fibrillation | Demand pacing | Leftward axis | IV conduction defect | Lateral ST-T changes are nonspecific | Abnormal ECG",
+"qrs": 120.0,
+"axis": -23.0,
+"rr": 895.0,
+"vent": true,
+"malf": false,
+"guess": "narrow?",
+"pol": {
+"I": 36.5,
+"V1": -33.4,
+"aVF": -20.1,
+"II": -2.0,
+"beats": 12
+},
+"path": "files/p1228/p12287689/s47883508/47883508"
+},
+{
+"subject_id": "12576058",
+"study_id": "48434942",
+"time": "2164-12-19 08:39:00",
+"report": "Afib/flut and V-paced complexes | Incomplete left bundle branch block | LVH with secondary repolarization abnormality",
+"qrs": 119.0,
+"axis": -62.0,
+"rr": 594.0,
+"vent": true,
+"malf": false,
+"guess": "narrow?",
+"pol": {
+"I": -24.5,
+"V1": -50.9,
+"aVF": 45.2,
+"II": 28.2,
+"beats": 15
+},
+"path": "files/p1257/p12576058/s48434942/48434942"
+},
+{
+"subject_id": "11767260",
+"study_id": "44551363",
+"time": "2168-05-08 12:28:00",
+"report": "Ventricular pacing. | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 122.0,
+"axis": -55.0,
+"rr": 1016.0,
+"vent": true,
+"malf": false,
+"guess": "narrow?",
+"pol": {
+"I": 13.1,
+"V1": -29.3,
+"aVF": -20.3,
+"II": -14.8,
+"beats": 10
+},
+"path": "files/p1176/p11767260/s44551363/44551363"
+},
+{
+"subject_id": "16702834",
+"study_id": "45773841",
+"time": "2153-01-20 20:28:00",
+"report": "Sinus tachycardia | Demand pacing | ST junctional depression is nonspecific | Abnormal ECG",
+"qrs": 68.0,
+"axis": -17.0,
+"rr": 526.0,
+"vent": true,
+"malf": false,
+"guess": "narrow?",
+"pol": {
+"I": 6.9,
+"V1": -6.2,
+"aVF": -7.5,
+"II": -5.4,
+"beats": 19
+},
+"path": "files/p1670/p16702834/s45773841/45773841"
+},
+{
+"subject_id": "16310578",
+"study_id": "49608301",
+"time": "2133-12-08 08:46:00",
+"report": "Ventricular pacing | Lead(s) unsuitable for analysis: V1 | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 108.0,
+"axis": -8.0,
+"rr": 1000.0,
+"vent": true,
+"malf": false,
+"guess": "narrow?",
+"pol": {
+"I": -21.8,
+"V1": 3908.2,
+"aVF": 27.9,
+"II": 16.2,
+"beats": 1
+},
+"path": "files/p1631/p16310578/s49608301/49608301"
+},
+{
+"subject_id": "11211939",
+"study_id": "42824496",
+"time": "2149-01-24 11:16:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 124.0,
+"axis": -66.0,
+"rr": 923.0,
+"vent": true,
+"malf": false,
+"guess": "narrow?",
+"pol": {
+"I": 44.0,
+"V1": 18.1,
+"aVF": -89.3,
+"II": -67.1,
+"beats": 11
+},
+"path": "files/p1121/p11211939/s42824496/42824496"
+},
+{
+"subject_id": "15121652",
+"study_id": "45959497",
+"time": "2186-07-15 15:54:00",
+"report": "Probable atrial fibrillation | Demand pacing | Prolonged QT interval | Left anterior fascicular block | Inferior/lateral ST-T changes are nonspecific | Abnormal ECG",
+"qrs": 108.0,
+"axis": -51.0,
+"rr": 882.0,
+"vent": true,
+"malf": false,
+"guess": "narrow?",
+"pol": {
+"I": 25.2,
+"V1": -24.7,
+"aVF": -20.6,
+"II": -8.6,
+"beats": 12
+},
+"path": "files/p1512/p15121652/s45959497/45959497"
+},
+{
+"subject_id": "13070242",
+"study_id": "48173442",
+"time": "2143-12-28 10:37:00",
+"report": "Sinus tachycardia | Demand pacing | Abnormal ECG",
+"qrs": 92.0,
+"axis": 28.0,
+"rr": 571.0,
+"vent": true,
+"malf": false,
+"guess": "narrow?",
+"pol": {
+"I": 15.0,
+"V1": -26.5,
+"aVF": 9.2,
+"II": 16.7,
+"beats": 17
+},
+"path": "files/p1307/p13070242/s48173442/48173442"
+},
+{
+"subject_id": "14341510",
+"study_id": "49128196",
+"time": "2132-06-26 13:59:00",
+"report": "Undetermined rhythm | - demand A-V sequential and ventricular pacing | *** report made without knowing patient's sex or age *** | Old inferior infarct | Anterolateral ST-T changes may be related to electronic pacemaker | Low QRS voltages in precordial leads | Abnormal ECG",
+"qrs": 116.0,
+"axis": -3.0,
+"rr": 882.0,
+"vent": true,
+"malf": false,
+"guess": "narrow?",
+"pol": {
+"I": 0.6,
+"V1": -13.7,
+"aVF": 1.1,
+"II": -1.0,
+"beats": 3
+},
+"path": "files/p1434/p14341510/s49128196/49128196"
+},
+{
+"subject_id": "13652789",
+"study_id": "45366611",
+"time": "2146-08-11 11:06:00",
+"report": "Demand pacing | LVH with secondary repolarization abnormality | Extensive ST-T changes may be due to hypertrophy and/or ischemia | Abnormal ECG",
+"qrs": 118.0,
+"axis": 6.0,
+"rr": 779.0,
+"vent": true,
+"malf": false,
+"guess": "narrow?",
+"pol": {
+"I": 96.2,
+"V1": 1.5,
+"aVF": 1.9,
+"II": 50.3,
+"beats": 13
+},
+"path": "files/p1365/p13652789/s45366611/45366611"
+},
+{
+"subject_id": "10928511",
+"study_id": "49017042",
+"time": "2196-05-06 16:29:00",
+"report": "Atrial fibrillation | Demand pacing | Possible anterior infarct | Inferior/lateral ST-T changes are nonspecific | Abnormal ECG",
+"qrs": 96.0,
+"axis": -18.0,
+"rr": 857.0,
+"vent": true,
+"malf": false,
+"guess": "narrow?",
+"pol": {
+"I": 21.1,
+"V1": -9.5,
+"aVF": -7.5,
+"II": 2.5,
+"beats": 11
+},
+"path": "files/p1092/p10928511/s49017042/49017042"
+},
+{
+"subject_id": "15631772",
+"study_id": "43656047",
+"time": "2134-04-02 14:26:00",
+"report": "Atrial fibrillation | Demand pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 122.0,
+"axis": -60.0,
+"rr": 800.0,
+"vent": true,
+"malf": false,
+"guess": "narrow?",
+"pol": {
+"I": 20.8,
+"V1": -27.7,
+"aVF": -35.0,
+"II": -24.6,
+"beats": 12
+},
+"path": "files/p1563/p15631772/s43656047/43656047"
+},
+{
+"subject_id": "15562920",
+"study_id": "45193053",
+"time": "2191-10-12 14:02:00",
+"report": "Sinus rhythm with 1st degree A-V block | Demand pacing. | Possible right atrial abnormality | Inferior and anterior T wave changes are nonspecific | Abnormal ECG",
+"qrs": 90.0,
+"axis": 51.0,
+"rr": 681.0,
+"vent": true,
+"malf": false,
+"guess": "narrow?",
+"pol": {
+"I": 15.4,
+"V1": -8.2,
+"aVF": 7.6,
+"II": 11.4,
+"beats": 14
+},
+"path": "files/p1556/p15562920/s45193053/45193053"
+},
+{
+"subject_id": "15715874",
+"study_id": "43039931",
+"time": "2146-02-09 17:17:00",
+"report": "Atrial-ventricular dual-paced rhythm",
+"qrs": 87.0,
+"axis": -27.0,
+"rr": 870.0,
+"vent": true,
+"malf": false,
+"guess": "narrow?",
+"pol": {
+"I": 48.1,
+"V1": -0.4,
+"aVF": 16.3,
+"II": 14.0,
+"beats": 11
+},
+"path": "files/p1571/p15715874/s43039931/43039931"
+},
+{
+"subject_id": "10250308",
+"study_id": "45863347",
+"time": "2191-06-04 08:06:00",
+"report": "Demand pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 122.0,
+"axis": -50.0,
+"rr": 1000.0,
+"vent": true,
+"malf": false,
+"guess": "narrow?",
+"pol": {
+"I": 25.0,
+"V1": -17.6,
+"aVF": -27.0,
+"II": -13.9,
+"beats": 11
+},
+"path": "files/p1025/p10250308/s45863347/45863347"
+},
+{
+"subject_id": "10439578",
+"study_id": "47259088",
+"time": "2124-02-19 12:42:00",
+"report": "Atrial fibrillation | Demand pacing. | Possible anterior infarct - age undetermined | Inferior/lateral ST-T changes are nonspecific | Abnormal ECG",
+"qrs": 86.0,
+"axis": 50.0,
+"rr": 659.0,
+"vent": true,
+"malf": false,
+"guess": "narrow?",
+"pol": {
+"I": 11.5,
+"V1": -17.4,
+"aVF": 8.8,
+"II": 14.5,
+"beats": 15
+},
+"path": "files/p1043/p10439578/s47259088/47259088"
+},
+{
+"subject_id": "13593110",
+"study_id": "45422951",
+"time": "2147-08-11 13:30:00",
+"report": "Undetermined rhythm | - demand A-V sequential and ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 114.0,
+"axis": -6.0,
+"rr": 967.0,
+"vent": true,
+"malf": false,
+"guess": "narrow?",
+"pol": {
+"I": 12.2,
+"V1": -26.3,
+"aVF": -0.1,
+"II": 6.1,
+"beats": 11
+},
+"path": "files/p1359/p13593110/s45422951/45422951"
+},
+{
+"subject_id": "14936254",
+"study_id": "46644823",
+"time": "2160-07-18 06:28:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 110.0,
+"axis": -61.0,
+"rr": 1000.0,
+"vent": true,
+"malf": false,
+"guess": "narrow?",
+"pol": {
+"I": 13.4,
+"V1": 0.0,
+"aVF": -35.9,
+"II": -29.0,
+"beats": 10
+},
+"path": "files/p1493/p14936254/s46644823/46644823"
+},
+{
+"subject_id": "10330630",
+"study_id": "44536694",
+"time": "2167-08-12 08:35:00",
+"report": "Demand pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 104.0,
+"axis": -75.0,
+"rr": 740.0,
+"vent": true,
+"malf": false,
+"guess": "narrow?",
+"pol": {
+"I": 14.6,
+"V1": 13.7,
+"aVF": -59.2,
+"II": -53.0,
+"beats": 14
+},
+"path": "files/p1033/p10330630/s44536694/44536694"
+},
+{
+"subject_id": "11820186",
+"study_id": "40225425",
+"time": "2128-08-13 17:33:00",
+"report": "Ventricular-paced complexes | Left anterior fascicular block | Abnormal R-wave progression, early transition | Left ventricular hypertrophy",
+"qrs": 108.0,
+"axis": -42.0,
+"rr": 845.0,
+"vent": true,
+"malf": false,
+"guess": "narrow?",
+"pol": {
+"I": 33.4,
+"V1": -11.3,
+"aVF": -26.0,
+"II": -10.2,
+"beats": 11
+},
+"path": "files/p1182/p11820186/s40225425/40225425"
+},
+{
+"subject_id": "13639456",
+"study_id": "49493376",
+"time": "2112-11-27 14:50:00",
+"report": "Regular ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 200.0,
+"axis": -68.0,
+"rr": 857.0,
+"vent": true,
+"malf": false,
+"guess": "rv_apex?",
+"pol": {
+"I": -1.2,
+"V1": 21.0,
+"aVF": -10.1,
+"II": -9.4,
+"beats": 15
+},
+"path": "files/p1363/p13639456/s49493376/49493376"
+},
+{
+"subject_id": "10428745",
+"study_id": "45151832",
+"time": "2138-07-27 19:59:00",
+"report": "Ventricular pacing | Lead(s) unsuitable for analysis: V6 | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 162.0,
+"axis": -73.0,
+"rr": 731.0,
+"vent": true,
+"malf": false,
+"guess": "rv_apex?",
+"pol": {
+"I": 1.7,
+"V1": 5.4,
+"aVF": -20.0,
+"II": -19.6,
+"beats": 14
+},
+"path": "files/p1042/p10428745/s45151832/45151832"
+},
+{
+"subject_id": "13215261",
+"study_id": "40713918",
+"time": "2137-06-16 08:17:00",
+"report": "Undetermined rhythm | Demand pacing | Left axis deviation | RBBB with left anterior fascicular block | Inferior infarct - age undetermined | Possible anteroseptal infarct - age undetermined | Lateral ST-T changes are nonspecific | Abnormal ECG",
+"qrs": 198.0,
+"axis": -86.0,
+"rr": 714.0,
+"vent": true,
+"malf": false,
+"guess": "rv_apex?",
+"pol": {
+"I": -0.5,
+"V1": 9.6,
+"aVF": -19.4,
+"II": -20.2,
+"beats": 17
+},
+"path": "files/p1321/p13215261/s40713918/40713918"
+},
+{
+"subject_id": "10873681",
+"study_id": "46495223",
+"time": "2180-07-07 14:19:00",
+"report": "Regular A-V sequential pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 174.0,
+"axis": -81.0,
+"rr": 1000.0,
+"vent": true,
+"malf": false,
+"guess": "rv_apex?",
+"pol": {
+"I": 7.5,
+"V1": -22.2,
+"aVF": -46.8,
+"II": -48.8,
+"beats": 17
+},
+"path": "files/p1087/p10873681/s46495223/46495223"
+},
+{
+"subject_id": "11459120",
+"study_id": "43301323",
+"time": "2140-01-08 10:05:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 154.0,
+"axis": -69.0,
+"rr": 810.0,
+"vent": true,
+"malf": false,
+"guess": "rv_apex?",
+"pol": {
+"I": 22.1,
+"V1": -10.7,
+"aVF": -48.4,
+"II": -43.8,
+"beats": 21
+},
+"path": "files/p1145/p11459120/s43301323/43301323"
+},
+{
+"subject_id": "12178169",
+"study_id": "49825275",
+"time": "2112-05-16 09:42:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 158.0,
+"axis": -73.0,
+"rr": 1176.0,
+"vent": true,
+"malf": false,
+"guess": "rv_apex?",
+"pol": {
+"I": 57.8,
+"V1": -33.5,
+"aVF": -154.6,
+"II": -123.2,
+"beats": 11
+},
+"path": "files/p1217/p12178169/s49825275/49825275"
+},
+{
+"subject_id": "13594867",
+"study_id": "41026470",
+"time": "2171-07-28 15:50:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 184.0,
+"axis": -79.0,
+"rr": 845.0,
+"vent": true,
+"malf": false,
+"guess": "rv_apex?",
+"pol": {
+"I": 7.6,
+"V1": -15.2,
+"aVF": -27.0,
+"II": -22.8,
+"beats": 13
+},
+"path": "files/p1359/p13594867/s41026470/41026470"
+},
+{
+"subject_id": "10910365",
+"study_id": "43451160",
+"time": "2153-09-24 14:49:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 162.0,
+"axis": -74.0,
+"rr": 1034.0,
+"vent": true,
+"malf": false,
+"guess": "rv_apex?",
+"pol": {
+"I": -17.1,
+"V1": -20.5,
+"aVF": 63.5,
+"II": 54.8,
+"beats": 10
+},
+"path": "files/p1091/p10910365/s43451160/43451160"
+},
+{
+"subject_id": "15161279",
+"study_id": "43514043",
+"time": "2158-12-16 09:47:00",
+"report": "Demand pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 138.0,
+"axis": -64.0,
+"rr": 869.0,
+"vent": true,
+"malf": false,
+"guess": "rv_apex?",
+"pol": {
+"I": -342.8,
+"V1": -1.0,
+"aVF": -314.9,
+"II": -9.8,
+"beats": 9
+},
+"path": "files/p1516/p15161279/s43514043/43514043"
+},
+{
+"subject_id": "12475198",
+"study_id": "48697551",
+"time": "2160-10-03 12:48:00",
+"report": "Atrial-ventricular dual-paced rhythm",
+"qrs": 230.0,
+"axis": -85.0,
+"rr": 857.0,
+"vent": true,
+"malf": false,
+"guess": "rv_apex?",
+"pol": {
+"I": 9.4,
+"V1": -7.0,
+"aVF": -70.8,
+"II": -63.7,
+"beats": 20
+},
+"path": "files/p1247/p12475198/s48697551/48697551"
+},
+{
+"subject_id": "11719758",
+"study_id": "45561622",
+"time": "2174-08-17 14:52:00",
+"report": "A-V sequential pacemaker | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 130.0,
+"axis": -85.0,
+"rr": 923.0,
+"vent": true,
+"malf": false,
+"guess": "rv_apex?",
+"pol": {
+"I": 2.1,
+"V1": 21.9,
+"aVF": -77.8,
+"II": -76.2,
+"beats": 11
+},
+"path": "files/p1171/p11719758/s45561622/45561622"
+},
+{
+"subject_id": "11934522",
+"study_id": "49698106",
+"time": "2141-12-24 04:31:00",
+"report": "Ventricular pacing. | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 166.0,
+"axis": -65.0,
+"rr": 869.0,
+"vent": true,
+"malf": false,
+"guess": "rv_apex?",
+"pol": {
+"I": 8.1,
+"V1": -10.1,
+"aVF": 14.5,
+"II": 19.5,
+"beats": 13
+},
+"path": "files/p1193/p11934522/s49698106/49698106"
+},
+{
+"subject_id": "15555874",
+"study_id": "49896236",
+"time": "2152-04-30 10:37:00",
+"report": "Ventricular pacing. | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 162.0,
+"axis": -67.0,
+"rr": 869.0,
+"vent": true,
+"malf": false,
+"guess": "rv_apex?",
+"pol": {
+"I": 48.1,
+"V1": -43.1,
+"aVF": -67.2,
+"II": -42.1,
+"beats": 12
+},
+"path": "files/p1555/p15555874/s49896236/49896236"
+},
+{
+"subject_id": "15097692",
+"study_id": "49792761",
+"time": "2145-12-08 08:36:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 176.0,
+"axis": -77.0,
+"rr": 983.0,
+"vent": true,
+"malf": false,
+"guess": "rv_apex?",
+"pol": {
+"I": 2.3,
+"V1": -2.2,
+"aVF": -52.4,
+"II": -51.2,
+"beats": 15
+},
+"path": "files/p1509/p15097692/s49792761/49792761"
+},
+{
+"subject_id": "15690068",
+"study_id": "42534970",
+"time": "2129-05-26 09:47:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 184.0,
+"axis": -60.0,
+"rr": 779.0,
+"vent": true,
+"malf": false,
+"guess": "rv_apex?",
+"pol": {
+"I": 81.2,
+"V1": -29.9,
+"aVF": -127.2,
+"II": -88.6,
+"beats": 13
+},
+"path": "files/p1569/p15690068/s42534970/42534970"
+},
+{
+"subject_id": "12671705",
+"study_id": "49764368",
+"time": "2187-11-07 09:20:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 146.0,
+"axis": -75.0,
+"rr": 821.0,
+"vent": true,
+"malf": false,
+"guess": "rv_apex?",
+"pol": {
+"I": -10.9,
+"V1": -17.6,
+"aVF": -31.3,
+"II": -36.4,
+"beats": 12
+},
+"path": "files/p1267/p12671705/s49764368/49764368"
+},
+{
+"subject_id": "14112944",
+"study_id": "45417715",
+"time": "2147-07-31 11:16:00",
+"report": "A-V sequential pacemaker | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 160.0,
+"axis": -71.0,
+"rr": 697.0,
+"vent": true,
+"malf": false,
+"guess": "rv_apex?",
+"pol": {
+"I": 43.7,
+"V1": -32.6,
+"aVF": -103.9,
+"II": -81.9,
+"beats": 14
+},
+"path": "files/p1411/p14112944/s45417715/45417715"
+},
+{
+"subject_id": "14393643",
+"study_id": "48739667",
+"time": "2156-05-12 10:56:00",
+"report": "Atrial fibrillation with rapid ventricular response | Demand pacing | Left axis deviation | Left bundle branch block | Abnormal ECG",
+"qrs": 152.0,
+"axis": -31.0,
+"rr": 500.0,
+"vent": true,
+"malf": false,
+"guess": "rv_apex?",
+"pol": {
+"I": 13.4,
+"V1": -67.4,
+"aVF": -10.9,
+"II": -4.5,
+"beats": 9
+},
+"path": "files/p1439/p14393643/s48739667/48739667"
+},
+{
+"subject_id": "15298013",
+"study_id": "45960469",
+"time": "2156-02-05 00:35:00",
+"report": "A-V sequential pacemaker | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 158.0,
+"axis": -76.0,
+"rr": 1000.0,
+"vent": true,
+"malf": false,
+"guess": "rv_apex?",
+"pol": {
+"I": 9.0,
+"V1": -15.8,
+"aVF": -50.2,
+"II": -42.5,
+"beats": 10
+},
+"path": "files/p1529/p15298013/s45960469/45960469"
+},
+{
+"subject_id": "14537146",
+"study_id": "42957311",
+"time": "2192-03-18 15:40:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 144.0,
+"axis": -60.0,
+"rr": 705.0,
+"vent": true,
+"malf": false,
+"guess": "rv_apex?",
+"pol": {
+"I": 27.2,
+"V1": 4.3,
+"aVF": -53.9,
+"II": -39.8,
+"beats": 14
+},
+"path": "files/p1453/p14537146/s42957311/42957311"
+},
+{
+"subject_id": "10031687",
+"study_id": "48197044",
+"time": "2136-06-21 11:08:00",
+"report": "Irregular sinus bradycardia | - demand ventricular pacing | Marked left axis deviation | Conduction defect of LBBB type | Abnormal ECG",
+"qrs": 182.0,
+"axis": -61.0,
+"rr": 1034.0,
+"vent": true,
+"malf": false,
+"guess": "rv_apex?",
+"pol": {
+"I": 33.4,
+"V1": -76.9,
+"aVF": -30.1,
+"II": -13.3,
+"beats": 10
+},
+"path": "files/p1003/p10031687/s48197044/48197044"
+},
+{
+"subject_id": "14449762",
+"study_id": "49093041",
+"time": "2145-10-01 10:43:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 178.0,
+"axis": -79.0,
+"rr": 882.0,
+"vent": true,
+"malf": false,
+"guess": "rv_apex?",
+"pol": {
+"I": -16.2,
+"V1": 4.6,
+"aVF": 21.5,
+"II": 12.1,
+"beats": 11
+},
+"path": "files/p1444/p14449762/s49093041/49093041"
+},
+{
+"subject_id": "11960419",
+"study_id": "44535522",
+"time": "2140-04-29 15:39:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 136.0,
+"axis": -50.0,
+"rr": 800.0,
+"vent": true,
+"malf": false,
+"guess": "rv_apex?",
+"pol": {
+"I": 18.0,
+"V1": -30.5,
+"aVF": -22.6,
+"II": -13.8,
+"beats": 12
+},
+"path": "files/p1196/p11960419/s44535522/44535522"
+},
+{
+"subject_id": "10795168",
+"study_id": "46022435",
+"time": "2199-08-20 07:58:00",
+"report": "Atrial-sensed ventricular-paced rhythm",
+"qrs": 133.0,
+"axis": -78.0,
+"rr": 870.0,
+"vent": true,
+"malf": false,
+"guess": "rv_apex?",
+"pol": {
+"I": 12.6,
+"V1": -17.3,
+"aVF": -45.0,
+"II": -39.7,
+"beats": 11
+},
+"path": "files/p1079/p10795168/s46022435/46022435"
+},
+{
+"subject_id": "13387654",
+"study_id": "48830988",
+"time": "2123-12-03 07:01:00",
+"report": "Ventricular pacing. | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 166.0,
+"axis": -58.0,
+"rr": 750.0,
+"vent": true,
+"malf": false,
+"guess": "rv_apex?",
+"pol": {
+"I": 9.4,
+"V1": -16.8,
+"aVF": -20.4,
+"II": -14.7,
+"beats": 13
+},
+"path": "files/p1338/p13387654/s48830988/48830988"
+},
+{
+"subject_id": "15816613",
+"study_id": "44836963",
+"time": "2181-12-12 11:56:00",
+"report": "Warning: DATA QUALITY MAY AFFECT COMPUTER INTERPRETATION!! | UNDETERMINED RHYTHM | DEMAND VENTRICULAR PACING | NO FURTHER ANALYSIS MADE - DOUBT AS TO SUITABLE BEAT(S). DOMINANT GROUP PRINTED. | NO OTHER FINDING | Summary: ABNORMAL",
+"qrs": 142.0,
+"axis": -72.0,
+"rr": 857.0,
+"vent": true,
+"malf": false,
+"guess": "rv_apex?",
+"pol": {
+"I": 9.6,
+"V1": 1.2,
+"aVF": -28.2,
+"II": -22.9,
+"beats": 12
+},
+"path": "files/p1581/p15816613/s44836963/44836963"
+},
+{
+"subject_id": "14938318",
+"study_id": "48199570",
+"time": "2129-12-15 16:20:00",
+"report": "Demand pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 180.0,
+"axis": -57.0,
+"rr": 882.0,
+"vent": true,
+"malf": false,
+"guess": "rv_apex?",
+"pol": {
+"I": -4.5,
+"V1": -6.3,
+"aVF": -1.1,
+"II": -2.5,
+"beats": 20
+},
+"path": "files/p1493/p14938318/s48199570/48199570"
+},
+{
+"subject_id": "11714071",
+"study_id": "43898508",
+"time": "2136-11-14 21:27:00",
+"report": "Atrial-sensed ventricular-paced rhythm",
+"qrs": 165.0,
+"axis": -65.0,
+"rr": 811.0,
+"vent": true,
+"malf": false,
+"guess": "rv_apex?",
+"pol": {
+"I": 7.4,
+"V1": 7.0,
+"aVF": -28.4,
+"II": -24.5,
+"beats": 12
+},
+"path": "files/p1171/p11714071/s43898508/43898508"
+},
+{
+"subject_id": "12713831",
+"study_id": "49630392",
+"time": "2183-05-23 08:39:00",
+"report": "A-V sequential pacemaker | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 166.0,
+"axis": -61.0,
+"rr": 1000.0,
+"vent": true,
+"malf": false,
+"guess": "rv_apex?",
+"pol": {
+"I": 15.2,
+"V1": -13.5,
+"aVF": -32.8,
+"II": -24.4,
+"beats": 10
+},
+"path": "files/p1271/p12713831/s49630392/49630392"
+},
+{
+"subject_id": "12416453",
+"study_id": "43889621",
+"time": "2173-08-08 12:15:00",
+"report": "Ventricular pacing. | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 168.0,
+"axis": -80.0,
+"rr": 800.0,
+"vent": true,
+"malf": false,
+"guess": "rv_apex?",
+"pol": {
+"I": -0.3,
+"V1": -8.7,
+"aVF": 19.9,
+"II": 16.9,
+"beats": 13
+},
+"path": "files/p1241/p12416453/s43889621/43889621"
+},
+{
+"subject_id": "11620203",
+"study_id": "46874621",
+"time": "2154-01-10 08:48:00",
+"report": "Demand pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 146.0,
+"axis": 86.0,
+"rr": 833.0,
+"vent": true,
+"malf": false,
+"guess": "rv_septal?",
+"pol": {
+"I": -4.2,
+"V1": 22.8,
+"aVF": -54.0,
+"II": -55.6,
+"beats": 12
+},
+"path": "files/p1162/p11620203/s46874621/46874621"
+},
+{
+"subject_id": "13266427",
+"study_id": "43020983",
+"time": "2153-08-15 05:55:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 130.0,
+"axis": 74.0,
+"rr": 750.0,
+"vent": true,
+"malf": false,
+"guess": "rv_septal?",
+"pol": {
+"I": -4.1,
+"V1": -11.3,
+"aVF": 26.2,
+"II": 24.3,
+"beats": 13
+},
+"path": "files/p1326/p13266427/s43020983/43020983"
+},
+{
+"subject_id": "16760919",
+"study_id": "42745721",
+"time": "2167-04-12 08:41:00",
+"report": "Ventricular-paced rhythm",
+"qrs": 179.0,
+"axis": 87.0,
+"rr": 984.0,
+"vent": true,
+"malf": false,
+"guess": "rv_septal?",
+"pol": {
+"I": 16.4,
+"V1": -20.8,
+"aVF": -0.7,
+"II": 6.5,
+"beats": 10
+},
+"path": "files/p1676/p16760919/s42745721/42745721"
+},
+{
+"subject_id": "15071083",
+"study_id": "43280048",
+"time": "2156-11-09 09:07:00",
+"report": "Atrial fibrillation | Demand pacing. | IV conduction defect | LVH with secondary repolarization abnormality | Inferior/lateral ST-T changes are probably due to ventricular hypertrophy | Abnormal ECG",
+"qrs": 126.0,
+"axis": 81.0,
+"rr": 882.0,
+"vent": true,
+"malf": false,
+"guess": "rv_septal?",
+"pol": {
+"I": 3.6,
+"V1": -40.5,
+"aVF": 28.1,
+"II": 29.4,
+"beats": 10
+},
+"path": "files/p1507/p15071083/s43280048/43280048"
+},
+{
+"subject_id": "16345787",
+"study_id": "46968097",
+"time": "2174-09-03 10:25:00",
+"report": "Demand pacing | Left bundle branch block | Abnormal ECG",
+"qrs": 186.0,
+"axis": 46.0,
+"rr": 769.0,
+"vent": true,
+"malf": false,
+"guess": "rv_septal?",
+"pol": {
+"I": -12.0,
+"V1": 4.3,
+"aVF": 9.5,
+"II": 1.6,
+"beats": 12
+},
+"path": "files/p1634/p16345787/s46968097/46968097"
+},
+{
+"subject_id": "16841586",
+"study_id": "46585259",
+"time": "2116-06-20 07:36:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 154.0,
+"axis": 58.0,
+"rr": 857.0,
+"vent": true,
+"malf": false,
+"guess": "rv_septal?",
+"pol": {
+"I": 26.6,
+"V1": -105.4,
+"aVF": 41.7,
+"II": 54.1,
+"beats": 12
+},
+"path": "files/p1684/p16841586/s46585259/46585259"
+},
+{
+"subject_id": "15029537",
+"study_id": "47725865",
+"time": "2134-01-06 05:46:00",
+"report": "Possible ectopic atrial rhythm | Demand pacing | Rightward axis | Right bundle branch block | Abnormal ECG",
+"qrs": 144.0,
+"axis": 90.0,
+"rr": 722.0,
+"vent": true,
+"malf": false,
+"guess": "rv_septal?",
+"pol": {
+"I": -9.6,
+"V1": 41.6,
+"aVF": 19.0,
+"II": 14.3,
+"beats": 13
+},
+"path": "files/p1502/p15029537/s47725865/47725865"
+},
+{
+"subject_id": "15357459",
+"study_id": "48533885",
+"time": "2186-05-10 03:13:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 126.0,
+"axis": 59.0,
+"rr": 789.0,
+"vent": true,
+"malf": false,
+"guess": "rv_septal?",
+"pol": {
+"I": -1.3,
+"V1": -27.0,
+"aVF": 12.1,
+"II": 9.8,
+"beats": 13
+},
+"path": "files/p1535/p15357459/s48533885/48533885"
+},
+{
+"subject_id": "15461582",
+"study_id": "40832604",
+"time": "2181-12-01 15:11:00",
+"report": "Ventricular pacing. | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 140.0,
+"axis": 65.0,
+"rr": 588.0,
+"vent": true,
+"malf": false,
+"guess": "rv_septal?",
+"pol": {
+"I": 11.6,
+"V1": -58.8,
+"aVF": 18.0,
+"II": 24.6,
+"beats": 17
+},
+"path": "files/p1546/p15461582/s40832604/40832604"
+},
+{
+"subject_id": "11686707",
+"study_id": "40146784",
+"time": "2133-02-27 08:53:00",
+"report": "Demand pacing. | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 142.0,
+"axis": 82.0,
+"rr": 789.0,
+"vent": true,
+"malf": false,
+"guess": "rv_septal?",
+"pol": {
+"I": -22.3,
+"V1": 0.6,
+"aVF": 47.0,
+"II": 36.3,
+"beats": 13
+},
+"path": "files/p1168/p11686707/s40146784/40146784"
+},
+{
+"subject_id": "14098557",
+"study_id": "43194038",
+"time": "2154-07-13 09:05:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 154.0,
+"axis": 58.0,
+"rr": 869.0,
+"vent": true,
+"malf": false,
+"guess": "rv_septal?",
+"pol": {
+"I": -21.0,
+"V1": 32.5,
+"aVF": -27.6,
+"II": -36.8,
+"beats": 12
+},
+"path": "files/p1409/p14098557/s43194038/43194038"
+},
+{
+"subject_id": "16517255",
+"study_id": "41751556",
+"time": "2171-05-16 14:10:00",
+"report": "Afib/flut and V-paced complexes",
+"qrs": 154.0,
+"axis": 84.0,
+"rr": 896.0,
+"vent": true,
+"malf": false,
+"guess": "rv_septal?",
+"pol": {
+"I": 4.0,
+"V1": 4.8,
+"aVF": -59.1,
+"II": -50.4,
+"beats": 10
+},
+"path": "files/p1651/p16517255/s41751556/41751556"
+},
+{
+"subject_id": "16257560",
+"study_id": "42888200",
+"time": "2141-03-14 16:24:00",
+"report": "Demand pacing | Left bundle branch block | Marked precordial ST depression, CONSIDER ACUTE INFARCT | Abnormal ECG",
+"qrs": 174.0,
+"axis": 85.0,
+"rr": 666.0,
+"vent": true,
+"malf": false,
+"guess": "rv_septal?",
+"pol": {
+"I": -29.9,
+"V1": 15.3,
+"aVF": -16.1,
+"II": -31.8,
+"beats": 15
+},
+"path": "files/p1625/p16257560/s42888200/42888200"
+},
+{
+"subject_id": "10046234",
+"study_id": "43271387",
+"time": "2166-04-29 08:07:00",
+"report": "Ventricular-paced rhythm",
+"qrs": 146.0,
+"axis": 81.0,
+"rr": 870.0,
+"vent": true,
+"malf": false,
+"guess": "rv_septal?",
+"pol": {
+"I": -1.2,
+"V1": -57.8,
+"aVF": 21.3,
+"II": 20.5,
+"beats": 11
+},
+"path": "files/p1004/p10046234/s43271387/43271387"
+},
+{
+"subject_id": "14099285",
+"study_id": "45182578",
+"time": "2128-10-28 14:59:00",
+"report": "Sinus bradycardia with borderline 1st degree A-V block | Demand pacing. | Possible left atrial abnormality | Right bundle branch block | Possible left ventricular hypertrophy | Inferior/lateral ST-T changes are probably due to ventricular hypertrophy | Abnormal ECG",
+"qrs": 134.0,
+"axis": 80.0,
+"rr": 1034.0,
+"vent": true,
+"malf": false,
+"guess": "rv_septal?",
+"pol": {
+"I": -7.1,
+"V1": 41.9,
+"aVF": 32.0,
+"II": 29.0,
+"beats": 11
+},
+"path": "files/p1409/p14099285/s45182578/45182578"
+},
+{
+"subject_id": "11057357",
+"study_id": "44470915",
+"time": "2190-06-01 11:17:00",
+"report": "A-V sequential pacemaker | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 142.0,
+"axis": 85.0,
+"rr": 857.0,
+"vent": true,
+"malf": false,
+"guess": "rv_septal?",
+"pol": {
+"I": -7.6,
+"V1": 3.6,
+"aVF": 31.9,
+"II": 29.9,
+"beats": 7
+},
+"path": "files/p1105/p11057357/s44470915/44470915"
+},
+{
+"subject_id": "16356297",
+"study_id": "46513626",
+"time": "2125-01-02 09:18:00",
+"report": "Demand pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 160.0,
+"axis": 77.0,
+"rr": 857.0,
+"vent": true,
+"malf": false,
+"guess": "rv_septal?",
+"pol": {
+"I": -5.7,
+"V1": 16.3,
+"aVF": -26.7,
+"II": -26.0,
+"beats": 13
+},
+"path": "files/p1635/p16356297/s46513626/46513626"
+},
+{
+"subject_id": "12355315",
+"study_id": "44977131",
+"time": "2169-05-20 15:03:00",
+"report": "Ventricular pacing. | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 168.0,
+"axis": 75.0,
+"rr": 869.0,
+"vent": true,
+"malf": false,
+"guess": "rv_septal?",
+"pol": {
+"I": 7.5,
+"V1": -34.9,
+"aVF": 24.9,
+"II": 28.8,
+"beats": 12
+},
+"path": "files/p1235/p12355315/s44977131/44977131"
+},
+{
+"subject_id": "15036143",
+"study_id": "45676321",
+"time": "2170-07-10 07:47:00",
+"report": "Atrial-sensed ventricular-paced complexes",
+"qrs": 140.0,
+"axis": 61.0,
+"rr": 800.0,
+"vent": true,
+"malf": false,
+"guess": "rv_septal?",
+"pol": {
+"I": 3.1,
+"V1": -13.5,
+"aVF": -3.7,
+"II": -3.8,
+"beats": 12
+},
+"path": "files/p1503/p15036143/s45676321/45676321"
+},
+{
+"subject_id": "14620942",
+"study_id": "41488471",
+"time": "2154-01-13 23:16:00",
+"report": "A-V sequential pacemaker. | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 132.0,
+"axis": 73.0,
+"rr": 833.0,
+"vent": true,
+"malf": false,
+"guess": "rv_septal?",
+"pol": {
+"I": 11.3,
+"V1": -94.6,
+"aVF": 33.9,
+"II": 39.1,
+"beats": 12
+},
+"path": "files/p1462/p14620942/s41488471/41488471"
+},
+{
+"subject_id": "11607177",
+"study_id": "49991534",
+"time": "2148-10-17 08:33:00",
+"report": "Demand pacing | Left bundle branch block | Anteroseptal ST changes are nonspecific | Abnormal ECG",
+"qrs": 184.0,
+"axis": 54.0,
+"rr": 681.0,
+"vent": true,
+"malf": false,
+"guess": "rv_septal?",
+"pol": {
+"I": -22.8,
+"V1": 7.2,
+"aVF": 1.2,
+"II": -12.6,
+"beats": 11
+},
+"path": "files/p1160/p11607177/s49991534/49991534"
+},
+{
+"subject_id": "12616585",
+"study_id": "49704311",
+"time": "2190-10-31 11:10:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 146.0,
+"axis": 67.0,
+"rr": 857.0,
+"vent": true,
+"malf": false,
+"guess": "rv_septal?",
+"pol": {
+"I": -0.7,
+"V1": -91.6,
+"aVF": 22.1,
+"II": 22.0,
+"beats": 12
+},
+"path": "files/p1261/p12616585/s49704311/49704311"
+},
+{
+"subject_id": "12357364",
+"study_id": "44237270",
+"time": "2131-11-24 13:24:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 132.0,
+"axis": 49.0,
+"rr": 740.0,
+"vent": true,
+"malf": false,
+"guess": "rv_septal?",
+"pol": {
+"I": 3.8,
+"V1": -67.6,
+"aVF": 6.8,
+"II": 9.2,
+"beats": 13
+},
+"path": "files/p1235/p12357364/s44237270/44237270"
+},
+{
+"subject_id": "13536330",
+"study_id": "48033000",
+"time": "2140-04-19 20:45:00",
+"report": "Atrial fibrillation | Demand pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 148.0,
+"axis": 85.0,
+"rr": 821.0,
+"vent": true,
+"malf": false,
+"guess": "rv_septal?",
+"pol": {
+"I": -4.6,
+"V1": 8.4,
+"aVF": 5.3,
+"II": 3.3,
+"beats": 13
+},
+"path": "files/p1353/p13536330/s48033000/48033000"
+},
+{
+"subject_id": "15904250",
+"study_id": "43301223",
+"time": "2132-08-16 13:57:00",
+"report": "Demand pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 162.0,
+"axis": 87.0,
+"rr": 857.0,
+"vent": true,
+"malf": false,
+"guess": "rv_septal?",
+"pol": {
+"I": -372.8,
+"V1": -7.2,
+"aVF": 28.5,
+"II": 17.1,
+"beats": 2
+},
+"path": "files/p1590/p15904250/s43301223/43301223"
+},
+{
+"subject_id": "11862124",
+"study_id": "44849321",
+"time": "2152-11-07 18:43:00",
+"report": "Atrial flutter with rapid ventricular response | Demand pacing | IV conduction defect | Anteroseptal ST elevation - cannot rule out myocardial injury | Inferior/lateral ST-T changes are nonspecific | Abnormal ECG",
+"qrs": 138.0,
+"axis": 67.0,
+"rr": 428.0,
+"vent": true,
+"malf": false,
+"guess": "rv_septal?",
+"pol": {
+"I": 6.8,
+"V1": -32.9,
+"aVF": 9.1,
+"II": 11.1,
+"beats": 23
+},
+"path": "files/p1186/p11862124/s44849321/44849321"
+},
+{
+"subject_id": "12501221",
+"study_id": "46790018",
+"time": "2122-09-12 18:16:00",
+"report": "Demand pacing. | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 126.0,
+"axis": 57.0,
+"rr": 1132.0,
+"vent": true,
+"malf": false,
+"guess": "rv_septal?",
+"pol": {
+"I": 4.5,
+"V1": -18.8,
+"aVF": 13.7,
+"II": 18.3,
+"beats": 17
+},
+"path": "files/p1250/p12501221/s46790018/46790018"
+},
+{
+"subject_id": "11681010",
+"study_id": "47465656",
+"time": "2116-03-19 14:16:00",
+"report": "Demand pacing. | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 164.0,
+"axis": 79.0,
+"rr": 560.0,
+"vent": true,
+"malf": false,
+"guess": "rv_septal?",
+"pol": {
+"I": 10.6,
+"V1": 106.9,
+"aVF": -118.2,
+"II": -112.7,
+"beats": 18
+},
+"path": "files/p1168/p11681010/s47465656/47465656"
+},
+{
+"subject_id": "16607719",
+"study_id": "47495352",
+"time": "2194-01-09 07:46:00",
+"report": "Afib/flut and V-paced complexes | LVH with secondary repolarization abnormality | ST depr, consider ischemia, inferior leads | Prolonged QT interval",
+"qrs": 166.0,
+"axis": 59.0,
+"rr": 923.0,
+"vent": true,
+"malf": false,
+"guess": "rv_septal?",
+"pol": {
+"I": 21.3,
+"V1": -62.3,
+"aVF": 13.6,
+"II": 21.9,
+"beats": 10
+},
+"path": "files/p1660/p16607719/s47495352/47495352"
+},
+{
+"subject_id": "10200568",
+"study_id": "43992863",
+"time": "2167-04-27 08:48:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 138.0,
+"axis": 90.0,
+"rr": 705.0,
+"vent": true,
+"malf": false,
+"guess": "rv_septal?",
+"pol": {
+"I": -3.7,
+"V1": -36.5,
+"aVF": -6.4,
+"II": -8.5,
+"beats": 14
+},
+"path": "files/p1020/p10200568/s43992863/43992863"
+},
+{
+"subject_id": "16597631",
+"study_id": "42881185",
+"time": "2190-02-08 17:32:00",
+"report": "Atrial fibrillation | Demand atrial pacing | Lead(s) unsuitable for analysis: II aVF | IV conduction defect | Possible extensive infarct - age undetermined | Tall T waves - consider acute ischemia or hyperkalemia | Abnormal ECG",
+"qrs": 196.0,
+"axis": null,
+"rr": 845.0,
+"vent": false,
+"malf": false,
+"guess": "atrial/other",
+"pol": {
+"I": -2.7,
+"V1": 4.1,
+"aVF": -8.9,
+"II": -11.0,
+"beats": 12
+},
+"path": "files/p1659/p16597631/s42881185/42881185"
+},
+{
+"subject_id": "15816613",
+"study_id": "40241259",
+"time": "2179-07-05 20:36:00",
+"report": "Atrial pacing | Abnormal ECG",
+"qrs": 88.0,
+"axis": 11.0,
+"rr": 923.0,
+"vent": false,
+"malf": false,
+"guess": "atrial/other",
+"pol": {
+"I": 27.9,
+"V1": -27.2,
+"aVF": 4.9,
+"II": 18.7,
+"beats": 11
+},
+"path": "files/p1581/p15816613/s40241259/40241259"
+},
+{
+"subject_id": "11405064",
+"study_id": "46524317",
+"time": "2139-11-02 23:39:00",
+"report": "Demand atrial pacing. | Left axis deviation | RBBB with left anterior fascicular block | Inferior infarct - age undetermined | Abnormal ECG",
+"qrs": 160.0,
+"axis": -45.0,
+"rr": 967.0,
+"vent": false,
+"malf": false,
+"guess": "atrial/other",
+"pol": {
+"I": 6.9,
+"V1": 28.6,
+"aVF": -12.0,
+"II": -9.2,
+"beats": 10
+},
+"path": "files/p1140/p11405064/s46524317/46524317"
+},
+{
+"subject_id": "13019601",
+"study_id": "48816389",
+"time": "2192-07-15 05:03:00",
+"report": "Atrial pacing | Incomplete LBBB | Abnormal ECG",
+"qrs": 112.0,
+"axis": 11.0,
+"rr": 967.0,
+"vent": false,
+"malf": false,
+"guess": "atrial/other",
+"pol": {
+"I": 14.2,
+"V1": -19.8,
+"aVF": 6.1,
+"II": 12.3,
+"beats": 10
+},
+"path": "files/p1301/p13019601/s48816389/48816389"
+},
+{
+"subject_id": "11812158",
+"study_id": "42572227",
+"time": "2176-11-25 09:23:00",
+"report": "Atrial pacing | Left anterior fascicular block | rSr'(V1) - probable normal variant | Abnormal ECG",
+"qrs": 112.0,
+"axis": -57.0,
+"rr": 800.0,
+"vent": false,
+"malf": false,
+"guess": "atrial/other",
+"pol": {
+"I": 9.6,
+"V1": -3.3,
+"aVF": -17.4,
+"II": -11.8,
+"beats": 12
+},
+"path": "files/p1181/p11812158/s42572227/42572227"
+},
+{
+"subject_id": "14099038",
+"study_id": "47068509",
+"time": "2157-05-08 10:11:00",
+"report": "Demand atrial pacing. | IV conduction defect | Lateral ST-T changes are nonspecific | Abnormal ECG",
+"qrs": 134.0,
+"axis": 58.0,
+"rr": 833.0,
+"vent": false,
+"malf": false,
+"guess": "atrial/other",
+"pol": {
+"I": 37.0,
+"V1": -45.8,
+"aVF": 22.1,
+"II": 41.2,
+"beats": 12
+},
+"path": "files/p1409/p14099038/s47068509/47068509"
+},
+{
+"subject_id": "15790453",
+"study_id": "43061206",
+"time": "2151-05-05 13:54:00",
+"report": "Atrial-paced complexes | Prolonged PR interval | Abnormal T, consider ischemia, diffuse leads",
+"qrs": 88.0,
+"axis": 11.0,
+"rr": 1000.0,
+"vent": false,
+"malf": false,
+"guess": "atrial/other",
+"pol": {
+"I": 16.7,
+"V1": -12.9,
+"aVF": 1.7,
+"II": 9.8,
+"beats": 10
+},
+"path": "files/p1579/p15790453/s43061206/43061206"
+},
+{
+"subject_id": "11530292",
+"study_id": "44271419",
+"time": "2146-06-07 22:49:00",
+"report": "Atrial pacing. | Right bundle branch block | Inferior infarct - age undetermined | Lateral infarct - age undetermined | Abnormal ECG",
+"qrs": 134.0,
+"axis": 30.0,
+"rr": 869.0,
+"vent": false,
+"malf": false,
+"guess": "atrial/other",
+"pol": {
+"I": -7.2,
+"V1": 47.3,
+"aVF": 7.9,
+"II": 4.3,
+"beats": 11
+},
+"path": "files/p1153/p11530292/s44271419/44271419"
+},
+{
+"subject_id": "16750386",
+"study_id": "40923113",
+"time": "2148-11-04 10:50:00",
+"report": "Atrial pacing | Inferior/lateral ST-T changes are nonspecific | Abnormal ECG",
+"qrs": 94.0,
+"axis": 56.0,
+"rr": 1000.0,
+"vent": false,
+"malf": false,
+"guess": "atrial/other",
+"pol": {
+"I": 16.5,
+"V1": -30.7,
+"aVF": 28.1,
+"II": 36.6,
+"beats": 10
+},
+"path": "files/p1675/p16750386/s40923113/40923113"
+},
+{
+"subject_id": "10674426",
+"study_id": "46641625",
+"time": "2164-10-07 19:37:00",
+"report": "Atrial fibrillation | Demand atrial pacing | Leftward axis | Possible anterior infarct - age undetermined | Lateral ST-T changes are nonspecific | Abnormal ECG",
+"qrs": 100.0,
+"axis": -27.0,
+"rr": 618.0,
+"vent": false,
+"malf": false,
+"guess": "atrial/other",
+"pol": {
+"I": 12.0,
+"V1": -13.3,
+"aVF": -12.1,
+"II": -5.7,
+"beats": 16
+},
+"path": "files/p1067/p10674426/s46641625/46641625"
+},
+{
+"subject_id": "12198076",
+"study_id": "46980652",
+"time": "2134-06-08 10:00:00",
+"report": "Atrial pacing. | Left anterior fascicular block | Anteroseptal infarct - age undetermined | Lateral T wave changes may be due to myocardial ischemia | Abnormal ECG",
+"qrs": 94.0,
+"axis": -57.0,
+"rr": 800.0,
+"vent": false,
+"malf": false,
+"guess": "atrial/other",
+"pol": {
+"I": 6.0,
+"V1": -19.1,
+"aVF": -12.2,
+"II": -8.4,
+"beats": 12
+},
+"path": "files/p1219/p12198076/s46980652/46980652"
+},
+{
+"subject_id": "10766131",
+"study_id": "44633262",
+"time": "2132-07-06 14:49:00",
+"report": "Atrial pacing | Anterior T wave changes are nonspecific | Low QRS voltages in precordial leads | Abnormal ECG",
+"qrs": 72.0,
+"axis": 21.0,
+"rr": 869.0,
+"vent": false,
+"malf": false,
+"guess": "atrial/other",
+"pol": {
+"I": 21.5,
+"V1": -24.7,
+"aVF": 10.0,
+"II": 21.1,
+"beats": 12
+},
+"path": "files/p1076/p10766131/s44633262/44633262"
+},
+{
+"subject_id": "16809175",
+"study_id": "43164072",
+"time": "2147-05-19 10:03:00",
+"report": "Atrial pacing. | Left axis deviation | Anteroseptal infarct - age undetermined | Abnormal ECG",
+"qrs": 98.0,
+"axis": -41.0,
+"rr": 857.0,
+"vent": false,
+"malf": false,
+"guess": "atrial/other",
+"pol": {
+"I": 45.1,
+"V1": -24.8,
+"aVF": -27.8,
+"II": -4.6,
+"beats": 12
+},
+"path": "files/p1680/p16809175/s43164072/43164072"
+},
+{
+"subject_id": "13791328",
+"study_id": "48434046",
+"time": "2187-03-11 19:35:00",
+"report": "Demand atrial pacing | Left axis deviation | IV conduction defect | Extensive infarct - age undetermined | Abnormal ECG",
+"qrs": 170.0,
+"axis": -79.0,
+"rr": 909.0,
+"vent": false,
+"malf": false,
+"guess": "atrial/other",
+"pol": {
+"I": 9.7,
+"V1": -7.3,
+"aVF": -8.1,
+"II": -3.0,
+"beats": 11
+},
+"path": "files/p1379/p13791328/s48434046/48434046"
+},
+{
+"subject_id": "11818101",
+"study_id": "46682634",
+"time": "2155-01-29 09:21:00",
+"report": "Demand atrial pacing. | --- Suspect arm lead reversal - only aVF, V1-V6 analyzed --- | IV conduction defect | Extensive infarct - age undetermined | Biventricular hypertrophy | Abnormal ECG",
+"qrs": 140.0,
+"axis": -96.0,
+"rr": 750.0,
+"vent": false,
+"malf": false,
+"guess": "atrial/other",
+"pol": {
+"I": 10.4,
+"V1": -25.9,
+"aVF": -24.8,
+"II": -21.3,
+"beats": 13
+},
+"path": "files/p1181/p11818101/s46682634/46682634"
+},
+{
+"subject_id": "10449651",
+"study_id": "43275649",
+"time": "2153-08-28 10:03:00",
+"report": "Demand atrial pacing | Left axis deviation | IV conduction defect | Anterolateral T wave changes are nonspecific | Abnormal ECG",
+"qrs": 122.0,
+"axis": -49.0,
+"rr": 1132.0,
+"vent": false,
+"malf": false,
+"guess": "atrial/other",
+"pol": {
+"I": 38.3,
+"V1": -55.8,
+"aVF": -45.3,
+"II": -25.1,
+"beats": 9
+},
+"path": "files/p1044/p10449651/s43275649/43275649"
+},
+{
+"subject_id": "15874317",
+"study_id": "40700499",
+"time": "2183-11-07 09:34:00",
+"report": "Atrial pacing | Inferior and anterior T wave changes are nonspecific | Abnormal ECG",
+"qrs": 94.0,
+"axis": 30.0,
+"rr": 895.0,
+"vent": false,
+"malf": false,
+"guess": "atrial/other",
+"pol": {
+"I": 10.8,
+"V1": -4.4,
+"aVF": 10.3,
+"II": 15.2,
+"beats": 11
+},
+"path": "files/p1587/p15874317/s40700499/40700499"
+},
+{
+"subject_id": "10422699",
+"study_id": "43247900",
+"time": "2143-11-21 16:51:00",
+"report": "Atrial pacing | Left axis deviation | IV conduction defect | Possible extensive infarct - age undetermined | Abnormal ECG",
+"qrs": 152.0,
+"axis": -75.0,
+"rr": 750.0,
+"vent": false,
+"malf": false,
+"guess": "atrial/other",
+"pol": {
+"I": -0.5,
+"V1": -8.6,
+"aVF": -17.0,
+"II": -17.1,
+"beats": 13
+},
+"path": "files/p1042/p10422699/s43247900/43247900"
+},
+{
+"subject_id": "16446532",
+"study_id": "49423639",
+"time": "2182-06-04 14:39:00",
+"report": "Demand atrial pacing | Left ventricular hypertrophy | Extensive ST-T changes may be due to hypertrophy and/or ischemia | Abnormal ECG",
+"qrs": 110.0,
+"axis": -6.0,
+"rr": 1052.0,
+"vent": false,
+"malf": false,
+"guess": "atrial/other",
+"pol": {
+"I": 42.7,
+"V1": -39.4,
+"aVF": -3.2,
+"II": 12.9,
+"beats": 12
+},
+"path": "files/p1644/p16446532/s49423639/49423639"
+},
+{
+"subject_id": "11482500",
+"study_id": "44657265",
+"time": "2172-12-26 16:00:00",
+"report": "Atrial pacing | Prolonged QT interval | Abnormal ECG",
+"qrs": 102.0,
+"axis": 29.0,
+"rr": 869.0,
+"vent": false,
+"malf": false,
+"guess": "atrial/other",
+"pol": {
+"I": 25.6,
+"V1": -22.8,
+"aVF": 10.5,
+"II": 22.2,
+"beats": 13
+},
+"path": "files/p1148/p11482500/s44657265/44657265"
+},
+{
+"subject_id": "10684247",
+"study_id": "47392611",
+"time": "2172-11-05 11:58:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 166.0,
+"axis": -3.0,
+"rr": 1052.0,
+"vent": true,
+"malf": false,
+"guess": "other",
+"pol": {
+"I": 23.8,
+"V1": -72.8,
+"aVF": -26.1,
+"II": -14.1,
+"beats": 10
+},
+"path": "files/p1068/p10684247/s47392611/47392611"
+},
+{
+"subject_id": "12062735",
+"study_id": "44402742",
+"time": "2175-02-06 10:29:00",
+"report": "Demand pacing. | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 150.0,
+"axis": -16.0,
+"rr": 857.0,
+"vent": true,
+"malf": false,
+"guess": "other",
+"pol": {
+"I": 10.4,
+"V1": 28.8,
+"aVF": -15.9,
+"II": -10.7,
+"beats": 12
+},
+"path": "files/p1206/p12062735/s44402742/44402742"
+},
+{
+"subject_id": "10320090",
+"study_id": "46769587",
+"time": "2179-01-27 22:02:00",
+"report": "Atrial-sensed ventricular-paced rhythm",
+"qrs": 166.0,
+"axis": -26.0,
+"rr": 723.0,
+"vent": true,
+"malf": false,
+"guess": "other",
+"pol": {
+"I": -14.4,
+"V1": 10.7,
+"aVF": -3.6,
+"II": -12.1,
+"beats": 14
+},
+"path": "files/p1032/p10320090/s46769587/46769587"
+},
+{
+"subject_id": "12719524",
+"study_id": "49380294",
+"time": "2117-06-20 15:34:00",
+"report": "Atrial fibrillation | Demand pacing | Left bundle branch block | Marked precordial ST depression, CONSIDER ACUTE INFARCT | Abnormal ECG",
+"qrs": 230.0,
+"axis": 3.0,
+"rr": 1034.0,
+"vent": true,
+"malf": false,
+"guess": "other",
+"pol": {
+"I": 42.1,
+"V1": -106.7,
+"aVF": 7.1,
+"II": 17.7,
+"beats": 13
+},
+"path": "files/p1271/p12719524/s49380294/49380294"
+},
+{
+"subject_id": "15529640",
+"study_id": "46987648",
+"time": "2189-01-28 17:33:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 166.0,
+"axis": -16.0,
+"rr": 740.0,
+"vent": true,
+"malf": false,
+"guess": "other",
+"pol": {
+"I": 3.8,
+"V1": -8.4,
+"aVF": -667.5,
+"II": -664.4,
+"beats": 11
+},
+"path": "files/p1552/p15529640/s46987648/46987648"
+},
+{
+"subject_id": "12475198",
+"study_id": "40661690",
+"time": "2154-04-26 02:26:00",
+"report": "Ventricular pacing. | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 166.0,
+"axis": 15.0,
+"rr": 714.0,
+"vent": true,
+"malf": false,
+"guess": "other",
+"pol": {
+"I": 27.5,
+"V1": 6.1,
+"aVF": 18.7,
+"II": 32.8,
+"beats": 14
+},
+"path": "files/p1247/p12475198/s40661690/40661690"
+},
+{
+"subject_id": "11656667",
+"study_id": "48784945",
+"time": "2162-06-30 07:43:00",
+"report": "Ventricular-paced complexes | Left bundle branch block",
+"qrs": 163.0,
+"axis": 2.0,
+"rr": 896.0,
+"vent": true,
+"malf": false,
+"guess": "other",
+"pol": {
+"I": 56.2,
+"V1": -191.7,
+"aVF": 5.0,
+"II": 33.2,
+"beats": 10
+},
+"path": "files/p1165/p11656667/s48784945/48784945"
+},
+{
+"subject_id": "15364266",
+"study_id": "40999520",
+"time": "2137-09-16 07:51:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 136.0,
+"axis": 4.0,
+"rr": 810.0,
+"vent": true,
+"malf": false,
+"guess": "other",
+"pol": {
+"I": 6.2,
+"V1": -38.6,
+"aVF": -4.9,
+"II": -2.6,
+"beats": 24
+},
+"path": "files/p1536/p15364266/s40999520/40999520"
+},
+{
+"subject_id": "11894213",
+"study_id": "40124952",
+"time": "2166-03-28 21:58:00",
+"report": "Sinus rhythm | Demand pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 130.0,
+"axis": -29.0,
+"rr": 689.0,
+"vent": true,
+"malf": false,
+"guess": "other",
+"pol": {
+"I": -3.0,
+"V1": -3.0,
+"aVF": -15.7,
+"II": -17.5,
+"beats": 15
+},
+"path": "files/p1189/p11894213/s40124952/40124952"
+},
+{
+"subject_id": "15955544",
+"study_id": "48381772",
+"time": "2172-03-24 10:20:00",
+"report": "Ventricular pacing | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 178.0,
+"axis": 34.0,
+"rr": 869.0,
+"vent": true,
+"malf": false,
+"guess": "other",
+"pol": {
+"I": 2.9,
+"V1": 5.4,
+"aVF": -15.0,
+"II": -13.3,
+"beats": 12
+},
+"path": "files/p1595/p15955544/s48381772/48381772"
+},
+{
+"subject_id": "13404476",
+"study_id": "45743232",
+"time": "2150-11-28 09:04:00",
+"report": "Sinus bradycardia | - demand atrial pacing and ineffective stimuli | Long QTc interval | Abnormal ECG",
+"qrs": 84.0,
+"axis": 82.0,
+"rr": 1276.0,
+"vent": false,
+"malf": true,
+"guess": "atrial/other",
+"pol": {
+"I": 0.8,
+"V1": -11.9,
+"aVF": 13.9,
+"II": 14.7,
+"beats": 8
+},
+"path": "files/p1340/p13404476/s45743232/45743232"
+},
+{
+"subject_id": "15110754",
+"study_id": "49976670",
+"time": "2147-10-18 16:36:00",
+"report": "SINUS RHYTHM | DEMAND ATRIAL PACING AND INEFFECTIVE STIMULI | BORDERLINE FIRST DEGREE A-V BLOCK | INTERPRETATION MADE WITHOUT KNOWLEDGE OF PATIENT'S SEX AND AGE. | LEFT AXIS DEVIATION - POSSIBLE LEFT ANTERIOR FASCICULAR BLOCK | PROBABLE OLD ANTEROSEPTAL INFARCTION | PROBABLE LEFT VENTRICULAR HYPERTROPHY | Summary: ABNORMAL",
+"qrs": 102.0,
+"axis": -35.0,
+"rr": 638.0,
+"vent": false,
+"malf": true,
+"guess": "atrial/other",
+"pol": {
+"I": 30.6,
+"V1": -48.2,
+"aVF": -26.1,
+"II": -10.5,
+"beats": 15
+},
+"path": "files/p1511/p15110754/s49976670/49976670"
+},
+{
+"subject_id": "17047957",
+"study_id": "43142192",
+"time": "2125-02-23 11:41:00",
+"report": "Sinus rhythm | - demand atrial pacing and ineffective stimuli | Abnormal ECG",
+"qrs": 82.0,
+"axis": 31.0,
+"rr": 659.0,
+"vent": false,
+"malf": true,
+"guess": "atrial/other",
+"pol": {
+"I": 6.3,
+"V1": -11.3,
+"aVF": 9.0,
+"II": 11.4,
+"beats": 15
+},
+"path": "files/p1704/p17047957/s43142192/43142192"
+},
+{
+"subject_id": "14984375",
+"study_id": "46772727",
+"time": "2178-11-25 22:42:00",
+"report": "Undetermined rhythm | - demand A-V sequential pacing and ineffective stimuli | *** report made without knowing patient's sex or age *** | Intraventricular conduction defect | Low QRS voltages in limb leads | Abnormal ECG",
+"qrs": 132.0,
+"axis": 6.0,
+"rr": 750.0,
+"vent": true,
+"malf": true,
+"guess": "other",
+"pol": {
+"I": 7.7,
+"V1": -23.2,
+"aVF": 2.4,
+"II": 7.1,
+"beats": 14
+},
+"path": "files/p1498/p14984375/s46772727/46772727"
+},
+{
+"subject_id": "13423238",
+"study_id": "47962489",
+"time": "2130-08-02 16:24:00",
+"report": "A-V dual-paced complexes, A-noncapt due to AF | Right bundle branch block | Anteroseptal infarct, age indeterminate",
+"qrs": 146.0,
+"axis": 104.0,
+"rr": 645.0,
+"vent": true,
+"malf": true,
+"guess": "biv?",
+"pol": {
+"I": -6.9,
+"V1": 5.8,
+"aVF": 20.2,
+"II": 18.1,
+"beats": 14
+},
+"path": "files/p1342/p13423238/s47962489/47962489"
+},
+{
+"subject_id": "11208106",
+"study_id": "41873119",
+"time": "2136-06-10 09:54:00",
+"report": "Sinus rhythm | - demand atrial pacing and ineffective stimuli | Probable old inferior infarct | Possible old anterior infarct | Abnormal ECG",
+"qrs": 108.0,
+"axis": 39.0,
+"rr": 722.0,
+"vent": false,
+"malf": true,
+"guess": "atrial/other",
+"pol": {
+"I": 20.3,
+"V1": -31.4,
+"aVF": 17.4,
+"II": 29.0,
+"beats": 15
+},
+"path": "files/p1120/p11208106/s41873119/41873119"
+},
+{
+"subject_id": "12877392",
+"study_id": "49567102",
+"time": "2158-06-27 15:23:00",
+"report": "Age not entered, assumed to be  50 years old for purpose of ECG interpretation | A-V dual-paced complexes, A-noncapt due to AF | Nonspecific intraventricular conduction delay | Abnormal T, consider ischemia, lateral leads",
+"qrs": 118.0,
+"axis": -31.0,
+"rr": 882.0,
+"vent": true,
+"malf": true,
+"guess": "narrow?",
+"pol": {
+"I": 14.3,
+"V1": -40.3,
+"aVF": -11.0,
+"II": -3.7,
+"beats": 10
+},
+"path": "files/p1287/p12877392/s49567102/49567102"
+},
+{
+"subject_id": "12749568",
+"study_id": "43035373",
+"time": "2136-02-23 15:34:00",
+"report": "Sinus rhythm | - demand ventricular pacing and ineffective stimuli | *** report made without knowing patient's sex or age *** | Poor R wave progression - probable normal variant | Lateral ST changes are nonspecific | Abnormal ECG",
+"qrs": 72.0,
+"axis": 41.0,
+"rr": 800.0,
+"vent": true,
+"malf": true,
+"guess": "narrow?",
+"pol": {
+"I": 13.9,
+"V1": -28.1,
+"aVF": 9.8,
+"II": 16.2,
+"beats": 12
+},
+"path": "files/p1274/p12749568/s43035373/43035373"
+},
+{
+"subject_id": "15171624",
+"study_id": "41135326",
+"time": "2182-08-21 10:54:00",
+"report": "Sinus rhythm | - demand atrial pacing and ineffective stimuli | Incomplete right bundle branch block | Generalized low QRS voltages | Abnormal ECG",
+"qrs": 100.0,
+"axis": 70.0,
+"rr": 625.0,
+"vent": false,
+"malf": true,
+"guess": "atrial/other",
+"pol": {
+"I": -2.9,
+"V1": 7.4,
+"aVF": 1.9,
+"II": -0.1,
+"beats": 16
+},
+"path": "files/p1517/p15171624/s41135326/41135326"
+},
+{
+"subject_id": "16873672",
+"study_id": "40295752",
+"time": "2119-09-20 19:40:00",
+"report": "Atrial fibrillation with rapid ventricular response | - demand ventricular pacing and ineffective stimuli | *** complex QRS morphology - no further analysis *** | Abnormal ECG",
+"qrs": 166.0,
+"axis": -73.0,
+"rr": 571.0,
+"vent": true,
+"malf": true,
+"guess": "rv_apex?",
+"pol": {
+"I": 17.6,
+"V1": 9.5,
+"aVF": -49.3,
+"II": -39.7,
+"beats": 16
+},
+"path": "files/p1687/p16873672/s40295752/40295752"
+},
+{
+"subject_id": "16199936",
+"study_id": "44192462",
+"time": "2116-07-07 09:28:00",
+"report": "Sinus rhythm | - demand atrial pacing and ineffective stimuli | Abnormal ECG",
+"qrs": 92.0,
+"axis": 81.0,
+"rr": 666.0,
+"vent": false,
+"malf": true,
+"guess": "atrial/other",
+"pol": {
+"I": 0.2,
+"V1": -24.1,
+"aVF": 24.6,
+"II": 24.7,
+"beats": 15
+},
+"path": "files/p1619/p16199936/s44192462/44192462"
+},
+{
+"subject_id": "16082391",
+"study_id": "48503996",
+"time": "2148-12-31 17:02:00",
+"report": "Undetermined rhythm | - demand ventricular pacing and ineffective stimuli | *** report made without knowing patient's sex or age *** | Marked left axis deviation | Intraventricular conduction defect | Inferior infarct - probably acute | Poor R wave progression - cannot rule out anteroseptal infarct | Lateral T wave changes may be related to electronic pacemaker | Abnormal ECG",
+"qrs": 150.0,
+"axis": -79.0,
+"rr": 689.0,
+"vent": true,
+"malf": true,
+"guess": "rv_apex?",
+"pol": {
+"I": 13.2,
+"V1": -16.4,
+"aVF": -24.0,
+"II": -17.7,
+"beats": 9
+},
+"path": "files/p1608/p16082391/s48503996/48503996"
+},
+{
+"subject_id": "11370310",
+"study_id": "45774909",
+"time": "2150-12-06 07:01:00",
+"report": "Atrial fibrillation | - demand ventricular pacing and ineffective stimuli | *** possible measurement error - check data *** | *** report made without knowing patient's age *** | Intraventricular conduction defect | Extensive ST-T changes may be related to electronic pacemaker | Repolarization changes may be partly due to rhythm | Abnormal ECG",
+"qrs": 148.0,
+"axis": 18.0,
+"rr": 845.0,
+"vent": true,
+"malf": true,
+"guess": "other",
+"pol": {
+"I": 13.4,
+"V1": -16.9,
+"aVF": -5.7,
+"II": 1.5,
+"beats": 12
+},
+"path": "files/p1137/p11370310/s45774909/45774909"
+},
+{
+"subject_id": "13404476",
+"study_id": "41870516",
+"time": "2150-11-27 10:50:00",
+"report": "Undetermined rhythm | - demand atrial pacing and ineffective stimuli | Anterior T wave changes are borderline abnormal for age/sex | Abnormal ECG",
+"qrs": 80.0,
+"axis": 81.0,
+"rr": 674.0,
+"vent": false,
+"malf": true,
+"guess": "atrial/other",
+"pol": {
+"I": 5.6,
+"V1": -11.8,
+"aVF": 16.5,
+"II": 19.5,
+"beats": 15
+},
+"path": "files/p1340/p13404476/s41870516/41870516"
+},
+{
+"subject_id": "14500585",
+"study_id": "43352449",
+"time": "2151-02-24 10:44:00",
+"report": "Sinus rhythm | - demand atrial pacing and ineffective stimuli | Low QRS voltages in precordial leads | Abnormal ECG",
+"qrs": 80.0,
+"axis": 35.0,
+"rr": 652.0,
+"vent": false,
+"malf": true,
+"guess": "atrial/other",
+"pol": {
+"I": 17.3,
+"V1": -7.1,
+"aVF": 9.3,
+"II": 18.9,
+"beats": 15
+},
+"path": "files/p1450/p14500585/s43352449/43352449"
+},
+{
+"subject_id": "16434134",
+"study_id": "42501307",
+"time": "2154-07-25 17:53:00",
+"report": "A-V dual-paced complexes, A-noncapt due to AF",
+"qrs": 137.0,
+"axis": 268.0,
+"rr": 769.0,
+"vent": true,
+"malf": true,
+"guess": "biv?",
+"pol": {
+"I": 4.9,
+"V1": -20.9,
+"aVF": 13.1,
+"II": 16.2,
+"beats": 11
+},
+"path": "files/p1643/p16434134/s42501307/42501307"
+},
+{
+"subject_id": "11613888",
+"study_id": "44188487",
+"time": "2169-07-25 10:37:00",
+"report": "Sinus rhythm | - demand atrial pacing and ineffective stimuli | Abnormal ECG",
+"qrs": 78.0,
+"axis": 65.0,
+"rr": 750.0,
+"vent": false,
+"malf": true,
+"guess": "atrial/other",
+"pol": {
+"I": 9.9,
+"V1": -28.8,
+"aVF": 17.1,
+"II": 22.0,
+"beats": 13
+},
+"path": "files/p1161/p11613888/s44188487/44188487"
+},
+{
+"subject_id": "12345170",
+"study_id": "41427438",
+"time": "2155-12-11 12:09:00",
+"report": "Undetermined rhythm | - demand A-V sequential pacing and ineffective stimuli | rSr'(V1) - probable normal variant | Consider old anteroseptal infarct | Abnormal ECG",
+"qrs": 110.0,
+"axis": 61.0,
+"rr": 674.0,
+"vent": true,
+"malf": true,
+"guess": "narrow?",
+"pol": {
+"I": 4.5,
+"V1": -12.7,
+"aVF": 8.1,
+"II": 11.1,
+"beats": 15
+},
+"path": "files/p1234/p12345170/s41427438/41427438"
+},
+{
+"subject_id": "16557781",
+"study_id": "43325244",
+"time": "2138-04-10 13:49:00",
+"report": "Atrial fibrillation | - demand ventricular pacing and ineffective stimuli | *** report made without knowing patient's sex or age *** | *** complex QRS morphology - no further analysis *** | Abnormal ECG",
+"qrs": 192.0,
+"axis": 14.0,
+"rr": 740.0,
+"vent": true,
+"malf": true,
+"guess": "other",
+"pol": {
+"I": 27.4,
+"V1": -11.9,
+"aVF": -21.6,
+"II": -7.9,
+"beats": 4
+},
+"path": "files/p1655/p16557781/s43325244/43325244"
+},
+{
+"subject_id": "14137137",
+"study_id": "46080594",
+"time": "2178-07-14 11:37:00",
+"report": "Undetermined rhythm | - demand A-V sequential pacing and ineffective stimuli | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 92.0,
+"axis": -21.0,
+"rr": 800.0,
+"vent": true,
+"malf": true,
+"guess": "narrow?",
+"pol": {
+"I": 49.2,
+"V1": -24.6,
+"aVF": -18.2,
+"II": 6.7,
+"beats": 12
+},
+"path": "files/p1413/p14137137/s46080594/46080594"
+},
+{
+"subject_id": "15929503",
+"study_id": "43878645",
+"time": "2191-12-25 11:43:00",
+"report": "A-V dual-paced complexes, A-noncapt due to AF | Right bundle branch block | Inferior infarct, old",
+"qrs": 148.0,
+"axis": -7.0,
+"rr": 674.0,
+"vent": true,
+"malf": true,
+"guess": "other",
+"pol": {
+"I": 2.5,
+"V1": 13.5,
+"aVF": -2.8,
+"II": -2.3,
+"beats": 16
+},
+"path": "files/p1592/p15929503/s43878645/43878645"
+},
+{
+"subject_id": "16691924",
+"study_id": "43998375",
+"time": "2146-12-08 19:23:00",
+"report": "Undetermined rhythm | - demand ventricular pacing and ineffective stimuli | Marked left axis deviation | Intraventricular conduction defect | Inferior infarct - probably acute | Anterolateral infarct - age undetermined | Abnormal ECG",
+"qrs": 124.0,
+"axis": -77.0,
+"rr": 923.0,
+"vent": true,
+"malf": true,
+"guess": "narrow?",
+"pol": {
+"I": 4.3,
+"V1": -17.2,
+"aVF": -11.4,
+"II": -8.2,
+"beats": 14
+},
+"path": "files/p1669/p16691924/s43998375/43998375"
+},
+{
+"subject_id": "11977030",
+"study_id": "47717775",
+"time": "2110-07-17 10:23:00",
+"report": "Undetermined rhythm | - demand A-V sequential pacing and ineffective stimuli | *** report made without knowing patient's sex or age *** | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 82.0,
+"axis": 19.0,
+"rr": 550.0,
+"vent": true,
+"malf": true,
+"guess": "narrow?",
+"pol": {
+"I": 18.1,
+"V1": -28.3,
+"aVF": 5.5,
+"II": 14.0,
+"beats": 18
+},
+"path": "files/p1197/p11977030/s47717775/47717775"
+},
+{
+"subject_id": "11106524",
+"study_id": "48164905",
+"time": "2190-03-23 12:34:00",
+"report": "Age not entered, assumed to be  50 years old for purpose of ECG interpretation | A-V dual-paced complexes, A-noncapt due to AF | Right bundle branch block",
+"qrs": 135.0,
+"axis": 34.0,
+"rr": 659.0,
+"vent": true,
+"malf": true,
+"guess": "other",
+"pol": {
+"I": 3.7,
+"V1": 4.0,
+"aVF": 6.3,
+"II": 7.9,
+"beats": 17
+},
+"path": "files/p1110/p11106524/s48164905/48164905"
+},
+{
+"subject_id": "12859052",
+"study_id": "44954635",
+"time": "2110-06-27 10:29:00",
+"report": "Undetermined rhythm | - demand A-V sequential pacing and ineffective stimuli | Pacemaker rhythm - no further analysis | Abnormal ECG",
+"qrs": 86.0,
+"axis": 72.0,
+"rr": 550.0,
+"vent": true,
+"malf": true,
+"guess": "narrow?",
+"pol": {
+"I": 11.3,
+"V1": -27.9,
+"aVF": 26.9,
+"II": 32.3,
+"beats": 18
+},
+"path": "files/p1285/p12859052/s44954635/44954635"
+}
+]

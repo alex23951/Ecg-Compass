@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}{{ s[which].title }} · {{ c.brand }}{% endblock %}
+{% block description %}{{ s[which].text }}{% endblock %}
+{% block main %}
+{% set p = s[which] %}
+<section class="page-head page-simple">
+  <div class="wrap narrow">
+    <h1>{{ p.heading }}</h1>
+    <p class="lead">{{ p.text }}</p>
+    {% if which == 'confirmed' %}
+    <div class="download">
+      <a class="button" href="{{ url(s.slugs.guide_pdf) }}" target="_blank" rel="noopener">{{ p.download }}</a>
+      <p class="muted">{{ p.download_note }} <a href="{{ url(s.slugs.guide_sheet_pdf) }}" target="_blank" rel="noopener">{{ p.download_sheet }}</a></p>
+    </div>
+    <p class="nudge">{{ f(p.founding_nudge) }} <a href="{{ link('founding') }}">{{ p.founding_link }}</a></p>
+    {% else %}
+    <p><a class="button button-quiet" href="{{ link('home') }}">{{ p.back }}</a></p>
+    {% endif %}
+  </div>
+</section>
+{% endblock %}

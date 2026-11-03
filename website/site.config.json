@@ -1,0 +1,30 @@
+{
+  "_note": "Everything Alex may want to change without touching code. Values in [brackets] are placeholders to fill in once the SRL and the domain exist.",
+  "brand": "ECG Compass",
+  "brand_is_working_name": false,
+  "free_launch": true,
+  "signup": false,
+  "approved_only": true,
+  "site_url": "https://[domeniu].ro",
+  "contact_email": "salut@[domeniu].ro",
+  "company": {
+    "name": "[Denumire] SRL",
+    "cui": "[CUI]",
+    "trade_register": "[J..../..../....]",
+    "address": "[Sediul social]"
+  },
+  "founding": {
+    "price_ron": 199,
+    "price_eur": 39,
+    "regular_ron": 249,
+    "regular_eur": 59
+  },
+  "timeline": {
+    "ro": "Estimăm beta pentru membrii fondatori în iarna 2026–2027 și lansarea în primăvara lui 2027.",
+    "en": "We expect the founders' beta in winter 2026–2027 and the launch in spring 2027."
+  },
+  "issues_dir": "../ecg-digest/issues",
+  "pocket_guide_approved": false,
+  "legal_pages_reviewed": false,
+  "_note_free": "free_launch: free site first (Alex, 2026-11-03), hides the founding offer, prices and Pro. signup: false = option A, no email sign-up, no forms, no personal data. approved_only: the trainer goes live with only what Alex approved (trainer/content/approved.json)."
+}

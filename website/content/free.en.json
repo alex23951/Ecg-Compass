@@ -1,0 +1,165 @@
+{
+  "_note": "Text for the free site (free_launch: true in site.config.json).",
+  "meta": {
+    "home_title": "{brand}: practise ECGs, free",
+    "home_description": "Real ECGs to read, with explanations checked by a cardiologist trained in electrophysiology, digital calipers and spaced repetition. Free, no account, in English and Romanian.",
+    "digest_title": "ECG of the week · {brand}",
+    "digest_description": "Every week: a real ECG to read, three new papers in brief and a tip for nurses."
+  },
+  "preview_banner": "Preview of the free site. Text marked \"draft\" is waiting for the doctor's check.",
+  "nav": {
+    "trainer": "Practise",
+    "digest": "ECG of the week",
+    "about": "About",
+    "az": "ECG A to Z"
+  },
+  "home": {
+    "title": "The place you practise ECGs. Free.",
+    "lead": "Real ECGs to read, with the answer explained step by step by a cardiologist trained in electrophysiology. No account, no payment, right in your browser.",
+    "cta_trainer": "Start practising",
+    "cta_digest": "ECG of the week",
+    "hero_note": "Beta: new modules are added as they are checked.",
+    "weekly_heading": "ECG of the week, no. {n}",
+    "weekly_intro": "A real tracing, four options and the answer explained step by step. A new ECG every week.",
+    "weekly_cta": "All issues",
+    "trainer_eyebrow": "The ECG trainer · beta",
+    "trainer_heading": "Practise, don't just watch.",
+    "trainer_intro": "Courses show you tracings. Here you read them yourself: pick the diagnosis, measure on true-scale paper and get the explanation straight away.",
+    "modules_heading": "What you can practise now",
+    "module_count": "{n} ECGs",
+    "trainer_cta": "Open the trainer",
+    "features": [
+      {
+        "title": "Real ECGs, explained",
+        "text": "Tracings from open, licensed databases. Every answer and every explanation is checked by a doctor before it goes up."
+      },
+      {
+        "title": "Digital calipers and measuring drills",
+        "text": "PR, QRS, QT and QTc, the QRS axis. Measure right on the tracing and see how close you were to the reference value."
+      },
+      {
+        "title": "Spaced repetition",
+        "text": "See each ECG again just as you are about to forget it. Ten minutes a day is enough."
+      },
+      {
+        "title": "Pacemakers and pacing",
+        "text": "Spikes, capture, pacing modes. What most courses leave out, explained by an electrophysiologist."
+      }
+    ],
+    "privacy_line": "Your progress stays in this browser. We ask for no account, email or other personal data.",
+    "who_eyebrow": "Who it's for",
+    "who_heading": "For anyone who reads ECGs on call, on the ward or in the ambulance",
+    "who": [
+      "Medical students",
+      "Nurses",
+      "Paramedics",
+      "Residents",
+      "Specialists"
+    ],
+    "faq": [
+      {
+        "q": "What does it cost?",
+        "a": "Nothing. The ECG trainer and the ECG of the week are free and need no account."
+      },
+      {
+        "q": "What data do you keep about me?",
+        "a": "None. There are no forms and no accounts. Your progress in the trainer is saved only in your browser, and you can clear it at any time."
+      },
+      {
+        "q": "Can I send you my own ECG or a patient's?",
+        "a": "No. The content is for education only and doesn't replace medical care. For a real ECG, please see your own doctor."
+      },
+      {
+        "q": "Do I get CME credits?",
+        "a": "No, not for now."
+      },
+      {
+        "q": "I found a mistake. Who do I tell?",
+        "a": "Email us at {email} with the case code shown in the trainer. We fix things quickly."
+      }
+    ],
+    "stats": [
+      "{cases} real ECGs",
+      "{dx} diagnoses explained",
+      "Checked by an electrophysiologist",
+      "Free, no account"
+    ],
+    "chips_label": "Jump straight in:",
+    "steps_eyebrow": "The method",
+    "steps_heading": "Read every ECG in the same order",
+    "steps_intro": "The trainer builds the habit of a systematic read: the same steps, in the same order, on every tracing.",
+    "steps": [
+      [
+        "Rhythm",
+        "Sinus or not? Regular or irregular?"
+      ],
+      [
+        "Rate",
+        "How many complexes a minute? Slow, normal or fast."
+      ],
+      [
+        "QRS axis",
+        "Normal, left or right deviation."
+      ],
+      [
+        "P wave and PR",
+        "Are there P waves? Is each followed by a QRS? Is the PR normal, short or long?"
+      ],
+      [
+        "QRS complex",
+        "Narrow or wide? Bundle branch block, hypertrophy, Q waves?"
+      ],
+      [
+        "ST and T wave",
+        "ST elevation or depression, inverted T waves, reciprocal changes."
+      ],
+      [
+        "QT and QTc",
+        "Measured and corrected for rate."
+      ],
+      [
+        "Conclusion",
+        "All of it in one line, as in the notes."
+      ]
+    ],
+    "az_eyebrow": "ECG A to Z",
+    "az_heading": "Every diagnosis, in brief",
+    "az_intro": "The criteria, the pitfalls and a real ECG to practise on for every diagnosis in the trainer.",
+    "az_cta": "Open the list"
+  },
+  "digest": {
+    "eyebrow": "ECG of the week",
+    "heading": "One ECG a week, plus the papers that matter",
+    "intro": "Every issue: a real ECG to read, three new papers summed up in two minutes and a practical tip for nurses and paramedics.",
+    "empty": "The first issue is coming soon.",
+    "issue_title": "No. {n}",
+    "open": "Open",
+    "back": "All issues",
+    "ecg_heading": "The ECG",
+    "papers_heading": "Three papers in brief",
+    "practice": "In practice",
+    "read_source": "The paper",
+    "tip_heading": "For nurses and paramedics",
+    "sample_tag": "sample issue",
+    "sample_note": "Sample issue, not yet checked by the doctor. It appears only in the preview.",
+    "ai_note": "Paper summaries are drafted with the help of AI and checked by a doctor, with a link to the source."
+  },
+  "footer": {
+    "free_line": "A free educational project by a cardiologist trained in electrophysiology.",
+    "credits_prefix": "ECGs and measurements:"
+  },
+  "az": {
+    "title": "ECG A to Z · {brand}",
+    "description": "ECG diagnoses in brief: criteria, pitfalls and a real ECG to practise on for each. Checked by a cardiologist trained in electrophysiology.",
+    "eyebrow": "ECG A to Z",
+    "heading": "ECG diagnoses, in brief",
+    "intro": "For each diagnosis: what you see at a glance, the criteria and the pitfalls. Then practise on a real ECG.",
+    "search": "Search for a diagnosis",
+    "search_placeholder": "e.g. block, STEMI, flutter",
+    "none": "No diagnosis matches your search.",
+    "criteria": "Criteria",
+    "pitfalls": "Pitfalls",
+    "practise": "Practise on a real ECG",
+    "module": "Module"
+  }
+}

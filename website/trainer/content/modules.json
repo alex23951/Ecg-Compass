@@ -1,0 +1,105 @@
+[
+  {
+    "id": "rhythm",
+    "free": true,
+    "title": {
+      "ro": "Frecvență și ritm",
+      "en": "Rate and rhythm"
+    },
+    "blurb": {
+      "ro": "Ritmul sinusal și variantele lui, precum și primul ritm neregulat pe care trebuie să-l recunoașteți dintr-o privire.",
+      "en": "Sinus rhythm and its variants, plus the first irregular rhythm you should spot at a glance."
+    }
+  },
+  {
+    "id": "blocks",
+    "title": {
+      "ro": "Blocuri AV și de ramură",
+      "en": "AV and bundle branch blocks"
+    },
+    "blurb": {
+      "ro": "De la PR alungit la bloc AV complet, apoi blocurile de ramură și hemiblocul anterior stâng.",
+      "en": "From a long PR to complete heart block, then bundle branch blocks and left anterior fascicular block."
+    }
+  },
+  {
+    "id": "ischaemia",
+    "title": {
+      "ro": "Ischemie și infarct",
+      "en": "Ischaemia and infarction"
+    },
+    "blurb": {
+      "ro": "STEMI în funcție de teritoriu, modificările în oglindă, extensia posterioară și infarctul în evoluție.",
+      "en": "STEMI by territory, reciprocal changes, posterior extension and the evolving infarct."
+    }
+  },
+  {
+    "id": "tachy",
+    "title": {
+      "ro": "Tahicardii și extrasistole",
+      "en": "Tachycardias and ectopic beats"
+    },
+    "blurb": {
+      "ro": "Fibrilație atrială cu alură ventriculară rapidă, flutter atrial cu conducere AV 4:1 și 2:1, tahicardie supraventriculară, extrasistole și bigeminism.",
+      "en": "Fast AF, flutter with 4:1 and 2:1 block, SVT, ectopic beats and bigeminy."
+    }
+  },
+  {
+    "id": "arrest",
+    "title": {
+      "ro": "Ritmuri de stop cardiac",
+      "en": "Cardiac arrest rhythms"
+    },
+    "blurb": {
+      "ro": "Fibrilație ventriculară grosieră și fină, tahicardie ventriculară, asistolă și activitate electrică fără puls, pe trasee reale de monitor. Ritm șocabil sau neșocabil, în câteva secunde.",
+      "en": "Coarse and fine VF, ventricular tachycardia, asystole and pulseless electrical activity on real monitor strips. Shockable or not, in a few seconds."
+    }
+  },
+  {
+    "id": "patterns",
+    "title": {
+      "ro": "Hipertrofie și preexcitație",
+      "en": "Hypertrophy and pre-excitation"
+    },
+    "blurb": {
+      "ro": "Criteriile de voltaj pentru hipertrofia ventriculară stângă și două fețe ale WPW, inclusiv aspectul de pseudoinfarct.",
+      "en": "Voltage criteria for LVH and two faces of WPW, including the pseudo-infarct."
+    }
+  },
+  {
+    "id": "pacing",
+    "signature": true,
+    "title": {
+      "ro": "Moduri de stimulare",
+      "en": "Pacing modes"
+    },
+    "blurb": {
+      "ro": "Stimulare atrială, ventriculară și bicamerală, stimularea sincronizată cu undele P și stimularea „la cerere”, inhibată de activitatea spontană.",
+      "en": "Atrial, ventricular and dual-chamber pacing, P-wave tracking, and demand pacing that holds back when the heart's own beats come."
+    }
+  },
+  {
+    "id": "pacing-site",
+    "signature": true,
+    "title": {
+      "ro": "Locul stimulării și CRT",
+      "en": "Pacing site and CRT"
+    },
+    "blurb": {
+      "ro": "Apexul sau septul ventriculului drept, stimularea biventriculară (CRT) și stimularea exclusiv din ventriculul stâng: cum le deosebiți pe ECG.",
+      "en": "Right ventricular apex or septum, biventricular pacing (CRT) and left ventricular-only pacing: how to tell them apart on the ECG."
+    }
+  },
+  {
+    "id": "pacing-trouble",
+    "signature": true,
+    "title": {
+      "ro": "Capcane și disfuncții de stimulare",
+      "en": "Pacing pitfalls and malfunctions"
+    },
+    "blurb": {
+      "ro": "Fuziune și pseudofuziune, subdetecție, pierderea capturii și erorile interpretării automate la pacienții cu stimulator cardiac.",
+      "en": "Fusion and pseudofusion, undersensing, loss of capture and the mistakes automatic interpretation makes in paced patients."
+    }
+  }
+]

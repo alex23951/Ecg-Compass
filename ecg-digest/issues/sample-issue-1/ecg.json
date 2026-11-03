@@ -1,0 +1,21 @@
+{
+  "source": "PTB-XL 1.0.3",
+  "ecg_id": 9699,
+  "age": "20",
+  "sex": "male",
+  "labels": [
+    {
+      "code": "WPW",
+      "likelihood": 100.0,
+      "description": "Wolf-Parkinson-White syndrome"
+    },
+    {
+      "code": "SBRAD",
+      "likelihood": 0.0,
+      "description": "sinus bradycardia"
+    }
+  ],
+  "report_original": "sinusbradykardie rechtstyp wpw, typ a",
+  "heart_axis": "RAD",
+  "credit": "ECG from PTB-XL (Wagner P, Strodthoff N, et al. Sci Data 2020;7:154), PhysioNet, CC BY 4.0."
+}

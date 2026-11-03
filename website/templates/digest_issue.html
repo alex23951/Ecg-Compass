@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% set d = s.free.digest %}
+{% block title %}{{ issue.subject }} · {{ c.brand }}{% endblock %}
+{% block description %}{{ issue.preheader }}{% endblock %}
+{% block main %}
+<section class="page-head">
+  <div class="wrap narrow">
+    <p class="eyebrow"><a href="{{ link('digest') }}">{{ d.back }}</a> · {{ f(d.issue_title, n=issue.number) }}{% if issue.week %} · {{ issue.week }}{% endif %}</p>
+    <h1>{{ issue.subject }}</h1>
+    {% if issue.sample %}<p><span class="tag">{{ d.sample_tag }}</span> {{ d.sample_note }}</p>{% endif %}
+  </div>
+</section>
+
+<section class="section" id="weekly" aria-labelledby="ecg-title">
+  <div class="wrap">
+    <h2 id="ecg-title">{{ d.ecg_heading }}</h2>
+    {% set q = issue.q %}
+    <div class="quiz" data-answer="{{ q.answer_index }}">
+      <a class="quiz-ecg" href="{{ url(issue.images.full_image or issue.images.image) }}" target="_blank" rel="noopener">
+        <img src="{{ url(issue.images.image) }}" alt="ECG" width="1200" height="600" loading="lazy">
+        <span class="quiz-zoom">{{ s.home.quiz_open_full }}</span>
+      </a>
+      <div class="quiz-body">
+        <p class="quiz-prompt">{{ q.prompt }}</p>
+        <ol class="quiz-options" type="A">
+          {% for opt in q.options %}
+          <li><button type="button" class="quiz-option" data-index="{{ loop.index0 }}"><span class="quiz-letter">{{ "ABCDEFGH"[loop.index0] }}</span><span>{{ opt }}</span></button></li>
+          {% endfor %}
+        </ol>
+        <div class="quiz-answer" hidden>
+          <p class="quiz-verdict" data-correct="{{ s.home.quiz_correct }}" data-wrong="{{ s.home.quiz_wrong }} {{ 'ABCDEFGH'[q.answer_index] }}. {{ q.options[q.answer_index] }}"></p>
+          <h3>{{ s.home.quiz_why }}</h3>
+          <ul>{% for p in q.answer_points %}<li>{{ p }}</li>{% endfor %}</ul>
+          {% if q.deeper %}<h3>{{ s.home.quiz_deeper }}</h3><p>{{ q.deeper }}</p>{% endif %}
+          {% if q.why_it_matters %}<h3>{{ s.home.quiz_matters }}</h3><p>{{ q.why_it_matters }}</p>{% endif %}
+          {% if q.pearl %}<p class="pearl"><strong>{{ s.home.quiz_pearl }}:</strong> {{ q.pearl }}</p>{% endif %}
+        </div>
+        <p class="credit">{{ f(s.home.quiz_credit, ecg_id=issue.ecg_id) }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% if issue.papers %}
+<section class="section section-alt" aria-labelledby="papers-title">
+  <div class="wrap narrow prose">
+    <h2 id="papers-title">{{ d.papers_heading }}</h2>
+    {% if issue.papers_intro %}<p class="lead">{{ issue.papers_intro }}</p>{% endif %}
+    {% for p in issue.papers %}
+    <article class="paper">
+      <p class="get-who">{{ p.type }}</p>
+      <h3>{{ p.headline }}</h3>
+      <p>{{ p.summary }}</p>
+      {% if p.practice %}<p><strong>{{ d.practice }}:</strong> {{ p.practice }}</p>{% endif %}
+      <p class="credit">{{ p.citation }}{% if p.url %} · <a href="{{ p.url }}" target="_blank" rel="noopener">{{ d.read_source }}</a>{% endif %}</p>
+    </article>
+    {% endfor %}
+    <p class="muted">{{ d.ai_note }}</p>
+  </div>
+</section>
+{% endif %}
+
+{% if issue.tip %}
+<section class="section" aria-labelledby="tip-title">
+  <div class="wrap narrow prose">
+    <h2 id="tip-title">{{ d.tip_heading }}</h2>
+    <h3>{{ issue.tip.title }}</h3>
+    <ul>{% for p in issue.tip.points %}<li>{{ p }}</li>{% endfor %}</ul>
+    {% if issue.tip.action %}<p class="pearl">{{ issue.tip.action }}</p>{% endif %}
+  </div>
+</section>
+{% endif %}
+{% endblock %}

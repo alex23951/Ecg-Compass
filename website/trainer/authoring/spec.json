@@ -1,0 +1,1854 @@
+{
+ "tiers": [
+  {
+   "id": "student",
+   "name_en": "Medical student",
+   "who_en": "Medical students in years 3-6 (ECG appears in physiology, semiology and the cardiology rotation), preparing for the Rezidențiat exam and their first nights on call.",
+   "goals_en": [
+    "Read a 12-lead in a fixed order (quality and calibration, rhythm, rate, axis, intervals, waves, conclusion) in under 3 minutes.",
+    "Measure rate, PR, QRS, QT/QTc and axis within the drill tolerances.",
+    "Name the core patterns: normal and sinus variants, AF, flutter, SVT, PVC and bigeminy, first-degree, Wenckebach and complete AV block, RBBB, LBBB, LAFB, STEMI by territory, LVH, WPW, and 'this ECG is paced'.",
+    "Say which ECGs are emergencies and why.",
+    "Know that the machine's statement can be wrong, and check it."
+   ],
+   "question_style": "Default 'What is the main finding?' on the full 12-lead with the II rhythm strip. A hint button highlights the case's look leads before answering. Module practice shows the module context. No timer.",
+   "distractor_style": "The current options. One is from another family (D1), one is a sibling (D2) and one is a near miss that differs by one criterion (D3). No partly true answers.",
+   "followup_kinds": [
+    "evidence"
+   ],
+   "explanation": "standard. Read table, findings, take-away and the 'you chose X' line for a wrong option, with criteria and pitfalls collapsed. A link goes back to the lesson that teaches the point.",
+   "drills": [
+    "rate (new)",
+    "pr",
+    "qrs",
+    "qt (Bazett and Fridericia)",
+    "axis (quadrant first, then degrees)",
+    "Pass = within or close band"
+   ],
+   "lessons": "Required: lessons 1-14 and 16. Optional: 15 (pacing). The placement check is optional and can mark lessons done."
+  },
+  {
+   "id": "nurse",
+   "name_en": "Nurse",
+   "who_en": "Asistent medical on wards and in UPU, ATI, USTACC, cardiology and dialysis. Records most 12-leads, watches the monitors, starts BLS/AED, and otherwise acts on the doctor's orders.",
+   "goals_en": [
+    "Record a technically correct 12-lead (IEC colours, V1 in the 4th intercostal space), plus V4R and V7-V9 when needed.",
+    "Spot artefact and lead reversal, and record again instead of interpreting.",
+    "Count the rate yourself when the machine or the monitor is wrong; tell regular from irregular and narrow from wide.",
+    "Recognise the ECGs that cannot wait and get them to the doctor within minutes: STEMI pattern, complete heart block, rate under 40 or over 150, wide-complex tachycardia, spikes not followed by a complex. Recognise arrest rhythms and start BLS/AED (once the arrest strips ship).",
+    "Check QTc before a QT-prolonging drug, and know normal pacemaker behaviour (inhibition, fusion)."
+   ],
+   "question_style": "Monitor first: a lead II strip, with the 12-lead behind a button. tier_question: 'What does this ECG show?', with plain-language options plus the name (a new 'plain' field on diagnoses), for example 'Fast irregular rhythm, no P waves (atrial fibrillation)'.\n\nEvery core case then asks 'What do you do first?' with four fixed categories:\n(A) start BLS/AED and call the arrest team;\n(B) call the doctor now, keep the patient monitored with the defibrillator at hand, and record a 12-lead;\n(C) check the electrodes and record again;\n(D) document and report at the round.\n\nA hint button is available. An optional 20-s triage mode unlocks at 80% accuracy or more.",
+   "distractor_style": "Category level (D1-D2). The options differ in what you would do: dangerous vs benign, narrow vs wide, regular vs irregular. Two options never share the same action. tier_options only where the defaults do not fit, for example blocks-03: CHB, SBRAD, 1AVB, AF.",
+   "followup_kinds": [
+    "first",
+    "record",
+    "count",
+    "decision"
+   ],
+   "explanation": "action. A 3-line action card at the top: what it is, why it matters, and what to do first and whom to call. It is generic ERC/ESC teaching, worded 'per local protocol', with a guideline tag, a review date and no drug doses. The standard read sits below it, collapsed.",
+   "drills": [
+    "rate (pass within ±10%, plus a regular/irregular call)",
+    "qrs scored as a narrow/wide category at 120 ms",
+    "qtc check with Bazett and Fridericia, scored as a category: normal / prolonged (>450 ms men, >460 ms women) / 500 ms or more, or a rise over 60 ms: tell the doctor before the next dose"
+   ],
+   "lessons": "Required: lessons 1-10, 12, 13, 15 and 16, with the nurse variants of 4, 9, 10 and 15. Skipped: 11 (axis) and 14 (LVH and WPW)."
+  },
+  {
+   "id": "paramedic",
+   "name_en": "Paramedic / prehospital crew",
+   "who_en": "Prehospital crews: SAJ ambulance nurses and physician crews who record and transmit 12-leads, and ISU-SMURD paramedics with the AED and monitor, often with no doctor on board. They follow ERC as taught in Romania.",
+   "goals_en": [
+    "Call a rhythm shockable or non-shockable within a 10-s rhythm check (once the arrest strips ship).",
+    "Judge bradycardia and tachycardia by adverse features, and have pads and pacing ready when asystole threatens.",
+    "Record and transmit a 12-lead within 10 min of first contact. Recognise STEMI and its equivalents (posterior, RV, LBBB or paced rhythm with ongoing pain) and pre-alert a PCI centre.",
+    "Know when to add V4R and V7-V9, and that the machine's statement can be wrong.",
+    "Tell artefact from VF by checking the patient, and place pads at least 8 cm from a device."
+   ],
+   "question_style": "A monitor-style II strip first, with the 12-lead on tap, and a one-line prehospital vignette ('Chest pain for 40 min, BP 85/50').\n\nThen 'Next action' with four fixed paramedic categories:\n(A) shock/CPR per ERC;\n(B) pads on, pacing or synchronised cardioversion ready, request physician support;\n(C) transmit the 12-lead and pre-alert a PCI centre;\n(D) monitor, transport and hand over.\n\nOnce imported, arrest strips ask 'Shockable?', with a 10-s timer after 80% accuracy. A hint button is available. The tier carries a Preview label until the arrest strips ship.",
+   "distractor_style": "Category level (D1-D2), with contrasts that change prehospital action: shockable vs not, STEMI vs mimic, bradycardia with risk of asystole vs benign.",
+   "followup_kinds": [
+    "first",
+    "record",
+    "count",
+    "decision"
+   ],
+   "explanation": "action, plus 'what the receiving doctor needs from you': the transmitted ECG, the time the pain started and the vital signs. The standard read is collapsed.",
+   "drills": [
+    "rate (6-s count ×10 and 10-s count ×6, ±10%)",
+    "qrs scored as a narrow/wide category at 120 ms",
+    "st (new): ST deviation at the J point in mm, ±0.5 mm, against Alex's approved values"
+   ],
+   "lessons": "Required: lessons 1-10, 13, 15 and 16, with the paramedic variants of 4, 9, 10 and 15. Optional: 12 (QT) and 14 (LVH and the WPW pseudo-infarct). Skipped: 11."
+  },
+  {
+   "id": "resident",
+   "name_en": "Resident",
+   "who_en": "Medici rezidenți in cardiology, emergency medicine, ATI, internal medicine and family medicine, who often read alone on call (gardă).",
+   "goals_en": [
+    "Write a complete, independent report with measurements.",
+    "Name the culprit artery, the level of an AV block and the side of an accessory pathway.",
+    "Recognise AAI, VVI, DDD and tracking modes, normal inhibition and fusion, and obvious malfunctions.",
+    "Give the next guideline step (ESC/ERC) and the next ECG to record (V4R, V7-V9, a repeat).",
+    "Know when to call cardiology or EP."
+   ],
+   "question_style": "Default question on the 12-lead. No hints before answering; the look leads are shown after. Module blocks first, then mixed sessions. No timer.",
+   "distractor_style": "Two near misses one criterion away (D3), for example STEMI_INF vs STEMI_INF_POST, MOBITZ1 vs BLOCK21, RV_APEX vs RV_SEPTAL, plus one sibling (D2). These are mostly the current options.",
+   "followup_kinds": [
+    "localise",
+    "evidence",
+    "decision",
+    "record"
+   ],
+   "explanation": "standard, plus the guideline step with its source and year, and the 'why not' line for the chosen wrong option.",
+   "drills": [
+    "rate",
+    "pr",
+    "qrs",
+    "qt (Bazett and Fridericia)",
+    "axis",
+    "st",
+    "Pass = within band only"
+   ],
+   "lessons": "Optional: lessons 1-8 (basics). Required: 9-16 unless the placement check, offered by default, marks them done."
+  },
+  {
+   "id": "specialist",
+   "name_en": "Specialist (medic specialist/primar)",
+   "who_en": "Medic specialist or primar: cardiologists, plus emergency, ATI, internal medicine and family doctors who make decisions and supervise residents. A focus setting, Cardiology (default) or Acute & general medicine, moves pacing-site cases site-04 to site-11 between core and stretch.",
+   "goals_en": [
+    "Make decision-grade reads fast, in mixed sessions without module hints.",
+    "Handle STEMI mimics and equivalents: LBBB or paced rhythm with ischaemia (Smith-modified Sgarbossa), WPW pseudo-infarct, LAFB vs inferior MI, evolving vs acute MI.",
+    "Decide on pacing, EP study, CRT or ablation referral, and whether a device needs checking today.",
+    "Tell device malfunction from normal device behaviour (inhibition, fusion, pseudofusion).",
+    "Catch machine misreads."
+   ],
+   "question_style": "Mixed sessions only: no module context, with look-alikes interleaved. Often a one-line vignette, or 'The machine reads X. Is it right?', with the machine statement shown before answering where it is wrong (trbl-03). No hints. An optional 60-s timed session.",
+   "distractor_style": "D3-D4: mimics and partly true answers, for example pericarditis vs STEMI, native LBBB vs paced, LV-only vs BiV, LOC vs LOC with undersensing.",
+   "followup_kinds": [
+    "decision",
+    "localise",
+    "limits",
+    "count"
+   ],
+   "explanation": "deep. Compact findings, criteria and pitfalls open, one guideline line with its year, and the case's deep pearl.",
+   "drills": [
+    "rate",
+    "pr",
+    "qrs",
+    "qt",
+    "axis",
+    "st",
+    "Mixed drill sessions by default; pass = within band only"
+   ],
+   "lessons": "Skipped by default except optional lessons 6, 13, 15 and 16. The placement check is offered."
+  },
+  {
+   "id": "ep",
+   "name_en": "Electrophysiologist / device specialist",
+   "who_en": "Cardiologists in EP labs and device clinics (implant, follow-up, ablation), device-clinic staff and EHRA certification candidates.",
+   "goals_en": [
+    "Read pacing timing cycles: lower-rate and escape intervals, sensed and paced AV delay, VV offset, refractory periods and upper-rate behaviour.",
+    "Judge pacing site and CRT capture from the surface ECG, and say what only interrogation can show.",
+    "Choose the programming fix (sensitivity, AV delay, AV search) and predict device behaviour.",
+    "Localise accessory pathways and PVC origin; work out flutter and SVT mechanisms."
+   ],
+   "question_style": "Task-specific tier_question, for example site-*: 'Which ventricular sites are being captured?' and trbl-*: 'Which spike or beat proves it?'. No lead highlights and no machine values before answering. An optional three-lead first view (I, aVF, V1) on site-* cases. No timer. Follow-ups are chained: identify, measure, explain, fix.",
+   "distractor_style": "D3-D4, one feature apart, with sign traps (sensitivity in mV) and 'Cannot be determined from the surface ECG: interrogation needed' as a scored option in follow-ups. Main-answer keys stay as Alex approved them.",
+   "followup_kinds": [
+    "mechanism",
+    "device",
+    "limits",
+    "predict",
+    "localise",
+    "beat"
+   ],
+   "explanation": "deep. Mechanism, the differential within the family, measured intervals, a schematic marker channel (As/Ap/Vs/Vp, blanking and refractory periods) labelled as schematic, and what a device check adds. References: ESC 2021 pacing/CRT and EHRA 2023 conduction-system pacing.",
+   "drills": [
+    "timing (new): lower-rate interval, paced and sensed AV delay, escape interval from a sensed beat, VV offset, flutter cycle length, coupling interval",
+    "qrs (paced QRS width)",
+    "axis (paced axis)",
+    "Pass = within band only; bands never tighter than the reference uncertainty"
+   ],
+   "lessons": "None required. EP starts in practice, and every lesson can still be opened from Learn."
+  }
+ ],
+ "case_map": [
+  {
+   "id": "rhythm-01",
+   "student": "core",
+   "nurse": "core",
+   "paramedic": "core",
+   "resident": "core",
+   "specialist": "core",
+   "ep": "skip"
+  },
+  {
+   "id": "rhythm-02",
+   "student": "core",
+   "nurse": "core",
+   "paramedic": "core",
+   "resident": "core",
+   "specialist": "skip",
+   "ep": "skip"
+  },
+  {
+   "id": "rhythm-03",
+   "student": "core",
+   "nurse": "core",
+   "paramedic": "core",
+   "resident": "core",
+   "specialist": "core",
+   "ep": "skip"
+  },
+  {
+   "id": "rhythm-04",
+   "student": "core",
+   "nurse": "core",
+   "paramedic": "stretch",
+   "resident": "core",
+   "specialist": "core",
+   "ep": "skip"
+  },
+  {
+   "id": "rhythm-05",
+   "student": "core",
+   "nurse": "core",
+   "paramedic": "core",
+   "resident": "core",
+   "specialist": "core",
+   "ep": "stretch"
+  },
+  {
+   "id": "blocks-01",
+   "student": "core",
+   "nurse": "core",
+   "paramedic": "stretch",
+   "resident": "core",
+   "specialist": "core",
+   "ep": "skip"
+  },
+  {
+   "id": "blocks-02",
+   "student": "stretch",
+   "nurse": "stretch",
+   "paramedic": "stretch",
+   "resident": "core",
+   "specialist": "core",
+   "ep": "core"
+  },
+  {
+   "id": "blocks-03",
+   "student": "core",
+   "nurse": "core",
+   "paramedic": "core",
+   "resident": "core",
+   "specialist": "core",
+   "ep": "core"
+  },
+  {
+   "id": "blocks-04",
+   "student": "core",
+   "nurse": "stretch",
+   "paramedic": "stretch",
+   "resident": "core",
+   "specialist": "core",
+   "ep": "skip"
+  },
+  {
+   "id": "blocks-05",
+   "student": "core",
+   "nurse": "stretch",
+   "paramedic": "core",
+   "resident": "core",
+   "specialist": "core",
+   "ep": "core"
+  },
+  {
+   "id": "blocks-06",
+   "student": "core",
+   "nurse": "skip",
+   "paramedic": "skip",
+   "resident": "core",
+   "specialist": "core",
+   "ep": "stretch"
+  },
+  {
+   "id": "isch-01",
+   "student": "core",
+   "nurse": "core",
+   "paramedic": "core",
+   "resident": "core",
+   "specialist": "core",
+   "ep": "stretch"
+  },
+  {
+   "id": "isch-02",
+   "student": "core",
+   "nurse": "core",
+   "paramedic": "core",
+   "resident": "core",
+   "specialist": "core",
+   "ep": "stretch"
+  },
+  {
+   "id": "isch-03",
+   "student": "stretch",
+   "nurse": "core",
+   "paramedic": "core",
+   "resident": "core",
+   "specialist": "core",
+   "ep": "stretch"
+  },
+  {
+   "id": "isch-04",
+   "student": "core",
+   "nurse": "core",
+   "paramedic": "core",
+   "resident": "core",
+   "specialist": "core",
+   "ep": "stretch"
+  },
+  {
+   "id": "isch-05",
+   "student": "stretch",
+   "nurse": "skip",
+   "paramedic": "stretch",
+   "resident": "core",
+   "specialist": "core",
+   "ep": "stretch"
+  },
+  {
+   "id": "tachy-01",
+   "student": "core",
+   "nurse": "core",
+   "paramedic": "core",
+   "resident": "core",
+   "specialist": "core",
+   "ep": "stretch"
+  },
+  {
+   "id": "tachy-02",
+   "student": "core",
+   "nurse": "core",
+   "paramedic": "core",
+   "resident": "core",
+   "specialist": "core",
+   "ep": "core"
+  },
+  {
+   "id": "tachy-03",
+   "student": "stretch",
+   "nurse": "stretch",
+   "paramedic": "stretch",
+   "resident": "core",
+   "specialist": "core",
+   "ep": "core"
+  },
+  {
+   "id": "tachy-04",
+   "student": "core",
+   "nurse": "core",
+   "paramedic": "core",
+   "resident": "core",
+   "specialist": "core",
+   "ep": "core"
+  },
+  {
+   "id": "tachy-05",
+   "student": "core",
+   "nurse": "core",
+   "paramedic": "core",
+   "resident": "core",
+   "specialist": "core",
+   "ep": "stretch"
+  },
+  {
+   "id": "tachy-06",
+   "student": "core",
+   "nurse": "core",
+   "paramedic": "stretch",
+   "resident": "core",
+   "specialist": "core",
+   "ep": "core"
+  },
+  {
+   "id": "patt-01",
+   "student": "core",
+   "nurse": "skip",
+   "paramedic": "skip",
+   "resident": "core",
+   "specialist": "core",
+   "ep": "skip"
+  },
+  {
+   "id": "patt-02",
+   "student": "stretch",
+   "nurse": "skip",
+   "paramedic": "stretch",
+   "resident": "core",
+   "specialist": "core",
+   "ep": "core"
+  },
+  {
+   "id": "patt-03",
+   "student": "core",
+   "nurse": "skip",
+   "paramedic": "skip",
+   "resident": "core",
+   "specialist": "core",
+   "ep": "core"
+  },
+  {
+   "id": "pace-01",
+   "student": "core",
+   "nurse": "core",
+   "paramedic": "core",
+   "resident": "core",
+   "specialist": "core",
+   "ep": "core"
+  },
+  {
+   "id": "pace-02",
+   "student": "skip",
+   "nurse": "skip",
+   "paramedic": "skip",
+   "resident": "stretch",
+   "specialist": "core",
+   "ep": "core"
+  },
+  {
+   "id": "pace-03",
+   "student": "skip",
+   "nurse": "skip",
+   "paramedic": "skip",
+   "resident": "core",
+   "specialist": "core",
+   "ep": "core"
+  },
+  {
+   "id": "pace-04",
+   "student": "stretch",
+   "nurse": "core",
+   "paramedic": "skip",
+   "resident": "core",
+   "specialist": "core",
+   "ep": "core"
+  },
+  {
+   "id": "pace-05",
+   "student": "core",
+   "nurse": "core",
+   "paramedic": "core",
+   "resident": "core",
+   "specialist": "core",
+   "ep": "core"
+  },
+  {
+   "id": "pace-06",
+   "student": "skip",
+   "nurse": "stretch",
+   "paramedic": "skip",
+   "resident": "core",
+   "specialist": "core",
+   "ep": "core"
+  },
+  {
+   "id": "pace-07",
+   "student": "skip",
+   "nurse": "skip",
+   "paramedic": "skip",
+   "resident": "core",
+   "specialist": "core",
+   "ep": "core"
+  },
+  {
+   "id": "pace-08",
+   "student": "stretch",
+   "nurse": "stretch",
+   "paramedic": "stretch",
+   "resident": "core",
+   "specialist": "core",
+   "ep": "core"
+  },
+  {
+   "id": "pace-09",
+   "student": "skip",
+   "nurse": "core",
+   "paramedic": "stretch",
+   "resident": "core",
+   "specialist": "core",
+   "ep": "core"
+  },
+  {
+   "id": "pace-10",
+   "student": "skip",
+   "nurse": "skip",
+   "paramedic": "skip",
+   "resident": "core",
+   "specialist": "core",
+   "ep": "core"
+  },
+  {
+   "id": "pace-11",
+   "student": "skip",
+   "nurse": "skip",
+   "paramedic": "skip",
+   "resident": "core",
+   "specialist": "core",
+   "ep": "core"
+  },
+  {
+   "id": "pace-12",
+   "student": "skip",
+   "nurse": "skip",
+   "paramedic": "skip",
+   "resident": "core",
+   "specialist": "core",
+   "ep": "core"
+  },
+  {
+   "id": "pace-13",
+   "student": "skip",
+   "nurse": "skip",
+   "paramedic": "skip",
+   "resident": "core",
+   "specialist": "core",
+   "ep": "core"
+  },
+  {
+   "id": "site-01",
+   "student": "stretch",
+   "nurse": "skip",
+   "paramedic": "skip",
+   "resident": "core",
+   "specialist": "core",
+   "ep": "core"
+  },
+  {
+   "id": "site-02",
+   "student": "skip",
+   "nurse": "skip",
+   "paramedic": "skip",
+   "resident": "core",
+   "specialist": "core",
+   "ep": "core"
+  },
+  {
+   "id": "site-03",
+   "student": "skip",
+   "nurse": "skip",
+   "paramedic": "skip",
+   "resident": "core",
+   "specialist": "core",
+   "ep": "core"
+  },
+  {
+   "id": "site-04",
+   "student": "skip",
+   "nurse": "skip",
+   "paramedic": "skip",
+   "resident": "stretch",
+   "specialist": "core",
+   "ep": "core"
+  },
+  {
+   "id": "site-05",
+   "student": "skip",
+   "nurse": "skip",
+   "paramedic": "skip",
+   "resident": "stretch",
+   "specialist": "core",
+   "ep": "core"
+  },
+  {
+   "id": "site-06",
+   "student": "skip",
+   "nurse": "skip",
+   "paramedic": "skip",
+   "resident": "core",
+   "specialist": "core",
+   "ep": "core"
+  },
+  {
+   "id": "site-07",
+   "student": "skip",
+   "nurse": "skip",
+   "paramedic": "skip",
+   "resident": "stretch",
+   "specialist": "core",
+   "ep": "core"
+  },
+  {
+   "id": "site-08",
+   "student": "skip",
+   "nurse": "skip",
+   "paramedic": "skip",
+   "resident": "stretch",
+   "specialist": "core",
+   "ep": "core"
+  },
+  {
+   "id": "site-09",
+   "student": "skip",
+   "nurse": "skip",
+   "paramedic": "skip",
+   "resident": "stretch",
+   "specialist": "core",
+   "ep": "core"
+  },
+  {
+   "id": "site-10",
+   "student": "skip",
+   "nurse": "skip",
+   "paramedic": "skip",
+   "resident": "stretch",
+   "specialist": "core",
+   "ep": "core"
+  },
+  {
+   "id": "site-11",
+   "student": "skip",
+   "nurse": "skip",
+   "paramedic": "skip",
+   "resident": "stretch",
+   "specialist": "core",
+   "ep": "core"
+  },
+  {
+   "id": "site-12",
+   "student": "skip",
+   "nurse": "skip",
+   "paramedic": "skip",
+   "resident": "skip",
+   "specialist": "stretch",
+   "ep": "core"
+  },
+  {
+   "id": "site-13",
+   "student": "skip",
+   "nurse": "skip",
+   "paramedic": "skip",
+   "resident": "skip",
+   "specialist": "stretch",
+   "ep": "core"
+  },
+  {
+   "id": "site-14",
+   "student": "skip",
+   "nurse": "skip",
+   "paramedic": "skip",
+   "resident": "skip",
+   "specialist": "stretch",
+   "ep": "core"
+  },
+  {
+   "id": "trbl-01",
+   "student": "skip",
+   "nurse": "stretch",
+   "paramedic": "skip",
+   "resident": "core",
+   "specialist": "core",
+   "ep": "core"
+  },
+  {
+   "id": "trbl-02",
+   "student": "skip",
+   "nurse": "skip",
+   "paramedic": "skip",
+   "resident": "stretch",
+   "specialist": "stretch",
+   "ep": "core"
+  },
+  {
+   "id": "trbl-03",
+   "student": "stretch",
+   "nurse": "core",
+   "paramedic": "stretch",
+   "resident": "core",
+   "specialist": "core",
+   "ep": "core"
+  },
+  {
+   "id": "trbl-04",
+   "student": "skip",
+   "nurse": "stretch",
+   "paramedic": "stretch",
+   "resident": "stretch",
+   "specialist": "core",
+   "ep": "core"
+  },
+  {
+   "id": "trbl-05",
+   "student": "skip",
+   "nurse": "skip",
+   "paramedic": "skip",
+   "resident": "stretch",
+   "specialist": "core",
+   "ep": "core"
+  },
+  {
+   "id": "trbl-06",
+   "student": "skip",
+   "nurse": "skip",
+   "paramedic": "skip",
+   "resident": "skip",
+   "specialist": "stretch",
+   "ep": "core"
+  }
+ ],
+ "followups": [
+  {
+   "case_id": "rhythm-03",
+   "tiers": [
+    "student",
+    "nurse"
+   ],
+   "kind": "evidence",
+   "idea_en": "How do you know this is not flutter with 2:1 block? Answer: an upright P wave in II before every QRS (PR about 130 ms), and no sawtooth in II, III, aVF or V1."
+  },
+  {
+   "case_id": "rhythm-02",
+   "tiers": [
+    "nurse"
+   ],
+   "kind": "first",
+   "idea_en": "The monitor shows 47/min in a 19-year-old who feels well. What do you do first? Answer: check symptoms and blood pressure. If the patient is well, document it and report at the round (category D): there is a P wave before every QRS with a constant PR, and this is often physiological at this age. Distractor: call the arrest team."
+  },
+  {
+   "case_id": "tachy-01",
+   "tiers": [
+    "resident",
+    "specialist"
+   ],
+   "kind": "decision",
+   "idea_en": "The average ventricular rate is about 125-130/min. Is that within the initial lenient target, and which score decides anticoagulation? Answer: no, it is above the 110/min target (ESC 2024), and the score is CHA₂DS₂-VA. Check for adverse features first."
+  },
+  {
+   "case_id": "blocks-01",
+   "tiers": [
+    "student",
+    "resident"
+   ],
+   "kind": "evidence",
+   "idea_en": "First- or second-degree block? Answer: first-degree. Every P wave is followed by a QRS, and the PR is constant at about 220 ms."
+  },
+  {
+   "case_id": "blocks-02",
+   "tiers": [
+    "student",
+    "resident"
+   ],
+   "kind": "evidence",
+   "idea_en": "Which measurement proves Wenckebach? Answer: the PR goes 260, 310, 350 ms, then a P wave is blocked; after the pause the PR is back to about 250 ms. Follow the P waves on the II strip and in V2, because the limb leads have tremor."
+  },
+  {
+   "case_id": "blocks-02",
+   "tiers": [
+    "resident",
+    "specialist"
+   ],
+   "kind": "localise",
+   "idea_en": "Where is the block most likely, and why? Answer: in the AV node, because this is Mobitz I with a narrow QRS (machine QRS about 97 ms). A wide QRS would raise the question of infranodal disease."
+  },
+  {
+   "case_id": "blocks-03",
+   "tiers": [
+    "student",
+    "resident"
+   ],
+   "kind": "evidence",
+   "idea_en": "What proves that the atria and the ventricles are independent? Answer: regular P waves (PP about 600 ms, about 98/min), regular QRS complexes (RR about 1500 ms, about 40/min), and a different PR before every QRS."
+  },
+  {
+   "case_id": "blocks-03",
+   "tiers": [
+    "resident",
+    "specialist"
+   ],
+   "kind": "localise",
+   "idea_en": "Where is the block, and what does the escape rhythm tell you? Answer: below the AV node. The wide escape (about 135 ms, RBBB shape) at about 40/min is slow and unreliable, so pads and pacing should be ready. Permanent pacing is indicated regardless of symptoms (ESC 2021)."
+  },
+  {
+   "case_id": "blocks-03",
+   "tiers": [
+    "nurse",
+    "paramedic"
+   ],
+   "kind": "first",
+   "idea_en": "Vignette: rate 40, BP 80/50, confused. The rate comes from the tracing; the BP and confusion are the vignette. What do you do first?\nNurse answer (category B): call the doctor or emergency team now, put on the pads and monitor, and prepare for transcutaneous pacing. Distractors: 'give atropine' (needs an order), 'file it for the round', 'repeat in an hour'.\nParamedic answer (category B): pads on and pacing ready, request physician support, and take the patient to a centre that can pace. Atropine per protocol often fails with a wide escape (ERC)."
+  },
+  {
+   "case_id": "blocks-05",
+   "tiers": [
+    "paramedic"
+   ],
+   "kind": "first",
+   "idea_en": "Forty minutes of chest pain with this ECG. What next? Answer (category C): treat it as a STEMI equivalent whether the LBBB is new or already known (ESC 2023). Transmit the ECG and pre-alert the PCI centre."
+  },
+  {
+   "case_id": "blocks-05",
+   "tiers": [
+    "specialist"
+   ],
+   "kind": "decision",
+   "idea_en": "Chest pain with this LBBB. Does the ST elevation in V1-V3 meet the Smith-modified Sgarbossa criteria? Answer: it is discordant (opposite to the deep QS), which is expected. Occlusion would need concordant ST elevation ≥1 mm, concordant ST depression ≥1 mm in V1-V3, or discordant ST elevation ≥25% of the preceding S depth. The writer measures the ST/S ratio on the tracing before fixing the key."
+  },
+  {
+   "case_id": "blocks-05",
+   "tiers": [
+    "specialist",
+    "ep"
+   ],
+   "kind": "decision",
+   "idea_en": "Does this meet strict (Strauss) LBBB criteria, and why does it matter? Answer: yes. QRS about 150 ms, QS/rS in V1-V3, broad notched R waves in I and aVL. With LVEF ≤35% and NYHA II-IV despite optimal therapy, LBBB with QRS ≥150 ms is a class I indication for CRT (ESC 2021)."
+  },
+  {
+   "case_id": "blocks-06",
+   "tiers": [
+    "student",
+    "resident"
+   ],
+   "kind": "evidence",
+   "idea_en": "What argues against an old inferior MI? Answer: rS complexes in II, III and aVF, with small initial r waves and no Q waves."
+  },
+  {
+   "case_id": "blocks-06",
+   "tiers": [
+    "specialist"
+   ],
+   "kind": "decision",
+   "idea_en": "Is this bifascicular block, and does it need treatment? Answer: no. The QRS is about 110 ms, so there is no complete RBBB. Isolated LAFB needs no treatment on its own; syncope with bifascicular block would lead to an EP study, with pacing if HV ≥70 ms (ESC 2021)."
+  },
+  {
+   "case_id": "isch-01",
+   "tiers": [
+    "nurse"
+   ],
+   "kind": "first",
+   "idea_en": "What do you do first? Answer (category B): show the ECG to the doctor now (the ECG must be read within 10 min of first contact, ESC 2023), and keep the patient on the monitor with the defibrillator at hand."
+  },
+  {
+   "case_id": "isch-01",
+   "tiers": [
+    "paramedic"
+   ],
+   "kind": "first",
+   "idea_en": "What do you do first? Answer (category C): transmit the ECG and pre-alert a PCI centre. Go directly there if primary PCI is possible within 120 min of diagnosis (ESC 2023)."
+  },
+  {
+   "case_id": "isch-01",
+   "tiers": [
+    "nurse",
+    "paramedic",
+    "resident"
+   ],
+   "kind": "record",
+   "idea_en": "Which extra lead do you record before any nitrate? Answer: V4R (with V3R). ST elevation ≥0.5 mm there means right ventricular involvement and a preload-dependent patient. V1 here already shows about 1 mm of ST elevation."
+  },
+  {
+   "case_id": "isch-01",
+   "tiers": [
+    "student",
+    "resident"
+   ],
+   "kind": "localise",
+   "idea_en": "Which artery? Answer: the right coronary artery. ST elevation is greater in III (about 3 mm) than in II (about 2 mm), with ST depression in I and aVL."
+  },
+  {
+   "case_id": "isch-02",
+   "tiers": [
+    "resident",
+    "specialist"
+   ],
+   "kind": "localise",
+   "idea_en": "Which artery, and where? Answer: the proximal LAD, at or above the first diagonal. There is ST elevation in V2-V5 plus I and aVL, with reciprocal depression in III. Sinus tachycardia (about 122/min) suggests a large infarct."
+  },
+  {
+   "case_id": "isch-03",
+   "tiers": [
+    "nurse",
+    "paramedic"
+   ],
+   "kind": "record",
+   "idea_en": "ST depression in V2-V3 with inferior ST elevation: which leads do you record next, and where? Answer: V7-V9, on the same horizontal level as V6, in the posterior axillary, mid-scapular and left paraspinal lines. ST elevation ≥0.5 mm there confirms posterior involvement."
+  },
+  {
+   "case_id": "isch-03",
+   "tiers": [
+    "resident",
+    "specialist"
+   ],
+   "kind": "localise",
+   "idea_en": "Which finding favours the RCA over the circumflex? Answer: reciprocal ST depression in I and aVL, because circumflex occlusion often spares or elevates these leads. The writer checks whether III exceeds II before adding that to the answer."
+  },
+  {
+   "case_id": "isch-04",
+   "tiers": [
+    "specialist"
+   ],
+   "kind": "localise",
+   "idea_en": "What would point to RCA occlusion with RV infarction rather than a wrap-around LAD? Answer: ST elevation greatest in V1 and fading by V3-V4, with III higher than II. Here the elevation peaks in V2-V4 (over 1 cm in V3) with inferior elevation, which fits a wrap-around LAD."
+  },
+  {
+   "case_id": "isch-05",
+   "tiers": [
+    "resident",
+    "specialist"
+   ],
+   "kind": "evidence",
+   "idea_en": "Why is this not a Wellens pattern? Answer: Wellens needs preserved R waves without Q waves. Here V1-V4 show QS complexes or tiny r waves with residual ST elevation, so this is an evolving anterior MI; the history and troponin will date it."
+  },
+  {
+   "case_id": "tachy-02",
+   "tiers": [
+    "nurse",
+    "paramedic"
+   ],
+   "kind": "count",
+   "idea_en": "The monitor shows about 65/min. Is the atrial rate the same? Answer: no. Flutter waves run at about 270/min with 4:1 conduction. The last beat (3:1) shows the conduction ratio can change; at 2:1 the ventricular rate would jump to about 135/min."
+  },
+  {
+   "case_id": "tachy-03",
+   "tiers": [
+    "ep"
+   ],
+   "kind": "mechanism",
+   "idea_en": "Measure the flutter cycle length. Why is it slow, and what is the risk? Answer: about 235 ms (about 255/min), slowed by antiarrhythmic drugs. A slower circuit can conduct 1:1, so class IC drugs need an AV-nodal blocker. If the flutter is typical, the target for ablation is the cavotricuspid isthmus. The writer confirms the F-wave polarity (negative inferior, positive V1) before calling it typical."
+  },
+  {
+   "case_id": "tachy-04",
+   "tiers": [
+    "paramedic"
+   ],
+   "kind": "first",
+   "idea_en": "The patient is stable with a normal BP. What is the first treatment? Case-specific options. Answer: a modified Valsalva manoeuvre (strain, then lie flat with the legs raised) with a rhythm strip running (ERC). With adverse features it would be category B instead."
+  },
+  {
+   "case_id": "tachy-04",
+   "tiers": [
+    "resident"
+   ],
+   "kind": "decision",
+   "idea_en": "The patient is stable. In what order do you treat? Answer: modified Valsalva, then adenosine with a 12-lead running (ESC 2019 SVT). The recording made at termination helps identify the mechanism."
+  },
+  {
+   "case_id": "tachy-04",
+   "tiers": [
+    "ep"
+   ],
+   "kind": "mechanism",
+   "idea_en": "Where is the retrograde P wave, and what does that suggest? Answer: look just after the QRS, for a pseudo-r′ in V1 or a pseudo-S in II, III and aVF. No visible P wave, or an RP under 70 ms, favours typical AVNRT. A separate retrograde P with an RP over 70 ms favours AVRT. The writer confirms what the tracing actually shows."
+  },
+  {
+   "case_id": "tachy-05",
+   "tiers": [
+    "student",
+    "resident"
+   ],
+   "kind": "evidence",
+   "idea_en": "What does the pause after the early beat tell you? Answer: the pause is fully compensatory (about 1630 ms = 2 × 815 ms). The sinus node was not reset, which fits a PVC rather than a PAC."
+  },
+  {
+   "case_id": "tachy-06",
+   "tiers": [
+    "nurse"
+   ],
+   "kind": "count",
+   "idea_en": "The pulse oximeter shows about half the rate seen on the ECG. Why? Answer: the early ectopic beats make little or no pulse wave. Count the rate from the ECG and feel the pulse. The stem quotes no numbers that are not on the tracing."
+  },
+  {
+   "case_id": "tachy-06",
+   "tiers": [
+    "ep"
+   ],
+   "kind": "localise",
+   "idea_en": "Where do the ectopic beats come from? Answer: the left ventricle, because they are positive in V1. The coupling interval is fixed at about 485 ms."
+  },
+  {
+   "case_id": "patt-02",
+   "tiers": [
+    "student",
+    "resident"
+   ],
+   "kind": "evidence",
+   "idea_en": "Before you write 'old inferior MI', what do you check? Answer: the PR (about 100 ms, short) and the delta wave in I and aVL. The 'Q waves' in III and aVF are negative delta waves."
+  },
+  {
+   "case_id": "patt-02",
+   "tiers": [
+    "ep"
+   ],
+   "kind": "localise",
+   "idea_en": "Negative delta waves in III and aVF: where is the pathway? Answer: in the inferior paraseptal (posteroseptal) region. Chained question: a steeply negative delta wave in II would suggest an epicardial (coronary sinus) pathway. The writer checks lead II on the tracing."
+  },
+  {
+   "case_id": "patt-03",
+   "tiers": [
+    "resident",
+    "ep"
+   ],
+   "kind": "localise",
+   "idea_en": "Which side is the pathway on? Answer: the left, because there is a positive delta wave and a dominant R in V1 (type A). For EP, the follow-up refines lateral vs posterior from the delta polarity in I and aVL; the writer verifies this on the tracing."
+  },
+  {
+   "case_id": "patt-03",
+   "tiers": [
+    "specialist",
+    "ep"
+   ],
+   "kind": "decision",
+   "idea_en": "This patient develops pre-excited AF. What do you avoid, and what marks a high-risk pathway? Answer: avoid AV-nodal blockers (adenosine, verapamil, diltiazem, beta-blockers, digoxin) and IV amiodarone. Cardiovert if the patient is unstable; otherwise use procainamide or ibutilide (ESC 2019). A shortest pre-excited RR of 250 ms or less marks high risk and points to ablation."
+  },
+  {
+   "case_id": "pace-01",
+   "tiers": [
+    "nurse",
+    "paramedic"
+   ],
+   "kind": "first",
+   "idea_en": "This patient arrests in VF. Where do the pads go? Answer: at least 8 cm from the generator, anteroposterior or anterolateral away from the device (ERC). Have the device checked after any shock."
+  },
+  {
+   "case_id": "pace-09",
+   "tiers": [
+    "nurse",
+    "paramedic"
+   ],
+   "kind": "decision",
+   "idea_en": "Some beats have no spike. Is the pacemaker failing? Answer: no, this is category D (document it). The patient's own beats inhibit the device, and pacing resumes about one pacing interval later. A fault would be a spike after the T wave with no QRS, or a spike too soon after a native beat."
+  },
+  {
+   "case_id": "pace-09",
+   "tiers": [
+    "ep"
+   ],
+   "kind": "device",
+   "idea_en": "Measure from the native beat at about 8.7 s to the next spike. Why is this a little longer than the 860 ms pacing interval? Answer: it is about 900 ms from the onset of the surface QRS because the lead senses later than that onset; hysteresis is the alternative. The timing restarts from the sensed event."
+  },
+  {
+   "case_id": "pace-08",
+   "tiers": [
+    "resident",
+    "specialist"
+   ],
+   "kind": "evidence",
+   "idea_en": "What proves the block is complete? Answer: the P waves run at about 118/min, faster than the 65/min pacing, and the P waves just after the T wave (about 3.0 s and 7.6 s, about 350 ms before the next spike) are not conducted."
+  },
+  {
+   "case_id": "pace-08",
+   "tiers": [
+    "specialist",
+    "ep"
+   ],
+   "kind": "limits",
+   "idea_en": "Can you tell from this strip whether the patient is pacemaker-dependent? Answer: no. Every beat is paced at 65/min, which suppresses any slower escape rhythm. Dependency is tested at a device check by lowering the rate."
+  },
+  {
+   "case_id": "pace-12",
+   "tiers": [
+    "resident",
+    "ep"
+   ],
+   "kind": "device",
+   "idea_en": "What would a tracking mode (DDD/VDD) do differently? Answer: it would put a ventricular spike after each P wave at the programmed AV delay, so the ventricles would follow the P waves at about 100/min. Here the spikes keep an 860 ms interval whatever the P waves do (VVI). Tracking would restore AV synchrony."
+  },
+  {
+   "case_id": "pace-07",
+   "tiers": [
+    "ep"
+   ],
+   "kind": "predict",
+   "idea_en": "If the sinus rate rises above the upper tracking rate, what appears first? Answer: pacemaker Wenckebach. The sensed AV delay lengthens until a P wave falls in the PVARP and is not tracked. Fixed 2:1 block follows once the P-P interval is shorter than the TARP (sensed AV delay + PVARP)."
+  },
+  {
+   "case_id": "pace-10",
+   "tiers": [
+    "ep"
+   ],
+   "kind": "device",
+   "idea_en": "Why does the next spike come about 1 s after the early beat at about 0.8 s, and not after 740 ms? Answer: the device waits for the next sensed P wave (at about 1.7 s), so the ventricular rate follows the sinus rate. Many devices also extend the PVARP after a ventricular event with no P wave before it, so that a retrograde P is not tracked (PMT prevention)."
+  },
+  {
+   "case_id": "site-01",
+   "tiers": [
+    "resident"
+   ],
+   "kind": "localise",
+   "idea_en": "Which leads separate apical from septal or outflow-tract RV pacing? Answer: II, III and aVF. Negative complexes (a superior axis) mean the apex, as here; positive complexes mean the septum or outflow tract. Contrast this tracing with site-06."
+  },
+  {
+   "case_id": "site-03",
+   "tiers": [
+    "specialist",
+    "ep"
+   ],
+   "kind": "device",
+   "idea_en": "If this tracing came from a CRT patient, what would it mean? Answer: loss of LV capture, because this is a pure RV apical pattern (tall R in I, rS in V1, no dominant R). Check the LV threshold, the lead position and phrenic stimulation."
+  },
+  {
+   "case_id": "site-04",
+   "tiers": [
+    "ep"
+   ],
+   "kind": "mechanism",
+   "idea_en": "Why is the interval after the premature beat about 980 ms rather than 860 ms? Answer: the ectopic beat is upright in V1-V3 (LV origin), so it reaches the RV lead late, and the timing restarts from the moment it is sensed. Hysteresis is the alternative; interrogation decides."
+  },
+  {
+   "case_id": "site-05",
+   "tiers": [
+    "ep"
+   ],
+   "kind": "localise",
+   "idea_en": "What would left bundle branch area pacing look like instead? Answer: a paced RBBB pattern in V1 (qR or rsR′), a positive lead I, and R waves in V5-V6 with a short, constant V6 R-wave peak time (EHRA 2023). Here lead I starts with a Q wave and V5-V6 are QS, so this is biventricular pacing."
+  },
+  {
+   "case_id": "site-12",
+   "tiers": [
+    "ep"
+   ],
+   "kind": "limits",
+   "idea_en": "Does a single spike rule out biventricular pacing? Answer: no, because simultaneous BiV pacing can show a single spike. The very wide QRS (about 185 ms) with a pure R in V1 favours LV-only pacing, and only interrogation proves the RV is not captured. Chained question: which beats must be left out when judging the site? The pseudofusion ectopics at about 1.8 s and 6.3 s, the beat at about 6.7 s, and the fusion beat at about 7.7 s."
+  },
+  {
+   "case_id": "site-13",
+   "tiers": [
+    "ep"
+   ],
+   "kind": "limits",
+   "idea_en": "Can the surface ECG prove that the second ventricular spike captures the RV? Answer: no. With the LV paced about 50 ms first, LV activation dominates the QRS; a capture test at interrogation decides."
+  },
+  {
+   "case_id": "trbl-01",
+   "tiers": [
+    "ep"
+   ],
+   "kind": "mechanism",
+   "idea_en": "Why are fusion and pseudofusion common here? Answer: the sinus rate (about 62/min) is close to the lower rate (56/min), and the native beats have RBBB (rsR′ in V1). RV activation, and therefore its sensing, comes late, so the spike fires before native activation reaches the RV lead. This is not undersensing."
+  },
+  {
+   "case_id": "trbl-02",
+   "tiers": [
+    "ep"
+   ],
+   "kind": "device",
+   "idea_en": "What programming change would avoid these ineffective ventricular spikes? Answer: lengthen the AV delay or enable AV search/hysteresis, so that the patient's own conduction comes first and there is less unnecessary RV pacing. Capture cannot be judged on pseudofusion beats."
+  },
+  {
+   "case_id": "trbl-03",
+   "tiers": [
+    "student",
+    "nurse",
+    "paramedic",
+    "specialist"
+   ],
+   "kind": "count",
+   "idea_en": "The machine says 142/min, sinus tachycardia. What is the real rate? Answer: about 70/min. There are 11 QRS complexes in 10 s, about 860 ms apart; the machine counted the pacing spikes as beats."
+  },
+  {
+   "case_id": "trbl-04",
+   "tiers": [
+    "nurse"
+   ],
+   "kind": "first",
+   "idea_en": "Some spikes have no QRS after them. What do you do first? Answer (category B): check the patient (consciousness, pulse, blood pressure), call the doctor now, and keep the patient on the monitor with the pads at hand. The device needs urgent checking."
+  },
+  {
+   "case_id": "trbl-04",
+   "tiers": [
+    "specialist",
+    "ep"
+   ],
+   "kind": "beat",
+   "idea_en": "Which spike proves loss of capture? Answer: the one at about 3.85 s. It falls after the T wave, outside the refractory period, and no QRS follows. The spikes at about 3.1 s (inside a QRS) and about 2.35 s (on the ST/T) do not count. Specialist add-on: the device needs checking the same day."
+  },
+  {
+   "case_id": "trbl-04",
+   "tiers": [
+    "ep"
+   ],
+   "kind": "limits",
+   "idea_en": "Undersensing or asynchronous pacing? Answer: 'cannot be determined from the surface ECG', because a magnet or VOO mode looks the same. Interrogation decides."
+  },
+  {
+   "case_id": "trbl-05",
+   "tiers": [
+    "ep"
+   ],
+   "kind": "beat",
+   "idea_en": "Which non-paced beat was not sensed? Answer: the one at about 6.3 s. A spike fires at 6.43 s, 710 ms after the previous spike, as if the beat were not there. After the beats at 0.3, 2.3 and 4.3 s the timing restarts."
+  },
+  {
+   "case_id": "trbl-05",
+   "tiers": [
+    "ep"
+   ],
+   "kind": "device",
+   "idea_en": "Which programming change fixes intermittent undersensing? Answer: increase the sensitivity (program a lower mV value) after checking the sensed R-wave amplitude of these beats, without causing T-wave or myopotential oversensing, and check lead integrity. Sign-trap distractors: a higher mV value, a higher output, a longer refractory period."
+  },
+  {
+   "case_id": "trbl-06",
+   "tiers": [
+    "specialist",
+    "ep"
+   ],
+   "kind": "limits",
+   "idea_en": "What explains the change at about 4 s? Answer: the rate, the spike size and the QRS all change together, which points to a device-driven change (reprogramming or a test). Loss of RV capture alone cannot change the rate or the spike. Interrogation confirms it."
+  }
+ ],
+ "lessons": [
+  {
+   "id": "heart",
+   "title_en": "How the heart writes the ECG",
+   "objectives_en": [
+    "Trace the impulse: SA node → atria → AV node → His bundle → bundle branches → Purkinje fibres.",
+    "Match P, QRS and T to atrial depolarisation, ventricular depolarisation and ventricular repolarisation.",
+    "The ECG records electricity, not the pulse: always check the patient."
+   ],
+   "steps_en": [
+    "text: three screens of 60 words or less on the conduction path and the three waves of one beat",
+    "diagram: conduction, with each structure lighting up in turn",
+    "figure: rhythm-01, lead II, 0.5-2.5 s. Set 1 labels P, QRS and T. Set 2 shades the PR segment as 'AV node delay'",
+    "task: tap the P wave, the QRS and the T wave on the next, unlabelled beat (new 'tap' task, scored against the fiducials ±40 ms)",
+    "check: which wave is ventricular depolarisation? (QRS)",
+    "check: why is there a pause after the P wave? (the AV node delay lets the ventricles fill)",
+    "check: can a normal-looking ECG come with no pulse? (yes, pulseless electrical activity, so check the patient)"
+   ],
+   "ecg": "rhythm-01",
+   "tiers_required": [
+    "student",
+    "nurse",
+    "paramedic"
+   ],
+   "tiers_optional": [
+    "resident"
+   ]
+  },
+  {
+   "id": "paper",
+   "title_en": "Paper, speed and calibration",
+   "objectives_en": [
+    "Convert squares: a small square is 40 ms and 0.1 mV; a large square is 200 ms.",
+    "Check the speed (25 mm/s) and the calibration pulse (10 mm/mV) before reading; a 12-lead lasts 10 s.",
+    "Know that half gain halves every voltage."
+   ],
+   "steps_en": [
+    "text: grid, speed and gain. Note for the German version: 50 mm/s doubles every width",
+    "diagram: paper",
+    "figure: rhythm-01 with one small square, one large square and the calibration pulse marked",
+    "task: put the calipers on one RR interval on rhythm-01 (about 800 ms, ±40)",
+    "task: measure R in V5 on patt-01 at 10 mm/mV (about 35 mm), then switch to 5 mm/mV and watch the calibration pulse and the R wave halve",
+    "check: how long are 5 large squares? (1 s)",
+    "check: what does a 5 mm calibration pulse mean? (half gain: double the voltages before applying criteria)",
+    "check: how long are 3 small squares? (120 ms)"
+   ],
+   "ecg": "rhythm-01",
+   "tiers_required": [
+    "student",
+    "nurse",
+    "paramedic"
+   ],
+   "tiers_optional": [
+    "resident"
+   ]
+  },
+  {
+   "id": "waves",
+   "title_en": "One beat: waves, intervals and segments",
+   "objectives_en": [
+    "Label P, the PR interval and the PR segment, QRS, the J point, ST, T, U, QT and TP.",
+    "Know the normal ranges: PR 120-200 ms, QRS under 120 ms.",
+    "Name QRS shapes (qR, rS, QS, rsR′)."
+   ],
+   "steps_en": [
+    "text: the parts of one beat. This replaces the current 'waves' lesson",
+    "diagram: beat",
+    "figure: rhythm-01, lead II, beat 1, with four mark sets in turn: waves (P, QRS, T); intervals (PR, QRSd, QT); segments (PR segment, ST, TP); RR",
+    "figure: blocks-04 V1 labelled rsR′ beside rhythm-01 V1 labelled rS",
+    "task: measure the PR on rhythm-01 with the calipers (about 152 ms, ±20)",
+    "check: where does the PR interval start and end? (start of P to start of QRS)",
+    "check: where is the J point? (where the QRS ends and the ST begins)",
+    "check: what is a QRS with no positive part called? (QS)"
+   ],
+   "ecg": "rhythm-01",
+   "tiers_required": [
+    "student",
+    "nurse",
+    "paramedic"
+   ],
+   "tiers_optional": [
+    "resident"
+   ]
+  },
+  {
+   "id": "leads",
+   "title_en": "Twelve leads, twelve views",
+   "objectives_en": [
+    "10 electrodes give 12 leads; a wave moving towards the positive pole is upright.",
+    "Lead groups: inferior (II, III, aVF), lateral (I, aVL, V5-V6), septal (V1-V2), anterior (V3-V4); aVR is negative in sinus rhythm.",
+    "Nurse and paramedic variant: place the electrodes correctly using IEC colours."
+   ],
+   "steps_en": [
+    "diagram: limb_leads, then chest_leads, then lead_groups",
+    "figure: rhythm-01, with I, II and aVR highlighted (P and QRS negative in aVR), then V1-V6 showing R-wave growth and the transition at V3",
+    "task: tap the inferior leads, then the lateral leads, on rhythm-01 (new 'pick leads' task)",
+    "nurse/paramedic variant: drag the 10 electrodes onto a torso using IEC colours (RA red, LA yellow, LL green, RL black; C1-C6 red, yellow, green, brown, black, violet), with V1/V2 in the 4th intercostal space (the 2nd space gives a false rSr′). Diagrams monitor (3 and 5 electrodes) and pads",
+    "check: which leads look at the inferior wall?",
+    "check: where is the transition on rhythm-01? (V3)",
+    "check: the yellow cable is on the right arm. What error is that? (LA/RA reversal)"
+   ],
+   "ecg": "rhythm-01",
+   "tiers_required": [
+    "student",
+    "nurse",
+    "paramedic"
+   ],
+   "tiers_optional": [
+    "resident"
+   ]
+  },
+  {
+   "id": "recording",
+   "title_en": "A clean recording: artefact, reversal and extra leads",
+   "objectives_en": [
+    "Recognise tremor, 50 Hz mains interference, baseline wander and a loose electrode.",
+    "Recognise LA/RA reversal (I inverted, aVR upright, II and III swapped, chest leads unchanged) and RA/RL reversal (II almost flat).",
+    "Know where V4R and V7-V9 go and when to record them; record again rather than interpret a faulty tracing."
+   ],
+   "steps_en": [
+    "figure: blocks-02, with tremor in the limb leads against a clean V2 and II strip",
+    "figure: trbl-05 (mains interference), then site-09 at 2.8-3.4 s (an oscillation of about 20 per second: artefact, not flutter)",
+    "figure: rhythm-01 beside rhythm-01 with the la_ra transform, credited as 'modified for teaching: arm electrodes swapped'",
+    "diagram: extra_leads (V4R, V7-V9)",
+    "task: pick the reversed ECG out of two (la_ra, then ra_ll), as checks with figures",
+    "check: flutter or artefact on site-09? (artefact: about 1200/min is far too fast)",
+    "check: lead I negative, aVR positive, normal chest leads? (LA/RA reversal: record again)",
+    "check: where does V8 go? (mid-scapular line, at the level of V6)"
+   ],
+   "ecg": "blocks-02",
+   "tiers_required": [
+    "student",
+    "nurse",
+    "paramedic"
+   ],
+   "tiers_optional": [
+    "resident"
+   ]
+  },
+  {
+   "id": "rate",
+   "title_en": "Heart rate four ways",
+   "objectives_en": [
+    "Regular rhythm: 300 ÷ large squares, or 1500 ÷ small squares.",
+    "Irregular rhythm: count the QRS complexes in 10 s and multiply by 6 (or 6 s × 10 on a monitor).",
+    "Count it yourself when the machine or the monitor is wrong."
+   ],
+   "steps_en": [
+    "diagram: rate300",
+    "task: RR on rhythm-02 (about 1300 ms, about 47/min)",
+    "task: RR on rhythm-03 (about 446 ms, about 134/min)",
+    "task: count the QRS complexes in 10 s on tachy-01 and multiply by 6 (about 125-130/min; new 'count' task, the writer verifies the count)",
+    "figure: trbl-03 with the machine statement '142/min, sinus tachycardia'; 11 QRS complexes in 10 s gives about 70/min",
+    "check: which method for an irregular rhythm?",
+    "check: RR of 4 large squares? (75/min)",
+    "check: why was the machine wrong on trbl-03? (it counted the pacing spikes as beats)"
+   ],
+   "ecg": "rhythm-02",
+   "tiers_required": [
+    "student",
+    "nurse",
+    "paramedic"
+   ],
+   "tiers_optional": [
+    "resident",
+    "specialist"
+   ]
+  },
+  {
+   "id": "sinus",
+   "title_en": "Is it sinus, and if not, what?",
+   "objectives_en": [
+    "Apply the sinus criteria: a P wave before every QRS, upright in I and II, negative in aVR, with a constant PR.",
+    "Sinus bradycardia is under 60/min (under 50/min in the ACC/AHA/HRS 2018 guideline); sinus tachycardia is a sign whose cause must be found; know sinus arrhythmia.",
+    "For a fast, regular, narrow rhythm: a P wave before every QRS means sinus; a sawtooth means flutter; neither means SVT."
+   ],
+   "steps_en": [
+    "figure: rhythm-01, rhythm-02, rhythm-03 and rhythm-04, with the P waves marked on the II strip",
+    "task: the shortest and the longest RR on rhythm-04 (about 870 and 1400 ms)",
+    "figure: contrast of three fast, regular, narrow rhythms. rhythm-03 has a P wave before every QRS; tachy-02 has a sawtooth in II, III and aVF with 4 F waves per QRS; tachy-04 has no P waves at 156/min",
+    "check: irregular with identical P waves? (sinus arrhythmia)",
+    "check: 134/min with a P wave before every QRS? (sinus tachycardia: look for the cause)",
+    "check: regular and narrow at 156/min, with no P waves and no sawtooth? (SVT)"
+   ],
+   "ecg": "rhythm-04",
+   "tiers_required": [
+    "student",
+    "nurse",
+    "paramedic"
+   ],
+   "tiers_optional": [
+    "resident"
+   ]
+  },
+  {
+   "id": "irregular",
+   "title_en": "Irregular rhythms and early beats",
+   "objectives_en": [
+    "Tell regular, regularly irregular and irregularly irregular rhythms apart.",
+    "Atrial fibrillation: no P waves, irregularly irregular, f waves in V1.",
+    "A premature ventricular complex is early and wide, with no P wave and a compensatory pause; know bigeminy."
+   ],
+   "steps_en": [
+    "figure: rhythm-05, with f waves in V1 and II and RR intervals of 600-870 ms",
+    "figure: tachy-05, an early wide beat with no P wave and a compensatory pause (1630 ms = 2 × 815 ms)",
+    "figure: tachy-06, bigeminy",
+    "task: measure three RR intervals on tachy-01 (all three differ)",
+    "task: the coupling interval on tachy-06 (about 485 ms)",
+    "check: irregular with no P waves? (AF)",
+    "check: what does a full compensatory pause suggest? (a PVC)",
+    "check, nurse/paramedic: why can the pulse oximeter show about half the ECG rate in bigeminy? (the early beats make little or no pulse wave)"
+   ],
+   "ecg": "rhythm-05",
+   "tiers_required": [
+    "student",
+    "nurse",
+    "paramedic"
+   ],
+   "tiers_optional": [
+    "resident"
+   ]
+  },
+  {
+   "id": "av-block",
+   "title_en": "PR interval and AV block",
+   "objectives_en": [
+    "Measure the PR and recognise first-degree block (PR over 200 ms and constant).",
+    "Recognise Mobitz I (the PR lengthens, then a beat drops, and the PR is shorter after the pause) and complete block (P waves and QRS complexes regular but unrelated); Mobitz II and 2:1 are shown on a schematic.",
+    "Know that a slow, wide escape is dangerous: nurses and paramedics get the pads and pacing ready."
+   ],
+   "steps_en": [
+    "figure: blocks-01, PR about 220 ms in every beat, with P waves in blue and QRS in red",
+    "figure: blocks-02, PR 260 → 310 → 350 ms, a blocked P, then about 250 ms after the pause (read the P waves on the II strip and in V2)",
+    "figure: blocks-03, P waves marched out at about 600 ms, QRS at about 1500 ms, a different PR before each QRS",
+    "diagram: Mobitz II and 2:1 schematic (new diagram av_blocks), until real tracings arrive",
+    "task: PR on blocks-01 (about 220 ms, ±20), then PP on blocks-03 (about 600 ms)",
+    "nurse/paramedic variant: no Mobitz names; 'a P wave without a QRS and a slow rate: check the patient, call, pads on'",
+    "check: the PR after the pause is shorter. What is it? (Wenckebach)",
+    "check: P waves and QRS complexes unrelated? (complete heart block)",
+    "check, nurse/paramedic: what do you prepare? (pads and monitor, pacing ready, call)"
+   ],
+   "ecg": "blocks-03",
+   "tiers_required": [
+    "student",
+    "nurse",
+    "paramedic",
+    "resident"
+   ],
+   "tiers_optional": []
+  },
+  {
+   "id": "qrs-width",
+   "title_en": "QRS width: bundle branch blocks and paced beats",
+   "objectives_en": [
+    "Narrow is under 120 ms and wide is 120 ms or more; a wide, fast rhythm is VT until proven otherwise.",
+    "Look at V1 first: rsR′ means RBBB; QS/rS with broad notched R waves in I, aVL and V6 means LBBB.",
+    "In LBBB, ST elevation in V1-V3 opposite to the QRS is expected; a spike before a wide QRS means a paced beat."
+   ],
+   "steps_en": [
+    "figure: blocks-04, rsR′ in V1 and broad slurred S waves in I and V6",
+    "figure: blocks-05, QS in V1-V3 with discordant ST elevation, and broad notched R waves in I and aVL",
+    "figure: pace-01, a spike before every wide QRS",
+    "task: QRS on blocks-05 (about 150 ms)",
+    "nurse/paramedic variant: narrow or wide, and why a wide QRS matters",
+    "check: rsR′ in V1? (RBBB)",
+    "check: why is ST elevation in V1-V3 expected in LBBB? (discordance)",
+    "check: a spike followed by a wide QRS? (a paced beat)"
+   ],
+   "ecg": "blocks-05",
+   "tiers_required": [
+    "student",
+    "nurse",
+    "paramedic",
+    "resident"
+   ],
+   "tiers_optional": []
+  },
+  {
+   "id": "axis",
+   "title_en": "The axis from two leads",
+   "objectives_en": [
+    "Normal axis is −30° to +90°.",
+    "Find the quadrant from I and aVF, use II for the 0° to −30° zone, then refine with the isoelectric lead.",
+    "Left axis deviation with rS in the inferior leads means LAFB, not an old inferior MI."
+   ],
+   "steps_en": [
+    "diagram: hexaxial",
+    "figure: rhythm-01 (+60°), blocks-06 (−73°) and patt-03 (about +105°), with I, II and aVF highlighted",
+    "task: the axis dial on rhythm-01 and on blocks-06 (the existing drill, ±20°)",
+    "check: I positive, aVF negative, II negative? (left axis deviation)",
+    "check: I negative, aVF positive? (right axis deviation)",
+    "check: rS or Q waves in the inferior leads: which means LAFB? (rS)"
+   ],
+   "ecg": "blocks-06",
+   "tiers_required": [
+    "student",
+    "resident"
+   ],
+   "tiers_optional": []
+  },
+  {
+   "id": "qt",
+   "title_en": "QT and QTc",
+   "objectives_en": [
+    "Measure the QT with the tangent method in II or V5.",
+    "Bazett over-corrects at fast rates; use Fridericia there.",
+    "Prolonged means over 450 ms (men) or over 460 ms (women). 500 ms or more, or a rise over 60 ms: tell the doctor before the next dose of a QT-prolonging drug."
+   ],
+   "steps_en": [
+    "figure: rhythm-01 with the QT marked (about 385 ms; QTc about 430 ms by Bazett and 414 ms by Fridericia)",
+    "figure: rhythm-03 at 134/min: QTc 442 ms by Bazett against 386 ms by Fridericia",
+    "task: QT on rhythm-01 (±20 ms)",
+    "nurse variant: compare the machine's QTc with your own value",
+    "check: which correction at 134/min? (Fridericia)",
+    "check: QTc 510 ms after a new drug? (tell the doctor before the next dose)",
+    "check: QTc 430 ms before starting the drug? (normal: document it as the baseline)"
+   ],
+   "ecg": "rhythm-03",
+   "tiers_required": [
+    "student",
+    "nurse",
+    "resident"
+   ],
+   "tiers_optional": [
+    "paramedic"
+   ]
+  },
+  {
+   "id": "st",
+   "title_en": "ST and T: ischaemia and STEMI",
+   "objectives_en": [
+    "Measure the ST at the J point against the PR baseline. Thresholds (ESC 2023): 1 mm or more in two contiguous leads; in V2-V3, 2 mm or more in men aged 40 or over, 2.5 mm or more in men under 40, 1.5 mm or more in women.",
+    "Use territories and reciprocal change; posterior extension needs V7-V9 (0.5 mm or more) and RV extension needs V4R (0.5 mm or more).",
+    "Know the STEMI equivalents (LBBB or paced rhythm with ongoing pain; posterior STEMI) and the 10-minute target."
+   ],
+   "steps_en": [
+    "figure: isch-01 with the J point marked: ST elevation in II (about 2 mm), III (about 3 mm) and aVF (about 2.5 mm); depression in aVL (about 2 mm) and I (about 1 mm)",
+    "figure: isch-02 (ST elevation in V2-V5, I and aVL; depression in III), then isch-03 (inferolateral elevation; V2-V3 depressed by about 3 mm)",
+    "task: voltage calipers at the J point in III (about +3 mm, ±0.5) and aVL (about −2 mm) on isch-01 (new 'volt' task)",
+    "check, doctors: the culprit artery on isch-01 (RCA, because III is higher than II)",
+    "check, nurse/paramedic: what first on isch-01? (ECG to the doctor or PCI centre now, within 10 min of first contact)",
+    "check, all: ST depression in V1-V3 with inferior ST elevation? (record V7-V9)"
+   ],
+   "ecg": "isch-01",
+   "tiers_required": [
+    "student",
+    "nurse",
+    "paramedic",
+    "resident"
+   ],
+   "tiers_optional": [
+    "specialist"
+   ]
+  },
+  {
+   "id": "lvh-wpw",
+   "title_en": "LVH and pre-excitation",
+   "objectives_en": [
+    "Voltage criteria: Sokolow-Lyon (S in V1 + R in V5 or V6 of 35 mm or more) and Cornell (R in aVL + S in V3 over 28 mm in men, over 20 mm in women). Voltage suggests LVH; echo confirms it.",
+    "Pre-excitation: a short PR, a delta wave and a wide QRS; the pseudo-infarct Q waves.",
+    "In pre-excited AF, avoid AV-nodal blockers."
+   ],
+   "steps_en": [
+    "figure: patt-01 at 5 mm/mV",
+    "task: S in V1 + R in V5 on patt-01 (about 54 mm)",
+    "figure: patt-03 (PR about 130 ms, a delta wave in every lead, QRS about 165 ms)",
+    "figure: patt-02 (negative delta waves in III and aVF that look like Q waves)",
+    "check: Q waves with a short PR? (look for a delta wave)",
+    "check: LVH by voltage. What confirms it? (echo)",
+    "check: pre-excited AF. What do you avoid? (AV-nodal blockers)"
+   ],
+   "ecg": "patt-01",
+   "tiers_required": [
+    "student",
+    "resident"
+   ],
+   "tiers_optional": [
+    "paramedic"
+   ]
+  },
+  {
+   "id": "pacing",
+   "title_en": "Pacemaker ECG basics",
+   "objectives_en": [
+    "Find the spikes and tell atrial, ventricular and dual-chamber pacing apart; learn the code (AAI, VVI, DDD, VDD).",
+    "Apply the three checks: capture after every spike, timing that restarts after every native beat, and the rate. Inhibition and fusion are normal.",
+    "A spike after the T wave with no complex means loss of capture, which is urgent; monitors can count spikes as beats."
+   ],
+   "steps_en": [
+    "figure: pace-04 (AAI: one spike, then a narrow QRS about 260 ms later); pace-05 (DDD: two spikes, AV delay about 230 ms); pace-01 (VVI in AF)",
+    "figure: pace-09 (native beats without spikes; a fusion beat at about 4.7 s)",
+    "task: spike to spike on pace-05 (about 1000 ms, so 60/min)",
+    "task: from the native beat at about 8.7 s to the next spike on pace-09 (about 900 ms)",
+    "figure: trbl-04 preview, a spike after the T wave at about 3.85 s with no QRS",
+    "nurse/paramedic variant: pads at least 8 cm from the generator. A magnet makes a pacemaker pace asynchronously; on an ICD it suspends shocks and leaves pacing unchanged. When to call",
+    "check: a spike, then a narrow native QRS? (AAI)",
+    "check: a spike after the T wave with no QRS? (loss of capture: escalate)",
+    "check: the machine says 142/min, but you count 11 QRS complexes in 10 s? (count yourself: about 70/min)"
+   ],
+   "ecg": "pace-09",
+   "tiers_required": [
+    "nurse",
+    "paramedic",
+    "resident"
+   ],
+   "tiers_optional": [
+    "student",
+    "specialist"
+   ]
+  },
+  {
+   "id": "read",
+   "title_en": "The systematic read and the 10-second triage",
+   "objectives_en": [
+    "Read in a fixed order: quality and calibration, rhythm, rate, axis, PR, QRS, ST, T and QT, comparison with an old ECG, then a one-line conclusion. Read the machine statement last.",
+    "Action track: the patient first, then five questions: rate under 40 or over 150? Regular? Wide? ST elevation? Spikes working?",
+    "Sort ECGs into the action categories."
+   ],
+   "steps_en": [
+    "text: the nine-step checklist, and the five triage questions for nurses and paramedics",
+    "figure: rhythm-01, walked through with the checklist open",
+    "task: an unguided read of isch-01, then a comparison with Alex's read table",
+    "check: sort six ECGs into the four action categories as six quick checks, one figure each. blocks-03 → B; isch-01 → B (nurse) or C (paramedic); tachy-04 → B; rhythm-01 with the la_ra transform → C (nurse); rhythm-02 → D; pace-09 → D. Arrest strips → A once they are imported",
+    "cases: the first practice session, the 'first 10 ECGs', with the checklist open"
+   ],
+   "ecg": "rhythm-01",
+   "tiers_required": [
+    "student",
+    "nurse",
+    "paramedic",
+    "resident"
+   ],
+   "tiers_optional": [
+    "specialist"
+   ]
+  }
+ ],
+ "data_gaps": [
+  {
+   "need": "Arrest and peri-arrest monitor strips: VF (coarse and fine), VT, ventricular flutter and asystole, for the 'Shockable?' set and action category A",
+   "tiers": [
+    "paramedic",
+    "nurse",
+    "student",
+    "resident"
+   ],
+   "source": "MIT-BIH Malignant Ventricular Ectopy DB (vfdb: 22 two-lead recordings, 250 Hz, labels include VT, VFL and VF) and CU Ventricular Tachyarrhythmia DB (cudb: 35 single-lead 8-min recordings, 250 Hz). Shown in a strip-only 'monitor view' labelled 'monitor lead', never 'II'. First plots already exist in the scratchpad.",
+   "licence": "ODC-By 1.0",
+   "when": "now"
+  },
+  {
+   "need": "Real vs false monitor alarms with a pulse waveform (asystole, extreme brady- and tachycardia, VT, VF), to teach 'check the patient'",
+   "tiers": [
+    "nurse",
+    "paramedic"
+   ],
+   "source": "PhysioNet/CinC Challenge 2015: labelled ICU alarms with ECG plus arterial pressure and/or PPG, 250 Hz",
+   "licence": "ODC-By 1.0 (confirm on import)",
+   "when": "now"
+  },
+  {
+   "need": "Artefact on otherwise clean tracings: electrode motion, muscle, baseline wander",
+   "tiers": [
+    "nurse",
+    "paramedic",
+    "student"
+   ],
+   "source": "MIT-BIH Noise Stress Test DB (nstdb) noise added to PTB-XL records, labelled 'noise added'; real examples found through the PTB-XL noise flags",
+   "licence": "ODC-By 1.0 + CC BY 4.0",
+   "when": "now"
+  },
+  {
+   "need": "Lead reversals for lesson 5 and action category C",
+   "tiers": [
+    "nurse",
+    "paramedic",
+    "student",
+    "resident"
+   ],
+   "source": "Derived from PTB-XL normal ECGs with the la_ra, ra_ll and ra_rl transforms already in ecg.js, credited as 'modified for teaching'",
+   "licence": "CC BY 4.0 (state the change)",
+   "when": "now"
+  },
+  {
+   "need": "Mobitz II, 2:1 and high-grade AV block, junctional rhythm and sinus pauses (now only distractors or a schematic)",
+   "tiers": [
+    "student",
+    "nurse",
+    "paramedic",
+    "resident",
+    "specialist"
+   ],
+   "source": "PTB-XL 2AVB and 3AVB statements (few records, each read by Alex); MIT-BIH Arrhythmia DB record 231 (2:1 block) as a monitor strip",
+   "licence": "CC BY 4.0 / ODC-By 1.0",
+   "when": "now"
+  },
+  {
+   "need": "At least 3 tracings per core diagnosis per tier, to stop learners memorising pictures and to supply unseen graduation cases (the lessons already use about 30 of the 58)",
+   "tiers": [
+    "student",
+    "nurse",
+    "paramedic",
+    "resident",
+    "specialist",
+    "ep"
+   ],
+   "source": "PTB-XL siblings: NORM, SBRAD, STACH, SARRH, AFIB, AFLT, 1AVB, CRBBB, CLBBB, LAFB, PVC, BIGU, IMI/AMI/ILMI, LVH, WPW, PACE",
+   "licence": "CC BY 4.0",
+   "when": "now"
+  },
+  {
+   "need": "Real cases for keys that are only ever distractors (IRBBB, LPFB, RVH, PAC, OLD_INF_MI, NSTE_ISCH, IVCD, JUNCT, AT)",
+   "tiers": [
+    "student",
+    "resident",
+    "specialist"
+   ],
+   "source": "PTB-XL statements IRBBB, LPFB, RVH, PAC, IMI (old), ISC_* and IVCD; about 10 cases",
+   "licence": "CC BY 4.0",
+   "when": "now"
+  },
+  {
+   "need": "Reference fiducials for wave labels, tap tasks and the new rate and ST drills",
+   "tiers": [
+    "student",
+    "nurse",
+    "paramedic",
+    "resident",
+    "specialist",
+    "ep"
+   ],
+   "source": "PTB-XL+ fiducial points and median beats; Alex's read for paced and MIMIC cases",
+   "licence": "CC BY 4.0",
+   "when": "now"
+  },
+  {
+   "need": "A schematic marker channel (As/Ap/Vs/Vp, blanking and refractory periods) under the existing paced ECGs",
+   "tiers": [
+    "ep",
+    "specialist"
+   ],
+   "source": "Drawn from Alex's approved read and labelled 'schematic'; no open device-EGM source exists",
+   "licence": "own work",
+   "when": "now"
+  },
+  {
+   "need": "QT drills with a known drug effect; long QT",
+   "tiers": [
+    "nurse",
+    "resident",
+    "specialist"
+   ],
+   "source": "ECGRDVQ (dofetilide or quinidine vs placebo, 12-lead, 1000 Hz); PTB-XL LNGQT",
+   "licence": "ODC-By 1.0 / CC BY 4.0",
+   "when": "later"
+  },
+  {
+   "need": "Long telemetry strips: couplets, NSVT, trigeminy, intermittent block, paced rhythms",
+   "tiers": [
+    "nurse",
+    "paramedic",
+    "resident"
+   ],
+   "source": "MIT-BIH Arrhythmia DB (mitdb; paced records 102, 104, 107 and 217) and INCART",
+   "licence": "ODC-By 1.0",
+   "when": "later"
+  },
+  {
+   "need": "STEMI mimics and equivalents (pericarditis, early repolarisation, Wellens, de Winter, the aVR pattern, aneurysm, hyperkalaemia pattern) and serial ECGs",
+   "tiers": [
+    "resident",
+    "specialist",
+    "paramedic"
+   ],
+   "source": "PTB-XL (ANEUR, STE_, INVT, EL, and repeat ECGs from the same patient); MIMIC-IV-ECG searched by machine statement and read by Alex",
+   "licence": "CC BY 4.0 / ODbL 1.0 (derived files stay ODbL)",
+   "when": "later"
+  },
+  {
+   "need": "12-lead VT, VT vs SVT with aberrancy, pre-excited AF",
+   "tiers": [
+    "resident",
+    "specialist",
+    "ep"
+   ],
+   "source": "MIMIC-IV-ECG candidates (machine statement as a search filter only; Alex's read is the truth); INCART",
+   "licence": "ODbL 1.0 / ODC-By 1.0",
+   "when": "later"
+  },
+  {
+   "need": "Culprit artery with a known answer",
+   "tiers": [
+    "resident",
+    "specialist"
+   ],
+   "source": "STAFF III: 12-lead ECGs recorded during balloon occlusion of the LAD, RCA or LCx",
+   "licence": "PhysioNet open licence (confirm before use)",
+   "when": "later"
+  },
+  {
+   "need": "12-leads of SVT mechanisms (AVNRT, AVRT, AT)",
+   "tiers": [
+    "ep",
+    "resident"
+   ],
+   "source": "Chapman-Shaoxing/Ningbo 12-lead database (500 Hz); check the label list first",
+   "licence": "CC BY 4.0",
+   "when": "later"
+  },
+  {
+   "need": "Brugada",
+   "tiers": [
+    "specialist",
+    "ep"
+   ],
+   "source": "Brugada-HUCA (363 records, 100 Hz, binary label)",
+   "licence": "CC BY-SA 4.0 (share-alike)",
+   "when": "later"
+  },
+  {
+   "need": "Conduction-system pacing (His, LBBAP), upper-rate behaviour, PMT, mode switch, a clean loss of capture, magnet response",
+   "tiers": [
+    "ep"
+   ],
+   "source": "No open source (MIMIC-IV-ECG predates the spread of LBBAP). First a timing simulator labelled as a diagram, then Alex's anonymised cases with written permission",
+   "licence": "own work / written permission",
+   "when": "later"
+  },
+  {
+   "need": "Hyperkalaemia with lab values (for dialysis nurses); temporary epicardial pacing",
+   "tiers": [
+    "nurse",
+    "resident"
+   ],
+   "source": "Alex's own anonymised cases with written permission (MIMIC-IV clinical data is credentialed and cannot be published)",
+   "licence": "written permission",
+   "when": "later"
+  }
+ ],
+ "ui_en": "Picking a profile. On the first visit, and at any time from Profile in the nav, six cards show the profile name, who it is for, three 'you will be able to' lines and the number of core cases. The Specialist card also asks for a focus: Cardiology (default) or Acute & general medicine.\n\nPlacement check. After picking, a 12-item placement check is offered: on by default for resident and specialist, optional for student, nurse and paramedic, and not offered to EP, who has no required lessons. Each item maps to one lesson, and a correct answer marks that lesson done.\n\nSwitching. The learner can switch profile at any time without losing data. Every attempt is stored with the tier it was made in. Mastery means the main answer and the follow-up are both right on two spaced attempts, and it is recomputed for the new tier: a case answered against nurse options is not mastered at resident level.\n\nHome shows 'Profile: X · change', then in this order:\n- the next required lesson, until lesson 16 is done;\n- reviews due;\n- 'Continue practice' (core cases);\n- 'Challenge cases', once core accuracy is 80% or more over two spaced sessions;\n- for nurse and paramedic, 'Triage mode' (20 s per strip; 10 s 'Shockable?' on arrest strips), once accuracy is 80% or more.\nThe paramedic profile shows a 'Preview: arrest rhythms coming' banner until the arrest strips ship.\n\nPractice:\n- Modules are ordered and filtered by fit. Core cases come first and stretch cases are tagged 'Challenge'. Modules with no core cases for the tier fold under 'Other modules' but stay open.\n- Nurse and paramedic cases open on a monitor-style II strip, with the 12-lead behind a button. Doctor tiers open on the 12-lead.\n- Resident sessions run module by module, then mixed. Specialist and EP sessions are mixed by default, with look-alikes interleaved (for example LV-only pacing vs RBBB vs a left-sided pathway).\n- After the main answer come the tier's follow-ups, then the explanation at the tier's depth, with the other layers behind 'More'.\n- After lesson 16, the first 10 practice cases run with the systematic-read checklist open, the next 10 with it collapsed, and after that it is hidden.\n- A wrong answer links to the lesson that teaches the point. The first scored attempt at an ECG already shown in a lesson does not count towards mastery.\n\nLibrary. All 58 cases are always visible, tagged 'Challenge' or 'Other profile', with a 'My profile / All' filter. Any case opens with the current tier's question and follow-ups.\n\nDrills. Only the tier's drills are listed; the others sit under 'More drills'.\n\nProgress. Shows per-tier mastery of core cases, follow-up accuracy by kind, drill pass rate, accuracy on tracings seen for the first time (the honest measure of skill) and lessons done. Each tier's record is kept separately.\n\nLearn. Lessons carry Required or Optional badges for the tier, and skipped lessons sit under 'Other lessons'. Each lesson opens with 2 retrieval questions from the previous lesson and ends with a cases step.\n\nReview (Alex). The existing per-tier review page also lists the two action-category sets, the plain-language labels and the follow-ups.\n\nBuild. Everything stays plain JS with JSON content:\n- tiers[] in cases.json: id, name, who, goals, explain, drills, hints, first_view, timer, action_set;\n- per case: tiers, tier_options, tier_question, followups, action, deep;\n- diagnoses gain 'plain' and 'action';\n- lessons gain 'tiers'.\nNew code: the rate, st and timing drills; tap, pick-leads, count and voltage tasks; the monitor-first view; the timer; the specialist focus rule; the placement check; per-tier mastery.",
+ "risks_en": [
+  "Learners memorise 58 pictures instead of patterns, and the lessons alone show about 30 of them. Fixes:\n- at least 3 tracings per core diagnosis per tier before a tier leaves preview;\n- the first scored attempt at a lesson ECG does not count towards mastery;\n- graduation and mastery use unseen tracings;\n- each review rotates the question, the follow-up and the first view;\n- the headline metric is accuracy on tracings seen for the first time.",
+  "Action tiers built as a lighter student tier, or reaching beyond scope. Without VF, VT, asystole and artefact the paramedic tier rehearses the wrong priorities, and drug decisions for nurses go beyond their scope in Romania. Fixes:\n- the paramedic tier stays in preview until the arrest-strip set is reviewed;\n- two fixed action-category sets;\n- no drug doses anywhere;\n- ERC as taught in Romania, worded 'per local protocol';\n- one review by a UPU or SMURD emergency physician.",
+  "False certainty in the answer keys. The surface ECG cannot prove RV capture (site-13), the cause of a device change (trbl-06), undersensing vs asynchronous pacing (trbl-04) or pacemaker dependency (pace-08). The reference values are machine measurements that agree only to within about 20 ms. Fixes:\n- 'Cannot be determined: interrogation needed' is a scored answer;\n- follow-ups quote only approved findings and flag the items the writer must verify;\n- drill bands are never tighter than the reference;\n- a second reader checks every device case.",
+  "Review load: 58 cases × 6 tiers × RO/EN cannot all be written, checked and approved. Fixes:\n- three explanation depths instead of six;\n- action text at diagnosis level, with case overrides only where needed;\n- two fixed action-category sets, approved once;\n- tier_options only where the defaults do not fit;\n- 58 follow-ups in total, each teaching something the main question does not.",
+  "Distractors that are never the answer: 16 keys appear only as distractors, so test-wise learners learn to eliminate them. Fixes:\n- add real cases for those keys;\n- once an item has about 100 answers per tier, run item analysis (difficulty, discrimination, distractors chosen by fewer than 5% of learners) and replace distractors that do not work.",
+  "The tier read as a measure of competence, or as a cage: an ATI specialist may be weaker on pacing than a cardiology resident. Fixes:\n- the tier sets defaults only, and the Library shows everything;\n- the placement check marks lessons done;\n- switching keeps history;\n- mastery is stored per tier;\n- specialists have a focus setting.",
+  "Guideline drift, and the action box read as a protocol. CHA₂DS₂-VA (2024), STEMI equivalents (2023), ERC 2025, the 50 vs 60/min bradycardia cut-off and the conduction-system pacing consensus (2023) all change over time. Fixes:\n- every action and deep text carries a guideline tag and a review date;\n- review once a year after the ESC congress, and after each ERC release;\n- keep the 'teaching material, not a protocol' note."
+ ],
+ "decisions_for_alex_en": [
+  "Specialist profile: one tier with a focus setting, or two separate tiers? The focus setting is Cardiology or Acute & general medicine; the second moves site-04 to site-11 from core to stretch. Default: one tier with the focus setting. It needs one rule in the code and keeps the six profiles you asked for.",
+  "Paramedic profile before the arrest strips (vfdb/cudb) are imported and reviewed: show it labelled 'Preview' with a banner, or hide it until then? Default: show it as Preview. The 12-lead STEMI and bradycardia content already serves SAJ crews, and SMURD testers can give early feedback.",
+  "Student follow-ups: single best answer only, or also the Rezidențiat 'complement multiplu' select-all format, which needs a new question type? Default: single best answer now, which works with the existing follow-up code; add select-all in a later phase.",
+  "Action content for nurses and paramedics (the two category sets and the diagnosis-level action texts): you review it alone, or one UPU or SMURD emergency physician also reviews it once before those tiers leave preview? Default: one external emergency physician reviews it."
+ ]
+}

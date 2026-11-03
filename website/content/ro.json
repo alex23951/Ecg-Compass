@@ -1,0 +1,191 @@
+{
+  "lang": "ro",
+  "locale": "ro_RO",
+  "other_lang_label": "English",
+  "other_lang_short": "EN",
+  "skip": "Sari la conținut",
+  "nav": {
+    "weekly": "ECG-ul săptămânii",
+    "app": "Aplicația",
+    "founding": "Membri fondatori",
+    "about": "Despre",
+    "signup": "Abonare gratuită"
+  },
+  "meta": {
+    "home_title": "{brand}: locul unde exersați ECG-uri",
+    "home_description": "Un ECG real în fiecare săptămână, trei studii noi explicate în două minute și o aplicație de exersat ECG-uri, verificată de un cardiolog electrofiziolog. În română și engleză."
+  },
+  "preview_banner": "Previzualizare. Formularele nu trimit încă date, iar textele marcate „ciornă” așteaptă verificarea medicului.",
+  "draft_tag": "ciornă",
+  "form": {
+    "email": "Adresa de email",
+    "email_placeholder": "nume@exemplu.ro",
+    "first_name": "Prenume (opțional)",
+    "role": "Ce faceți?",
+    "role_choose": "Alegeți",
+    "roles": {
+      "doctor": "Medic specialist sau primar",
+      "resident": "Medic rezident",
+      "student": "Student la medicină",
+      "nurse": "Asistent medical",
+      "paramedic": "Paramedic sau ambulanțier",
+      "other": "Altceva"
+    },
+    "consent_newsletter": "Vreau emailul săptămânal. Mă pot dezabona oricând, cu un clic. Am citit <a href=\"{privacy}\">politica de confidențialitate</a>.",
+    "consent_founding": "Rezerv un loc de membru fondator și vreau să primesc emailul săptămânal. Rezervarea nu mă obligă la plată. Am citit <a href=\"{privacy}\">politica de confidențialitate</a>.",
+    "interview": "Accept o discuție online de 15 minute despre cum învăț ECG (ne ajută enorm).",
+    "wish": "Ce ați vrea să exersați cel mai mult? (opțional)",
+    "wish_placeholder": "De exemplu: blocurile, tahicardiile cu QRS larg, pacemakerele…",
+    "honeypot": "Lăsați acest câmp gol",
+    "submit_newsletter": "Vreau ECG-ul săptămânii",
+    "submit_founding": "Rezerv locul (fără plată)",
+    "sending": "Se trimite…",
+    "gift_note": "Gratuit. Cadou la înscriere: ghidul ECG de buzunar, în PDF, gata de printat.",
+    "error_email": "Scrieți o adresă de email validă, de forma nume@exemplu.ro.",
+    "error_role": "Alegeți ce faceți, ca să primiți versiunea potrivită a emailului.",
+    "error_consent": "Bifați acordul, altfel nu vă putem trimite emailul.",
+    "error_server": "Nu am putut trimite formularul. Încercați din nou peste un minut sau scrieți-ne la {email}.",
+    "done_title": "Verificați-vă emailul",
+    "done_text": "V-am trimis un link de confirmare. După ce confirmați, primiți ghidul ECG de buzunar. Nu-l găsiți? Uitați-vă în Spam sau în Promoții.",
+    "done_title_founding": "Locul e rezervat",
+    "done_text_founding": "Mulțumim! Confirmați adresa din emailul pe care vi l-am trimis. Vă scriem când se deschide beta, cu linkul de acces.",
+    "done_title_known": "Sunteți deja pe listă",
+    "done_text_known": "Am actualizat datele dumneavoastră. Următorul ECG ajunge în inbox ca de obicei.",
+    "preview_done": "Previzualizare: în versiunea publică, aici se trimite formularul. Acum nu s-a trimis nimic."
+  },
+  "home": {
+    "trace_label": "DII · 25 mm/s · 10 mm/mV",
+    "trace_caption": "Ritm sinusal, 75/min. Derivația DII dintr-un ECG real din baza PTB-XL.",
+    "title": "Locul unde exersați ECG-uri.",
+    "lead": "Un ECG real în fiecare săptămână, trei studii noi explicate în două minute și, în curând, o aplicație cu sute de ECG-uri corectate de un cardiolog electrofiziolog. În română și engleză.",
+    "signup_heading": "Primiți ECG-ul săptămânii",
+    "weekly_eyebrow": "ECG-ul săptămânii",
+    "weekly_heading": "Încercați-l pe cel din emailul nr. {n}",
+    "weekly_intro": "Așa arată fiecare email: un traseu real, patru variante și răspunsul explicat pas cu pas.",
+    "weekly_sample_note": "Număr de probă.",
+    "quiz_open_full": "Deschideți ECG-ul la dimensiune completă",
+    "quiz_correct": "Corect.",
+    "quiz_wrong": "Nu de data asta. Răspunsul corect:",
+    "quiz_why": "Ce vedem",
+    "quiz_deeper": "Pentru cei care vor mai mult",
+    "quiz_matters": "De ce contează",
+    "quiz_pearl": "De reținut",
+    "quiz_credit": "ECG din baza PTB-XL, înregistrarea {ecg_id} (Wagner P, Strodthoff N și colab. Sci Data 2020;7:154), PhysioNet, licență CC BY 4.0.",
+    "quiz_cta": "Vreau câte unul în fiecare săptămână",
+    "get_eyebrow": "Emailul săptămânal",
+    "get_heading": "Ce primiți, gratuit, o dată pe săptămână",
+    "get_items": [
+      {"who": "Pentru toți", "title": "Un ECG de citit", "text": "Un traseu real, o întrebare, patru variante. Răspunsul vine la finalul emailului, explicat pas cu pas."},
+      {"who": "Medici, rezidenți, studenți", "title": "Trei studii în două minute", "text": "Ce s-a publicat important săptămâna aceasta, rezumat în cuvintele noastre, cu link spre articol."},
+      {"who": "Asistenți medicali, paramedici", "title": "Un sfat de pus în practică", "text": "Ce urmăriți pe monitor, cum așezați electrozii, când chemați medicul. Scurt și concret."}
+    ],
+    "gift_title": "Cadou la înscriere: ghidul ECG de buzunar",
+    "gift_text": "11 fișe de printat: citirea sistematică, valori normale, axul, blocurile, criteriile STEMI, tahicardiile, electroliții și stimulatorul cardiac.",
+    "app_eyebrow": "Aplicația · în lucru",
+    "app_heading": "Exersați, nu doar priviți.",
+    "app_intro": "Cursurile ECG vă arată traseele. Aplicația vă pune să le citiți: zilnic, câteva minute, cu feedback imediat.",
+    "calipers_title": "Încercați compasul",
+    "calipers_text": "Trageți cele două linii pe vârfurile a două unde R. Măsurăm intervalul și frecvența, ca pe hârtie.",
+    "calipers_interval": "Interval",
+    "calipers_rate": "Frecvență",
+    "calipers_hint": "Trageți liniile roșii",
+    "features": [
+      {"title": "Sute de ECG-uri reale, notate", "text": "Din baze de date deschise și cazuri didactice anonimizate. Fiecare răspuns este verificat de un cardiolog."},
+      {"title": "Repetiție spațiată", "text": "Revedeți fiecare ECG exact când sunteți pe cale să-l uitați. Zece minute pe zi ajung."},
+      {"title": "Compas digital și exerciții de măsurare", "text": "PR, QRS, QT și QTc, axul. Măsurați direct pe traseu și vedeți cât de aproape ați fost."},
+      {"title": "Pacemaker și dispozitive", "text": "Stimulare, captură, sensing, moduri de stimulare. Ce lipsește aproape peste tot, explicat de un electrofiziolog."},
+      {"title": "Tutor AI, marcat ca AI", "text": "Explică ECG-urile didactice pe baza explicațiilor aprobate de medic. Nu interpretează ECG-ul dumneavoastră sau al pacienților."},
+      {"title": "Benzi de ritm și modul monitor", "text": "Pentru ATI, UPU și ambulanță: ritmuri care derulează ca pe monitorul de la patul bolnavului."}
+    ],
+    "founding_eyebrow": "Membri fondatori",
+    "founding_heading": "Primul an de Pro la {price_ron} lei în loc de {regular_ron} lei.",
+    "founding_text": "Rezervați-vă locul acum, fără plată. Intrați primii în beta, votați ce construim și păstrați prețul de fondator pentru primul an.",
+    "founding_cta": "Rezervați-vă locul",
+    "about_eyebrow": "Cine răspunde de conținut",
+    "about_heading": "Un medic cardiolog cu pregătire în electrofiziologie",
+    "about_text": "Fiecare ECG, fiecare răspuns și fiecare rezumat de studiu trec pe la medic înainte să ajungă la dumneavoastră.",
+    "rules": [
+      "Doar educație: nu interpretăm ECG-uri personale și nu dăm sfaturi medicale individuale.",
+      "Rezumatele de studii sunt redactate cu ajutorul AI și verificate de medic, cu link spre sursă.",
+      "ECG-urile provin din baze de date deschise, cu licență (PTB-XL, CC BY 4.0), sau din cazuri anonimizate, publicate cu permisiune."
+    ],
+    "faq_heading": "Întrebări frecvente",
+    "faq": [
+      {"q": "Cât costă emailul?", "a": "Nimic. Emailul săptămânal și ghidul ECG de buzunar sunt gratuite."},
+      {"q": "Primesc credite EMC?", "a": "Nu încă. Lucrăm la un program creditat împreună cu un partener acreditat și vă anunțăm prin email când există."},
+      {"q": "Pot trimite ECG-ul meu sau al unui pacient?", "a": "Nu. Conținutul este exclusiv educațional și nu înlocuiește consultul medical. Pentru un ECG real, adresați-vă medicului curant."},
+      {"q": "Cât de des scrieți?", "a": "O dată pe săptămână. Vă dezabonați cu un clic, din orice email."},
+      {"q": "Ce date păstrați despre mine?", "a": "Adresa de email, prenumele dacă ni-l dați și rolul, ca să primiți versiunea potrivită. Datele stau pe servere din Uniunea Europeană."}
+    ]
+  },
+  "founding": {
+    "title": "Membri fondatori",
+    "meta_description": "Rezervați primul an de {brand} Pro la prețul de fondator, fără plată acum.",
+    "heading": "Deveniți membru fondator",
+    "lead": "Construim aplicația împreună cu primii ei utilizatori. Rezervați-vă locul acum, fără plată, și păstrați prețul de fondator pentru primul an.",
+    "price_label": "primul an de Pro",
+    "price_unit": "lei",
+    "price_was": "{regular_ron} lei la lansare",
+    "includes": [
+      "Toate modulele, inclusiv pacemaker și dispozitive",
+      "Compasul digital și exercițiile de măsurare",
+      "Tutorul AI pentru ECG-urile didactice",
+      "Benzile de ritm și modul monitor",
+      "Acces la beta înaintea tuturor",
+      "Votați ce modul construim următorul"
+    ],
+    "steps_heading": "Cum funcționează",
+    "steps": [
+      {"title": "Rezervați acum", "text": "Completați formularul. Nu plătiți nimic și nu vă obligați la nimic."},
+      {"title": "Testați beta", "text": "Primiți acces înaintea tuturor și ne spuneți ce nu merge sau ce lipsește."},
+      {"title": "Decideți la lansare", "text": "Vă trimitem linkul de plată la prețul de fondator. Dacă nu mai vreți, nu plătiți nimic."}
+    ],
+    "form_heading": "Rezervați-vă locul",
+    "faq": [
+      {"q": "Când plătesc?", "a": "Doar la lansare, dacă vreți. Primiți un link de plată la prețul de fondator. Până atunci nu vă cerem date de card."},
+      {"q": "Ce se întâmplă după primul an?", "a": "Vă scriem înainte de reînnoire, cu prețul de atunci, și decideți dacă continuați."},
+      {"q": "Primesc factură?", "a": "Da. Plata se face prin procesatorul nostru de plăți, care emite factura."},
+      {"q": "Pot anula rezervarea?", "a": "Oricând: răspundeți la oricare email sau scrieți-ne la {email}."}
+    ]
+  },
+  "thanks": {
+    "title": "Mulțumim",
+    "heading": "Verificați-vă emailul",
+    "text": "V-am trimis un link de confirmare. După ce confirmați, primiți ghidul ECG de buzunar. Nu găsiți emailul? Uitați-vă în Spam sau în Promoții.",
+    "back": "Înapoi la pagina principală"
+  },
+  "confirmed": {
+    "title": "Abonare confirmată",
+    "heading": "Gata, sunteți pe listă.",
+    "text": "Primul ECG ajunge în inbox cu următorul număr. Până atunci, ghidul de buzunar e al dumneavoastră.",
+    "download": "Descărcați ghidul ECG de buzunar (PDF)",
+    "download_note": "11 fișe A6 plus copertă. Printați câte patru pe o foaie A4 și tăiați pe linii.",
+    "download_sheet": "Varianta A4 cu linii de tăiere (PDF)",
+    "founding_nudge": "Vreți și aplicația? Membrii fondatori primesc primul an de Pro la {price_ron} lei.",
+    "founding_link": "Rezervați-vă locul"
+  },
+  "notfound": {
+    "title": "Pagina nu există",
+    "heading": "Linie izoelectrică.",
+    "text": "Pagina căutată nu există sau a fost mutată.",
+    "back": "Înapoi la pagina principală"
+  },
+  "footer": {
+    "disclaimer": "Conținut exclusiv educațional, pentru profesioniști din sănătate și studenți. Nu înlocuiește consultul medical și nu interpretează ECG-uri personale.",
+    "privacy": "Confidențialitate",
+    "terms": "Termeni și condiții",
+    "contact": "Contact",
+    "credits": "ECG-uri: PTB-XL (Wagner și colab., 2020), PhysioNet, licență CC BY 4.0.",
+    "company": "{company_name} · CUI {cui} · {trade_register} · {address}"
+  },
+  "slugs": {
+    "home": "",
+    "founding": "fondatori/",
+    "thanks": "multumim/",
+    "confirmed": "confirmat/",
+    "privacy": "confidentialitate/",
+    "terms": "termeni/",
+    "guide_pdf": "descarcari/ghid-ecg-de-buzunar.pdf",
+    "guide_sheet_pdf": "descarcari/ghid-ecg-de-buzunar-a4.pdf"
+  }
+}

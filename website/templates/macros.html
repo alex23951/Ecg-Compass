@@ -1,0 +1,58 @@
+{% macro signup_form(s, kind, link, html, id_prefix) %}
+{% set founding = kind == 'founding' %}
+<form class="signup" data-kind="{{ kind }}" method="post" action="/api/subscribe" novalidate>
+  <input type="hidden" name="kind" value="{{ kind }}">
+  <input type="hidden" name="lang" value="{{ s.lang }}">
+  <div class="field">
+    <label for="{{ id_prefix }}-email">{{ s.form.email }}</label>
+    <input id="{{ id_prefix }}-email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="{{ s.form.email_placeholder }}" required>
+  </div>
+  <div class="field-row">
+    <div class="field">
+      <label for="{{ id_prefix }}-name">{{ s.form.first_name }}</label>
+      <input id="{{ id_prefix }}-name" name="first_name" type="text" autocomplete="given-name" maxlength="60">
+    </div>
+    <div class="field">
+      <label for="{{ id_prefix }}-role">{{ s.form.role }}</label>
+      <select id="{{ id_prefix }}-role" name="role" required>
+        <option value="">{{ s.form.role_choose }}</option>
+        {% for value, label in s.form.roles.items() %}
+        <option value="{{ value }}">{{ label }}</option>
+        {% endfor %}
+      </select>
+    </div>
+  </div>
+  {% if founding %}
+  <div class="field">
+    <label for="{{ id_prefix }}-wish">{{ s.form.wish }}</label>
+    <textarea id="{{ id_prefix }}-wish" name="wish" rows="3" maxlength="500" placeholder="{{ s.form.wish_placeholder }}"></textarea>
+  </div>
+  <label class="check" for="{{ id_prefix }}-interview">
+    <input id="{{ id_prefix }}-interview" name="interview" type="checkbox" value="yes">
+    <span>{{ s.form.interview }}</span>
+  </label>
+  {% endif %}
+  <label class="check" for="{{ id_prefix }}-consent">
+    <input id="{{ id_prefix }}-consent" name="consent" type="checkbox" value="yes" required>
+    <span>{{ html(s.form['consent_' + ('founding' if founding else 'newsletter')], privacy=link('privacy')) }}</span>
+  </label>
+  <div class="hp" aria-hidden="true">
+    <label for="{{ id_prefix }}-website">{{ s.form.honeypot }}</label>
+    <input id="{{ id_prefix }}-website" name="website" type="text" tabindex="-1" autocomplete="off">
+  </div>
+  <p class="form-error" role="alert" hidden></p>
+  <button class="button" type="submit" data-sending="{{ s.form.sending }}">{{ s.form['submit_' + ('founding' if founding else 'newsletter')] }}</button>
+  {% if not founding %}<p class="form-note">{{ s.form.gift_note }}</p>{% endif %}
+  <template class="msg-errors">
+    <span data-k="email">{{ s.form.error_email }}</span>
+    <span data-k="role">{{ s.form.error_role }}</span>
+    <span data-k="consent">{{ s.form.error_consent }}</span>
+    <span data-k="server">{{ html(s.form.error_server) }}</span>
+  </template>
+</form>
+<div class="form-done" hidden tabindex="-1">
+  <p class="form-done-title" data-title-pending="{{ s.form['done_title_founding' if founding else 'done_title'] }}" data-title-known="{{ s.form.done_title_known }}">{{ s.form['done_title_founding' if founding else 'done_title'] }}</p>
+  <p class="form-done-text" data-text-pending="{{ s.form['done_text_founding' if founding else 'done_text'] }}" data-text-known="{{ s.form.done_text_known }}">{{ s.form['done_text_founding' if founding else 'done_text'] }}</p>
+  <p class="form-done-preview" hidden>{{ s.form.preview_done }}</p>
+</div>
+{% endmacro %}

@@ -1,0 +1,173 @@
+{% extends "base.html" %}
+{# The free site's home page (free_launch: true). The paid-plan page stays in home.html. #}
+{% set fh = s.free.home %}
+{% block title %}{{ f(s.free.meta.home_title) }}{% endblock %}
+{% block description %}{{ f(s.free.meta.home_description) }}{% endblock %}
+{% block main %}
+<section class="hero" aria-labelledby="hero-title">
+  <figure class="strip" aria-label="{{ s.home.trace_caption }}">
+    <canvas id="hero-trace" class="strip-canvas" role="img" aria-label="{{ s.home.trace_caption }}"></canvas>
+    <figcaption class="strip-label"><span>{{ s.home.trace_label }}</span><span class="strip-rate" aria-hidden="true">75/min</span></figcaption>
+  </figure>
+  <script type="application/json" id="trace-data">{{ trace_json }}</script>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <h1 id="hero-title">{{ fh.title }}</h1>
+      <p class="lead">{{ fh.lead }}</p>
+      <ul class="stats">
+        {% for st in fh.stats %}<li>{{ f(st, cases=totals.cases, dx=totals.dx) }}</li>{% endfor %}
+      </ul>
+      <div class="chips">
+        <span class="chips-label">{{ fh.chips_label }}</span>
+        {% for m in modules %}<a class="chip" href="{{ app_url('#practice-' + m.id) }}">{{ m.title }}</a>{% endfor %}
+      </div>
+    </div>
+    <div class="signup-card cta-card">
+      <a class="button" href="{{ app_url() }}">{{ fh.cta_trainer }}</a>
+      {% if has_digest %}<a class="button button-quiet" href="{{ link('digest') }}">{{ fh.cta_digest }}</a>{% endif %}
+      <p class="form-note">{{ fh.privacy_line }}</p>
+      <p class="form-note"><span class="tag">beta</span> {{ fh.hero_note }}</p>
+    </div>
+  </div>
+</section>
+
+{% if quiz %}
+<section class="section" id="weekly" aria-labelledby="weekly-title">
+  <div class="wrap">
+    <p class="eyebrow">{{ s.home.weekly_eyebrow }}</p>
+    <h2 id="weekly-title">{{ f(fh.weekly_heading, n=quiz.number) }}</h2>
+    <p class="section-intro">{{ fh.weekly_intro }}{% if quiz.sample %} <span class="tag">{{ s.home.weekly_sample_note }}</span>{% endif %}</p>
+    <div class="quiz" data-answer="{{ quiz.q.answer_index }}">
+      <a class="quiz-ecg" href="{{ url(quiz.images.full_image or quiz.images.image) }}" target="_blank" rel="noopener">
+        <img src="{{ url(quiz.images.image) }}" alt="ECG" width="1200" height="600" loading="lazy">
+        <span class="quiz-zoom">{{ s.home.quiz_open_full }}</span>
+      </a>
+      <div class="quiz-body">
+        <p class="quiz-prompt">{{ quiz.q.prompt }}</p>
+        <ol class="quiz-options" type="A">
+          {% for opt in quiz.q.options %}
+          <li><button type="button" class="quiz-option" data-index="{{ loop.index0 }}"><span class="quiz-letter">{{ "ABCDEFGH"[loop.index0] }}</span><span>{{ opt }}</span></button></li>
+          {% endfor %}
+        </ol>
+        <div class="quiz-answer" hidden>
+          <p class="quiz-verdict" data-correct="{{ s.home.quiz_correct }}" data-wrong="{{ s.home.quiz_wrong }} {{ 'ABCDEFGH'[quiz.q.answer_index] }}. {{ quiz.q.options[quiz.q.answer_index] }}"></p>
+          <h3>{{ s.home.quiz_why }}</h3>
+          <ul>{% for p in quiz.q.answer_points %}<li>{{ p }}</li>{% endfor %}</ul>
+          {% if quiz.q.deeper %}<h3>{{ s.home.quiz_deeper }}</h3><p>{{ quiz.q.deeper }}</p>{% endif %}
+          {% if quiz.q.why_it_matters %}<h3>{{ s.home.quiz_matters }}</h3><p>{{ quiz.q.why_it_matters }}</p>{% endif %}
+          {% if quiz.q.pearl %}<p class="pearl"><strong>{{ s.home.quiz_pearl }}:</strong> {{ quiz.q.pearl }}</p>{% endif %}
+          {% if has_digest %}<a class="button button-quiet" href="{{ link('digest') }}">{{ fh.weekly_cta }}</a>{% endif %}
+        </div>
+        <p class="credit">{{ f(s.home.quiz_credit, ecg_id=quiz.ecg_id) }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+<section class="section section-alt" id="app" aria-labelledby="app-title">
+  <div class="wrap">
+    <p class="eyebrow">{{ fh.trainer_eyebrow }}</p>
+    <h2 id="app-title">{{ fh.trainer_heading }}</h2>
+    <p class="section-intro">{{ fh.trainer_intro }}</p>
+    <h3 class="modules-heading">{{ fh.modules_heading }}</h3>
+    <ul class="get-grid module-list">
+      {% for m in modules %}
+      <li class="get-item">
+        <p class="get-who">{{ f(fh.module_count, n=m.count) }}</p>
+        <h3><a href="{{ app_url('#practice-' + m.id) }}">{{ m.title }}</a></h3>
+        <p>{{ m.blurb }}</p>
+      </li>
+      {% endfor %}
+    </ul>
+    <p class="cta-row"><a class="button" href="{{ app_url() }}">{{ fh.trainer_cta }}</a></p>
+  </div>
+</section>
+
+<section class="section" id="method" aria-labelledby="steps-title">
+  <div class="wrap">
+    <p class="eyebrow">{{ fh.steps_eyebrow }}</p>
+    <h2 id="steps-title">{{ fh.steps_heading }}</h2>
+    <p class="section-intro">{{ fh.steps_intro }}</p>
+    <ol class="steps">
+      {% for t, d in fh.steps %}
+      <li><span class="step-n" aria-hidden="true">{{ loop.index }}</span><h3>{{ t }}</h3><p>{{ d }}</p></li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>
+
+<section class="section section-alt az-band" aria-labelledby="az-title">
+  <div class="wrap az-band-inner">
+    <div>
+      <p class="eyebrow">{{ fh.az_eyebrow }}</p>
+      <h2 id="az-title">{{ fh.az_heading }}</h2>
+      <p>{{ fh.az_intro }}</p>
+    </div>
+    <div class="az-preview">
+      {% for name in az_sample %}<a class="chip" href="{{ link('az') }}">{{ name }}</a>{% endfor %}
+      <a class="button" href="{{ link('az') }}">{{ fh.az_cta }}</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="calipers-title">
+  <div class="wrap">
+    <div class="calipers-demo">
+      <div class="calipers-head">
+        <h3 id="calipers-title">{{ s.home.calipers_title }}</h3>
+        <p>{{ s.home.calipers_text }}</p>
+      </div>
+      <div class="calipers-stage" id="calipers">
+        <canvas class="calipers-canvas" aria-hidden="true"></canvas>
+        <button type="button" class="caliper" data-which="a" role="slider" aria-label="{{ s.home.calipers_title }} 1" aria-valuemin="0" aria-valuemax="4000" aria-valuenow="0"></button>
+        <button type="button" class="caliper" data-which="b" role="slider" aria-label="{{ s.home.calipers_title }} 2" aria-valuemin="0" aria-valuemax="4000" aria-valuenow="0"></button>
+        <span class="calipers-hint">{{ s.home.calipers_hint }}</span>
+      </div>
+      <dl class="calipers-readout" aria-live="polite">
+        <div><dt>{{ s.home.calipers_interval }}</dt><dd><span data-out="ms">800</span> ms</dd></div>
+        <div><dt>{{ s.home.calipers_rate }}</dt><dd><span data-out="bpm">75</span>/min</dd></div>
+      </dl>
+    </div>
+    <ul class="features">
+      {% for feat in fh.features %}
+      <li><h3>{{ feat.title }}</h3><p>{{ feat.text }}</p></li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section section-alt" aria-labelledby="who-title">
+  <div class="wrap">
+    <p class="eyebrow">{{ fh.who_eyebrow }}</p>
+    <h2 id="who-title">{{ fh.who_heading }}</h2>
+    <ul class="who-list">
+      {% for w in fh.who %}<li>{{ w }}</li>{% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section" id="about" aria-labelledby="about-title">
+  <div class="wrap about-grid">
+    <div>
+      <p class="eyebrow">{{ s.home.about_eyebrow }}</p>
+      <h2 id="about-title">{{ s.home.about_heading }}</h2>
+      <p>{{ s.home.about_text }}</p>
+    </div>
+    <ul class="rules">
+      {% for rule in s.home.rules %}<li>{{ rule }}</li>{% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="section section-alt" aria-labelledby="faq-title">
+  <div class="wrap narrow">
+    <h2 id="faq-title">{{ s.home.faq_heading }}</h2>
+    <div class="faq">
+      {% for item in fh.faq %}
+      <details><summary>{{ item.q }}</summary><p>{{ f(item.a) }}</p></details>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock %}

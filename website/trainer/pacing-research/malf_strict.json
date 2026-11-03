@@ -1,0 +1,320 @@
+[
+{
+"study_id": "45628179",
+"path": "files/p1257/p12574312/s45628179/45628179",
+"report": "A-V dual-paced rhythm with some inhibition",
+"dropped": [
+{
+"t": 0.76,
+"next_qrs": 0.94
+},
+{
+"t": 4.52,
+"next_qrs": 1.69
+},
+{
+"t": 5.27,
+"next_qrs": 0.94
+},
+{
+"t": 8.27,
+"next_qrs": 0.94
+}
+],
+"n_spikes": 20,
+"n_qrs": 10,
+"max_rr": 2.25,
+"median_rr": 0.75
+},
+{
+"study_id": "45631790",
+"path": "files/p1353/p13533304/s45631790/45631790",
+"report": "Atrial-sensed ventricular-paced complexes | Left bundle branch block",
+"dropped": [
+{
+"t": 0.56,
+"next_qrs": 0.63
+},
+{
+"t": 2.41,
+"next_qrs": 0.72
+},
+{
+"t": 8.0,
+"next_qrs": 0.64
+}
+],
+"n_spikes": 10,
+"n_qrs": 13,
+"max_rr": 1.45,
+"median_rr": 0.62
+},
+{
+"study_id": "44676622",
+"path": "files/p1909/p19098145/s44676622/44676622",
+"report": "Afib/flut and V-paced complexes",
+"dropped": [
+{
+"t": 1.46,
+"next_qrs": 0.72
+},
+{
+"t": 2.89,
+"next_qrs": 0.72
+},
+{
+"t": 4.31,
+"next_qrs": 0.72
+}
+],
+"n_spikes": 14,
+"n_qrs": 11,
+"max_rr": 1.42,
+"median_rr": 0.71
+},
+{
+"study_id": "40001566",
+"path": "files/p1346/p13467793/s40001566/40001566",
+"report": "Afib/flut and V-paced complexes | Left bundle branch block",
+"dropped": [
+{
+"t": 2.54,
+"next_qrs": 0.8
+},
+{
+"t": 5.53,
+"next_qrs": 0.8
+},
+{
+"t": 8.53,
+"next_qrs": 0.8
+}
+],
+"n_spikes": 13,
+"n_qrs": 10,
+"max_rr": 1.4,
+"median_rr": 0.8
+},
+{
+"study_id": "49783885",
+"path": "files/p1867/p18676748/s49783885/49783885",
+"report": "Atrial-ventricular dual-paced complexes | Left bundle branch block",
+"dropped": [
+{
+"t": 6.95,
+"next_qrs": 1.64
+},
+{
+"t": 7.92,
+"next_qrs": 0.68
+}
+],
+"n_spikes": 14,
+"n_qrs": 11,
+"max_rr": 2.42,
+"median_rr": 0.78
+},
+{
+"study_id": "48503996",
+"path": "files/p1608/p16082391/s48503996/48503996",
+"report": "Undetermined rhythm | - demand ventricular pacing and ineffective stimuli | *** report made without knowing patient's sex or age *** | Marked left axis deviation | Intraventricular conduction defect | Inferior infarct - probably acute | Poor R wave progression - cannot rule out anteroseptal infarct | Lateral T wave changes may be related to electronic pacemaker | Abnormal ECG",
+"dropped": [
+{
+"t": 6.42,
+"next_qrs": 0.72
+},
+{
+"t": 9.28,
+"next_qrs": null
+}
+],
+"n_spikes": 12,
+"n_qrs": 9,
+"max_rr": 1.43,
+"median_rr": 0.71
+},
+{
+"study_id": "47894644",
+"path": "files/p1206/p12064623/s47894644/47894644",
+"report": "Pacemaker spikes or artifacts | Atrial fibrillation | Left bundle branch block",
+"dropped": [
+{
+"t": 3.59,
+"next_qrs": 0.53
+},
+{
+"t": 7.09,
+"next_qrs": 0.53
+}
+],
+"n_spikes": 25,
+"n_qrs": 12,
+"max_rr": 1.14,
+"median_rr": 0.79
+},
+{
+"study_id": "46168140",
+"path": "files/p1675/p16755805/s46168140/46168140",
+"report": "Afib/flut and V-paced complexes",
+"dropped": [
+{
+"t": 4.0,
+"next_qrs": 1.01
+}
+],
+"n_spikes": 8,
+"n_qrs": 7,
+"max_rr": 2.99,
+"median_rr": 1.0
+},
+{
+"study_id": "42501735",
+"path": "files/p1075/p10757306/s42501735/42501735",
+"report": "Atrial-ventricular dual-paced complexes | Partial missing lead(s): V6",
+"dropped": [
+{
+"t": 1.62,
+"next_qrs": 1.77
+}
+],
+"n_spikes": 13,
+"n_qrs": 10,
+"max_rr": 2.44,
+"median_rr": 0.84
+},
+{
+"study_id": "40335034",
+"path": "files/p1828/p18283050/s40335034/40335034",
+"report": "Afib/flut and V-paced complexes | LVH with secondary repolarization abnormality",
+"dropped": [
+{
+"t": 2.2,
+"next_qrs": 0.96
+}
+],
+"n_spikes": 16,
+"n_qrs": 8,
+"max_rr": 1.92,
+"median_rr": 0.96
+},
+{
+"study_id": "41933616",
+"path": "files/p1118/p11184685/s41933616/41933616",
+"report": "Pacemaker spikes or artifacts | Atrial fibrillation | Ventricular tachycardia, unsustained | Nonspecific intraventricular conduction delay",
+"dropped": [
+{
+"t": 1.03,
+"next_qrs": 3.27
+}
+],
+"n_spikes": 47,
+"n_qrs": 7,
+"max_rr": 1.89,
+"median_rr": 0.45
+},
+{
+"study_id": "41402085",
+"path": "files/p1468/p14685985/s41402085/41402085",
+"report": "Afib/flut and V-paced complexes",
+"dropped": [
+{
+"t": 0.51,
+"next_qrs": 0.88
+}
+],
+"n_spikes": 11,
+"n_qrs": 10,
+"max_rr": 1.81,
+"median_rr": 0.81
+},
+{
+"study_id": "46106799",
+"path": "files/p1668/p16688252/s46106799/46106799",
+"report": "Undetermined rhythm | Demand pacing; Interpretation is based on unpaced beats | Right axis deviation | Right bundle branch block | Possible inferior infarct - age undetermined | Lateral ST elevation, CONSIDER ACUTE INFARCT | Abnormal ECG",
+"dropped": [
+{
+"t": 3.53,
+"next_qrs": 0.9
+}
+],
+"n_spikes": 11,
+"n_qrs": 10,
+"max_rr": 1.52,
+"median_rr": 0.88
+},
+{
+"study_id": "40714230",
+"path": "files/p1647/p16476559/s40714230/40714230",
+"report": "Afib/flut and V-paced complexes",
+"dropped": [
+{
+"t": 9.15,
+"next_qrs": 0.76
+}
+],
+"n_spikes": 13,
+"n_qrs": 12,
+"max_rr": 1.5,
+"median_rr": 0.75
+},
+{
+"study_id": "45683990",
+"path": "files/p1832/p18322589/s45683990/45683990",
+"report": "Undetermined rhythm | - demand A-V sequential and ventricular pacing and ineffective stimuli | *** complex QRS morphology - no further analysis *** | Abnormal ECG",
+"dropped": [
+{
+"t": 2.32,
+"next_qrs": 0.76
+}
+],
+"n_spikes": 15,
+"n_qrs": 14,
+"max_rr": 1.47,
+"median_rr": 0.65
+},
+{
+"study_id": "44652620",
+"path": "files/p1271/p12713566/s44652620/44652620",
+"report": "Ventricular-paced complexes",
+"dropped": [
+{
+"t": 2.19,
+"next_qrs": 0.46
+}
+],
+"n_spikes": 2,
+"n_qrs": 12,
+"max_rr": 1.0,
+"median_rr": 1.0
+},
+{
+"study_id": "45384641",
+"path": "files/p1302/p13025850/s45384641/45384641",
+"report": "Age not entered, assumed to be  50 years old for purpose of ECG interpretation | Ventricular-paced complexes",
+"dropped": [
+{
+"t": 3.46,
+"next_qrs": 2.75
+}
+],
+"n_spikes": 39,
+"n_qrs": 6,
+"max_rr": 0.76,
+"median_rr": 0.75
+},
+{
+"study_id": "47249514",
+"path": "files/p1233/p12336869/s47249514/47249514",
+"report": "Atrial-ventricular dual-paced complexes | Right bundle branch block",
+"dropped": [
+{
+"t": 3.89,
+"next_qrs": null
+}
+],
+"n_spikes": 11,
+"n_qrs": 5,
+"max_rr": 0.68,
+"median_rr": 0.68
+}
+]

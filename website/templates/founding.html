@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% from "macros.html" import signup_form %}
+{% block title %}{{ s.founding.title }} · {{ c.brand }}{% endblock %}
+{% block description %}{{ f(s.founding.meta_description) }}{% endblock %}
+{% block main %}
+<section class="page-head">
+  <div class="wrap">
+    <p class="eyebrow">{{ s.nav.founding }}</p>
+    <h1>{{ s.founding.heading }}</h1>
+    <p class="lead">{{ s.founding.lead }}</p>
+  </div>
+</section>
+<section class="section founding-page">
+  <div class="wrap founding-grid">
+    <div class="founding-offer">
+      <div class="price">
+        {% if lang == 'ro' %}
+        <p class="price-amount"><span class="price-num">{{ c.founding.price_ron }}</span> <span class="price-unit">{{ s.founding.price_unit }}</span></p>
+        {% else %}
+        <p class="price-amount"><span class="price-unit">{{ s.founding.price_unit }}</span><span class="price-num">{{ c.founding.price_eur }}</span></p>
+        {% endif %}
+        <p class="price-label">{{ s.founding.price_label }}</p>
+        <p class="price-was">{{ f(s.founding.price_was) }}</p>
+      </div>
+      <ul class="includes">
+        {% for item in s.founding.includes %}<li>{{ item }}</li>{% endfor %}
+      </ul>
+      <h2 class="h3">{{ s.founding.steps_heading }}</h2>
+      <ol class="steps">
+        {% for step in s.founding.steps %}
+        <li><strong>{{ step.title }}.</strong> {{ step.text }}</li>
+        {% endfor %}
+      </ol>
+      <p class="muted">{{ c.timeline[lang] }}</p>
+    </div>
+    <div class="signup-card" id="signup">
+      <h2 class="card-title">{{ s.founding.form_heading }}</h2>
+      {{ signup_form(s, 'founding', link, html, 'founding') }}
+    </div>
+  </div>
+</section>
+<section class="section section-alt">
+  <div class="wrap narrow">
+    <h2>{{ s.home.faq_heading }}</h2>
+    <div class="faq">
+      {% for item in s.founding.faq %}
+      <details><summary>{{ item.q }}</summary><p>{{ f(item.a) }}</p></details>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock %}
