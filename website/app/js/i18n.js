@@ -232,7 +232,7 @@ export const STRINGS = {
     review_layer_cases: "Cazuri: conținut pe profiluri (nou)",
     review_layer_dx: "Etichete simple și „Ce faci” (nou)",
     review_layer_count: (n) => `${n} întrebări suplimentare, variante și note pe profiluri`,
-    review_action: "Ce faceți (asistenți, paramedici; 2–4 propoziții)",
+    review_action: "Ce faci (asistenți, paramedici; 2–4 propoziții)",
     review_action_set: "Cele patru acțiuni fixe („Ce faci mai întâi?”)",
     review_first_view: "Prima imagine",
     review_view_strip: "banda de ritm",
