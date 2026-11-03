@@ -1,0 +1,19 @@
+{
+  // Cloudflare Workers settings for ECG Compass.
+  // Build command (Worker > Settings > Build): cd website && pip install jinja2 && python3 build.py
+  // Deploy command: npx wrangler deploy
+  "name": "ecg-compass",
+  "main": "website/worker.js",
+  "compatibility_date": "2026-10-01",
+  // Test lock (Alex, 2026-11-03): SHA-256 of "ecg-compass:" + password. Delete this block to open the site.
+  "vars": {
+    "SITE_PASSWORD_SHA256": "0366518e38bba538ad150010e306f9925a56fb16f916c97c051bb5d2df9f90dd"
+  },
+  "assets": {
+    "directory": "website/dist",
+    "binding": "ASSETS",
+    "run_worker_first": true,
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  }
+}
