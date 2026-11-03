@@ -1,0 +1,15 @@
+{
+  // Cloudflare Workers settings for ECG Compass.
+  // Build command (Worker > Settings > Build): cd website && pip install jinja2 && python3 build.py
+  // Deploy command: npx wrangler deploy
+  "name": "ecg-compass",
+  "main": "website/worker.js",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "website/dist",
+    "binding": "ASSETS",
+    "run_worker_first": true,
+    "html_handling": "auto-trailing-slash",
+    "not_found_handling": "404-page"
+  }
+}
