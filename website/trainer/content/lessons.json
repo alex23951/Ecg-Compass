@@ -12,9 +12,9 @@
     "minutes": 6,
     "objectives": {
       "ro": [
-        "Urmăriți drumul impulsului: nodul sinusal, atriile, nodul atrioventricular, fasciculul His, ramurile și rețeaua Purkinje.",
-        "Asociați unda P, complexul QRS și unda T cu depolarizarea atrială, depolarizarea ventriculară și repolarizarea ventriculară.",
-        "Rețineți că ECG-ul înregistrează activitatea electrică, nu pulsul: verificați întotdeauna pacientul."
+        "Urmărește drumul impulsului: nodul sinusal, atriile, nodul atrioventricular, fasciculul His, ramurile și rețeaua Purkinje.",
+        "Asociază unda P, complexul QRS și unda T cu depolarizarea atrială, depolarizarea ventriculară și repolarizarea ventriculară.",
+        "Reține că ECG-ul înregistrează activitatea electrică, nu pulsul: verifică întotdeauna pacientul."
       ],
       "en": [
         "Trace the impulse: sinus node, atria, AV node, bundle of His, bundle branches and Purkinje fibres.",
@@ -94,7 +94,7 @@
         },
         "body": {
           "ro": [
-            "Aceasta este derivația DII a unui ECG normal. Apăsați butoanele de deasupra traseului ca să vedeți undele, apoi întârzierea din nodul AV."
+            "Aceasta este derivația DII a unui ECG normal. Apasă butoanele de deasupra traseului ca să vezi undele, apoi întârzierea din nodul AV."
           ],
           "en": [
             "This is lead II of a normal ECG. Press the buttons above the tracing to show the waves, then the AV node delay."
@@ -144,12 +144,12 @@
           2.3
         ],
         "heading": {
-          "ro": "Rândul dumneavoastră",
+          "ro": "Rândul tău",
           "en": "Your turn"
         },
         "body": {
           "ro": [
-            "Aceasta este bătaia următoare, fără etichete. Încercați să identificați unda P, complexul QRS și unda T. Apoi apăsați „Răspuns” ca să verificați."
+            "Aceasta este bătaia următoare, fără etichete. Încearcă să identifici unda P, complexul QRS și unda T. Apoi apasă „Răspuns” ca să verifici."
           ],
           "en": [
             "Here is the next beat, without labels. Find the P wave, the QRS complex and the T wave yourself. Then press 'Answer' to check."
@@ -276,8 +276,8 @@
         "body": {
           "ro": [
             "ECG-ul arată doar activitatea electrică. Nu arată dacă inima pompează sânge.",
-            "Un traseu poate părea aproape normal la un pacient fără puls. Aceasta este activitatea electrică fără puls (AEP), o formă de stop cardiac. Se întâmplă și invers: un electrod desprins poate desena o linie haotică la un pacient care vă vorbește.",
-            "Regula este simplă: verificați mai întâi pacientul, apoi traseul."
+            "Un traseu poate părea aproape normal la un pacient fără puls. Aceasta este activitatea electrică fără puls (AEP), o formă de stop cardiac. Se întâmplă și invers: un electrod desprins poate desena o linie haotică la un pacient care îți vorbește.",
+            "Regula este simplă: verifică mai întâi pacientul, apoi traseul."
           ],
           "en": [
             "The ECG shows only electrical activity. It does not show whether the heart pumps blood.",
@@ -312,7 +312,7 @@
         ],
         "answer": 0,
         "explain": {
-          "ro": "Da. Activitatea electrică nu dovedește că inima pompează. Activitatea electrică fără puls poate apărea la orice frecvență. Verificați pacientul (starea de conștiență, respirația, pulsul), nu doar ecranul.",
+          "ro": "Da. Activitatea electrică nu dovedește că inima pompează. Activitatea electrică fără puls poate apărea la orice frecvență. Verifică pacientul (starea de conștiență, respirația, pulsul), nu doar ecranul.",
           "en": "Yes. Electrical activity does not prove that the heart pumps. Pulseless electrical activity can occur at any rate. Check the patient (response, breathing, pulse), not only the screen."
         }
       },
@@ -320,7 +320,7 @@
         "type": "cases",
         "body": {
           "ro": [
-            "Exersați pe trasee reale: identificați unda P, complexul QRS și unda T la fiecare bătaie."
+            "Exersează pe trasee reale: identifică unda P, complexul QRS și unda T la fiecare bătaie."
           ],
           "en": [
             "Practise on real ECGs: find the P wave, the QRS complex and the T wave on every beat."
@@ -340,15 +340,15 @@
       "en": "Paper, speed and calibration"
     },
     "summary": {
-      "ro": "Cât valorează un pătrat și ce verificați înainte de a citi",
+      "ro": "Cât valorează un pătrat și ce verifici înainte de a citi",
       "en": "What a square is worth, and what to check before you read"
     },
     "minutes": 7,
     "objectives": {
       "ro": [
-        "Transformați pătratele în timp și voltaj: un pătrat mic = 40 ms și 0,1 mV; un pătrat mare = 200 ms.",
-        "Verificați viteza (25 mm/s) și semnalul de etalonare (10 mm/mV) înainte de a citi; un ECG în 12 derivații durează 10 s.",
-        "Rețineți că la amplificare redusă la jumătate toate voltajele apar înjumătățite."
+        "Transformă pătratele în timp și voltaj: un pătrat mic = 40 ms și 0,1 mV; un pătrat mare = 200 ms.",
+        "Verifică viteza (25 mm/s) și semnalul de etalonare (10 mm/mV) înainte de a citi; un ECG în 12 derivații durează 10 s.",
+        "Reține că la amplificare redusă la jumătate toate voltajele apar înjumătățite."
       ],
       "en": [
         "Convert squares: a small square is 40 ms and 0.1 mV; a large square is 200 ms.",
@@ -488,7 +488,7 @@
         },
         "body": {
           "ro": [
-            "Aceeași derivație DII ca în lecția anterioară. Treapta de la marginea stângă a benzii este semnalul de etalonare: 10 mm înălțime. Folosiți butoanele ca să vedeți un pătrat mic, un pătrat mare și un interval RR."
+            "Aceeași derivație DII ca în lecția anterioară. Treapta de la marginea stângă a benzii este semnalul de etalonare: 10 mm înălțime. Folosește butoanele ca să vezi un pătrat mic, un pătrat mare și un interval RR."
           ],
           "en": [
             "The same lead II as in the last lesson. The step at the left edge of the strip is the calibration pulse: 10 mm tall. Use the buttons to show one small square, one large square and one RR interval."
@@ -560,12 +560,12 @@
         "measure": "rr",
         "beat": 0,
         "prompt": {
-          "ro": "Măsurați cu compasul un interval RR.",
+          "ro": "Măsoară cu compasul un interval RR.",
           "en": "Measure one RR interval with the calipers."
         },
         "body": {
           "ro": [
-            "Așezați un braț al compasului pe vârful unei unde R și celălalt pe vârful undei R următoare. Apoi numărați pătratele mari dintre ele, ca să verificați valoarea."
+            "Așază un braț al compasului pe vârful unei unde R și celălalt pe vârful undei R următoare. Apoi numără pătratele mari dintre ele, ca să verifici valoarea."
           ],
           "en": [
             "Put one arm of the calipers on the peak of an R wave and the other on the peak of the next one. Then count the large squares between them to check the reading."
@@ -590,13 +590,13 @@
         "ref": 35,
         "tol": 2,
         "prompt": {
-          "ro": "Măsurați înălțimea undei R în V5.",
+          "ro": "Măsoară înălțimea undei R în V5.",
           "en": "Measure the height of the R wave in V5."
         },
         "body": {
           "ro": [
             "Acest ECG are complexe foarte ample. La 10 mm/mV, undele R depășesc marginea de sus a benzii.",
-            "Apăsați 5 la „Amplificare”: semnalul de etalonare și undele R sunt desenate la jumătate din înălțime, dar voltajul real nu s-a schimbat. Așezați apoi o linie a compasului pe linia izoelectrică și cealaltă pe vârful unei unde R."
+            "Apasă 5 la „Amplificare”: semnalul de etalonare și undele R sunt desenate la jumătate din înălțime, dar voltajul real nu s-a schimbat. Așază apoi o linie a compasului pe linia izoelectrică și cealaltă pe vârful unei unde R."
           ],
           "en": [
             "This ECG has very tall complexes. At 10 mm/mV the R waves run off the top of the strip.",
@@ -604,7 +604,7 @@
           ]
         },
         "explain": {
-          "ro": "Aproximativ 35 mm (3,5 mV). Pe hârtie, la 5 mm/mV, ați măsura jumătate (17,5 mm) și ați dubla valoarea. Compasul din aplicație afișează întotdeauna valoarea la 10 mm/mV. Criteriile de voltaj, de exemplu cele pentru hipertrofia ventriculară stângă, presupun etalonarea standard.",
+          "ro": "Aproximativ 35 mm (3,5 mV). Pe hârtie, la 5 mm/mV, ai măsura jumătate (17,5 mm) și ai dubla valoarea. Compasul din aplicație afișează întotdeauna valoarea la 10 mm/mV. Criteriile de voltaj, de exemplu cele pentru hipertrofia ventriculară stângă, presupun etalonarea standard.",
           "en": "About 35 mm (3.5 mV). On paper at 5 mm/mV you would measure half (17.5 mm) and double it. The calipers in the app always give the value at 10 mm/mV. Voltage criteria, for example those for left ventricular hypertrophy, assume the standard calibration."
         }
       },
@@ -646,11 +646,11 @@
         },
         "options": [
           {
-            "ro": "Amplificare la jumătate: dublați voltajele înainte de a aplica criteriile",
+            "ro": "Amplificare la jumătate: dublează voltajele înainte de a aplica criteriile",
             "en": "Half gain: double the voltages before applying any criteria"
           },
           {
-            "ro": "Viteză dublă: împărțiți la doi fiecare interval pe care îl măsurați",
+            "ro": "Viteză dublă: împarte la doi fiecare interval pe care îl măsori",
             "en": "Double speed: halve every interval that you measure"
           },
           {
@@ -664,7 +664,7 @@
         ],
         "answer": 0,
         "explain": {
-          "ro": "Semnalul de etalonare reprezintă întotdeauna 1 mV. Dacă are 5 mm, amplificarea este la jumătate și toate undele sunt desenate la jumătate din înălțime. Dublați valorile măsurate înainte de a aplica criteriile de voltaj.",
+          "ro": "Semnalul de etalonare reprezintă întotdeauna 1 mV. Dacă are 5 mm, amplificarea este la jumătate și toate undele sunt desenate la jumătate din înălțime. Dublează valorile măsurate înainte de a aplica criteriile de voltaj.",
           "en": "The pulse always stands for 1 mV. At 5 mm the gain is halved and every wave is drawn at half height. Double what you measure before you apply voltage criteria."
         }
       },
@@ -694,7 +694,7 @@
         ],
         "answer": 3,
         "explain": {
-          "ro": "3 × 40 ms = 120 ms (0,12 s). Rețineți această valoare: un complex QRS care durează trei pătrate mici sau mai mult este larg.",
+          "ro": "3 × 40 ms = 120 ms (0,12 s). Reține această valoare: un complex QRS care durează trei pătrate mici sau mai mult este larg.",
           "en": "3 × 40 ms = 120 ms (0.12 s). Remember this number: a QRS that lasts three small squares or more is wide."
         }
       },
@@ -702,7 +702,7 @@
         "type": "cases",
         "body": {
           "ro": [
-            "Exersați pe aceste trasee. Numărați pătratele dintre undele R și încercați amplificarea de 5 mm/mV pe traseul cu complexe foarte ample."
+            "Exersează pe aceste trasee. Numără pătratele dintre undele R și încearcă amplificarea de 5 mm/mV pe traseul cu complexe foarte ample."
           ],
           "en": [
             "Practise on these ECGs. Count the squares between the R waves, and try the 5 mm/mV gain on the ECG with very tall complexes."
@@ -729,9 +729,9 @@
     "minutes": 7,
     "objectives": {
       "ro": [
-        "Identificați unda P, intervalul și segmentul PR, complexul QRS, punctul J, segmentul ST, unda T, unda U, intervalul QT și segmentul TP.",
-        "Cunoașteți valorile normale: PR 120–200 ms, QRS sub 120 ms.",
-        "Denumiți formele complexului QRS (qR, rS, QS, rsR')."
+        "Identifică unda P, intervalul și segmentul PR, complexul QRS, punctul J, segmentul ST, unda T, unda U, intervalul QT și segmentul TP.",
+        "Cunoaște valorile normale: PR 120–200 ms, QRS sub 120 ms.",
+        "Denumește formele complexului QRS (qR, rS, QS, rsR')."
       ],
       "en": [
         "Label the P wave, the PR interval and PR segment, the QRS, the J point, the ST segment, the T and U waves, the QT interval and the TP segment.",
@@ -852,7 +852,7 @@
         },
         "body": {
           "ro": [
-            "Derivația DII a ECG-ului normal. Comutați între cele patru seturi de marcaje."
+            "Derivația DII a ECG-ului normal. Comută între cele patru seturi de marcaje."
           ],
           "en": [
             "Lead II of the normal ECG. Switch between the four sets of marks."
@@ -1043,7 +1043,7 @@
         },
         "body": {
           "ro": [
-            "Derivația V1 la un pacient cu QRS larg. Veți reîntâlni acest aspect în lecția despre durata QRS."
+            "Derivația V1 la un pacient cu QRS larg. Vei reîntâlni acest aspect în lecția despre durata QRS."
           ],
           "en": [
             "V1 from a patient with a wide QRS. You will meet this pattern again in the lesson on QRS width."
@@ -1089,12 +1089,12 @@
         "measure": "pr",
         "beat": 0,
         "prompt": {
-          "ro": "Măsurați intervalul PR în DII.",
+          "ro": "Măsoară intervalul PR în DII.",
           "en": "Measure the PR interval in lead II."
         },
         "body": {
           "ro": [
-            "De la începutul undei P până la începutul complexului QRS. Puneți primul braț al compasului acolo unde unda P se desprinde de linia izoelectrică."
+            "De la începutul undei P până la începutul complexului QRS. Pune primul braț al compasului acolo unde unda P se desprinde de linia izoelectrică."
           ],
           "en": [
             "From the start of the P wave to the start of the QRS. Put the first arm of the calipers where the P wave leaves the baseline."
@@ -1199,7 +1199,7 @@
         "type": "cases",
         "body": {
           "ro": [
-            "Exersați identificarea undelor și măsurarea intervalului PR și a duratei QRS pe aceste trasee."
+            "Exersează identificarea undelor și măsurarea intervalului PR și a duratei QRS pe aceste trasee."
           ],
           "en": [
             "Practise naming the waves and measuring the PR interval and the QRS duration on these ECGs."
@@ -1226,9 +1226,9 @@
     "minutes": 8,
     "objectives": {
       "ro": [
-        "Rețineți că 10 electrozi dau 12 derivații și că o undă care se apropie de polul pozitiv al unei derivații este pozitivă.",
-        "Grupați derivațiile: inferioare (DII, DIII, aVF), laterale (DI, aVL, V5–V6), septale (V1–V2), anterioare (V3–V4); în ritm sinusal, aVR este negativă.",
-        "Asistenți medicali și paramedici: plasați corect electrozii, după culorile IEC."
+        "Reține că 10 electrozi dau 12 derivații și că o undă care se apropie de polul pozitiv al unei derivații este pozitivă.",
+        "Grupează derivațiile: inferioare (DII, DIII, aVF), laterale (DI, aVL, V5–V6), septale (V1–V2), anterioare (V3–V4); în ritm sinusal, aVR este negativă.",
+        "Pentru asistenți medicali și paramedici: plasează corect electrozii, după culorile IEC."
       ],
       "en": [
         "Know that 10 electrodes give 12 leads, and that a wave moving towards a lead's positive pole is upright.",
@@ -1279,7 +1279,7 @@
       {
         "type": "check",
         "question": {
-          "ro": "Un complex QRS durează 140 ms. Cum îl descrieți?",
+          "ro": "Un complex QRS durează 140 ms. Cum îl descrii?",
           "en": "A QRS complex lasts 140 ms. How do you describe it?"
         },
         "options": [
@@ -1350,8 +1350,8 @@
         "body": {
           "ro": [
             "Electrozii membrelor, în culorile IEC: roșu pe brațul drept, galben pe brațul stâng, verde pe piciorul stâng, negru pe piciorul drept.",
-            "Electrozii precordiali: V1 roșu, V2 galben, V3 verde, V4 maro, V5 negru, V6 violet. Palpați unghiul lui Louis (unghiul sternal), coborâți în spațiul intercostal 2, apoi numărați în jos până la spațiul 4 pentru V1 și V2.",
-            "Dacă sunt plasați prea sus, V1 și V2 pot arăta un fals aspect rSr' și unde T negative. La femei, așezați V4–V6 sub sân, nu pe sân."
+            "Electrozii precordiali: V1 roșu, V2 galben, V3 verde, V4 maro, V5 negru, V6 violet. Palpează unghiul lui Louis (unghiul sternal), coboară în spațiul intercostal 2, apoi numără în jos până la spațiul 4 pentru V1 și V2.",
+            "Dacă sunt plasați prea sus, V1 și V2 pot arăta un fals aspect rSr' și unde T negative. La femei, așază V4–V6 sub sân, nu pe sân."
           ],
           "en": [
             "Limb electrodes, IEC colours: red on the right arm, yellow on the left arm, green on the left leg, black on the right leg.",
@@ -1380,7 +1380,7 @@
         "type": "diagram",
         "name": "pads",
         "caption": {
-          "ro": "Electrozii autoadezivi de defibrilare (ERC 2025). Poziția inițială recomandată este cea anterolaterală: un electrod sub clavicula dreaptă, lângă marginea dreaptă a sternului, celălalt pe linia axilară medie stângă, sub axilă. Poziția anteroposterioară este o alternativă. La un pacient cu stimulator cardiac sau defibrilator implantat, așezați electrodul la cel puțin 8 cm de aparat sau folosiți o altă poziție.",
+          "ro": "Electrozii autoadezivi de defibrilare (ERC 2025). Poziția inițială recomandată este cea anterolaterală: un electrod sub clavicula dreaptă, lângă marginea dreaptă a sternului, celălalt pe linia axilară medie stângă, sub axilă. Poziția anteroposterioară este o alternativă. La un pacient cu stimulator cardiac sau defibrilator implantat, așază electrodul la cel puțin 8 cm de aparat sau folosește o altă poziție.",
           "en": "Defibrillation pads (ERC 2025). The anterolateral position is the first choice: one pad below the right clavicle, beside the right edge of the sternum, the other on the left midaxillary line, below the armpit. The anteroposterior position is an alternative. If the patient has an implanted pacemaker or defibrillator, keep the pad at least 8 cm from the device, or use another position."
         },
         "only": [
@@ -1448,7 +1448,7 @@
         ],
         "answer": 0,
         "explain": {
-          "ro": "Galbenul (L) se plasează pe brațul stâng, iar roșul (R) pe brațul drept. Inversarea electrozilor brațelor face ca DI să apară inversat. Lecția următoare vă prezintă un astfel de traseu.",
+          "ro": "Galbenul (L) se plasează pe brațul stâng, iar roșul (R) pe brațul drept. Inversarea electrozilor brațelor face ca DI să apară inversat. Lecția următoare îți prezintă un astfel de traseu.",
           "en": "Yellow (L) belongs on the left arm and red (R) on the right. Swapped arm electrodes turn lead I upside down. The next lesson shows such a tracing."
         }
       },
@@ -1514,7 +1514,7 @@
         },
         "body": {
           "ro": [
-            "Urmăriți unda R începând din V1: crește până în V4. Unda S este cea mai adâncă în V2, apoi scade. V3 este prima derivație în care unda R este mai înaltă decât unda S: zona de tranziție."
+            "Urmărește unda R începând din V1: crește până în V4. Unda S este cea mai adâncă în V2, apoi scade. V3 este prima derivație în care unda R este mai înaltă decât unda S: zona de tranziție."
           ],
           "en": [
             "Follow the R wave from V1: it grows up to V4. The S wave is deepest in V2, then shrinks. V3 is the first lead where the R wave is taller than the S wave: the transition zone."
@@ -1567,7 +1567,7 @@
         ],
         "answer": 1,
         "explain": {
-          "ro": "DII, DIII și aVF: polii lor pozitivi sunt orientați în jos, spre peretele inferior. Mai târziu veți căuta infarctul inferior exact în aceste trei derivații.",
+          "ro": "DII, DIII și aVF: polii lor pozitivi sunt orientați în jos, spre peretele inferior. Mai târziu vei căuta infarctul inferior exact în aceste trei derivații.",
           "en": "II, III and aVF: their positive poles point down, towards the inferior wall. Later you will look for an inferior infarct in exactly these three leads."
         }
       },
@@ -1635,7 +1635,7 @@
         "type": "cases",
         "body": {
           "ro": [
-            "Exersați recunoașterea grupelor de derivații: supradenivelarea ST a infarctului inferior apare în DII, DIII și aVF, iar cea a infarctului anterolateral, în V2–V6, DI și aVL."
+            "Exersează recunoașterea grupelor de derivații: supradenivelarea ST a infarctului inferior apare în DII, DIII și aVF, iar cea a infarctului anterolateral, în V2–V6, DI și aVL."
           ],
           "en": [
             "Practise the lead groups: the ST elevation of an inferior infarct shows in II, III and aVF, and that of an anterolateral infarct in V2–V6, I and aVL."
@@ -1656,15 +1656,15 @@
       "en": "A clean recording: artefact, reversal and extra leads"
     },
     "summary": {
-      "ro": "Ce nu vine de la inimă și când reînregistrați traseul",
+      "ro": "Ce nu vine de la inimă și când reînregistrezi traseul",
       "en": "What does not come from the heart, and when to record again"
     },
     "minutes": 10,
     "objectives": {
       "ro": [
-        "Recunoașteți tremorul muscular, interferența cu rețeaua electrică (50 Hz), deplasările liniei izoelectrice și electrodul desprins.",
-        "Recunoașteți inversarea electrozilor brațelor (DI inversat, aVR și aVL își schimbă locul, la fel DII și DIII, derivații precordiale neschimbate) și inversarea braț drept–picior drept (DII aproape plată).",
-        "Știți unde se plasează V4R și V7–V9 și când se înregistrează; reînregistrați un traseu defectuos în loc să îl interpretați."
+        "Recunoaște tremorul muscular, interferența cu rețeaua electrică (50 Hz), deplasările liniei izoelectrice și electrodul desprins.",
+        "Recunoaște inversarea electrozilor brațelor (DI inversat, aVR și aVL își schimbă locul, la fel DII și DIII, derivații precordiale neschimbate) și inversarea braț drept–picior drept (DII aproape plată).",
+        "Știi unde se plasează V4R și V7–V9 și când se înregistrează; reînregistrează un traseu defectuos în loc să îl interpretezi."
       ],
       "en": [
         "Recognise muscle tremor, 50 Hz mains interference, baseline wander and a loose electrode.",
@@ -1781,7 +1781,7 @@
         },
         "body": {
           "ro": [
-            "Observați ce derivații sunt afectate. Tremorul este cel mai amplu în DI și DII și mult mai mic în DIII. DI și DII folosesc electrodul brațului drept, iar DIII nu îl folosește. Rugați pacientul să își sprijine și să își relaxeze brațul drept; dacă îi este frig, acoperiți-l.",
+            "Observă ce derivații sunt afectate. Tremorul este cel mai amplu în DI și DII și mult mai mic în DIII. DI și DII folosesc electrodul brațului drept, iar DIII nu îl folosește. Roagă pacientul să își sprijine și să își relaxeze brațul drept; dacă îi este frig, acoperă-l.",
             "Spre final, doar V2 coboară și apoi urcă brusc, în timp ce V3 rămâne stabilă: artefact al electrodului V2 (contact slab sau mișcare)."
           ],
           "en": [
@@ -1853,8 +1853,8 @@
         },
         "body": {
           "ro": [
-            "Pacientul are un stimulator cardiac: liniile verticale înalte și subțiri sunt spike-uri de stimulare, despre care veți învăța într-o lecție ulterioară. Priviți însă linia dintre complexe: este îngroșată, formată din dinți mici și regulați.",
-            "Dinții provin de la curentul alternativ al rețelei: 50 Hz în Europa. Traseul de față provine din Statele Unite, unde frecvența rețelei este de 60 Hz. Verificați contactul electrozilor și îndepărtați cablurile de alte aparate electrice."
+            "Pacientul are un stimulator cardiac: liniile verticale înalte și subțiri sunt spike-uri de stimulare, despre care vei învăța într-o lecție ulterioară. Privește însă linia dintre complexe: este îngroșată, formată din dinți mici și regulați.",
+            "Dinții provin de la curentul alternativ al rețelei: 50 Hz în Europa. Traseul de față provine din Statele Unite, unde frecvența rețelei este de 60 Hz. Verifică contactul electrozilor și îndepărtează cablurile de alte aparate electrice."
           ],
           "en": [
             "This patient has a pacemaker: the tall thin lines are pacing spikes, which a later lesson explains. Look instead at the line between the complexes: it is thick, made of tiny regular teeth.",
@@ -1978,7 +1978,7 @@
             "Electrozii plasați pe alt membru sunt o eroare frecventă și pot simula o boală.",
             "Brațe inversate (roșu și galben): DI apare inversat, cu unde P, QRS și T negative. aVR și aVL își schimbă locul între ele, la fel DII și DIII. Derivațiile precordiale rămân normale, așa că V6 este pozitivă, deși DI este negativă.",
             "Inversarea electrozilor braț drept–picior drept (roșu și negru): DII devine o linie aproape plată.",
-            "În ambele situații, verificați cablurile și reînregistrați traseul."
+            "În ambele situații, verifică cablurile și reînregistrează traseul."
           ],
           "en": [
             "Electrodes on the wrong limb are a common error, and they can mimic disease.",
@@ -2044,30 +2044,30 @@
       {
         "type": "check",
         "question": {
-          "ro": "Pe un ECG nou, DI are unde P, QRS și T negative, dar V6 este pozitivă, iar derivațiile precordiale par normale. Ce faceți?",
+          "ro": "Pe un ECG nou, DI are unde P, QRS și T negative, dar V6 este pozitivă, iar derivațiile precordiale par normale. Ce faci?",
           "en": "A new ECG: lead I shows negative P, QRS and T waves, but V6 is upright and the chest leads look normal. What do you do?"
         },
         "options": [
           {
-            "ro": "Îl raportați ca dextrocardie, fără altă verificare",
+            "ro": "Raportează-l ca dextrocardie, fără altă verificare",
             "en": "Report it as dextrocardia, with no further check"
           },
           {
-            "ro": "Îl raportați ca infarct lateral vechi",
+            "ro": "Raportează-l ca infarct lateral vechi",
             "en": "Report it as an old lateral infarct"
           },
           {
-            "ro": "Verificați electrozii brațelor și reînregistrați",
+            "ro": "Verifică electrozii brațelor și reînregistrează",
             "en": "Check the arm electrodes and record again"
           },
           {
-            "ro": "Îl acceptați: DI negativă este o variantă normală",
+            "ro": "Acceptă-l: DI negativă este o variantă normală",
             "en": "Accept it: a negative lead I is a normal variant"
           }
         ],
         "answer": 2,
         "explain": {
-          "ro": "Aspect sugestiv pentru inversarea electrozilor brațelor. În dextrocardie DI este, de asemenea, negativă, dar unda R scade de la V1 la V6 în loc să crească. Aici V6 este normală, așa că verificați cablurile și reînregistrați traseul.",
+          "ro": "Aspect sugestiv pentru inversarea electrozilor brațelor. În dextrocardie DI este, de asemenea, negativă, dar unda R scade de la V1 la V6 în loc să crească. Aici V6 este normală, așa că verifică cablurile și reînregistrează traseul.",
           "en": "This suggests swapped arm electrodes. In dextrocardia lead I is also negative, but the R wave shrinks from V1 to V6 instead of growing. Here V6 is normal, so check the cables and record again."
         }
       },
@@ -2115,7 +2115,7 @@
           "ro": [
             "Derivațiile drepte (V3R, V4R) privesc ventriculul drept. Derivațiile posterioare (V7–V9) privesc peretele posterior al ventriculului stâng.",
             "Ghidul ESC 2023 pentru SCA le recomandă în STEMI inferior sau atunci când se suspectează ocluzia completă a unei artere coronare, iar cele 12 derivații standard nu sunt concludente.",
-            "Pentru a le înregistra, se mută electrozii precordiali. Aparatul tipărește în continuare V1–V6, așa că notați pe traseu numele reale ale derivațiilor."
+            "Pentru a le înregistra, se mută electrozii precordiali. Aparatul tipărește în continuare V1–V6, așa că notează pe traseu numele reale ale derivațiilor."
           ],
           "en": [
             "Right-sided leads (V3R, V4R) look at the right ventricle. Posterior leads (V7–V9) look at the back wall of the left ventricle.",
@@ -2157,30 +2157,30 @@
       {
         "type": "check",
         "question": {
-          "ro": "Scenariu: monitorul alarmează și afișează o linie haotică. Pacientul este conștient și vă vorbește. Ce faceți mai întâi?",
+          "ro": "Scenariu: monitorul alarmează și afișează o linie haotică. Pacientul este conștient și îți vorbește. Ce faci mai întâi?",
           "en": "Scenario: the monitor alarms and shows a chaotic line. The patient is awake and talking to you. What do you do first?"
         },
         "options": [
           {
-            "ro": "Începeți imediat compresiile toracice",
+            "ro": "Începe imediat compresiile toracice",
             "en": "Start chest compressions straight away"
           },
           {
-            "ro": "Alertați echipa de resuscitare înainte de orice",
+            "ro": "Alertează echipa de resuscitare înainte de orice",
             "en": "Call the arrest team before anything else"
           },
           {
-            "ro": "Opriți alarma și continuați monitorizarea",
+            "ro": "Oprește alarma și continuă monitorizarea",
             "en": "Silence the alarm and carry on monitoring"
           },
           {
-            "ro": "Verificați electrozii și cablurile, apoi reevaluați",
+            "ro": "Verifică electrozii și cablurile, apoi reevaluează",
             "en": "Check the electrodes and cables, then look again"
           }
         ],
         "answer": 3,
         "explain": {
-          "ro": "Un pacient care vorbește are circulație: linia haotică nu poate fi fibrilație ventriculară și este, cel mai probabil, un artefact. Priviți pacientul înaintea ecranului, apoi verificați electrozii și cablurile și confirmați un ritm clar. Nu opriți o alarmă fără să îi găsiți cauza.",
+          "ro": "Un pacient care vorbește are circulație: linia haotică nu poate fi fibrilație ventriculară și este, cel mai probabil, un artefact. Privește pacientul înaintea ecranului, apoi verifică electrozii și cablurile și confirmă un ritm clar. Nu opri o alarmă fără să îi găsești cauza.",
           "en": "A patient who talks has a circulation: the chaotic line cannot be ventricular fibrillation and is most likely artefact. Look at the patient before the screen, then fix the electrodes and cables and confirm a clean rhythm. Never silence an alarm without finding its cause."
         },
         "only": [
@@ -2192,7 +2192,7 @@
         "type": "cases",
         "body": {
           "ro": [
-            "Exersați pe aceste trasee: unul cu tremor în derivațiile periferice și două infarcte în care derivațiile suplimentare sunt utile."
+            "Exersează pe aceste trasee: unul cu tremor în derivațiile periferice și două infarcte în care derivațiile suplimentare sunt utile."
           ],
           "en": [
             "Practise on these ECGs: one with tremor in the limb leads, and two infarcts where extra leads help."
@@ -2220,8 +2220,8 @@
     "objectives": {
       "ro": [
         "Ritm regulat: 300 împărțit la numărul de pătrate mari dintre două unde R sau 1500 împărțit la numărul de pătrate mici.",
-        "Ritm neregulat: numărați complexele QRS din 10 s și înmulțiți cu 6 (pe monitor, complexele din 6 s înmulțite cu 10).",
-        "Verificați frecvența pe traseu atunci când electrocardiograful sau monitorul greșește."
+        "Ritm neregulat: numără complexele QRS din 10 s și înmulțește cu 6 (pe monitor, complexele din 6 s înmulțite cu 10).",
+        "Verifică frecvența pe traseu atunci când electrocardiograful sau monitorul greșește."
       ],
       "en": [
         "Regular rhythm: 300 divided by the number of large squares between two R waves, or 1500 divided by the number of small squares.",
@@ -2242,20 +2242,20 @@
       {
         "type": "check",
         "question": {
-          "ro": "Pe un ECG nou în 12 derivații, complexele din DI sunt negative, cele din aVR pozitive, iar derivațiile precordiale arată normal. Ce faceți mai întâi?",
+          "ro": "Pe un ECG nou în 12 derivații, complexele din DI sunt negative, cele din aVR pozitive, iar derivațiile precordiale arată normal. Ce faci mai întâi?",
           "en": "On a new 12-lead ECG, lead I is negative, aVR is positive and the chest leads look normal. What do you do first?"
         },
         "options": [
           {
-            "ro": "Verificați electrozii de la brațe și repetați înregistrarea",
+            "ro": "Verifică electrozii de la brațe și repetă înregistrarea",
             "en": "Check the arm electrodes and record the ECG again"
           },
           {
-            "ro": "Anunțați medicul că există o deviație axială dreaptă",
+            "ro": "Anunță medicul că există o deviație axială dreaptă",
             "en": "Tell the doctor there is right axis deviation"
           },
           {
-            "ro": "Suspectați dextrocardie și înregistrați derivațiile drepte",
+            "ro": "Suspectează dextrocardie și înregistrează derivațiile drepte",
             "en": "Suspect dextrocardia and record the right-sided leads"
           }
         ],
@@ -2294,7 +2294,7 @@
       {
         "type": "text",
         "heading": {
-          "ro": "De ce verificați frecvența pe traseu",
+          "ro": "De ce verifici frecvența pe traseu",
           "en": "Why count it yourself"
         },
         "body": {
@@ -2314,7 +2314,7 @@
         "type": "diagram",
         "name": "rate300",
         "caption": {
-          "ro": "Ritm regulat: porniți de la o undă R aflată pe o linie groasă și numărați liniile groase până la unda R următoare: 300, 150, 100, 75, 60, 50/min. Mai precis: 1500 împărțit la numărul de pătrate mici.",
+          "ro": "Ritm regulat: pornește de la o undă R aflată pe o linie groasă și numără liniile groase până la unda R următoare: 300, 150, 100, 75, 60, 50/min. Mai precis: 1500 împărțit la numărul de pătrate mici.",
           "en": "Regular rhythm: start from an R wave on a thick line and count the thick lines to the next R wave: 300, 150, 100, 75, 60, 50/min. More precise: 1500 divided by the number of small squares."
         }
       },
@@ -2331,12 +2331,12 @@
         "measure": "rr",
         "beat": 0,
         "prompt": {
-          "ro": "Măsurați intervalul RR dintre primele două complexe QRS.",
+          "ro": "Măsoară intervalul RR dintre primele două complexe QRS.",
           "en": "Measure the RR interval between the first two QRS complexes."
         },
         "body": {
           "ro": [
-            "Așezați o linie a compasului pe vârful primei unde R și cealaltă pe vârful undei R următoare. Apoi calculați frecvența."
+            "Așază o linie a compasului pe vârful primei unde R și cealaltă pe vârful undei R următoare. Apoi calculează frecvența."
           ],
           "en": [
             "Put one caliper line on the peak of the first R wave and the other on the next R. Then work out the rate."
@@ -2360,25 +2360,25 @@
         "measure": "rr",
         "beat": 0,
         "prompt": {
-          "ro": "Acum un ritm rapid: măsurați intervalul RR dintre primele două complexe QRS.",
+          "ro": "Acum un ritm rapid: măsoară intervalul RR dintre primele două complexe QRS.",
           "en": "Now a fast rhythm: measure the RR interval between the first two QRS complexes."
         },
         "explain": {
-          "ro": "Aproximativ 440 ms, adică 11 pătrate mici: 1500/11 ≈ 136/min. Regula 300 spune doar „între 150 și 100”, pentru că intervalul RR depășește puțin două pătrate mari. La frecvențe mari, numărați pătratele mici.",
+          "ro": "Aproximativ 440 ms, adică 11 pătrate mici: 1500/11 ≈ 136/min. Regula 300 spune doar „între 150 și 100”, pentru că intervalul RR depășește puțin două pătrate mari. La frecvențe mari, numără pătratele mici.",
           "en": "About 440 ms, or 11 small squares: 1500/11 ≈ 136/min. The 300 rule only says 'between 150 and 100', because the RR is just over two large squares. At fast rates, count the small squares."
         }
       },
       {
         "type": "text",
         "heading": {
-          "ro": "Ritm neregulat: numărați, nu împărțiți",
+          "ro": "Ritm neregulat: numără, nu împărți",
           "en": "Irregular rhythm: count, do not divide"
         },
         "body": {
           "ro": [
             "Când intervalele RR diferă, fiecare interval RR dă o altă frecvență. Regulile 300 și 1500 induc atunci în eroare.",
-            "Numărați complexele QRS de pe toată banda de 10 s și înmulțiți cu 6. ECG-ul standard în 12 derivații acoperă 10 s, deci DII lung de la baza traseului este suficient.",
-            "Pe monitor sau pe defibrilator, numărați complexele din 6 s și înmulțiți cu 10. Ambele metode dau o frecvență medie, cea care se raportează în fibrilația atrială (alură ventriculară medie)."
+            "Numără complexele QRS de pe toată banda de 10 s și înmulțește cu 6. ECG-ul standard în 12 derivații acoperă 10 s, deci DII lung de la baza traseului este suficient.",
+            "Pe monitor sau pe defibrilator, numără complexele din 6 s și înmulțește cu 10. Ambele metode dau o frecvență medie, cea care se raportează în fibrilația atrială (alură ventriculară medie)."
           ],
           "en": [
             "When the RR intervals differ, every RR gives a different rate. The 300 and 1500 rules then mislead.",
@@ -2400,12 +2400,12 @@
         "measure": "count",
         "ref": 21,
         "prompt": {
-          "ro": "Numărați complexele QRS de pe această bandă de 10 s.",
+          "ro": "Numără complexele QRS de pe această bandă de 10 s.",
           "en": "Count the QRS complexes on this 10-s strip."
         },
         "body": {
           "ro": [
-            "Apoi înmulțiți cu 6."
+            "Apoi înmulțește cu 6."
           ],
           "en": [
             "Then multiply by 6."
@@ -2432,7 +2432,7 @@
         },
         "body": {
           "ro": [
-            "Pentru acest traseu, electrocardiograful a tipărit o frecvență de 142/min. Înainte de a accepta valoarea, numărați complexele QRS."
+            "Pentru acest traseu, electrocardiograful a tipărit o frecvență de 142/min. Înainte de a accepta valoarea, numără complexele QRS."
           ],
           "en": [
             "For this tracing the machine printed a rate of 142/min. Before you accept it, count the QRS complexes."
@@ -2600,7 +2600,7 @@
       {
         "type": "check",
         "question": {
-          "ro": "Ce metodă folosiți pentru un ritm neregulat?",
+          "ro": "Ce metodă folosești pentru un ritm neregulat?",
           "en": "Which method fits an irregular rhythm?"
         },
         "options": [
@@ -2675,7 +2675,7 @@
         ],
         "answer": 0,
         "explain": {
-          "ro": "Înaintea fiecărui QRS, la aproximativ 240 ms, se află un spike mare. Dacă se numără și spike-urile, și complexele QRS, rezultă aproape dublul frecvenței reale. Numărați complexele QRS, nu orice deflexiune ascuțită.",
+          "ro": "Înaintea fiecărui QRS, la aproximativ 240 ms, se află un spike mare. Dacă se numără și spike-urile, și complexele QRS, rezultă aproape dublul frecvenței reale. Numără complexele QRS, nu orice deflexiune ascuțită.",
           "en": "Every QRS has a large spike about 240 ms before it. Counting both the spikes and the QRS complexes gives almost twice the real rate. Count the QRS complexes, not every sharp deflection."
         }
       },
@@ -2683,7 +2683,7 @@
         "type": "cases",
         "body": {
           "ro": [
-            "Exersați calculul frecvenței pe aceste trasee. La fiecare, decideți mai întâi: ritm regulat sau neregulat?"
+            "Exersează calculul frecvenței pe aceste trasee. La fiecare, decide mai întâi: ritm regulat sau neregulat?"
           ],
           "en": [
             "Practise the rate on these tracings. For each one, decide first: regular or irregular?"
@@ -2711,8 +2711,8 @@
     "minutes": 8,
     "objectives": {
       "ro": [
-        "Aplicați criteriile ritmului sinusal: o undă P înaintea fiecărui QRS, pozitivă în DI și DII, negativă în aVR, cu PR constant.",
-        "Recunoașteți bradicardia, tahicardia și aritmia sinusală; tahicardia sinusală este un semn, iar cauza ei trebuie căutată.",
+        "Aplică criteriile ritmului sinusal: o undă P înaintea fiecărui QRS, pozitivă în DI și DII, negativă în aVR, cu PR constant.",
+        "Recunoaște bradicardia, tahicardia și aritmia sinusală; tahicardia sinusală este un semn, iar cauza ei trebuie căutată.",
         "Într-un ritm rapid, regulat, cu QRS îngust: unda P înaintea fiecărui QRS pledează pentru ritm sinusal, undele „în dinți de fierăstrău” pentru flutter atrial, absența ambelor pentru tahicardie paroxistică supraventriculară (TPSV)."
       ],
       "en": [
@@ -2767,7 +2767,7 @@
       {
         "type": "check",
         "question": {
-          "ro": "Monitorul afișează 140/min. Pe traseu numărați 12 complexe QRS în 10 s. Ce frecvență considerați corectă?",
+          "ro": "Monitorul afișează 140/min. Pe traseu numeri 12 complexe QRS în 10 s. Ce frecvență consideri corectă?",
           "en": "The monitor shows 140/min. On the strip you count 12 QRS complexes in 10 s. Which rate do you trust?"
         },
         "options": [
@@ -2786,7 +2786,7 @@
         ],
         "answer": 0,
         "explain": {
-          "ro": "12 × 6 = 72/min. Când aparatul și numărătoarea pe traseu nu concordă, aveți încredere în numărătoare și căutați ce a numărat aparatul în plus: unde T înalte, spike-uri sau artefacte.",
+          "ro": "12 × 6 = 72/min. Când aparatul și numărătoarea pe traseu nu concordă, ai încredere în numărătoare și caută ce a numărat aparatul în plus: unde T înalte, spike-uri sau artefacte.",
           "en": "12 × 6 = 72/min. When the device and your count disagree, trust the count and look for what the device counted extra: tall T waves, spikes or artefact."
         }
       },
@@ -2799,8 +2799,8 @@
         "body": {
           "ro": [
             "Nodul sinusal se află în partea superioară a atriului drept. Impulsul se propagă în jos și spre stânga, de aceea unda P sinusală este pozitivă în DI și DII și negativă în aVR.",
-            "Răspundeți la cinci întrebări. Există o undă P înaintea fiecărui QRS? Este fiecare undă P urmată de un QRS? Este unda P pozitivă în DI și DII? Este negativă în aVR? Este intervalul PR constant?",
-            "Dacă toate răspunsurile sunt „da”, ritmul este sinusal. Apoi precizați frecvența: între 60 și 100/min este ritm sinusal normal."
+            "Răspunde la cinci întrebări. Există o undă P înaintea fiecărui QRS? Este fiecare undă P urmată de un QRS? Este unda P pozitivă în DI și DII? Este negativă în aVR? Este intervalul PR constant?",
+            "Dacă toate răspunsurile sunt „da”, ritmul este sinusal. Apoi precizează frecvența: între 60 și 100/min este ritm sinusal normal."
           ],
           "en": [
             "The sinus node sits high in the right atrium. Its impulse spreads down and to the left, so the sinus P wave is upright in I and II and negative in aVR.",
@@ -2865,7 +2865,7 @@
         "body": {
           "ro": [
             "Bradicardie sinusală: ritm sinusal sub 60/min. Ghidul ACC/AHA/HRS 2018 pentru bradicardie folosește pragul de 50/min. Este adesea normală la tineri, la sportivi și în timpul somnului.",
-            "Tahicardie sinusală: ritm sinusal peste 100/min. Este un semn, nu un diagnostic: căutați durerea, febra, hemoragia, deshidratarea, hipoxia, anxietatea sau un medicament.",
+            "Tahicardie sinusală: ritm sinusal peste 100/min. Este un semn, nu un diagnostic: caută durerea, febra, hemoragia, deshidratarea, hipoxia, anxietatea sau un medicament.",
             "Aritmie sinusală respiratorie: unde P identice, dar intervalul RR se modifică treptat, de obicei odată cu respirația. Este normală la tineri."
           ],
           "en": [
@@ -2888,7 +2888,7 @@
         "measure": "rr",
         "beat": 3,
         "prompt": {
-          "ro": "Găsiți cel mai lung interval RR de pe traseu și măsurați-l.",
+          "ro": "Găsește cel mai lung interval RR de pe traseu și măsoară-l.",
           "en": "Find the longest RR interval on the strip and measure it."
         },
         "explain": {
@@ -2909,7 +2909,7 @@
         "measure": "rr",
         "beat": 5,
         "prompt": {
-          "ro": "Acum găsiți cel mai scurt interval RR și măsurați-l.",
+          "ro": "Acum găsește cel mai scurt interval RR și măsoară-l.",
           "en": "Now find the shortest RR interval and measure it."
         },
         "explain": {
@@ -3091,15 +3091,15 @@
         },
         "options": [
           {
-            "ro": "Căutați cauza: durere, febră, hemoragie, hipoxie",
+            "ro": "Caută cauza: durere, febră, hemoragie, hipoxie",
             "en": "Look for the cause: pain, fever, bleeding, hypoxia"
           },
           {
-            "ro": "Scădeți frecvența prin manevre vagale",
+            "ro": "Scade frecvența prin manevre vagale",
             "en": "Slow the rate down with vagal manoeuvres"
           },
           {
-            "ro": "Repetați ECG-ul: ritmul sinusal nu ajunge la 134/min",
+            "ro": "Repetă ECG-ul: ritmul sinusal nu ajunge la 134/min",
             "en": "Record again: sinus rhythm cannot reach 134/min"
           }
         ],
@@ -3131,7 +3131,7 @@
         ],
         "answer": 2,
         "explain": {
-          "ro": "Lipsa undelor P exclude tahicardia sinusală, iar lipsa undelor F pledează împotriva flutterului. Înainte de a decide, căutați atent undele F în DII, DIII, aVF și V1, mai ales când frecvența este în jur de 150/min.",
+          "ro": "Lipsa undelor P exclude tahicardia sinusală, iar lipsa undelor F pledează împotriva flutterului. Înainte de a decide, caută atent undele F în DII, DIII, aVF și V1, mai ales când frecvența este în jur de 150/min.",
           "en": "No P waves rules out sinus tachycardia, and no F waves argues against flutter. Before you decide, look hard for F waves in II, III, aVF and V1, especially when the rate is close to 150/min."
         }
       },
@@ -3139,7 +3139,7 @@
         "type": "cases",
         "body": {
           "ro": [
-            "Exersați. Pentru fiecare traseu, răspundeți la cele cinci întrebări înainte de a alege diagnosticul."
+            "Exersează. Pentru fiecare traseu, răspunde la cele cinci întrebări înainte de a alege diagnosticul."
           ],
           "en": [
             "Practise. For each tracing, answer the five questions before you choose."
@@ -3169,9 +3169,9 @@
     "minutes": 8,
     "objectives": {
       "ro": [
-        "Deosebiți ritmul regulat, ritmul neregulat cu tipar care se repetă și ritmul complet neregulat.",
-        "Recunoașteți fibrilația atrială: fără unde P, intervale RR complet neregulate, unde f vizibile mai ales în V1.",
-        "Recunoașteți extrasistola ventriculară (precoce, largă, fără undă P, urmată de pauză compensatorie) și bigeminismul ventricular."
+        "Deosebește ritmul regulat, ritmul neregulat cu tipar care se repetă și ritmul complet neregulat.",
+        "Recunoaște fibrilația atrială: fără unde P, intervale RR complet neregulate, unde f vizibile mai ales în V1.",
+        "Recunoaște extrasistola ventriculară (precoce, largă, fără undă P, urmată de pauză compensatorie) și bigeminismul ventricular."
       ],
       "en": [
         "Tell regular, regularly irregular and irregularly irregular rhythms apart.",
@@ -3245,7 +3245,7 @@
         ],
         "answer": 1,
         "explain": {
-          "ro": "Undele F regulate, „în dinți de fierăstrău”, indică un flutter atrial. Numărați undele F pentru fiecare QRS ca să precizați raportul de conducere: aici 4:1.",
+          "ro": "Undele F regulate, „în dinți de fierăstrău”, indică un flutter atrial. Numără undele F pentru fiecare QRS ca să precizezi raportul de conducere: aici 4:1.",
           "en": "A regular sawtooth of F waves points to atrial flutter. Count the F waves for each QRS to name the conduction ratio: here 4:1."
         }
       },
@@ -3257,9 +3257,9 @@
         },
         "body": {
           "ro": [
-            "Înainte de a numi ritmul, priviți intervalele RR pe toată lungimea traseului. Marcați două unde R pe marginea unei foi de hârtie sau deschideți compasul și deplasați-l de-a lungul traseului.",
+            "Înainte de a numi ritmul, privește intervalele RR pe toată lungimea traseului. Marchează două unde R pe marginea unei foi de hârtie sau deschide compasul și deplasează-l de-a lungul traseului.",
             "Regulat: toate intervalele RR sunt egale. Neregulat cu tipar: intervalele RR variază, dar după un model care se repetă, ca în bigeminism sau în complexele QRS grupate.",
-            "Complet neregulat: fiecare interval RR este diferit și niciun model nu se repetă. Cea mai frecventă cauză este fibrilația atrială. Extrasistolele frecvente pot da un aspect asemănător, de aceea căutați și undele P."
+            "Complet neregulat: fiecare interval RR este diferit și niciun model nu se repetă. Cea mai frecventă cauză este fibrilația atrială. Extrasistolele frecvente pot da un aspect asemănător, de aceea caută și undele P."
           ],
           "en": [
             "Before you name a rhythm, look at the RR intervals along the whole strip. Mark two R waves on the edge of a sheet of paper, or set the calipers, and walk them along.",
@@ -3341,11 +3341,11 @@
         "measure": "rr",
         "beat": 0,
         "prompt": {
-          "ro": "Ritm rapid, cu QRS îngust. Este regulat? Măsurați intervalul RR dintre primele două complexe QRS.",
+          "ro": "Ritm rapid, cu QRS îngust. Este regulat? Măsoară intervalul RR dintre primele două complexe QRS.",
           "en": "Fast and narrow, but is it regular? Measure the RR interval between the first two QRS complexes."
         },
         "explain": {
-          "ro": "Aproximativ 660 ms. Comparați-l cu intervalul din exercițiul următor.",
+          "ro": "Aproximativ 660 ms. Compară-l cu intervalul din exercițiul următor.",
           "en": "About 660 ms. Compare it with the interval in the next exercise."
         }
       },
@@ -3362,7 +3362,7 @@
         "measure": "rr",
         "beat": 3,
         "prompt": {
-          "ro": "Acum măsurați intervalul RR dintre al patrulea și al cincilea complex QRS.",
+          "ro": "Acum măsoară intervalul RR dintre al patrulea și al cincilea complex QRS.",
           "en": "Now measure the RR interval between the fourth and fifth QRS complexes."
         },
         "explain": {
@@ -3506,7 +3506,7 @@
         "measure": "rr",
         "beat": 0,
         "prompt": {
-          "ro": "Măsurați intervalul de cuplaj: de la unda R a bătăii sinusale la vârful extrasistolei care urmează.",
+          "ro": "Măsoară intervalul de cuplaj: de la unda R a bătăii sinusale la vârful extrasistolei care urmează.",
           "en": "Measure the coupling interval: from the R wave of the sinus beat to the peak of the early beat that follows."
         },
         "explain": {
@@ -3588,7 +3588,7 @@
         ],
         "answer": 0,
         "explain": {
-          "ro": "Extrasistola apare înainte ca ventriculii să se fi umplut, așa că ejectează puțin sânge sau deloc. Pulsoximetrul și pulsul palpat o pot rata. Numărați pulsul și notați ambele frecvențe.",
+          "ro": "Extrasistola apare înainte ca ventriculii să se fi umplut, așa că ejectează puțin sânge sau deloc. Pulsoximetrul și pulsul palpat o pot rata. Numără pulsul și notează ambele frecvențe.",
           "en": "The early beat comes before the ventricles have filled, so it ejects little or no blood. The oximeter and the palpated pulse may miss it. Count the pulse and record both rates."
         },
         "only": [
@@ -3600,7 +3600,7 @@
         "type": "cases",
         "body": {
           "ro": [
-            "Exersați. Începeți cu intervalele RR: regulate, neregulate cu tipar sau complet neregulate?"
+            "Exersează. Începe cu intervalele RR: regulate, neregulate cu tipar sau complet neregulate?"
           ],
           "en": [
             "Practise. Start with the RR intervals: regular, regularly irregular or irregularly irregular?"
@@ -3629,9 +3629,9 @@
     "minutes": 8,
     "objectives": {
       "ro": [
-        "Măsurați intervalul PR și recunoașteți blocul atrioventricular (BAV) de gradul I: PR peste 200 ms, constant, cu fiecare undă P condusă.",
-        "Recunoașteți undele P blocate: PR care se alungește până la o undă P blocată (perioade Luciani-Wenckebach) și BAV complet, în care undele P și complexele QRS sunt regulate, dar independente.",
-        "Știți că o frecvență mică, cu unde P blocate sau cu un ritm de scăpare lent și larg, este periculoasă și ce trebuie pregătit."
+        "Măsoară intervalul PR și recunoaște blocul atrioventricular (BAV) de gradul I: PR peste 200 ms, constant, cu fiecare undă P condusă.",
+        "Recunoaște undele P blocate: PR care se alungește până la o undă P blocată (perioade Luciani-Wenckebach) și BAV complet, în care undele P și complexele QRS sunt regulate, dar independente.",
+        "Știi că o frecvență mică, cu unde P blocate sau cu un ritm de scăpare lent și larg, este periculoasă și ce trebuie pregătit."
       ],
       "en": [
         "Measure the PR and recognise first-degree AV block: PR over 200 ms and constant, with every P wave conducted.",
@@ -3781,7 +3781,7 @@
         "measure": "pr",
         "beat": 0,
         "prompt": {
-          "ro": "Măsurați intervalul PR al primei bătăi.",
+          "ro": "Măsoară intervalul PR al primei bătăi.",
           "en": "Measure the PR interval of the first beat."
         },
         "body": {
@@ -3814,7 +3814,7 @@
         },
         "body": {
           "ro": [
-            "Undele P apar regulat, la intervale de aproximativ 1030 ms. Urmăriți intervalul PR de la o bătaie la alta și unda P care nu este urmată de QRS. Tremorul muscular perturbă unele derivații periferice; aici undele P se văd în DII și, mai clar, în DIII."
+            "Undele P apar regulat, la intervale de aproximativ 1030 ms. Urmărește intervalul PR de la o bătaie la alta și unda P care nu este urmată de QRS. Tremorul muscular perturbă unele derivații periferice; aici undele P se văd în DII și, mai clar, în DIII."
           ],
           "en": [
             "The P waves come regularly, about 1030 ms apart. Follow the PR from beat to beat, and the P wave with no QRS after it. Tremor blurs some limb leads; here the P waves show in II and, more clearly, in III."
@@ -3933,7 +3933,7 @@
           "ep"
         ],
         "caption": {
-          "ro": "Cele cinci forme, una sub alta. Comparați PR-ul dinaintea și de după fiecare undă P blocată.",
+          "ro": "Cele cinci forme, una sub alta. Compară PR-ul dinaintea și de după fiecare undă P blocată.",
           "en": "The five patterns, one under the other. Compare the PR before and after each blocked P wave."
         }
       },
@@ -3945,7 +3945,7 @@
           "paramedic"
         ],
         "caption": {
-          "ro": "Schemă. Nu este nevoie să numiți tipul de bloc. La patul pacientului contează două lucruri: există unde P neurmate de QRS și cât de mică este frecvența?",
+          "ro": "Schemă. Nu este nevoie să numești tipul de bloc. La patul pacientului contează două lucruri: există unde P neurmate de QRS și cât de mică este frecvența?",
           "en": "Schematic. You do not need to name the type of block. At the bedside two things matter: are there P waves without a QRS, and how slow is the rate?"
         }
       },
@@ -4156,7 +4156,7 @@
         "measure": "rr",
         "beat": 0,
         "prompt": {
-          "ro": "Măsurați ciclul ventricular: intervalul RR dintre primele două complexe QRS.",
+          "ro": "Măsoară ciclul ventricular: intervalul RR dintre primele două complexe QRS.",
           "en": "Measure the ventricular cycle: the RR interval between the first two QRS complexes."
         },
         "explain": {
@@ -4174,7 +4174,7 @@
           "ro": [
             "O undă P neurmată de QRS este un impuls care nu a ajuns la ventriculi. Una izolată, la o frecvență normală și fără simptome, este mai puțin urgentă, dar se semnalează medicului. Mai multe, cu o frecvență mică, sunt un semn de pericol.",
             "Semne de pericol: frecvență sub 40/min, pauze, QRS larg sau amețeli, sincopă, durere toracică, hipotensiune ori dispnee.",
-            "Evaluați pacientul, mențineți monitorizarea și țineți la îndemână un defibrilator cu funcție de stimulare. Asistentul medical anunță imediat medicul; echipajul de ambulanță aplică electrozii autoadezivi și solicită echipajul cu medic (ERC 2025, protocoalele SAJ/SMURD)."
+            "Evaluează pacientul, menține monitorizarea și ține la îndemână un defibrilator cu funcție de stimulare. Asistentul medical anunță imediat medicul; echipajul de ambulanță aplică electrozii autoadezivi și solicită echipajul cu medic (ERC 2025, protocoalele SAJ/SMURD)."
           ],
           "en": [
             "A P wave with no QRS after it is an impulse that did not reach the ventricles. A single one, at a normal rate and without symptoms, is less urgent, but still report it to the doctor. Several, with a slow rate, are a danger sign.",
@@ -4248,7 +4248,7 @@
       {
         "type": "check",
         "question": {
-          "ro": "Scenariu: bloc atrioventricular complet, 40/min, cu QRS larg; pacientul acuză amețeli. Ce pregătiți?",
+          "ro": "Scenariu: bloc atrioventricular complet, 40/min, cu QRS larg; pacientul acuză amețeli. Ce pregătești?",
           "en": "Scenario: complete AV block at 40/min with a wide QRS; the patient is dizzy. What do you prepare?"
         },
         "options": [
@@ -4279,7 +4279,7 @@
         "type": "cases",
         "body": {
           "ro": [
-            "Exersați. Pe fiecare traseu, găsiți mai întâi toate undele P, apoi verificați care sunt urmate de QRS."
+            "Exersează. Pe fiecare traseu, găsește mai întâi toate undele P, apoi verifică care sunt urmate de QRS."
           ],
           "en": [
             "Practise. On each tracing, find every P wave first, then check which ones are followed by a QRS."
@@ -4306,9 +4306,9 @@
     "minutes": 7,
     "objectives": {
       "ro": [
-        "Încadrați QRS-ul ca îngust (sub 120 ms) sau larg (120 ms sau mai mult); o tahicardie regulată cu QRS larg este tahicardie ventriculară (TV) până la proba contrarie.",
-        "Priviți întâi V1: aspectul rsR' pledează pentru bloc major de ramură dreaptă; QS sau rS, cu unde R largi și croșetate în DI, aVL și V6, pentru bloc major de ramură stângă.",
-        "Știți că în blocul major de ramură stângă supradenivelarea ST din V1–V3, în opoziție de fază cu QRS-ul, este de așteptat și că un spike înaintea unui QRS larg indică o bătaie stimulată."
+        "Încadrează QRS-ul ca îngust (sub 120 ms) sau larg (120 ms sau mai mult); o tahicardie regulată cu QRS larg este tahicardie ventriculară (TV) până la proba contrarie.",
+        "Privește întâi V1: aspectul rsR' pledează pentru bloc major de ramură dreaptă; QS sau rS, cu unde R largi și croșetate în DI, aVL și V6, pentru bloc major de ramură stângă.",
+        "Știi că în blocul major de ramură stângă supradenivelarea ST din V1–V3, în opoziție de fază cu QRS-ul, este de așteptat și că un spike înaintea unui QRS larg indică o bătaie stimulată."
       ],
       "en": [
         "Call a QRS narrow (under 120 ms) or wide (120 ms or more); a fast, regular, wide rhythm is VT until proven otherwise.",
@@ -4513,7 +4513,7 @@
         "measure": "qrs",
         "beat": 0,
         "prompt": {
-          "ro": "Măsurați durata complexului QRS.",
+          "ro": "Măsoară durata complexului QRS.",
           "en": "Measure the QRS duration."
         },
         "body": {
@@ -4546,7 +4546,7 @@
         },
         "body": {
           "ro": [
-            "Înaintea fiecărui QRS larg se vede un spike vertical și îngust: stimulatorul descarcă, iar QRS-ul urmează. Spike-urile pot fi foarte mici; căutați-le în mai multe derivații."
+            "Înaintea fiecărui QRS larg se vede un spike vertical și îngust: stimulatorul descarcă, iar QRS-ul urmează. Spike-urile pot fi foarte mici; caută-le în mai multe derivații."
           ],
           "en": [
             "A thin vertical spike comes before every wide QRS: the pacemaker fires and the QRS follows. Spikes can be tiny, so look for them in several leads."
@@ -4623,9 +4623,9 @@
         },
         "body": {
           "ro": [
-            "Larg, rapid și regulat: se tratează ca tahicardie ventriculară până la proba contrarie. Evaluați pacientul și pulsul, cereți ajutor imediat și aduceți defibrilatorul.",
+            "Larg, rapid și regulat: se tratează ca tahicardie ventriculară până la proba contrarie. Evaluează pacientul și pulsul, cere ajutor imediat și adu defibrilatorul.",
             "Larg, la un pacient cu durere toracică: un bloc major de ramură stângă sau un ritm stimulat pot ascunde un infarct. ECG-ul se transmite sau se arată imediat medicului (ESC 2023 SCA).",
-            "Larg și precedat de un spike: bătaie stimulată. Notați acest lucru și anunțați medicul dacă vedeți spike-uri neurmate de QRS."
+            "Larg și precedat de un spike: bătaie stimulată. Notează acest lucru și anunță medicul dacă vezi spike-uri neurmate de QRS."
           ],
           "en": [
             "Wide, fast and regular: treat it as ventricular tachycardia until proven otherwise. Check the patient and the pulse, call for help at once and bring the defibrillator.",
@@ -4705,16 +4705,16 @@
       {
         "type": "check",
         "question": {
-          "ro": "Ritm regulat, 180/min, cu QRS de 160 ms. Cum îl tratați până decide medicul?",
+          "ro": "Ritm regulat, 180/min, cu QRS de 160 ms. Cum îl tratezi până decide medicul?",
           "en": "A regular rhythm at 180/min with a QRS of 160 ms. How do you treat it until a doctor decides?"
         },
         "options": [
           {
-            "ro": "Ca tahicardie sinusală: căutați febra sau durerea",
+            "ro": "Ca tahicardie sinusală: caută febra sau durerea",
             "en": "As sinus tachycardia: look for fever or pain"
           },
           {
-            "ro": "Ca artefact: verificați mai întâi electrozii",
+            "ro": "Ca artefact: verifică mai întâi electrozii",
             "en": "As artefact: check the electrodes first"
           },
           {
@@ -4724,7 +4724,7 @@
         ],
         "answer": 2,
         "explain": {
-          "ro": "Un ritm rapid, regulat, cu QRS larg este tahicardie ventriculară până la proba contrarie. Evaluați întâi pacientul și pulsul: fără puls, începeți resuscitarea (ERC 2025). Cu puls, pacientul rămâne monitorizat, se cere ajutor, iar defibrilatorul se pregătește.",
+          "ro": "Un ritm rapid, regulat, cu QRS larg este tahicardie ventriculară până la proba contrarie. Evaluează întâi pacientul și pulsul: fără puls, începe resuscitarea (ERC 2025). Cu puls, pacientul rămâne monitorizat, se cere ajutor, iar defibrilatorul se pregătește.",
           "en": "A fast, regular, wide rhythm is ventricular tachycardia until proven otherwise. Check the patient and the pulse first: with no pulse, start resuscitation (ERC 2025). With a pulse, keep the patient monitored, call for help and have the defibrillator ready."
         },
         "only": [
@@ -4762,7 +4762,7 @@
         "type": "cases",
         "body": {
           "ro": [
-            "Exersați. Măsurați mai întâi QRS-ul: îngust sau larg? Dacă este larg, priviți V1."
+            "Exersează. Măsoară mai întâi QRS-ul: îngust sau larg? Dacă este larg, privește V1."
           ],
           "en": [
             "Practise. Measure the QRS first: narrow or wide? If it is wide, look at V1."
@@ -4790,9 +4790,9 @@
     "minutes": 10,
     "objectives": {
       "ro": [
-        "Recunoașteți pe o derivație de monitorizare fibrilația ventriculară, tahicardia ventriculară, asistola și activitatea electrică fără puls.",
-        "Împărțiți ritmurile, în câteva secunde, în șocabile (FV, TV fără puls) și neșocabile (asistolă, AEP), conform ERC 2025.",
-        "Deosebiți FV fină de asistolă și TV rapidă de FV și verificați întotdeauna pacientul, nu doar monitorul."
+        "Recunoaște pe o derivație de monitorizare fibrilația ventriculară, tahicardia ventriculară, asistola și activitatea electrică fără puls.",
+        "Împarte ritmurile, în câteva secunde, în șocabile (FV, TV fără puls) și neșocabile (asistolă, AEP), conform ERC 2025.",
+        "Deosebește FV fină de asistolă și TV rapidă de FV și verifică întotdeauna pacientul, nu doar monitorul."
       ],
       "en": [
         "Recognise ventricular fibrillation, ventricular tachycardia, asystole and pulseless electrical activity on a monitor lead.",
@@ -4837,7 +4837,7 @@
         ],
         "answer": 1,
         "explain": {
-          "ro": "O tahicardie regulată cu QRS larg, fără spike-uri de stimulare, este TV până la proba contrarie. Evaluați întâi pacientul și pulsul: de aici pornește această lecție.",
+          "ro": "O tahicardie regulată cu QRS larg, fără spike-uri de stimulare, este TV până la proba contrarie. Evaluează întâi pacientul și pulsul: de aici pornește această lecție.",
           "en": "A regular wide-QRS tachycardia with no pacing spikes is VT until proven otherwise. Check the patient and the pulse first: this lesson starts from there."
         }
       },
@@ -5052,8 +5052,8 @@
         "body": {
           "ro": [
             "Asistola nu are complexe QRS și nici ondulații care să se repete. Pe acest traseu se vede doar zgomot de fond, de cel mult ~0,15 mV.",
-            "Înainte de a numi o linie „asistolă”, verificați în aceeași pauză scurtă: electrozii și cablurile, amplificarea (mărită, de exemplu, la 20 mm/mV), o a doua derivație și pacientul. O linie perfect dreaptă sugerează mai degrabă un electrod desprins.",
-            "Dacă îndoiala rămâne, ERC 2025 recomandă șocul: ghidul a cântărit riscul de a nu trata o FV față de cel al unui șoc în asistolă. Căutați și undele P: asistola cu unde P poate răspunde la stimulare cardiacă."
+            "Înainte de a numi o linie „asistolă”, verifică în aceeași pauză scurtă: electrozii și cablurile, amplificarea (mărită, de exemplu, la 20 mm/mV), o a doua derivație și pacientul. O linie perfect dreaptă sugerează mai degrabă un electrod desprins.",
+            "Dacă îndoiala rămâne, ERC 2025 recomandă șocul: ghidul a cântărit riscul de a nu trata o FV față de cel al unui șoc în asistolă. Caută și undele P: asistola cu unde P poate răspunde la stimulare cardiacă."
           ],
           "en": [
             "Asystole has no QRS complexes and no repeating undulations. This strip shows only baseline noise, at most about 0.15 mV.",
@@ -5173,11 +5173,11 @@
         "measure": "count",
         "ref": 14,
         "prompt": {
-          "ro": "Numărați complexele din aceste 6 s, apoi înmulțiți cu 10 pentru frecvența pe minut.",
+          "ro": "Numără complexele din aceste 6 s, apoi înmulțește cu 10 pentru frecvența pe minut.",
           "en": "Count the complexes in these 6 s, then multiply by 10 for the rate per minute."
         },
         "explain": {
-          "ro": "Sunt 14 complexe în 6 s, deci ~140/min; pe toată banda de 10 s sunt 23, adică ~138/min. Pe un traseu de monitor numărați dumneavoastră: frecvența afișată de aparat poate greși.",
+          "ro": "Sunt 14 complexe în 6 s, deci ~140/min; pe toată banda de 10 s sunt 23, adică ~138/min. Pe un traseu de monitor numără tu: frecvența afișată de aparat poate greși.",
           "en": "There are 14 complexes in 6 s, so about 140/min; the whole 10 s strip has 23, about 138/min. On a monitor strip, count yourself: the rate the device shows can be wrong."
         },
         "gain": 5
@@ -5312,7 +5312,7 @@
       {
         "type": "check",
         "question": {
-          "ro": "Pe monitor apar unde mici, ondulate, fără complexe QRS. După ce ați verificat amplificarea și a doua derivație, încă nu sunteți sigur dacă este FV fină sau asistolă. Ce recomandă ERC 2025?",
+          "ro": "Pe monitor apar unde mici, ondulate, fără complexe QRS. După ce ai verificat amplificarea și a doua derivație, încă nu ești sigur dacă este FV fină sau asistolă. Ce recomandă ERC 2025?",
           "en": "The monitor shows small wavy undulations with no QRS complexes. After checking the gain and a second lead, you are still not sure whether this is fine VF or asystole. What does ERC 2025 recommend?"
         },
         "options": [
@@ -5403,7 +5403,7 @@
         "type": "cases",
         "body": {
           "ro": [
-            "Exersați pe cele șase trasee. Pentru fiecare, decideți întâi dacă ritmul este șocabil, apoi numiți-l."
+            "Exersează pe cele șase trasee. Pentru fiecare, decide întâi dacă ritmul este șocabil, apoi numește-l."
           ],
           "en": [
             "Practise on the six strips. For each one, first decide whether the rhythm is shockable, then name it."
@@ -5433,9 +5433,9 @@
     "minutes": 7,
     "objectives": {
       "ro": [
-        "Știți că axul QRS normal se află între −30° și +90°.",
-        "Stabiliți cadranul după DI și aVF, folosiți DII pentru zona dintre 0° și −30°, apoi precizați axul cu derivația cea mai izodifazică.",
-        "Recunoașteți că deviația axială stângă cu aspect rS în derivațiile inferioare pledează pentru hemibloc anterior stâng, nu pentru un infarct inferior vechi."
+        "Știi că axul QRS normal se află între −30° și +90°.",
+        "Stabilește cadranul după DI și aVF, folosește DII pentru zona dintre 0° și −30°, apoi precizează axul cu derivația cea mai izodifazică.",
+        "Recunoaște că deviația axială stângă cu aspect rS în derivațiile inferioare pledează pentru hemibloc anterior stâng, nu pentru un infarct inferior vechi."
       ],
       "en": [
         "Know that the normal QRS axis lies between −30° and +90°.",
@@ -5542,9 +5542,9 @@
         },
         "body": {
           "ro": [
-            "Priviți QRS-ul în DI și aVF. Ambele pozitive: ax normal. DI pozitiv și aVF negativ: axul se află între 0° și −90°. DI negativ și aVF pozitiv: deviație axială dreaptă. Ambele negative: ax extrem deviat.",
-            "În al doilea caz, priviți DII. Dacă QRS-ul din DII este pozitiv, axul se află între 0° și −30° și este încă normal. Dacă este negativ, este vorba de deviație axială stângă.",
-            "Pentru precizie, căutați derivația periferică cu QRS-ul cel mai izodifazic. Axul este perpendicular pe ea."
+            "Privește QRS-ul în DI și aVF. Ambele pozitive: ax normal. DI pozitiv și aVF negativ: axul se află între 0° și −90°. DI negativ și aVF pozitiv: deviație axială dreaptă. Ambele negative: ax extrem deviat.",
+            "În al doilea caz, privește DII. Dacă QRS-ul din DII este pozitiv, axul se află între 0° și −30° și este încă normal. Dacă este negativ, este vorba de deviație axială stângă.",
+            "Pentru precizie, caută derivația periferică cu QRS-ul cel mai izodifazic. Axul este perpendicular pe ea."
           ],
           "en": [
             "Look at the QRS in I and aVF. Both positive: normal axis. I positive and aVF negative: the axis lies between 0° and −90°. I negative and aVF positive: right axis deviation. Both negative: extreme axis.",
@@ -5581,7 +5581,7 @@
               "QRS"
             ],
             "note": {
-              "ro": "Priviți DI și aVF, apoi DII și aVL.",
+              "ro": "Privește DI și aVF, apoi DII și aVL.",
               "en": "Look at I and aVF, then at II and aVL."
             }
           }
@@ -5644,7 +5644,7 @@
               "QRS"
             ],
             "note": {
-              "ro": "Priviți DI și aVF, apoi DII.",
+              "ro": "Privește DI și aVF, apoi DII.",
               "en": "Look at I and aVF, then at II."
             }
           }
@@ -5715,7 +5715,7 @@
               "QRS"
             ],
             "note": {
-              "ro": "Priviți DI și aVF.",
+              "ro": "Privește DI și aVF.",
               "en": "Look at I and aVF."
             }
           }
@@ -5757,7 +5757,7 @@
           "ro": [
             "Hemiblocul anterior stâng (HBAS) este o cauză frecventă de deviație axială stângă marcată. Activarea pornește din partea inferioară a ventriculului stâng și urcă, de aceea în derivațiile inferioare apare aspectul rS: undă r mică, apoi undă S adâncă. În aVL, aspect qR.",
             "Un infarct inferior vechi deviază și el axul spre stânga, dar atunci complexele din derivațiile inferioare încep cu o undă Q (aspect QS sau Qr), nu cu o undă r.",
-            "Priviți deci prima deflexiune din DII, DIII și aVF: o undă r mică pledează pentru HBAS, o undă Q pentru un infarct vechi."
+            "Privește deci prima deflexiune din DII, DIII și aVF: o undă r mică pledează pentru HBAS, o undă Q pentru un infarct vechi."
           ],
           "en": [
             "Left anterior fascicular block (LAFB) is a common cause of marked left axis deviation. Activation starts low in the left ventricle and travels upwards, so the inferior leads show rS: a small r, then a deep S. aVL shows qR.",
@@ -5796,7 +5796,7 @@
         "type": "cases",
         "body": {
           "ro": [
-            "Exersați. La fiecare caz, stabiliți axul din DI, aVF și DII înainte de a alege diagnosticul."
+            "Exersează. La fiecare caz, stabilește axul din DI, aVF și DII înainte de a alege diagnosticul."
           ],
           "en": [
             "Practise. In each case, find the axis from I, aVF and II before you choose the diagnosis."
@@ -5824,9 +5824,9 @@
     "minutes": 8,
     "objectives": {
       "ro": [
-        "Măsurați intervalul QT în DII sau V5, de la debutul QRS la sfârșitul undei T, cu metoda tangentei.",
-        "Corectați QT pentru frecvență: formula Bazett supracorectează la frecvențe mari, unde Fridericia este mai exactă.",
-        "Recunoașteți un QTc alungit (peste 450 ms la bărbați, peste 460 ms la femei) și pragul de alarmă: 500 ms sau o creștere cu peste 60 ms."
+        "Măsoară intervalul QT în DII sau V5, de la debutul QRS la sfârșitul undei T, cu metoda tangentei.",
+        "Corectează QT pentru frecvență: formula Bazett supracorectează la frecvențe mari, unde Fridericia este mai exactă.",
+        "Recunoaște un QTc alungit (peste 450 ms la bărbați, peste 460 ms la femei) și pragul de alarmă: 500 ms sau o creștere cu peste 60 ms."
       ],
       "en": [
         "Measure the QT in II or V5, from the start of the QRS to the end of the T wave, with the tangent method.",
@@ -5923,7 +5923,7 @@
           "paramedic"
         ],
         "question": {
-          "ro": "Tahicardie regulată cu QRS larg pe monitor. Pacientul nu răspunde și nu are puls. Cum tratați ritmul?",
+          "ro": "Tahicardie regulată cu QRS larg pe monitor. Pacientul nu răspunde și nu are puls. Cum tratezi ritmul?",
           "en": "A regular wide-QRS tachycardia on the monitor. The patient is unresponsive with no pulse. How do you treat the rhythm?"
         },
         "options": [
@@ -5957,7 +5957,7 @@
           "paramedic"
         ],
         "question": {
-          "ro": "În stopul cardiac, monitorul arată o linie aproape plată, fără complexe QRS. Ce verificați, în aceeași pauză scurtă, înainte de a o numi asistolă?",
+          "ro": "În stopul cardiac, monitorul arată o linie aproape plată, fără complexe QRS. Ce verifici, în aceeași pauză scurtă, înainte de a o numi asistolă?",
           "en": "In cardiac arrest, the monitor shows an almost flat line with no QRS complexes. What do you check, within the same brief pause, before you call it asystole?"
         },
         "options": [
@@ -5994,7 +5994,7 @@
           "ro": [
             "Intervalul QT începe la debutul complexului QRS și se termină la sfârșitul undei T. Cuprinde întreaga activitate electrică a ventriculilor: depolarizarea și repolarizarea.",
             "Se măsoară în DII sau V5, unde sfârșitul undei T se vede de obicei cel mai clar. Unda U nu se include.",
-            "Partea dificilă este sfârșitul undei T. Trasați o tangentă la porțiunea cea mai abruptă a pantei descendente a undei T. Unda T se termină în punctul în care tangenta întâlnește linia izoelectrică."
+            "Partea dificilă este sfârșitul undei T. Trasează o tangentă la porțiunea cea mai abruptă a pantei descendente a undei T. Unda T se termină în punctul în care tangenta întâlnește linia izoelectrică."
           ],
           "en": [
             "The QT runs from the start of the QRS to the end of the T wave. It covers the whole electrical activity of the ventricles: depolarisation and repolarisation.",
@@ -6020,7 +6020,7 @@
         },
         "body": {
           "ro": [
-            "Același ECG normal din lecțiile anterioare. Apăsați butoanele ca să vedeți intervalul QT și intervalul RR al aceleiași bătăi."
+            "Același ECG normal din lecțiile anterioare. Apasă butoanele ca să vezi intervalul QT și intervalul RR al aceleiași bătăi."
           ],
           "en": [
             "The same normal ECG as in earlier lessons. Use the buttons to show the QT and the RR interval of the same beat."
@@ -6070,12 +6070,12 @@
         "measure": "qt",
         "beat": 0,
         "prompt": {
-          "ro": "Măsurați intervalul QT în DII.",
+          "ro": "Măsoară intervalul QT în DII.",
           "en": "Measure the QT in lead II."
         },
         "body": {
           "ro": [
-            "Așezați primul braț al compasului la debutul QRS. Așezați al doilea braț acolo unde tangenta la panta descendentă a undei T întâlnește linia izoelectrică."
+            "Așază primul braț al compasului la debutul QRS. Așază al doilea braț acolo unde tangenta la panta descendentă a undei T întâlnește linia izoelectrică."
           ],
           "en": [
             "Put the first arm of the calipers at the start of the QRS. Put the second where the tangent to the T wave's downslope meets the baseline."
@@ -6161,7 +6161,7 @@
       {
         "type": "check",
         "question": {
-          "ro": "Pe traseul de la 134/min, ce corecție alegeți?",
+          "ro": "Pe traseul de la 134/min, ce corecție alegi?",
           "en": "On the ECG at 134/min, which correction do you choose?"
         },
         "options": [
@@ -6240,24 +6240,24 @@
       {
         "type": "check",
         "question": {
-          "ro": "Înaintea unui medicament care alungește QT, o pacientă are QTc de 430 ms. Ce faceți cu această valoare?",
+          "ro": "Înaintea unui medicament care alungește QT, o pacientă are QTc de 430 ms. Ce faci cu această valoare?",
           "en": "Before a QT-prolonging drug starts, a woman has a QTc of 430 ms. What do you do with this value?"
         },
         "options": [
           {
-            "ro": "Amânați tratamentul: valoarea este la limită",
+            "ro": "Amână tratamentul: valoarea este la limită",
             "en": "Delay the treatment: the value is borderline"
           },
           {
-            "ro": "Repetați ECG-ul zilnic, până la prima doză",
+            "ro": "Repetă ECG-ul zilnic, până la prima doză",
             "en": "Repeat the ECG daily until the first dose"
           },
           {
-            "ro": "Recalculați cu Fridericia înainte de orice decizie",
+            "ro": "Recalculează cu Fridericia înainte de orice decizie",
             "en": "Recalculate with Fridericia before any decision"
           },
           {
-            "ro": "Notați-o ca valoare de referință pentru traseele următoare",
+            "ro": "Notează-o ca valoare de referință pentru traseele următoare",
             "en": "Record it as the baseline for later ECGs"
           }
         ],
@@ -6270,24 +6270,24 @@
       {
         "type": "check",
         "question": {
-          "ro": "Pacient tratat cu un medicament care alungește QT. Aparatul ECG tipărește un QTc de 520 ms; măsurați dumneavoastră în DII și obțineți ~440 ms. Ce faceți?",
+          "ro": "Pacient tratat cu un medicament care alungește QT. Aparatul ECG tipărește un QTc de 520 ms; măsori tu în DII și obții ~440 ms. Ce faci?",
           "en": "A patient is on a QT-prolonging drug. The ECG machine prints a QTc of 520 ms; you measure lead II yourself and get about 440 ms. What do you do?"
         },
         "options": [
           {
-            "ro": "Raportați doar valoarea dumneavoastră: aparatul greșește des",
+            "ro": "Raportează doar valoarea ta: aparatul greșește des",
             "en": "Report only your value: machines are often wrong"
           },
           {
-            "ro": "Raportați doar valoarea aparatului: este măsurată automat",
+            "ro": "Raportează doar valoarea aparatului: este măsurată automat",
             "en": "Report only the machine's value: it is measured automatically"
           },
           {
-            "ro": "Anunțați medicul înainte de doza următoare, cu ambele valori",
+            "ro": "Anunță medicul înainte de doza următoare, cu ambele valori",
             "en": "Tell the doctor before the next dose, giving both values"
           },
           {
-            "ro": "Nu raportați nimic: diferența dintre valori nu contează",
+            "ro": "Nu raporta nimic: diferența dintre valori nu contează",
             "en": "Report nothing: the difference does not matter"
           }
         ],
@@ -6304,7 +6304,7 @@
         "type": "cases",
         "body": {
           "ro": [
-            "Exersați pe aceste trasee. Măsurați QT, apoi calculați QTc cu ambele formule: la frecvență mare și la frecvență mică rezultatele diferă."
+            "Exersează pe aceste trasee. Măsoară QT, apoi calculează QTc cu ambele formule: la frecvență mare și la frecvență mică rezultatele diferă."
           ],
           "en": [
             "Practise on these ECGs. Measure the QT, then work out the QTc with both formulas: at fast and slow rates the results differ."
@@ -6332,9 +6332,9 @@
     "minutes": 10,
     "objectives": {
       "ro": [
-        "Măsurați devierea ST în punctul J, față de linia izoelectrică dinaintea QRS. Pragurile ESC 2023: ≥ 1 mm în două derivații adiacente; în V2–V3, ≥ 2 mm la bărbații de 40 de ani sau peste, ≥ 2,5 mm la bărbații sub 40 de ani și ≥ 1,5 mm la femei.",
-        "Stabiliți teritoriul după derivații și căutați subdenivelarea ST în oglindă; extensia posterioară se confirmă în V7–V9, iar cea de ventricul drept în V4R (≥ 0,5 mm).",
-        "Recunoașteți echivalentele de STEMI și ținta de 10 minute de la primul contact medical până la ECG-ul interpretat."
+        "Măsoară devierea ST în punctul J, față de linia izoelectrică dinaintea QRS. Pragurile ESC 2023: ≥ 1 mm în două derivații adiacente; în V2–V3, ≥ 2 mm la bărbații de 40 de ani sau peste, ≥ 2,5 mm la bărbații sub 40 de ani și ≥ 1,5 mm la femei.",
+        "Stabilește teritoriul după derivații și caută subdenivelarea ST în oglindă; extensia posterioară se confirmă în V7–V9, iar cea de ventricul drept în V4R (≥ 0,5 mm).",
+        "Recunoaște echivalentele de STEMI și ținta de 10 minute de la primul contact medical până la ECG-ul interpretat."
       ],
       "en": [
         "Measure the ST at the J point against the baseline before the QRS. ESC 2023 thresholds: 1 mm or more in two adjacent leads; in V2–V3, 2 mm or more in men aged 40 or over, 2.5 mm or more in men under 40, and 1.5 mm or more in women.",
@@ -6360,7 +6360,7 @@
       {
         "type": "check",
         "question": {
-          "ro": "Unde se termină unda T când măsurați QT?",
+          "ro": "Unde se termină unda T când măsori QT?",
           "en": "Where does the T wave end when you measure the QT?"
         },
         "options": [
@@ -6426,8 +6426,8 @@
         "body": {
           "ro": [
             "Punctul J este locul în care se termină complexul QRS și începe segmentul ST. Aici se măsoară devierea segmentului ST.",
-            "Nivelul de referință este linia izoelectrică chiar înaintea QRS, la sfârșitul segmentului PR. Nu folosiți ca reper unda T sau unda U.",
-            "Priviți toate derivațiile. O singură derivație nu dovedește mare lucru: supradenivelarea ST contează când apare în două derivații adiacente, de exemplu DII și DIII sau V2 și V3."
+            "Nivelul de referință este linia izoelectrică chiar înaintea QRS, la sfârșitul segmentului PR. Nu folosi ca reper unda T sau unda U.",
+            "Privește toate derivațiile. O singură derivație nu dovedește mare lucru: supradenivelarea ST contează când apare în două derivații adiacente, de exemplu DII și DIII sau V2 și V3."
           ],
           "en": [
             "The J point is where the QRS ends and the ST segment begins. ST deviation is measured there.",
@@ -6453,7 +6453,7 @@
         },
         "body": {
           "ro": [
-            "Un STEMI inferior. Comparați punctul J cu segmentul PR, în DIII și în aVL."
+            "Un STEMI inferior. Compară punctul J cu segmentul PR, în DIII și în aVL."
           ],
           "en": [
             "An inferior STEMI. Compare the J point with the PR segment in III and in aVL."
@@ -6505,12 +6505,12 @@
         "ref": 3.0,
         "tol": 0.5,
         "prompt": {
-          "ro": "Măsurați supradenivelarea ST în punctul J, în DIII.",
+          "ro": "Măsoară supradenivelarea ST în punctul J, în DIII.",
           "en": "Measure the ST elevation at the J point in lead III."
         },
         "body": {
           "ro": [
-            "Puneți o linie a compasului pentru voltaj la nivelul segmentului PR și cealaltă la nivelul punctului J."
+            "Pune o linie a compasului pentru voltaj la nivelul segmentului PR și cealaltă la nivelul punctului J."
           ],
           "en": [
             "Put one line of the voltage calipers at the level of the PR segment and the other at the level of the J point."
@@ -6535,12 +6535,12 @@
         "ref": 2.0,
         "tol": 0.5,
         "prompt": {
-          "ro": "Măsurați subdenivelarea ST în punctul J, în aVL.",
+          "ro": "Măsoară subdenivelarea ST în punctul J, în aVL.",
           "en": "Measure the ST depression at the J point in aVL."
         },
         "body": {
           "ro": [
-            "Aceeași metodă: o linie la nivelul segmentului PR, cealaltă la nivelul punctului J. Scrieți valoarea în mm, fără semn."
+            "Aceeași metodă: o linie la nivelul segmentului PR, cealaltă la nivelul punctului J. Scrie valoarea în mm, fără semn."
           ],
           "en": [
             "The same method: one line at the level of the PR segment, the other at the J point. Enter the value in mm, without a sign."
@@ -6632,8 +6632,8 @@
         },
         "body": {
           "ro": [
-            "Subdenivelare ST în V1–V3 alături de un STEMI inferior: înregistrați V7–V9. Supradenivelarea ST ≥ 0,5 mm aici confirmă afectarea posterioară.",
-            "În STEMI inferior, înregistrați și V3R și V4R. Supradenivelarea ST ≥ 0,5 mm în V4R sugerează infarct de ventricul drept.",
+            "Subdenivelare ST în V1–V3 alături de un STEMI inferior: înregistrează V7–V9. Supradenivelarea ST ≥ 0,5 mm aici confirmă afectarea posterioară.",
+            "În STEMI inferior, înregistrează și V3R și V4R. Supradenivelarea ST ≥ 0,5 mm în V4R sugerează infarct de ventricul drept.",
             "Unele trasee cer aceeași urgență fără supradenivelarea ST clasică: bloc major de ramură stângă sau dreaptă sau ritm ventricular electrostimulat, cu simptome ischemice în curs, și infarctul posterior izolat.",
             "ECG-ul se înregistrează și se interpretează în cel mult 10 minute de la primul contact medical (ESC 2023 SCA)."
           ],
@@ -6684,7 +6684,7 @@
       {
         "type": "check",
         "question": {
-          "ro": "Scenariu: un pacient cu durere toracică are traseul de la începutul lecției (supradenivelare ST în DIII, subdenivelare în aVL). Ce faceți mai întâi?",
+          "ro": "Scenariu: un pacient cu durere toracică are traseul de la începutul lecției (supradenivelare ST în DIII, subdenivelare în aVL). Ce faci mai întâi?",
           "en": "Scenario: a patient with chest pain has the ECG from the start of this lesson (ST elevation in III, depression in aVL). What do you do first?"
         },
         "options": [
@@ -6717,7 +6717,7 @@
       {
         "type": "check",
         "question": {
-          "ro": "Scenariu: un pacient cu durere toracică are traseul de la începutul lecției (supradenivelare ST în DIII, subdenivelare în aVL). Ce faceți mai întâi?",
+          "ro": "Scenariu: un pacient cu durere toracică are traseul de la începutul lecției (supradenivelare ST în DIII, subdenivelare în aVL). Ce faci mai întâi?",
           "en": "Scenario: a patient with chest pain has the ECG from the start of this lesson (ST elevation in III, depression in aVL). What do you do first?"
         },
         "options": [
@@ -6750,24 +6750,24 @@
       {
         "type": "check",
         "question": {
-          "ro": "Supradenivelare ST în DII, DIII și aVF, cu subdenivelare ST în V1–V3. Ce faceți?",
+          "ro": "Supradenivelare ST în DII, DIII și aVF, cu subdenivelare ST în V1–V3. Ce faci?",
           "en": "ST elevation in II, III and aVF, with ST depression in V1–V3. What do you do?"
         },
         "options": [
           {
-            "ro": "Așteptați troponina, apoi decideți",
+            "ro": "Așteaptă troponina, apoi decide",
             "en": "Wait for the troponin, then decide"
           },
           {
-            "ro": "Repetați traseul după verificarea electrozilor",
+            "ro": "Repetă traseul după verificarea electrozilor",
             "en": "Repeat the ECG after checking the electrodes"
           },
           {
-            "ro": "Tratați-o ca ischemie anterioară separată",
+            "ro": "Tratează-o ca ischemie anterioară separată",
             "en": "Treat it as separate anterior ischaemia"
           },
           {
-            "ro": "Înregistrați V7–V9, pe peretele posterior",
+            "ro": "Înregistrează V7–V9, pe peretele posterior",
             "en": "Record V7–V9, over the posterior wall"
           }
         ],
@@ -6781,7 +6781,7 @@
         "type": "cases",
         "body": {
           "ro": [
-            "Exersați pe aceste trasee. Pentru fiecare, găsiți derivațiile cu supradenivelare ST, apoi căutați subdenivelarea în oglindă."
+            "Exersează pe aceste trasee. Pentru fiecare, găsește derivațiile cu supradenivelare ST, apoi caută subdenivelarea în oglindă."
           ],
           "en": [
             "Practise on these ECGs. For each one, find the leads with ST elevation, then look for the reciprocal depression."
@@ -6811,9 +6811,9 @@
     "minutes": 8,
     "objectives": {
       "ro": [
-        "Aplicați criteriile de voltaj: indicele Sokolow-Lyon (S în V1 + R în V5 sau V6 ≥ 35 mm) și indicele Cornell (R în aVL + S în V3 > 28 mm la bărbați, > 20 mm la femei). Voltajul sugerează hipertrofia ventriculară stângă; ecocardiografia o confirmă.",
-        "Recunoașteți preexcitația: interval PR scurt, undă delta și QRS larg; undele delta negative pot mima unde Q (aspect de pseudoinfarct).",
-        "Rețineți că în fibrilația atrială preexcitată se evită medicamentele care blochează nodul AV."
+        "Aplică criteriile de voltaj: indicele Sokolow-Lyon (S în V1 + R în V5 sau V6 ≥ 35 mm) și indicele Cornell (R în aVL + S în V3 > 28 mm la bărbați, > 20 mm la femei). Voltajul sugerează hipertrofia ventriculară stângă; ecocardiografia o confirmă.",
+        "Recunoaște preexcitația: interval PR scurt, undă delta și QRS larg; undele delta negative pot mima unde Q (aspect de pseudoinfarct).",
+        "Reține că în fibrilația atrială preexcitată se evită medicamentele care blochează nodul AV."
       ],
       "en": [
         "Apply the voltage criteria: Sokolow-Lyon (S in V1 + R in V5 or V6 of 35 mm or more) and Cornell (R in aVL + S in V3 over 28 mm in men, over 20 mm in women). Voltage suggests LVH; echocardiography confirms it.",
@@ -6929,7 +6929,7 @@
         },
         "body": {
           "ro": [
-            "La 10 mm/mV, complexele din V2–V3 depășesc rândul și se suprapun. Apăsați 5 la „Amplificare”: totul se desenează la jumătate, inclusiv semnalul de etalonare."
+            "La 10 mm/mV, complexele din V2–V3 depășesc rândul și se suprapun. Apasă 5 la „Amplificare”: totul se desenează la jumătate, inclusiv semnalul de etalonare."
           ],
           "en": [
             "At 10 mm/mV the complexes in V2–V3 run off their row and overlap. Press 5 under Gain: everything is drawn at half height, the calibration pulse included."
@@ -6950,12 +6950,12 @@
         "ref": 19.5,
         "tol": 1.0,
         "prompt": {
-          "ro": "Măsurați adâncimea undei S în V1.",
+          "ro": "Măsoară adâncimea undei S în V1.",
           "en": "Measure the depth of the S wave in V1."
         },
         "body": {
           "ro": [
-            "Puneți o linie a compasului pentru voltaj pe linia izoelectrică și cealaltă la vârful undei S. Compasul afișează valoarea la 10 mm/mV, oricare ar fi amplificarea aleasă."
+            "Pune o linie a compasului pentru voltaj pe linia izoelectrică și cealaltă la vârful undei S. Compasul afișează valoarea la 10 mm/mV, oricare ar fi amplificarea aleasă."
           ],
           "en": [
             "Put one line of the voltage calipers on the baseline and the other at the bottom of the S wave. The calipers give the value at 10 mm/mV, whatever gain you have chosen."
@@ -7004,7 +7004,7 @@
         },
         "body": {
           "ro": [
-            "Preexcitație la un pacient cu bradicardie sinusală (~49/min). Apăsați butoanele pe rând."
+            "Preexcitație la un pacient cu bradicardie sinusală (~49/min). Apasă butoanele pe rând."
           ],
           "en": [
             "Pre-excitation in a patient with sinus bradycardia (about 49/min). Press the buttons in turn."
@@ -7093,7 +7093,7 @@
         },
         "body": {
           "ro": [
-            "Alt pacient cu preexcitație. Comparați începutul QRS în DI cu cel din DIII și aVF."
+            "Alt pacient cu preexcitație. Compară începutul QRS în DI cu cel din DIII și aVF."
           ],
           "en": [
             "Another patient with pre-excitation. Compare the start of the QRS in I with that in III and aVF."
@@ -7142,7 +7142,7 @@
       {
         "type": "check",
         "question": {
-          "ro": "Unde Q în DIII și aVF, cu PR de 100 ms. Ce verificați înainte de a scrie „infarct inferior vechi”?",
+          "ro": "Unde Q în DIII și aVF, cu PR de 100 ms. Ce verifici înainte de a scrie „infarct inferior vechi”?",
           "en": "Q waves in III and aVF, with a PR of 100 ms. What do you check before you write 'old inferior infarct'?"
         },
         "options": [
@@ -7165,7 +7165,7 @@
         ],
         "answer": 3,
         "explain": {
-          "ro": "Un PR scurt cu unde Q trebuie să vă facă să căutați unda delta. Unda delta negativă din DIII și aVF mimează unde Q de necroză.",
+          "ro": "Un PR scurt cu unde Q trebuie să te facă să cauți unda delta. Unda delta negativă din DIII și aVF mimează unde Q de necroză.",
           "en": "A short PR with Q waves should make you look for a delta wave. A negative delta wave in III and aVF mimics infarct Q waves."
         }
       },
@@ -7233,7 +7233,7 @@
         "type": "cases",
         "body": {
           "ro": [
-            "Exersați pe aceste trasee. Pe traseul cu complexe foarte ample, folosiți amplificarea de 5 mm/mV; pe celelalte, căutați unda delta în toate derivațiile."
+            "Exersează pe aceste trasee. Pe traseul cu complexe foarte ample, folosește amplificarea de 5 mm/mV; pe celelalte, caută unda delta în toate derivațiile."
           ],
           "en": [
             "Practise on these ECGs. On the one with very large complexes, use the 5 mm/mV gain; on the others, look for the delta wave in every lead."
@@ -7261,9 +7261,9 @@
     "minutes": 10,
     "objectives": {
       "ro": [
-        "Găsiți spike-urile și deosebiți stimularea atrială, ventriculară și bicamerală; citiți codul modului (AAI, VVI, DDD, VDD).",
-        "Aplicați cele trei verificări: captura după fiecare spike, ciclul reluat după fiecare bătaie proprie, frecvența. Inhibiția și fuziunea sunt normale.",
-        "Recunoașteți pierderea capturii (spike după unda T, fără complex) ca problemă urgentă și verificați frecvența numărând complexele QRS când aparatul numără spike-urile ca bătăi."
+        "Găsește spike-urile și deosebește stimularea atrială, ventriculară și bicamerală; citește codul modului (AAI, VVI, DDD, VDD).",
+        "Aplică cele trei verificări: captura după fiecare spike, ciclul reluat după fiecare bătaie proprie, frecvența. Inhibiția și fuziunea sunt normale.",
+        "Recunoaște pierderea capturii (spike după unda T, fără complex) ca problemă urgentă și verifică frecvența numărând complexele QRS când aparatul numără spike-urile ca bătăi."
       ],
       "en": [
         "Find the spikes and tell atrial, ventricular and dual-chamber pacing apart; read the mode code (AAI, VVI, DDD, VDD).",
@@ -7572,12 +7572,12 @@
         "measure": "rr",
         "beat": 0,
         "prompt": {
-          "ro": "Măsurați intervalul dintre două spike-uri ventriculare consecutive.",
+          "ro": "Măsoară intervalul dintre două spike-uri ventriculare consecutive.",
           "en": "Measure the interval between two consecutive ventricular spikes."
         },
         "body": {
           "ro": [
-            "Spike-ul ventricular este al doilea din fiecare pereche, chiar înaintea QRS-ului larg. Așezați câte un braț al compasului pe două spike-uri ventriculare vecine."
+            "Spike-ul ventricular este al doilea din fiecare pereche, chiar înaintea QRS-ului larg. Așază câte un braț al compasului pe două spike-uri ventriculare vecine."
           ],
           "en": [
             "The ventricular spike is the second of each pair, just before the wide QRS. Put one arm of the calipers on each of two neighbouring ventricular spikes."
@@ -7755,7 +7755,7 @@
         },
         "body": {
           "ro": [
-            "Un traseu din modulul de disfuncții. Spike-urile sunt foarte mici, sub 1 mm; urmăriți-le în DII."
+            "Un traseu din modulul de disfuncții. Spike-urile sunt foarte mici, sub 1 mm; urmărește-le în DII."
           ],
           "en": [
             "A tracing from the malfunction module. The spikes are very small, under 1 mm; follow them in lead II."
@@ -7809,14 +7809,14 @@
       {
         "type": "text",
         "heading": {
-          "ro": "Pacientul cu stimulator: ce trebuie să știți",
+          "ro": "Pacientul cu stimulator: ce trebuie să știi",
           "en": "The patient with a pacemaker: what you need to know"
         },
         "body": {
           "ro": [
             "Defibrilare: electrozii autoadezivi se plasează la cel puțin 8 cm de generator sau în poziție anteroposterioară (ERC 2025).",
             "Un magnet peste un stimulator cardiac îl face, de obicei, să stimuleze asincron, la frecvență fixă, fără să țină cont de bătăile proprii. Peste un defibrilator implantabil, magnetul suspendă șocurile și nu modifică stimularea. Se folosește doar conform protocolului unității sau la indicația medicului.",
-            "Anunțați imediat medicul sau solicitați sprijin medical pentru: spike-uri neurmate de complexe, pauze, frecvență mai mică decât cea așteptată, sincopă sau amețeală, un șoc administrat de defibrilatorul implantabil."
+            "Anunță imediat medicul sau solicită sprijin medical pentru: spike-uri neurmate de complexe, pauze, frecvență mai mică decât cea așteptată, sincopă sau amețeală, un șoc administrat de defibrilatorul implantabil."
           ],
           "en": [
             "Defibrillation: place the pads at least 8 cm from the generator, or in the anterior-posterior position (ERC 2025).",
@@ -7892,7 +7892,7 @@
       {
         "type": "check",
         "question": {
-          "ro": "Aparatul ECG raportează 142/min. Pe banda de 10 s numărați 11 complexe QRS, fiecare precedat de un spike mare. Care este frecvența reală?",
+          "ro": "Aparatul ECG raportează 142/min. Pe banda de 10 s numeri 11 complexe QRS, fiecare precedat de un spike mare. Care este frecvența reală?",
           "en": "The ECG machine reports 142/min. On the 10-second strip you count 11 QRS complexes, each preceded by a large spike. What is the real rate?"
         },
         "options": [
@@ -7915,7 +7915,7 @@
         ],
         "answer": 1,
         "explain": {
-          "ro": "11 complexe în 10 s × 6 = 66, adică ~70/min, ceea ce corespunde unui RR de ~860 ms. Spike-urile mari pot fi numărate de aparat ca bătăi separate. Numărați întotdeauna complexele QRS.",
+          "ro": "11 complexe în 10 s × 6 = 66, adică ~70/min, ceea ce corespunde unui RR de ~860 ms. Spike-urile mari pot fi numărate de aparat ca bătăi separate. Numără întotdeauna complexele QRS.",
           "en": "11 complexes in 10 s × 6 = 66, so about 70/min, which matches an RR of about 860 ms. Large spikes can be counted as separate beats. Always count the QRS complexes yourself."
         }
       },
@@ -7923,7 +7923,7 @@
         "type": "cases",
         "body": {
           "ro": [
-            "Exersați pe aceste trasee. La fiecare, căutați spike-urile, apoi aplicați cele trei verificări: captura, detecția și frecvența."
+            "Exersează pe aceste trasee. La fiecare, caută spike-urile, apoi aplică cele trei verificări: captura, detecția și frecvența."
           ],
           "en": [
             "Practise on these ECGs. On each one, find the spikes, then apply the three checks: capture, sensing and rate."
@@ -7953,9 +7953,9 @@
     "minutes": 15,
     "objectives": {
       "ro": [
-        "Citiți fiecare traseu în aceeași ordine: calitate și etalonare, ritm, frecvență, ax, PR, QRS, ST, T și QT, comparația cu un traseu anterior, apoi o concluzie de un rând. Interpretarea automată se citește ultima.",
+        "Citește fiecare traseu în aceeași ordine: calitate și etalonare, ritm, frecvență, ax, PR, QRS, ST, T și QT, comparația cu un traseu anterior, apoi o concluzie de un rând. Interpretarea automată se citește ultima.",
         "Pentru triaj: întâi pacientul, apoi cinci întrebări: frecvența sub 40/min sau peste 150/min? Ritm regulat? QRS larg? Supradenivelare ST? Spike-uri care funcționează?",
-        "Încadrați traseele în categoriile de acțiune, începând cu cele mai periculoase."
+        "Încadrează traseele în categoriile de acțiune, începând cu cele mai periculoase."
       ],
       "en": [
         "Read every ECG in the same order: quality and calibration, rhythm, rate, axis, PR, QRS, ST, T and QT, comparison with an old ECG, then a one-line conclusion. Read the machine's statement last.",
@@ -8064,7 +8064,7 @@
         },
         "body": {
           "ro": [
-            "Același ECG normal din lecțiile anterioare. Parcurgeți pașii cu butoanele; reperele apar pe banda DII."
+            "Același ECG normal din lecțiile anterioare. Parcurge pașii cu butoanele; reperele apar pe banda DII."
           ],
           "en": [
             "The same normal ECG as in earlier lessons. Go through the steps with the buttons; the marks appear on the lead II strip."
@@ -8152,12 +8152,12 @@
         "case": "isch-01",
         "layout": "standard",
         "heading": {
-          "ro": "Acum, dumneavoastră",
+          "ro": "Acum, tu",
           "en": "Now your turn"
         },
         "body": {
           "ro": [
-            "Citiți acest ECG fără ajutor, pas cu pas, cu lista de mai sus. Apoi alegeți concluzia."
+            "Citește acest ECG fără ajutor, pas cu pas, cu lista de mai sus. Apoi alege concluzia."
           ],
           "en": [
             "Read this ECG on your own, step by step with the checklist above. Then choose the conclusion."
@@ -8202,7 +8202,7 @@
         },
         "body": {
           "ro": [
-            "Întâi pacientul: răspunde? Respiră normal? Dacă nu răspunde și nu respiră normal, începeți resuscitarea, nu citirea traseului (ERC 2025).",
+            "Întâi pacientul: răspunde? Respiră normal? Dacă nu răspunde și nu respiră normal, începe resuscitarea, nu citirea traseului (ERC 2025).",
             "Apoi cinci întrebări pe traseu:",
             "1. Frecvența este sub 40/min sau peste 150/min? 2. Ritmul este regulat? 3. QRS-ul este îngust sau larg? 4. Există supradenivelare ST? 5. Dacă există spike-uri, fiecare este urmat de un complex?",
             "O frecvență extremă, un QRS larg și rapid, supradenivelarea ST sau un spike fără complex: traseul nu poate aștepta."
@@ -8228,7 +8228,7 @@
             "B. Anunțarea imediată a medicului; monitorizare, defibrilator la îndemână, ECG în 12 derivații.",
             "C. Verificarea electrozilor și a pacientului, apoi reînregistrarea traseului.",
             "D. Consemnarea traseului și raportarea la vizita medicală.",
-            "Excludeți întâi A, apoi B. Abia apoi luați în calcul C sau D."
+            "Exclude întâi A, apoi B. Abia apoi ia în calcul C sau D."
           ],
           "en": [
             "Every ECG gets one of your four actions, from the most urgent down:",
@@ -8256,7 +8256,7 @@
             "B. Electrozi autoadezivi aplicați, stimulare sau cardioversie sincronă pregătite, medic solicitat (SMURD sau echipaj medical).",
             "C. Transmiterea ECG-ului în 12 derivații și anunțarea spitalului cu laborator de cateterism.",
             "D. Monitorizare, transport și predarea pacientului la spital.",
-            "Un traseu cu defect tehnic nu intră în nicio categorie: verificați electrozii și reînregistrați înainte de a decide."
+            "Un traseu cu defect tehnic nu intră în nicio categorie: verifică electrozii și reînregistrează înainte de a decide."
           ],
           "en": [
             "Every ECG gets one of your four actions, from the most urgent down:",
@@ -8279,12 +8279,12 @@
         },
         "body": {
           "ro": [
-            "Încadrați fiecare traseu într-o categorie, de la cea mai urgentă:",
+            "Încadrează fiecare traseu într-o categorie, de la cea mai urgentă:",
             "A. Stop cardiac: resuscitare imediată (ERC 2025).",
             "B. Urgență: aritmie periculoasă, bloc atrioventricular de grad înalt sau aspect de STEMI. Se acționează acum.",
             "C. Problemă tehnică: electrozi inversați sau artefacte. Se reînregistrează traseul înainte de interpretare.",
             "D. Fără urgență: se consemnează și se urmărește.",
-            "Excludeți întâi A, apoi B. Abia apoi luați în calcul C sau D."
+            "Exclude întâi A, apoi B. Abia apoi ia în calcul C sau D."
           ],
           "en": [
             "Put every ECG into one category, from the most urgent down:",
@@ -8305,7 +8305,7 @@
       {
         "type": "check",
         "question": {
-          "ro": "Scenariu: traseul pe care tocmai l-ați citit aparține unui pacient cu durere toracică. Ce faceți mai întâi?",
+          "ro": "Scenariu: traseul pe care tocmai l-ai citit aparține unui pacient cu durere toracică. Ce faci mai întâi?",
           "en": "Scenario: the ECG you have just read is from a patient with chest pain. What do you do first?"
         },
         "options": [
@@ -8338,7 +8338,7 @@
       {
         "type": "check",
         "question": {
-          "ro": "Scenariu: traseul pe care tocmai l-ați citit aparține unui pacient cu durere toracică. Ce faceți mai întâi?",
+          "ro": "Scenariu: traseul pe care tocmai l-ai citit aparține unui pacient cu durere toracică. Ce faci mai întâi?",
           "en": "Scenario: the ECG you have just read is from a patient with chest pain. What do you do first?"
         },
         "options": [
@@ -8361,7 +8361,7 @@
         ],
         "answer": 2,
         "explain": {
-          "ro": "Diagnostic prezumtiv de STEMI inferior: transmiteți traseul și anunțați spitalul cu laborator de cateterism, pentru angioplastie primară. Înregistrați și V4R.",
+          "ro": "Diagnostic prezumtiv de STEMI inferior: transmite traseul și anunță spitalul cu laborator de cateterism, pentru angioplastie primară. Înregistrează și V4R.",
           "en": "Presumed inferior STEMI: transmit the ECG and pre-alert the PCI centre for primary PCI. Record V4R as well."
         },
         "only": [
@@ -8371,7 +8371,7 @@
       {
         "type": "check",
         "question": {
-          "ro": "Scenariu: traseul pe care tocmai l-ați citit aparține unui pacient cu durere toracică. Cât de urgent este?",
+          "ro": "Scenariu: traseul pe care tocmai l-ai citit aparține unui pacient cu durere toracică. Cât de urgent este?",
           "en": "Scenario: the ECG you have just read is from a patient with chest pain. How urgent is it?"
         },
         "options": [
@@ -8416,7 +8416,7 @@
       {
         "type": "check",
         "question": {
-          "ro": "Traseul 1: ce faceți mai întâi?",
+          "ro": "Traseul 1: ce faci mai întâi?",
           "en": "ECG 1: what do you do first?"
         },
         "options": [
@@ -8439,7 +8439,7 @@
         ],
         "answer": 1,
         "explain": {
-          "ro": "Undele P (~98/min) și complexele QRS (~40/min) merg independent: BAV gradul III (complet), cu un ritm de scăpare lent, cu QRS larg. Acest ritm poate ceda oricând: anunțați imediat medicul, cu pacienta monitorizată și defibrilatorul la îndemână.",
+          "ro": "Undele P (~98/min) și complexele QRS (~40/min) merg independent: BAV gradul III (complet), cu un ritm de scăpare lent, cu QRS larg. Acest ritm poate ceda oricând: anunță imediat medicul, cu pacienta monitorizată și defibrilatorul la îndemână.",
           "en": "The P waves (about 98/min) and the QRS complexes (about 40/min) run independently: complete heart block with a slow, wide escape rhythm. It can fail at any time: call the doctor now, with the patient monitored and the defibrillator at hand."
         },
         "only": [
@@ -8449,7 +8449,7 @@
       {
         "type": "check",
         "question": {
-          "ro": "Traseul 1: ce faceți mai întâi?",
+          "ro": "Traseul 1: ce faci mai întâi?",
           "en": "ECG 1: what do you do first?"
         },
         "options": [
@@ -8472,7 +8472,7 @@
         ],
         "answer": 1,
         "explain": {
-          "ro": "BAV complet cu ritm de scăpare ~40/min și QRS larg: risc de asistolă. Aplicați electrozii autoadezivi, pregătiți stimularea transcutanată și solicitați medic, conform protocolului.",
+          "ro": "BAV complet cu ritm de scăpare ~40/min și QRS larg: risc de asistolă. Aplică electrozii autoadezivi, pregătește stimularea transcutanată și solicită medic, conform protocolului.",
           "en": "Complete heart block with a wide escape rhythm at about 40/min: a risk of asystole. Put the pads on, have transcutaneous pacing ready and request physician support, per your protocol."
         },
         "only": [
@@ -8532,7 +8532,7 @@
       {
         "type": "check",
         "question": {
-          "ro": "Traseul 2: ce faceți mai întâi?",
+          "ro": "Traseul 2: ce faci mai întâi?",
           "en": "ECG 2: what do you do first?"
         },
         "options": [
@@ -8555,7 +8555,7 @@
         ],
         "answer": 2,
         "explain": {
-          "ro": "DI are unda P, QRS-ul și unda T negative, iar derivațiile precordiale sunt normale: electrozii de pe brațe sunt inversați. Verificați electrozii și reînregistrați traseul înainte de interpretare.",
+          "ro": "DI are unda P, QRS-ul și unda T negative, iar derivațiile precordiale sunt normale: electrozii de pe brațe sunt inversați. Verifică electrozii și reînregistrează traseul înainte de interpretare.",
           "en": "Lead I has a negative P wave, QRS and T wave, while the chest leads are normal: the arm electrodes are swapped. Check the electrodes and record again before anyone interprets it."
         },
         "only": [
@@ -8565,24 +8565,24 @@
       {
         "type": "check",
         "question": {
-          "ro": "Traseul 2: ce faceți înainte de a-l transmite?",
+          "ro": "Traseul 2: ce faci înainte de a-l transmite?",
           "en": "ECG 2: what do you do before you transmit it?"
         },
         "options": [
           {
-            "ro": "Îl transmiteți așa: aspectul sugerează dextrocardie",
+            "ro": "Transmite-l așa: aspectul sugerează dextrocardie",
             "en": "Transmit it as it is: it suggests dextrocardia"
           },
           {
-            "ro": "Verificați electrozii de pe brațe și reînregistrați",
+            "ro": "Verifică electrozii de pe brațe și reînregistrează",
             "en": "Check the arm electrodes and record again"
           },
           {
-            "ro": "Anunțați spitalul cu laborator de cateterism: aspect de infarct lateral",
+            "ro": "Anunță spitalul cu laborator de cateterism: aspect de infarct lateral",
             "en": "Pre-alert the PCI centre: it looks like a lateral infarct"
           },
           {
-            "ro": "Îl transmiteți și lăsați medicul să decidă",
+            "ro": "Transmite-l și lasă medicul să decidă",
             "en": "Transmit it and let the doctor decide"
           }
         ],
@@ -8701,7 +8701,7 @@
       {
         "type": "check",
         "question": {
-          "ro": "Traseul 3: ce faceți mai întâi?",
+          "ro": "Traseul 3: ce faci mai întâi?",
           "en": "ECG 3: what do you do first?"
         },
         "options": [
@@ -8724,7 +8724,7 @@
         ],
         "answer": 0,
         "explain": {
-          "ro": "Unde haotice, fără complexe QRS: fibrilație ventriculară. Pacientul nu răspunde și nu respiră normal: stop cardiac. Alertați echipa de resuscitare, începeți imediat compresiile toracice și aplicați DEA cât mai repede (ERC 2025).",
+          "ro": "Unde haotice, fără complexe QRS: fibrilație ventriculară. Pacientul nu răspunde și nu respiră normal: stop cardiac. Alertează echipa de resuscitare, începe imediat compresiile toracice și aplică DEA cât mai repede (ERC 2025).",
           "en": "Chaotic waves with no QRS complexes: ventricular fibrillation. The patient is unresponsive and not breathing normally: cardiac arrest. Call the arrest team, start chest compressions at once and attach the AED as soon as possible (ERC 2025)."
         },
         "only": [
@@ -8734,7 +8734,7 @@
       {
         "type": "check",
         "question": {
-          "ro": "Traseul 3: ce faceți mai întâi?",
+          "ro": "Traseul 3: ce faci mai întâi?",
           "en": "ECG 3: what do you do first?"
         },
         "options": [
@@ -8790,7 +8790,7 @@
         ],
         "answer": 0,
         "explain": {
-          "ro": "Fibrilație ventriculară la un pacient care nu răspunde și nu respiră normal: stop cardiac, RCP și defibrilare imediată (ERC 2025). Un traseu haotic la un pacient conștient sugerează artefact: verificați întâi pacientul.",
+          "ro": "Fibrilație ventriculară la un pacient care nu răspunde și nu respiră normal: stop cardiac, RCP și defibrilare imediată (ERC 2025). Un traseu haotic la un pacient conștient sugerează artefact: verifică întâi pacientul.",
           "en": "Ventricular fibrillation in a patient who is unresponsive and not breathing normally: cardiac arrest, CPR and an immediate shock (ERC 2025). A chaotic trace in a conscious patient suggests artefact: check the patient first."
         },
         "only": [
@@ -8812,7 +8812,7 @@
       {
         "type": "check",
         "question": {
-          "ro": "Traseul 4: ce faceți mai întâi?",
+          "ro": "Traseul 4: ce faci mai întâi?",
           "en": "ECG 4: what do you do first?"
         },
         "options": [
@@ -8835,7 +8835,7 @@
         ],
         "answer": 1,
         "explain": {
-          "ro": "Tahicardie regulată cu QRS îngust, ~156/min, fără unde P: tahicardie supraventriculară. Anunțați medicul acum, cu pacientul monitorizat și defibrilatorul la îndemână. ECG-ul în 12 derivații înregistrat în timpul tahicardiei este esențial pentru diagnostic.",
+          "ro": "Tahicardie regulată cu QRS îngust, ~156/min, fără unde P: tahicardie supraventriculară. Anunță medicul acum, cu pacientul monitorizat și defibrilatorul la îndemână. ECG-ul în 12 derivații înregistrat în timpul tahicardiei este esențial pentru diagnostic.",
           "en": "A regular narrow-QRS tachycardia at about 156/min with no P waves: supraventricular tachycardia. Call the doctor now, with the patient monitored and the defibrillator at hand. A 12-lead recorded during the tachycardia is key to the diagnosis."
         },
         "only": [
@@ -8845,7 +8845,7 @@
       {
         "type": "check",
         "question": {
-          "ro": "Traseul 4: ce faceți mai întâi?",
+          "ro": "Traseul 4: ce faci mai întâi?",
           "en": "ECG 4: what do you do first?"
         },
         "options": [
@@ -8868,7 +8868,7 @@
         ],
         "answer": 1,
         "explain": {
-          "ro": "Tahicardie supraventriculară ~156/min. Căutați semnele de instabilitate. Aplicați electrozii, pregătiți cardioversia sincronă pentru cazul în care pacientul devine instabil și solicitați medic. Manevrele vagale și medicația se aplică conform protocolului (ERC 2025).",
+          "ro": "Tahicardie supraventriculară ~156/min. Caută semnele de instabilitate. Aplică electrozii, pregătește cardioversia sincronă pentru cazul în care pacientul devine instabil și solicită medic. Manevrele vagale și medicația se aplică conform protocolului (ERC 2025).",
           "en": "Supraventricular tachycardia at about 156/min. Look for adverse features. Put the pads on, have synchronised cardioversion ready in case the patient becomes unstable and request physician support. Vagal manoeuvres and drugs follow your protocol (ERC 2025)."
         },
         "only": [
@@ -8931,7 +8931,7 @@
       {
         "type": "check",
         "question": {
-          "ro": "Traseul 5: ce faceți mai întâi?",
+          "ro": "Traseul 5: ce faci mai întâi?",
           "en": "ECG 5: what do you do first?"
         },
         "options": [
@@ -8954,7 +8954,7 @@
         ],
         "answer": 3,
         "explain": {
-          "ro": "Bradicardie sinusală ~47/min: fiecare QRS este precedat de o undă P, cu PR constant și QRS îngust. La un tânăr fără simptome este adesea fiziologică. Consemnați traseul; dacă apar simptome, anunțați imediat medicul.",
+          "ro": "Bradicardie sinusală ~47/min: fiecare QRS este precedat de o undă P, cu PR constant și QRS îngust. La un tânăr fără simptome este adesea fiziologică. Consemnează traseul; dacă apar simptome, anunță imediat medicul.",
           "en": "Sinus bradycardia at about 47/min: a P wave before every QRS, a constant PR and a narrow QRS. In a young person with no symptoms it is often physiological. Document it; if symptoms appear, call the doctor at once."
         },
         "only": [
@@ -8964,7 +8964,7 @@
       {
         "type": "check",
         "question": {
-          "ro": "Traseul 5: ce faceți mai întâi?",
+          "ro": "Traseul 5: ce faci mai întâi?",
           "en": "ECG 5: what do you do first?"
         },
         "options": [
@@ -8987,7 +8987,7 @@
         ],
         "answer": 3,
         "explain": {
-          "ro": "Bradicardie sinusală la un pacient fără simptome și fără semne de instabilitate: monitorizare, transport și predare. Reevaluați dacă apar simptome.",
+          "ro": "Bradicardie sinusală la un pacient fără simptome și fără semne de instabilitate: monitorizare, transport și predare. Reevaluează dacă apar simptome.",
           "en": "Sinus bradycardia in a patient with no symptoms and no adverse features: monitor, transport and hand over. Reassess if symptoms appear."
         },
         "only": [
@@ -9050,7 +9050,7 @@
       {
         "type": "check",
         "question": {
-          "ro": "Traseul 6: ce faceți mai întâi?",
+          "ro": "Traseul 6: ce faci mai întâi?",
           "en": "ECG 6: what do you do first?"
         },
         "options": [
@@ -9073,7 +9073,7 @@
         ],
         "answer": 3,
         "explain": {
-          "ro": "Bătăi stimulate, bătăi proprii fără spike și o bătaie de fuziune: stimulare VVI „la cerere” care funcționează normal. Nu este o disfuncție. Consemnați traseul.",
+          "ro": "Bătăi stimulate, bătăi proprii fără spike și o bătaie de fuziune: stimulare VVI „la cerere” care funcționează normal. Nu este o disfuncție. Consemnează traseul.",
           "en": "Paced beats, native beats without spikes and a fusion beat: VVI demand pacing working normally. It is not a malfunction. Document it."
         },
         "only": [
@@ -9083,7 +9083,7 @@
       {
         "type": "check",
         "question": {
-          "ro": "Traseul 6: ce faceți mai întâi?",
+          "ro": "Traseul 6: ce faci mai întâi?",
           "en": "ECG 6: what do you do first?"
         },
         "options": [
@@ -9153,8 +9153,8 @@
         "type": "cases",
         "body": {
           "ro": [
-            "Primele 10 trasee de exersare. Țineți lista deschisă și parcurgeți-o în aceeași ordine la fiecare traseu. Abia la sfârșit citiți răspunsul.",
-            "Ultimele trei sunt trasee de monitor, pe o singură derivație. Pe ele aplicați triajul: întâi pacientul, apoi ritmul."
+            "Primele 10 trasee de exersare. Ține lista deschisă și parcurge-o în aceeași ordine la fiecare traseu. Abia la sfârșit citește răspunsul.",
+            "Ultimele trei sunt trasee de monitor, pe o singură derivație. Pe ele aplică triajul: întâi pacientul, apoi ritmul."
           ],
           "en": [
             "Your first 10 practice ECGs. Keep the checklist open and go through it in the same order on every ECG. Only then look at the answer.",

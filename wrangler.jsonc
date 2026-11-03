@@ -9,6 +9,13 @@
   "vars": {
     "SITE_PASSWORD_SHA256": "0366518e38bba538ad150010e306f9925a56fb16f916c97c051bb5d2df9f90dd"
   },
+  // Preview builds (branches other than main) use `wrangler preview`, which needs its own vars.
+  // Same hash, so previews are locked with the same test password.
+  "previews": {
+    "vars": {
+      "SITE_PASSWORD_SHA256": "0366518e38bba538ad150010e306f9925a56fb16f916c97c051bb5d2df9f90dd"
+    }
+  },
   "assets": {
     "directory": "website/dist",
     "binding": "ASSETS",
