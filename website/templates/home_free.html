@@ -7,27 +7,29 @@
 {% block main %}
 <section class="hero" aria-labelledby="hero-title">
   <div class="wrap hero-grid">
-  <figure class="strip" aria-label="{{ s.home.trace_caption }}">
-    <canvas id="hero-trace" class="strip-canvas" role="img" aria-label="{{ s.home.trace_caption }}"></canvas>
-    <figcaption class="strip-label"><span>{{ s.home.trace_label }}</span><span class="strip-rate" aria-hidden="true">75/min</span></figcaption>
-  </figure>
-  <script type="application/json" id="trace-data">{{ trace_json }}</script>
     <div class="hero-copy">
       <h1 id="hero-title">{{ fh.title }}</h1>
       <p class="lead">{{ fh.lead }}</p>
+      <div class="cta-card">
+        <div class="hero-actions"><a class="button button-lg" href="{{ app_url() }}">{{ fh.cta_trainer }}{{ icon("arrow") }}</a>
+        {% if has_digest %}<a class="button button-quiet button-lg" href="{{ link('digest') }}">{{ fh.cta_digest }}</a>{% endif %}</div>
+        <div class="hero-notes"><p class="form-note">{{ fh.privacy_line }}</p>
+        <p class="form-note"><span class="tag">beta</span> {{ fh.hero_note }}</p></div>
+      </div>
+    </div>
+    <figure class="strip" aria-label="{{ s.home.trace_caption }}">
+      <canvas id="hero-trace" class="strip-canvas" role="img" aria-label="{{ s.home.trace_caption }}"></canvas>
+      <figcaption class="strip-label"><span>{{ s.home.trace_label }}</span><span class="strip-rate" aria-hidden="true">75/min</span></figcaption>
+    </figure>
+    <script type="application/json" id="trace-data">{{ trace_json }}</script>
+    <div class="hero-meta">
       <ul class="stats">
         {% for st in fh.stats %}<li>{{ icon("check") }}{{ f(st, cases=totals.cases, dx=totals.dx) }}</li>{% endfor %}
       </ul>
       <div class="chips">
         <span class="chips-label">{{ fh.chips_label }}</span>
         {% for m in modules %}<a class="chip" href="{{ app_url('#practice-' + m.id) }}">{{ m.title }}</a>{% endfor %}
-      </div>
-    </div>
-    <div class="cta-card">
-      <div class="hero-actions"><a class="button button-lg" href="{{ app_url() }}">{{ fh.cta_trainer }}{{ icon("arrow") }}</a>
-      {% if has_digest %}<a class="button button-quiet button-lg" href="{{ link('digest') }}">{{ fh.cta_digest }}</a>{% endif %}</div>
-      <div class="hero-notes"><p class="form-note">{{ fh.privacy_line }}</p>
-      <p class="form-note"><span class="tag">beta</span> {{ fh.hero_note }}</p></div>
+        </div>
     </div>
   </div>
 </section>

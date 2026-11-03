@@ -115,12 +115,29 @@ const ICONS = {
   library: "M4 4h4v16H4Z M10 4h4v16h-4Z M16.5 4.5l3.7-.9 3 15.5-3.7.9Z",
   progress: "M3 3v18h18 M7 15l4-4 3 3 6-6",
   review: "M22 12a10 10 0 1 1-20 0 10 10 0 0 1 20 0Z M8 12.3l2.7 2.7L16 9.5",
+  zoom: "M17 11a6 6 0 1 1-12 0 6 6 0 0 1 12 0Z M21 21l-5.6-5.6 M8.5 11h5 M11 8.5v5",
   globe: "M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z M3 12h18 M12 3c2.5 2.5 3.6 5.5 3.6 9s-1.1 6.5-3.6 9 M12 3C9.5 5.5 8.4 8.5 8.4 12s1.1 6.5 3.6 9",
 };
 function icon(name, cls = "icon") {
   return svg("svg", { class: cls, viewBox: "0 0 24 24", "aria-hidden": "true", focusable: "false", fill: "none",
     stroke: "currentColor", "stroke-width": "1.75", "stroke-linecap": "round", "stroke-linejoin": "round" },
   svg("path", { d: ICONS[name] || ICONS.compass }));
+}
+
+/* Correct / wrong mark, so the answer state never rests on colour alone. */
+const MARKS = { ok: "M7 12.5l3.2 3.2L17 8.8", bad: "M8.5 8.5l7 7M15.5 8.5l-7 7", "ok-plain": "M5 12.5l4.5 4.5L19 7.5", "bad-plain": "M6.5 6.5l11 11M17.5 6.5l-11 11" };
+function markIcon(ok, badge = true) {
+  return svg("svg", { class: `mk ${badge ? "mk-badge" : "mk-plain"}`, viewBox: "0 0 24 24", "aria-hidden": "true", focusable: "false" },
+    badge ? svg("circle", { class: "mk-bg", cx: 12, cy: 12, r: 11 }) : null,
+    svg("path", { class: "mk-fg", d: MARKS[(ok ? "ok" : "bad") + (badge ? "" : "-plain")], fill: "none", "stroke-width": badge ? 2.4 : 2.6,
+      "stroke-linecap": "round", "stroke-linejoin": "round" }));
+}
+/* Put the mark in an option's letter badge (the letter stays in the DOM, hidden by CSS). */
+function markOption(b, ok) {
+  const letter = b.querySelector(".cs-letter");
+  if (!letter || letter.querySelector(".mk")) return;
+  letter.classList.add("has-mark");
+  letter.append(markIcon(ok, false));
 }
 
 function shuffle(arr) {
@@ -363,7 +380,28 @@ function renderChrome(view) {
       h("a", { href: `#${href}`, "aria-current": views.includes(view) ? "page" : null }, icon(href), h("span", { text: t(key) })),
     ),
   );
+  revealNavItem(navEl.querySelector("[aria-current]"));
+  navEdges();
 }
+
+// scroll the nav row sideways only (never the page) so an item clears the edge fades
+function revealNavItem(a) {
+  if (!a || navEl.scrollWidth <= navEl.clientWidth) return;
+  const n = navEl.getBoundingClientRect();
+  const r = a.getBoundingClientRect();
+  const pad = 52;
+  if (r.right > n.right - pad) navEl.scrollLeft += r.right - n.right + pad;
+  else if (r.left < n.left + pad) navEl.scrollLeft -= n.left + pad - r.left;
+}
+navEl.addEventListener("focusin", (e) => revealNavItem(e.target.closest("a")));
+
+function navEdges() {
+  const max = navEl.scrollWidth - navEl.clientWidth;
+  navEl.classList.toggle("is-more-left", max > 1 && navEl.scrollLeft > 1);
+  navEl.classList.toggle("is-more-right", max > 1 && navEl.scrollLeft < max - 1);
+}
+navEl.addEventListener("scroll", navEdges, { passive: true });
+window.addEventListener("resize", navEdges, { passive: true });
 
 function render(scroll = true) {
   cleanups.splice(0).forEach((fn) => {
@@ -445,7 +483,8 @@ function makeViewer(c, { look = [], revealed = false, calipers = "off", span = 0
     else readout.textContent = t("cal_volt", r.mv.toFixed(2), r.mm.toFixed(1));
   }
 
-  const zoom = h("div", { class: "vw-group", role: "group", "aria-label": t("tool_zoom_in") }, h("span", { class: "vw-seg" },
+  const zoom = h("div", { class: "vw-group", role: "group", "aria-label": t("tool_zoom_in") },
+    h("span", { class: "vw-label vw-label-icon", "aria-hidden": "true" }, icon("zoom")), h("span", { class: "vw-seg" },
     h("button", { type: "button", class: "vw-btn", "aria-label": t("tool_zoom_out"), text: "−",
       onclick: () => setZoom(ZOOMS[Math.max(0, ZOOMS.indexOf(st.zoom) - 1)] || 1) }),
     h("button", { type: "button", class: "vw-btn", text: t("tool_fit"), onclick: () => setZoom(1) }),
@@ -481,8 +520,9 @@ function makeViewer(c, { look = [], revealed = false, calipers = "off", span = 0
     : null;
 
   const el = h("figure", { class: "vw" },
-    h("div", { class: "vw-bar", role: "toolbar", "aria-label": "ECG" }, zoom, gain, cal, hlBtn, readout),
-    host,
+    h("div", { class: "vw-panel" },
+      h("div", { class: "vw-bar", role: "toolbar", "aria-label": "ECG" }, zoom, gain, cal, hlBtn, readout),
+      host),
     hint,
     h("p", { class: "vw-rotate", text: t("rotate_hint") }),
     h("figcaption", { class: "credit", text: creditLine(c) }),
@@ -608,7 +648,8 @@ function viewHome() {
         );
       })),
     ),
-    h("section", { class: "tr-section tr-teaser" },
+    h("section", { class: "tr-section tr-teaser tr-drills-teaser" },
+      h("span", { class: "tr-module-icon" }, icon("drills")),
       h("div", null,
         h("h2", { text: t("home_drills_title") }),
         h("p", { text: t("home_drills_text") }),
@@ -817,7 +858,7 @@ function lessonTask(l, step) {
     store.logCheck(l.id, step.id, ok);
     const u = { bpm: t("per_min"), mm: " mm", count: "", ms: " ms" }[unit] ?? ` ${unit}`;
     result.replaceChildren(
-      h("p", { class: `dr-verdict ${ok ? "good" : "off"}`, text: t(ok ? "drill_good" : "drill_off") }),
+      h("p", { class: `dr-verdict ${ok ? "good" : "off"}` }, markIcon(ok), t(ok ? "drill_good" : "drill_off")),
       h("dl", { class: "dr-nums" },
         h("div", null, h("dt", { text: t("drill_reference") }), h("dd", { text: `${num(step.ref)}${u}` })),
         h("div", null, h("dt", { text: t("drill_yours") }), h("dd", { text: `${num(mode === "volt" ? v : Math.round(v))}${u}` }))),
@@ -845,10 +886,11 @@ function lessonCheck(l, step) {
     btns.forEach((b, k) => {
       b.disabled = true;
       b.classList.add(k === step.answer ? "is-correct" : k === i ? "is-wrong" : "is-dim");
+      if (k === step.answer || k === i) markOption(b, k === step.answer);
     });
     const ok = i === step.answer;
     out.replaceChildren(
-      h("p", { class: `cs-verdict ${ok ? "ok" : "bad"}` }, h("strong", { text: t(ok ? "correct" : "wrong") })),
+      h("p", { class: `cs-verdict ${ok ? "ok" : "bad"}` }, markIcon(ok), h("strong", { text: t(ok ? "correct" : "wrong") })),
       h("p", { text: tx(step.explain) }));
   };
   const ol = h("ol", { class: "cs-options fu-options" }, step.options.map((o, i) => {
@@ -984,6 +1026,7 @@ function caseScreen(c, { mode, item, header, extraNote, onAnswer, onRate, onNext
       if (key === c.answer) b.classList.add("is-correct");
       else if (key === chosen) b.classList.add("is-wrong");
       else b.classList.add("is-dim");
+      if (key === c.answer || key === chosen) markOption(b, key === c.answer);
     }
   }
 
@@ -994,7 +1037,7 @@ function caseScreen(c, { mode, item, header, extraNote, onAnswer, onRate, onNext
     const rest = h("div", { class: "cs-rest" }, body);
     const fu = followups(c, item, () => { rest.hidden = false; });
     rest.hidden = fu.pending;
-    feedback.replaceChildren(...head, fu.el, rest, rateRow(ok));
+    feedback.replaceChildren(...[...head, fu.el, rest, rateRow(ok)].filter(Boolean));
     if (focus) feedback.querySelector(".cs-verdict")?.focus({ preventScroll: false });
   }
 
@@ -1051,7 +1094,7 @@ function caseScreen(c, { mode, item, header, extraNote, onAnswer, onRate, onNext
     ),
   );
 
-  if (mode === "study") feedback.append(followups(c, null).el, ...explain(c, null, "study"));
+  if (mode === "study") feedback.append(...[followups(c, null).el, ...explain(c, null, "study")].filter(Boolean));
   else if (item.chosen) {
     mark(item.chosen);
     showFeedback(item.chosen, false);
@@ -1085,7 +1128,7 @@ function explainParts(c, chosen, mode) {
   if (mode === "quiz") {
     const ok = chosen === c.answer;
     head.push(h("p", { class: `cs-verdict ${ok ? "ok" : "bad"}`, tabindex: "-1" },
-      h("strong", { text: t(ok ? "correct" : "wrong") }),
+      markIcon(ok), h("strong", { text: t(ok ? "correct" : "wrong") }),
       ok ? null : ` · ${t("wrong_detail", dxName(c.answer))}`));
     if (!ok) {
       head.push(h("p", { class: "cs-tell" },
@@ -1153,10 +1196,11 @@ function followups(c, item, onDone) {
       btns.forEach((b, k) => {
         b.disabled = true;
         b.classList.add(k === f.answer ? "is-correct" : k === i ? "is-wrong" : "is-dim");
+        if (k === f.answer || k === i) markOption(b, k === f.answer);
       });
       const ok = i === f.answer;
       out.replaceChildren(
-        h("p", { class: `cs-verdict ${ok ? "ok" : "bad"}` }, h("strong", { text: t(ok ? "correct" : "wrong") })),
+        h("p", { class: `cs-verdict ${ok ? "ok" : "bad"}` }, markIcon(ok), h("strong", { text: t(ok ? "correct" : "wrong") })),
         h("p", { text: tx(f.explain) }));
     }
     const ol = h("ol", { class: "cs-options fu-options" }, f.options.map((o, i) => {
@@ -1394,14 +1438,14 @@ function viewDrill(type) {
     }
     const last = d.pos + 1 >= d.items.length;
     result.replaceChildren(
-      h("p", { class: `dr-verdict ${verdict}`, text: t(`drill_${verdict}`) }),
+      h("p", { class: `dr-verdict ${verdict}` }, verdict !== "close" && markIcon(verdict === "good"), t(`drill_${verdict}`)),
       h("dl", { class: "dr-nums" },
         h("div", null, h("dt", { text: t("drill_reference") }), h("dd", { text: fmt(ref) })),
         h("div", null, h("dt", { text: t("drill_yours") }), h("dd", { text: fmt(v) })),
         h("div", null, h("dt", { text: t("drill_diff") }), h("dd", { text: signed(diff, unit.trim() === "ms" ? " ms" : "°") })),
       ),
       h("p", { class: "cs-small", text: `${t("drill_tolerance", `${good}${unit}`)} · ${t(kind === "axis" ? "axis_ref_note" : "drill_interval_note")}` }),
-      extra,
+      ...extra,
       h("p", { class: "dr-actions" },
         h("button", { type: "button", class: "btn", text: t(last ? "drill_done" : "drill_next"),
           onclick: () => {

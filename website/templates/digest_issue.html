@@ -6,7 +6,7 @@
 {% block main %}
 <section class="page-head">
   <div class="wrap narrow">
-    <p class="eyebrow"><a href="{{ link('digest') }}">{{ d.back }}</a> · {{ f(d.issue_title, n=issue.number) }}{% if issue.week %} · {{ issue.week }}{% endif %}</p>
+    <p class="eyebrow"><span><a href="{{ link('digest') }}">{{ d.back }}</a> · {{ f(d.issue_title, n=issue.number) }}{% if issue.week %} · {{ issue.week }}{% endif %}</span></p>
     <h1>{{ issue.subject }}</h1>
     {% if issue.sample %}<p><span class="tag">{{ d.sample_tag }}</span> {{ d.sample_note }}</p>{% endif %}
   </div>

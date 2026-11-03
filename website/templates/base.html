@@ -46,8 +46,8 @@
       {% block nav %}
       {% if c.free_launch %}
       <a href="{{ app_url() }}">{{ s.free.nav.trainer }}</a>
-      <a href="{{ link('az') }}">{{ s.free.nav.az }}</a>
-      {% if has_digest %}<a href="{{ link('digest') }}">{{ s.free.nav.digest }}</a>{% endif %}
+      <a href="{{ link('az') }}"{% if page_key == 'az' %} aria-current="page"{% endif %}>{{ s.free.nav.az }}</a>
+      {% if has_digest %}<a href="{{ link('digest') }}"{% if page_key == 'digest' %} aria-current="{{ 'true' if issue is defined else 'page' }}"{% endif %}>{{ s.free.nav.digest }}</a>{% endif %}
       {% else %}
       {% if has_quiz %}<a href="{{ link('home') }}#weekly">{{ s.nav.weekly }}</a>{% endif %}
       <a href="{{ link('home') }}#app">{{ s.nav.app }}</a>

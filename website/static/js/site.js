@@ -51,8 +51,9 @@
 
     function layout() {
       state = setupCanvas(canvas);
-      // 1 mm on screen: big enough to read, small enough to show several beats.
-      state.mm = state.w < 600 ? 5 : 6;
+      // 1 mm on screen: big enough to read, small enough to show several beats
+      // (5 px/mm up to 720 px wide, so the desktop monitor card shows six beats).
+      state.mm = state.w < 720 ? 5 : 6;
       state.pxPerSec = 25 * state.mm;
       state.baseline = state.h * 0.62;
       state.scale = 10 * state.mm / 100; // px per 0.01 mV
@@ -264,6 +265,9 @@
           verdict.textContent = ok ? verdict.dataset.correct : verdict.dataset.wrong;
           verdict.className = "quiz-verdict " + (ok ? "ok" : "bad");
           panel.hidden = false;
+          // the options are now disabled: move focus to the verdict so it is read out
+          verdict.tabIndex = -1;
+          verdict.focus();
         });
       });
     });
