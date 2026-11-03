@@ -35,7 +35,7 @@
       ]
     },
     "takeaway": {
-      "ro": "Citiți traseul de fiecare dată în aceeași ordine: ritm, frecvență, ax, intervale, apoi undele. ECG-ul normal este reperul cu care comparați toate celelalte trasee.",
+      "ro": "Citește traseul de fiecare dată în aceeași ordine: ritm, frecvență, ax, intervale, apoi undele. ECG-ul normal este reperul cu care compari toate celelalte trasee.",
       "en": "Read in the same order every time: rhythm, rate, axis, intervals, then the waves. A normal ECG is the reference you compare everything else with."
     },
     "followups": [
@@ -80,7 +80,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Scenariu: ECG de rutină la internare; pacienta nu are acuze. Ce faceți mai întâi?",
+          "ro": "Scenariu: ECG de rutină la internare; pacienta nu are acuze. Ce faci mai întâi?",
           "en": "Scenario: a routine admission ECG; the patient has no complaints. What do you do first?"
         },
         "options": "action_set",
@@ -97,7 +97,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Scenariu: pacientă stabilă, fără durere toracică. Ce faceți mai întâi?",
+          "ro": "Scenariu: pacientă stabilă, fără durere toracică. Ce faci mai întâi?",
           "en": "Scenario: a stable patient with no chest pain. What do you do first?"
         },
         "options": "action_set",
@@ -169,7 +169,7 @@
       ]
     },
     "takeaway": {
-      "ro": "Ritm lent, dar altfel normal: verificați dacă fiecare undă P este urmată de un complex QRS, apoi întrebați pacientul despre medicație și simptome.",
+      "ro": "Ritm lent, dar altfel normal: verifică dacă fiecare undă P este urmată de un complex QRS, apoi întreabă pacientul despre medicație și simptome.",
       "en": "Slow but otherwise normal: check that every P is followed by a QRS, then ask about drugs and symptoms."
     },
     "followups": [
@@ -180,7 +180,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Scenariu: monitorul afișează ~47/min la un bărbat de 19 ani care se simte bine. Ce faceți mai întâi?",
+          "ro": "Scenariu: monitorul afișează ~47/min la un bărbat de 19 ani care se simte bine. Ce faci mai întâi?",
           "en": "Scenario: the monitor shows about 47/min in a 19-year-old man who feels well. What do you do first?"
         },
         "options": "action_set",
@@ -197,7 +197,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Scenariu: tânăr de 19 ani, conștient, fără amețeli, cu tensiune arterială normală. Ce faceți mai întâi?",
+          "ro": "Scenariu: tânăr de 19 ani, conștient, fără amețeli, cu tensiune arterială normală. Ce faci mai întâi?",
           "en": "Scenario: a 19-year-old, alert, not dizzy, with a normal blood pressure. What do you do first?"
         },
         "options": "action_set",
@@ -301,7 +301,7 @@
       ]
     },
     "takeaway": {
-      "ro": "Identificați unda P în DII înaintea fiecărui complex QRS. Tahicardia sinusală este un semn: căutați-i cauza.",
+      "ro": "Identifică unda P în DII înaintea fiecărui complex QRS. Tahicardia sinusală este un semn: caută-i cauza.",
       "en": "Find the P wave in II before every QRS. Sinus tachycardia is a sign: look for its cause."
     },
     "followups": [
@@ -313,7 +313,7 @@
         ],
         "kind": "evidence",
         "question": {
-          "ro": "Cum știți că nu este un flutter atrial cu conducere AV 2:1?",
+          "ro": "Cum știi că nu este un flutter atrial cu conducere AV 2:1?",
           "en": "How do you know this is not atrial flutter with 2:1 block?"
         },
         "options": [
@@ -347,7 +347,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Scenariu: pacientă internată; monitorul arată ~134/min. Ce faceți mai întâi?",
+          "ro": "Scenariu: pacientă internată; monitorul arată ~134/min. Ce faci mai întâi?",
           "en": "Scenario: an inpatient; the monitor shows about 134/min. What do you do first?"
         },
         "options": "action_set",
@@ -364,7 +364,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Scenariu: pacientă conștientă, cu tensiune arterială normală; monitorul arată ~134/min. Ce faceți mai întâi?",
+          "ro": "Scenariu: pacientă conștientă, cu tensiune arterială normală; monitorul arată ~134/min. Ce faci mai întâi?",
           "en": "Scenario: an alert patient with a normal blood pressure; the monitor shows about 134/min. What do you do first?"
         },
         "options": "action_set",
@@ -481,7 +481,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Scenariu: bărbat de 26 de ani, fără acuze. Ce faceți mai întâi?",
+          "ro": "Scenariu: bărbat de 26 de ani, fără acuze. Ce faci mai întâi?",
           "en": "Scenario: a 26-year-old man with no complaints. What do you do first?"
         },
         "options": "action_set",
@@ -498,7 +498,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Scenariu: bărbat de 26 de ani, conștient, cu tensiune arterială normală. Ce faceți mai întâi?",
+          "ro": "Scenariu: bărbat de 26 de ani, conștient, cu tensiune arterială normală. Ce faci mai întâi?",
           "en": "Scenario: a 26-year-old man, alert, with a normal blood pressure. What do you do first?"
         },
         "options": "action_set",
@@ -619,7 +619,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Scenariu: pacientă de 71 de ani, cunoscută cu fibrilație atrială, fără acuze. Ce faceți mai întâi?",
+          "ro": "Scenariu: pacientă de 71 de ani, cunoscută cu fibrilație atrială, fără acuze. Ce faci mai întâi?",
           "en": "Scenario: a 71-year-old woman with known atrial fibrillation and no complaints. What do you do first?"
         },
         "options": "action_set",
@@ -636,7 +636,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Scenariu: pacientă de 71 de ani, cunoscută cu fibrilație atrială, stabilă, transportată pentru altă problemă. Ce faceți mai întâi?",
+          "ro": "Scenariu: pacientă de 71 de ani, cunoscută cu fibrilație atrială, stabilă, transportată pentru altă problemă. Ce faci mai întâi?",
           "en": "Scenario: a 71-year-old woman with known atrial fibrillation, stable, transported for another problem. What do you do first?"
         },
         "options": "action_set",
@@ -709,7 +709,7 @@
       ]
     },
     "takeaway": {
-      "ro": "PR constant peste 200 ms, cu fiecare undă P condusă: bloc atrioventricular de gradul I. Măsurați cu compasul de la începutul undei P până la începutul complexului QRS.",
+      "ro": "PR constant peste 200 ms, cu fiecare undă P condusă: bloc atrioventricular de gradul I. Măsoară cu compasul de la începutul undei P până la începutul complexului QRS.",
       "en": "A constant PR over 200 ms with every P conducted is first-degree AV block. Measure with the calipers from the start of P to the start of the QRS."
     },
     "followups": [
@@ -755,7 +755,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Scenariu: ECG de rutină pe secție. Ce faceți mai întâi?",
+          "ro": "Scenariu: ECG de rutină pe secție. Ce faci mai întâi?",
           "en": "Scenario: a routine ECG on the ward. What do you do first?"
         },
         "options": "action_set",
@@ -772,7 +772,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Ce faceți mai întâi?",
+          "ro": "Ce faci mai întâi?",
           "en": "What do you do first?"
         },
         "options": "action_set",
@@ -850,7 +850,7 @@
       ]
     },
     "takeaway": {
-      "ro": "Comparați PR-ul dinaintea pauzei cu cel de după pauză: dacă după pauză este mai scurt, este vorba de perioade Luciani-Wenckebach (bloc atrioventricular de gradul II tip Mobitz I).",
+      "ro": "Compară PR-ul dinaintea pauzei cu cel de după pauză: dacă după pauză este mai scurt, este vorba de perioade Luciani-Wenckebach (bloc atrioventricular de gradul II tip Mobitz I).",
       "en": "Compare the PR before the pause with the PR after it: if it is shorter after the pause, it is Wenckebach."
     },
     "followups": [
@@ -932,7 +932,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Ce faceți mai întâi?",
+          "ro": "Ce faci mai întâi?",
           "en": "What do you do first?"
         },
         "options": "action_set",
@@ -949,7 +949,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Ce faceți mai întâi?",
+          "ro": "Ce faci mai întâi?",
           "en": "What do you do first?"
         },
         "options": "action_set",
@@ -1112,7 +1112,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Monitorul arată ~40/min, cu QRS larg. Ce faceți mai întâi?",
+          "ro": "Monitorul arată ~40/min, cu QRS larg. Ce faci mai întâi?",
           "en": "The monitor shows about 40/min with a wide QRS. What do you do first?"
         },
         "options": "action_set",
@@ -1129,7 +1129,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Monitorul arată ~40/min, cu QRS larg. Ce faceți mai întâi?",
+          "ro": "Monitorul arată ~40/min, cu QRS larg. Ce faci mai întâi?",
           "en": "The monitor shows about 40/min with a wide QRS. What do you do first?"
         },
         "options": "action_set",
@@ -1206,7 +1206,7 @@
       ]
     },
     "takeaway": {
-      "ro": "QRS larg: priviți mai întâi V1. Un R' terminal corespunde unui bloc major de ramură dreaptă; un QS adânc, unui bloc major de ramură stângă.",
+      "ro": "QRS larg: privește mai întâi V1. Un R' terminal corespunde unui bloc major de ramură dreaptă; un QS adânc, unui bloc major de ramură stângă.",
       "en": "Wide QRS: look at V1 first. An R' at the end means right bundle branch block; a deep QS means left bundle branch block."
     },
     "followups": [
@@ -1251,7 +1251,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Scenariu: ECG preoperator; pacientul nu are acuze. Ce faceți mai întâi?",
+          "ro": "Scenariu: ECG preoperator; pacientul nu are acuze. Ce faci mai întâi?",
           "en": "Scenario: a pre-operative ECG; the patient has no complaints. What do you do first?"
         },
         "options": "action_set",
@@ -1268,7 +1268,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Scenariu: durere toracică de 30 de minute, încă prezentă. Ce faceți mai întâi?",
+          "ro": "Scenariu: durere toracică de 30 de minute, încă prezentă. Ce faci mai întâi?",
           "en": "Scenario: chest pain for 30 minutes, still present. What do you do first?"
         },
         "options": "action_set",
@@ -1459,7 +1459,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Scenariu: pacient în UPU, cu durere toracică. Ce faceți mai întâi?",
+          "ro": "Scenariu: pacient în UPU, cu durere toracică. Ce faci mai întâi?",
           "en": "Scenario: a patient in the emergency department with chest pain. What do you do first?"
         },
         "options": "action_set",
@@ -1476,7 +1476,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Scenariu: durere toracică de 40 de minute. Ce faceți mai întâi?",
+          "ro": "Scenariu: durere toracică de 40 de minute. Ce faci mai întâi?",
           "en": "Scenario: chest pain for 40 minutes. What do you do first?"
         },
         "options": "action_set",
@@ -1701,7 +1701,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Ce faceți mai întâi?",
+          "ro": "Ce faci mai întâi?",
           "en": "What do you do first?"
         },
         "options": "action_set",
@@ -1718,7 +1718,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Ce faceți mai întâi?",
+          "ro": "Ce faci mai întâi?",
           "en": "What do you do first?"
         },
         "options": "action_set",
@@ -1737,7 +1737,7 @@
         ],
         "kind": "record",
         "question": {
-          "ro": "Ce derivație suplimentară înregistrați înaintea oricărui nitrat?",
+          "ro": "Ce derivație suplimentară înregistrezi înaintea oricărui nitrat?",
           "en": "Which extra lead do you record before any nitrate?"
         },
         "options": [
@@ -1947,7 +1947,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Ce faceți mai întâi?",
+          "ro": "Ce faci mai întâi?",
           "en": "What do you do first?"
         },
         "options": "action_set",
@@ -1964,7 +1964,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Ce faceți mai întâi?",
+          "ro": "Ce faci mai întâi?",
           "en": "What do you do first?"
         },
         "options": "action_set",
@@ -2124,7 +2124,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Ce faceți mai întâi?",
+          "ro": "Ce faci mai întâi?",
           "en": "What do you do first?"
         },
         "options": "action_set",
@@ -2141,7 +2141,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Ce faceți mai întâi?",
+          "ro": "Ce faci mai întâi?",
           "en": "What do you do first?"
         },
         "options": "action_set",
@@ -2299,7 +2299,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Ce faceți mai întâi?",
+          "ro": "Ce faci mai întâi?",
           "en": "What do you do first?"
         },
         "options": "action_set",
@@ -2316,7 +2316,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Ce faceți mai întâi?",
+          "ro": "Ce faci mai întâi?",
           "en": "What do you do first?"
         },
         "options": "action_set",
@@ -2445,7 +2445,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Scenariu: pacientul are încă durere toracică. Ce faceți mai întâi?",
+          "ro": "Scenariu: pacientul are încă durere toracică. Ce faci mai întâi?",
           "en": "Scenario: the patient still has chest pain. What do you do first?"
         },
         "options": "action_set",
@@ -2515,7 +2515,7 @@
       ]
     },
     "takeaway": {
-      "ro": "Ritm rapid, neregulat, fără unde P: fibrilație atrială cu alură ventriculară rapidă. Măsurați mai multe intervale RR: toate vor fi diferite.",
+      "ro": "Ritm rapid, neregulat, fără unde P: fibrilație atrială cu alură ventriculară rapidă. Măsoară mai multe intervale RR: toate vor fi diferite.",
       "en": "Fast, irregular, no P waves: AF with a rapid response. Measure several RR intervals; they will all differ."
     },
     "followups": [
@@ -2595,7 +2595,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Scenariu: pacient internat; monitorul arată un ritm rapid și neregulat. Ce faceți mai întâi?",
+          "ro": "Scenariu: pacient internat; monitorul arată un ritm rapid și neregulat. Ce faci mai întâi?",
           "en": "Scenario: an inpatient; the monitor shows a fast, irregular rhythm. What do you do first?"
         },
         "options": "action_set",
@@ -2612,7 +2612,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Scenariu: bărbat de 39 de ani, cu palpitații, conștient, cu tensiune arterială normală. Ce faceți mai întâi?",
+          "ro": "Scenariu: bărbat de 39 de ani, cu palpitații, conștient, cu tensiune arterială normală. Ce faci mai întâi?",
           "en": "Scenario: a 39-year-old man with palpitations, alert, with a normal blood pressure. What do you do first?"
         },
         "options": "action_set",
@@ -2696,7 +2696,7 @@
       ]
     },
     "takeaway": {
-      "ro": "Unde regulate „în dinți de fierăstrău”, cu frecvența de 250–350/min, indică flutter atrial. Numărați undele F pentru fiecare complex QRS ca să precizați raportul de conducere AV.",
+      "ro": "Unde regulate „în dinți de fierăstrău”, cu frecvența de 250–350/min, indică flutter atrial. Numără undele F pentru fiecare complex QRS ca să precizezi raportul de conducere AV.",
       "en": "A regular sawtooth at 250–350/min is flutter. Count F waves per QRS to name the conduction ratio."
     },
     "followups": [
@@ -2776,7 +2776,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Scenariu: ritm nou apărut pe monitor, la un pacient de 70 de ani fără acuze. Ce faceți mai întâi?",
+          "ro": "Scenariu: ritm nou apărut pe monitor, la un pacient de 70 de ani fără acuze. Ce faci mai întâi?",
           "en": "Scenario: a new rhythm on the monitor in a 70-year-old man with no complaints. What do you do first?"
         },
         "options": "action_set",
@@ -2793,7 +2793,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Scenariu: pacient de 70 de ani, conștient, cu tensiune arterială normală. Ce faceți mai întâi?",
+          "ro": "Scenariu: pacient de 70 de ani, conștient, cu tensiune arterială normală. Ce faci mai întâi?",
           "en": "Scenario: a 70-year-old man, alert, with a normal blood pressure. What do you do first?"
         },
         "options": "action_set",
@@ -2874,7 +2874,7 @@
       ]
     },
     "takeaway": {
-      "ro": "O tahicardie regulată cu QRS îngust, a cărei frecvență nu variază deloc: căutați a doua undă F, ascunsă.",
+      "ro": "O tahicardie regulată cu QRS îngust, a cărei frecvență nu variază deloc: caută a doua undă F, ascunsă.",
       "en": "A narrow, regular tachycardia that never varies: hunt for the hidden second F wave."
     },
     "followups": [
@@ -2885,7 +2885,7 @@
         ],
         "kind": "mechanism",
         "question": {
-          "ro": "Măsurați ciclul flutterului în V1. De ce este frecvența atrială sub 300/min și ce risc apare?",
+          "ro": "Măsoară ciclul flutterului în V1. De ce este frecvența atrială sub 300/min și ce risc apare?",
           "en": "Measure the flutter cycle length in V1. Why is the atrial rate under 300/min, and what risk follows?"
         },
         "options": [
@@ -2954,7 +2954,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Monitorul arată ~128/min, fără nicio variație. Ce faceți mai întâi?",
+          "ro": "Monitorul arată ~128/min, fără nicio variație. Ce faci mai întâi?",
           "en": "The monitor shows about 128/min, with no variation at all. What do you do first?"
         },
         "options": "action_set",
@@ -2971,7 +2971,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Scenariu: bărbat de 56 de ani, sub tratament antiaritmic, conștient, cu tensiune arterială normală. Ce faceți mai întâi?",
+          "ro": "Scenariu: bărbat de 56 de ani, sub tratament antiaritmic, conștient, cu tensiune arterială normală. Ce faci mai întâi?",
           "en": "Scenario: a 56-year-old man on antiarrhythmic drugs, alert, with a normal blood pressure. What do you do first?"
         },
         "options": "action_set",
@@ -3117,7 +3117,7 @@
         ],
         "kind": "limits",
         "question": {
-          "ro": "Înaintea complexelor QRS nu se vede nicio undă P. În DII, DIII și aVF, unda T are o mică incizură la mijlocul intervalului RR. Ce puteți concluziona despre mecanism?",
+          "ro": "Înaintea complexelor QRS nu se vede nicio undă P. În DII, DIII și aVF, unda T are o mică incizură la mijlocul intervalului RR. Ce poți concluziona despre mecanism?",
           "en": "No P wave is seen before the QRS complexes. In II, III and aVF the T wave has a small notch in the middle of the RR interval. What can you conclude about the mechanism?"
         },
         "options": [
@@ -3185,7 +3185,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Monitorul arată ~156/min, ritm perfect regulat. Ce faceți mai întâi?",
+          "ro": "Monitorul arată ~156/min, ritm perfect regulat. Ce faci mai întâi?",
           "en": "The monitor shows about 156/min, perfectly regular. What do you do first?"
         },
         "options": "action_set",
@@ -3202,7 +3202,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Scenariu: pacientă de 72 de ani, cu palpitații; monitorul arată ~156/min, ritm perfect regulat. Ce faceți mai întâi?",
+          "ro": "Scenariu: pacientă de 72 de ani, cu palpitații; monitorul arată ~156/min, ritm perfect regulat. Ce faci mai întâi?",
           "en": "Scenario: a 72-year-old woman with palpitations; the monitor shows about 156/min, perfectly regular. What do you do first?"
         },
         "options": "action_set",
@@ -3294,7 +3294,7 @@
         ],
         "kind": "evidence",
         "question": {
-          "ro": "Ce vă spune pauza care urmează bătăii precoce?",
+          "ro": "Ce îți spune pauza care urmează bătăii precoce?",
           "en": "What does the pause after the early beat tell you?"
         },
         "options": [
@@ -3328,7 +3328,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Scenariu: pacientă de 78 de ani, fără acuze. Ce faceți mai întâi?",
+          "ro": "Scenariu: pacientă de 78 de ani, fără acuze. Ce faci mai întâi?",
           "en": "Scenario: a 78-year-old woman with no complaints. What do you do first?"
         },
         "options": "action_set",
@@ -3345,7 +3345,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Scenariu: pacientă de 78 de ani, stabilă, transportată pentru altă problemă. Ce faceți mai întâi?",
+          "ro": "Scenariu: pacientă de 78 de ani, stabilă, transportată pentru altă problemă. Ce faci mai întâi?",
           "en": "Scenario: a 78-year-old woman, stable, transported for another problem. What do you do first?"
         },
         "options": "action_set",
@@ -3436,7 +3436,7 @@
         ],
         "kind": "count",
         "question": {
-          "ro": "Scenariu: pulsoximetrul afișează aproximativ jumătate din frecvența pe care o numărați pe ECG. Care este explicația?",
+          "ro": "Scenariu: pulsoximetrul afișează aproximativ jumătate din frecvența pe care o numeri pe ECG. Care este explicația?",
           "en": "Scenario: the pulse oximeter shows about half the rate you count on the ECG. What is the explanation?"
         },
         "options": [
@@ -3470,7 +3470,7 @@
         ],
         "kind": "localise",
         "question": {
-          "ro": "De unde pornesc extrasistolele? Priviți V1 și derivațiile inferioare.",
+          "ro": "De unde pornesc extrasistolele? Privește V1 și derivațiile inferioare.",
           "en": "Where do the ectopic beats come from? Look at V1 and the inferior leads."
         },
         "options": [
@@ -3538,7 +3538,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Scenariu: bigeminismul a apărut nou pe monitor, la un pacient de 80 de ani. Ce faceți mai întâi?",
+          "ro": "Scenariu: bigeminismul a apărut nou pe monitor, la un pacient de 80 de ani. Ce faci mai întâi?",
           "en": "Scenario: bigeminy is new on the monitor in an 80-year-old man. What do you do first?"
         },
         "options": "action_set",
@@ -3555,7 +3555,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Scenariu: pacient de 80 de ani, conștient, cu tensiune arterială normală. Ce faceți mai întâi?",
+          "ro": "Scenariu: pacient de 80 de ani, conștient, cu tensiune arterială normală. Ce faci mai întâi?",
           "en": "Scenario: an 80-year-old man, alert, with a normal blood pressure. What do you do first?"
         },
         "options": "action_set",
@@ -3642,7 +3642,7 @@
       ]
     },
     "takeaway": {
-      "ro": "Unde haotice, fără complexe QRS: fibrilație ventriculară, ritm șocabil. Priviți întâi pacientul: dacă nu răspunde și nu respiră normal, începeți RCP și administrați șocul cât mai repede.",
+      "ro": "Unde haotice, fără complexe QRS: fibrilație ventriculară, ritm șocabil. Privește întâi pacientul: dacă nu răspunde și nu respiră normal, începe RCP și administrează șocul cât mai repede.",
       "en": "Chaotic waves with no QRS complexes: ventricular fibrillation, a shockable rhythm. Look at the patient first: if unresponsive and not breathing normally, start CPR and give the shock as soon as possible."
     },
     "tiers": {
@@ -3694,7 +3694,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Scenariu: pacientul monitorizat nu răspunde și nu respiră normal. Ce faceți mai întâi?",
+          "ro": "Scenariu: pacientul monitorizat nu răspunde și nu respiră normal. Ce faci mai întâi?",
           "en": "Scenario: the monitored patient is unresponsive and not breathing normally. What do you do first?"
         },
         "options": "action_set",
@@ -3711,7 +3711,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Scenariu: pacientul nu răspunde și nu respiră normal; electrozii de defibrilare sunt aplicați. Ce faceți mai întâi?",
+          "ro": "Scenariu: pacientul nu răspunde și nu respiră normal; electrozii de defibrilare sunt aplicați. Ce faci mai întâi?",
           "en": "Scenario: the patient is unresponsive and not breathing normally; the pads are on. What do you do first?"
         },
         "options": "action_set",
@@ -3809,7 +3809,7 @@
       ]
     },
     "takeaway": {
-      "ro": "Înainte de a numi o linie „asistolă”, măriți amplificarea și priviți o a doua derivație, în aceeași pauză scurtă. Ondulațiile care continuă sunt FV fină, ritm șocabil; în caz de îndoială, ERC 2025 recomandă șocul.",
+      "ro": "Înainte de a numi o linie „asistolă”, mărește amplificarea și privește o a doua derivație, în aceeași pauză scurtă. Ondulațiile care continuă sunt FV fină, ritm șocabil; în caz de îndoială, ERC 2025 recomandă șocul.",
       "en": "Before you call a line asystole, increase the gain and look at a second lead within the same brief pause. Undulations that keep going are fine VF, a shockable rhythm; if in doubt, ERC 2025 recommends a shock."
     },
     "tiers": {
@@ -3861,7 +3861,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Scenariu: pacientul monitorizat nu răspunde și nu respiră normal. Ce faceți mai întâi?",
+          "ro": "Scenariu: pacientul monitorizat nu răspunde și nu respiră normal. Ce faci mai întâi?",
           "en": "Scenario: the monitored patient is unresponsive and not breathing normally. What do you do first?"
         },
         "options": "action_set",
@@ -3878,7 +3878,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Scenariu: pacientul monitorizat nu răspunde și nu respiră normal. Ce faceți mai întâi?",
+          "ro": "Scenariu: pacientul monitorizat nu răspunde și nu respiră normal. Ce faci mai întâi?",
           "en": "Scenario: the monitored patient is unresponsive and not breathing normally. What do you do first?"
         },
         "options": "action_set",
@@ -3896,7 +3896,7 @@
         ],
         "kind": "record",
         "question": {
-          "ro": "Ce verificați, în aceeași pauză scurtă, înainte de a numi această linie asistolă?",
+          "ro": "Ce verifici, în aceeași pauză scurtă, înainte de a numi această linie asistolă?",
           "en": "What do you check, within the same brief pause, before you call this line asystole?"
         },
         "options": [
@@ -3977,7 +3977,7 @@
       ]
     },
     "takeaway": {
-      "ro": "Tahicardie regulată cu QRS larg: TV până la proba contrarie. Verificați pulsul: fără puls, ritmul este șocabil, ca FV; cu puls, conduita depinde de semnele de instabilitate.",
+      "ro": "Tahicardie regulată cu QRS larg: TV până la proba contrarie. Verifică pulsul: fără puls, ritmul este șocabil, ca FV; cu puls, conduita depinde de semnele de instabilitate.",
       "en": "A regular wide-QRS tachycardia is VT until proven otherwise. Check the pulse: without one, the rhythm is shockable, like VF; with one, management depends on adverse features."
     },
     "tiers": {
@@ -3999,7 +3999,7 @@
         ],
         "kind": "count",
         "question": {
-          "ro": "Numărați complexele de pe toată banda de 10 s. Ce frecvență are tahicardia?",
+          "ro": "Numără complexele de pe toată banda de 10 s. Ce frecvență are tahicardia?",
           "en": "Count the complexes across the whole 10 s strip. What is the rate of the tachycardia?"
         },
         "options": [
@@ -4070,7 +4070,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Scenariu: pacientul este conștient și are puls. Ce faceți mai întâi?",
+          "ro": "Scenariu: pacientul este conștient și are puls. Ce faci mai întâi?",
           "en": "Scenario: the patient is conscious and has a pulse. What do you do first?"
         },
         "options": "action_set",
@@ -4087,7 +4087,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Scenariu: pacientul este conștient și are puls. Ce faceți mai întâi?",
+          "ro": "Scenariu: pacientul este conștient și are puls. Ce faci mai întâi?",
           "en": "Scenario: the patient is conscious and has a pulse. What do you do first?"
         },
         "options": "action_set",
@@ -4237,7 +4237,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Scenariu: pacientul nu răspunde, nu respiră normal și nu are puls. Ce faceți mai întâi?",
+          "ro": "Scenariu: pacientul nu răspunde, nu respiră normal și nu are puls. Ce faci mai întâi?",
           "en": "Scenario: the patient is unresponsive, not breathing normally and has no pulse. What do you do first?"
         },
         "options": "action_set",
@@ -4254,7 +4254,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Scenariu: pacientul nu răspunde, nu respiră normal și nu are puls. Ce faceți mai întâi?",
+          "ro": "Scenariu: pacientul nu răspunde, nu respiră normal și nu are puls. Ce faci mai întâi?",
           "en": "Scenario: the patient is unresponsive, not breathing normally and has no pulse. What do you do first?"
         },
         "options": "action_set",
@@ -4386,7 +4386,7 @@
       ]
     },
     "takeaway": {
-      "ro": "Fără complexe QRS și fără ondulații care să se repete: asistolă, ritm neșocabil. Confirmați în câteva secunde (electrozi, amplificare, a doua derivație) și reluați imediat compresiile.",
+      "ro": "Fără complexe QRS și fără ondulații care să se repete: asistolă, ritm neșocabil. Confirmă în câteva secunde (electrozi, amplificare, a doua derivație) și reia imediat compresiile.",
       "en": "No QRS complexes and no repeating undulations: asystole, a non-shockable rhythm. Confirm within seconds (electrodes, gain, a second lead) and resume compressions at once."
     },
     "tiers": {
@@ -4438,7 +4438,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Scenariu: pacientul monitorizat nu răspunde și nu respiră normal. Ce faceți mai întâi?",
+          "ro": "Scenariu: pacientul monitorizat nu răspunde și nu respiră normal. Ce faci mai întâi?",
           "en": "Scenario: the monitored patient is unresponsive and not breathing normally. What do you do first?"
         },
         "options": "action_set",
@@ -4455,7 +4455,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Scenariu: pacientul monitorizat nu răspunde și nu respiră normal. Ce faceți mai întâi?",
+          "ro": "Scenariu: pacientul monitorizat nu răspunde și nu respiră normal. Ce faci mai întâi?",
           "en": "Scenario: the monitored patient is unresponsive and not breathing normally. What do you do first?"
         },
         "options": "action_set",
@@ -4473,7 +4473,7 @@
         ],
         "kind": "record",
         "question": {
-          "ro": "În pauza pentru analiza ritmului, ce verificați rapid înainte de a confirma asistola?",
+          "ro": "În pauza pentru analiza ritmului, ce verifici rapid înainte de a confirma asistola?",
           "en": "During the rhythm check, what do you check quickly before confirming asystole?"
         },
         "options": [
@@ -4569,7 +4569,7 @@
       "en": "Invented scenario on a real recording: a patient found unresponsive, not breathing normally, with no palpable carotid pulse. The monitor shows this rhythm."
     },
     "question": {
-      "ro": "Ce diagnostic stabiliți?",
+      "ro": "Ce diagnostic stabilești?",
       "en": "What is your diagnosis?"
     },
     "rhythm": {
@@ -4643,7 +4643,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Ce faceți mai întâi?",
+          "ro": "Ce faci mai întâi?",
           "en": "What do you do first?"
         },
         "options": "action_set",
@@ -4660,7 +4660,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Ce faceți mai întâi?",
+          "ro": "Ce faci mai întâi?",
           "en": "What do you do first?"
         },
         "options": "action_set",
@@ -4753,7 +4753,7 @@
       ]
     },
     "takeaway": {
-      "ro": "Criteriile de voltaj, singure, sugerează hipertrofie ventriculară stângă; confirmarea se face ecocardiografic. Treceți etalonarea la 5 mm/mV când complexele se suprapun.",
+      "ro": "Criteriile de voltaj, singure, sugerează hipertrofie ventriculară stângă; confirmarea se face ecocardiografic. Trece etalonarea la 5 mm/mV când complexele se suprapun.",
       "en": "Voltage alone suggests LVH; echo confirms it. Switch the gain to 5 mm/mV when complexes overlap."
     },
     "followups": [
@@ -4843,7 +4843,7 @@
       ]
     },
     "takeaway": {
-      "ro": "Unde Q cu PR scurt: căutați unda delta înainte de a scrie „infarct inferior”.",
+      "ro": "Unde Q cu PR scurt: caută unda delta înainte de a scrie „infarct inferior”.",
       "en": "Q waves with a short PR: look for a delta wave before you write 'inferior infarct'."
     },
     "followups": [
@@ -4855,7 +4855,7 @@
         ],
         "kind": "evidence",
         "question": {
-          "ro": "Înainte de a scrie „infarct inferior vechi”, ce verificați?",
+          "ro": "Înainte de a scrie „infarct inferior vechi”, ce verifici?",
           "en": "Before you write 'old inferior infarct', what do you check?"
         },
         "options": [
@@ -4923,7 +4923,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Scenariu: pacientă fără durere toracică; undele Q din DIII și aVF vă atrag atenția. Ce faceți mai întâi?",
+          "ro": "Scenariu: pacientă fără durere toracică; undele Q din DIII și aVF îți atrag atenția. Ce faci mai întâi?",
           "en": "Scenario: a patient with no chest pain; the Q waves in III and aVF catch your eye. What do you do first?"
         },
         "options": "action_set",
@@ -5068,7 +5068,7 @@
         ],
         "kind": "decision",
         "question": {
-          "ro": "Scenariu: pacientul face o fibrilație atrială preexcitată și este stabil hemodinamic. Ce evitați și ce marchează o cale cu risc înalt?",
+          "ro": "Scenariu: pacientul face o fibrilație atrială preexcitată și este stabil hemodinamic. Ce eviți și ce marchează o cale cu risc înalt?",
           "en": "Scenario: the patient develops pre-excited atrial fibrillation and is haemodynamically stable. What do you avoid, and what marks a high-risk pathway?"
         },
         "options": [
@@ -5235,7 +5235,7 @@
         ],
         "kind": "decision",
         "question": {
-          "ro": "Scenariu: mai târziu, pacienta face stop cardiac prin fibrilație ventriculară. Unde aplicați electrozii de defibrilare?",
+          "ro": "Scenariu: mai târziu, pacienta face stop cardiac prin fibrilație ventriculară. Unde aplici electrozii de defibrilare?",
           "en": "Scenario: later, this patient arrests in ventricular fibrillation. Where do you place the defibrillation pads?"
         },
         "options": [
@@ -5269,7 +5269,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Scenariu: pacientă internată, fără simptome; monitorul arată 70/min. Ce faceți mai întâi?",
+          "ro": "Scenariu: pacientă internată, fără simptome; monitorul arată 70/min. Ce faci mai întâi?",
           "en": "Scenario: an inpatient with no symptoms; the monitor shows 70/min. What do you do first?"
         },
         "options": "action_set",
@@ -5286,7 +5286,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Scenariu: pacientă cu durere toracică de 40 de minute. Ce faceți mai întâi?",
+          "ro": "Scenariu: pacientă cu durere toracică de 40 de minute. Ce faci mai întâi?",
           "en": "Scenario: a patient with chest pain for 40 minutes. What do you do first?"
         },
         "options": "action_set",
@@ -5403,7 +5403,7 @@
       ]
     },
     "takeaway": {
-      "ro": "Absența spike-urilor în timpul bătăilor proprii mai rapide reprezintă inhibiție normală. Verificați captura după fiecare spike și sincronizarea după fiecare bătaie proprie.",
+      "ro": "Absența spike-urilor în timpul bătăilor proprii mai rapide reprezintă inhibiție normală. Verifică captura după fiecare spike și sincronizarea după fiecare bătaie proprie.",
       "en": "Missing spikes during faster native beats is normal inhibition. Check capture after every spike and timing after every native beat."
     },
     "strips": [
@@ -5442,7 +5442,7 @@
         ],
         "answer": 1,
         "explain": {
-          "ro": "Bătăile proprii de la mijlocul traseului au și ele aspect de bloc major de ramură stângă, cu complex QS, supradenivelare ST și unde T opuse în V1–V3. Le deosebesc lipsa spike-ului și unda P care le precedă, condusă cu PR alungit. Comparați întotdeauna forma complexelor cu și fără spike.",
+          "ro": "Bătăile proprii de la mijlocul traseului au și ele aspect de bloc major de ramură stângă, cu complex QS, supradenivelare ST și unde T opuse în V1–V3. Le deosebesc lipsa spike-ului și unda P care le precedă, condusă cu PR alungit. Compară întotdeauna forma complexelor cu și fără spike.",
           "en": "The native beats in the middle of the strip also look like left bundle branch block, QS in V1–V3 with ST elevation and opposite T waves. What sets them apart is the missing spike and the P wave before them, conducted with a long PR. Always compare the complexes with and without a spike."
         }
       }
@@ -5554,7 +5554,7 @@
         ],
         "kind": "limits",
         "question": {
-          "ro": "Ce nu puteți confirma cu certitudine pe acest traseu?",
+          "ro": "Ce nu poți confirma cu certitudine pe acest traseu?",
           "en": "What can you not confirm with certainty on this tracing?"
         },
         "options": [
@@ -5653,7 +5653,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Scenariu: pacientă internată, fără simptome. Ce faceți mai întâi?",
+          "ro": "Scenariu: pacientă internată, fără simptome. Ce faci mai întâi?",
           "en": "Scenario: an inpatient with no symptoms. What do you do first?"
         },
         "options": "action_set",
@@ -5859,7 +5859,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Scenariu: pacientă internată, cu durere toracică apărută de 20 de minute. Ce faceți mai întâi?",
+          "ro": "Scenariu: pacientă internată, cu durere toracică apărută de 20 de minute. Ce faci mai întâi?",
           "en": "Scenario: an inpatient with chest pain that began 20 minutes ago. What do you do first?"
         },
         "options": "action_set",
@@ -5876,7 +5876,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Scenariu: pacientă conștientă, fără simptome cardiace, cu tensiune arterială normală; monitorul arată 60/min. Ce faceți mai întâi?",
+          "ro": "Scenariu: pacientă conștientă, fără simptome cardiace, cu tensiune arterială normală; monitorul arată 60/min. Ce faci mai întâi?",
           "en": "Scenario: an alert patient with no cardiac symptoms and a normal blood pressure; the monitor shows 60/min. What do you do first?"
         },
         "options": "action_set",
@@ -5975,7 +5975,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Scenariu: pacient cu fibrilație atrială cunoscută; monitorul semnalează două bătăi largi. Ce faceți mai întâi?",
+          "ro": "Scenariu: pacient cu fibrilație atrială cunoscută; monitorul semnalează două bătăi largi. Ce faci mai întâi?",
           "en": "Scenario: a patient with known atrial fibrillation; the monitor flags two wide beats. What do you do first?"
         },
         "options": "action_set",
@@ -6308,7 +6308,7 @@
         ],
         "kind": "limits",
         "question": {
-          "ro": "Puteți stabili pe acest traseu dacă pacienta este dependentă de stimulator?",
+          "ro": "Poți stabili pe acest traseu dacă pacienta este dependentă de stimulator?",
           "en": "Can you tell from this tracing whether the patient is pacemaker-dependent?"
         },
         "options": [
@@ -6342,7 +6342,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Scenariu: pacientă internată, fără simptome. Ce faceți mai întâi?",
+          "ro": "Scenariu: pacientă internată, fără simptome. Ce faci mai întâi?",
           "en": "Scenario: an inpatient with no symptoms. What do you do first?"
         },
         "options": "action_set",
@@ -6359,7 +6359,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Scenariu: pacientă stabilă; un coleg vede unde P neurmate de QRS și propune stimularea transcutanată. Ce faceți mai întâi?",
+          "ro": "Scenariu: pacientă stabilă; un coleg vede unde P neurmate de QRS și propune stimularea transcutanată. Ce faci mai întâi?",
           "en": "Scenario: a stable patient; a colleague sees P waves without a QRS and suggests transcutaneous pacing. What do you do first?"
         },
         "options": "action_set",
@@ -6494,7 +6494,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Scenariu: pacientă internată, fără simptome; unele bătăi nu au spike. Ce faceți mai întâi?",
+          "ro": "Scenariu: pacientă internată, fără simptome; unele bătăi nu au spike. Ce faci mai întâi?",
           "en": "Scenario: an inpatient with no symptoms; some beats have no spike. What do you do first?"
         },
         "options": "action_set",
@@ -6511,7 +6511,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Scenariu: pacientă conștientă, cu tensiune arterială normală; unele bătăi nu au spike. Ce faceți mai întâi?",
+          "ro": "Scenariu: pacientă conștientă, cu tensiune arterială normală; unele bătăi nu au spike. Ce faci mai întâi?",
           "en": "Scenario: an alert patient with a normal blood pressure; some beats have no spike. What do you do first?"
         },
         "options": "action_set",
@@ -6631,7 +6631,7 @@
       ]
     },
     "takeaway": {
-      "ro": "O undă P proprie, urmată la un interval scurt și constant de un spike ventricular, fără spike atrial, indică stimulare ventriculară sincronizată cu undele P (DDD/VDD). Căutați unda P mică dinaintea fiecărui spike.",
+      "ro": "O undă P proprie, urmată la un interval scurt și constant de un spike ventricular, fără spike atrial, indică stimulare ventriculară sincronizată cu undele P (DDD/VDD). Caută unda P mică dinaintea fiecărui spike.",
       "en": "A native P wave followed at a short, fixed interval by a ventricular spike, with no atrial spike, points to atrial-sensed ventricular pacing (DDD/VDD). Look for the small P wave before each spike."
     },
     "followups": [
@@ -6728,7 +6728,7 @@
       ]
     },
     "takeaway": {
-      "ro": "Spike, apoi undă P, apoi QRS îngust propriu, fără spike ventricular: stimulare atrială cu conducere AV proprie (AAI). Căutați unda P mică de după spike, în DII și aVF.",
+      "ro": "Spike, apoi undă P, apoi QRS îngust propriu, fără spike ventricular: stimulare atrială cu conducere AV proprie (AAI). Caută unda P mică de după spike, în DII și aVF.",
       "en": "Spike, then P wave, then the patient's own narrow QRS, with no ventricular spike: atrial pacing with the patient's own AV conduction (AAI). Look for the small P wave after the spike in II and aVF."
     },
     "followups": [
@@ -7048,7 +7048,7 @@
       ]
     },
     "takeaway": {
-      "ro": "QRS stimulat negativ în V1 și în DII, DIII și aVF (aspect de bloc major de ramură stângă cu ax orientat superior): stimulare din apexul ventriculului drept. Priviți întâi V1, apoi derivațiile inferioare.",
+      "ro": "QRS stimulat negativ în V1 și în DII, DIII și aVF (aspect de bloc major de ramură stângă cu ax orientat superior): stimulare din apexul ventriculului drept. Privește întâi V1, apoi derivațiile inferioare.",
       "en": "A paced QRS that is negative in V1 and in II, III and aVF (left bundle branch block shape with a superior axis) is right ventricular apical pacing. Look at V1 first, then the inferior leads."
     },
     "followups": [
@@ -7158,7 +7158,7 @@
       ]
     },
     "takeaway": {
-      "ro": "DI negativ și undă R dominantă în V1, cu un QRS stimulat mai îngust decât la stimularea din ventriculul drept: stimulare biventriculară. Când spike-urile sunt greu de văzut în derivațiile periferice, căutați-le în derivațiile precordiale.",
+      "ro": "DI negativ și undă R dominantă în V1, cu un QRS stimulat mai îngust decât la stimularea din ventriculul drept: stimulare biventriculară. Când spike-urile sunt greu de văzut în derivațiile periferice, caută-le în derivațiile precordiale.",
       "en": "A negative lead I and a dominant R wave in V1, with a paced QRS narrower than in right ventricular pacing, is biventricular pacing. When the spikes are hard to see in the limb leads, look for them in the chest leads."
     },
     "followups": [
@@ -7714,7 +7714,7 @@
       ]
     },
     "takeaway": {
-      "ro": "DI negativ, deviație axială dreaptă și o undă R mică în V1, fără aspect „pur” de bloc major de ramură dreaptă: aspect sugestiv pentru stimulare biventriculară (CRT). Verificați V1 și V2: o undă R largă și dominantă în ambele ar sugera stimulare exclusiv din ventriculul stâng.",
+      "ro": "DI negativ, deviație axială dreaptă și o undă R mică în V1, fără aspect „pur” de bloc major de ramură dreaptă: aspect sugestiv pentru stimulare biventriculară (CRT). Verifică V1 și V2: o undă R largă și dominantă în ambele ar sugera stimulare exclusiv din ventriculul stâng.",
       "en": "A negative lead I, right axis deviation and a small R in V1 without a 'pure' right bundle branch block shape suggest biventricular pacing (CRT). Check V1 and V2: a broad, dominant R in both would suggest left ventricular-only pacing."
     },
     "tier_question": {
@@ -7866,7 +7866,7 @@
       ]
     },
     "takeaway": {
-      "ro": "Undă R dominantă în V1, DI negativ și ax în cadranul superior drept, cu un QRS relativ îngust: aspect tipic de stimulare biventriculară; la stimularea exclusiv din ventriculul stâng, QRS este de obicei mai larg. Nu confundați axul orientat superior cu stimularea din apexul ventriculului drept: verificați DI și V1.",
+      "ro": "Undă R dominantă în V1, DI negativ și ax în cadranul superior drept, cu un QRS relativ îngust: aspect tipic de stimulare biventriculară; la stimularea exclusiv din ventriculul stâng, QRS este de obicei mai larg. Nu confunda axul orientat superior cu stimularea din apexul ventriculului drept: verifică DI și V1.",
       "en": "A dominant R in V1, a negative lead I and a right upper quadrant axis, with a relatively narrow QRS, are the typical biventricular pattern; left ventricular-only pacing usually gives a wider QRS. Do not mistake the superior axis for right ventricular apical pacing: check I and V1."
     },
     "tier_question": {
@@ -8471,7 +8471,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Pe acest traseu alternează bătăi stimulate, proprii și de formă intermediară. Ce faceți mai întâi?",
+          "ro": "Pe acest traseu alternează bătăi stimulate, proprii și de formă intermediară. Ce faci mai întâi?",
           "en": "On this tracing, paced, native and in-between beats alternate. What do you do first?"
         },
         "options": "action_set",
@@ -8518,7 +8518,7 @@
       "V1"
     ],
     "question": {
-      "ro": "Comparați ultima bătaie (~9,25 s) cu celelalte. Ce efect au spike-urile ventriculare?",
+      "ro": "Compară ultima bătaie (~9,25 s) cu celelalte. Ce efect au spike-urile ventriculare?",
       "en": "Compare the last beat, at about 9.25 s, with the others. What effect do the ventricular spikes have?"
     },
     "rhythm": {
@@ -8546,7 +8546,7 @@
       ]
     },
     "takeaway": {
-      "ro": "Un spike care cade chiar pe debutul unui QRS îngust, identic cu QRS propriu, indică pseudofuziune: ventriculii sunt activați prin conducerea proprie, iar spike-ul nu are efect. Comparați QRS cu cel al unei bătăi fără spike înainte de a suspecta stimularea sistemului de conducere sau pierderea capturii.",
+      "ro": "Un spike care cade chiar pe debutul unui QRS îngust, identic cu QRS propriu, indică pseudofuziune: ventriculii sunt activați prin conducerea proprie, iar spike-ul nu are efect. Compară QRS cu cel al unei bătăi fără spike înainte de a suspecta stimularea sistemului de conducere sau pierderea capturii.",
       "en": "A spike that falls right on the onset of a narrow QRS identical to the native QRS indicates pseudofusion: the ventricles are activated by the patient's own conduction and the spike has no effect. Compare the QRS with a beat without a spike before suspecting conduction system pacing or loss of capture."
     },
     "followups": [
@@ -8650,7 +8650,7 @@
       ]
     },
     "takeaway": {
-      "ro": "Spike-urile mari pot fi numărate de aparat ca bătăi separate; verificați frecvența numărând complexele QRS. Un spike urmat, la interval constant, de un QRS îngust propriu indică stimulare atrială cu conducere AV proprie.",
+      "ro": "Spike-urile mari pot fi numărate de aparat ca bătăi separate; verifică frecvența numărând complexele QRS. Un spike urmat, la interval constant, de un QRS îngust propriu indică stimulare atrială cu conducere AV proprie.",
       "en": "Large spikes can be counted by the machine as extra beats; check the rate by counting the QRS complexes. A spike followed at a constant interval by a narrow native QRS points to atrial pacing with the patient's own AV conduction."
     },
     "followups": [
@@ -8699,7 +8699,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Aparatul ECG afișează 142/min și tahicardie sinusală. Ce faceți mai întâi?",
+          "ro": "Aparatul ECG afișează 142/min și tahicardie sinusală. Ce faci mai întâi?",
           "en": "The ECG machine shows 142/min and sinus tachycardia. What do you do first?"
         },
         "options": "action_set",
@@ -8716,7 +8716,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Aparatul afișează 142/min. Ce faceți mai întâi?",
+          "ro": "Aparatul afișează 142/min. Ce faci mai întâi?",
           "en": "The machine shows 142/min. What do you do first?"
         },
         "options": "action_set",
@@ -8782,7 +8782,7 @@
       "V1"
     ],
     "question": {
-      "ro": "Urmăriți spike-urile mici pe banda de ritm DII. Ce problemă evidențiază acest traseu?",
+      "ro": "Urmărește spike-urile mici pe banda de ritm DII. Ce problemă evidențiază acest traseu?",
       "en": "Follow the small spikes along the II rhythm strip. What problem does this tracing show?"
     },
     "rhythm": {
@@ -8810,7 +8810,7 @@
       ]
     },
     "takeaway": {
-      "ro": "Un spike care cade în afara perioadei refractare (după unda T) și nu este urmat de QRS indică pierderea capturii. Verificați apoi dacă spike-urile țin cont de bătăile proprii: dacă nu, este afectată și detecția, cu excepția cazului în care stimulatorul funcționează asincron (magnet, mod VOO).",
+      "ro": "Un spike care cade în afara perioadei refractare (după unda T) și nu este urmat de QRS indică pierderea capturii. Verifică apoi dacă spike-urile țin cont de bătăile proprii: dacă nu, este afectată și detecția, cu excepția cazului în care stimulatorul funcționează asincron (magnet, mod VOO).",
       "en": "A spike outside the refractory period (after the T wave) with no QRS after it shows loss of capture. Then check whether the spikes respect the patient's own beats: if they do not, sensing is failing too, unless the device is pacing asynchronously (a magnet, VOO mode)."
     },
     "followups": [
@@ -8821,7 +8821,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Pe banda de ritm DII apar spike-uri mici, unele fără QRS după ele. Ce faceți mai întâi?",
+          "ro": "Pe banda de ritm DII apar spike-uri mici, unele fără QRS după ele. Ce faci mai întâi?",
           "en": "Small spikes appear on the lead II rhythm strip, some with no QRS after them. What do you do first?"
         },
         "options": "action_set",
@@ -8838,7 +8838,7 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Pe banda de ritm DII apar spike-uri mici, unele fără QRS după ele. Ce faceți mai întâi?",
+          "ro": "Pe banda de ritm DII apar spike-uri mici, unele fără QRS după ele. Ce faci mai întâi?",
           "en": "Small spikes appear on the lead II rhythm strip, some with no QRS after them. What do you do first?"
         },
         "options": "action_set",
@@ -8991,7 +8991,7 @@
       ]
     },
     "takeaway": {
-      "ro": "Verificați ce face stimulatorul după fiecare bătaie proprie: dacă ciclul pornește de la ea, detecția este normală; un spike care apare la un interval de stimulare după spike-ul anterior, ca și cum bătaia proprie nu ar exista, indică subdetecție. Un spike care cade în perioada refractară nu poate captura și nu indică pierderea capturii.",
+      "ro": "Verifică ce face stimulatorul după fiecare bătaie proprie: dacă ciclul pornește de la ea, detecția este normală; un spike care apare la un interval de stimulare după spike-ul anterior, ca și cum bătaia proprie nu ar exista, indică subdetecție. Un spike care cade în perioada refractară nu poate captura și nu indică pierderea capturii.",
       "en": "Check what the device does after every native beat: if its timing restarts from that beat, sensing is normal; a spike that comes one pacing interval after the previous spike, as if the native beat were not there, indicates undersensing. A spike that falls in the refractory period cannot capture and does not indicate loss of capture."
     },
     "followups": [

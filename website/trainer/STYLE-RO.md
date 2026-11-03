@@ -10,6 +10,10 @@
 
 ## 1. Register and address
 
+> **Changed 2026-11-03 by Alex: address the reader with „tu” (second person singular), not „dumneavoastră”.**
+> Everywhere the text speaks to the reader (interface, prompts, take-aways, pitfalls, site, pocket guide): „Caută…”, „Verifică…”, „Ce faci mai întâi?”, „Progresul tău”. Impersonal clinical prose („Se observă…”, „Se anunță medicul”) stays impersonal. Where the rules below say „polite plural”, read „tu”. The research notes below are kept for the record.
+
+
 - **Explanation text** (findings, criteria) is impersonal clinical prose:
   - „Se observă…”, „Se măsoară intervalul PR…”, „Traseul evidențiază…”, or plain noun phrases.
   - Teaching asides may use the first person plural, as Romanian university courses do: „Stabilim mai întâi ritmul, apoi frecvența…” [1–4].

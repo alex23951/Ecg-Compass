@@ -11,9 +11,9 @@
     },
     "goals": {
       "ro": [
-        "Veți citi un ECG în 12 derivații mereu în aceeași ordine, de la etalonare la concluzie.",
-        "Veți măsura frecvența, intervalul PR, durata QRS și QT/QTc și veți determina axul QRS.",
-        "Veți recunoaște diagnosticele de bază și veți ști care ECG-uri sunt urgențe."
+        "Vei citi un ECG în 12 derivații mereu în aceeași ordine, de la etalonare la concluzie.",
+        "Vei măsura frecvența, intervalul PR, durata QRS și QT/QTc și vei determina axul QRS.",
+        "Vei recunoaște diagnosticele de bază și vei ști care ECG-uri sunt urgențe."
       ],
       "en": [
         "Read a 12-lead in the same order every time, from calibration to conclusion.",
@@ -43,9 +43,9 @@
     },
     "goals": {
       "ro": [
-        "Veți înregistra corect ECG-ul în 12 derivații, cu V4R și V7–V9 când este nevoie.",
-        "Veți recunoaște ritmurile de stop cardiac și ECG-urile care nu pot aștepta și veți ști pe cine să anunțați.",
-        "Veți verifica frecvența și QTc pe traseu și veți deosebi un artefact de o aritmie."
+        "Vei înregistra corect ECG-ul în 12 derivații, cu V4R și V7–V9 când este nevoie.",
+        "Vei recunoaște ritmurile de stop cardiac și ECG-urile care nu pot aștepta și vei ști pe cine să anunți.",
+        "Vei verifica frecvența și QTc pe traseu și vei deosebi un artefact de o aritmie."
       ],
       "en": [
         "Record a correct 12-lead, with V4R and V7–V9 when they are needed.",
@@ -95,9 +95,9 @@
     },
     "goals": {
       "ro": [
-        "Veți spune dacă un ritm este șocabil sau nu, în pauza scurtă pentru analiza ritmului.",
-        "Veți recunoaște un STEMI și echivalentele lui, veți transmite ECG-ul și veți anunța spitalul cu laborator de cateterism.",
-        "Veți evalua bradicardiile și tahicardiile după semnele de instabilitate și veți aplica la timp electrozii autoadezivi."
+        "Vei spune dacă un ritm este șocabil sau nu, în pauza scurtă pentru analiza ritmului.",
+        "Vei recunoaște un STEMI și echivalentele lui, vei transmite ECG-ul și vei anunța spitalul cu laborator de cateterism.",
+        "Vei evalua bradicardiile și tahicardiile după semnele de instabilitate și vei aplica la timp electrozii autoadezivi."
       ],
       "en": [
         "Call a rhythm shockable or non-shockable within the brief rhythm check.",
@@ -146,9 +146,9 @@
     },
     "goals": {
       "ro": [
-        "Veți redacta un raport ECG complet, cu măsurători, fără ajutor.",
-        "Veți localiza artera responsabilă de infarct, nivelul unui bloc AV și o cale accesorie.",
-        "Veți recunoaște modurile de stimulare și veți ști care este pasul următor conform ghidurilor ESC și ERC."
+        "Vei redacta un raport ECG complet, cu măsurători, fără ajutor.",
+        "Vei localiza artera responsabilă de infarct, nivelul unui bloc AV și o cale accesorie.",
+        "Vei recunoaște modurile de stimulare și vei ști care este pasul următor conform ghidurilor ESC și ERC."
       ],
       "en": [
         "Write a complete report with measurements, on your own.",
@@ -178,9 +178,9 @@
     },
     "goals": {
       "ro": [
-        "Veți interpreta rapid ECG-uri din toate modulele, fără indicii, cu siguranța necesară unei decizii.",
-        "Veți recunoaște echivalentele de STEMI și aspectele care mimează un STEMI.",
-        "Veți deosebi o disfuncție a stimulatorului de funcționarea normală și veți decide trimiterea pentru stimulare, CRT sau ablație."
+        "Vei interpreta rapid ECG-uri din toate modulele, fără indicii, cu siguranța necesară unei decizii.",
+        "Vei recunoaște echivalentele de STEMI și aspectele care mimează un STEMI.",
+        "Vei deosebi o disfuncție a stimulatorului de funcționarea normală și vei decide trimiterea pentru stimulare, CRT sau ablație."
       ],
       "en": [
         "Read ECGs from every module fast, without hints, well enough to decide.",
@@ -237,9 +237,9 @@
     },
     "goals": {
       "ro": [
-        "Veți măsura pe traseu ciclurile stimulatorului: intervalul de stimulare, intervalul de scăpare, intervalul AV programat.",
-        "Veți deduce locul de stimulare și captura biventriculară din ECG și veți ști ce poate arăta doar interogarea.",
-        "Veți alege reprogramarea potrivită și veți localiza căile accesorii și originea extrasistolelor."
+        "Vei măsura pe traseu ciclurile stimulatorului: intervalul de stimulare, intervalul de scăpare, intervalul AV programat.",
+        "Vei deduce locul de stimulare și captura biventriculară din ECG și vei ști ce poate arăta doar interogarea.",
+        "Vei alege reprogramarea potrivită și vei localiza căile accesorii și originea extrasistolelor."
       ],
       "en": [
         "Measure the pacing cycles on the tracing: pacing interval, escape interval, programmed AV delay.",

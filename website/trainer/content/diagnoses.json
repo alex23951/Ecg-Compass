@@ -24,7 +24,7 @@
     },
     "pitfalls": {
       "ro": [
-        "Declarați traseul normal numai după o interpretare completă, nu după o privire rapidă: verificați fiecare interval și fiecare derivație.",
+        "Declară traseul normal numai după o interpretare completă, nu după o privire rapidă: verifică fiecare interval și fiecare derivație.",
         "O undă T negativă izolată în DIII sau în V1 poate fi normală."
       ],
       "en": [
@@ -63,8 +63,8 @@
     "pitfalls": {
       "ro": [
         "Frecventă și fiziologică la sportivi, la tineri și în timpul somnului.",
-        "Căutați cauza: betablocante și alte medicamente, hipotiroidie, disfuncție de nod sinusal.",
-        "Dacă unele unde P nu sunt urmate de complex QRS, gândiți-vă la un bloc atrioventricular sau la extrasistole atriale blocate, nu la bradicardie sinusală."
+        "Caută cauza: betablocante și alte medicamente, hipotiroidie, disfuncție de nod sinusal.",
+        "Dacă unele unde P nu sunt urmate de complex QRS, gândește-te la un bloc atrioventricular sau la extrasistole atriale blocate, nu la bradicardie sinusală."
       ],
       "en": [
         "Common and normal in athletes, young people and during sleep.",
@@ -105,7 +105,7 @@
     "pitfalls": {
       "ro": [
         "La frecvențe mari, unda P se poate suprapune peste unda T precedentă.",
-        "La o frecvență de ~150/min, gândiți-vă la un flutter atrial cu conducere AV 2:1: căutați undele F în DII, DIII, aVF și V1.",
+        "La o frecvență de ~150/min, gândește-te la un flutter atrial cu conducere AV 2:1: caută undele F în DII, DIII, aVF și V1.",
         "Tratați cauza: febră, durere, hipovolemie, anemie, embolie pulmonară, sepsis, tireotoxicoză."
       ],
       "en": [
@@ -186,7 +186,7 @@
     },
     "pitfalls": {
       "ro": [
-        "La frecvențe mari, neregularitatea se observă greu: măsurați mai multe intervale RR cu compasul.",
+        "La frecvențe mari, neregularitatea se observă greu: măsoară mai multe intervale RR cu compasul.",
         "Undele f grosiere pot mima un flutter atrial; în flutter, activitatea atrială este regulată, cu frecvența de ~300/min.",
         "Orice fibrilație atrială impune evaluarea riscului tromboembolic (scorul CHA₂DS₂-VA)."
       ],
@@ -270,7 +270,7 @@
     },
     "pitfalls": {
       "ro": [
-        "Excludeți flutterul atrial cu conducere AV 2:1 și tahicardia sinusală înainte de a pune diagnosticul de tahicardie paroxistică supraventriculară (TPSV).",
+        "Exclude flutterul atrial cu conducere AV 2:1 și tahicardia sinusală înainte de a pune diagnosticul de tahicardie paroxistică supraventriculară (TPSV).",
         "Subdenivelarea ST în timpul tahicardiei este frecventă și nu indică boală coronariană.",
         "O tahicardie cu complexe QRS largi se tratează ca tahicardie ventriculară până la excluderea acestui diagnostic."
       ],
@@ -312,7 +312,7 @@
     },
     "pitfalls": {
       "ro": [
-        "O extrasistolă atrială cu conducere aberantă are și ea QRS larg: căutați o undă P prematură în unda T precedentă.",
+        "O extrasistolă atrială cu conducere aberantă are și ea QRS larg: caută o undă P prematură în unda T precedentă.",
         "Contează numărul și morfologia: o proporție de extrasistole de peste 10% din totalul bătăilor poate duce în timp la cardiomiopatie."
       ],
       "en": [
@@ -351,7 +351,7 @@
     "pitfalls": {
       "ro": [
         "La palparea pulsului și pe pulsoximetru pot fi numărate doar jumătate dintre bătăi.",
-        "Căutați cauza: ischemie, tulburări electrolitice, digoxină, cardiomiopatie; dacă extrasistolele sunt frecvente, recomandați monitorizare Holter și ecocardiografie."
+        "Caută cauza: ischemie, tulburări electrolitice, digoxină, cardiomiopatie; dacă extrasistolele sunt frecvente, recomandă monitorizare Holter și ecocardiografie."
       ],
       "en": [
         "The pulse and pulse oximeters may count only half of the beats.",
@@ -388,7 +388,7 @@
     },
     "pitfalls": {
       "ro": [
-        "Măsurați intervalul PR în derivația în care debutul undei P se vede cel mai clar.",
+        "Măsoară intervalul PR în derivația în care debutul undei P se vede cel mai clar.",
         "La un PR foarte lung, unda P se poate ascunde în unda T precedentă.",
         "De obicei benign; un PR de peste 300 ms poate produce simptome."
       ],
@@ -430,7 +430,7 @@
     },
     "pitfalls": {
       "ro": [
-        "Cea mai rapidă confirmare: comparați intervalul PR dinaintea pauzei cu cel de după pauză.",
+        "Cea mai rapidă confirmare: compară intervalul PR dinaintea pauzei cu cel de după pauză.",
         "De obicei, blocul este situat în nodul AV și este benign (sportivi, somn, infarct inferior).",
         "Un bloc AV 2:1 nu poate fi încadrat ca tip Mobitz I sau II pe baza unui singur traseu."
       ],
@@ -500,9 +500,9 @@
     },
     "pitfalls": {
       "ro": [
-        "„Plimbați” compasul de la o undă P la alta: unele unde P sunt ascunse în complexul QRS sau în unda T.",
+        "„Plimbă” compasul de la o undă P la alta: unele unde P sunt ascunse în complexul QRS sau în unda T.",
         "Disociația atrioventriculară cu frecvență ventriculară mai mare decât cea atrială nu este bloc atrioventricular complet.",
-        "Căutați cauza (infarct inferior, medicamente, boala Lyme); de obicei necesită stimulator cardiac."
+        "Caută cauza (infarct inferior, medicamente, boala Lyme); de obicei necesită stimulator cardiac."
       ],
       "en": [
         "March the calipers from one P wave to the next: some P waves hide in the QRS or the T wave.",
@@ -602,8 +602,8 @@
     },
     "pitfalls": {
       "ro": [
-        "Blocul major de ramură stângă (BRS major) maschează ischemia: folosiți criteriile Sgarbossa (supradenivelare ST concordantă ≥ 1 mm, subdenivelare ST concordantă ≥ 1 mm în V1–V3, discordanță excesivă).",
-        "Un BRS major semnalează adesea o boală cardiacă structurală: solicitați o ecocardiografie.",
+        "Blocul major de ramură stângă (BRS major) maschează ischemia: folosește criteriile Sgarbossa (supradenivelare ST concordantă ≥ 1 mm, subdenivelare ST concordantă ≥ 1 mm în V1–V3, discordanță excesivă).",
+        "Un BRS major semnalează adesea o boală cardiacă structurală: solicită o ecocardiografie.",
         "Preexcitația ventriculară și stimularea ventriculară pot avea un aspect asemănător."
       ],
       "en": [
@@ -709,7 +709,7 @@
     "pitfalls": {
       "ro": [
         "Subdenivelarea ST din aVL poate fi primul semn, înaintea supradenivelării ST din derivațiile inferioare.",
-        "Căutați extensia: V4R pentru ventriculul drept (atenție la nitrați), V7–V9 sau subdenivelare ST în V1–V3 pentru peretele posterior.",
+        "Caută extensia: V4R pentru ventriculul drept (atenție la nitrați), V7–V9 sau subdenivelare ST în V1–V3 pentru peretele posterior.",
         "Bradicardia și blocurile AV sunt frecvente, pentru că artera coronară dreaptă irigă de obicei nodul AV."
       ],
       "en": [
@@ -790,7 +790,7 @@
     },
     "pitfalls": {
       "ro": [
-        "Când subdenivelarea ST este maximă în V1–V4, înregistrați derivațiile posterioare: infarctul posterior izolat se ratează ușor.",
+        "Când subdenivelarea ST este maximă în V1–V4, înregistrează derivațiile posterioare: infarctul posterior izolat se ratează ușor.",
         "Artera responsabilă de infarct este de obicei artera circumflexă sau o arteră coronară dreaptă dominantă."
       ],
       "en": [
@@ -984,7 +984,7 @@
       "ro": [
         "Criteriile de voltaj sunt puțin fiabile la tineri și la persoanele slabe; sensibilitatea lor este redusă, iar ecocardiografia rămâne metoda de referință.",
         "Modificările secundare de fază terminală pot mima ischemia din teritoriul lateral (DI, aVL, V5–V6).",
-        "Complexele ample se suprapun peste traseul de pe rândul următor: treceți la etalonarea de 5 mm/mV pentru a le putea citi."
+        "Complexele ample se suprapun peste traseul de pe rândul următor: treci la etalonarea de 5 mm/mV pentru a le putea citi."
       ],
       "en": [
         "Voltage criteria are unreliable in young and thin people; sensitivity is low, and echo is the reference test.",
@@ -1036,9 +1036,9 @@
     },
     "pitfalls": {
       "ro": [
-        "Undele delta negative mimează unde Q (aspect de pseudoinfarct): nu puneți diagnosticul de infarct.",
-        "Fibrilația atrială preexcitată (neregulată, cu QRS larg, foarte rapidă) este periculoasă: evitați blocantele nodului AV (adenozină, verapamil, diltiazem, digoxină).",
-        "Sindromul WPW se definește prin asocierea preexcitației cu aritmii; îndrumați pacientul pentru evaluare electrofiziologică."
+        "Undele delta negative mimează unde Q (aspect de pseudoinfarct): nu pune diagnosticul de infarct.",
+        "Fibrilația atrială preexcitată (neregulată, cu QRS larg, foarte rapidă) este periculoasă: evită blocantele nodului AV (adenozină, verapamil, diltiazem, digoxină).",
+        "Sindromul WPW se definește prin asocierea preexcitației cu aritmii; îndrumă pacientul pentru evaluare electrofiziologică."
       ],
       "en": [
         "Negative delta waves mimic Q waves: do not diagnose an infarct.",
@@ -1182,7 +1182,7 @@
       "ro": [
         "O bătaie de fuziune (spike peste un QRS parțial propriu) este o coincidență temporală, nu o disfuncție a stimulatorului.",
         "Modificările ST-T din bătăile stimulate sunt secundare; ischemia se evaluează cu criteriile Sgarbossa modificate.",
-        "Verificați fiecare spike: este urmat de QRS (captură)? Apare la intervalul corect după bătaia precedentă (detecție)?"
+        "Verifică fiecare spike: este urmat de QRS (captură)? Apare la intervalul corect după bătaia precedentă (detecție)?"
       ],
       "en": [
         "A fusion beat (spike plus a partly native QRS) is a coincidence of timing, not a malfunction.",
@@ -1224,7 +1224,7 @@
       "ro": [
         "Absența spike-urilor nu înseamnă disfuncție: stimulatorul este inhibat de bătăile proprii.",
         "Histerezisul poate face intervalul de scăpare mai lung decât intervalul de stimulare; este o funcție programată, nu o defecțiune.",
-        "Și bătăile proprii pot avea aspect de bloc de ramură; comparați morfologia complexelor cu și fără spike."
+        "Și bătăile proprii pot avea aspect de bloc de ramură; compară morfologia complexelor cu și fără spike."
       ],
       "en": [
         "No spikes does not mean failure: the device is inhibited by the native beats.",
@@ -1264,7 +1264,7 @@
     },
     "pitfalls": {
       "ro": [
-        "Cu sonde bipolare, spike-urile atriale sunt adesea foarte mici: căutați-le în mai multe derivații.",
+        "Cu sonde bipolare, spike-urile atriale sunt adesea foarte mici: caută-le în mai multe derivații.",
         "Când frecvența sinusală este mai mare, stimulatorul urmărește undele P: un singur spike, ventricular, după fiecare undă P.",
         "În fibrilație atrială, stimulatorul comută automat modul de stimulare („mode switch”), ca să nu urmărească frecvența atrială rapidă."
       ],
@@ -1306,7 +1306,7 @@
     },
     "pitfalls": {
       "ro": [
-        "Spike-urile atriale bipolare pot fi foarte mici; când nu le vedeți, ritmul pare sinusal sau atrial ectopic.",
+        "Spike-urile atriale bipolare pot fi foarte mici; când nu le vezi, ritmul pare sinusal sau atrial ectopic.",
         "Un stimulator DDD care stimulează atriul și lasă conducerea AV proprie să activeze ventriculii arată la fel (stimulare atrială cu conducere AV proprie).",
         "O undă P stimulată neurmată de QRS (BAV) sugerează boală de conducere AV, iar modul AAI nu protejează ventriculii; de aceea, în disfuncția nodului sinusal se preferă stimularea bicamerală, iar modul AAI singur se folosește rar. Un interval spike–QRS ușor mai lung decât PR sinusal este însă normal."
       ],
@@ -1391,7 +1391,7 @@
     "pitfalls": {
       "ro": [
         "Un spike pe unda T poate declanșa, rar, aritmii ventriculare (fenomen R pe T).",
-        "Nu confundați cu pseudofuziunea: acolo spike-ul vine la intervalul corect și cade pe un QRS propriu deja început.",
+        "Nu confunda cu pseudofuziunea: acolo spike-ul vine la intervalul corect și cade pe un QRS propriu deja început.",
         "Un magnet aplicat pe stimulator îl trece în mod asincron (VOO/DOO): spike-urile care ignoră bătăile proprii sunt atunci așteptate.",
         "Semnalele care cad în perioada refractară a stimulatorului (de exemplu o extrasistolă foarte precoce sau o undă P în perioada refractară atrială postventriculară) sunt ignorate intenționat: este subdetecție funcțională, nu defecțiune."
       ],
@@ -1507,7 +1507,7 @@
     "pitfalls": {
       "ro": [
         "Un V1 negativ nu exclude stimularea biventriculară: aspectul depinde de poziția sondelor (sonda de ventricul stâng în vena interventriculară anterioară sau în vena cardiacă mijlocie, sonda de ventricul drept în poziție septală sau în tractul de ejecție) și de plasarea electrodului V1 (de exemplu prea sus).",
-        "Dacă la un pacient cu CRT dispar unda Q din DI și unda R dominantă din V1, iar QRS arată ca la stimularea din ventriculul drept, suspectați pierderea capturii ventriculului stâng.",
+        "Dacă la un pacient cu CRT dispar unda Q din DI și unda R dominantă din V1, iar QRS arată ca la stimularea din ventriculul drept, suspectează pierderea capturii ventriculului stâng.",
         "Beneficiul resincronizării este maxim când aproape fiecare bătaie este stimulată biventricular (ideal ≥ 98%): bătăile proprii, bătăile de fuziune și extrasistolele frecvente îl reduc; o cauză frecventă este fibrilația atrială cu alură ventriculară rapidă."
       ],
       "en": [
@@ -1584,7 +1584,7 @@
     },
     "pitfalls": {
       "ro": [
-        "Un spike urmat de un QRS îngust nu dovedește stimularea sistemului de conducere: excludeți o bătaie proprie cu pseudofuziune (spike care cade pe un QRS propriu deja început).",
+        "Un spike urmat de un QRS îngust nu dovedește stimularea sistemului de conducere: exclude o bătaie proprie cu pseudofuziune (spike care cade pe un QRS propriu deja început).",
         "La stimularea His, pragul de stimulare poate crește în timp; un QRS care se lărgește brusc sugerează pierderea capturii His, cu stimularea doar a miocardului septal.",
         "Aspectul de întârziere pe ramura dreaptă în V1 este așteptat la stimularea zonei ramurii stângi și nu indică o problemă."
       ],
@@ -1664,7 +1664,7 @@
     },
     "pitfalls": {
       "ro": [
-        "La frecvențe mai mari, undele P pot fi mici sau ascunse în unda T a bătăii precedente; căutați-le în DII și V1.",
+        "La frecvențe mai mari, undele P pot fi mici sau ascunse în unda T a bătăii precedente; caută-le în DII și V1.",
         "O undă P care nu este urmată nici de spike ventricular, nici de QRS propriu (în afara perioadelor refractare și a comportamentului la frecvența maximă de urmărire) sugerează subdetecție atrială.",
         "Dacă pacientul are conducere AV proprie, un interval AV programat lung permite bătăi proprii sau de fuziune.",
         "O tahicardie cu QRS stimulat la frecvența maximă de urmărire, declanșată de o extrasistolă ventriculară cu undă P retrogradă, sugerează tahicardie mediată de pacemaker; aplicarea magnetului o întrerupe."
@@ -1788,8 +1788,8 @@
     },
     "pitfalls": {
       "ro": [
-        "Artefactele (mișcare, tremor, frison, electrod desprins) pot imita FV. Priviți întâi pacientul: un pacient care vorbește nu este în FV.",
-        "FV fină poate fi confundată cu asistola. Verificați amplificarea și o a doua derivație, fără a prelungi pauza compresiilor. Dacă îndoiala rămâne, ERC 2025 recomandă șocul.",
+        "Artefactele (mișcare, tremor, frison, electrod desprins) pot imita FV. Privește întâi pacientul: un pacient care vorbește nu este în FV.",
+        "FV fină poate fi confundată cu asistola. Verifică amplificarea și o a doua derivație, fără a prelungi pauza compresiilor. Dacă îndoiala rămâne, ERC 2025 recomandă șocul.",
         "TV polimorfă are complexe QRS recognoscibile, a căror formă se schimbă de la o bătaie la alta; în torsada vârfurilor, amplitudinea crește și scade periodic. Fără puls, ambele se tratează ca FV."
       ],
       "en": [
@@ -1832,9 +1832,9 @@
     },
     "pitfalls": {
       "ro": [
-        "O linie perfect dreaptă sugerează mai degrabă un electrod desprins, un cablu deconectat sau o amplificare minimă. Verificați electrozii, cablurile și amplificarea.",
-        "FV fină poate imita asistola. Măriți amplificarea și priviți o a doua derivație, în aceeași pauză scurtă. Dacă îndoiala rămâne, ERC 2025 recomandă șocul.",
-        "Căutați undele P la orice diagnostic de asistolă (ERC 2025): asistola cu unde P poate beneficia de stimulare cardiacă."
+        "O linie perfect dreaptă sugerează mai degrabă un electrod desprins, un cablu deconectat sau o amplificare minimă. Verifică electrozii, cablurile și amplificarea.",
+        "FV fină poate imita asistola. Mărește amplificarea și privește o a doua derivație, în aceeași pauză scurtă. Dacă îndoiala rămâne, ERC 2025 recomandă șocul.",
+        "Caută undele P la orice diagnostic de asistolă (ERC 2025): asistola cu unde P poate beneficia de stimulare cardiacă."
       ],
       "en": [
         "A perfectly straight line suggests a loose electrode, a disconnected cable or minimum gain rather than asystole. Check the electrodes, the cables and the gain.",
@@ -1878,7 +1878,7 @@
       "ro": [
         "Un ritm care arată normal pe monitor nu dovedește că există circulație. Evaluați întotdeauna pacientul, nu doar ecranul.",
         "Nu se administrează șoc unui ritm organizat fără puls: AEP este neșocabilă, iar cardioversia sincronă nu are indicație.",
-        "Căutați cauzele reversibile (4H și 4T): hipoxie, hipovolemie, hipo-/hiperkaliemie și alte tulburări metabolice, hipo-/hipertermie; tromboză coronariană sau pulmonară, tamponadă cardiacă, toxine, pneumotorax în tensiune."
+        "Caută cauzele reversibile (4H și 4T): hipoxie, hipovolemie, hipo-/hiperkaliemie și alte tulburări metabolice, hipo-/hipertermie; tromboză coronariană sau pulmonară, tamponadă cardiacă, toxine, pneumotorax în tensiune."
       ],
       "en": [
         "A rhythm that looks normal on the monitor does not prove there is a circulation. Always assess the patient, not just the screen.",
