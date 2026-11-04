@@ -997,6 +997,14 @@ p { margin: 0; }
   .vw-bar > .vw-readout { margin-left: calc(6.75rem + 10px); }
   .vw-bar > .vw-readout:empty { display: none; }
 }
+/* very narrow phones: a viewer inside a lesson card has less room, so labels go above their controls */
+@media (max-width: 400px) {
+  .ls-guided, .ls-check.fu, .ls-task { padding-left: 12px; padding-right: 12px; }
+  .gd-nav .btn { padding-left: 12px; padding-right: 12px; }
+  :is(.ls-guided, .ls-check, .ls-task) .vw-bar > .vw-group { grid-template-columns: minmax(0, 1fr); gap: 4px; }
+  :is(.ls-guided, .ls-check, .ls-task) .vw-bar > .vw-toggle,
+  :is(.ls-guided, .ls-check, .ls-task) .vw-bar > .vw-readout { margin-left: 0; }
+}
 .ls-list:empty, .tr-rows:empty, .tr-modules:empty, .tier-grid:empty { display: none; }
 
 /* dark: the decorative trace on the today card in the brighter night red */
@@ -1009,6 +1017,7 @@ p { margin: 0; }
   .vw-btn[aria-pressed="true"], .vw-toggle[aria-pressed="true"] { forced-color-adjust: none; background: Highlight; color: HighlightText; border-color: Highlight; }
   .tr-nav a[aria-current="page"] { outline: 2px solid CanvasText; outline-offset: -2px; }
   .pearl { border-left-color: CanvasText; }
+  .cs-finding[aria-pressed="true"] { outline: 2px solid Highlight; outline-offset: -2px; }
 }
 
 /* ------------------------------------------- beginner course and teaching marks */
@@ -1070,3 +1079,9 @@ p { margin: 0; }
   .gd-dots { order: 3; flex-basis: 100%; }
 }
 .ls-check .vw { margin-bottom: 4px; }
+
+/* Windows High Contrast: the current guided frame stays visible (after the touch-size dots above) */
+@media (forced-colors: active) {
+  .gd-dot { forced-color-adjust: none; border: 2px solid ButtonText; box-shadow: none; background: Canvas; }
+  .gd-dot[aria-current="step"] { background: Highlight; border-color: Highlight; }
+}

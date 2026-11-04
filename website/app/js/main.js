@@ -450,7 +450,7 @@ function render(scroll = true) {
 
 /* ---------------------------------------------------------------- viewer */
 function makeViewer(c, { look = [], revealed = false, calipers = "off", span = 0.2, strip = null, marks = [], init = null,
-  annotations = [], numbered = false, annOn = revealed } = {}) {
+  annotations = [], numbered = false, annOn = revealed, onFocusChange = null } = {}) {
   const narrow = window.matchMedia("(max-width: 700px)").matches;
   // a case can open at 5 mm/mV (very large complexes on a monitor strip)
   const st = { zoom: narrow ? 2 : 1, gain: c.gain || 10, cal: calipers, hl: revealed && look.length > 0, revealed,
@@ -535,6 +535,10 @@ function makeViewer(c, { look = [], revealed = false, calipers = "off", span = 0
     onclick: () => {
       st.ann = !st.ann;
       annBtn.setAttribute("aria-pressed", String(st.ann));
+      if (!st.ann && st.focus != null) {
+        st.focus = null;
+        onFocusChange?.(null);
+      }
       view?.setAnnotations(shownMarks(), st.focus);
     },
   });
@@ -559,6 +563,7 @@ function makeViewer(c, { look = [], revealed = false, calipers = "off", span = 0
         strips: c.strips || ["II"], zoom: st.zoom, gain: st.gain, labels: LEAD_LABELS[lang], maxPxmm: strip && !strip.full ? 8 : null,
         highlight: st.hlNow ?? (st.hl ? look : []), marks, annotations: shownMarks(),
       });
+      if (st.focus != null && st.ann) view.setAnnotations(shownMarks(), st.focus);
       view.overlay.setAttribute("aria-label", t("tool_calipers"));
       view.onCalipers((r) => {
         showReading(r);
@@ -603,14 +608,17 @@ function makeViewer(c, { look = [], revealed = false, calipers = "off", span = 0
       annBtn.hidden = !st.anns.length;
       view?.setAnnotations(shownMarks());
     },
+    /* false when this view cannot draw any mark of finding i (a strip of one lead) */
+    showsFinding: (i) => (view ? view.showsFinding(i, localMarks(st.anns, numbered)) : true),
     /* show one finding's marks at full strength and bring them into view */
     focusFinding(i) {
-      if (!st.anns.length) return;
+      if (!st.anns.length) return null;
+      const wasOn = st.ann;
       if (!st.ann) {
         st.ann = true;
         annBtn.setAttribute("aria-pressed", "true");
       }
-      st.focus = st.focus === i ? null : i;
+      st.focus = wasOn && st.focus === i ? null : i;
       if (!view) return st.focus;
       view.setAnnotations(shownMarks(), st.focus);
       const x = st.focus == null ? null : view.annotationX(st.focus);
@@ -664,7 +672,8 @@ function viewHome() {
   const lessons = courseLessons("full");
   const required = lessons.filter((l) => lessonFit(l) === "required");
   const left = required.filter((l) => !store.lesson(l.id)?.done);
-  const nextLesson = basicsLeft.length ? null : left[0] || null;
+  // the full course waits only while required beginner lessons remain (optional ones never block it)
+  const nextLesson = basicsLeft.some((l) => lessonFit(l) === "required") ? null : left[0] || null;
   put(
     tr && h("p", { class: "tr-profile" },
       t("profile_line", tx(tr.name)), " ",
@@ -931,6 +940,9 @@ function lessonGuided(l, step) {
     title.textContent = tx(f.title);
     text.replaceChildren(...paragraphs(f.text));
     dots.forEach((d, j) => d.setAttribute("aria-current", j === k ? "step" : "false"));
+    // keep keyboard focus on the frame controls when the pressed button becomes disabled
+    if (k === frames.length - 1 && document.activeElement === next) prev.focus();
+    if (k === 0 && document.activeElement === prev) next.focus();
     prev.disabled = k === 0;
     next.disabled = k === frames.length - 1;
     if (!first) {
@@ -1141,16 +1153,30 @@ function caseScreen(c, { mode, item, header, extraNote, onAnswer, onRate, onNext
   const answered = mode === "study" || !!item?.chosen;
   // nurses and paramedics start on the rhythm strip, as on a monitor; the 12-lead is one tap away
   const stripFirst = tier()?.first_view === "strip" && c.layout !== "monitor";
-  const notes = { annotations: c.annotations || [], numbered: true };
+  // the numbered findings below the answer follow the viewer's focused finding
+  const findingWatchers = [];
+  const syncFindings = (on) => findingWatchers.forEach((fn) => fn(on));
+  const notes = { annotations: c.annotations || [], numbered: true, onFocusChange: syncFindings };
   let viewer = makeViewer(c, { look: c.look || [], revealed: answered, ...notes,
     strip: stripFirst ? { leads: [(c.strips || ["II"])[0]], window: null, full: true } : null });
-  const onFinding = (i) => viewer.focusFinding(i);
+  const onFinding = (i) => {
+    let on = viewer.focusFinding(i);
+    // a finding that the rhythm strip cannot show opens the 12-lead first
+    if (on === i && full?.isConnected && !viewer.showsFinding(i)) {
+      full.click();
+      on = viewer.focusFinding(i);
+    }
+    syncFindings(on);
+    return on;
+  };
+  onFinding.watch = (fn) => findingWatchers.push(fn);
   const full = stripFirst ? h("button", { type: "button", class: "btn btn-quiet btn-small", text: t("show_12lead"),
     onclick: () => {
       const v = makeViewer(c, { look: c.look || [], revealed: locked || answered, ...notes });
       viewer.el.replaceWith(v.el);
       viewer = v;
       full.remove();
+      syncFindings(null);
     } }) : null;
   const feedback = h("div", { class: "cs-feedback" });
   const buttons = [];
@@ -1263,6 +1289,8 @@ function findingsList(c, onFinding) {
   const marked = new Set((c.annotations || []).map((a) => a.finding).filter((i) => i != null));
   if (!marked.size || !onFinding) return [h("ul", { class: "cs-list" }, list.map((f) => h("li", { text: f })))];
   const btns = [];
+  const sync = (on) => btns.forEach(([k, x]) => x.setAttribute("aria-pressed", String(on === k)));
+  onFinding.watch?.(sync);
   const items = list.map((f, i) => {
     if (!marked.has(i)) {
       return h("li", { class: "cs-finding-plain" },
@@ -1270,10 +1298,7 @@ function findingsList(c, onFinding) {
     }
     const b = h("button", { type: "button", class: "cs-finding", "aria-pressed": "false",
       "aria-label": `${t("finding_show", i + 1)}: ${f}`,
-      onclick: () => {
-        const on = onFinding(i);
-        btns.forEach(([k, x]) => x.setAttribute("aria-pressed", String(on === k)));
-      } },
+      onclick: () => sync(onFinding(i)) },
     h("span", { class: "cs-finding-n", "aria-hidden": "true", text: String(i + 1) }),
     h("span", { text: f }));
     btns.push([i, b]);
@@ -1770,12 +1795,13 @@ function viewProgress() {
   }
   const streak = store.streak();
   if (streak) put(h("p", { class: "tr-score", text: t("home_streak", streak) }));
-  const lessons = (DATA.lessons || []).filter((l) => lessonFit(l) !== "skip");
-  if (lessons.length) {
-    const done = lessons.filter((l) => store.lesson(l.id)?.done).length;
+  // one line per course, named as on the Lessons page
+  const courses = COURSES.map((id) => [id, courseLessons(id)]).filter(([, list]) => list.length);
+  for (const [id, list] of courses) {
+    const done = list.filter((l) => store.lesson(l.id)?.done).length;
     put(h("section", { class: "tr-section" },
-      h("h2", { text: t("learn_title") }),
-      h("p", null, t("learn_progress", done, lessons.length), " ", h("a", { href: "#learn", text: t("learn_open") }))));
+      h("h2", { text: id === "basics" ? t("course_basics") : courses.length > 1 ? t("course_full") : t("learn_title") }),
+      h("p", null, t("learn_progress", done, list.length), " ", h("a", { href: "#learn", text: t("learn_open") }))));
   }
 
   put(h("section", { class: "tr-section" },

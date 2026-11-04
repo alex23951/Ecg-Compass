@@ -46,7 +46,7 @@ const server = http.createServer((req, res) => {
   let p = decodeURIComponent(req.url.split("?")[0]);
   let file = p.startsWith("/__extra/") && EXTRA ? path.join(EXTRA, p.slice(9)) : path.join(SITE, p);
   if (!file.startsWith(SITE) && !(EXTRA && file.startsWith(EXTRA))) { res.writeHead(403); return res.end(); }
-  // the app's CSS asks for /static/fonts via ../../static; serve them from the site
+  // render.html loads the trainer fonts (static/css/fonts.css) and app.css from the site
   fs.readFile(file, (err, data) => {
     if (err) { res.writeHead(404); return res.end(); }
     res.writeHead(200, { "content-type": TYPES[path.extname(file)] || "application/octet-stream" });
@@ -65,7 +65,7 @@ const resolved = args.resolved ? JSON.parse(fs.readFileSync(args.resolved, "utf8
 
 const jobs = [];
 const pick = args.cases && args.cases !== true ? args.cases.split(",") : null;
-if (resolved || !args.lessons) {
+if (resolved || pick || !args.lessons) {
   const ids = pick || (resolved ? Object.keys(resolved) : built.cases.filter((c) => c.annotations?.length).map((c) => c.id));
   for (const id of ids) {
     const c = cases.get(id);

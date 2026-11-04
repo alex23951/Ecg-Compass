@@ -69,6 +69,9 @@ def main():
                 lines += [f"- {x}" for x in two(head)]
             for x in two(st.get("body")):
                 lines.append(f"- {x}")
+            lines += [f"- Caption: {x}" for x in two(st.get("caption"))]
+            if st.get("figure"):
+                lines += [f"- Figure caption: {x}" for x in two(st["figure"].get("caption"))]
             if kind == "diagram":
                 lines.append(f"- Diagram: {st['name']}")
             if kind in ("figure", "guided", "task") or st.get("figure"):

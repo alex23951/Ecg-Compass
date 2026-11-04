@@ -160,11 +160,16 @@ export class EcgView {
 
   /* x (CSS px) of the first annotation of a finding, to scroll it into view */
   annotationX(finding) {
-    const a = this.anns.find((x) => finding == null || x.finding === finding);
+    const a = this.anns.find((x) => (finding == null || x.finding === finding) && this._annSeg(x));
     const s = a && this._annSeg(a);
     if (!s) return null;
     const t = a.t ?? a.t0 ?? (a.times && a.times[0]) ?? s.t0;
     return (s.x0 + (t - s.t0) * SPEED) * this.pxmm;
+  }
+
+  /* Does this layout draw at least one mark of this finding? (a strip shows only some leads) */
+  showsFinding(finding, list = this.anns) {
+    return list.some((a) => a.finding === finding && ((a.kind === "vline" && !a.lead) || !!this._annSeg(a)));
   }
 
   /* -------------------------------------------------------------- drawing */
