@@ -536,8 +536,8 @@ export class EcgView {
           const x = X(t);
           const top = s.y - s.h / 2;
           const y = Math.max(Math.min(Y(a.vs?.[i] ?? 0) - 16 * u, s.y - 6 * u), top + 9 * u);
-          el("circle", { cx: x, cy: y, r: 8.5 * u, class: "a-badge" }, grp);
-          const e = el("text", { x, y, class: "a-badge-text", "font-size": 10.5 * u }, grp);
+          el("circle", { cx: x, cy: y, r: 8.5 * u, class: "a-count" }, grp);
+          const e = el("text", { x, y, class: "a-count-text", "font-size": 10.5 * u }, grp);
           e.textContent = String(i + 1);
         });
       } else if (a.kind === "tag") {

@@ -756,6 +756,8 @@ p { margin: 0; }
 .ecg-ann .a-text { stroke: none; fill: var(--ecg-ann-ink); font-family: var(--font-sans); font-weight: 650; dominant-baseline: central; }
 .ecg-ann .a-text.a-pill-tag { fill: var(--ecg-ann-on-fill); }
 .ecg-ann .a-badge { fill: var(--ecg-ann-fill); stroke: none; }
+.ecg-ann .a-count { fill: var(--ecg-ann-bg); stroke: var(--ecg-ann); stroke-width: 1.6; vector-effect: non-scaling-stroke; }
+.ecg-ann .a-count-text { stroke: none; fill: var(--ecg-ann-ink); font-family: var(--font-sans); font-weight: 700; text-anchor: middle; dominant-baseline: central; }
 .ecg-ann .a-badge-text { stroke: none; fill: var(--ecg-ann-on-fill); font-family: var(--font-sans); font-weight: 700; text-anchor: middle; dominant-baseline: central; }
 .ecg-ann .is-focus .a-line, .ecg-ann .is-focus .a-ring, .ecg-ann .is-focus .a-box { stroke-width: 2.6; }
 @media (prefers-reduced-motion: reduce) { .ecg-ann .a { transition: none; } }
