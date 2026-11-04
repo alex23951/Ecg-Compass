@@ -19,6 +19,18 @@
     "cta_trainer": "Start practicing",
     "cta_digest": "ECG of the week",
     "hero_note": "Beta: new modules are added as they are checked.",
+    "basics_eyebrow": "For beginners",
+    "basics_heading": "Read your first ECG, step by step",
+    "basics_intro": "Eight short steps, in the order you read any ECG. On real tracings, arrows and labels show you where to look and what it means.",
+    "basics_points": [
+      "Arrows, labels and intervals marked on real ECGs",
+      "One step per lesson, a few minutes each",
+      "Short questions at every step"
+    ],
+    "basics_cta": "Start the beginner module",
+    "basics_all": "All lessons",
+    "basics_figure_alt": "One beat on ECG paper, with arrows to the P wave, the QRS complex, the J point and the T wave, and the PR and QT intervals marked.",
+    "steps_cta": "Learn the 8 steps on marked ECGs",
     "weekly_heading": "ECG of the week, no. {n}",
     "weekly_intro": "A real tracing, four options and the answer explained step by step. A new ECG every week.",
     "weekly_cta": "All issues",

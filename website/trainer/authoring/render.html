@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<title>Annotation render</title>
+<link rel="stylesheet" href="../../app/css/app.css">
+<style>
+  body { margin: 0; background: #fff; padding: 12px; }
+  #fig { width: var(--w, 1400px); }
+  #fig h3 { font: 600 15px/1.3 var(--font-sans); margin: 0 0 6px; color: #0f1d2e; }
+  #fig .vw-ecg { min-height: 0; }
+</style>
+</head>
+<body>
+<div id="fig"></div>
+<script type="module">
+import { EcgView, decode } from "../../app/js/ecg.js";
+import { LEAD_LABELS } from "../../app/js/i18n.js";
+
+const tx = (v, lang) => (v == null ? "" : typeof v === "string" ? v : v[lang] ?? v.ro ?? v.en ?? "");
+
+/* spec: {title, signal (url), layout: "standard" | "strip", leads, window, strips, marks,
+   annotations, lang, highlight, gain} */
+window.drawFigure = async (spec) => {
+  const fig = document.getElementById("fig");
+  fig.replaceChildren();
+  if (spec.dark) document.documentElement.setAttribute("data-theme", "dark");
+  else document.documentElement.removeAttribute("data-theme");
+  document.documentElement.lang = spec.lang;
+  const h = document.createElement("h3");
+  h.textContent = spec.title || "";
+  const host = document.createElement("div");
+  host.className = "vw-ecg";
+  fig.append(h, host);
+  const r = await fetch(spec.signal);
+  if (!r.ok) throw new Error(`no signal ${spec.signal}`);
+  const ecg = decode(await r.json());
+  const anns = (spec.annotations || []).map((a) => ({ ...a, label: tx(a.label, spec.lang),
+    n: a.finding != null && spec.numbers ? a.finding + 1 : null }));
+  const view = new EcgView(host, ecg, {
+    layout: spec.layout, leads: spec.leads, window: spec.window, strips: spec.strips || ["II"],
+    rowH: spec.rowH, gain: spec.gain || 10, labels: LEAD_LABELS[spec.lang], maxPxmm: spec.layout === "strip" ? 8 : null,
+    marks: spec.marks || [], highlight: spec.highlight || [], annotations: anns,
+  });
+  view.draw();
+  await document.fonts.ready;
+  view.draw();
+  return true;
+};
+window.ready = true;
+</script>
+</body>
+</html>

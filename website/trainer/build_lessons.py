@@ -48,6 +48,7 @@ HERE = Path(__file__).resolve().parent
 WEBSITE = HERE.parent
 sys.path.insert(0, str(WEBSITE / "tools"))
 sys.path.insert(0, str(HERE))
+import annotate  # noqa: E402
 import ptbxl  # noqa: E402
 import signals  # noqa: E402
 
@@ -61,6 +62,7 @@ DIAGRAMS = {"paper", "beat", "conduction", "limb_leads", "chest_leads", "extra_l
 TONES = {"p", "qrs", "t", "seg", "rr"}
 BANDS = {"P": "p", "QRS": "qrs", "T": "t", "ST": "seg", "TP": "rr", "PRseg": "seg"}
 BRACKETS = {"PR", "QRSd", "QT", "RR"}
+COURSES = ("basics", "full")  # basics: read an ECG step by step (beginners); full: ECG from scratch
 TOL = {"rr": 40, "rate": 5, "pr": 20, "qrs": 16, "qt": 30, "count": 1, "volt": 0.5}
 HAND = {"count", "volt"}  # references always measured by hand (count of QRS, mm with voltage calipers)
 L = {name: i for i, name in enumerate(ptbxl.LEADS)}
@@ -218,10 +220,21 @@ def main():
     ap.add_argument("--plot", help="draw each figure with its marks into this folder")
     ap.add_argument("--content", help="read lessons from this file instead of content/lessons.json")
     ap.add_argument("--dry-run", action="store_true", help="check and plot only; write nothing into app/")
+    ap.add_argument("--emit", help="with --dry-run: write the built lessons (lessons.json) and any signal "
+                    "files they need into this folder, for trainer/authoring/render.mjs")
     ap.add_argument("--cases", help="with --dry-run: also know the new_cases of this content fragment "
                     "(monitor strips whose signal files exist), before they are merged and built")
     args = ap.parse_args()
     dry = args.dry_run
+    if args.emit and not dry:
+        sys.exit("--emit only works with --dry-run")
+    # where new signal files go: the app, or (dry run) the emit folder or a throwaway one
+    if dry:
+        import tempfile
+        sigdir = Path(args.emit) / "signals" if args.emit else Path(tempfile.mkdtemp(prefix="lessons-"))
+        sigdir.mkdir(parents=True, exist_ok=True)
+    else:
+        sigdir = OUT / "signals"
     if args.cases and not dry:
         sys.exit("--cases only works with --dry-run")
 
@@ -276,22 +289,74 @@ def main():
                 record({"ecg": ecg_id}, where)
                 base = cache[ecg_id]
                 sig = swap(base["sig"], step["transform"])
-                if not dry:
-                    (OUT / "signals" / f"{key}.json").write_text(
+                if not (OUT / "signals" / f"{key}.json").exists() or not dry:
+                    (sigdir / f"{key}.json").write_text(
                         json.dumps(signals.encode(sig, base["fs"], key), separators=(",", ":")))
                 cache[key] = dict(base, sig=sig, base=ecg_id)
             return key
         if ecg_id not in cache:
             sig, fs = signals.load_clean(ecg_id)
             dest = OUT / "signals" / f"{ecg_id}.json"
-            if not dest.exists() and not dry:
-                dest.write_text(json.dumps(signals.encode(sig, fs, ecg_id), separators=(",", ":")))
+            if not dest.exists():
+                (sigdir / f"{ecg_id}.json").write_text(json.dumps(signals.encode(sig, fs, ecg_id), separators=(",", ":")))
             u = plus.get(ecg_id) or {}
             num = lambda k: float(u[k]) if u.get(k) not in (None, "", "nan") else None  # noqa: E731
             pr, qrs, qt, hr = num("PR_Int_Global"), num("QRS_Dur_Global"), num("QT_Int_Global"), num("HR__Global")
             bs = beats(sig, fs, pr or 160, qrs or 90, qt or 380) if None not in (pr, qrs, qt) else []
             cache[ecg_id] = {"sig": sig, "fs": fs, "beats": bs, "pr": pr, "qrs": qrs, "qt": qt, "hr": hr}
         return ecg_id
+
+    def place(st, where):
+        """Resolve the recording of a figure-like step (figure, task, guided, check figure)."""
+        if st.get("gain", 10) not in (5, 10, 20):
+            problems.append(f"{where}: gain must be 5, 10 or 20 (mm/mV)")
+        ecg_id = record(st, where)
+        if ecg_id is None:
+            return None
+        st.pop("case", None)
+        info = cache[ecg_id]
+        st["ecg"] = ecg_id
+        st["source"] = info.get("source") or {"dataset": "ptbxl", "ecg_id": info.get("base", ecg_id)}
+        if info.get("monitor"):
+            st["monitor"] = True
+            st["leads"] = ["MON"]
+            st.pop("layout", None)
+        for lead in st.get("leads", []):
+            if lead not in info.get("leads", ptbxl.LEADS):
+                problems.append(f"{where}: no lead {lead} in this recording")
+        if st.get("transform"):
+            st["source"]["transform"] = st.pop("transform")
+        if st.get("layout") != "standard":
+            st.setdefault("leads", ["II"])
+            st.setdefault("window", [0, 10])
+        return ecg_id, info, st.get("window", [0, 10])
+
+    def notes(anns, st, ecg_id, where):
+        """Teaching arrows and labels (trainer/annotate.py) on this figure's tracing."""
+        if not anns:
+            return []
+        rec = annotate.load(ecg_id, sigdir)
+        std = st.get("layout") == "standard"
+        if not std:
+            for a in anns:
+                if a.get("lead") not in (None, *st.get("leads", ["II"])):
+                    problems.append(f"{where}: annotation on {a.get('lead')}, which this figure does not show")
+        return annotate.resolve(anns, rec, where, problems, layout="standard" if std else "strip",
+                                strips=st.get("strips") or ["II"], window=None if std else st.get("window"))
+
+    def frame_marks(s, info, win, where):
+        """Bands and brackets of a set or frame: named ("show" on a beat) or by hand ("marks")."""
+        if s.get("show"):
+            if not info["beats"]:
+                raise ValueError("named marks need a PTB-XL ECG; place marks by hand here")
+            marks, _, _ = marks_for(info["beats"], s.get("beat", 0), s["show"], win)
+            return marks
+        marks = s.get("marks", [])
+        for m in marks:
+            if m.get("tone") not in TONES or not isinstance(m.get("label"), str) \
+                    or not (win[0] <= m.get("t0", -1) < m.get("t1", -1) <= win[1]):
+                problems.append(f"{where}: hand mark {m} needs t0 < t1 inside the window, a tone and a label")
+        return marks
 
     ids = set()
     out_lessons = []
@@ -310,6 +375,10 @@ def main():
         for tr in TIERS:
             if l.get("tiers", {}).get(tr) not in ("required", "optional", "skip"):
                 problems.append(f"{lid}: tiers.{tr} must be required, optional or skip")
+        if l.get("course", "full") not in COURSES:
+            problems.append(f"{lid}: course must be one of {COURSES}")
+        if "step" in l and l["step"] not in range(0, 9):
+            problems.append(f"{lid}: step must be 0 (start) to 8, the reading step it teaches")
         steps = []
         sids = set()
         for i, st in enumerate(l["steps"]):
@@ -330,49 +399,42 @@ def main():
             if kind == "diagram":
                 if st.get("name") not in DIAGRAMS:
                     problems.append(f"{where}: unknown diagram {st.get('name')}")
-            elif kind in ("figure", "task"):
-                if st.get("gain", 10) not in (5, 10, 20):
-                    problems.append(f"{where}: gain must be 5, 10 or 20 (mm/mV)")
-                ecg_id = record(st, where)
-                if ecg_id is None:
+            elif kind in ("figure", "task", "guided"):
+                placed = place(st, where)
+                if placed is None:
                     continue
-                st.pop("case", None)
-                info = cache[ecg_id]
-                st["ecg"] = ecg_id
-                st["source"] = info.get("source") or {"dataset": "ptbxl", "ecg_id": info.get("base", ecg_id)}
-                if info.get("monitor"):
-                    st["monitor"] = True
-                    st["leads"] = ["MON"]
-                    st.pop("layout", None)
-                for lead in st.get("leads", []):
-                    if lead not in info.get("leads", ptbxl.LEADS):
-                        problems.append(f"{where}: no lead {lead} in this recording")
-                if st.get("transform"):
-                    st["source"]["transform"] = st.pop("transform")
-                if st.get("layout") != "standard":
-                    st.setdefault("leads", ["II"])
-                    st.setdefault("window", [0, 10])
-                win = st.get("window", [0, 10])
+                ecg_id, info, win = placed
                 try:
                     if kind == "figure":
                         sets = []
-                        for s in st.get("sets", []):
+                        for k, s in enumerate(st.get("sets", [])):
                             check_text(s.get("label"), f"{where}.sets.label", problems)
                             if "note" in s:
                                 check_text(s["note"], f"{where}.sets.note", problems)
-                            if s.get("show"):
-                                if not info["beats"]:
-                                    raise ValueError("named marks need a PTB-XL ECG; place marks by hand here")
-                                marks, _, _ = marks_for(info["beats"], s.get("beat", 0), s["show"], win)
-                            else:
-                                marks = s.get("marks", [])
-                                for m in marks:
-                                    if m.get("tone") not in TONES or not isinstance(m.get("label"), str) \
-                                            or not (win[0] <= m.get("t0", -1) < m.get("t1", -1) <= win[1]):
-                                        problems.append(f"{where}: hand mark {m} needs t0 < t1 inside the window, a tone and a label")
-                            sets.append({k: v for k, v in s.items() if k not in ("beat", "show")} | {"marks": marks})
+                            marks = frame_marks(s, info, win, where)
+                            anns = notes(s.get("annotations"), st, ecg_id, f"{where}.sets[{k}]")
+                            sets.append({k2: v for k2, v in s.items() if k2 not in ("beat", "show")}
+                                        | {"marks": marks, "annotations": anns})
                         st["sets"] = sets
+                        if st.get("annotations"):
+                            st["annotations"] = notes(st["annotations"], st, ecg_id, f"{where}.annotations")
                         plots.append((f"{lid}-{st['id']}", ecg_id, win, [m for s in sets for m in s["marks"]], st.get("leads", ["II"])))
+                    elif kind == "guided":
+                        frames = []
+                        if not 2 <= len(st.get("frames", [])) <= 12:
+                            problems.append(f"{where}: a guided figure needs 2 to 12 frames")
+                        for k, fr in enumerate(st.get("frames", [])):
+                            fw = f"{where}.frames[{k}]"
+                            check_text(fr.get("title"), f"{fw}.title", problems)
+                            check_text(fr.get("text"), f"{fw}.text", problems, list)
+                            for lead in fr.get("highlight", []):
+                                if lead.removesuffix("-rhythm") not in info.get("leads", ptbxl.LEADS):
+                                    problems.append(f"{fw}: cannot highlight {lead}")
+                            marks = frame_marks(fr, info, win, fw)
+                            anns = notes(fr.get("annotations"), st, ecg_id, f"{fw}.annotations")
+                            frames.append({k2: v for k2, v in fr.items() if k2 not in ("beat", "show")}
+                                          | {"marks": marks, "annotations": anns})
+                        st["frames"] = frames
                     else:
                         what = st.get("measure")
                         if what not in TOL:
@@ -408,6 +470,13 @@ def main():
                 except ValueError as e:
                     problems.append(f"{where}: {e}")
             elif kind == "check":
+                if st.get("figure"):
+                    # a tracing above the question; its marks appear once the learner has answered
+                    fig = dict(st["figure"])
+                    placed = place(fig, f"{where}.figure")
+                    if placed:
+                        fig["annotations"] = notes(fig.get("annotations"), fig, placed[0], f"{where}.figure.annotations")
+                        st["figure"] = fig
                 opts = st.get("options", [])
                 for j, o in enumerate(opts):
                     check_text(o, f"{where}.options[{j}]", problems)
@@ -428,7 +497,11 @@ def main():
             plot(Path(args.plot), plots, cache)
         sys.exit(1)
     if dry:
-        print(f"checked {len(out_lessons)} lessons: no problems (dry run, nothing written)")
+        print(f"checked {len(out_lessons)} lessons: no problems (dry run, nothing written into app/)")
+        if args.emit:
+            (Path(args.emit) / "lessons.json").write_text(
+                json.dumps({"version": 1, "lessons": out_lessons}, ensure_ascii=False, indent=1), encoding="utf-8")
+            print(f"  built lessons and new signal files in {args.emit}")
         for l in out_lessons:
             for st in l["steps"]:
                 if st.get("type") == "task":

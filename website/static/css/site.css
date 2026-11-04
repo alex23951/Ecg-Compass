@@ -28,6 +28,14 @@
   --pulse-soft: #fdecea;
   /* calipers: the same colour as the trainer's (app.css --ecg-caliper) */
   --caliper: #6d28d9;
+  /* teaching marks on ECGs: the same blue as the trainer's (app.css --ecg-ann) */
+  --ann: #1d4ed8;
+  --ann-ink: #1e3a8a;
+  --ann-bg: #ffffff;
+  --paper-ecg: #fff8f6;
+  --grid-minor: rgba(226, 104, 96, 0.16);
+  --grid-major: rgba(214, 72, 64, 0.38);
+  --trace: #141a26;
   /* states */
   --ok: #137a47;
   --ok-soft: #e6f5ec;
@@ -89,6 +97,13 @@
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --bg: #0e1318;
+    --ann: #93c5fd;
+    --ann-ink: #dbeafe;
+    --ann-bg: #07100d;
+    --paper-ecg: #07100d;
+    --grid-minor: rgba(72, 220, 150, 0.08);
+    --grid-major: rgba(72, 220, 150, 0.22);
+    --trace: #6ff0b0;
     --bg-2: #121920;
     --surface: #161e27;
     --surface-2: #1d2733;
@@ -129,6 +144,13 @@
 }
 :root[data-theme="dark"] {
   --bg: #0e1318;
+  --ann: #93c5fd;
+  --ann-ink: #dbeafe;
+  --ann-bg: #07100d;
+  --paper-ecg: #07100d;
+  --grid-minor: rgba(72, 220, 150, 0.08);
+  --grid-major: rgba(72, 220, 150, 0.22);
+  --trace: #6ff0b0;
   --bg-2: #121920;
   --surface: #161e27;
   --surface-2: #1d2733;
@@ -1147,3 +1169,41 @@ input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 2px
 @media (forced-colors: active) {
   .nav a[aria-current] { outline: 2px solid CanvasText; outline-offset: -2px; }
 }
+
+/* ------------------------------------------------------------------ start here (beginner module) */
+.start-here { padding-bottom: 0; }
+.start-card {
+  display: grid;
+  gap: clamp(24px, 4vw, 48px);
+  align-items: center;
+  padding: clamp(22px, 4vw, 44px);
+  background: var(--primary-soft);
+  border: 1px solid color-mix(in srgb, var(--primary) 30%, var(--line));
+  border-radius: var(--r-xl);
+}
+@media (min-width: 900px) { .start-card { grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); } }
+.start-copy { display: grid; gap: 14px; justify-items: start; }
+.start-copy h2 { margin: 0; }
+.start-intro { margin: 0; color: var(--ink-2); max-width: 52ch; }
+.start-points { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.start-points li { display: flex; align-items: flex-start; gap: 10px; font: 550 0.97rem/1.45 var(--font-sans); color: var(--ink); }
+.start-points .icon { width: 20px; height: 20px; color: var(--primary-text); margin-top: 1px; }
+.start-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; margin: 6px 0 0; }
+.start-all { font-weight: 600; color: var(--primary-text); }
+.start-figure { margin: 0; }
+.start-beat { display: block; width: 100%; height: auto; border-radius: 12px; box-shadow: var(--shadow-sm); }
+.start-beat .g-paper { fill: var(--paper-ecg); }
+.start-beat .g-minor { fill: none; stroke: var(--grid-minor); stroke-width: 0.6; }
+.start-beat .g-major { fill: none; stroke: var(--grid-major); stroke-width: 1; }
+.start-beat .beat { fill: none; stroke: var(--trace); stroke-width: 2.4; stroke-linejoin: round; stroke-linecap: round; }
+.start-beat .ann path, .start-beat .ann circle { fill: none; stroke: var(--ann); stroke-width: 2; stroke-linecap: round; }
+.start-beat .a-fill { fill: var(--ann); stroke: none; }
+.start-beat .lbl rect { fill: var(--ann-bg); stroke: var(--ann); stroke-width: 1.4; }
+.start-beat .lbl text { fill: var(--ann-ink); font: 700 12px var(--font-sans); text-anchor: middle; dominant-baseline: central; }
+.steps li.step-link { position: relative; transition: border-color 0.2s, box-shadow 0.2s; }
+.steps li.step-link:hover { border-color: var(--line-2); box-shadow: var(--shadow); }
+.steps li.step-link h3 a { color: var(--ink); text-decoration: none; }
+.steps li.step-link h3 a::after { content: ""; position: absolute; inset: 0; border-radius: inherit; }
+.steps li.step-link:hover h3 a { color: var(--primary-text); }
+.steps li.step-link h3 a:focus-visible { outline: none; }
+.steps li.step-link h3 a:focus-visible::after { outline: 2px solid var(--primary); outline-offset: 3px; }
