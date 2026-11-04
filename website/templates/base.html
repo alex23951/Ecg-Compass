@@ -1,4 +1,4 @@
-{% if not fragment %}<!doctype html>
+{% from "icons.html" import icon, mark %}{% if not fragment %}<!doctype html>
 <html lang="{{ lang }}">
 <head>
 <meta charset="utf-8">
@@ -16,13 +16,13 @@
 <meta property="og:title" content="{{ self.title() }}">
 <meta property="og:description" content="{{ self.description() }}">
 <meta property="og:url" content="{{ canonical }}">
-<meta name="theme-color" content="#fdf8f6" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#0b1210" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0e1318" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="{{ url('static/img/icon.svg') }}" type="image/svg+xml">
 {% if preview %}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..800&family=Source+Sans+3:ital,wght@0,400..700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400..800&family=IBM+Plex+Mono:wght@500&display=swap">
 {% else %}
 <link rel="stylesheet" href="{{ url('static/css/fonts.css') }}">
 {% endif %}
@@ -39,15 +39,15 @@
 <header class="masthead">
   <div class="wrap masthead-row">
     <a class="brand" href="{{ link('home') }}" aria-label="{{ c.brand }}">
-      <svg class="brand-mark" viewBox="0 0 40 24" aria-hidden="true"><path d="M1 15h9l3-4 3 4h3l3-13 4 21 3-8h11" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/></svg>
+      <span class="brand-tile">{{ mark() }}</span>
       <span class="brand-name">{{ c.brand }}</span>
     </a>
     <nav class="nav" aria-label="Main">
       {% block nav %}
       {% if c.free_launch %}
       <a href="{{ app_url() }}">{{ s.free.nav.trainer }}</a>
-      <a href="{{ link('az') }}">{{ s.free.nav.az }}</a>
-      {% if has_digest %}<a href="{{ link('digest') }}">{{ s.free.nav.digest }}</a>{% endif %}
+      <a href="{{ link('az') }}"{% if page_key == 'az' %} aria-current="page"{% endif %}>{{ s.free.nav.az }}</a>
+      {% if has_digest %}<a href="{{ link('digest') }}"{% if page_key == 'digest' %} aria-current="{{ 'true' if issue is defined else 'page' }}"{% endif %}>{{ s.free.nav.digest }}</a>{% endif %}
       {% else %}
       {% if has_quiz %}<a href="{{ link('home') }}#weekly">{{ s.nav.weekly }}</a>{% endif %}
       <a href="{{ link('home') }}#app">{{ s.nav.app }}</a>
@@ -55,7 +55,7 @@
       {% endif %}
       {% endblock %}
     </nav>
-    <a class="lang" href="{{ other_url }}" hreflang="{{ other_lang }}" lang="{{ other_lang }}" title="{{ s.other_lang_label }}">{{ s.other_lang_short }}</a>
+    <a class="lang" href="{{ other_url }}" hreflang="{{ other_lang }}" lang="{{ other_lang }}" title="{{ s.other_lang_label }}">{{ icon("globe") }}{{ s.other_lang_short }}</a>
   </div>
 </header>
 <main id="main">
@@ -64,7 +64,7 @@
 <footer class="footer">
   <div class="wrap footer-grid">
     <div class="footer-brand">
-      <p class="brand-name">{{ c.brand }}</p>
+      <p class="brand-name"><span class="brand-tile">{{ mark() }}</span>{{ c.brand }}</p>
       <p class="footer-disclaimer">{{ s.footer.disclaimer }}</p>
       {% if c.free_launch %}<p class="footer-disclaimer">{{ s.free.footer.free_line }}</p>{% endif %}
     </div>

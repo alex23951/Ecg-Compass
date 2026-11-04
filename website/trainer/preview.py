@@ -15,8 +15,8 @@ import sys
 from pathlib import Path
 
 APP = Path(__file__).resolve().parent.parent / "app"
-FONTS = ('<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..800'
-         '&family=Source+Sans+3:ital,wght@0,400..700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">')
+FONTS = ('<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400..800'
+         '&family=IBM+Plex+Mono:wght@500&display=swap">')
 
 
 def main():

@@ -1,32 +1,35 @@
 {% extends "base.html" %}
+{% from "icons.html" import icon %}
 {# The free site's home page (free_launch: true). The paid-plan page stays in home.html. #}
 {% set fh = s.free.home %}
 {% block title %}{{ f(s.free.meta.home_title) }}{% endblock %}
 {% block description %}{{ f(s.free.meta.home_description) }}{% endblock %}
 {% block main %}
 <section class="hero" aria-labelledby="hero-title">
-  <figure class="strip" aria-label="{{ s.home.trace_caption }}">
-    <canvas id="hero-trace" class="strip-canvas" role="img" aria-label="{{ s.home.trace_caption }}"></canvas>
-    <figcaption class="strip-label"><span>{{ s.home.trace_label }}</span><span class="strip-rate" aria-hidden="true">75/min</span></figcaption>
-  </figure>
-  <script type="application/json" id="trace-data">{{ trace_json }}</script>
   <div class="wrap hero-grid">
     <div class="hero-copy">
       <h1 id="hero-title">{{ fh.title }}</h1>
       <p class="lead">{{ fh.lead }}</p>
+      <div class="cta-card">
+        <div class="hero-actions"><a class="button button-lg" href="{{ app_url() }}">{{ fh.cta_trainer }}{{ icon("arrow") }}</a>
+        {% if has_digest %}<a class="button button-quiet button-lg" href="{{ link('digest') }}">{{ fh.cta_digest }}</a>{% endif %}</div>
+        <div class="hero-notes"><p class="form-note">{{ fh.privacy_line }}</p>
+        <p class="form-note"><span class="tag">beta</span> {{ fh.hero_note }}</p></div>
+      </div>
+    </div>
+    <figure class="strip" aria-label="{{ s.home.trace_caption }}">
+      <canvas id="hero-trace" class="strip-canvas" role="img" aria-label="{{ s.home.trace_caption }}"></canvas>
+      <figcaption class="strip-label"><span>{{ s.home.trace_label }}</span><span class="strip-rate" aria-hidden="true">75/min</span></figcaption>
+    </figure>
+    <script type="application/json" id="trace-data">{{ trace_json }}</script>
+    <div class="hero-meta">
       <ul class="stats">
-        {% for st in fh.stats %}<li>{{ f(st, cases=totals.cases, dx=totals.dx) }}</li>{% endfor %}
+        {% for st in fh.stats %}<li>{{ icon("check") }}{{ f(st, cases=totals.cases, dx=totals.dx) }}</li>{% endfor %}
       </ul>
       <div class="chips">
         <span class="chips-label">{{ fh.chips_label }}</span>
         {% for m in modules %}<a class="chip" href="{{ app_url('#practice-' + m.id) }}">{{ m.title }}</a>{% endfor %}
-      </div>
-    </div>
-    <div class="signup-card cta-card">
-      <a class="button" href="{{ app_url() }}">{{ fh.cta_trainer }}</a>
-      {% if has_digest %}<a class="button button-quiet" href="{{ link('digest') }}">{{ fh.cta_digest }}</a>{% endif %}
-      <p class="form-note">{{ fh.privacy_line }}</p>
-      <p class="form-note"><span class="tag">beta</span> {{ fh.hero_note }}</p>
+        </div>
     </div>
   </div>
 </section>
@@ -40,7 +43,7 @@
     <div class="quiz" data-answer="{{ quiz.q.answer_index }}">
       <a class="quiz-ecg" href="{{ url(quiz.images.full_image or quiz.images.image) }}" target="_blank" rel="noopener">
         <img src="{{ url(quiz.images.image) }}" alt="ECG" width="1200" height="600" loading="lazy">
-        <span class="quiz-zoom">{{ s.home.quiz_open_full }}</span>
+        <span class="quiz-zoom">{{ icon("expand") }}{{ s.home.quiz_open_full }}</span>
       </a>
       <div class="quiz-body">
         <p class="quiz-prompt">{{ quiz.q.prompt }}</p>
@@ -73,14 +76,14 @@
     <h3 class="modules-heading">{{ fh.modules_heading }}</h3>
     <ul class="get-grid module-list">
       {% for m in modules %}
-      <li class="get-item">
+      <li class="get-item module-card"><span class="module-icon">{{ icon(m.id) }}</span>
         <p class="get-who">{{ f(fh.module_count, n=m.count) }}</p>
         <h3><a href="{{ app_url('#practice-' + m.id) }}">{{ m.title }}</a></h3>
-        <p>{{ m.blurb }}</p>
+        <p>{{ m.blurb }}</p>{{ icon("arrow", "icon module-go") }}
       </li>
       {% endfor %}
     </ul>
-    <p class="cta-row"><a class="button" href="{{ app_url() }}">{{ fh.trainer_cta }}</a></p>
+    <p class="cta-row"><a class="button" href="{{ app_url() }}">{{ fh.trainer_cta }}{{ icon("arrow") }}</a></p>
   </div>
 </section>
 
@@ -106,7 +109,7 @@
     </div>
     <div class="az-preview">
       {% for name in az_sample %}<a class="chip" href="{{ link('az') }}">{{ name }}</a>{% endfor %}
-      <a class="button" href="{{ link('az') }}">{{ fh.az_cta }}</a>
+      <a class="button button-light" href="{{ link('az') }}">{{ fh.az_cta }}{{ icon("arrow") }}</a>
     </div>
   </div>
 </section>
@@ -130,8 +133,9 @@
       </dl>
     </div>
     <ul class="features">
+      {% set ficons = ["explained", "calipers", "repeat", "pacing", "list", "shield"] %}
       {% for feat in fh.features %}
-      <li><h3>{{ feat.title }}</h3><p>{{ feat.text }}</p></li>
+      <li><span class="feature-icon">{{ icon(ficons[loop.index0 % 6]) }}</span><h3>{{ feat.title }}</h3><p>{{ feat.text }}</p></li>
       {% endfor %}
     </ul>
   </div>
@@ -155,13 +159,13 @@
       <p>{{ s.home.about_text }}</p>
     </div>
     <ul class="rules">
-      {% for rule in s.home.rules %}<li>{{ rule }}</li>{% endfor %}
+      {% for rule in s.home.rules %}<li>{{ icon("shield") }}{{ rule }}</li>{% endfor %}
     </ul>
   </div>
 </section>
 
 <section class="section section-alt" aria-labelledby="faq-title">
-  <div class="wrap narrow">
+  <div class="wrap narrow faq-wrap">
     <h2 id="faq-title">{{ s.home.faq_heading }}</h2>
     <div class="faq">
       {% for item in fh.faq %}

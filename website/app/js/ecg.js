@@ -153,6 +153,8 @@ export class EcgView {
       trace: v("--ecg-trace", "#111"),
       label: v("--ecg-label", "#333"),
       hl: v("--ecg-highlight", "#b3261e"),
+      // the box fill has its own token, so a cool outline colour cannot turn the pink paper grey
+      hlFill: cs.getPropertyValue("--ecg-highlight-fill").trim(),
       cal: v("--ecg-caliper", "#1d4ed8"),
       font: v("--font-mono", "monospace"),
       mark: {
@@ -240,8 +242,8 @@ export class EcgView {
       const x0 = s.x0;
       const w = (s.t1 - s.t0) * SPEED;
       ctx.save();
-      ctx.fillStyle = c.hl;
-      ctx.globalAlpha = 0.09;
+      ctx.fillStyle = c.hlFill || c.hl;
+      ctx.globalAlpha = c.hlFill ? 1 : 0.09;
       ctx.fillRect(x0 + 0.3, s.y - s.h / 2 + 0.6, w - 0.6, s.h - 1.2);
       ctx.globalAlpha = 0.9;
       ctx.strokeStyle = c.hl;
@@ -291,7 +293,10 @@ export class EcgView {
     ctx.textBaseline = "top";
     for (const s of L.segs) {
       const label = this.opts.labels[s.lead] || s.lead;
-      ctx.fillText(label, s.x0 + 1.2, s.y - s.h / 2 + 1.4);
+      // a highlighted lead has a box outline: keep its label clear of the stroke
+      const hk = s.rhythm && this.opts.layout === "standard" ? s.lead + "-rhythm" : s.lead;
+      const inset = this.highlight.has(hk) ? 1 : 0;
+      ctx.fillText(label, s.x0 + 1.2 + inset, s.y - s.h / 2 + 1.4 + inset);
       if (s.t0 > 0 && !s.rhythm) {
         ctx.beginPath();
         ctx.moveTo(s.x0, s.y - 4);

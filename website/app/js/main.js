@@ -95,6 +95,51 @@ function svg(tag, attrs, ...kids) {
   return el;
 }
 
+/* Decorative line icons, the same set as the site (website/templates/icons.html). */
+const ICONS = {
+  rhythm: "M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4 3 5.5l7 7Z M3.2 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.3",
+  blocks: "M3 5h18 M3 19h18 M7 5l3 14 M14 5l1.6 7.5 M13 15h5.5",
+  ischaemia: "M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4 3 5.5l7 7Z M12 5l-2 3.5 3 2.5-2 3.5",
+  tachy: "M13 2 3 14h9l-1 8 10-12h-9l1-8Z",
+  patterns: "M2 17h4.5l1.5-2.5L11.5 3l3.5 18 2-5H22",
+  pacing: "M3 11a2 2 0 0 1 2-2h5a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z M12 14h3l1.5-10L18 14h3",
+  "pacing-site": "M3 11a2 2 0 0 1 2-2h5a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z M12 14h3l1.5-10L18 14h3",
+  "pacing-trouble": "M3 11a2 2 0 0 1 2-2h5a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z M12 14h3l1.5-10L18 14h3",
+  arrest: "M2 12c1.5-5 2.5 5 4 0s2.5-6 4 0 2.5 6 4 0 2.5-5 4 0 2 3 4 0",
+  compass: "M22 12a10 10 0 1 1-20 0 10 10 0 0 1 20 0Z M16.2 7.8l-2.1 6.3-6.3 2.1 2.1-6.3 6.3-2.1Z",
+  arrow: "M5 12h14 M13 6l6 6-6 6",
+  home: "M3 10.5 12 3l9 7.5 M5 9v11h14V9 M10 20v-6h4v6",
+  learn: "M2 5.5C4.5 4 8 4 12 6c4-2 7.5-2 10-.5V19c-2.5-1.5-6-1.5-10 .5-4-2-7.5-2-10-.5Z M12 6v13.5",
+  practice: "M2 12h4l2.5-6 4 12 2.5-6H22",
+  drills: "M6 3v18 M18 3v18 M6 12h12 M9 9l-3 3 3 3 M15 9l3 3-3 3",
+  library: "M4 4h4v16H4Z M10 4h4v16h-4Z M16.5 4.5l3.7-.9 3 15.5-3.7.9Z",
+  progress: "M3 3v18h18 M7 15l4-4 3 3 6-6",
+  review: "M22 12a10 10 0 1 1-20 0 10 10 0 0 1 20 0Z M8 12.3l2.7 2.7L16 9.5",
+  zoom: "M17 11a6 6 0 1 1-12 0 6 6 0 0 1 12 0Z M21 21l-5.6-5.6 M8.5 11h5 M11 8.5v5",
+  globe: "M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z M3 12h18 M12 3c2.5 2.5 3.6 5.5 3.6 9s-1.1 6.5-3.6 9 M12 3C9.5 5.5 8.4 8.5 8.4 12s1.1 6.5 3.6 9",
+};
+function icon(name, cls = "icon") {
+  return svg("svg", { class: cls, viewBox: "0 0 24 24", "aria-hidden": "true", focusable: "false", fill: "none",
+    stroke: "currentColor", "stroke-width": "1.75", "stroke-linecap": "round", "stroke-linejoin": "round" },
+  svg("path", { d: ICONS[name] || ICONS.compass }));
+}
+
+/* Correct / wrong mark, so the answer state never rests on colour alone. */
+const MARKS = { ok: "M7 12.5l3.2 3.2L17 8.8", bad: "M8.5 8.5l7 7M15.5 8.5l-7 7", "ok-plain": "M5 12.5l4.5 4.5L19 7.5", "bad-plain": "M6.5 6.5l11 11M17.5 6.5l-11 11" };
+function markIcon(ok, badge = true) {
+  return svg("svg", { class: `mk ${badge ? "mk-badge" : "mk-plain"}`, viewBox: "0 0 24 24", "aria-hidden": "true", focusable: "false" },
+    badge ? svg("circle", { class: "mk-bg", cx: 12, cy: 12, r: 11 }) : null,
+    svg("path", { class: "mk-fg", d: MARKS[(ok ? "ok" : "bad") + (badge ? "" : "-plain")], fill: "none", "stroke-width": badge ? 2.4 : 2.6,
+      "stroke-linecap": "round", "stroke-linejoin": "round" }));
+}
+/* Put the mark in an option's letter badge (the letter stays in the DOM, hidden by CSS). */
+function markOption(b, ok) {
+  const letter = b.querySelector(".cs-letter");
+  if (!letter || letter.querySelector(".mk")) return;
+  letter.classList.add("has-mark");
+  letter.append(markIcon(ok, false));
+}
+
 function shuffle(arr) {
   const a = arr.slice();
   for (let i = a.length - 1; i > 0; i--) {
@@ -332,10 +377,31 @@ function renderChrome(view) {
   previewEl.textContent = t("preview_note");
   navEl.replaceChildren(
     ...NAV.map(([href, key, views]) =>
-      h("a", { href: `#${href}`, "aria-current": views.includes(view) ? "page" : null, text: t(key) }),
+      h("a", { href: `#${href}`, "aria-current": views.includes(view) ? "page" : null }, icon(href), h("span", { text: t(key) })),
     ),
   );
+  revealNavItem(navEl.querySelector("[aria-current]"));
+  navEdges();
 }
+
+// scroll the nav row sideways only (never the page) so an item clears the edge fades
+function revealNavItem(a) {
+  if (!a || navEl.scrollWidth <= navEl.clientWidth) return;
+  const n = navEl.getBoundingClientRect();
+  const r = a.getBoundingClientRect();
+  const pad = 52;
+  if (r.right > n.right - pad) navEl.scrollLeft += r.right - n.right + pad;
+  else if (r.left < n.left + pad) navEl.scrollLeft -= n.left + pad - r.left;
+}
+navEl.addEventListener("focusin", (e) => revealNavItem(e.target.closest("a")));
+
+function navEdges() {
+  const max = navEl.scrollWidth - navEl.clientWidth;
+  navEl.classList.toggle("is-more-left", max > 1 && navEl.scrollLeft > 1);
+  navEl.classList.toggle("is-more-right", max > 1 && navEl.scrollLeft < max - 1);
+}
+navEl.addEventListener("scroll", navEdges, { passive: true });
+window.addEventListener("resize", navEdges, { passive: true });
 
 function render(scroll = true) {
   cleanups.splice(0).forEach((fn) => {
@@ -399,7 +465,7 @@ function makeViewer(c, { look = [], revealed = false, calipers = "off", span = 0
       }),
     );
     return h("div", { class: "vw-group", role: "group", "aria-label": label },
-      h("span", { class: "vw-label", text: label }), btns);
+      h("span", { class: "vw-label", text: label }), h("span", { class: "vw-seg" }, btns));
   }
 
   function setZoom(z) {
@@ -418,12 +484,13 @@ function makeViewer(c, { look = [], revealed = false, calipers = "off", span = 0
   }
 
   const zoom = h("div", { class: "vw-group", role: "group", "aria-label": t("tool_zoom_in") },
+    h("span", { class: "vw-label vw-label-icon", "aria-hidden": "true" }, icon("zoom")), h("span", { class: "vw-seg" },
     h("button", { type: "button", class: "vw-btn", "aria-label": t("tool_zoom_out"), text: "−",
       onclick: () => setZoom(ZOOMS[Math.max(0, ZOOMS.indexOf(st.zoom) - 1)] || 1) }),
     h("button", { type: "button", class: "vw-btn", text: t("tool_fit"), onclick: () => setZoom(1) }),
     h("button", { type: "button", class: "vw-btn", "aria-label": t("tool_zoom_in"), text: "+",
       onclick: () => setZoom(ZOOMS[Math.min(ZOOMS.length - 1, ZOOMS.indexOf(st.zoom) + 1)]) }),
-  );
+  ));
   const gain = group(t("tool_gain"), [[5, "5"], [10, "10"], [20, "20"]], () => st.gain, (g) => {
     st.gain = g;
     view?.setGain(g);
@@ -453,8 +520,9 @@ function makeViewer(c, { look = [], revealed = false, calipers = "off", span = 0
     : null;
 
   const el = h("figure", { class: "vw" },
-    h("div", { class: "vw-bar", role: "toolbar", "aria-label": "ECG" }, zoom, gain, cal, hlBtn, readout),
-    host,
+    h("div", { class: "vw-panel" },
+      h("div", { class: "vw-bar", role: "toolbar", "aria-label": "ECG" }, zoom, gain, cal, hlBtn, readout),
+      host),
     hint,
     h("p", { class: "vw-rotate", text: t("rotate_hint") }),
     h("figcaption", { class: "credit", text: creditLine(c) }),
@@ -554,7 +622,7 @@ function viewHome() {
       h("h1", { text: t("home_title") }),
       h("ul", { class: "tr-stats" }, stats.map((s) => h("li", { text: s }))),
       planDue + planNew
-        ? h("p", null, h("a", { class: "btn", href: "#practice", text: t("home_start") }))
+        ? h("p", null, h("a", { class: "btn btn-lg", href: "#practice" }, t("home_start"), icon("arrow")))
         : h("p", { class: "tr-note", text: t("home_nothing_due") }),
       !store.persistent && h("p", { class: "tr-note", text: t("progress_storage_off") }),
     ),
@@ -565,6 +633,7 @@ function viewHome() {
         if (!s.total) return null;
         return h("li", { class: "tr-module" },
           h("div", { class: "tr-module-top" },
+            h("span", { class: "tr-module-icon" }, icon(m.id)),
             h("h3", { text: tx(m.title) }),
             m.free && h("span", { class: "tag", text: t("badge_free") }),
             m.signature && h("span", { class: "tag tag-accent", text: t("badge_signature") }),
@@ -575,11 +644,12 @@ function viewHome() {
             h("span", { class: "tr-bar-done", style: `width:${(100 * s.mastered) / s.total}%` }),
           ),
           h("p", { class: "tr-module-meta" }, `${t("module_cases", s.total)}${s.stretch ? ` · ${t("module_stretch", s.stretch)}` : ""} · ${t("module_mastered", s.mastered, s.total)}`),
-          h("a", { class: "btn btn-quiet", href: `#practice-${m.id}`, text: t("home_start_module") }),
+          h("a", { class: "btn btn-quiet tr-module-go", href: `#practice-${m.id}` }, t("home_start_module"), icon("arrow")),
         );
       })),
     ),
-    h("section", { class: "tr-section tr-teaser" },
+    h("section", { class: "tr-section tr-teaser tr-drills-teaser" },
+      h("span", { class: "tr-module-icon" }, icon("drills")),
       h("div", null,
         h("h2", { text: t("home_drills_title") }),
         h("p", { text: t("home_drills_text") }),
@@ -604,13 +674,13 @@ function viewProfile() {
         h("p", { class: "tr-module-meta", text: t("module_cases", n) }),
         tr.focus?.length && tr.id === cur ? h("div", { class: "vw-group tier-focus", role: "group", "aria-label": t("profile_focus") },
           h("span", { class: "vw-label", text: t("profile_focus") }),
-          tr.focus.map((f, k) => h("button", { type: "button", class: "vw-btn",
+          h("span", { class: "vw-seg" }, tr.focus.map((f, k) => h("button", { type: "button", class: "vw-btn",
             "aria-pressed": String((store.focus || tr.focus[0].id) === f.id), text: tx(f.name),
             onclick: () => {
               store.setFocus(f.id);
               session = null;
               render(false);
-            } }))) : null,
+            } })))) : null,
         tr.id === cur
           ? h("p", { class: "tier-mine" }, h("span", { class: "chip chip-ok", text: t("profile_current") }), " ",
             h("a", { href: "#home", text: t("back_home") }))
@@ -746,7 +816,7 @@ function lessonFigure(step) {
     step.heading && h("h2", { text: tx(step.heading) }),
     paragraphs(step.body),
     btns.length > 1 && h("div", { class: "vw-group ls-sets", role: "group", "aria-label": t("lesson_show") },
-      h("span", { class: "vw-label", text: t("lesson_show") }), btns),
+      h("span", { class: "vw-label", text: t("lesson_show") }), h("span", { class: "vw-seg" }, btns)),
     viewer.el,
     note,
     step.caption && h("p", { class: "cs-small", text: tx(step.caption) }));
@@ -788,7 +858,7 @@ function lessonTask(l, step) {
     store.logCheck(l.id, step.id, ok);
     const u = { bpm: t("per_min"), mm: " mm", count: "", ms: " ms" }[unit] ?? ` ${unit}`;
     result.replaceChildren(
-      h("p", { class: `dr-verdict ${ok ? "good" : "off"}`, text: t(ok ? "drill_good" : "drill_off") }),
+      h("p", { class: `dr-verdict ${ok ? "good" : "off"}` }, markIcon(ok), t(ok ? "drill_good" : "drill_off")),
       h("dl", { class: "dr-nums" },
         h("div", null, h("dt", { text: t("drill_reference") }), h("dd", { text: `${num(step.ref)}${u}` })),
         h("div", null, h("dt", { text: t("drill_yours") }), h("dd", { text: `${num(mode === "volt" ? v : Math.round(v))}${u}` }))),
@@ -816,10 +886,11 @@ function lessonCheck(l, step) {
     btns.forEach((b, k) => {
       b.disabled = true;
       b.classList.add(k === step.answer ? "is-correct" : k === i ? "is-wrong" : "is-dim");
+      if (k === step.answer || k === i) markOption(b, k === step.answer);
     });
     const ok = i === step.answer;
     out.replaceChildren(
-      h("p", { class: `cs-verdict ${ok ? "ok" : "bad"}` }, h("strong", { text: t(ok ? "correct" : "wrong") })),
+      h("p", { class: `cs-verdict ${ok ? "ok" : "bad"}` }, markIcon(ok), h("strong", { text: t(ok ? "correct" : "wrong") })),
       h("p", { text: tx(step.explain) }));
   };
   const ol = h("ol", { class: "cs-options fu-options" }, step.options.map((o, i) => {
@@ -955,6 +1026,7 @@ function caseScreen(c, { mode, item, header, extraNote, onAnswer, onRate, onNext
       if (key === c.answer) b.classList.add("is-correct");
       else if (key === chosen) b.classList.add("is-wrong");
       else b.classList.add("is-dim");
+      if (key === c.answer || key === chosen) markOption(b, key === c.answer);
     }
   }
 
@@ -965,7 +1037,7 @@ function caseScreen(c, { mode, item, header, extraNote, onAnswer, onRate, onNext
     const rest = h("div", { class: "cs-rest" }, body);
     const fu = followups(c, item, () => { rest.hidden = false; });
     rest.hidden = fu.pending;
-    feedback.replaceChildren(...head, fu.el, rest, rateRow(ok));
+    feedback.replaceChildren(...[...head, fu.el, rest, rateRow(ok)].filter(Boolean));
     if (focus) feedback.querySelector(".cs-verdict")?.focus({ preventScroll: false });
   }
 
@@ -1022,7 +1094,7 @@ function caseScreen(c, { mode, item, header, extraNote, onAnswer, onRate, onNext
     ),
   );
 
-  if (mode === "study") feedback.append(followups(c, null).el, ...explain(c, null, "study"));
+  if (mode === "study") feedback.append(...[followups(c, null).el, ...explain(c, null, "study")].filter(Boolean));
   else if (item.chosen) {
     mark(item.chosen);
     showFeedback(item.chosen, false);
@@ -1056,7 +1128,7 @@ function explainParts(c, chosen, mode) {
   if (mode === "quiz") {
     const ok = chosen === c.answer;
     head.push(h("p", { class: `cs-verdict ${ok ? "ok" : "bad"}`, tabindex: "-1" },
-      h("strong", { text: t(ok ? "correct" : "wrong") }),
+      markIcon(ok), h("strong", { text: t(ok ? "correct" : "wrong") }),
       ok ? null : ` · ${t("wrong_detail", dxName(c.answer))}`));
     if (!ok) {
       head.push(h("p", { class: "cs-tell" },
@@ -1124,10 +1196,11 @@ function followups(c, item, onDone) {
       btns.forEach((b, k) => {
         b.disabled = true;
         b.classList.add(k === f.answer ? "is-correct" : k === i ? "is-wrong" : "is-dim");
+        if (k === f.answer || k === i) markOption(b, k === f.answer);
       });
       const ok = i === f.answer;
       out.replaceChildren(
-        h("p", { class: `cs-verdict ${ok ? "ok" : "bad"}` }, h("strong", { text: t(ok ? "correct" : "wrong") })),
+        h("p", { class: `cs-verdict ${ok ? "ok" : "bad"}` }, markIcon(ok), h("strong", { text: t(ok ? "correct" : "wrong") })),
         h("p", { text: tx(f.explain) }));
     }
     const ol = h("ol", { class: "cs-options fu-options" }, f.options.map((o, i) => {
@@ -1298,11 +1371,11 @@ function viewDrills() {
       const mine = stats.filter((d) => type === "mixed" || d.type === type);
       const ok = mine.filter((d) => d.ok).length;
       return h("li", { class: "tr-module" },
-        h("div", { class: "tr-module-top" }, h("h3", { text: t(`drill_${type}`) })),
+        h("div", { class: "tr-module-top" }, h("span", { class: "tr-module-icon" }, icon("drills")), h("h3", { text: t(`drill_${type}`) })),
         type !== "mixed" && h("p", { class: "tr-module-blurb", text: t(`drill_task_${type}`) }),
         h("p", { class: "tr-module-meta" }, t("drill_count", n),
           mine.length ? ` · ${t("drill_session", ok, mine.length)}` : ""),
-        h("a", { class: "btn btn-quiet", href: `#drill-${type}`, text: t("drill_start") }),
+        h("a", { class: "btn btn-quiet tr-module-go", href: `#drill-${type}` }, t("drill_start"), icon("arrow")),
       );
     })),
   );
@@ -1365,14 +1438,14 @@ function viewDrill(type) {
     }
     const last = d.pos + 1 >= d.items.length;
     result.replaceChildren(
-      h("p", { class: `dr-verdict ${verdict}`, text: t(`drill_${verdict}`) }),
+      h("p", { class: `dr-verdict ${verdict}` }, verdict !== "close" && markIcon(verdict === "good"), t(`drill_${verdict}`)),
       h("dl", { class: "dr-nums" },
         h("div", null, h("dt", { text: t("drill_reference") }), h("dd", { text: fmt(ref) })),
         h("div", null, h("dt", { text: t("drill_yours") }), h("dd", { text: fmt(v) })),
         h("div", null, h("dt", { text: t("drill_diff") }), h("dd", { text: signed(diff, unit.trim() === "ms" ? " ms" : "°") })),
       ),
       h("p", { class: "cs-small", text: `${t("drill_tolerance", `${good}${unit}`)} · ${t(kind === "axis" ? "axis_ref_note" : "drill_interval_note")}` }),
-      extra,
+      ...extra,
       h("p", { class: "dr-actions" },
         h("button", { type: "button", class: "btn", text: t(last ? "drill_done" : "drill_next"),
           onclick: () => {
