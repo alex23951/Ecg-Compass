@@ -12,7 +12,7 @@
     "signup": "Free sign-up"
   },
   "meta": {
-    "home_title": "{brand}: the place you practise ECGs",
+    "home_title": "{brand}: the place you practice ECGs",
     "home_description": "A real ECG every week, three new papers explained in two minutes, and an ECG practice app checked by an electrophysiologist. In English and Romanian."
   },
   "preview_banner": "Preview. The forms don't send anything yet, and text marked \"draft\" is waiting for the doctor's check.",
@@ -34,7 +34,7 @@
     "consent_newsletter": "Send me the weekly email. I can unsubscribe any time with one click. I have read the <a href=\"{privacy}\">privacy policy</a>.",
     "consent_founding": "Reserve a founding place and send me the weekly email. The reservation does not commit me to pay. I have read the <a href=\"{privacy}\">privacy policy</a>.",
     "interview": "I'm happy to have a 15-minute online chat about how I learn ECGs (it helps us a lot).",
-    "wish": "What would you most like to practise? (optional)",
+    "wish": "What would you most like to practice? (optional)",
     "wish_placeholder": "For example: heart blocks, wide-complex tachycardias, pacemakers…",
     "honeypot": "Leave this field empty",
     "submit_newsletter": "Send me the ECG of the week",
@@ -56,7 +56,7 @@
   "home": {
     "trace_label": "II · 25 mm/s · 10 mm/mV",
     "trace_caption": "Sinus rhythm, 75/min. Lead II from a real ECG in the PTB-XL database.",
-    "title": "The place you practise ECGs.",
+    "title": "The place you practice ECGs.",
     "lead": "A real ECG every week, three new papers explained in two minutes and, soon, an app with hundreds of ECGs marked by a cardiologist trained in electrophysiology. In English and Romanian.",
     "signup_heading": "Get the ECG of the week",
     "weekly_eyebrow": "ECG of the week",
@@ -82,7 +82,7 @@
     "gift_title": "Sign-up gift: the ECG pocket guide",
     "gift_text": "11 printable cards: the systematic read, normal values, axis, blocks, STEMI criteria, tachycardias, electrolytes and pacemakers.",
     "app_eyebrow": "The app · in progress",
-    "app_heading": "Practise, don't just watch.",
+    "app_heading": "Practice, don't just watch.",
     "app_intro": "ECG courses show you traces. The app makes you read them: a few minutes a day, with instant feedback.",
     "calipers_title": "Try the calipers",
     "calipers_text": "Drag the two lines onto the peaks of two R waves. We measure the interval and the rate, just like on paper.",

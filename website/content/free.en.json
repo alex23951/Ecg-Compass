@@ -1,31 +1,31 @@
 {
   "_note": "Text for the free site (free_launch: true in site.config.json).",
   "meta": {
-    "home_title": "{brand}: practise ECGs, free",
+    "home_title": "{brand}: practice ECGs, free",
     "home_description": "Real ECGs to read, with explanations checked by a cardiologist trained in electrophysiology, digital calipers and spaced repetition. Free, no account, in English and Romanian.",
     "digest_title": "ECG of the week · {brand}",
     "digest_description": "Every week: a real ECG to read, three new papers in brief and a tip for nurses."
   },
   "preview_banner": "Preview of the free site. Text marked \"draft\" is waiting for the doctor's check.",
   "nav": {
-    "trainer": "Practise",
+    "trainer": "Practice",
     "digest": "ECG of the week",
     "about": "About",
     "az": "ECG A to Z"
   },
   "home": {
-    "title": "The place you practise ECGs. Free.",
+    "title": "The place you practice ECGs. Free.",
     "lead": "Real ECGs to read, with the answer explained step by step by a cardiologist trained in electrophysiology. No account, no payment, right in your browser.",
-    "cta_trainer": "Start practising",
+    "cta_trainer": "Start practicing",
     "cta_digest": "ECG of the week",
     "hero_note": "Beta: new modules are added as they are checked.",
     "weekly_heading": "ECG of the week, no. {n}",
     "weekly_intro": "A real tracing, four options and the answer explained step by step. A new ECG every week.",
     "weekly_cta": "All issues",
     "trainer_eyebrow": "The ECG trainer · beta",
-    "trainer_heading": "Practise, don't just watch.",
+    "trainer_heading": "Practice, don't just watch.",
     "trainer_intro": "Courses show you tracings. Here you read them yourself: pick the diagnosis, measure on true-scale paper and get the explanation straight away.",
-    "modules_heading": "What you can practise now",
+    "modules_heading": "What you can practice now",
     "module_count": "{n} ECGs",
     "trainer_cta": "Open the trainer",
     "features": [
@@ -124,7 +124,7 @@
     ],
     "az_eyebrow": "ECG A to Z",
     "az_heading": "Every diagnosis, in brief",
-    "az_intro": "The criteria, the pitfalls and a real ECG to practise on for every diagnosis in the trainer.",
+    "az_intro": "The criteria, the pitfalls and a real ECG to practice on for every diagnosis in the trainer.",
     "az_cta": "Open the list"
   },
   "digest": {
@@ -150,16 +150,16 @@
   },
   "az": {
     "title": "ECG A to Z · {brand}",
-    "description": "ECG diagnoses in brief: criteria, pitfalls and a real ECG to practise on for each. Checked by a cardiologist trained in electrophysiology.",
+    "description": "ECG diagnoses in brief: criteria, pitfalls and a real ECG to practice on for each. Checked by a cardiologist trained in electrophysiology.",
     "eyebrow": "ECG A to Z",
     "heading": "ECG diagnoses, in brief",
-    "intro": "For each diagnosis: what you see at a glance, the criteria and the pitfalls. Then practise on a real ECG.",
+    "intro": "For each diagnosis: what you see at a glance, the criteria and the pitfalls. Then practice on a real ECG.",
     "search": "Search for a diagnosis",
     "search_placeholder": "e.g. block, STEMI, flutter",
     "none": "No diagnosis matches your search.",
     "criteria": "Criteria",
     "pitfalls": "Pitfalls",
-    "practise": "Practise on a real ECG",
+    "practise": "Practice on a real ECG",
     "module": "Module"
   }
 }
