@@ -1248,8 +1248,8 @@
         ],
         "answer": 3,
         "explain": {
-          "ro": "Intervalele RR variază fără nicio regularitate (aici între ~380 și ~740 ms), iar înaintea complexelor QRS nu există unde P. Ritm complet neregulat, fără unde P: fibrilație atrială. Ritmul este rapid, așa că neregularitatea trece ușor neobservată: compară mai multe intervale RR.",
-          "en": "The RR intervals vary with no pattern (here between about 380 and 740 ms), and there are no P waves before the QRS complexes. Irregularly irregular with no P waves: atrial fibrillation. The rhythm is fast, so the irregularity is easy to miss: compare several RR intervals."
+          "ro": "Intervalele RR variază fără nicio regularitate (aici între ~360 și ~740 ms), iar înaintea complexelor QRS nu există unde P. Ritm complet neregulat, fără unde P: fibrilație atrială. Ritmul este rapid, așa că neregularitatea trece ușor neobservată: compară mai multe intervale RR.",
+          "en": "The RR intervals vary with no pattern (here between about 360 and 740 ms), and there are no P waves before the QRS complexes. Irregularly irregular with no P waves: atrial fibrillation. The rhythm is fast, so the irregularity is easy to miss: compare several RR intervals."
         }
       },
       {
@@ -1430,12 +1430,14 @@
             "Pasul 2 răspunde la o întrebare: de câte ori bate inima pe minut? Aceasta este frecvența cardiacă (FC).",
             "Numeri complexele QRS. Ele arată bătăile ventriculilor, cele pe care le simți la puls.",
             "La adult, în repaus: sub 60/min este bradicardie, 60–100/min este normal, peste 100/min este tahicardie. O frecvență prea mică sau prea mare poate explica simptome precum amețeala sau palpitațiile.",
+            "O frecvență sub 40/min sau peste 150/min este un semn de alarmă: nu poate aștepta.",
             "Electrocardiograful tipărește și el o frecvență, dar poate greși. Verific-o mereu pe traseu."
           ],
           "en": [
             "Step 2 answers one question: how many times a minute does the heart beat? This is the heart rate.",
             "You count the QRS complexes. They show the beats of the ventricles, the ones you feel at the pulse.",
             "In an adult at rest: under 60/min is bradycardia, 60–100/min is normal, over 100/min is tachycardia. A rate that is too slow or too fast can explain symptoms such as dizziness or palpitations.",
+            "A rate under 40/min or over 150/min is a red flag: it cannot wait.",
             "The machine prints a rate too, but it can be wrong. Always check it on the tracing."
           ]
         }
@@ -1697,61 +1699,61 @@
           "en": "The first R wave sits on a thick line. Use the 300 rule. What is the rate?"
         },
         "figure": {
-          "case": "rhythm-02",
+          "case": "isch-05",
           "leads": [
-            "I"
+            "II"
           ],
           "window": [
-            0.482,
-            4.482
+            0.986,
+            4.986
           ],
           "annotations": [
             {
               "kind": "vline",
-              "lead": "I",
+              "lead": "II",
               "at": "R",
               "beat": 0,
               "label": "R"
             },
             {
               "kind": "vline",
-              "lead": "I",
-              "t": 1.202,
+              "lead": "II",
+              "t": 1.706,
               "label": "300"
             },
             {
               "kind": "vline",
-              "lead": "I",
-              "t": 1.402,
+              "lead": "II",
+              "t": 1.906,
               "label": "150"
             },
             {
               "kind": "vline",
-              "lead": "I",
-              "t": 1.602,
+              "lead": "II",
+              "t": 2.106,
               "label": "100"
             },
             {
               "kind": "vline",
-              "lead": "I",
-              "t": 1.802,
+              "lead": "II",
+              "t": 2.306,
               "label": "75"
             },
             {
               "kind": "vline",
-              "lead": "I",
-              "t": 2.002,
+              "lead": "II",
+              "t": 2.506,
               "label": "60"
             },
             {
               "kind": "vline",
-              "lead": "I",
-              "t": 2.202,
+              "lead": "II",
+              "t": 2.706,
               "label": "50"
             },
             {
               "kind": "bracket",
-              "lead": "I",
+              "lead": "II",
               "from": "R",
               "to": "R",
               "beat": 0,
@@ -1767,22 +1769,22 @@
             "en": "About 150/min: tachycardia"
           },
           {
-            "ro": "~94/min: normală",
-            "en": "About 94/min: normal"
-          },
-          {
             "ro": "~75/min: normală",
             "en": "About 75/min: normal"
           },
           {
-            "ro": "~47/min: bradicardie",
-            "en": "About 47/min: bradycardia"
+            "ro": "~60/min: normală",
+            "en": "About 60/min: normal"
+          },
+          {
+            "ro": "~54/min: bradicardie",
+            "en": "About 54/min: bradycardia"
           }
         ],
         "answer": 3,
         "explain": {
-          "ro": "Unda R următoare cade după linia 50, deci frecvența este sub 50/min. Intervalul RR măsoară ~1300 ms, adică 6,5 pătrate mari: 300/6,5 ≈ 46/min. Intervalul RR variază puțin de la o bătaie la alta; media pe tot traseul este ~47/min: bradicardie. Dacă ai numărat și undele T, ai obținut dublul.",
-          "en": "The next R falls after the 50 line, so the rate is under 50/min. The RR is about 1300 ms, or 6.5 large squares: 300/6.5 ≈ 46/min. The RR varies a little from beat to beat; the average over the whole tracing is about 47/min: bradycardia. If you counted the T waves as well, you got double."
+          "ro": "Unda R următoare cade între liniile 60 și 50, deci frecvența este între 50 și 60/min. Intervalul RR măsoară ~1100 ms, adică 5,5 pătrate mari: 300/5,5 ≈ 55/min. Intervalul RR rămâne aproape același de la o bătaie la alta; media pe tot traseul este ~54/min: bradicardie. Dacă te-ai oprit la linia 60, privește din nou: unda R vine după ea.",
+          "en": "The next R wave falls between the 60 and 50 lines, so the rate is between 50 and 60/min. The RR is about 1100 ms, or 5.5 large squares: 300/5.5 ≈ 55/min. The RR stays almost the same from beat to beat; the average over the whole tracing is about 54/min: bradycardia. If you stopped at the 60 line, look again: the R wave comes after it."
         }
       },
       {
@@ -2197,13 +2199,13 @@
             "DI pozitiv și aVF pozitiv: ax normal (0°…+90°).",
             "DI negativ și aVF pozitiv: deviație axială dreaptă (peste +90°).",
             "DI pozitiv și aVF negativ: axul este îndreptat în sus și spre stânga. Privește DII. Dacă DII este predominant pozitiv, axul este între 0° și −30° și este încă normal. Dacă DII este predominant negativ, axul trece de −30°: deviație axială stângă.",
-            "DI negativ și aVF negativ: ax extrem deviat. Este rar. Cauza poate fi banală, de exemplu electrozi inversați. Poate fi și gravă, de exemplu o tahicardie ventriculară. Arată imediat ECG-ul unui medic."
+            "DI negativ și aVF negativ: ax extrem deviat. Este rar. Verifică întâi electrozii: inversarea lor poate da acest aspect. Dacă sunt puși corect, gândește-te la o cauză gravă, de exemplu o tahicardie ventriculară."
           ],
           "en": [
             "Lead I up and aVF up: normal axis (0° to +90°).",
             "Lead I down and aVF up: right axis deviation (beyond +90°).",
             "Lead I up and aVF down: the axis points up and to the left. Look at lead II. If lead II is mostly up, the axis is between 0° and −30° and still normal. If lead II is mostly down, the axis is beyond −30°: left axis deviation.",
-            "Lead I down and aVF down: extreme axis. It is rare. The cause can be simple, such as swapped electrodes. It can also be serious, such as ventricular tachycardia. Show the ECG to a doctor at once."
+            "Lead I down and aVF down: extreme axis. It is rare. Check the electrodes first: swapped electrodes can cause it. If they are placed correctly, think of a serious cause, such as ventricular tachycardia."
           ]
         }
       },
@@ -2412,8 +2414,8 @@
         ],
         "answer": 2,
         "explain": {
-          "ro": "DI este predominant negativ: o undă mică în sus (~1 mm), apoi una mai mare în jos (~4 mm). aVF este predominant pozitiv (~9 mm în sus). DI negativ și aVF pozitiv: deviație axială dreaptă. Aparatul a măsurat +117°. ECG-ul este al unui bărbat slab, de 22 de ani, fără alte modificări evidente. La tineri și la persoanele slabe, un astfel de ax poate fi normal. Medicul îl interpretează împreună cu restul ECG-ului.",
-          "en": "Lead I is mostly down: a small wave up (about 1 mm), then a bigger one down (about 4 mm). aVF is mostly up (about 9 mm). Lead I down and aVF up: right axis deviation. The machine measured +117°. The ECG is from a slim 22-year-old man and shows nothing else obvious. In young and slim people, such an axis can be normal. A doctor reads it together with the rest of the ECG."
+          "ro": "DI este predominant negativ: o undă mică în sus (~1 mm), apoi una mai mare în jos (~4 mm). aVF este predominant pozitiv (~9 mm în sus). DI negativ și aVF pozitiv: deviație axială dreaptă. Aparatul a măsurat +117°. ECG-ul este al unui bărbat slab, de 22 de ani, fără alte modificări evidente. La tineri și la persoanele slabe, un astfel de ax poate fi normal. Îl interpretezi împreună cu restul ECG-ului și cu tabloul clinic.",
+          "en": "Lead I is mostly down: a small wave up (about 1 mm), then a bigger one down (about 4 mm). aVF is mostly up (about 9 mm). Lead I down and aVF up: right axis deviation. The machine measured +117°. The ECG is from a slim 22-year-old man and shows nothing else obvious. In young and slim people, such an axis can be normal. You read it together with the rest of the ECG and the clinical picture."
         }
       },
       {
@@ -2540,12 +2542,12 @@
       "ro": [
         "Recunoaște unda P normală în DII și măsoară intervalul PR.",
         "Încadrează intervalul PR: normal (120–200 ms), lung (bloc atrioventricular de gradul I) sau scurt cu undă delta (preexcitație).",
-        "Observă undele P neurmate de QRS și arată imediat ECG-ul unui medic."
+        "Recunoaște undele P neurmate de QRS ca o constatare care nu poate aștepta."
       ],
       "en": [
         "Recognize the normal P wave in lead II and measure the PR interval.",
         "Classify the PR as normal (120–200 ms), long (first-degree AV block) or short with a delta wave (pre-excitation).",
-        "Spot P waves without a QRS, and show the ECG to a doctor at once."
+        "Recognize P waves without a QRS as a finding that cannot wait."
       ]
     },
     "tiers": {
@@ -2900,8 +2902,8 @@
         ],
         "answer": 1,
         "explain": {
-          "ro": "Undele P (liniile verticale) vin regulat, la ~600 ms una de alta (~98/min). Unele se ascund în unda T sau în QRS. Complexele QRS vin la ~1500 ms (~40/min). Multe unde P nu sunt urmate de QRS, iar PR diferă de la o bătaie la alta: atriile și ventriculii bat independent. Aspectul este de BAV gradul III (complet). O undă P neurmată de QRS este un motiv să arăți imediat ECG-ul unui medic.",
-          "en": "The P waves (the vertical lines) come regularly, about 600 ms apart (about 98/min). Some hide in the T wave or the QRS. The QRS complexes come about 1500 ms apart (about 40/min). Many P waves have no QRS after them, and the PR changes from beat to beat: the atria and ventricles beat on their own. This is third-degree (complete) AV block. A P wave without a QRS is a reason to show the ECG to a doctor at once."
+          "ro": "Undele P (liniile verticale) vin regulat, la ~600 ms una de alta (~98/min). Unele se ascund în unda T sau în QRS. Complexele QRS vin la ~1500 ms (~40/min). Multe unde P nu sunt urmate de QRS, iar PR diferă de la o bătaie la alta: atriile și ventriculii bat independent. Aspectul este de BAV gradul III (complet). Este o urgență: ritmul lent care comandă ventriculii poate încetini și mai mult sau se poate opri.",
+          "en": "The P waves (the vertical lines) come regularly, about 600 ms apart (about 98/min). Some hide in the T wave or the QRS. The QRS complexes come about 1500 ms apart (about 40/min). Many P waves have no QRS after them, and the PR changes from beat to beat: the atria and ventricles beat on their own. This is third-degree (complete) AV block. It is an emergency: the slow rhythm that drives the ventricles can slow down further or stop."
         }
       },
       {
@@ -2955,8 +2957,8 @@
               "en": "Delta wave"
             },
             "note": {
-              "ro": "În DI, QRS-ul urcă întâi lent (unda delta), apoi brusc. PR scurt cu undă delta: preexcitație ventriculară (aspect WPW). Calea accesorie poate conduce aritmii rapide. Arată ECG-ul unui medic.",
-              "en": "In lead I the QRS first rises slowly (the delta wave), then steeply. A short PR with a delta wave is ventricular pre-excitation (the WPW pattern). The accessory pathway can carry fast arrhythmias. Show the ECG to a doctor."
+              "ro": "În DI, QRS-ul urcă întâi lent (unda delta), apoi brusc. PR scurt cu undă delta: preexcitație ventriculară (aspect WPW). Nu este o urgență în sine, dar contează: calea accesorie poate conduce aritmii rapide, uneori periculoase.",
+              "en": "In lead I the QRS first rises slowly (the delta wave), then steeply. A short PR with a delta wave is ventricular pre-excitation (the WPW pattern). It is not an emergency in itself, but it matters: the accessory pathway can carry fast, sometimes dangerous arrhythmias."
             },
             "annotations": [
               {
@@ -3098,10 +3100,12 @@
         },
         "body": {
           "ro": [
-            "Q este prima undă negativă, înaintea oricărei unde pozitive. R este prima undă pozitivă. S este o undă negativă după R. O a doua undă pozitivă se numește R' (R prim). Undele mici se notează cu literă mică: q, r, s."
+            "Q este prima undă negativă, înaintea oricărei unde pozitive. R este prima undă pozitivă. S este o undă negativă după R. O a doua undă pozitivă se numește R' (R prim). Undele mici se notează cu literă mică: q, r, s.",
+            "În derivațiile precordiale, unda R crește în mod normal de la V1 până spre V4, iar unda S devine tot mai mică spre V6: progresia normală a undei R."
           ],
           "en": [
-            "Q is the first negative wave, before any positive one. R is the first positive wave. S is a negative wave after the R. A second positive wave is called R' (R prime). Small waves take small letters: q, r, s."
+            "Q is the first negative wave, before any positive one. R is the first positive wave. S is a negative wave after the R. A second positive wave is called R' (R prime). Small waves take small letters: q, r, s.",
+            "In the chest leads, the R wave normally grows from V1 to about V4, and the S wave gets smaller toward V6: normal R-wave progression."
           ]
         },
         "sets": [
@@ -3382,8 +3386,8 @@
               "en": "V1: rS"
             },
             "note": {
-              "ro": "În V1: o undă r foarte mică, apoi o undă S adâncă și largă. Aspect rS. Segmentul ST este supradenivelat. În blocul de ramură stângă este de așteptat: ST și T merg în sens opus QRS-ului. Dacă pacientul are durere toracică, arată imediat ECG-ul unui medic.",
-              "en": "In V1: a very small r, then a deep, wide S. The shape is rS. The ST segment is raised. In left bundle branch block this is expected: the ST and T point opposite to the QRS. If the patient has chest pain, show the ECG to a doctor at once."
+              "ro": "În V1: o undă r foarte mică, apoi o undă S adâncă și largă. Aspect rS. Segmentul ST este supradenivelat. În blocul de ramură stângă este de așteptat: ST și T merg în sens opus QRS-ului. La un pacient cu durere toracică, blocul de ramură stângă este o urgență: poate masca un infarct acut.",
+              "en": "In V1: a very small r, then a deep, wide S. The shape is rS. The ST segment is raised. In left bundle branch block this is expected: the ST and T point opposite to the QRS. In a patient with chest pain, left bundle branch block is an emergency: it can hide an acute infarct."
             },
             "annotations": [
               {
@@ -3475,8 +3479,8 @@
         ],
         "answer": 1,
         "explain": {
-          "ro": "QRS larg (~135 ms). În V1: o undă r abia vizibilă, o undă S, apoi o undă R' înaltă la final. Marcajele arată unda R' și durata QRS. Aspectul este de bloc de ramură dreaptă. QRS-ul nu începe cu o pantă lentă, deci nu are undă delta. Acest ECG are și o altă problemă: BAV gradul III (pasul 4). Complexele QRS largi vin dintr-un ritm de scăpare lent: un ritm de rezervă care pornește de sub bloc. Arată imediat ECG-ul unui medic.",
-          "en": "A wide QRS (about 135 ms). In V1: a barely visible r, an S, then a tall R' at the end. The marks show the R' and the QRS width. This is the right bundle branch block shape. The QRS does not start with a slow slope, so there is no delta wave. This ECG has another problem too: third-degree AV block (step 4). The wide QRS complexes come from a slow escape rhythm: a backup rhythm that starts below the block. Show the ECG to a doctor at once."
+          "ro": "QRS larg (~135 ms). În V1: o undă r abia vizibilă, o undă S, apoi o undă R' înaltă la final. Marcajele arată unda R' și durata QRS. Aspectul este de bloc de ramură dreaptă. QRS-ul nu începe cu o pantă lentă, deci nu are undă delta. Acest ECG are și o altă problemă: BAV gradul III (pasul 4). Complexele QRS largi vin dintr-un ritm de scăpare lent: un ritm de rezervă care pornește de sub bloc. Este o urgență: ritmul de scăpare poate încetini și mai mult sau se poate opri.",
+          "en": "A wide QRS (about 135 ms). In V1: a barely visible r, an S, then a tall R' at the end. The marks show the R' and the QRS width. This is the right bundle branch block shape. The QRS does not start with a slow slope, so there is no delta wave. This ECG has another problem too: third-degree AV block (step 4). The wide QRS complexes come from a slow escape rhythm: a backup rhythm that starts below the block. It is an emergency: the escape rhythm can slow down further or stop."
         }
       },
       {
@@ -3504,8 +3508,8 @@
           "V5"
         ],
         "window": [
-          4.95,
-          5.8
+          6.25,
+          7.1
         ],
         "gain": 5,
         "heading": {
@@ -3527,8 +3531,8 @@
               "en": "Sokolow-Lyon"
             },
             "note": {
-              "ro": "S în V1 ~19,5 mm + R în V5 ~35 mm = ~54 mm, mult peste 35 mm. Aspectul sugerează HVS. Diagnosticul se confirmă prin ecocardiografie.",
-              "en": "S in V1 about 19.5 mm + R in V5 about 35 mm = about 54 mm, well over 35 mm. This suggests LVH. An echo confirms the diagnosis."
+              "ro": "S în V1 ~19,5 mm + R în V5 ~36 mm = ~55 mm, mult peste 35 mm. Aspectul sugerează HVS. Diagnosticul se confirmă prin ecocardiografie.",
+              "en": "S in V1 about 19.5 mm + R in V5 about 36 mm = about 55 mm, well over 35 mm. This suggests LVH. An echo confirms the diagnosis."
             },
             "annotations": [
               {
@@ -3602,8 +3606,8 @@
         ],
         "answer": 1,
         "explain": {
-          "ro": "QS: o singură undă negativă, fără nicio undă pozitivă. Un QS doar în V1 poate fi normal. Aici însă V1–V4 au complexe QS sau unde r foarte mici, iar V2–V6 au unde T negative adânci. Aspectul pledează pentru un infarct anterior recent. Arată imediat ECG-ul unui medic. QRS-ul este îngust (~95 ms): forma contează, nu doar durata.",
-          "en": "QS: a single negative wave with no positive part. A QS in V1 alone can be normal. Here, though, V1–V4 show QS complexes or tiny r waves, and V2–V6 show deep inverted T waves. It points to a recent anterior infarct. Show the ECG to a doctor at once. The QRS is narrow (about 95 ms): the shape matters, not only the width."
+          "ro": "QS: o singură undă negativă, fără nicio undă pozitivă. Un QS doar în V1 poate fi normal. Aici însă V1–V4 au complexe QS sau unde r foarte mici, iar V2–V5 și aVL au unde T negative adânci. Aspectul pledează pentru un infarct anterior recent. Este urgent: infarctul poate avea doar câteva ore. QRS-ul este îngust (~95 ms): forma contează, nu doar durata.",
+          "en": "QS: a single negative wave with no positive part. A QS in V1 alone can be normal. Here, though, V1–V4 show QS complexes or tiny r waves, and V2–V5 and aVL show deep inverted T waves. It points to a recent anterior infarct. This is urgent: the infarct may be only hours old. The QRS is narrow (about 95 ms): the shape matters, not only the width."
         }
       },
       {
@@ -3642,12 +3646,12 @@
       "ro": [
         "Măsoară denivelarea segmentului ST în punctul J, față de linia izoelectrică (segmentul PR).",
         "Recunoaște supradenivelarea ST în două derivații adiacente și subdenivelarea ST în oglindă.",
-        "Arată imediat ECG-ul unui medic când vezi supradenivelare ST."
+        "Recunoaște modificările ST și T care nu pot aștepta."
       ],
       "en": [
         "Measure the ST deviation at the J point, against the baseline (the PR segment).",
         "Recognize ST elevation in two neighboring leads and reciprocal ST depression.",
-        "Show the ECG to a doctor at once when you see ST elevation."
+        "Recognize the ST and T findings that cannot wait."
       ]
     },
     "tiers": {
@@ -3674,13 +3678,13 @@
             "Segmentul ST și unda T arată revenirea electrică a ventriculilor, adică repolarizarea.",
             "Aici apar primele semne ale unui infarct acut. Când o arteră coronară se închide brusc, segmentul ST se ridică în derivațiile care privesc zona afectată.",
             "Pasul 6 pune trei întrebări. Segmentul ST este la nivelul liniei izoelectrice? Dacă nu, cu câți milimetri și în ce derivații? Undele T sunt pozitive acolo unde trebuie?",
-            "La acest pas apar semnele de alarmă. Dacă vezi supradenivelare ST, arată imediat ECG-ul unui medic."
+            "La acest pas apar semnele de alarmă. Supradenivelarea ST poate semnala un infarct în desfășurare, o urgență în care fiecare minut contează."
           ],
           "en": [
             "The ST segment and the T wave show the electrical recovery of the ventricles: repolarization.",
             "This is where an acute heart attack shows first. When a coronary artery suddenly closes, the ST segment rises in the leads that face the injured area.",
             "Step 6 asks three questions. Is the ST segment level with the baseline? If not, by how many millimeters, and in which leads? Are the T waves upright where they should be?",
-            "This is the step where the red flags show. If you see ST elevation, show the ECG to a doctor at once."
+            "This is the step where the red flags show. ST elevation can signal a heart attack under way, an emergency in which every minute counts."
           ]
         }
       },
@@ -4089,8 +4093,8 @@
               }
             ],
             "note": {
-              "ro": "Subdenivelare ST în oglindă în aVL (~2 mm) și DI (~1 mm). Diagnostic prezumtiv: STEMI inferior (infarct miocardic acut cu supradenivelare de segment ST). Arată imediat ECG-ul unui medic.",
-              "en": "Reciprocal ST depression in aVL (about 2 mm) and I (about 1 mm). A presumed diagnosis: inferior STEMI (ST-elevation myocardial infarction). Show the ECG to a doctor at once."
+              "ro": "Subdenivelare ST în oglindă în aVL (~2 mm) și DI (~1 mm). Diagnostic prezumtiv: STEMI inferior (infarct miocardic acut cu supradenivelare de segment ST). Este o urgență: fiecare minut contează pentru mușchiul inimii.",
+              "en": "Reciprocal ST depression in aVL (about 2 mm) and I (about 1 mm). A presumed diagnosis: inferior STEMI (ST-elevation myocardial infarction). This is an emergency: every minute counts for the heart muscle."
             }
           }
         ]
@@ -4146,6 +4150,11 @@
             },
             {
               "kind": "tag",
+              "lead": "II",
+              "label": "ST ↑"
+            },
+            {
+              "kind": "tag",
               "lead": "III",
               "label": "ST ↓"
             }
@@ -4153,26 +4162,26 @@
         },
         "options": [
           {
-            "ro": "DII, DIII și aVF",
-            "en": "II, III and aVF"
+            "ro": "DII, DIII și aVF (mai ales în DIII)",
+            "en": "II, III and aVF (mostly in III)"
           },
           {
-            "ro": "V2–V6, DI și aVL",
-            "en": "V2–V6, I and aVL"
+            "ro": "V2–V6, DI și aVL (discret în DII)",
+            "en": "V2–V6, I and aVL (slight in II)"
           },
           {
-            "ro": "DIII și aVR",
-            "en": "III and aVR"
+            "ro": "DIII și aVR (mai ales în aVR)",
+            "en": "III and aVR (mostly in aVR)"
           },
           {
-            "ro": "Doar în V2–V4",
-            "en": "Only in V2–V4"
+            "ro": "Doar V2–V4 (mai ales în V3)",
+            "en": "Only V2–V4 (mostly in V3)"
           }
         ],
         "answer": 1,
         "explain": {
-          "ro": "Supradenivelare ST marcată în V2–V4 (până la ~11 mm în V3), care continuă în V5–V6, și supradenivelare ST în DI și aVL. În DIII apare subdenivelare ST în oglindă. Diagnostic prezumtiv: STEMI anterolateral. Supradenivelarea nu se oprește la V4: marcajele arată toate derivațiile. Arată imediat ECG-ul unui medic.",
-          "en": "Marked ST elevation in V2–V4 (up to about 11 mm in V3), continuing into V5–V6, and ST elevation in I and aVL. Lead III shows reciprocal ST depression. A presumed diagnosis: anterolateral STEMI. The elevation does not stop at V4: the marks show every lead. Show the ECG to a doctor at once."
+          "ro": "Supradenivelare ST marcată în V2–V4 (până la ~11 mm în V3), care continuă în V5–V6, și supradenivelare ST în DI și aVL. DII are și el o supradenivelare ST discretă (~1,5–2 mm). În DIII apare o subdenivelare ST discretă, în oglindă. Diagnostic prezumtiv: STEMI anterolateral. Supradenivelarea nu se oprește la V4: marcajele arată toate derivațiile. Este o urgență: o zonă întinsă de mușchi cardiac este în pericol, iar fiecare minut contează.",
+          "en": "Marked ST elevation in V2–V4 (up to about 11 mm in V3), continuing into V5–V6, and ST elevation in I and aVL. Lead II shows slight ST elevation too (about 1.5–2 mm). Lead III shows slight reciprocal ST depression. A presumed diagnosis: anterolateral STEMI. The elevation does not stop at V4: the marks show every lead. This is an emergency: a large area of heart muscle is at risk, and every minute counts."
         }
       },
       {
@@ -4185,12 +4194,12 @@
           "ro": [
             "Unda T normală este pozitivă în DI, DII și V3–V6. În aVR este în mod normal negativă. În DIII și V1 poate fi negativă și la un om sănătos.",
             "O undă T negativă în alte derivații este un semn de urmărit. Poate apărea în ischemie, după un infarct sau în alte boli, de exemplu în hipertrofia ventriculară sau în blocul de ramură.",
-            "Undele T negative, adânci și simetrice, în mai multe derivații adiacente sunt un semn de alarmă: arată imediat ECG-ul unui medic."
+            "Undele T negative, adânci și simetrice, în mai multe derivații adiacente sunt un semn de alarmă: pot semnala ischemie. În V2–V3 pot fi semnul precoce al unei stenoze critice a arterei descendente anterioare (semnul Wellens)."
           ],
           "en": [
             "A normal T wave is upright in I, II and V3–V6. In aVR it is normally negative. In III and V1 it can be negative in a healthy person.",
             "An inverted T wave in other leads is a finding to follow up. It can come with ischemia, after an infarct or in other conditions, for example ventricular hypertrophy or bundle branch block.",
-            "Deep, symmetrical T inversion in several neighboring leads is a red flag: show the ECG to a doctor at once."
+            "Deep, symmetrical T inversion in several neighboring leads is a red flag: it can signal ischemia. In V2–V3 it can be an early sign of a critical narrowing of the left anterior descending artery (the Wellens pattern)."
           ]
         }
       },
@@ -4267,38 +4276,38 @@
         ],
         "answer": 0,
         "explain": {
-          "ro": "În V2–V4, undele T sunt negative, adânci și simetrice (săgețile). Pe acest ECG ele apar și în V5–V6, DI și aVL, împreună cu complexe QS sau unde r foarte mici în V1–V4 (unde Q de necroză). Aspect compatibil cu un infarct anterior în evoluție, cu o vechime de ore până la zile. ECG-ul singur nu poate stabili vechimea. Arată imediat ECG-ul unui medic.",
-          "en": "In V2–V4 the T waves are inverted, deep and symmetrical (the arrows). On this ECG they also appear in V5–V6, I and aVL, together with QS complexes or tiny r waves in V1–V4 (Q waves of necrosis). This fits an anterior infarct in evolution, hours to days old. The ECG alone cannot date it. Show the ECG to a doctor at once."
+          "ro": "În V2–V4, undele T sunt negative, adânci și simetrice (săgețile). Pe acest ECG, unde T negative adânci apar și în V5 și aVL, iar în DI și V6 sunt mai puțin adânci. În V1–V4 se văd complexe QS sau unde r foarte mici (unde Q de necroză). Undele Q îl deosebesc și de semnul Wellens, în care undele R sunt păstrate. Aspect compatibil cu un infarct anterior în evoluție, cu o vechime de ore până la zile. ECG-ul singur nu poate stabili vechimea. Este urgent: dacă infarctul are doar câteva ore, mai poate exista mușchi cardiac de salvat.",
+          "en": "In V2–V4 the T waves are inverted, deep and symmetrical (the arrows). On this ECG, deep inverted T waves also appear in V5 and aVL; in I and V6 they are shallower. V1–V4 show QS complexes or tiny r waves (Q waves of necrosis). The Q waves also tell it apart from the Wellens pattern, in which the R waves are preserved. This fits an anterior infarct in evolution, hours to days old. The ECG alone cannot date it. This is urgent: if the infarct is only hours old, there may still be heart muscle to save."
         }
       },
       {
         "type": "check",
         "question": {
-          "ro": "Pe ECG-ul unui pacient vezi supradenivelare ST de 2 mm în DII, DIII și aVF. Ce faci?",
-          "en": "A patient's ECG shows 2 mm of ST elevation in II, III and aVF. What do you do?"
+          "ro": "Pe ECG-ul unui pacient vezi supradenivelare ST de 2 mm în DII, DIII și aVF. Ce sugerează și cât de urgent este?",
+          "en": "A patient's ECG shows 2 mm of ST elevation in II, III and aVF. What does it suggest, and how urgent is it?"
         },
         "options": [
           {
-            "ro": "Repeți ECG-ul mâine dimineață",
-            "en": "Repeat the ECG tomorrow morning"
+            "ro": "O variantă normală: nu este urgentă",
+            "en": "A normal variant: not urgent"
           },
           {
-            "ro": "Îl notezi și îl raportezi la vizită",
-            "en": "Note it and report it at the ward round"
+            "ro": "Un infarct inferior vechi: nu este urgent",
+            "en": "An old inferior infarct: not urgent"
           },
           {
-            "ro": "Aștepți să vezi dacă apare durerea",
-            "en": "Wait to see whether pain develops"
+            "ro": "Ischemie inferioară: poate aștepta o zi",
+            "en": "Inferior ischemia: it can wait a day"
           },
           {
-            "ro": "Arăți imediat ECG-ul unui medic",
-            "en": "Show the ECG to a doctor at once"
+            "ro": "STEMI inferior prezumtiv: o urgență",
+            "en": "A presumed inferior STEMI: an emergency"
           }
         ],
         "answer": 3,
         "explain": {
-          "ro": "Supradenivelare ST de cel puțin 1 mm în trei derivații inferioare adiacente: diagnostic prezumtiv de STEMI inferior. Fiecare minut contează pentru mușchiul inimii. Arată imediat ECG-ul unui medic. Asistenții medicali și paramedicii urmează protocolul secției sau al serviciului.",
-          "en": "ST elevation of 1 mm or more in three neighboring inferior leads: a presumed inferior STEMI. Every minute counts for the heart muscle. Show the ECG to a doctor at once. Nurses and paramedics follow their unit's or service's protocol."
+          "ro": "Supradenivelare ST de cel puțin 1 mm în trei derivații inferioare adiacente: diagnostic prezumtiv de STEMI inferior. Cel mai probabil, o arteră coronară tocmai s-a închis. Este o urgență: fiecare minut contează pentru mușchiul inimii. Nu poate aștepta un ECG repetat sau ziua următoare.",
+          "en": "ST elevation of 1 mm or more in three neighboring inferior leads: a presumed inferior STEMI. A coronary artery has most likely just closed. This is an emergency: every minute counts for the heart muscle. It cannot wait for a repeat ECG or for the next day."
         }
       },
       {
@@ -4578,13 +4587,13 @@
             "Când frecvența crește, QT se scurtează. Când frecvența scade, QT se lungește. De aceea nu judeci un QT fără să ții cont de frecvență.",
             "QTc este QT corectat pentru frecvență: QT-ul pe care l-ar avea inima la 60/min. Formula Bazett: QTc = QT ÷ √RR, cu RR în secunde.",
             "QTc normal: sub ~450 ms la bărbați și sub 460 ms la femei.",
-            "Peste 500 ms, riscul de torsadă a vârfurilor este mare: arată imediat ECG-ul unui medic."
+            "Peste 500 ms, riscul de torsadă a vârfurilor este mare: este o constatare urgentă."
           ],
           "en": [
             "When the rate rises, the QT shortens. When the rate falls, the QT lengthens. So you never judge a QT without the rate.",
             "The QTc is the QT corrected for rate: the QT the heart would have at 60/min. Bazett's formula: QTc = QT ÷ √RR, with the RR in seconds.",
             "Normal QTc: under about 450 ms in men and under 460 ms in women.",
-            "Over 500 ms the risk of torsades de pointes is high: show the ECG to a doctor at once."
+            "Over 500 ms the risk of torsades de pointes is high: it is an urgent finding."
           ]
         }
       },
@@ -4707,23 +4716,23 @@
       {
         "type": "check",
         "question": {
-          "ro": "ECG-ul unui bărbat de 52 de ani, ~89/min, derivația V4. Este QT sub jumătatea intervalului RR?",
-          "en": "A 52-year-old man's ECG, at about 89/min, lead V4. Is the QT under half the RR?"
+          "ro": "ECG-ul unei femei de 58 de ani, ~74/min, derivația V4. QT măsoară 450 ms, iar intervalul RR 810 ms. Cât este QTc (Bazett) și este normal?",
+          "en": "A 58-year-old woman's ECG, about 74/min, lead V4. The QT is 450 ms and the RR 810 ms. What is the QTc (Bazett), and is it normal?"
         },
         "figure": {
-          "ecg": 4873,
+          "ecg": 5180,
           "leads": [
             "V4"
           ],
           "window": [
-            0.75,
-            2.1
+            0.8,
+            2.35
           ],
           "annotations": [
             {
               "kind": "vline",
               "lead": "V4",
-              "t": 1.328,
+              "t": 1.451,
               "label": "½ RR"
             },
             {
@@ -4750,29 +4759,33 @@
         },
         "options": [
           {
-            "ro": "Da: unda T se termină înainte de mijlocul RR",
-            "en": "Yes: the T wave ends before the middle of the RR"
+            "ro": "~405 ms: normal",
+            "en": "About 405 ms: normal"
           },
           {
-            "ro": "Nu: unda T se termină după mijlocul RR",
-            "en": "No: the T wave ends after the middle of the RR"
+            "ro": "~450 ms: normal",
+            "en": "About 450 ms: normal"
           },
           {
-            "ro": "Nu se poate judeca la această frecvență",
-            "en": "You cannot judge it at this rate"
+            "ro": "~500 ms: alungit",
+            "en": "About 500 ms: long"
+          },
+          {
+            "ro": "~555 ms: alungit",
+            "en": "About 555 ms: long"
           }
         ],
-        "answer": 1,
+        "answer": 2,
         "explain": {
-          "ro": "Unda T încă coboară când trece de linia punctată, mijlocul intervalului RR. QT măsoară ~410 ms, iar jumătatea RR ~335 ms: QT depășește jumătatea RR. La 89/min frecvența este normală, deci verificarea rapidă se aplică. QTc este aproape 500 ms după Bazett. La această frecvență, formula Bazett supraestimează puțin, dar și alte formule dau ~460 ms. La un bărbat, un QTc peste 450 ms este alungit. Arată ECG-ul unui medic. Medicul caută cauza, de exemplu un medicament sau potasiul scăzut.",
-          "en": "The T wave is still coming down when it crosses the dashed line, the middle of the RR. The QT is about 410 ms and half the RR about 335 ms: the QT is longer than half the RR. At 89/min the rate is normal, so the quick check applies. The QTc by Bazett is almost 500 ms. At this rate Bazett's formula overestimates a little, but other formulas also give about 460 ms. In a man, a QTc over 450 ms is long. Show the ECG to a doctor. The doctor looks for the cause, for example a medicine or low potassium."
+          "ro": "Intervalul RR are 810 ms, adică 0,81 s, iar √0,81 = 0,9. QTc = 450 ÷ 0,9 = 500 ms. La femei, QTc trebuie să fie sub ~460 ms, deci QT este alungit. Formula Fridericia dă ~483 ms: tot alungit. Nici verificarea rapidă nu te liniștește: unda T se termină chiar pe linia punctată, la mijlocul intervalului RR, nu înaintea ei. 405 ms se obține dacă înmulțești cu 0,9, iar 555 ms dacă împarți la RR în loc de rădăcina lui pătrată. Un QTc atât de lung trebuie evaluat prompt: caută cauza, de exemplu un medicament sau un nivel scăzut de potasiu sau de magneziu.",
+          "en": "The RR is 810 ms, or 0.81 s, and √0.81 = 0.9. QTc = 450 ÷ 0.9 = 500 ms. A woman's QTc should be under about 460 ms, so this QT is long. Fridericia's formula gives about 483 ms: long as well. The quick check does not reassure you either: the T wave ends right at the dashed line, the middle of the RR, not before it. 405 ms comes from multiplying by 0.9, and 555 ms from dividing by the RR instead of its square root. A QTc this long needs prompt attention: look for the cause, for example a medicine, or low potassium or magnesium."
         }
       },
       {
         "type": "check",
         "question": {
-          "ro": "O pacientă are QTc de 520 ms. Cum îl încadrezi și ce faci?",
-          "en": "A woman's QTc is 520 ms. How do you rate it, and what do you do?"
+          "ro": "O pacientă are QTc de 520 ms. Cum îl încadrezi și cât de urgent este?",
+          "en": "A woman's QTc is 520 ms. How do you rate it, and how urgent is it?"
         },
         "options": [
           {
@@ -4780,22 +4793,22 @@
             "en": "Normal: for women the limit is 550 ms"
           },
           {
-            "ro": "Puțin crescut: repeți ECG-ul peste o lună",
-            "en": "Slightly long: repeat the ECG in a month"
+            "ro": "Puțin alungit: nu este urgent sub 600 ms",
+            "en": "Slightly long: not urgent below 600 ms"
           },
           {
-            "ro": "Peste 500 ms: arăți imediat ECG-ul unui medic",
-            "en": "Over 500 ms: show the ECG to a doctor at once"
+            "ro": "Foarte alungit: risc mare de torsadă, urgent",
+            "en": "Very long: high risk of torsades, urgent"
           },
           {
-            "ro": "La limită: îl recalculezi mâine, fără grabă",
-            "en": "Borderline: recalculate it tomorrow, no rush"
+            "ro": "La limită: contează doar după o sincopă",
+            "en": "Borderline: it matters only after a faint"
           }
         ],
         "answer": 2,
         "explain": {
-          "ro": "Limita la femei este ~460 ms. Peste 500 ms, riscul de torsadă a vârfurilor este mare. Arată imediat ECG-ul unui medic. Asistenții medicali și paramedicii urmează protocolul secției sau al serviciului.",
-          "en": "The limit for women is about 460 ms. Over 500 ms the risk of torsades de pointes is high. Show the ECG to a doctor at once. Nurses and paramedics follow their unit's or service's protocol."
+          "ro": "Limita la femei este ~460 ms. Peste 500 ms, riscul de torsadă a vârfurilor este mare, chiar înainte de orice simptom. Este urgent: cauza (de exemplu un medicament sau un nivel scăzut de potasiu sau de magneziu) trebuie găsită și corectată fără întârziere.",
+          "en": "The limit for women is about 460 ms. Over 500 ms the risk of torsades de pointes is high, even before any symptom. It is urgent: the cause (for example a medicine, or low potassium or magnesium) has to be found and corrected without delay."
         }
       },
       {
@@ -4834,12 +4847,12 @@
       "ro": [
         "Parcurge cei 8 pași în ordine, pe orice ECG în 12 derivații.",
         "Scrie concluzia într-un singur rând, cu constatările principale.",
-        "Recunoaște constatările care cer să arăți imediat ECG-ul unui medic."
+        "Recunoaște constatările care nu pot aștepta."
       ],
       "en": [
         "Go through the 8 steps in order on any 12-lead ECG.",
         "Write the conclusion in one line, with the main findings.",
-        "Spot the findings that mean you show the ECG to a doctor at once."
+        "Recognize the findings that cannot wait."
       ]
     },
     "tiers": {
@@ -4863,13 +4876,13 @@
             "Pasul 8 adună tot ce ai găsit într-o concluzie de un rând.",
             "Folosește aceeași ordine la fiecare ECG: ritm, frecvență, ax, unda P și PR, QRS, ST și T, QT.",
             "Concluzia se scrie ca un șir de constatări scurte, fără verbe. De exemplu: „Ritm sinusal, FC 75/min, ax QRS normal, PR 150 ms, QRS îngust, fără modificări ST-T, QTc normal.”",
-            "Unele constatări nu pot aștepta: supradenivelare ST, unde P neurmate de QRS, frecvență sub 40/min sau peste 150/min, QTc peste 500 ms. Atunci arată imediat ECG-ul unui medic."
+            "Unele constatări sunt semne de alarmă care nu pot aștepta: supradenivelare ST, unde P neurmate de QRS, frecvență sub 40/min sau peste 150/min, QTc peste 500 ms. Ele pot semnala un infarct acut, un bloc periculos sau o aritmie periculoasă, de aceea fiecare este urgentă."
           ],
           "en": [
             "Step 8 pulls everything you found into a one-line conclusion.",
             "Use the same order on every ECG: rhythm, rate, axis, P wave and PR, QRS, ST and T, QT.",
             "The conclusion is a string of short phrases, with no verbs. For example: 'Sinus rhythm, rate 75/min, normal axis, PR 150 ms, narrow QRS, no ST-T changes, normal QTc.'",
-            "Some findings cannot wait: ST elevation, P waves without a QRS, a rate under 40/min or over 150/min, a QTc over 500 ms. Then show the ECG to a doctor at once."
+            "Some findings are red flags that cannot wait: ST elevation, P waves without a QRS, a rate under 40/min or over 150/min, a QTc over 500 ms. They can signal an acute infarct, a dangerous block or a dangerous arrhythmia, so each one is urgent."
           ]
         }
       },
@@ -9134,8 +9147,8 @@
           }
         ],
         "caption": {
-          "ro": "Trei intervale RR consecutive, trei valori diferite. Pe tot traseul, intervalele RR variază între aproximativ 600 și 870 ms.",
-          "en": "Three consecutive RR intervals, three different values. Over the whole strip the RR ranges from about 600 to 870 ms."
+          "ro": "Trei intervale RR consecutive, trei valori diferite. Pe tot traseul, intervalele RR variază între aproximativ 600 și 920 ms.",
+          "en": "Three consecutive RR intervals, three different values. Over the whole strip the RR ranges from about 600 to 920 ms."
         }
       },
       {
@@ -12393,6 +12406,7 @@
           "V5",
           "I",
           "aVL",
+          "II",
           "III"
         ],
         "heading": {
@@ -12401,10 +12415,10 @@
         },
         "body": {
           "ro": [
-            "Supradenivelare ST în V2–V5, care continuă în V6, și în DI și aVL. DIII arată subdenivelare ST în oglindă. Aspectul sugerează o ocluzie proximală a arterei descendente anterioare."
+            "Supradenivelare ST în V2–V6 și în DI și aVL, iar DII are și el o supradenivelare ST discretă. DIII arată o subdenivelare ST discretă, în oglindă. Aspectul sugerează o ocluzie proximală a arterei descendente anterioare."
           ],
           "en": [
-            "ST elevation in V2–V5, continuing into V6, and in I and aVL. Lead III shows reciprocal ST depression. The pattern suggests a proximal occlusion of the left anterior descending artery."
+            "ST elevation in V2–V6 and in I and aVL, with slight ST elevation in II too. Lead III shows slight reciprocal ST depression. The pattern suggests a proximal occlusion of the left anterior descending artery."
           ]
         }
       },
@@ -12772,8 +12786,8 @@
           ]
         },
         "explain": {
-          "ro": "~19,5 mm. Unda R din V5 are ~35 mm, deci indicele Sokolow-Lyon este ~54 mm, mult peste 35 mm. Indicele Cornell este ~35 mm, peste pragul de 20 mm pentru femei.",
-          "en": "About 19.5 mm. The R wave in V5 is about 35 mm, so the Sokolow-Lyon index is about 54 mm, well above 35 mm. The Cornell index is about 35 mm, above the 20 mm threshold for women."
+          "ro": "~19,5 mm. Unda R din V5 are ~36 mm, deci indicele Sokolow-Lyon este ~55 mm, mult peste 35 mm. Indicele Cornell este ~35 mm, peste pragul de 20 mm pentru femei.",
+          "en": "About 19.5 mm. The R wave in V5 is about 36 mm, so the Sokolow-Lyon index is about 55 mm, well above 35 mm. The Cornell index is about 35 mm, above the 20 mm threshold for women."
         }
       },
       {
@@ -12828,22 +12842,22 @@
             },
             "marks": [
               {
-                "t0": 3.445,
-                "t1": 3.555,
+                "t0": 3.465,
+                "t1": 3.565,
                 "tone": "p",
                 "label": "P"
               },
               {
-                "t0": 3.445,
+                "t0": 3.465,
                 "t1": 3.575,
                 "tone": "rr",
-                "label": "PR ~130 ms",
+                "label": "PR ~110 ms",
                 "bracket": true
               }
             ],
             "note": {
-              "ro": "PR ~130 ms. Nu este sub 120 ms, dar este scurt pentru o frecvență atât de mică. Unda delta decide.",
-              "en": "PR about 130 ms. It is not under 120 ms, but it is short for such a slow rate. The delta wave settles it."
+              "ro": "PR ~110 ms: scurt, cu atât mai mult la o frecvență atât de mică. Unda delta decide.",
+              "en": "PR about 110 ms: short, all the more so at such a slow rate. The delta wave settles it."
             }
           },
           {
@@ -12982,8 +12996,8 @@
       {
         "type": "check",
         "question": {
-          "ro": "Indicele Sokolow-Lyon este 54 mm. Ce confirmă hipertrofia ventriculară stângă?",
-          "en": "The Sokolow-Lyon index is 54 mm. What confirms left ventricular hypertrophy?"
+          "ro": "Indicele Sokolow-Lyon este 55 mm. Ce confirmă hipertrofia ventriculară stângă?",
+          "en": "The Sokolow-Lyon index is 55 mm. What confirms left ventricular hypertrophy?"
         },
         "options": [
           {

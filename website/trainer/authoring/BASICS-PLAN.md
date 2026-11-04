@@ -8,8 +8,9 @@ site's 8-step reading order (home page, "The method"), one step per lesson, on r
 with arrows, labels and brackets drawn on them. It comes before the longer 17-lesson course
 ("ECG from scratch", `"course": "full"`), which stays as it is and goes deeper.
 
-Readers: medical students, nurses, paramedics, first-year residents. Assume no ECG knowledge
-beyond "the ECG records the heart's electrical activity". Explain every term the first time.
+Readers: medical students (Alex, 2026-11-04: "the 8-step module is for med students"). Assume
+no ECG knowledge beyond "the ECG records the heart's electrical activity". Explain every term the
+first time.
 
 ## The nine lessons (ids are fixed)
 
@@ -17,11 +18,11 @@ beyond "the ECG records the heart's electrical activity". Explain every term the
 | --- | --- | --- | --- |
 | basics-start | 0 | Before you start: the paper and one beat | what the ECG shows; paper (1 small square = 40 ms and 0.1 mV; large = 200 ms and 0.5 mV; 25 mm/s, 10 mm/mV); the waves P, QRS, T; PR, QRS, QT; J point and ST; the 8 steps as a map |
 | basics-rhythm | 1 | Step 1: Rhythm | regular or irregular (compare RR intervals); a P before every QRS and a QRS after every P; P upright in I and II → sinus; irregularly irregular with no P waves → atrial fibrillation (example only, no management) |
-| basics-rate | 2 | Step 2: Rate | 300 rule for regular rhythms (300, 150, 100, 75, 60, 50 on the thick lines); count the QRS in 10 s × 6 for irregular rhythms; normal 60–100/min, bradycardia, tachycardia |
+| basics-rate | 2 | Step 2: Rate | 300 rule for regular rhythms (300, 150, 100, 75, 60, 50 on the thick lines); count the QRS in 10 s × 6 for irregular rhythms; normal 60–100/min, bradycardia, tachycardia; under 40/min or over 150/min is a red flag that cannot wait |
 | basics-axis | 3 | Step 3: QRS axis | the QRS mostly up or mostly down; leads I and aVF (and II for the −30° border); normal, left and right axis deviation |
 | basics-pr | 4 | Step 4: P wave and PR interval | P wave (upright in II, small); PR 120–200 ms; long PR = first-degree AV block; P waves not followed by a QRS (a glimpse of second- and third-degree block); short PR with a delta wave (pre-excitation) |
-| basics-qrs | 5 | Step 5: QRS complex | narrow (under 120 ms) or wide (120 ms or more); the QRS alphabet (q, R, S, R'); RBBB (rsR' in V1) and LBBB (broad notched R in V6, QS/rS in V1); a glimpse of tall voltages (LVH) and Q waves |
-| basics-st | 6 | Step 6: ST segment and T wave | baseline (PR segment), J point, measure ST deviation in mm at the J point; ST elevation in two neighboring leads; reciprocal depression; inverted T; this is a red-flag step: show the ECG to a doctor at once |
+| basics-qrs | 5 | Step 5: QRS complex | narrow (under 120 ms) or wide (120 ms or more); the QRS alphabet (q, R, S, R'); RBBB (rsR' in V1) and LBBB (broad notched R in V6, QS/rS in V1); normal R-wave progression (R grows from V1 to about V4, S shrinks); a glimpse of tall voltages (LVH) and Q waves |
+| basics-st | 6 | Step 6: ST segment and T wave | baseline (PR segment), J point, measure ST deviation in mm at the J point; ST elevation in two neighboring leads; reciprocal depression; inverted T; this is the red-flag step: say what each red flag means and how urgent it is |
 | basics-qt | 7 | Step 7: QT and QTc | QT from the start of QRS to the end of T; it shortens as the rate rises; QTc (Bazett) in one sentence; normal QTc under about 450 ms (men) / 460 ms (women), over 500 ms is high risk; the "QT under half the RR" eyeball check (only at normal rates) |
 | basics-read | 8 | Step 8: Conclusion, the whole read | the one-line conclusion; a guided read of a normal 12-lead through all eight steps (one frame per step); then "your turn" on an abnormal ECG: one check per step, each with the tracing, whose marks appear after the answer; the right conclusion; links to practice cases |
 
@@ -79,6 +80,11 @@ live case shows the point (for example a clearly long QT): pick one whose PTB-XL
 PTB-XL+ values agree, and say so in your notes. Do not use the pacing, MIMIC-IV-ECG or
 monitor-strip cases in this module.
 
+The basics-qt QTc check uses PTB-XL 5180 (since 2026-11-04; it replaces 4873, whose QTc by
+Fridericia was only 465 ms): a woman of 58, sinus rhythm 74/min, QRS 86 ms, QT 450 ms, QTc 500 ms
+by Bazett and 483 ms by Fridericia (PTB-XL+ Glasgow; the 12SL values are QT 446 ms, QTc 495 and
+478 ms); the report reads "QT-Verlängerung" and the only codes are LNGQT and SR.
+
 Every statement about a tracing (a rate, an interval, which lead, which beat, a millimetre
 value) must be true on that tracing: use `fiducials.py`, the resolver's printed values and the
 rendered PNGs. The values in the table above are the reference values the trainer shows; keep to
@@ -113,9 +119,15 @@ plus:
 - Thresholds as in the approved diagnosis criteria (`trainer/content/diagnoses.json`): sinus
   60–100/min; PR 120–200 ms; QRS under 120 ms; QTc under about 450 ms (men) and 460 ms
   (women); axis −30° to +90°; STEMI thresholds per ESC 2023 (cite it where used).
-- Education only. No drug names with doses, no device settings. Where an action comes up for a
-  beginner, it is "show the ECG to a doctor at once" / „arată imediat ECG-ul unui medic" (nurses
-  and paramedics: per the unit's or service's protocol).
+- Education only. No drug names or doses, no device settings.
+- Alex (2026-11-04): "the 8-step module is for med students, don't tell them to show the ECG". Never
+  tell the reader to show the ECG to a doctor, or to follow a unit's or service's protocol. Where a
+  finding is urgent, say what it means and how urgent it is, as a teacher would to a medical student:
+  "This is an emergency: a presumed inferior STEMI. Every minute counts for the heart muscle." /
+  „Este o urgență: STEMI inferior prezumtiv. Fiecare minut contează pentru mușchiul inimii.” A check
+  never has actions as options ("Show the ECG to a doctor at once"): it asks what the finding means or
+  how urgent it is. An objective names the skill, e.g. "Recognize the findings that cannot wait" /
+  „Recunoaște constatările care nu pot aștepta”.
 - Keep every option of a check plausible and about the same length; one clearly correct.
 - New medical text: Alex reviews every lesson before it goes live.
 

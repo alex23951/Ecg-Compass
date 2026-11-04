@@ -43,7 +43,7 @@
  ],
  "blocks-02": [
   {"kind": "bracket", "lead": "II", "rhythm": true, "t0": 6.746, "t1": 8.736, "ms": true, "label": {"ro": "Pauză", "en": "Pause"}, "finding": 0},
-  {"kind": "bracket", "lead": "II", "rhythm": true, "t0": 1.157, "t1": 1.492, "label": "PR", "finding": 2},
+  {"kind": "bracket", "lead": "II", "rhythm": true, "t0": 1.157, "t1": 1.492, "ms": true, "label": "PR", "finding": 2},
   {"kind": "bracket", "lead": "II", "rhythm": true, "t0": 2.176, "t1": 2.53, "ms": true, "label": "PR", "finding": 2},
   {"kind": "arrow", "lead": "II", "rhythm": true, "t": 3.245, "label": {"ro": "P neurmată de QRS", "en": "P without QRS"}, "finding": 1},
   {"kind": "bracket", "lead": "II", "rhythm": true, "t0": 4.268, "t1": 4.518, "ms": true, "label": "PR", "finding": 2},
@@ -110,13 +110,13 @@
   {"kind": "rise", "lead": "V3", "at": "J", "beat": 0, "dir": "se", "label": "ST ↑ > 1 cm", "finding": 0},
   {"kind": "box", "lead": "V2", "t0": 5.81, "t1": 6.215, "dir": "n", "label": {"ro": "Mare undă monofazică", "en": "Tombstone"}, "finding": 0},
   {"kind": "tag", "lead": "V1", "label": "ST ↑", "finding": 1},
-  {"kind": "rise", "lead": "III", "at": "J", "beat": 0, "dir": "se", "label": "ST ↑", "finding": 2},
+  {"kind": "rise", "lead": "III", "at": "J", "beat": 0, "mm": true, "dir": "se", "label": "ST ↑", "finding": 2},
   {"kind": "tag", "lead": "aVF", "label": "ST ↑", "finding": 2},
   {"kind": "rise", "lead": "aVL", "at": "J", "beat": 0, "dir": "n", "label": "ST ↓", "finding": 2}
  ],
  "isch-05": [
   {"kind": "arrow", "lead": "V4", "at": "Q", "beat": 0, "dir": "sw", "label": {"ro": "Complex QS", "en": "QS complex"}, "finding": 0},
-  {"kind": "rise", "lead": "V2", "at": "J", "beat": 1, "mm": true, "dir": "nw", "label": "ST ↑", "finding": 1},
+  {"kind": "rise", "lead": "V2", "at": "J", "beat": 1, "dir": "nw", "label": "ST ↑", "finding": 1},
   {"kind": "arrow", "lead": "V3", "at": "T", "beat": 0, "dir": "se", "label": {"ro": "T negativ", "en": "Inverted T"}, "finding": 2},
   {"kind": "tag", "lead": "I", "label": {"ro": "T negativ", "en": "Inverted T"}, "finding": 2},
   {"kind": "tag", "lead": "aVL", "label": {"ro": "T negativ", "en": "Inverted T"}, "finding": 2},
@@ -206,7 +206,7 @@
  ],
  "patt-01": [
   {"kind": "rise", "lead": "V1", "at": "S", "beat": 0, "mm": true, "finding": 1, "label": "S V1"},
-  {"kind": "rise", "lead": "V5", "at": "R", "beat": 1, "dir": "e", "finding": 1, "label": "R V5"},
+  {"kind": "rise", "lead": "V5", "at": "R", "beat": 1, "dir": "e", "mm": true, "finding": 1, "label": "R V5"},
   {"kind": "rise", "lead": "aVL", "at": "R", "beat": 0, "mm": true, "finding": 2, "label": "R aVL"},
   {"kind": "rise", "lead": "V3", "at": "S", "beat": 0, "dir": "w", "mm": true, "finding": 2, "label": "S V3"},
   {"kind": "rise", "lead": "V2", "at": "S", "beat": 1, "dir": "nw", "mm": true, "finding": 0, "label": "S V2"},
