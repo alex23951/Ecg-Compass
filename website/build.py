@@ -238,7 +238,8 @@ class Site:
         With approved_only (the free launch default), only the cases Alex approved on the
         review screen go live (trainer/content/approved.json), without the layers Alex has
         not reviewed yet: profiles, profile questions and options, follow-ups, deeper
-        notes, the plain labels and action cards, and the course from zero.
+        notes, the plain labels and action cards. Lessons and the teaching marks on a case
+        go live only when listed in approved.json ("lessons", "annotations").
         """
         cases = load_json(ROOT / "app" / "data" / "cases.json")
         lessons = load_json(ROOT / "app" / "data" / "lessons.json")
@@ -248,11 +249,14 @@ class Site:
             return {"cases": cases, "lessons": lessons}
         ok = load_json(ROOT / "trainer" / "content" / "approved.json")
         ok_cases, ok_dx = set(ok["cases"]), set(ok["diagnoses"])
+        ok_marks, ok_lessons = set(ok.get("annotations", [])), set(ok.get("lessons", []))
         kept = []
         for c in cases["cases"]:
             if c["id"] not in ok_cases:
                 continue
             c = {k: v for k, v in c.items() if k not in ("tiers", "tier_options", "followups", "deep")}
+            if c["id"] not in ok_marks:
+                c.pop("annotations", None)
             missing = [o for o in c["options"] if o not in ok_dx]
             if missing:
                 raise SystemExit(f"approved case {c['id']} uses unapproved diagnoses {missing}")
@@ -262,7 +266,24 @@ class Site:
                      for k, d in cases["diagnoses"].items() if k in used}
         modules = [m for m in cases["modules"] if any(c["module"] == m["id"] for c in kept)]
         out = {**cases, "cases": kept, "diagnoses": diagnoses, "modules": modules, "tiers": []}
-        return {"cases": out, "lessons": {**lessons, "lessons": []}}
+        live = []
+        for l in lessons["lessons"]:
+            if l["id"] not in ok_lessons:
+                continue
+            steps = []
+            for st in l["steps"]:
+                if st.get("type") == "cases":  # links only to cases that are live
+                    st = {**st, "cases": [x for x in st["cases"] if x in ok_cases]}
+                    if not st["cases"]:
+                        continue
+                steps.append(st)
+            live.append({**l, "steps": steps})
+        return {"cases": out, "lessons": {**lessons, "lessons": live}}
+
+    def basics(self, lang):
+        """The beginner course (read an ECG step by step), for the home page."""
+        return [{"id": l["id"], "step": l.get("step"), "title": l["title"][lang]}
+                for l in self.app_data["lessons"]["lessons"] if l.get("course") == "basics"]
 
     def credits(self):
         """Sources of every ECG on the site (hero strip and quiz are PTB-XL)."""
@@ -362,9 +383,11 @@ class Site:
             if self.free:
                 az = self.build_az(lang)
                 sample = [e["name"] for e in az if e["key"] in AZ_SAMPLE]
+                basics = self.basics(lang)
                 self.render("home_free.html", lang, "home", quiz=self.quiz(lang),
                             trace_json=trace_json, modules=self.modules(lang),
-                            totals=self.totals(), az_sample=sample)
+                            totals=self.totals(), az_sample=sample, basics=basics,
+                            basics_by_step={b["step"]: b for b in basics if b.get("step")})
                 self.build_digest(lang)
             else:
                 self.render("home.html", lang, "home", quiz=self.quiz(lang), trace_json=trace_json)
@@ -399,8 +422,13 @@ class Site:
                     json.dumps(self.app_data[name], ensure_ascii=False, separators=(",", ":")),
                     encoding="utf-8")
             if self.config.get("approved_only"):
-                # Publish only the tracings of the cases that go live.
+                # Publish only the tracings of the cases and lessons that go live.
                 kept = {f"{c['ecg_id']}.json" for c in self.app_data["cases"]["cases"]}
+                for l in self.app_data["lessons"]["lessons"]:
+                    for st in l["steps"]:
+                        for f in (st, st.get("figure") or {}):
+                            if f.get("ecg") is not None:
+                                kept.add(f"{f['ecg']}.json")
                 for f in (data_dir / "signals").glob("*.json"):
                     if f.name not in kept:
                         f.unlink()

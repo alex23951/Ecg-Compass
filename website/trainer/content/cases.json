@@ -561,13 +561,13 @@
     },
     "findings": {
       "ro": [
-        "Intervalele RR variază de la un complex la altul (~600–870 ms), fără nicio regularitate: ritm complet neregulat.",
+        "Intervalele RR variază de la un complex la altul (~600–920 ms), fără nicio regularitate: ritm complet neregulat.",
         "Fără unde P; linia izoelectrică dintre complexe este neregulată, cu unde f fine, cel mai bine vizibile în V1 și DII.",
         "Alură ventriculară medie ~80/min, controlată în repaus.",
         "QRS îngust, ax QRS orizontalizat (~+10°)."
       ],
       "en": [
-        "The RR intervals vary from beat to beat (about 600–870 ms) with no pattern: irregularly irregular.",
+        "The RR intervals vary from beat to beat (about 600–920 ms) with no pattern: irregularly irregular.",
         "No P waves; the baseline between beats is uneven, with fine f waves, easiest to see in V1 and II.",
         "Ventricular rate about 80/min: controlled at rest.",
         "Narrow QRS, axis about +10°."
@@ -608,8 +608,8 @@
         ],
         "answer": 0,
         "explain": {
-          "ro": "Intervalele RR variază de la o bătaie la alta (~600–870 ms), fără nicio regularitate, și nu există unde P. Între complexe, linia izoelectrică are unde f fine, mai ușor de văzut în V1 și DII. Sunt necesare ambele elemente: neregularitatea singură apare și în aritmia sinusală sau la extrasistole.",
-          "en": "The RR intervals vary from beat to beat (about 600–870 ms) with no pattern, and there are no P waves. Between beats the baseline shows fine f waves, easiest to see in V1 and II. You need both findings: irregularity alone also occurs with sinus arrhythmia or ectopic beats."
+          "ro": "Intervalele RR variază de la o bătaie la alta (~600–920 ms), fără nicio regularitate, și nu există unde P. Între complexe, linia izoelectrică are unde f fine, mai ușor de văzut în V1 și DII. Sunt necesare ambele elemente: neregularitatea singură apare și în aritmia sinusală sau la extrasistole.",
+          "en": "The RR intervals vary from beat to beat (about 600–920 ms) with no pattern, and there are no P waves. Between beats the baseline shows fine f waves, easiest to see in V1 and II. You need both findings: irregularity alone also occurs with sinus arrhythmia or ectopic beats."
         }
       },
       {
@@ -837,14 +837,14 @@
       "ro": [
         "Complexe QRS grupate câte trei („bătăi grupate”), separate de pauze de ~2 s.",
         "Undele P apar regulat, cu frecvența de ~58/min; în fiecare grup, o undă P nu este urmată de complex QRS.",
-        "În primul grup, PR se alungește de la ~260 ms la 310 ms și apoi la 350 ms; unda P următoare este blocată; după pauză, PR revine la ~250 ms.",
+        "În primul grup, PR se alungește de la ~260 ms la 335 ms și apoi la 350 ms; unda P următoare este blocată; după pauză, PR revine la ~250 ms.",
         "Intervalul RR se scurtează în cadrul fiecărui grup (~1100 ms, apoi 1040 ms), semn clasic al perioadelor Luciani-Wenckebach.",
         "Derivațiile periferice prezintă artefacte de tremor muscular; undele P se urmăresc în DII lung și în V2."
       ],
       "en": [
         "The QRS complexes come in groups of three, separated by pauses of about 2 s: grouped beating.",
         "P waves arrive regularly at about 58/min; in every group one P wave is not followed by a QRS.",
-        "In the first group the PR grows from about 260 ms to 310 ms and then 350 ms; the next P wave is blocked; after the pause the PR is back to about 250 ms.",
+        "In the first group the PR grows from about 260 ms to 335 ms and then 350 ms; the next P wave is blocked; after the pause the PR is back to about 250 ms.",
         "The RR interval shortens within each group (about 1100 ms, then 1040 ms), a classic Wenckebach sign.",
         "The limb leads have muscle tremor; follow the P waves in the lead II rhythm strip and in V2."
       ]
@@ -875,8 +875,8 @@
             "en": "The pause between groups is exactly twice the PP interval"
           },
           {
-            "ro": "PR crește (~260, 310, 350 ms), apoi o undă P este blocată",
-            "en": "The PR grows (about 260, 310, 350 ms), then a P wave is blocked"
+            "ro": "PR crește (~260, 335, 350 ms), apoi o undă P este blocată",
+            "en": "The PR grows (about 260, 335, 350 ms), then a P wave is blocked"
           },
           {
             "ro": "Doar una din două unde P este urmată de un complex QRS",
@@ -885,8 +885,8 @@
         ],
         "answer": 2,
         "explain": {
-          "ro": "În primul grup, PR se alungește de la ~260 ms la 310 ms și apoi la 350 ms, iar unda P următoare nu mai este condusă. După pauză, PR revine la ~250 ms, cel mai scurt din ciclu. Undele P se urmăresc pe DII lung și în V2, deoarece derivațiile periferice prezintă tremor.",
-          "en": "In the first group the PR grows from about 260 ms to 310 ms and then 350 ms, and the next P wave is not conducted. After the pause the PR is back to about 250 ms, the shortest in the cycle. Follow the P waves on the lead II strip and in V2, because the limb leads have tremor."
+          "ro": "În primul grup, PR se alungește de la ~260 ms la 335 ms și apoi la 350 ms, iar unda P următoare nu mai este condusă. După pauză, PR revine la ~250 ms, cel mai scurt din ciclu. Undele P se urmăresc pe DII lung și în V2, deoarece derivațiile periferice prezintă tremor.",
+          "en": "In the first group the PR grows from about 260 ms to 335 ms and then 350 ms, and the next P wave is not conducted. After the pause the PR is back to about 250 ms, the shortest in the cycle. Follow the P waves on the lead II strip and in V2, because the limb leads have tremor."
         }
       },
       {
@@ -1018,14 +1018,14 @@
         "Undele P apar regulat, cu frecvența de ~98/min (interval PP ~600 ms).",
         "Complexele QRS sunt regulate, ~40/min (RR ~1500 ms), independente de undele P: intervalul PR este diferit înaintea fiecărui complex QRS.",
         "Unele unde P sunt suprapuse undelor T sau incluse în complexele QRS.",
-        "Complexele QRS de scăpare au ~135 ms și prezintă rsR' în V1, cu aspect de bloc major de ramură dreaptă: ritm de scăpare lent și nesigur.",
+        "Complexele QRS de scăpare au ~135 ms și prezintă în V1 aspect rsR', cu undă r inițială foarte mică (aspect de bloc major de ramură dreaptă): ritm de scăpare lent și nesigur.",
         "Pacienta are aproximativ 88 de ani."
       ],
       "en": [
         "P waves arrive regularly at about 98/min (PP about 600 ms).",
         "The QRS complexes are regular at about 40/min (RR about 1500 ms) and independent of the P waves: the PR is different before every QRS.",
         "Some P waves fall on T waves or inside the QRS.",
-        "The escape QRS is about 135 ms with an rsR' in V1 (a right bundle branch block shape): a slow, unreliable escape rhythm.",
+        "The escape QRS is about 135 ms with an rsR' in V1, whose initial r is very small (a right bundle branch block shape): a slow, unreliable escape rhythm.",
         "The patient is a woman of about 88."
       ]
     },
@@ -1192,17 +1192,17 @@
     "findings": {
       "ro": [
         "QRS ~135 ms: larg.",
-        "Aspect rsR' („în M”) în V1 și V2, cu undă R' terminală înaltă.",
+        "Aspect rsR' („în M”; aici rR') în V1, cu undă R' terminală înaltă; V2 are aspect RS.",
         "Unde S largi, empastate, în DI și V6.",
-        "Subdenivelarea de segment ST și undele T negative din V1–V2 sunt secundare blocului de ramură.",
-        "Microvoltaj în derivațiile periferice."
+        "Subdenivelarea de segment ST și unda T negativă din V1 sunt secundare blocului de ramură.",
+        "Complexele QRS din derivațiile periferice sunt mici (sub 5 mm în DII, DIII, aVL și aVF), dar DI și aVR depășesc 5 mm: nu este microvoltaj."
       ],
       "en": [
         "QRS about 135 ms: wide.",
-        "V1 and V2 show an rsR' (an 'M' shape) with a tall terminal R'.",
+        "V1 shows an rsR' pattern (here rR', an 'M' shape) with a tall terminal R'; V2 shows an RS complex.",
         "Broad, slurred S waves in I and V6.",
-        "The ST depression and T inversion in V1–V2 are secondary to the block.",
-        "Low voltage in the limb leads."
+        "The ST depression and T inversion in V1 are secondary to the block.",
+        "The limb-lead QRS complexes are small (under 5 mm in II, III, aVL and aVF), but I and aVR exceed 5 mm: this is not low voltage."
       ]
     },
     "takeaway": {
@@ -1234,8 +1234,8 @@
             "en": "The ST depression with a negative T wave in V1"
           },
           {
-            "ro": "Microvoltajul din derivațiile periferice",
-            "en": "The low voltage in the limb leads"
+            "ro": "Complexele QRS mici din derivațiile periferice",
+            "en": "The small QRS complexes in the limb leads"
           }
         ],
         "answer": 0,
@@ -1856,19 +1856,19 @@
       "ro": [
         "Supradenivelare marcată de segment ST în V2–V4 (până la ~11 mm în V3), care se extinde în V5–V6.",
         "De asemenea, supradenivelare ST în DI și aVL (teritoriul lateral înalt).",
-        "Subdenivelare ST în oglindă în DIII.",
+        "Subdenivelare ST în oglindă, discretă, în DIII (~0,5–1 mm); DII are, în schimb, o ușoară supradenivelare ST (~1,5–2 mm).",
         "În V2–V3 apar deja unde Q; tahicardia sinusală sugerează un infarct întins."
       ],
       "en": [
         "Marked ST elevation in V2–V4 (up to about 11 mm in V3), continuing into V5–V6.",
         "ST elevation also in I and aVL (high lateral).",
-        "Reciprocal ST depression in III.",
+        "Slight reciprocal ST depression in III (about 0.5–1 mm); II, by contrast, shows slight ST elevation (about 1.5–2 mm).",
         "Q waves are already forming in V2–V3; sinus tachycardia suggests a large infarct."
       ]
     },
     "takeaway": {
-      "ro": "Supradenivelare ST în V2–V5, asociată cu supradenivelare ST în DI și aVL: STEMI anterolateral, de obicei prin ocluzia proximală a arterei descendente anterioare.",
-      "en": "ST elevation across V2–V5 plus I and aVL is an anterolateral STEMI, usually a proximal LAD occlusion."
+      "ro": "Supradenivelare ST în V2–V6, asociată cu supradenivelare ST în DI și aVL: STEMI anterolateral, de obicei prin ocluzia proximală a arterei descendente anterioare.",
+      "en": "ST elevation across V2–V6 plus I and aVL is an anterolateral STEMI, usually a proximal LAD occlusion."
     },
     "followups": [
       {
@@ -1902,8 +1902,8 @@
         ],
         "answer": 1,
         "explain": {
-          "ro": "Supradenivelarea ST cuprinde V2–V5 (până la ~11 mm în V3), dar și DI și aVL, teritoriul primei ramuri diagonale, iar DIII are subdenivelare în oglindă: ocluzia arterei descendente anterioare (ADA) este probabil proximală, înaintea primei diagonale. Într-o ocluzie după prima diagonală, DI și aVL sunt de obicei neafectate. Tahicardia sinusală (~122/min) sugerează un infarct întins.",
-          "en": "ST elevation spans V2–V5 (up to about 11 mm in V3) and also I and aVL, the territory of the first diagonal, with reciprocal depression in III: the LAD occlusion is probably proximal, before the first diagonal. Beyond the first diagonal, I and aVL are usually spared. Sinus tachycardia (about 122/min) suggests a large infarct."
+          "ro": "Supradenivelarea ST cuprinde V2–V6 (până la ~11 mm în V3), dar și DI și aVL, teritoriul primei ramuri diagonale, iar DIII are o subdenivelare discretă în oglindă: ocluzia arterei descendente anterioare (ADA) este probabil proximală, înaintea primei diagonale. Într-o ocluzie după prima diagonală, DI și aVL sunt de obicei neafectate. Tahicardia sinusală (~122/min) sugerează un infarct întins.",
+          "en": "ST elevation spans V2–V6 (up to about 11 mm in V3) and also I and aVL, the territory of the first diagonal, with slight reciprocal depression in III: the LAD occlusion is probably proximal, before the first diagonal. Beyond the first diagonal, I and aVL are usually spared. Sinus tachycardia (about 122/min) suggests a large infarct."
         }
       },
       {
@@ -1936,8 +1936,8 @@
         ],
         "answer": 3,
         "explain": {
-          "ro": "Pericardita produce supradenivelare ST difuză, fără subdenivelare în oglindă, cu excepția aVR și V1. Aici, DIII are subdenivelare ST în oglindă, iar supradenivelarea urmează un teritoriu coronarian (V2–V5, DI, aVL). Undele Q deja prezente în V2–V3 susțin și ele infarctul.",
-          "en": "Pericarditis gives widespread ST elevation without reciprocal depression, except in aVR and V1. Here III shows reciprocal ST depression, and the elevation follows a coronary territory (V2–V5, I, aVL). The Q waves already present in V2–V3 also point to infarction."
+          "ro": "Pericardita produce supradenivelare ST difuză, fără subdenivelare în oglindă, cu excepția aVR și V1. Aici, DIII are o subdenivelare ST în oglindă, discretă (~0,5–1 mm), iar supradenivelarea urmează un teritoriu coronarian (V2–V6, DI, aVL). Undele Q deja prezente în V2–V3 susțin și ele infarctul.",
+          "en": "Pericarditis gives widespread ST elevation without reciprocal depression, except in aVR and V1. Here III shows slight reciprocal ST depression (about 0.5–1 mm), and the elevation follows a coronary territory (V2–V6, I, aVL). The Q waves already present in V2–V3 also point to infarction."
         }
       },
       {
@@ -1953,8 +1953,8 @@
         "options": "action_set",
         "answer": 1,
         "explain": {
-          "ro": "Supradenivelare ST de până la ~11 mm în V3, întinsă pe V2–V5, DI și aVL: diagnostic prezumtiv de STEMI anterolateral, cu risc mare de fibrilație ventriculară. ECG-ul se arată imediat medicului, care decide anunțarea laboratorului de cateterism (ESC 2023 SCA: interpretare în cel mult 10 minute). Pacientul rămâne monitorizat, cu defibrilatorul lângă pat, iar frecvența de ~122/min se semnalează ca semn al unui infarct întins.",
-          "en": "ST elevation of up to about 11 mm in V3, spread across V2–V5, I and aVL: a presumed anterolateral STEMI, with a high risk of ventricular fibrillation. Show the ECG to the doctor at once, who decides on the cath lab alert (ESC 2023 ACS: read within 10 minutes). Keep the patient monitored with the defibrillator at the bedside, and report the rate of about 122/min as a sign of a large infarct."
+          "ro": "Supradenivelare ST de până la ~11 mm în V3, întinsă pe V2–V6, DI și aVL: diagnostic prezumtiv de STEMI anterolateral, cu risc mare de fibrilație ventriculară. ECG-ul se arată imediat medicului, care decide anunțarea laboratorului de cateterism (ESC 2023 SCA: interpretare în cel mult 10 minute). Pacientul rămâne monitorizat, cu defibrilatorul lângă pat, iar frecvența de ~122/min se semnalează ca semn al unui infarct întins.",
+          "en": "ST elevation of up to about 11 mm in V3, spread across V2–V6, I and aVL: a presumed anterolateral STEMI, with a high risk of ventricular fibrillation. Show the ECG to the doctor at once, who decides on the cath lab alert (ESC 2023 ACS: read within 10 minutes). Keep the patient monitored with the defibrillator at the bedside, and report the rate of about 122/min as a sign of a large infarct."
         }
       },
       {
@@ -1970,14 +1970,14 @@
         "options": "action_set",
         "answer": 2,
         "explain": {
-          "ro": "STEMI anterolateral întins: supradenivelare ST în V2–V5, DI și aVL, cu tahicardie de ~122/min. ECG-ul se transmite și se anunță din timp spitalul cu laborator de cateterism, cu ora debutului durerii; transportul direct este preferat dacă angioplastia primară se poate face în cel mult 120 de minute (ESC 2023 SCA). Riscul de fibrilație ventriculară este mare, așa că defibrilatorul rămâne conectat și pregătit pe tot transportul.",
-          "en": "A large anterolateral STEMI: ST elevation in V2–V5, I and aVL, with a rate of about 122/min. Transmit the ECG and pre-alert the PCI centre with the time the pain started; going straight there is preferred if primary PCI can be done within 120 minutes (ESC 2023 ACS). The risk of ventricular fibrillation is high, so keep the defibrillator connected and ready throughout the transport."
+          "ro": "STEMI anterolateral întins: supradenivelare ST în V2–V6, DI și aVL, cu tahicardie de ~122/min. ECG-ul se transmite și se anunță din timp spitalul cu laborator de cateterism, cu ora debutului durerii; transportul direct este preferat dacă angioplastia primară se poate face în cel mult 120 de minute (ESC 2023 SCA). Riscul de fibrilație ventriculară este mare, așa că defibrilatorul rămâne conectat și pregătit pe tot transportul.",
+          "en": "A large anterolateral STEMI: ST elevation in V2–V6, I and aVL, with a rate of about 122/min. Transmit the ECG and pre-alert the PCI centre with the time the pain started; going straight there is preferred if primary PCI can be done within 120 minutes (ESC 2023 ACS). The risk of ventricular fibrillation is high, so keep the defibrillator connected and ready throughout the transport."
         }
       }
     ],
     "deep": {
-      "ro": "Supradenivelarea ST în V2–V5, extinsă în DI și aVL, cu subdenivelare în oglindă în DIII, orientează spre ocluzia arterei descendente anterioare înaintea primei ramuri diagonale. Decizia: angioplastie primară cât mai repede, în cel mult 120 de minute de la diagnosticul ECG (ESC 2023 SCA); tahicardia sinusală (~122/min) într-un STEMI anterior ridică suspiciunea de insuficiență cardiacă sau de șoc cardiogen iminent. Capcana: undele Q deja prezente în V2–V3 nu exclud reperfuzia și nu datează infarctul; decide durata simptomelor.",
-      "en": "ST elevation in V2–V5 extending to I and aVL, with reciprocal depression in III, points to an LAD occlusion before the first diagonal branch. The decision: primary PCI as soon as possible, within 120 minutes of the ECG diagnosis (ESC 2023 ACS); sinus tachycardia (about 122/min) in an anterior STEMI raises the question of heart failure or impending cardiogenic shock. The pitfall: Q waves already present in V2–V3 do not rule out reperfusion and do not date the infarct; the duration of symptoms decides."
+      "ro": "Supradenivelarea ST în V2–V6, extinsă în DI și aVL, cu subdenivelare discretă în oglindă în DIII, orientează spre ocluzia arterei descendente anterioare înaintea primei ramuri diagonale. Decizia: angioplastie primară cât mai repede, în cel mult 120 de minute de la diagnosticul ECG (ESC 2023 SCA); tahicardia sinusală (~122/min) într-un STEMI anterior ridică suspiciunea de insuficiență cardiacă sau de șoc cardiogen iminent. Capcana: undele Q deja prezente în V2–V3 nu exclud reperfuzia și nu datează infarctul; decide durata simptomelor.",
+      "en": "ST elevation in V2–V6 extending to I and aVL, with slight reciprocal depression in III, points to an LAD occlusion before the first diagonal branch. The decision: primary PCI as soon as possible, within 120 minutes of the ECG diagnosis (ESC 2023 ACS); sinus tachycardia (about 122/min) in an anterior STEMI raises the question of heart failure or impending cardiogenic shock. The pitfall: Q waves already present in V2–V3 do not rule out reperfusion and do not date the infarct; the duration of symptoms decides."
     },
     "tier_options": {
       "nurse": [
@@ -2029,15 +2029,15 @@
     },
     "findings": {
       "ro": [
-        "Supradenivelare de segment ST în DIII (~2 mm), aVF și DII, precum și în V5–V6 (~1–1,5 mm): teritoriu inferolateral.",
+        "Supradenivelare de segment ST în DIII (~2 mm), mai mică în aVF, DII și V5–V6 (~1–1,5 mm): teritoriu inferolateral.",
         "Subdenivelare orizontală de segment ST în V2–V3 (~3 mm), cu unde T pozitive: imaginea în oglindă a peretelui posterior.",
-        "Subdenivelare ST în oglindă în DI și aVL.",
+        "Subdenivelare ST în oglindă în aVL, discretă în DI (sub 1 mm în punctul J).",
         "Bradicardia este frecventă în infarctele inferioare."
       ],
       "en": [
-        "ST elevation in III (about 2 mm), aVF and II, and in V5–V6 (about 1–1.5 mm): an inferolateral territory.",
+        "ST elevation in III (about 2 mm), smaller in aVF, II and V5–V6 (about 1–1.5 mm): an inferolateral territory.",
         "Horizontal ST depression in V2–V3 (about 3 mm) with upright T waves: the posterior wall seen in a mirror.",
-        "Reciprocal ST depression in I and aVL.",
+        "Reciprocal ST depression in aVL, subtle in I (under 1 mm at the J point).",
         "Bradycardia is common in inferior infarcts."
       ]
     },
@@ -2113,8 +2113,8 @@
         ],
         "answer": 2,
         "explain": {
-          "ro": "Supradenivelarea ST este mai mare în DIII (~2 mm) decât în DII, iar DI și aVL au subdenivelare în oglindă: vectorul ST este orientat spre dreapta, ca în ocluzia arterei coronare drepte. În ocluzia circumflexei, DI și aVL sunt de obicei izoelectrice sau supradenivelate. Extensia posterioară și laterală (V2–V3, V5–V6) apare cu ambele artere, deci nu le separă.",
-          "en": "ST elevation is greater in III (about 2 mm) than in II, and I and aVL show reciprocal depression: the ST vector points to the right, as in right coronary occlusion. In circumflex occlusion, I and aVL are usually isoelectric or elevated. Posterior and lateral extension (V2–V3, V5–V6) occurs with either artery, so it does not separate them."
+          "ro": "Supradenivelarea ST este mai mare în DIII (~2 mm) decât în DII (~1–1,5 mm), iar aVL are subdenivelare în oglindă (discretă în DI): vectorul ST este orientat spre dreapta, ca în ocluzia arterei coronare drepte. În ocluzia circumflexei, DI și aVL sunt de obicei izoelectrice sau supradenivelate. Extensia posterioară și laterală (V2–V3, V5–V6) apare cu ambele artere, deci nu le separă.",
+          "en": "ST elevation is greater in III (about 2 mm) than in II (about 1–1.5 mm), and aVL shows reciprocal depression (subtle in I): the ST vector points to the right, as in right coronary occlusion. In circumflex occlusion, I and aVL are usually isoelectric or elevated. Posterior and lateral extension (V2–V3, V5–V6) occurs with either artery, so it does not separate them."
         }
       },
       {
@@ -2208,14 +2208,14 @@
       "ro": [
         "Supradenivelare masivă de segment ST în V2–V4 (peste 1 cm în V3), contopită cu unda T: aspect de mare undă monofazică (Pardée).",
         "Supradenivelare ST de câțiva milimetri și în V1.",
-        "Supradenivelare ST de ~2–3 mm și în DII, DIII și aVF, cu subdenivelare ST în oglindă în aVL.",
-        "V5–V6 sunt aproape neafectate."
+        "Supradenivelare ST de ~3–4 mm și în DII, DIII și aVF, cu subdenivelare ST în oglindă în aVL.",
+        "V5 are încă o supradenivelare ST de ~1–2,5 mm; doar V6 este neafectată."
       ],
       "en": [
         "Massive ST elevation in V2–V4 (over 1 cm in V3), merging with the T wave: a tombstone shape.",
         "Several millimetres of ST elevation in V1 as well.",
-        "ST elevation also in II, III and aVF (about 2–3 mm), with reciprocal depression in aVL.",
-        "V5–V6 are almost spared."
+        "ST elevation also in II, III and aVF (about 3–4 mm), with reciprocal depression in aVL.",
+        "V5 still shows ST elevation of about 1–2.5 mm; only V6 is spared."
       ]
     },
     "takeaway": {
@@ -2270,8 +2270,8 @@
         },
         "options": [
           {
-            "ro": "Supradenivelarea ST de ~2–3 mm din DII, DIII și aVF",
-            "en": "The ST elevation of about 2–3 mm in II, III and aVF"
+            "ro": "Supradenivelarea ST de ~3–4 mm din DII, DIII și aVF",
+            "en": "The ST elevation of about 3–4 mm in II, III and aVF"
           },
           {
             "ro": "Subdenivelarea ST în oglindă din derivația aVL",
@@ -2348,8 +2348,8 @@
       ]
     },
     "deep": {
-      "ro": "Supradenivelarea anterioară masivă, maximă în V3, cu supradenivelare inferioară și cu V5–V6 aproape neafectate, corespunde de obicei unei artere descendente anterioare lungi, care înconjoară apexul și irigă și peretele inferior. Decizia: angioplastie primară imediată (ESC 2023 SCA), cu defibrilatorul pregătit, pentru că teritoriul este întins, iar riscul de fibrilație ventriculară și de șoc cardiogen este mare. Capcana: infarctul de ventricul drept prin ocluzia coronarei drepte dă și el supradenivelare în V1 și în derivațiile inferioare, dar maximă în V1 și descrescătoare spre V3–V4; aici gradientul precordial este invers.",
-      "en": "Massive anterior elevation, greatest in V3, with inferior elevation and V5–V6 almost spared, usually reflects a long LAD that wraps around the apex and also supplies the inferior wall. The decision: immediate primary PCI (ESC 2023 ACS), with the defibrillator ready, because the territory is large and the risk of ventricular fibrillation and cardiogenic shock is high. The pitfall: right ventricular infarction from a right coronary occlusion also elevates V1 and the inferior leads, but most in V1 and less towards V3–V4; here the precordial gradient runs the other way."
+      "ro": "Supradenivelarea anterioară masivă, maximă în V3, cu supradenivelare inferioară și cu doar V6 neafectată, corespunde de obicei unei artere descendente anterioare lungi, care înconjoară apexul și irigă și peretele inferior. Decizia: angioplastie primară imediată (ESC 2023 SCA), cu defibrilatorul pregătit, pentru că teritoriul este întins, iar riscul de fibrilație ventriculară și de șoc cardiogen este mare. Capcana: infarctul de ventricul drept prin ocluzia coronarei drepte dă și el supradenivelare în V1 și în derivațiile inferioare, dar maximă în V1 și descrescătoare spre V3–V4; aici gradientul precordial este invers.",
+      "en": "Massive anterior elevation, greatest in V3, with inferior elevation and only V6 spared, usually reflects a long LAD that wraps around the apex and also supplies the inferior wall. The decision: immediate primary PCI (ESC 2023 ACS), with the defibrillator ready, because the territory is large and the risk of ventricular fibrillation and cardiogenic shock is high. The pitfall: right ventricular infarction from a right coronary occlusion also elevates V1 and the inferior leads, but most in V1 and less towards V3–V4; here the precordial gradient runs the other way."
     },
     "tiers": {
       "student": "core",
@@ -2387,14 +2387,14 @@
     "findings": {
       "ro": [
         "Complexe QS sau unde r embrionare în V1–V4: unde Q de necroză în teritoriul anterior.",
-        "Supradenivelare ST reziduală de ~1–2 mm în V2–V3.",
-        "Unde T negative adânci și simetrice în V2–V6, DI și aVL.",
+        "Supradenivelare ST reziduală în V2–V3: sub 1 mm în punctul J, ~1–2,5 mm la 60 ms după punctul J.",
+        "Unde T negative adânci și simetrice în V2–V5 și aVL; mai puțin adânci în DI și V6 (~1–2 mm).",
         "QT alungit (QTc ~460 ms), frecvent asociat cu unde T negative adânci după un infarct."
       ],
       "en": [
         "QS complexes or tiny r waves in V1–V4: anterior Q waves (necrosis).",
-        "Residual ST elevation of about 1–2 mm in V2–V3.",
-        "Deep, symmetrical T inversion in V2–V6, I and aVL.",
+        "Residual ST elevation in V2–V3: under 1 mm at the J point, about 1–2.5 mm 60 ms after it.",
+        "Deep, symmetrical T inversion in V2–V5 and aVL; shallower in I and V6 (about 1–2 mm).",
         "A long QT (QTc about 460 ms), common with deep T inversion after an infarct."
       ]
     },
@@ -2434,8 +2434,8 @@
         ],
         "answer": 1,
         "explain": {
-          "ro": "Semnul Wellens presupune unde R păstrate, fără unde Q, cu unde T negative adânci sau bifazice în V2–V3, după ce durerea a cedat. Aici, V1–V4 au complexe QS sau unde r embrionare, cu supradenivelare ST reziduală de ~1–2 mm în V2–V3: infarct anterior în evoluție, nu o stenoză critică cu miocard încă neafectat. Vechimea se stabilește din anamneză și troponină.",
-          "en": "Wellens needs preserved R waves without Q waves, with deep or biphasic negative T waves in V2–V3 after the pain has settled. Here V1–V4 show QS complexes or tiny r waves, with residual ST elevation of about 1–2 mm in V2–V3: an evolving anterior MI, not a critical stenosis with the muscle still intact. The history and troponin date it."
+          "ro": "Semnul Wellens presupune unde R păstrate, fără unde Q, cu unde T negative adânci sau bifazice în V2–V3, după ce durerea a cedat. Aici, V1–V4 au complexe QS sau unde r embrionare, cu supradenivelare ST reziduală discretă în V2–V3 (sub 1 mm în punctul J): infarct anterior în evoluție, nu o stenoză critică cu miocard încă neafectat. Vechimea se stabilește din anamneză și troponină.",
+          "en": "Wellens needs preserved R waves without Q waves, with deep or biphasic negative T waves in V2–V3 after the pain has settled. Here V1–V4 show QS complexes or tiny r waves, with slight residual ST elevation in V2–V3 (under 1 mm at the J point): an evolving anterior MI, not a critical stenosis with the muscle still intact. The history and troponin date it."
         }
       },
       {
@@ -2451,8 +2451,8 @@
         "options": "action_set",
         "answer": 2,
         "explain": {
-          "ro": "Unde Q în V1–V4, supradenivelare ST reziduală de ~1–2 mm în V2–V3 și unde T negative adânci: infarct anterior cu o vechime de ore până la zile, pe care ECG-ul singur nu o poate stabili. Cu durere în curs, pacientul se abordează ca sindrom coronarian acut (ESC 2023 SCA): ECG-ul se transmite și se anunță din timp spitalul cu laborator de cateterism, cu ora debutului durerii. Decizia de transfer direct o ia medicul care primește traseul.",
-          "en": "Q waves in V1–V4, residual ST elevation of about 1–2 mm in V2–V3 and deep negative T waves: an anterior infarct hours to days old, which the ECG alone cannot date. With ongoing pain it is managed as an acute coronary syndrome (ESC 2023 ACS): transmit the ECG and pre-alert the PCI centre, with the time the pain started. The receiving doctor decides on direct transfer."
+          "ro": "Unde Q în V1–V4, supradenivelare ST reziduală discretă în V2–V3 (sub 1 mm în punctul J) și unde T negative adânci: infarct anterior cu o vechime de ore până la zile, pe care ECG-ul singur nu o poate stabili. Cu durere în curs, pacientul se abordează ca sindrom coronarian acut (ESC 2023 SCA): ECG-ul se transmite și se anunță din timp spitalul cu laborator de cateterism, cu ora debutului durerii. Decizia de transfer direct o ia medicul care primește traseul.",
+          "en": "Q waves in V1–V4, slight residual ST elevation in V2–V3 (under 1 mm at the J point) and deep negative T waves: an anterior infarct hours to days old, which the ECG alone cannot date. With ongoing pain it is managed as an acute coronary syndrome (ESC 2023 ACS): transmit the ECG and pre-alert the PCI centre, with the time the pain started. The receiving doctor decides on direct transfer."
         }
       }
     ],
@@ -2504,13 +2504,13 @@
       "ro": [
         "Intervale RR complet neregulate (~350–750 ms); alură ventriculară medie ~125/min.",
         "Fără unde P: linia izoelectrică este înlocuită de unde f (activitate fibrilatorie), cel mai bine vizibile în V1.",
-        "QRS îngust, ax QRS verticalizat (~+80°).",
+        "QRS îngust, ax QRS verticalizat (~+80°). Complexul de la ~6,7 s, care urmează unui ciclu lung-scurt, are alt aspect (undă R mai mică, croșetată, în DII; undă S mai adâncă în V1): cel mai probabil, conducere aberantă.",
         "La această frecvență, neregularitatea trece ușor neobservată: se măsoară câteva intervale RR cu compasul."
       ],
       "en": [
         "RR intervals irregularly irregular, between about 350 and 750 ms; the average ventricular rate is about 125/min.",
         "No P waves: the baseline shows fibrillatory activity, clearest in V1.",
-        "Narrow QRS, axis about +80°.",
+        "Narrow QRS, axis about +80°. The complex at about 6.7 s, after a long-short cycle, looks different (a smaller, notched R in II, a deeper S in V1): most likely aberrant conduction.",
         "At this rate the irregularity is easy to miss: measure a few RR intervals with the calipers."
       ]
     },
@@ -4174,13 +4174,13 @@
       "ro": [
         "Unde regulate, cu aspect sinusoidal: 47 de unde în 10 s, la ~210 ms una de alta; frecvența ~285/min.",
         "QRS și unda T nu se pot separa; între complexe nu există linie izoelectrică.",
-        "Spre deosebire de FV, complexele au aceeași formă, amplitudini apropiate (~0,4–0,9 mV) și distanțe aproape egale (~185–235 ms).",
+        "Spre deosebire de FV, complexele au aceeași formă, amplitudini apropiate (~0,4–0,9 mV) și distanțe relativ egale (în majoritate ~190–250 ms; la extreme, 140–265 ms).",
         "Aspect de TV foarte rapidă, apropiat de flutterul ventricular."
       ],
       "en": [
         "Regular sine-shaped waves: 47 in 10 s, about 210 ms apart; the rate is about 285/min.",
         "The QRS and T wave cannot be separated; there is no baseline between complexes.",
-        "Unlike VF, the complexes have the same shape, similar amplitudes (about 0.4–0.9 mV) and almost equal spacing (about 185–235 ms).",
+        "Unlike VF, the complexes have the same shape, similar amplitudes (about 0.4–0.9 mV) and fairly even spacing (mostly about 190–250 ms; 140–265 ms at the extremes).",
         "This is very fast VT, close to ventricular flutter."
       ]
     },
@@ -4740,14 +4740,14 @@
     },
     "findings": {
       "ro": [
-        "Unde S foarte adânci în V1–V3 (peste 30 mm în V2–V3) și unde R înalte în V5–V6 (~30–35 mm).",
-        "Indicele Sokolow-Lyon: S în V1 (~19 mm) + R în V5 (~35 mm) = ~54 mm, mult peste 35 mm.",
+        "Unde S foarte adânci în V1–V3 (peste 30 mm în V2–V3) și unde R înalte în V5–V6 (~30–36 mm).",
+        "Indicele Sokolow-Lyon: S în V1 (~19 mm) + R în V5 (~36 mm) = ~55 mm, mult peste 35 mm.",
         "Indicele Cornell: R în aVL + S în V3 = ~35 mm, peste pragul de 20 mm pentru femei.",
         "QRS îngust (~85 ms), ax QRS ~+60°; doar modificări ST-T minore în derivațiile laterale."
       ],
       "en": [
-        "Very deep S waves in V1–V3 (over 30 mm in V2–V3) and tall R waves in V5–V6 (about 30–35 mm).",
-        "Sokolow-Lyon: S in V1 (about 19 mm) + R in V5 (about 35 mm) = about 54 mm, well above 35 mm.",
+        "Very deep S waves in V1–V3 (over 30 mm in V2–V3) and tall R waves in V5–V6 (about 30–36 mm).",
+        "Sokolow-Lyon: S in V1 (about 19 mm) + R in V5 (about 36 mm) = about 55 mm, well above 35 mm.",
         "Cornell: R in aVL + S in V3 = about 35 mm, above the 20 mm threshold for women.",
         "Narrow QRS (about 85 ms), axis about +60°; only minor lateral ST-T changes."
       ]
@@ -4781,20 +4781,20 @@
             "en": "A dominant R in V1 with right axis deviation"
           },
           {
-            "ro": "S în V1 + R în V5 = ~54 mm, peste 35 mm (Sokolow-Lyon)",
-            "en": "S in V1 + R in V5 about 54 mm, over 35 mm (Sokolow-Lyon)"
+            "ro": "S în V1 + R în V5 = ~55 mm, peste 35 mm (Sokolow-Lyon)",
+            "en": "S in V1 + R in V5 about 55 mm, over 35 mm (Sokolow-Lyon)"
           }
         ],
         "answer": 3,
         "explain": {
-          "ro": "S în V1 (~19 mm) plus R în V5 (~35 mm) dau ~54 mm, peste 35 mm. Unda R din aVL este mică (sub 2 mm), QRS-ul este îngust (~85 ms), iar în V1 domină unda S, deci celelalte variante nu se potrivesc. Voltajul sugerează hipertrofia, dar confirmarea se face ecocardiografic.",
-          "en": "S in V1 (about 19 mm) plus R in V5 (about 35 mm) gives about 54 mm, above 35 mm. The R wave in aVL is small (under 2 mm), the QRS is narrow (about 85 ms), and S dominates in V1, so the other options do not fit. Voltage suggests hypertrophy; echo confirms it."
+          "ro": "S în V1 (~19 mm) plus R în V5 (~36 mm) dau ~55 mm, peste 35 mm. Unda R din aVL este mică (sub 2 mm), QRS-ul este îngust (~85 ms), iar în V1 domină unda S, deci celelalte variante nu se potrivesc. Voltajul sugerează hipertrofia, dar confirmarea se face ecocardiografic.",
+          "en": "S in V1 (about 19 mm) plus R in V5 (about 36 mm) gives about 55 mm, above 35 mm. The R wave in aVL is small (under 2 mm), the QRS is narrow (about 85 ms), and S dominates in V1, so the other options do not fit. Voltage suggests hypertrophy; echo confirms it."
         }
       }
     ],
     "deep": {
-      "ro": "Masa ventriculară stângă crescută amplifică voltajul QRS: indicele Sokolow-Lyon ~54 mm și indicele Cornell ~35 mm (prag de 20 mm la femei), la o pacientă de 74 de ani. Decizia: la o pacientă hipertensivă, HVS pe ECG este afectare de organ mediată de hipertensiune și se confirmă prin ecocardiografie (ESC 2024 HTA); se caută și alte cauze, ca stenoza aortică sau cardiomiopatia hipertrofică. Capcane: criteriile de voltaj au sensibilitate redusă, iar modificările minore ST-T din derivațiile laterale nu trebuie citite automat ca ischemie.",
-      "en": "Increased left ventricular mass amplifies QRS voltage: Sokolow-Lyon about 54 mm and Cornell about 35 mm (threshold 20 mm in women) in a 74-year-old woman. Decision: in a hypertensive patient, ECG LVH is hypertension-mediated organ damage and is confirmed by echo (ESC 2024 hypertension); also look for other causes such as aortic stenosis or hypertrophic cardiomyopathy. Pitfalls: voltage criteria have low sensitivity, and the minor lateral ST-T changes should not automatically be read as ischaemia."
+      "ro": "Masa ventriculară stângă crescută amplifică voltajul QRS: indicele Sokolow-Lyon ~55 mm și indicele Cornell ~35 mm (prag de 20 mm la femei), la o pacientă de 74 de ani. Decizia: la o pacientă hipertensivă, HVS pe ECG este afectare de organ mediată de hipertensiune și se confirmă prin ecocardiografie (ESC 2024 HTA); se caută și alte cauze, ca stenoza aortică sau cardiomiopatia hipertrofică. Capcane: criteriile de voltaj au sensibilitate redusă, iar modificările minore ST-T din derivațiile laterale nu trebuie citite automat ca ischemie.",
+      "en": "Increased left ventricular mass amplifies QRS voltage: Sokolow-Lyon about 55 mm and Cornell about 35 mm (threshold 20 mm in women) in a 74-year-old woman. Decision: in a hypertensive patient, ECG LVH is hypertension-mediated organ damage and is confirmed by echo (ESC 2024 hypertension); also look for other causes such as aortic stenosis or hypertrophic cardiomyopathy. Pitfalls: voltage criteria have low sensitivity, and the minor lateral ST-T changes should not automatically be read as ischaemia."
     },
     "tiers": {
       "student": "core",
@@ -4975,16 +4975,16 @@
     },
     "findings": {
       "ro": [
-        "PR ~130 ms, scurt pentru o frecvență atât de mică; complexul QRS începe direct cu o undă delta.",
+        "PR ~110–125 ms, scurt pentru o frecvență atât de mică; complexul QRS începe direct cu o undă delta.",
         "QRS foarte larg (~165 ms), cu porțiunea inițială empastată în toate derivațiile.",
         "Undă R dominantă în V1 cu undă delta pozitivă: cale accesorie stângă (tip A).",
-        "Modificări ST-T secundare, în opoziție de fază cu unda delta; ax QRS ~+105° (deviație axială dreaptă)."
+        "Modificări ST-T secundare, în opoziție de fază cu unda delta în DI, aVL, DIII și V1; ax QRS ~+105° (deviație axială dreaptă)."
       ],
       "en": [
-        "PR about 130 ms, short for such a slow rate; the QRS starts straight away with a delta wave.",
+        "PR about 110–125 ms, short for such a slow rate; the QRS starts straight away with a delta wave.",
         "Very wide QRS (about 165 ms) with a slurred start in every lead.",
         "Dominant R wave in V1 with a positive delta wave: a left-sided accessory pathway (type A).",
-        "Secondary ST-T changes opposite to the delta wave; axis about +105°."
+        "Secondary ST-T changes opposite to the delta wave in I, aVL, III and V1; axis about +105°."
       ]
     },
     "takeaway": {
@@ -5125,14 +5125,14 @@
         ],
         "answer": 2,
         "explain": {
-          "ro": "Complexul QRS începe direct cu o pantă lentă, empastată, în toate derivațiile (undă delta), iar PR-ul de ~130 ms este scurt pentru o frecvență de ~49/min. Într-un bloc de ramură, începutul QRS este rapid, iar întârzierea apare la sfârșitul complexului. Aici V1 nu are aspect rsR' sau QS, iar axul este deviat la dreapta (~+105°).",
-          "en": "The QRS starts straight away with a slow, slurred upstroke in every lead (a delta wave), and a PR of about 130 ms is short for a rate of about 49/min. In bundle branch block the start of the QRS is fast and the delay comes at its end. Here V1 shows neither rsR' nor QS, and the axis is deviated to the right (about +105°)."
+          "ro": "Complexul QRS începe direct cu o pantă lentă, empastată, în toate derivațiile (undă delta), iar PR-ul de ~110–125 ms este scurt pentru o frecvență de ~49/min. Într-un bloc de ramură, începutul QRS este rapid, iar întârzierea apare la sfârșitul complexului. Aici V1 nu are aspect rsR' sau QS, iar axul este deviat la dreapta (~+105°).",
+          "en": "The QRS starts straight away with a slow, slurred upstroke in every lead (a delta wave), and a PR of about 110–125 ms is short for a rate of about 49/min. In bundle branch block the start of the QRS is fast and the delay comes at its end. Here V1 shows neither rsR' nor QS, and the axis is deviated to the right (about +105°)."
         }
       }
     ],
     "deep": {
-      "ro": "O cale accesorie laterală stângă activează ventriculul înaintea nodului AV: PR ~130 ms, undă delta pozitivă în V1 și QRS de ~165 ms. La un tânăr de 20 de ani, dacă nu are simptome, se stratifică riscul (test de efort, studiu electrofiziologic), iar ablația este indicată dacă apar aritmii sau dacă calea are risc înalt (ESC 2019 TSV). Capcana: unda R dominantă din V1, axul de ~+105° și ST-T secundar mimează un bloc major de ramură dreaptă, o hipertrofie ventriculară dreaptă sau ischemie; cât timp există preexcitație, axul, voltajul și repolarizarea nu se interpretează ca la un QRS normal.",
-      "en": "A left lateral pathway activates the ventricle ahead of the AV node: PR about 130 ms, a positive delta wave in V1 and a QRS of about 165 ms. In a 20-year-old without symptoms, stratify the risk (exercise test, EP study); ablation is indicated if arrhythmias occur or the pathway is high-risk (ESC 2019 SVT). Pitfall: the dominant R in V1, the axis of about +105° and the secondary ST-T mimic right bundle branch block, right ventricular hypertrophy or ischaemia; while pre-excitation is present, axis, voltage and repolarisation cannot be read as for a normal QRS."
+      "ro": "O cale accesorie laterală stângă activează ventriculul înaintea nodului AV: PR ~110–125 ms, undă delta pozitivă în V1 și QRS de ~165 ms. La un tânăr de 20 de ani, dacă nu are simptome, se stratifică riscul (test de efort, studiu electrofiziologic), iar ablația este indicată dacă apar aritmii sau dacă calea are risc înalt (ESC 2019 TSV). Capcana: unda R dominantă din V1, axul de ~+105° și ST-T secundar mimează un bloc major de ramură dreaptă, o hipertrofie ventriculară dreaptă sau ischemie; cât timp există preexcitație, axul, voltajul și repolarizarea nu se interpretează ca la un QRS normal.",
+      "en": "A left lateral pathway activates the ventricle ahead of the AV node: PR about 110–125 ms, a positive delta wave in V1 and a QRS of about 165 ms. In a 20-year-old without symptoms, stratify the risk (exercise test, EP study); ablation is indicated if arrhythmias occur or the pathway is high-risk (ESC 2019 SVT). Pitfall: the dominant R in V1, the axis of about +105° and the secondary ST-T mimic right bundle branch block, right ventricular hypertrophy or ischaemia; while pre-excitation is present, axis, voltage and repolarisation cannot be read as for a normal QRS."
     },
     "tiers": {
       "student": "core",
@@ -5388,17 +5388,17 @@
     },
     "findings": {
       "ro": [
-        "În prima jumătate a traseului, fiecare complex QRS este precedat de un spike, la intervale de 860 ms: frecvență de stimulare 70/min.",
+        "Prima bătaie este proprie, fără spike. După ea, în prima jumătate a traseului, fiecare complex QRS este precedat de un spike, la intervale de 860 ms: frecvență de stimulare 70/min.",
         "La mijlocul traseului, bătăile sinusale proprii apar puțin mai devreme, fără spike și precedate de unde P: stimulatorul le detectează și se inhibă.",
         "Și bătăile proprii sunt largi: bloc major de ramură stângă cu PR alungit, conform raportului original.",
-        "Spre final, când ritmul sinusal încetinește, stimularea reîncepe.",
+        "Spre final, stimularea reîncepe. Frecvența atrială rămâne constantă (~60–63/min): o bătaie proprie apare doar când unda P vine suficient de devreme pentru a fi condusă înainte de terminarea intervalului de stimulare de 860 ms.",
         "Fiecare spike este urmat de un complex QRS și niciun spike nu apare prea devreme după o bătaie proprie: captura și detecția sunt normale."
       ],
       "en": [
-        "In the first half of the strip a spike comes before each QRS every 860 ms: pacing at 70/min.",
+        "The first beat is a native beat with no spike. After it, in the first half of the strip, a spike comes before each QRS every 860 ms: pacing at 70/min.",
         "In the middle of the strip the patient's own sinus beats arrive slightly sooner; they appear without spikes, with P waves before them: the device senses them and holds back.",
         "The native beats are wide too: left bundle branch block with a long PR, as the original report notes.",
-        "Near the end, as the sinus rate slows, pacing resumes.",
+        "Near the end pacing resumes. The atrial rate stays steady (about 60–63/min): a native beat appears only when a P wave comes early enough to be conducted before the 860 ms pacing interval runs out.",
         "Every spike is followed by a QRS, and no spike fires too soon after a native beat: capture and sensing are normal."
       ]
     },
@@ -6617,16 +6617,16 @@
     "findings": {
       "ro": [
         "Ritm regulat, ~80/min (interval între spike-uri ~740 ms); toate complexele sunt electrostimulate, cu excepția unei bătăi proprii prematuri la ~0,8 s.",
-        "Înaintea fiecărui spike ventricular se vede o undă P sinusală mică (în DII și V1), la un interval scurt și constant (~120–140 ms de la debutul undei P până la spike): stimulatorul detectează unda P și stimulează ventriculul după intervalul AV programat.",
+        "Înaintea fiecărui spike ventricular apare o undă P sinusală mică (~1 mm în DII, și mai mică în V1), la un interval scurt și constant (~120–140 ms de la debutul undei P până la spike): stimulatorul detectează unda P și stimulează ventriculul după intervalul AV programat.",
         "QRS stimulat larg (~140 ms), pozitiv în DI și aVL, cu aspect QS în DII, DIII, aVF și V1–V4: stimulare din ventriculul drept.",
-        "La ~0,8 s apare o bătaie proprie prematură, fără spike, cu QRS mai îngust (~90 ms) și pozitiv în V1: stimulatorul o detectează și nu stimulează. Spike-ul următor apare abia la ~1,8 s, după unda P de la ~1,7 s, deci la ~1 s după bătaia prematură, nu la ~740 ms: stimulatorul așteaptă unda P, iar frecvența ventriculară este dată de ritmul sinusal.",
+        "La ~0,8 s apare o bătaie proprie prematură, fără spike și fără undă P înaintea ei, cu QRS de ~130 ms, pozitiv în V1: poate fi o extrasistolă ventriculară. Stimulatorul o detectează și nu stimulează. Spike-ul următor apare abia la ~1,8 s, după unda P de la ~1,7 s, deci la ~1 s după bătaia prematură, nu la ~740 ms: stimulatorul așteaptă unda P, iar frecvența ventriculară este dată de ritmul sinusal.",
         "Nu există spike atrial înaintea undelor P: atriul este detectat, nu stimulat, deci nu este stimulare bicamerală secvențială AV, care ar avea două spike-uri în fiecare ciclu."
       ],
       "en": [
         "Regular rhythm at about 80/min (about 740 ms between spikes); every complex is paced except one early native beat at about 0.8 s.",
-        "A small sinus P wave comes before every ventricular spike (in II and V1), at a short, fixed interval (about 120–140 ms from P onset to spike): the device senses the P wave and paces the ventricle after its programmed AV delay.",
+        "A small sinus P wave (about 1 mm in II, even smaller in V1) comes before every ventricular spike, at a short, fixed interval (about 120–140 ms from P onset to spike): the device senses the P wave and paces the ventricle after its programmed AV delay.",
         "Wide paced QRS (about 140 ms), positive in I and aVL, QS in II, III, aVF and V1–V4: right ventricular pacing.",
-        "At about 0.8 s there is an early native beat with no spike, a narrower QRS (about 90 ms) and an upright QRS in V1: the device senses it and does not pace. The next spike comes only at about 1.8 s, after the P wave at about 1.7 s, so about 1 s after the early beat rather than 740 ms: the device waits for the P wave, and the ventricular rate is set by the sinus rhythm.",
+        "At about 0.8 s there is an early native beat with no spike and no P wave before it; its QRS (about 130 ms) is upright in V1, so it may be a ventricular ectopic beat. The device senses it and does not pace. The next spike comes only at about 1.8 s, after the P wave at about 1.7 s, so about 1 s after the early beat rather than 740 ms: the device waits for the P wave, and the ventricular rate is set by the sinus rhythm.",
         "There is no atrial spike before the P waves: the atrium is sensed, not paced, so this is not AV sequential pacing, which would show two spikes in every cycle."
       ]
     },
@@ -6834,14 +6834,14 @@
         "Spike-uri de stimulare ample, la intervale fixe de 860 ms: frecvență de stimulare 70/min. Fiecare spike este urmat de un QRS larg (~140 ms), deci captura este constantă; nu există bătăi proprii.",
         "QRS stimulat negativ în DII, DIII și aVF și pozitiv în DI și aVL: deviație axială stângă marcată (ax orientat superior).",
         "Unde P regulate, cu frecvența de ~100/min (interval P–P 590 ms), cel mai bine vizibile pe banda de ritm V1. Ele cad în poziții diferite față de complexele stimulate: pe segmentul ST (la 0,75 s), imediat înaintea spike-ului (la 3,1 s), în interiorul QRS (la 6,6 s) sau după unda T: disociație atrioventriculară.",
-        "Undele P de la ~3,7 s și 5,4 s cad după sfârșitul undei T, cu 300–350 ms înaintea spike-ului următor, când ar putea fi conduse, dar nu sunt urmate de niciun QRS propriu: blocul AV este complet. Frecvența atrială este mai mare decât cea de stimulare, deci disociația nu se datorează stimulării mai rapide.",
+        "Undele P de la ~3,7 s și 5,4 s cad după sfârșitul undei T, cu ~290–350 ms înaintea spike-ului următor, când ar putea fi conduse, dar nu sunt urmate de niciun QRS propriu: blocul AV este complet. Frecvența atrială este mai mare decât cea de stimulare, deci disociația nu se datorează stimulării mai rapide.",
         "Un stimulator care urmărește undele P (DDD/VDD) ar emite un spike ventricular după fiecare undă P, la intervalul AV programat, iar ritmul ventricular ar urma undele P. Aici spike-urile își păstrează intervalul de 860 ms indiferent de undele P: mod VVI."
       ],
       "en": [
         "Large pacing spikes at a fixed interval of 860 ms: pacing at 70/min. Every spike is followed by a wide QRS (about 140 ms), so capture is consistent; there are no native beats.",
         "The paced QRS is negative in II, III and aVF and positive in I and aVL: marked left axis deviation (a superior axis).",
         "Regular P waves at about 100/min (P-P interval 590 ms), best seen on the V1 rhythm strip. They fall at different points relative to the paced complexes: on the ST segment (at 0.75 s), just before a spike (at 3.1 s), inside a QRS (at 6.6 s) or after the T wave: AV dissociation.",
-        "The P waves at about 3.7 s and 5.4 s fall after the end of the T wave, 300 to 350 ms before the next spike, when they could be conducted, yet no native QRS follows them: the block is complete. The atrial rate is faster than the pacing rate, so the dissociation is not caused by faster pacing.",
+        "The P waves at about 3.7 s and 5.4 s fall after the end of the T wave, about 290 to 350 ms before the next spike, when they could be conducted, yet no native QRS follows them: the block is complete. The atrial rate is faster than the pacing rate, so the dissociation is not caused by faster pacing.",
         "A device that tracks P waves (DDD/VDD) would place a ventricular spike after each P wave, at the programmed AV delay, and the ventricular rhythm would follow the P waves. Here the spikes keep their 860 ms interval whatever the P waves do: VVI mode."
       ]
     },
@@ -7368,14 +7368,14 @@
         "Ritm ventricular electrostimulat regulat, cu intervale între spike-uri de ~860 ms: frecvență de stimulare 70/min. Nu se văd unde P, deci activitatea atrială nu se poate preciza.",
         "QRS stimulat foarte larg (~200 ms), cu aspect rS în V1 (undă S adâncă, croșetată), ca în blocul major de ramură stângă; în V4–V6, complexe mici, fragmentate, predominant negative.",
         "QRS intens pozitiv în DI și aVL, cu aspect QS adânc în DII, DIII și aVF: ax orientat superior (~−60°). Activarea pornește de la apexul ventriculului drept spre bază, de aceea și V4–V6 sunt predominant negative.",
-        "La ~5,7 s apare un complex larg, prematur, fără spike, pozitiv în V1–V3: extrasistolă ventriculară (ESV). Următorul spike apare la ~980 ms de la debutul ESV, ceva mai mult decât intervalul de stimulare (860 ms): ESV a fost detectată, iar ciclul de stimulare a fost reluat de la ea.",
+        "La ~5,7 s apare un complex larg, prematur, fără spike, pozitiv în V1–V3: extrasistolă ventriculară (ESV). Următorul spike apare la ~980 ms de la debutul ESV, ceva mai mult decât intervalul de stimulare (860 ms): ESV a fost detectată, iar ciclul de stimulare a fost reluat de la ea. Complexul care urmează acestui spike (~6,7 s) diferă de celelalte complexe stimulate (undă R înaltă și îngustă în V2, complex mai îngust în V1, QS mai puțin adânc în DII): probabil o bătaie de fuziune.",
         "La stimularea din septul sau tractul de ejecție al ventriculului drept, DII, DIII și aVF ar fi pozitive, iar la stimularea biventriculară DI ar fi negativ, de obicei cu undă R în V1; niciunul dintre aceste aspecte nu apare aici. Un bloc major de ramură stângă propriu nu ar fi precedat de spike-uri."
       ],
       "en": [
         "Regular ventricular pacing with spikes about 860 ms apart: pacing at 70/min. No P waves are seen, so atrial activity cannot be determined.",
         "Very wide paced QRS (about 200 ms) with an rS in V1 (deep, notched S wave), as in left bundle branch block; V4–V6 show small, fragmented, mainly negative complexes.",
         "The QRS is strongly positive in I and aVL, with deep QS complexes in II, III and aVF: superior axis (about −60°). Activation runs from the right ventricular apex towards the base, which is why V4–V6 are mainly negative too.",
-        "At about 5.7 s there is an early wide complex with no spike, upright in V1–V3: a ventricular premature beat. The next spike comes about 980 ms after its onset, somewhat longer than the pacing interval (860 ms): the premature beat was sensed and the pacing cycle restarted from it.",
+        "At about 5.7 s there is an early wide complex with no spike, upright in V1–V3: a ventricular premature beat. The next spike comes about 980 ms after its onset, somewhat longer than the pacing interval (860 ms): the premature beat was sensed and the pacing cycle restarted from it. The complex after that spike (about 6.7 s) looks different from the other paced complexes (a tall, narrow R in V2, a narrower complex in V1, a shallower QS in II): probably a fusion beat.",
         "Right ventricular septal or outflow tract pacing would make II, III and aVF positive, and biventricular pacing would make lead I negative, usually with an R wave in V1; neither is present here. A native left bundle branch block would not be preceded by spikes."
       ]
     },
@@ -8798,14 +8798,14 @@
         "Ritm propriu regulat, 65/min (RR 930 ms), fără unde P clare; QRS cu aspect QS în V1–V4 și deviație axială stângă marcată.",
         "Spike-uri foarte mici (sub 1 mm), cel mai bine vizibile pe banda de ritm DII, la intervale fixe de 750 ms (80/min), de la ~0,85 s până la 9,85 s; cel de la 4,6 s abia se vede. Doar spike-ul de la ~7,6 s este urmat, după 80–90 ms, de un complex cu altă formă (QS adânc în DII și V4–V6, fără unda R din V6), aproape exact când era așteptată bătaia proprie: probabil o bătaie de fuziune.",
         "Pierderea capturii: spike-urile de la ~0,85 s, 3,85 s (cel mai clar) și 8,35 s cad după sfârșitul undei T (la 580–800 ms după debutul QRS precedent), în afara perioadei refractare, și nu sunt urmate de QRS. Spike-urile care cad în QRS, pe segmentul ST sau pe unda T, când miocardul este încă refractar, nu se iau în calcul. Dacă spike-urile (80/min) ar captura, ritmul ar fi în mare parte electrostimulat, nu propriu (65/min).",
-        "Spike-urile nu țin cont de bătăile proprii: cele de la ~2,35 s, 6,1 s și 9,85 s cad pe segmentul ST sau pe unda T, după un QRS propriu deja încheiat, iar cele de la ~3,1 s și 6,85 s chiar în interiorul QRS. Stimulatorul nu este inhibat și nu își reia ciclul după bătăile proprii: subdetecție sau stimulare asincronă (magnet aplicat, mod VOO), pe care traseul de suprafață nu le poate deosebi.",
+        "Spike-urile nu țin cont de bătăile proprii: cele de la ~2,35 s, 6,1 s și 9,85 s cad pe segmentul ST sau pe unda T, după un QRS propriu deja încheiat, iar cele așteptate la ~3,1 s și 6,85 s cad chiar în interiorul QRS și nu se pot vedea separat de acesta. Stimulatorul nu este inhibat și nu își reia ciclul după bătăile proprii: subdetecție sau stimulare asincronă (magnet aplicat, mod VOO), pe care traseul de suprafață nu le poate deosebi.",
         "Nu este stimulare „la cerere” normală (VVI): aceasta ar fi inhibată de bătăile proprii, iar fiecare spike ar fi urmat de un QRS stimulat. Nici supradetecția nu se potrivește: ea produce pauze fără spike, iar aici spike-urile sunt prea multe, nu prea puține."
       ],
       "en": [
         "Regular native rhythm at 65/min (RR 930 ms) with no clear P waves; the QRS shows QS complexes in V1–V4 and marked left axis deviation.",
         "Very small spikes (under 1 mm), best seen on the II rhythm strip, come at a fixed interval of 750 ms (80/min) from about 0.85 s to 9.85 s; the one at 4.6 s is barely visible. Only the spike at about 7.6 s is followed, 80 to 90 ms later, by a complex of a different shape (deep QS in II and V4–V6, with no R wave in V6), almost exactly when the native beat was due: probably a fusion beat.",
         "Loss of capture: the spikes at about 0.85 s, 3.85 s (the clearest) and 8.35 s fall after the end of the T wave (580 to 800 ms after the onset of the previous QRS), outside the refractory period, and no QRS follows them. Spikes that fall inside a QRS, on the ST segment or on the T wave, while the muscle is still refractory, do not count. If the spikes (80/min) were capturing, the rhythm would be mostly paced, not native (65/min).",
-        "The spikes ignore the native beats: those at about 2.35 s, 6.1 s and 9.85 s fall on the ST segment or the T wave, after a native QRS that has already ended, and those at about 3.1 s and 6.85 s fall inside a QRS. The device is not inhibited and does not restart its timing after native beats: undersensing or asynchronous pacing (a magnet, VOO mode), which the surface ECG cannot tell apart.",
+        "The spikes ignore the native beats: those at about 2.35 s, 6.1 s and 9.85 s fall on the ST segment or the T wave, after a native QRS that has already ended, and those due at about 3.1 s and 6.85 s fall inside a QRS, where they cannot be seen apart from it. The device is not inhibited and does not restart its timing after native beats: undersensing or asynchronous pacing (a magnet, VOO mode), which the surface ECG cannot tell apart.",
         "This is not normal demand pacing (VVI): that would be inhibited by the native beats, and every spike would be followed by a paced QRS. Oversensing does not fit either: it causes pauses without spikes, whereas here there are too many spikes, not too few."
       ]
     },
@@ -8865,8 +8865,8 @@
             "en": "The spike at about 2.35 s"
           },
           {
-            "ro": "Spike-ul de la ~3,1 s",
-            "en": "The spike at about 3.1 s"
+            "ro": "Spike-ul de la ~6,1 s",
+            "en": "The spike at about 6.1 s"
           },
           {
             "ro": "Spike-ul de la ~3,85 s",
@@ -8879,8 +8879,8 @@
         ],
         "answer": 2,
         "explain": {
-          "ro": "Spike-ul de la ~3,85 s cade la ~780 ms după debutul QRS precedent, după sfârșitul undei T, când miocardul nu mai este refractar, și nu este urmat de QRS. Cel de la ~2,35 s cade pe segmentul ST sau pe unda T, iar cel de la ~3,1 s în QRS, deci amândouă în perioada refractară; cel de la ~7,6 s este urmat de o bătaie probabil de fuziune. Pierderea capturii impune verificarea stimulatorului în aceeași zi.",
-          "en": "The spike at about 3.85 s falls about 780 ms after the onset of the previous QRS, after the end of the T wave, when the muscle is no longer refractory, and no QRS follows it. The one at about 2.35 s falls on the ST segment or T wave, and the one at about 3.1 s inside the QRS, so both are in the refractory period; the one at about 7.6 s is followed by a probable fusion beat. Loss of capture calls for a device check the same day."
+          "ro": "Spike-ul de la ~3,85 s cade la ~780 ms după debutul QRS precedent, după sfârșitul undei T, când miocardul nu mai este refractar, și nu este urmat de QRS. Cele de la ~2,35 s și ~6,1 s cad pe segmentul ST sau pe unda T, deci amândouă în perioada refractară; cel de la ~7,6 s este urmat de o bătaie probabil de fuziune. Pierderea capturii impune verificarea stimulatorului în aceeași zi.",
+          "en": "The spike at about 3.85 s falls about 780 ms after the onset of the previous QRS, after the end of the T wave, when the muscle is no longer refractory, and no QRS follows it. The ones at about 2.35 s and 6.1 s fall on the ST segment or T wave, so both are in the refractory period; the one at about 7.6 s is followed by a probable fusion beat. Loss of capture calls for a device check the same day."
         }
       },
       {
@@ -9121,14 +9121,14 @@
     "findings": {
       "ro": [
         "Traseul are două părți. În prima parte, spike-uri mici la 0,2; 0,9; 1,6; 2,3 și 3,05 s, la intervale de ~710 ms (84/min). În a doua parte, de la 4,05 s, spike-uri mult mai ample, la intervale de 1000 ms (60/min). Fiecare spike este urmat de un QRS: captura este prezentă în ambele părți, fără pauze.",
-        "În a doua parte, QRS este foarte larg (~230 ms), cu undă R largă, monofazică, în V1 (aspect de bloc major de ramură dreaptă), QS adânc în aVL și V4–V6 și QRS pozitiv în DII, aVF și aVR. Derivația DI nu este înregistrată în această parte, dar un QRS pozitiv atât în aVR, cât și în DII impune un QRS negativ în DI; cu aVF pozitiv, rezultă deviație axială dreaptă. Aspectul este sugestiv pentru stimulare exclusiv din ventriculul stâng.",
+        "În a doua parte, QRS este foarte larg (~230 ms), cu undă R largă, monofazică, în V1 (aspect de bloc major de ramură dreaptă), QS adânc în aVL și V4–V6 și QRS pozitiv în DII, aVF și aVR. Derivația DI nu este afișată în această parte, dar un QRS pozitiv atât în aVR, cât și în DII impune un QRS negativ în DI; cu aVF pozitiv, rezultă deviație axială dreaptă. Aspectul este sugestiv pentru stimulare exclusiv din ventriculul stâng.",
         "În prima parte, QRS are altă formă: polifazic, cu amplitudine mică în derivațiile membrelor, tot foarte larg (~200 ms), cu aspect QS „în W” în V1. Locul de stimulare nu poate fi stabilit cu certitudine. Nu se văd unde P clare în nicio parte.",
         "Față de stimularea biventriculară: la stimularea biventriculară eficientă, cele două fronturi de activare se întâlnesc, iar QRS este de obicei mai îngust; aici QRS din a doua parte este foarte larg, cu aspect „pur” de bloc major de ramură dreaptă (undă R monofazică în V1, QS în V4–V6).",
         "La ~4 s se schimbă simultan frecvența, mărimea spike-ului și forma QRS. Pierderea izolată a capturii ventriculului drept nu ar schimba frecvența sau spike-ul, deci tabloul sugerează mai degrabă o modificare a programării (de exemplu, în timpul unui control al dispozitivului); doar interogarea stimulatorului o poate confirma."
       ],
       "en": [
         "The tracing has two parts. In the first part, small spikes at 0.2, 0.9, 1.6, 2.3 and 3.05 s, about 710 ms apart (84/min). In the second part, from 4.05 s, much larger spikes every 1000 ms (60/min). Every spike is followed by a QRS: capture is present in both parts and there are no pauses.",
-        "In the second part the QRS is very wide (about 230 ms), with a broad monophasic R in V1 (a right bundle branch block shape), a deep QS in aVL and V4–V6, and a positive QRS in II, aVF and aVR. Lead I is not recorded in this part, but a QRS that is positive in both aVR and II means lead I must be negative; with a positive aVF, this gives right axis deviation. This pattern suggests left ventricular-only pacing.",
+        "In the second part the QRS is very wide (about 230 ms), with a broad monophasic R in V1 (a right bundle branch block shape), a deep QS in aVL and V4–V6, and a positive QRS in II, aVF and aVR. Lead I is not shown in this part, but a QRS that is positive in both aVR and II means lead I must be negative; with a positive aVF, this gives right axis deviation. This pattern suggests left ventricular-only pacing.",
         "In the first part the QRS looks different: multiphasic, low amplitude in the limb leads, also very wide (about 200 ms), with a W-shaped QS in V1. The pacing site cannot be established with certainty. No clear P waves are seen in either part.",
         "Versus biventricular pacing: with effective biventricular pacing the two activation wavefronts meet and the QRS is usually narrower; here the second-part QRS is very wide, with a 'pure' right bundle branch block shape (monophasic R in V1, QS in V4–V6).",
         "At about 4 s the rate, the spike size and the QRS shape all change together. Loss of right ventricular capture on its own would not change the rate or the spike, so this more likely reflects a change in the device settings (for example during a device check); only device interrogation can confirm it."
@@ -9176,8 +9176,8 @@
       }
     ],
     "deep": {
-      "ro": "De la ~4 s se schimbă simultan frecvența, mărimea spike-ului și forma QRS: apare un aspect de stimulare exclusiv din ventriculul stâng la 60/min, cu QRS de ~230 ms. Această combinație sugerează o schimbare de programare sau un test al dispozitivului, de exemplu în timpul unui control, nu o pierdere de captură, care ar schimba doar forma QRS. Capcana: în a doua parte DI lipsește; se deduce din aVR și DII (pozitive amândouă impun DI negativ), iar cauza se confirmă la interogare.",
-      "en": "From about 4 s the rate, the spike size and the QRS shape change together, to a left ventricular-only pattern at 60/min with a QRS of about 230 ms. That combination points to a programming change or a device test, for example during a device check, rather than loss of capture, which would change only the QRS shape. The pitfall: lead I is missing in the second part; derive it from aVR and II (both positive means lead I is negative), and confirm the cause at interrogation."
+      "ro": "De la ~4 s se schimbă simultan frecvența, mărimea spike-ului și forma QRS: apare un aspect de stimulare exclusiv din ventriculul stâng la 60/min, cu QRS de ~230 ms. Această combinație sugerează o schimbare de programare sau un test al dispozitivului, de exemplu în timpul unui control, nu o pierdere de captură, care ar schimba doar forma QRS. Capcana: în a doua parte DI nu este afișată; se deduce din aVR și DII (pozitive amândouă impun DI negativ), iar cauza se confirmă la interogare.",
+      "en": "From about 4 s the rate, the spike size and the QRS shape change together, to a left ventricular-only pattern at 60/min with a QRS of about 230 ms. That combination points to a programming change or a device test, for example during a device check, rather than loss of capture, which would change only the QRS shape. The pitfall: lead I is not shown in the second part; derive it from aVR and II (both positive means lead I is negative), and confirm the cause at interrogation."
     },
     "tiers": {
       "student": "skip",

@@ -64,7 +64,13 @@ function creditLine(c) {
 
 function tx(obj) {
   if (!obj) return "";
+  if (typeof obj === "string") return obj;
   return obj[lang] ?? obj.ro ?? obj.en ?? "";
+}
+
+/* Teaching marks in the reader's language; numbered after the finding they illustrate. */
+function localMarks(list, numbered = false) {
+  return (list || []).map((a) => ({ ...a, label: tx(a.label), n: numbered && a.finding != null ? a.finding + 1 : null }));
 }
 
 function h(tag, props, ...kids) {
@@ -443,10 +449,13 @@ function render(scroll = true) {
 }
 
 /* ---------------------------------------------------------------- viewer */
-function makeViewer(c, { look = [], revealed = false, calipers = "off", span = 0.2, strip = null, marks = [], init = null } = {}) {
+function makeViewer(c, { look = [], revealed = false, calipers = "off", span = 0.2, strip = null, marks = [], init = null,
+  annotations = [], numbered = false, annOn = revealed, onFocusChange = null } = {}) {
   const narrow = window.matchMedia("(max-width: 700px)").matches;
   // a case can open at 5 mm/mV (very large complexes on a monitor strip)
-  const st = { zoom: narrow ? 2 : 1, gain: c.gain || 10, cal: calipers, hl: revealed && look.length > 0, revealed };
+  const st = { zoom: narrow ? 2 : 1, gain: c.gain || 10, cal: calipers, hl: revealed && look.length > 0, revealed,
+    anns: annotations, ann: annOn && annotations.length > 0, focus: null, hlNow: null };
+  const shownMarks = () => (st.ann ? localMarks(st.anns, numbered) : []);
   let view = null;
   const listeners = [];
 
@@ -519,9 +528,24 @@ function makeViewer(c, { look = [], revealed = false, calipers = "off", span = 0
     })
     : null;
 
+  // arrows and labels on the tracing: on once the answer is in (or straight away in a lesson)
+  const annBtn = h("button", {
+    type: "button", class: "vw-btn vw-toggle", "aria-pressed": String(st.ann), disabled: !st.revealed && !annOn,
+    hidden: !annotations.length, text: t("tool_marks"),
+    onclick: () => {
+      st.ann = !st.ann;
+      annBtn.setAttribute("aria-pressed", String(st.ann));
+      if (!st.ann && st.focus != null) {
+        st.focus = null;
+        onFocusChange?.(null);
+      }
+      view?.setAnnotations(shownMarks(), st.focus);
+    },
+  });
+
   const el = h("figure", { class: "vw" },
     h("div", { class: "vw-panel" },
-      h("div", { class: "vw-bar", role: "toolbar", "aria-label": "ECG" }, zoom, gain, cal, hlBtn, readout),
+      h("div", { class: "vw-bar", role: "toolbar", "aria-label": "ECG" }, zoom, gain, cal, hlBtn, annBtn, readout),
       host),
     hint,
     h("p", { class: "vw-rotate", text: t("rotate_hint") }),
@@ -537,8 +561,9 @@ function makeViewer(c, { look = [], revealed = false, calipers = "off", span = 0
       view = new EcgView(host, ecg, {
         layout: strip ? "strip" : "standard", leads: strip?.leads, window: strip?.window, rowH: strip?.rowH,
         strips: c.strips || ["II"], zoom: st.zoom, gain: st.gain, labels: LEAD_LABELS[lang], maxPxmm: strip && !strip.full ? 8 : null,
-        highlight: st.hl ? look : [], marks,
+        highlight: st.hlNow ?? (st.hl ? look : []), marks, annotations: shownMarks(),
       });
+      if (st.focus != null && st.ann) view.setAnnotations(shownMarks(), st.focus);
       view.overlay.setAttribute("aria-label", t("tool_calipers"));
       view.onCalipers((r) => {
         showReading(r);
@@ -562,10 +587,49 @@ function makeViewer(c, { look = [], revealed = false, calipers = "off", span = 0
         hlBtn.setAttribute("aria-pressed", "true");
       }
       view?.setHighlight(look);
+      if (st.anns.length) {
+        annBtn.disabled = false;
+        st.ann = true;
+        annBtn.setAttribute("aria-pressed", "true");
+        view?.setAnnotations(shownMarks(), st.focus);
+      }
     },
     reading: () => view?.reading() || null,
     onReading: (fn) => listeners.push(fn),
     setMarks: (m) => view?.setMarks(m),
+    setHighlight(leads) {
+      st.hlNow = leads || [];
+      view?.setHighlight(st.hlNow);
+    },
+    /* new marks (a lesson set or a guided frame); shown unless the reader switched them off */
+    setAnnotations(list) {
+      st.anns = list || [];
+      st.focus = null;
+      annBtn.hidden = !st.anns.length;
+      view?.setAnnotations(shownMarks());
+    },
+    /* false when this view cannot draw any mark of finding i (a strip of one lead) */
+    showsFinding: (i) => (view ? view.showsFinding(i, localMarks(st.anns, numbered)) : true),
+    /* show one finding's marks at full strength and bring them into view */
+    focusFinding(i) {
+      if (!st.anns.length) return null;
+      const wasOn = st.ann;
+      if (!st.ann) {
+        st.ann = true;
+        annBtn.setAttribute("aria-pressed", "true");
+      }
+      st.focus = wasOn && st.focus === i ? null : i;
+      if (!view) return st.focus;
+      view.setAnnotations(shownMarks(), st.focus);
+      const x = st.focus == null ? null : view.annotationX(st.focus);
+      const sc = view.scroller;
+      if (x != null && sc.scrollWidth > sc.clientWidth) {
+        sc.scrollTo({ left: Math.max(0, x - sc.clientWidth / 2), behavior: "smooth" });
+      }
+      const r = el.getBoundingClientRect();
+      if (st.focus != null && (r.bottom < 60 || r.top > window.innerHeight - 60)) el.scrollIntoView({ block: "nearest", behavior: "smooth" });
+      return st.focus;
+    },
   };
 }
 
@@ -603,14 +667,25 @@ function viewHome() {
   if (acc != null) stats.push(t("home_accuracy", acc));
 
   const tr = tier();
-  const lessons = DATA.lessons || [];
+  const basics = courseLessons("basics");
+  const basicsLeft = basics.filter((l) => !store.lesson(l.id)?.done);
+  const lessons = courseLessons("full");
   const required = lessons.filter((l) => lessonFit(l) === "required");
   const left = required.filter((l) => !store.lesson(l.id)?.done);
-  const nextLesson = left[0] || null;
+  // the full course waits only while required beginner lessons remain (optional ones never block it)
+  const nextLesson = basicsLeft.some((l) => lessonFit(l) === "required") ? null : left[0] || null;
   put(
     tr && h("p", { class: "tr-profile" },
       t("profile_line", tx(tr.name)), " ",
       h("a", { href: "#profile", text: t("profile_change") })),
+    basicsLeft.length > 0 && h("section", { class: "tr-section tr-teaser tr-learn-teaser tr-basics-teaser" },
+      h("span", { class: "tr-module-icon" }, icon("learn")),
+      h("div", null,
+        h("h2", { text: t("basics_teaser_title") }),
+        h("p", { text: t("basics_teaser_text", basics.length - basicsLeft.length, basics.length) }),
+      ),
+      h("a", { class: "btn", href: `#lesson-${basicsLeft[0].id}`,
+        text: basicsLeft.length === basics.length ? t("learn_start") : t("learn_continue") })),
     nextLesson && h("section", { class: "tr-section tr-teaser tr-learn-teaser" },
       h("div", null,
         h("h2", { text: t("learn_teaser_title") }),
@@ -705,19 +780,34 @@ function lessonFit(l) {
   return tr ? l.tiers?.[tr.id] || "optional" : "required";
 }
 
+const COURSES = ["basics", "full"];
+const courseOf = (l) => l.course || "full";
+
+/* The lessons of one course that this profile sees, in order. */
+function courseLessons(course) {
+  return (DATA.lessons || []).filter((l) => courseOf(l) === course && lessonFit(l) !== "skip");
+}
+
 function viewLearn() {
-  const list = (DATA.lessons || []).filter((l) => lessonFit(l) !== "skip");
-  const done = list.filter((l) => store.lesson(l.id)?.done).length;
+  const courses = COURSES.map((id) => [id, courseLessons(id)]).filter(([, list]) => list.length);
   put(
-    h("h1", { text: t("learn_title") }),
-    h("p", { class: "tr-intro", text: t("learn_intro") }),
+    h("h1", { text: t("nav_learn") }),
     tier() && h("p", { class: "tr-note", text: t("learn_profile", tx(tier().name)) }),
-    h("p", { class: "tr-score", text: t("learn_progress", done, list.length) }),
-    h("ol", { class: "ls-list" }, list.map((l) => {
+    courses.map(([id, list]) => h("section", { class: `tr-section ls-course ls-course-${id}` },
+      h("h2", { text: id === "basics" ? t("course_basics") : courses.length > 1 ? t("course_full") : t("learn_title") }),
+      h("p", { class: "tr-intro", text: id === "basics" ? t("course_basics_intro") : t("learn_intro") }),
+      h("p", { class: "tr-score", text: t("learn_progress", list.filter((l) => store.lesson(l.id)?.done).length, list.length) }),
+      lessonRows(list))),
+  );
+}
+
+function lessonRows(list) {
+  return h("ol", { class: "ls-list" }, list.map((l) => {
       const st = store.lesson(l.id);
       const fitL = lessonFit(l);
       return h("li", null, h("a", { class: "tr-row", href: `#lesson-${l.id}` },
         h("span", { class: "tr-row-title" },
+          l.step != null && courseOf(l) === "basics" && h("span", { class: "ls-step-tag", text: t("reading_step", l.step) }),
           h("span", { class: "ls-title", text: tx(l.title) }),
           h("span", { class: "ls-sub", text: tx(l.summary) })),
         h("span", { class: "tr-row-meta" },
@@ -725,14 +815,13 @@ function viewLearn() {
           fitL === "optional" && h("span", { class: "tag", text: t("lesson_optional") }),
           st?.done ? h("span", { class: "chip chip-ok", text: t("lesson_done") }) : null,
           reviewTag(`lesson-${l.id}`))));
-    })),
-  );
+    }));
 }
 
 function viewLesson(id, reviewing = false) {
   const l = LESSONS.get(id);
   if (!l) return viewLearn();
-  const list = (DATA.lessons || []).filter((x) => lessonFit(x) !== "skip" || x.id === id);
+  const list = (DATA.lessons || []).filter((x) => courseOf(x) === courseOf(l) && (lessonFit(x) !== "skip" || x.id === id));
   const i = list.findIndex((x) => x.id === id);
   const next = list[i + 1];
   const finish = h("button", { type: "button", class: "btn",
@@ -744,10 +833,11 @@ function viewLesson(id, reviewing = false) {
   put(
     h("article", { class: "ls" },
       h("div", { class: "cs-bar" },
-        h("a", { class: "cs-back", href: "#learn", text: `← ${t("learn_title")}` }),
+        h("a", { class: "cs-back", href: "#learn", text: `← ${t("nav_learn")}` }),
         h("span", { class: "cs-count", text: t("lesson_of", i + 1, list.length) }),
         h("div", { class: "cs-progress", "aria-hidden": "true" },
           h("span", { style: `width:${(100 * (i + 1)) / list.length}%` }))),
+      l.step != null && courseOf(l) === "basics" && h("p", { class: "ls-step-tag", text: t("reading_step", l.step) }),
       h("h1", { class: "cs-q", text: tx(l.title) }),
       h("div", { class: "ls-goals" },
         h("p", { class: "fu-kind", text: t("lesson_goals") }),
@@ -779,6 +869,7 @@ function lessonStep(l, step) {
       step.caption && h("figcaption", { text: tx(step.caption) }));
   }
   if (step.type === "figure") return lessonFigure(step);
+  if (step.type === "guided") return lessonGuided(l, step);
   if (step.type === "task") return lessonTask(l, step);
   if (step.type === "check") return lessonCheck(l, step);
   if (step.type === "cases") {
@@ -798,10 +889,11 @@ function lessonStep(l, step) {
 function lessonFigure(step) {
   const sets = step.sets || [];
   const pseudo = { ecg_id: step.ecg, strips: step.strips, source: step.source, layout: step.monitor ? "monitor" : null, gain: step.gain };
+  const setAnns = (set) => [...(step.annotations || []), ...(set?.annotations || [])];
   const viewer = makeViewer(pseudo, {
     strip: step.layout === "standard" ? null : { leads: step.leads || ["II"], window: step.window },
     marks: sets.length ? sets[0].marks : step.marks || [],
-    look: step.look || [], revealed: !!step.look,
+    look: step.look || [], revealed: !!step.look, annotations: setAnns(sets[0]), annOn: true,
   });
   let current = 0;
   const btns = sets.map((set, k) => h("button", { type: "button", class: "vw-btn", "aria-pressed": String(k === 0), text: tx(set.label),
@@ -809,6 +901,7 @@ function lessonFigure(step) {
       current = k;
       btns.forEach((b, j) => b.setAttribute("aria-pressed", String(j === current)));
       viewer.setMarks(set.marks);
+      viewer.setAnnotations(setAnns(set));
       note.textContent = tx(set.note) || "";
     } }));
   const note = h("p", { class: "ls-note", "aria-live": "polite", text: sets.length ? tx(sets[0].note) || "" : "" });
@@ -819,6 +912,52 @@ function lessonFigure(step) {
       h("span", { class: "vw-label", text: t("lesson_show") }), h("span", { class: "vw-seg" }, btns)),
     viewer.el,
     note,
+    step.caption && h("p", { class: "cs-small", text: tx(step.caption) }));
+}
+
+/* One tracing explained frame by frame: each frame adds its own arrows, labels and lead
+   boxes, with a short text. Back and Next walk through the frames. */
+function lessonGuided(l, step) {
+  const frames = step.frames || [];
+  const pseudo = { ecg_id: step.ecg, strips: step.strips, source: step.source, layout: step.monitor ? "monitor" : null, gain: step.gain };
+  const viewer = makeViewer(pseudo, {
+    strip: step.layout === "standard" ? null : { leads: step.leads || ["II"], window: step.window },
+    marks: frames[0]?.marks || [], annotations: frames[0]?.annotations || [], annOn: true,
+  });
+  let k = 0;
+  const count = h("span", { class: "gd-count" });
+  const title = h("h3", { class: "gd-title" });
+  const text = h("div", { class: "gd-text" });
+  const prev = h("button", { type: "button", class: "btn btn-quiet", text: `← ${t("guided_prev")}`, onclick: () => go(k - 1) });
+  const next = h("button", { type: "button", class: "btn", text: `${t("guided_next")} →`, onclick: () => go(k + 1) });
+  const dots = frames.map((f, i) => h("button", { type: "button", class: "gd-dot", "aria-label": `${t("guided_goto", i + 1)}: ${tx(f.title)}`,
+    onclick: () => go(i) }));
+  const body = h("div", { class: "gd-frame", "aria-live": "polite" }, h("p", { class: "gd-kicker" }, count), title, text);
+  function go(i, first = false) {
+    k = Math.max(0, Math.min(frames.length - 1, i));
+    const f = frames[k];
+    count.textContent = t("guided_of", k + 1, frames.length);
+    title.textContent = tx(f.title);
+    text.replaceChildren(...paragraphs(f.text));
+    dots.forEach((d, j) => d.setAttribute("aria-current", j === k ? "step" : "false"));
+    // keep keyboard focus on the frame controls when the pressed button becomes disabled
+    if (k === frames.length - 1 && document.activeElement === next) prev.focus();
+    if (k === 0 && document.activeElement === prev) next.focus();
+    prev.disabled = k === 0;
+    next.disabled = k === frames.length - 1;
+    if (!first) {
+      viewer.setMarks(f.marks || []);
+      viewer.setAnnotations(f.annotations || []);
+    }
+    viewer.setHighlight(f.highlight || []);
+  }
+  go(0, true);
+  return h("section", { class: "ls-step ls-guided" },
+    step.heading && h("h2", { text: tx(step.heading) }),
+    paragraphs(step.body),
+    viewer.el,
+    h("div", { class: "gd-nav" }, prev, h("div", { class: "gd-dots" }, dots), next),
+    body,
     step.caption && h("p", { class: "cs-small", text: tx(step.caption) }));
 }
 
@@ -882,16 +1021,23 @@ function lessonTask(l, step) {
 function lessonCheck(l, step) {
   const out = h("div", { class: "fu-result", "aria-live": "polite" });
   const btns = [];
+  const f = step.figure;
+  const viewer = f ? makeViewer({ ecg_id: f.ecg, strips: f.strips, source: f.source, layout: f.monitor ? "monitor" : null, gain: f.gain }, {
+    strip: f.layout === "standard" ? null : { leads: f.leads || ["II"], window: f.window },
+    annotations: f.annotations || [], annOn: false, look: f.look || [],
+  }) : null;
   const mark = (i) => {
+    viewer?.reveal();
     btns.forEach((b, k) => {
       b.disabled = true;
       b.classList.add(k === step.answer ? "is-correct" : k === i ? "is-wrong" : "is-dim");
       if (k === step.answer || k === i) markOption(b, k === step.answer);
     });
     const ok = i === step.answer;
-    out.replaceChildren(
+    out.replaceChildren(...[
       h("p", { class: `cs-verdict ${ok ? "ok" : "bad"}` }, markIcon(ok), h("strong", { text: t(ok ? "correct" : "wrong") })),
-      h("p", { text: tx(step.explain) }));
+      h("p", { text: tx(step.explain) }),
+      f?.annotations?.length && h("p", { class: "cs-small", text: t("check_marks") })].filter(Boolean));
   };
   const ol = h("ol", { class: "cs-options fu-options" }, step.options.map((o, i) => {
     const b = h("button", { type: "button", class: "cs-option",
@@ -907,7 +1053,7 @@ function lessonCheck(l, step) {
   return h("section", { class: "ls-step ls-check fu" },
     h("p", { class: "fu-kind", text: t("lesson_check") }),
     h("h2", { class: "fu-q", text: tx(step.question) }),
-    ol, out);
+    viewer?.el, ol, out);
 }
 
 /* ---------------------------------------------------------------- practice */
@@ -1007,14 +1153,30 @@ function caseScreen(c, { mode, item, header, extraNote, onAnswer, onRate, onNext
   const answered = mode === "study" || !!item?.chosen;
   // nurses and paramedics start on the rhythm strip, as on a monitor; the 12-lead is one tap away
   const stripFirst = tier()?.first_view === "strip" && c.layout !== "monitor";
-  let viewer = makeViewer(c, { look: c.look || [], revealed: answered,
+  // the numbered findings below the answer follow the viewer's focused finding
+  const findingWatchers = [];
+  const syncFindings = (on) => findingWatchers.forEach((fn) => fn(on));
+  const notes = { annotations: c.annotations || [], numbered: true, onFocusChange: syncFindings };
+  let viewer = makeViewer(c, { look: c.look || [], revealed: answered, ...notes,
     strip: stripFirst ? { leads: [(c.strips || ["II"])[0]], window: null, full: true } : null });
+  const onFinding = (i) => {
+    let on = viewer.focusFinding(i);
+    // a finding that the rhythm strip cannot show opens the 12-lead first
+    if (on === i && full?.isConnected && !viewer.showsFinding(i)) {
+      full.click();
+      on = viewer.focusFinding(i);
+    }
+    syncFindings(on);
+    return on;
+  };
+  onFinding.watch = (fn) => findingWatchers.push(fn);
   const full = stripFirst ? h("button", { type: "button", class: "btn btn-quiet btn-small", text: t("show_12lead"),
     onclick: () => {
-      const v = makeViewer(c, { look: c.look || [], revealed: locked || answered });
+      const v = makeViewer(c, { look: c.look || [], revealed: locked || answered, ...notes });
       viewer.el.replaceWith(v.el);
       viewer = v;
       full.remove();
+      syncFindings(null);
     } }) : null;
   const feedback = h("div", { class: "cs-feedback" });
   const buttons = [];
@@ -1032,7 +1194,7 @@ function caseScreen(c, { mode, item, header, extraNote, onAnswer, onRate, onNext
 
   function showFeedback(chosen, focus) {
     const ok = chosen === c.answer;
-    const { head, body } = explainParts(c, chosen, mode);
+    const { head, body } = explainParts(c, chosen, mode, { onFinding });
     // follow-up questions come before the explanation, which would give their answers away
     const rest = h("div", { class: "cs-rest" }, body);
     const fu = followups(c, item, () => { rest.hidden = false; });
@@ -1094,7 +1256,7 @@ function caseScreen(c, { mode, item, header, extraNote, onAnswer, onRate, onNext
     ),
   );
 
-  if (mode === "study") feedback.append(...[followups(c, null).el, ...explain(c, null, "study")].filter(Boolean));
+  if (mode === "study") feedback.append(...[followups(c, null).el, ...explain(c, null, "study", { onFinding })].filter(Boolean));
   else if (item.chosen) {
     mark(item.chosen);
     showFeedback(item.chosen, false);
@@ -1115,13 +1277,38 @@ function caseScreen(c, { mode, item, header, extraNote, onAnswer, onRate, onNext
   }
 }
 
-function explain(c, chosen, mode) {
-  const { head, body } = explainParts(c, chosen, mode);
+function explain(c, chosen, mode, opts = {}) {
+  const { head, body } = explainParts(c, chosen, mode, opts);
   return [...head, ...body];
 }
 
+/* The findings of a case. Findings with marks on the tracing get a number (the same as on
+   the ECG) and show their marks when tapped. */
+function findingsList(c, onFinding) {
+  const list = tx(c.findings) || [];
+  const marked = new Set((c.annotations || []).map((a) => a.finding).filter((i) => i != null));
+  if (!marked.size || !onFinding) return [h("ul", { class: "cs-list" }, list.map((f) => h("li", { text: f })))];
+  const btns = [];
+  const sync = (on) => btns.forEach(([k, x]) => x.setAttribute("aria-pressed", String(on === k)));
+  onFinding.watch?.(sync);
+  const items = list.map((f, i) => {
+    if (!marked.has(i)) {
+      return h("li", { class: "cs-finding-plain" },
+        h("span", { class: "cs-finding-n is-quiet", "aria-hidden": "true", text: String(i + 1) }), h("span", { text: f }));
+    }
+    const b = h("button", { type: "button", class: "cs-finding", "aria-pressed": "false",
+      "aria-label": `${t("finding_show", i + 1)}: ${f}`,
+      onclick: () => sync(onFinding(i)) },
+    h("span", { class: "cs-finding-n", "aria-hidden": "true", text: String(i + 1) }),
+    h("span", { text: f }));
+    btns.push([i, b]);
+    return h("li", null, b);
+  });
+  return [h("ul", { class: "cs-findings" }, items), h("p", { class: "cs-small", text: t("findings_tap") })];
+}
+
 /* The verdict (head) and everything that explains the case (body). */
-function explainParts(c, chosen, mode) {
+function explainParts(c, chosen, mode, { onFinding = null } = {}) {
   const head = [];
   const out = [];
   const answer = DATA.diagnoses[c.answer];
@@ -1156,7 +1343,7 @@ function explainParts(c, chosen, mode) {
         h("p", { class: "cs-small", text: t(c.layout === "monitor" ? "measured_note_monitor" : c.source.dataset === "mimic" ? "measured_note_mimic" : "measured_note") })),
       h("section", null,
         h("h2", { text: t("findings") }),
-        h("ul", { class: "cs-list" }, (tx(c.findings) || []).map((f) => h("li", { text: f }))),
+        findingsList(c, onFinding),
         c.look?.length ? h("p", { class: "cs-small", text: t("look_here") }) : null),
     ),
     h("p", { class: "pearl" }, h("strong", { text: `${t("takeaway")}: ` }), tx(c.takeaway)),
@@ -1608,12 +1795,13 @@ function viewProgress() {
   }
   const streak = store.streak();
   if (streak) put(h("p", { class: "tr-score", text: t("home_streak", streak) }));
-  const lessons = (DATA.lessons || []).filter((l) => lessonFit(l) !== "skip");
-  if (lessons.length) {
-    const done = lessons.filter((l) => store.lesson(l.id)?.done).length;
+  // one line per course, named as on the Lessons page
+  const courses = COURSES.map((id) => [id, courseLessons(id)]).filter(([, list]) => list.length);
+  for (const [id, list] of courses) {
+    const done = list.filter((l) => store.lesson(l.id)?.done).length;
     put(h("section", { class: "tr-section" },
-      h("h2", { text: t("learn_title") }),
-      h("p", null, t("learn_progress", done, lessons.length), " ", h("a", { href: "#learn", text: t("learn_open") }))));
+      h("h2", { text: id === "basics" ? t("course_basics") : courses.length > 1 ? t("course_full") : t("learn_title") }),
+      h("p", null, t("learn_progress", done, list.length), " ", h("a", { href: "#learn", text: t("learn_open") }))));
   }
 
   put(h("section", { class: "tr-section" },

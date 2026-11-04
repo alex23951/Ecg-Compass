@@ -34,6 +34,55 @@
   </div>
 </section>
 
+
+{% if basics %}
+<section class="section start-here" id="start" aria-labelledby="start-title">
+  <div class="wrap">
+    <div class="start-card">
+      <div class="start-copy">
+        <p class="eyebrow">{{ fh.basics_eyebrow }}</p>
+        <h2 id="start-title">{{ fh.basics_heading }}</h2>
+        <p class="start-intro">{{ fh.basics_intro }}</p>
+        <ul class="start-points">
+          {% for pt in fh.basics_points %}<li>{{ icon("check") }}{{ pt }}</li>{% endfor %}
+        </ul>
+        <p class="start-actions"><a class="button" href="{{ app_url('#lesson-' + basics[0].id) }}">{{ fh.basics_cta }}{{ icon("arrow") }}</a>
+          <a class="start-all" href="{{ app_url('#learn') }}">{{ fh.basics_all }}</a></p>
+      </div>
+      <figure class="start-figure">
+        <svg class="start-beat" viewBox="0 0 360 210" role="img" aria-label="{{ fh.basics_figure_alt }}">
+          <defs>
+            <pattern id="mm" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M8 0H0V8" class="g-minor"/></pattern>
+            <pattern id="big" width="40" height="40" patternUnits="userSpaceOnUse"><rect width="40" height="40" fill="url(#mm)"/><path d="M40 0H0V40" class="g-major"/></pattern>
+            <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" class="a-fill"/></marker>
+          </defs>
+          <rect width="360" height="210" rx="12" class="g-paper"/>
+          <rect width="360" height="210" rx="12" fill="url(#big)"/>
+          <path class="beat" d="M8 120H40C50 120 52 103 60 103S70 120 80 120H100L104 127 110 34 117 146 123 120H158C172 120 181 88 195 88S214 120 232 120H352"/>
+          <g class="ann">
+            <path d="M36 70L55 98" marker-end="url(#ah)"/>
+            <path d="M152 32L116 36" marker-end="url(#ah)"/>
+            <path d="M236 60L203 84" marker-end="url(#ah)"/>
+            <circle cx="123" cy="120" r="6"/>
+            <path d="M123 120L141 98"/>
+            <path d="M40 156V162H104V156"/>
+            <path d="M104 178V184H232V178"/>
+          </g>
+          <g class="lbl">
+            <rect x="16" y="54" width="28" height="22" rx="11"/><text x="30" y="65">P</text>
+            <rect x="152" y="21" width="44" height="22" rx="11"/><text x="174" y="32">QRS</text>
+            <rect x="234" y="44" width="28" height="22" rx="11"/><text x="248" y="55">T</text>
+            <rect x="138" y="80" width="26" height="22" rx="11"/><text x="151" y="91">J</text>
+            <rect x="57" y="164" width="30" height="20" rx="10"/><text x="72" y="174">PR</text>
+            <rect x="153" y="186" width="30" height="20" rx="10"/><text x="168" y="196">QT</text>
+          </g>
+        </svg>
+      </figure>
+    </div>
+  </div>
+</section>
+{% endif %}
+
 {% if quiz %}
 <section class="section" id="weekly" aria-labelledby="weekly-title">
   <div class="wrap">
@@ -94,9 +143,11 @@
     <p class="section-intro">{{ fh.steps_intro }}</p>
     <ol class="steps">
       {% for t, d in fh.steps %}
-      <li><span class="step-n" aria-hidden="true">{{ loop.index }}</span><h3>{{ t }}</h3><p>{{ d }}</p></li>
+      {% set ls = basics_by_step.get(loop.index) if basics_by_step else None %}
+      <li{% if ls %} class="step-link"{% endif %}><span class="step-n" aria-hidden="true">{{ loop.index }}</span><h3>{% if ls %}<a href="{{ app_url('#lesson-' + ls.id) }}">{{ t }}</a>{% else %}{{ t }}{% endif %}</h3><p>{{ d }}</p></li>
       {% endfor %}
     </ol>
+    {% if basics %}<p class="cta-row"><a class="button button-quiet" href="{{ app_url('#lesson-' + basics[0].id) }}">{{ fh.steps_cta }}{{ icon("arrow") }}</a></p>{% endif %}
   </div>
 </section>
 

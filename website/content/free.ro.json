@@ -19,6 +19,18 @@
     "cta_trainer": "Începe să exersezi",
     "cta_digest": "ECG-ul săptămânii",
     "hero_note": "Versiune beta: adăugăm module noi pe măsură ce sunt verificate.",
+    "basics_eyebrow": "Pentru începători",
+    "basics_heading": "Citește primul tău ECG, pas cu pas",
+    "basics_intro": "Opt pași scurți, în ordinea în care se citește orice ECG. Pe trasee reale, săgeți și etichete îți arată unde să te uiți și ce înseamnă ce vezi.",
+    "basics_points": [
+      "Săgeți, etichete și intervale marcate pe ECG-uri reale",
+      "Un pas pe lecție, câteva minute fiecare",
+      "Întrebări scurte la fiecare pas"
+    ],
+    "basics_cta": "Începe modulul pentru începători",
+    "basics_all": "Toate lecțiile",
+    "basics_figure_alt": "O bătaie pe hârtie ECG, cu săgeți spre unda P, complexul QRS, punctul J și unda T, și cu intervalele PR și QT marcate.",
+    "steps_cta": "Învață cei 8 pași pe ECG-uri marcate",
     "weekly_heading": "ECG-ul săptămânii, nr. {n}",
     "weekly_intro": "Un traseu real, patru variante și răspunsul explicat pas cu pas. Un ECG nou în fiecare săptămână.",
     "weekly_cta": "Toate numerele",

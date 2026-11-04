@@ -8,6 +8,8 @@ Reads the hand-written teaching content in trainer/content/:
     modules.json     the modules, in order
     diagnoses.json   every answer option: name, criteria and pitfalls (RO/EN)
     cases.json       each case: the record, answer, options, findings (RO/EN)
+    annotations.json teaching marks drawn on each case's tracing once answered: {case_id: [...]}
+                     (arrows, labels, brackets; format in trainer/annotate.py)
     tiers.json       the learner profiles (student, nurse, paramedic, resident, specialist,
                      ep): name, who, goals, explanation depth, drills
 
@@ -41,6 +43,7 @@ HERE = Path(__file__).resolve().parent
 WEBSITE = HERE.parent
 sys.path.insert(0, str(WEBSITE / "tools"))
 sys.path.insert(0, str(HERE))
+import annotate  # noqa: E402
 import mimic  # noqa: E402
 import monitor_db  # noqa: E402
 import ptbxl  # noqa: E402
@@ -448,6 +451,17 @@ def main():
             "validated": row["validated_by_human"] == "True",
         }
         out_cases.append(out)
+
+    # Teaching marks on each tracing (arrows, labels, brackets: trainer/annotate.py), shown
+    # once the learner has answered. Kept apart from the cases Alex approved, in annotations.json.
+    notes = load_json("annotations.json") if (CONTENT / "annotations.json").exists() else {}
+    known = {c["id"] for c in out_cases}
+    for cid in notes:
+        if not cid.startswith("_") and cid not in known:
+            problems.append(f"annotations.json: unknown case {cid}")
+    for c in out_cases:
+        if notes.get(c["id"]):
+            c["annotations"] = annotate.resolve_case(c, notes[c["id"]], problems)
 
     if problems:
         print("Problems:\n  " + "\n  ".join(problems))

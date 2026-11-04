@@ -1,0 +1,493 @@
+{
+ "_note": "Teaching marks drawn on each case tracing after the learner answers (format: trainer/annotate.py). New medical text: Alex checks every label.",
+ "rhythm-01": [
+  {"kind": "arrow", "lead": "II", "rhythm": true, "at": "P", "beat": 2, "dir": "nw", "finding": 0, "label": {"ro": "Undă P", "en": "P wave"}},
+  {"kind": "arrow", "lead": "aVR", "at": "P", "beat": 0, "dir": "s", "len": 1.6, "finding": 0, "label": {"ro": "P negativ", "en": "Negative P"}},
+  {"kind": "bracket", "lead": "II", "rhythm": true, "from": "Pon", "to": "QRSon", "beat": 5, "ms": true, "finding": 1, "label": "PR"},
+  {"kind": "bracket", "lead": "II", "rhythm": true, "from": "QRSon", "to": "J", "beat": 8, "ms": true, "finding": 1, "label": "QRS"},
+  {"kind": "arrow", "lead": "I", "at": "R", "beat": 0, "finding": 2, "label": {"ro": "QRS pozitiv", "en": "Positive QRS"}},
+  {"kind": "arrow", "lead": "aVF", "at": "R", "beat": 0, "finding": 2, "label": {"ro": "QRS pozitiv", "en": "Positive QRS"}}
+ ],
+ "rhythm-02": [
+  {"kind": "bracket", "lead": "II", "rhythm": true, "from": "R", "to": "R", "beat": 0, "to_beat": 1, "side": "above", "ms": true, "finding": 0, "label": "RR"},
+  {"kind": "bracket", "lead": "II", "rhythm": true, "from": "QRSon", "to": "J", "beat": 2, "ms": true, "finding": 2, "label": "QRS"},
+  {"kind": "arrow", "lead": "II", "rhythm": true, "at": "P", "beat": 5, "dir": "nw", "finding": 1, "label": {"ro": "Undă P", "en": "P wave"}},
+  {"kind": "bracket", "lead": "II", "rhythm": true, "from": "Pon", "to": "QRSon", "beat": 6, "ms": true, "finding": 1, "label": "PR"}
+ ],
+ "rhythm-03": [
+  {"kind": "bracket", "lead": "II", "rhythm": true, "from": "R", "to": "R", "beat": 8, "to_beat": 9, "side": "above", "finding": 0, "label": {"ro": "FC ~134/min", "en": "Rate ~134/min"}},
+  {"kind": "arrow", "lead": "II", "rhythm": true, "at": "P", "beat": 5, "finding": 1, "label": {"ro": "Undă P", "en": "P wave"}},
+  {"kind": "bracket", "lead": "II", "rhythm": true, "from": "Pon", "to": "QRSon", "beat": 12, "ms": true, "finding": 1, "label": "PR"},
+  {"kind": "bracket", "lead": "II", "rhythm": true, "from": "QRSon", "to": "J", "beat": 17, "ms": true, "finding": 2, "label": "QRS"},
+  {"kind": "box", "lead": "V1", "t0": 5.44, "t1": 5.77, "finding": 3, "label": {"ro": "Fără unde F", "en": "No F waves"}}
+ ],
+ "rhythm-04": [
+  {"kind": "arrow", "lead": "II", "rhythm": true, "at": "P", "beat": 1, "finding": 1, "label": {"ro": "Undă P", "en": "P wave"}},
+  {"kind": "bracket", "lead": "II", "rhythm": true, "from": "Pon", "to": "QRSon", "beat": 2, "ms": true, "finding": 1, "label": "PR"},
+  {"kind": "bracket", "lead": "II", "rhythm": true, "from": "R", "to": "R", "beat": 3, "to_beat": 4, "side": "above", "ms": true, "finding": 0, "label": "RR"},
+  {"kind": "arrow", "lead": "II", "rhythm": true, "at": "P", "beat": 5, "finding": 1, "label": {"ro": "Aceeași undă P", "en": "Same P wave"}},
+  {"kind": "bracket", "lead": "II", "rhythm": true, "t0": 8.822, "t1": 9.698, "side": "above", "ms": true, "finding": 0, "label": "RR"}
+ ],
+ "rhythm-05": [
+  {"kind": "bracket", "lead": "II", "rhythm": true, "from": "R", "to": "R", "beat": 0, "to_beat": 1, "side": "above", "ms": true, "finding": 0, "label": "RR"},
+  {"kind": "bracket", "lead": "II", "rhythm": true, "from": "R", "to": "R", "beat": 2, "to_beat": 3, "side": "above", "ms": true, "finding": 0, "label": "RR"},
+  {"kind": "box", "lead": "II", "rhythm": true, "t0": 2.7, "t1": 3.15, "dir": "s", "finding": 1, "label": {"ro": "Fără unde P", "en": "No P waves"}},
+  {"kind": "box", "lead": "V1", "t0": 5.62, "t1": 5.94, "finding": 1, "label": {"ro": "Unde f", "en": "f waves"}}
+ ],
+ "blocks-01": [
+  {"kind": "arrow", "lead": "II", "at": "P", "beat": 0, "label": {"ro": "Undă P", "en": "P wave"}, "finding": 0},
+  {"kind": "bracket", "lead": "II", "from": "Pon", "to": "QRSon", "beat": 1, "ms": true, "label": {"ro": "PR lung", "en": "Long PR"}, "finding": 1},
+  {"kind": "bracket", "lead": "II", "rhythm": true, "from": "Pon", "to": "QRSon", "beat": 2, "ms": true, "label": "PR", "finding": 1},
+  {"kind": "bracket", "lead": "II", "rhythm": true, "from": "Pon", "to": "QRSon", "beat": 5, "ms": true, "label": "PR", "finding": 1},
+  {"kind": "bracket", "lead": "II", "rhythm": true, "from": "Pon", "to": "QRSon", "beat": 7, "ms": true, "label": "PR", "finding": 1}
+ ],
+ "blocks-02": [
+  {"kind": "bracket", "lead": "II", "rhythm": true, "t0": 6.746, "t1": 8.736, "ms": true, "label": {"ro": "Pauză", "en": "Pause"}, "finding": 0},
+  {"kind": "bracket", "lead": "II", "rhythm": true, "t0": 1.157, "t1": 1.492, "ms": true, "label": "PR", "finding": 2},
+  {"kind": "bracket", "lead": "II", "rhythm": true, "t0": 2.176, "t1": 2.53, "ms": true, "label": "PR", "finding": 2},
+  {"kind": "arrow", "lead": "II", "rhythm": true, "t": 3.245, "label": {"ro": "P neurmată de QRS", "en": "P without QRS"}, "finding": 1},
+  {"kind": "bracket", "lead": "II", "rhythm": true, "t0": 4.268, "t1": 4.518, "ms": true, "label": "PR", "finding": 2},
+  {"kind": "arrow", "lead": "II", "rhythm": true, "t": 7.395, "label": {"ro": "P neurmată de QRS", "en": "P without QRS"}, "finding": 1}
+ ],
+ "blocks-03": [
+  {"kind": "bracket", "lead": "II", "rhythm": true, "t0": 0.4, "t1": 1.004, "side": "above", "ms": true, "label": "PP", "finding": 0},
+  {"kind": "bracket", "lead": "II", "rhythm": true, "t0": 0.938, "t1": 1.275, "label": "PR", "finding": 1},
+  {"kind": "arrow", "lead": "II", "rhythm": true, "t": 2.78, "label": {"ro": "P în QRS", "en": "P in the QRS"}, "finding": 2},
+  {"kind": "arrow", "lead": "II", "rhythm": true, "t": 4.57, "label": {"ro": "P pe unda T", "en": "P on the T wave"}, "finding": 2},
+  {"kind": "bracket", "lead": "II", "rhythm": true, "t0": 7.28, "t1": 8.77, "side": "above", "ms": true, "label": "RR", "finding": 1},
+  {"kind": "bracket", "lead": "V1", "from": "QRSon", "to": "J", "ms": true, "label": {"ro": "QRS larg", "en": "Wide QRS"}, "finding": 3},
+  {"kind": "arrow", "lead": "V1", "at": "R", "label": "R'", "dir": "e", "len": 0.8, "finding": 3}
+ ],
+ "blocks-04": [
+  {"kind": "bracket", "lead": "V2", "from": "QRSon", "to": "J", "beat": 1, "ms": true, "label": {"ro": "QRS larg", "en": "Wide QRS"}, "finding": 0},
+  {"kind": "arrow", "lead": "V1", "at": "R", "beat": 0, "label": "R'", "dir": "e", "len": 0.8, "finding": 1},
+  {"kind": "arrow", "lead": "V1", "at": "T", "beat": 1, "label": {"ro": "T negativ", "en": "Inverted T"}, "finding": 3},
+  {"kind": "arrow", "lead": "I", "at": "S", "beat": 1, "label": {"ro": "Undă S largă", "en": "Broad S wave"}, "finding": 2},
+  {"kind": "arrow", "lead": "V6", "at": "S", "beat": 1, "label": {"ro": "Undă S largă", "en": "Broad S wave"}, "finding": 2}
+ ],
+ "blocks-05": [
+  {"kind": "bracket", "lead": "V6", "from": "QRSon", "to": "J", "beat": 0, "ms": true, "label": {"ro": "QRS larg", "en": "Wide QRS"}, "finding": 0},
+  {"kind": "arrow", "lead": "V1", "at": "Q", "beat": 0, "dir": "e", "label": "QS", "finding": 1},
+  {"kind": "rise", "lead": "V2", "at": "J", "beat": 0, "dir": "se", "label": "ST ↑", "finding": 1},
+  {"kind": "rise", "lead": "V3", "at": "J", "beat": 1, "dir": "se", "label": "ST ↑", "finding": 1},
+  {"kind": "arrow", "lead": "I", "at": "R", "beat": 0, "dir": "e", "label": {"ro": "R croșetat", "en": "Notched R"}, "finding": 2},
+  {"kind": "arrow", "lead": "aVL", "at": "R", "beat": 0, "dir": "e", "label": {"ro": "R croșetat", "en": "Notched R"}, "finding": 2}
+ ],
+ "blocks-06": [
+  {"kind": "arrow", "lead": "III", "at": "R", "beat": 0, "label": {"ro": "r mic", "en": "Small r"}, "finding": 1},
+  {"kind": "arrow", "lead": "III", "at": "S", "beat": 1, "dir": "e", "len": 0.6, "label": {"ro": "S adânc", "en": "Deep S"}, "finding": 1},
+  {"kind": "tag", "lead": "II", "label": "rS", "finding": 1},
+  {"kind": "tag", "lead": "aVF", "label": "rS", "finding": 1},
+  {"kind": "arrow", "lead": "aVL", "at": "Q", "beat": 0, "label": "q", "finding": 2},
+  {"kind": "bracket", "lead": "I", "from": "QRSon", "to": "J", "beat": 1, "ms": true, "label": "QRS", "finding": 2},
+  {"kind": "arrow", "lead": "V6", "at": "S", "beat": 1, "label": {"ro": "Undă S", "en": "S wave"}, "finding": 3}
+ ],
+ "isch-01": [
+  {"kind": "rise", "lead": "II", "at": "J", "beat": 1, "mm": true, "dir": "se", "label": "ST ↑", "finding": 0},
+  {"kind": "rise", "lead": "III", "at": "J", "beat": 1, "mm": true, "dir": "se", "label": "ST ↑", "finding": 0},
+  {"kind": "rise", "lead": "aVF", "at": "J", "beat": 0, "mm": true, "dir": "s", "label": "ST ↑", "finding": 0},
+  {"kind": "rise", "lead": "aVL", "at": "J", "beat": 0, "dir": "ne", "label": "ST ↓", "finding": 1, "mm": true},
+  {"kind": "rise", "lead": "I", "at": "J", "beat": 1, "mm": true, "dir": "s", "label": "ST ↓", "finding": 1},
+  {"kind": "rise", "lead": "V1", "at": "J", "beat": 1, "dir": "se", "label": "ST ↑", "finding": 3}
+ ],
+ "isch-02": [
+  {"kind": "rise", "lead": "V3", "at": "J", "beat": 0, "mm": true, "dir": "n", "label": "ST ↑", "finding": 0},
+  {"kind": "tag", "lead": "V5", "label": "ST ↑", "finding": 0},
+  {"kind": "rise", "lead": "I", "at": "J", "beat": 0, "dir": "s", "label": "ST ↑", "finding": 1},
+  {"kind": "tag", "lead": "aVL", "label": "ST ↑", "finding": 1},
+  {"kind": "arrow", "lead": "III", "at": "J", "beat": 0, "dir": "ne", "len": 1.6, "label": "ST ↓", "finding": 2},
+  {"kind": "arrow", "lead": "V2", "at": "Q", "beat": 2, "dir": "s", "label": {"ro": "Undă Q", "en": "Q wave"}, "finding": 3}
+ ],
+ "isch-03": [
+  {"kind": "rise", "lead": "III", "at": "J", "beat": 1, "mm": true, "dir": "se", "label": "ST ↑", "finding": 0},
+  {"kind": "tag", "lead": "aVF", "label": "ST ↑", "finding": 0},
+  {"kind": "rise", "lead": "V6", "at": "J", "beat": 0, "mm": true, "dir": "se", "label": "ST ↑", "finding": 0},
+  {"kind": "rise", "lead": "V2", "at": "J", "beat": 1, "mm": true, "dir": "sw", "label": "ST ↓", "finding": 1},
+  {"kind": "arrow", "lead": "V3", "t": 5.71, "snap": "max", "dir": "n", "label": {"ro": "T pozitiv", "en": "Upright T"}, "finding": 1},
+  {"kind": "rise", "lead": "aVL", "at": "J", "beat": 0, "dir": "ne", "label": "ST ↓", "finding": 2}
+ ],
+ "isch-04": [
+  {"kind": "rise", "lead": "V3", "at": "J", "beat": 0, "dir": "se", "label": "ST ↑ > 1 cm", "finding": 0},
+  {"kind": "box", "lead": "V2", "t0": 5.81, "t1": 6.215, "dir": "n", "label": {"ro": "Mare undă monofazică", "en": "Tombstone"}, "finding": 0},
+  {"kind": "tag", "lead": "V1", "label": "ST ↑", "finding": 1},
+  {"kind": "rise", "lead": "III", "at": "J", "beat": 0, "mm": true, "dir": "se", "label": "ST ↑", "finding": 2},
+  {"kind": "tag", "lead": "aVF", "label": "ST ↑", "finding": 2},
+  {"kind": "rise", "lead": "aVL", "at": "J", "beat": 0, "dir": "n", "label": "ST ↓", "finding": 2}
+ ],
+ "isch-05": [
+  {"kind": "arrow", "lead": "V4", "at": "Q", "beat": 0, "dir": "sw", "label": {"ro": "Complex QS", "en": "QS complex"}, "finding": 0},
+  {"kind": "rise", "lead": "V2", "at": "J", "beat": 1, "dir": "nw", "label": "ST ↑", "finding": 1},
+  {"kind": "arrow", "lead": "V3", "at": "T", "beat": 0, "dir": "se", "label": {"ro": "T negativ", "en": "Inverted T"}, "finding": 2},
+  {"kind": "tag", "lead": "I", "label": {"ro": "T negativ", "en": "Inverted T"}, "finding": 2},
+  {"kind": "tag", "lead": "aVL", "label": {"ro": "T negativ", "en": "Inverted T"}, "finding": 2},
+  {"kind": "bracket", "lead": "V4", "from": "QRSon", "to": "Tend", "beat": 0, "side": "above", "label": {"ro": "QT alungit", "en": "Long QT"}, "finding": 3}
+ ],
+ "tachy-01": [
+  {"kind": "bracket", "lead": "II", "rhythm": true, "t0": 3.4, "t1": 3.758, "ms": true, "label": "RR", "finding": 0},
+  {"kind": "bracket", "lead": "II", "rhythm": true, "t0": 7.446, "t1": 8.188, "ms": true, "label": "RR", "finding": 0},
+  {"kind": "box", "lead": "II", "rhythm": true, "t0": 7.72, "t1": 8.13, "label": {"ro": "Fără unde P", "en": "No P waves"}, "finding": 1},
+  {"kind": "box", "lead": "V1", "t0": 5.3, "t1": 5.69, "label": {"ro": "Unde f", "en": "f waves"}, "finding": 1}
+ ],
+ "tachy-02": [
+  {"kind": "box", "lead": "III", "t0": 0.76, "t1": 1.47, "label": {"ro": "Unde F", "en": "F waves"}, "finding": 0},
+  {"kind": "tag", "lead": "II", "label": {"ro": "Unde F", "en": "F waves"}, "finding": 0},
+  {"kind": "tag", "lead": "aVF", "label": {"ro": "Unde F", "en": "F waves"}, "finding": 0},
+  {"kind": "box", "lead": "aVF", "t0": 3.48, "t1": 4.24, "label": {"ro": "Fără linie izoelectrică", "en": "No flat baseline"}, "finding": 2},
+  {"kind": "bracket", "lead": "II", "rhythm": true, "t0": 2.448, "t1": 3.396, "label": "4:1", "finding": 1},
+  {"kind": "bracket", "lead": "II", "rhythm": true, "t0": 8.886, "t1": 9.538, "label": "3:1", "finding": 1}
+ ],
+ "tachy-03": [
+  {"kind": "bracket", "lead": "II", "rhythm": true, "t0": 0.918, "t1": 1.382, "ms": true, "label": "RR", "finding": 0},
+  {"kind": "bracket", "lead": "II", "rhythm": true, "t0": 8.882, "t1": 9.36, "ms": true, "label": "RR", "finding": 0},
+  {"kind": "box", "lead": "II", "t0": 1.43, "t1": 1.8, "label": {"ro": "Fără linie izoelectrică", "en": "No flat baseline"}, "finding": 1, "dir": "s"},
+  {"kind": "arrow", "lead": "aVF", "t": 3.34, "snap": "min", "label": {"ro": "A doua undă F", "en": "Second F wave"}, "finding": 1, "dir": "sw"},
+  {"kind": "arrow", "lead": "aVF", "t": 3.588, "snap": "min", "label": "F", "finding": 1, "dir": "se"},
+  {"kind": "arrow", "lead": "V1", "t": 6.24, "snap": "max", "label": "F", "finding": 2, "dir": "nw"},
+  {"kind": "arrow", "lead": "V1", "t": 6.472, "snap": "max", "label": "F", "finding": 2, "dir": "ne"}
+ ],
+ "tachy-04": [
+  {"kind": "bracket", "lead": "II", "rhythm": true, "t0": 0.794, "t1": 1.178, "ms": true, "label": "RR", "finding": 0},
+  {"kind": "bracket", "lead": "II", "rhythm": true, "t0": 8.124, "t1": 8.504, "ms": true, "label": "RR", "finding": 0},
+  {"kind": "bracket", "lead": "V1", "from": "QRSon", "to": "J", "beat": 0, "ms": true, "label": {"ro": "QRS îngust", "en": "Narrow QRS"}, "finding": 0},
+  {"kind": "tag", "lead": "III", "label": {"ro": "Fără unde F", "en": "No F waves"}, "finding": 2},
+  {"kind": "tag", "lead": "aVF", "label": {"ro": "Fără unde F", "en": "No F waves"}, "finding": 2},
+  {"kind": "tag", "lead": "V1", "label": {"ro": "Fără unde F", "en": "No F waves"}, "finding": 2}
+ ],
+ "tachy-05": [
+  {"kind": "bracket", "lead": "II", "rhythm": true, "from": "R", "to": "R", "beat": 5, "to_beat": 6, "side": "above", "ms": true, "finding": 3, "label": {"ro": "Ciclu sinusal", "en": "Sinus cycle"}},
+  {"kind": "box", "lead": "V5", "t0": 8.262, "t1": 8.4, "finding": 0, "label": {"ro": "ESV", "en": "PVC"}},
+  {"kind": "arrow", "lead": "V5", "t": 8.56, "snap": "min", "dir": "se", "finding": 2, "label": {"ro": "T în opoziție", "en": "Opposite T"}},
+  {"kind": "arrow", "lead": "II", "rhythm": true, "t": 8.2, "dir": "nw", "len": 1.8, "finding": 1, "label": {"ro": "Fără undă P precoce", "en": "No early P wave"}},
+  {"kind": "bracket", "lead": "II", "rhythm": true, "from": "R", "to": "R", "beat": 9, "to_beat": 11, "side": "below", "ms": true, "finding": 3, "label": {"ro": "Pauză compensatorie", "en": "Compensatory pause"}}
+ ],
+ "tachy-06": [
+  {"kind": "bracket", "lead": "II", "rhythm": true, "from": "R", "to": "R", "beat": 1, "to_beat": 2, "side": "above", "ms": true, "finding": 2, "label": {"ro": "Cuplaj", "en": "Coupling"}},
+  {"kind": "box", "lead": "II", "rhythm": true, "t0": 3.55, "t1": 4.68, "finding": 0, "label": {"ro": "Sinusal + ESV", "en": "Sinus + PVC"}},
+  {"kind": "arrow", "lead": "V1", "at": "R", "beat": 1, "finding": 3, "label": {"ro": "ESV pozitivă în V1", "en": "PVC positive in V1"}},
+  {"kind": "bracket", "lead": "II", "rhythm": true, "from": "R", "to": "R", "beat": 5, "to_beat": 6, "side": "above", "ms": true, "finding": 2, "label": {"ro": "Cuplaj", "en": "Coupling"}},
+  {"kind": "bracket", "lead": "II", "rhythm": true, "from": "Pon", "to": "QRSon", "beat": 7, "ms": true, "finding": 4, "label": "PR"},
+  {"kind": "arrow", "lead": "II", "rhythm": true, "t": 8.23, "snap": "min", "finding": 1, "label": {"ro": "ST-T în opoziție", "en": "Opposite ST-T"}}
+ ],
+ "arrest-01": [
+  {"kind": "rise", "lead": "MON", "t": 0.964, "v0": -0.801, "mm": true, "finding": 0, "label": {"ro": "Unde mari", "en": "Large waves"}},
+  {"kind": "bracket", "lead": "MON", "t0": 0.392, "t1": 0.744, "side": "above", "ms": true, "finding": 2},
+  {"kind": "bracket", "lead": "MON", "t0": 4.12, "t1": 4.292, "side": "above", "ms": true, "finding": 2},
+  {"kind": "box", "lead": "MON", "t0": 5.0, "t1": 5.7, "finding": 3, "label": {"ro": "Unde mici", "en": "Small waves"}},
+  {"kind": "box", "lead": "MON", "t0": 7.55, "t1": 9.9, "dir": "s", "finding": 1, "label": {"ro": "Fără complexe QRS", "en": "No QRS complexes"}}
+ ],
+ "arrest-02": [
+  {"kind": "box", "lead": "MON", "t0": 1.6, "t1": 3.0, "finding": 2, "label": {"ro": "Aproape plat", "en": "Almost flat"}},
+  {"kind": "rise", "lead": "MON", "t": 3.488, "v0": -0.183, "mm": true, "finding": 0, "label": {"ro": "Unde mici", "en": "Small waves"}},
+  {"kind": "box", "lead": "MON", "t0": 5.1, "t1": 7.4, "finding": 1, "label": {"ro": "Ondulații, fără QRS", "en": "Undulations, no QRS"}},
+  {"kind": "bracket", "lead": "MON", "t0": 8.52, "t1": 8.896, "side": "above", "ms": true, "finding": 1},
+  {"kind": "bracket", "lead": "MON", "t0": 8.896, "t1": 9.12, "side": "below", "ms": true, "finding": 1}
+ ],
+ "arrest-03": [
+  {"kind": "count", "lead": "MON", "finding": 0, "times": [0.129, 0.57, 1.005, 1.441, 1.869, 2.305, 2.753, 3.19, 3.626, 4.053, 4.485, 4.93, 5.373, 5.802, 6.233, 6.661, 7.101, 7.553, 8.001, 8.437, 8.866, 9.293, 9.737], "note": "times are inputs to the resolver's ±50 ms snap, chosen so each circle lands on a wave peak"},
+  {"kind": "bracket", "lead": "MON", "t0": 2.348, "t1": 2.788, "ms": true, "finding": 0, "label": "RR"},
+  {"kind": "box", "lead": "MON", "t0": 3.524, "t1": 3.964, "dir": "s", "finding": 1, "label": {"ro": "Complex larg", "en": "Wide complex"}},
+  {"kind": "rise", "lead": "MON", "t": 7.592, "v0": -1.791, "dir": "se", "finding": 3, "label": {"ro": "Amplitudine ~3,5 mV", "en": "Amplitude ~3.5 mV"}}
+ ],
+ "arrest-04": [
+  {"kind": "count", "lead": "MON", "finding": 0, "times": [0.081, 0.418, 0.505, 0.717, 1.062, 1.138, 1.337, 1.657, 1.81, 2.078, 2.186, 2.405, 2.754, 2.853, 3.187, 3.414, 3.489, 3.685, 3.885, 4.238, 4.458, 4.553, 4.778, 4.981, 5.29, 5.39, 5.714, 5.802, 6.146, 6.35, 6.453, 6.771, 6.986, 7.081, 7.293, 7.469, 7.685, 8.006, 8.214, 8.434, 8.65, 8.851, 9.054, 9.137, 9.486, 9.585, 9.786], "note": "times are inputs to the resolver's ±50 ms snap, chosen so each circle lands on a wave peak"},
+  {"kind": "bracket", "lead": "MON", "t0": 5.02, "t1": 5.232, "ms": true, "finding": 0},
+  {"kind": "box", "lead": "MON", "t0": 2.0, "t1": 3.05, "dir": "s", "finding": 2, "label": {"ro": "Aceeași formă", "en": "Same shape"}},
+  {"kind": "box", "lead": "MON", "t0": 7.6, "t1": 8.5, "dir": "s", "finding": 1, "label": {"ro": "Fără linie izoelectrică", "en": "No baseline"}}
+ ],
+ "arrest-05": [
+  {"kind": "box", "lead": "MON", "t0": 0.05, "t1": 9.95, "dir": "nw", "finding": 0, "label": {"ro": "Fără complexe QRS", "en": "No QRS complexes"}},
+  {"kind": "box", "lead": "MON", "t0": 0.05, "t1": 9.95, "dir": "sw", "finding": 2, "label": {"ro": "Fără unde P", "en": "No P waves"}},
+  {"kind": "rise", "lead": "MON", "t": 6.648, "v0": -0.058, "mm": true, "finding": 1, "label": {"ro": "Zgomot de fond", "en": "Baseline noise"}}
+ ],
+ "arrest-06": [
+  {"kind": "count", "lead": "MON", "finding": 0},
+  {"kind": "bracket", "lead": "MON", "t0": 0.244, "t1": 0.82, "ms": true, "finding": 0, "label": "RR"},
+  {"kind": "bracket", "lead": "MON", "t0": 5.358, "t1": 5.426, "finding": 1, "label": {"ro": "QRS îngust", "en": "Narrow QRS"}}
+ ],
+ "patt-01": [
+  {"kind": "rise", "lead": "V1", "at": "S", "beat": 0, "mm": true, "finding": 1, "label": "S V1"},
+  {"kind": "rise", "lead": "V5", "at": "R", "beat": 1, "dir": "e", "mm": true, "finding": 1, "label": "R V5"},
+  {"kind": "rise", "lead": "aVL", "at": "R", "beat": 0, "mm": true, "finding": 2, "label": "R aVL"},
+  {"kind": "rise", "lead": "V3", "at": "S", "beat": 0, "dir": "w", "mm": true, "finding": 2, "label": "S V3"},
+  {"kind": "rise", "lead": "V2", "at": "S", "beat": 1, "dir": "nw", "mm": true, "finding": 0, "label": "S V2"},
+  {"kind": "rise", "lead": "V6", "at": "R", "beat": 0, "dir": "se", "finding": 0, "label": "R V6", "mm": true}
+ ],
+ "patt-02": [
+  {"kind": "bracket", "lead": "I", "t0": 0.476, "t1": 0.572, "v": -0.35, "ms": true, "finding": 0, "label": {"ro": "PR scurt", "en": "Short PR"}},
+  {"kind": "arrow", "lead": "I", "t": 1.384, "dir": "s", "len": 1.6, "finding": 1, "label": {"ro": "Undă delta", "en": "Delta wave"}},
+  {"kind": "arrow", "lead": "aVL", "t": 3.756, "dir": "s", "len": 1.6, "finding": 1, "label": {"ro": "Undă delta", "en": "Delta wave"}},
+  {"kind": "bracket", "lead": "III", "t0": 0.572, "t1": 0.696, "side": "above", "v": 0.6, "ms": true, "finding": 1, "label": "QRS"},
+  {"kind": "arrow", "lead": "III", "t": 1.39, "dir": "n", "len": 2, "finding": 2, "label": {"ro": "Delta negativă", "en": "Negative delta"}},
+  {"kind": "arrow", "lead": "aVF", "t": 2.936, "dir": "n", "len": 2, "finding": 2, "label": {"ro": "Delta negativă", "en": "Negative delta"}}
+ ],
+ "patt-03": [
+  {"kind": "bracket", "lead": "II", "rhythm": true, "t0": 3.586, "t1": 3.748, "ms": true, "finding": 1, "label": {"ro": "QRS larg", "en": "Wide QRS"}},
+  {"kind": "bracket", "lead": "II", "rhythm": true, "t0": 6.874, "t1": 6.998, "ms": true, "finding": 0, "label": {"ro": "PR scurt", "en": "Short PR"}},
+  {"kind": "arrow", "lead": "II", "rhythm": true, "t": 7.04, "dir": "nw", "finding": 0, "label": {"ro": "Undă delta", "en": "Delta wave"}},
+  {"kind": "arrow", "lead": "V1", "at": "R", "beat": 0, "finding": 2, "label": {"ro": "R dominant", "en": "Dominant R"}},
+  {"kind": "arrow", "lead": "V1", "t": 7.044, "dir": "s", "len": 1.5, "finding": 2, "label": {"ro": "Delta pozitivă", "en": "Positive delta"}}
+ ],
+ "pace-01": [
+  {"kind": "arrow", "lead": "V1", "rhythm": true, "t": 1.438, "snap": "max", "dir": "n", "label": "Spike", "finding": 0},
+  {"kind": "bracket", "lead": "V1", "rhythm": true, "t0": 2.29, "t1": 3.142, "side": "above", "ms": true, "finding": 0},
+  {"kind": "bracket", "lead": "I", "from": "QRSon", "to": "J", "beat": 0, "ms": true, "label": {"ro": "QRS larg", "en": "Wide QRS"}, "finding": 1},
+  {"kind": "tag", "lead": "III", "label": {"ro": "QRS negativ", "en": "Negative QRS"}, "finding": 1},
+  {"kind": "box", "lead": "V1", "rhythm": true, "t0": 3.61, "t1": 3.985, "dir": "n", "label": {"ro": "Unde f", "en": "f waves"}, "finding": 2},
+  {"kind": "box", "lead": "II", "rhythm": true, "t0": 5.685, "t1": 5.8, "dir": "n", "label": {"ro": "Bătaie de fuziune", "en": "Fusion beat"}, "finding": 3}
+ ],
+ "pace-02": [
+  {"kind": "arrow", "lead": "II", "rhythm": true, "t": 1.224, "snap": "max", "dir": "n", "label": "Spike", "finding": 0},
+  {"kind": "bracket", "lead": "II", "rhythm": true, "t0": 3.804, "t1": 4.664, "side": "above", "ms": true, "finding": 0},
+  {"kind": "box", "lead": "V1", "rhythm": true, "t0": 5.38, "t1": 6.47, "dir": "n", "label": {"ro": "Bătăi proprii, fără spike", "en": "Native beats, no spike"}, "finding": 1},
+  {"kind": "arrow", "lead": "V1", "t": 6.04, "snap": "max", "dir": "ne", "label": {"ro": "Undă P", "en": "P wave"}, "finding": 1},
+  {"kind": "arrow", "lead": "V1", "rhythm": true, "t": 7.152, "snap": "max", "dir": "ne", "label": {"ro": "Stimularea reîncepe", "en": "Pacing resumes"}, "finding": 3},
+  {"kind": "bracket", "lead": "II", "rhythm": true, "t0": 6.29, "t1": 7.15, "side": "below", "label": {"ro": "Detecție normală", "en": "Normal sensing"}, "finding": 4}
+ ],
+ "pace-03": [
+  {"kind": "arrow", "lead": "V1", "rhythm": true, "t": 3.678, "snap": "max", "dir": "nw", "len": 2, "label": {"ro": "Spike atrial", "en": "Atrial spike"}, "finding": 0},
+  {"kind": "arrow", "lead": "V1", "rhythm": true, "t": 3.868, "snap": "max", "dir": "ne", "len": 2, "label": {"ro": "Spike ventricular", "en": "Ventricular spike"}, "finding": 0},
+  {"kind": "bracket", "lead": "II", "rhythm": true, "t0": 6.586, "t1": 6.776, "side": "above", "ms": true, "label": "AV", "finding": 0},
+  {"kind": "bracket", "lead": "V1", "t0": 5.805, "t1": 5.998, "side": "below", "label": {"ro": "QRS larg", "en": "Wide QRS"}, "finding": 1},
+  {"kind": "tag", "lead": "III", "label": {"ro": "QRS negativ", "en": "Negative QRS"}, "finding": 1},
+  {"kind": "bracket", "lead": "II", "rhythm": true, "t0": 8.712, "t1": 9.682, "side": "above", "ms": true, "finding": 2}
+ ],
+ "pace-04": [
+  {"kind": "bracket", "lead": "II", "rhythm": true, "t0": 3.326, "t1": 4.246, "ms": true, "finding": 0},
+  {"kind": "arrow", "lead": "II", "rhythm": true, "t": 3.326, "snap": "abs", "v": 1.2, "label": "Spike", "dir": "w", "finding": 0},
+  {"kind": "bracket", "lead": "II", "t0": 1.482, "t1": 1.736, "ms": true, "v": -0.5, "label": "Spike–QRS", "finding": 1},
+  {"kind": "arrow", "lead": "I", "t": 0.836, "snap": "max", "label": {"ro": "QRS îngust", "en": "Narrow QRS"}, "finding": 1},
+  {"kind": "arrow", "lead": "I", "t": 1.59, "snap": "max", "label": {"ro": "Undă P", "en": "P wave"}, "dir": "s", "len": 1.5, "finding": 2},
+  {"kind": "arrow", "lead": "II", "rhythm": true, "t": 6.366, "snap": "max", "label": {"ro": "Fără spike ventricular", "en": "No ventricular spike"}, "dir": "ne", "finding": 3}
+ ],
+ "pace-05": [
+  {"kind": "arrow", "lead": "II", "rhythm": true, "t": 8.478, "snap": "abs", "label": {"ro": "Spike atrial", "en": "Atrial spike"}, "dir": "nw", "finding": 0},
+  {"kind": "arrow", "lead": "II", "rhythm": true, "t": 8.716, "snap": "abs", "v": 1.2, "label": {"ro": "Spike ventricular", "en": "Ventricular spike"}, "dir": "ne", "finding": 0},
+  {"kind": "bracket", "lead": "II", "t0": 1.478, "t1": 1.716, "ms": true, "v": -0.45, "label": {"ro": "Interval AV", "en": "AV delay"}, "finding": 0},
+  {"kind": "arrow", "lead": "II", "t": 1.564, "snap": "max", "label": {"ro": "Undă P", "en": "P wave"}, "dir": "n", "len": 1.6, "finding": 1},
+  {"kind": "bracket", "lead": "aVF", "from": "R", "to": "J", "ms": true, "label": {"ro": "QRS larg", "en": "Wide QRS"}, "finding": 2},
+  {"kind": "bracket", "lead": "II", "rhythm": true, "t0": 2.714, "t1": 3.714, "ms": true, "label": "RR", "finding": 3}
+ ],
+ "pace-06": [
+  {"kind": "box", "lead": "II", "rhythm": true, "t0": 2.45, "t1": 4.66, "label": {"ro": "RR neregulat", "en": "Irregular RR"}, "finding": 0},
+  {"kind": "arrow", "lead": "II", "rhythm": true, "t": 5.668, "snap": "abs", "v": 0.8, "label": "Spike", "dir": "e", "finding": 1},
+  {"kind": "box", "lead": "II", "rhythm": true, "t0": 9.43, "t1": 9.64, "v0": -1.2, "v1": 0.6, "label": {"ro": "QRS larg", "en": "Wide QRS"}, "finding": 1},
+  {"kind": "bracket", "lead": "II", "rhythm": true, "t0": 4.828, "t1": 5.668, "ms": true, "v": -0.5, "label": {"ro": "Interval de scăpare", "en": "Escape interval"}, "finding": 2},
+  {"kind": "arrow", "lead": "V2", "t": 5.744, "snap": "min", "label": "QS", "dir": "e", "finding": 3},
+  {"kind": "arrow", "lead": "V4", "t": 9.524, "snap": "min", "label": "QS", "dir": "w", "finding": 3}
+ ],
+ "pace-07": [
+  {"kind": "bracket", "lead": "II", "rhythm": true, "t0": 3.428, "t1": 4.28, "ms": true, "label": "RR", "finding": 0},
+  {"kind": "arrow", "lead": "II", "rhythm": true, "t": 2.592, "snap": "abs", "label": "Spike", "dir": "nw", "finding": 0},
+  {"kind": "arrow", "lead": "II", "t": 0.81, "snap": "max", "label": {"ro": "Undă P", "en": "P wave"}, "dir": "nw", "len": 1.3, "finding": 1},
+  {"kind": "bracket", "lead": "II", "t0": 1.616, "t1": 1.742, "ms": true, "side": "above", "v": 0.45, "label": {"ro": "Interval AV", "en": "AV delay"}, "finding": 1},
+  {"kind": "bracket", "lead": "aVF", "t0": 3.428, "t1": 3.6, "ms": true, "label": {"ro": "QRS larg", "en": "Wide QRS"}, "finding": 2},
+  {"kind": "arrow", "lead": "II", "rhythm": true, "t": 8.45, "label": {"ro": "Fără spike atrial", "en": "No atrial spike"}, "dir": "nw", "len": 1.3, "finding": 3}
+ ],
+ "pace-08": [
+  {"kind": "bracket", "lead": "II", "rhythm": true, "t0": 0.592, "t1": 1.512, "ms": true, "label": "RR", "finding": 0},
+  {"kind": "arrow", "lead": "II", "rhythm": true, "t": 1.512, "snap": "abs", "label": "Spike", "dir": "ne", "finding": 0},
+  {"kind": "arrow", "lead": "V1", "rhythm": true, "t": 4.034, "snap": "min", "label": "P", "dir": "n", "len": 1.5, "finding": 1},
+  {"kind": "arrow", "lead": "V1", "rhythm": true, "t": 5.046, "snap": "min", "label": "P", "dir": "n", "len": 1.5, "finding": 1},
+  {"kind": "arrow", "lead": "V1", "rhythm": true, "t": 3.022, "snap": "min", "label": {"ro": "P neurmată de QRS", "en": "P without QRS"}, "dir": "n", "len": 2.5, "finding": 2},
+  {"kind": "bracket", "lead": "aVF", "from": "R", "to": "J", "ms": true, "label": {"ro": "QRS larg", "en": "Wide QRS"}, "finding": 3}
+ ],
+ "pace-09": [
+  {"kind": "bracket", "lead": "II", "rhythm": true, "t0": 0.664, "t1": 1.524, "ms": true, "label": "RR", "finding": 0},
+  {"kind": "bracket", "lead": "II", "t0": 1.524, "t1": 1.688, "ms": true, "label": {"ro": "QRS larg", "en": "Wide QRS"}, "finding": 0, "side": "above", "v": 1.35},
+  {"kind": "arrow", "lead": "II", "rhythm": true, "t": 5.55, "snap": "max", "label": {"ro": "QRS îngust", "en": "Narrow QRS"}, "dir": "e", "len": 1.0, "finding": 1},
+  {"kind": "bracket", "lead": "II", "rhythm": true, "t0": 8.712, "t1": 9.6, "ms": true, "finding": 2},
+  {"kind": "box", "lead": "II", "rhythm": true, "t0": 4.69, "t1": 4.9, "label": {"ro": "Fuziune", "en": "Fusion"}, "finding": 3},
+  {"kind": "box", "lead": "II", "rhythm": true, "t0": 7.245, "t1": 7.45, "label": {"ro": "Fuziune", "en": "Fusion"}, "finding": 3}
+ ],
+ "pace-10": [
+  {"kind": "bracket", "lead": "II", "rhythm": true, "t0": 4.03, "t1": 4.772, "ms": true, "label": "RR", "finding": 0},
+  {"kind": "arrow", "lead": "II", "rhythm": true, "t": 6.165, "label": {"ro": "Undă P", "en": "P wave"}, "dir": "nw", "len": 1.3, "finding": 1},
+  {"kind": "bracket", "lead": "II", "rhythm": true, "t0": 6.876, "t1": 7.002, "ms": true, "side": "above", "v": 0.45, "label": {"ro": "Interval AV", "en": "AV delay"}, "finding": 1},
+  {"kind": "bracket", "lead": "aVL", "t0": 3.28, "t1": 3.416, "ms": true, "v": 1.25, "label": {"ro": "QRS larg", "en": "Wide QRS"}, "finding": 2, "side": "above"},
+  {"kind": "arrow", "lead": "V1", "rhythm": true, "t": 0.856, "snap": "max", "label": {"ro": "Bătaie proprie", "en": "Native beat"}, "dir": "ne", "finding": 3},
+  {"kind": "bracket", "lead": "V1", "rhythm": true, "t0": 0.856, "t1": 1.832, "ms": true, "label": "RR", "finding": 3}
+ ],
+ "pace-11": [
+  {"kind": "bracket", "lead": "II", "rhythm": true, "t0": 5.166, "t1": 6.15, "ms": true, "finding": 0},
+  {"kind": "arrow", "lead": "II", "rhythm": true, "t": 5.166, "snap": "abs", "label": "Spike", "dir": "nw", "len": 1.3, "finding": 0},
+  {"kind": "arrow", "lead": "aVF", "t": 3.266, "label": {"ro": "Undă P", "en": "P wave"}, "dir": "n", "len": 1.5, "finding": 1},
+  {"kind": "arrow", "lead": "II", "t": 1.484, "snap": "max", "label": {"ro": "QRS îngust", "en": "Narrow QRS"}, "dir": "n", "finding": 2},
+  {"kind": "bracket", "lead": "II", "t0": 1.228, "t1": 1.45, "ms": true, "label": "Spike–QRS", "finding": 3},
+  {"kind": "arrow", "lead": "II", "rhythm": true, "t": 8.376, "snap": "max", "label": {"ro": "Fără spike ventricular", "en": "No ventricular spike"}, "dir": "ne", "finding": 4}
+ ],
+ "pace-12": [
+  {"kind": "bracket", "lead": "II", "rhythm": true, "t0": 8.32, "t1": 9.178, "ms": true, "label": "RR", "finding": 0},
+  {"kind": "arrow", "lead": "V1", "rhythm": true, "t": 0.742, "snap": "max", "label": "P", "dir": "n", "len": 1.5, "finding": 2},
+  {"kind": "arrow", "lead": "V1", "rhythm": true, "t": 6.67, "label": "P", "dir": "ne", "len": 1.5, "finding": 2},
+  {"kind": "arrow", "lead": "V1", "rhythm": true, "t": 3.694, "snap": "max", "label": {"ro": "P neurmată de QRS", "en": "P without QRS"}, "dir": "n", "len": 1.6, "finding": 3},
+  {"kind": "bracket", "lead": "V1", "rhythm": true, "t0": 3.694, "t1": 4.02, "ms": true, "v": -0.45, "finding": 3},
+  {"kind": "arrow", "lead": "V1", "rhythm": true, "t": 5.45, "snap": "max", "label": {"ro": "P neurmată de QRS", "en": "P without QRS"}, "dir": "n", "len": 1.6, "finding": 3}
+ ],
+ "pace-13": [
+  {"kind": "arrow", "lead": "V4", "t": 8.444, "snap": "abs", "label": "Spike", "dir": "nw", "len": 1.3, "finding": 0},
+  {"kind": "bracket", "lead": "II", "rhythm": true, "t0": 3.278, "t1": 4.014, "ms": true, "label": "RR", "finding": 0},
+  {"kind": "arrow", "lead": "aVF", "t": 3.288, "snap": "max", "label": {"ro": "QRS pozitiv", "en": "Positive QRS"}, "dir": "ne", "finding": 1},
+  {"kind": "arrow", "lead": "II", "t": 0.965, "label": {"ro": "Undă P", "en": "P wave"}, "dir": "nw", "len": 1.3, "finding": 2},
+  {"kind": "bracket", "lead": "II", "t0": 1.664, "t1": 1.808, "ms": true, "side": "above", "v": 0.55, "label": {"ro": "Interval AV", "en": "AV delay"}, "finding": 2},
+  {"kind": "arrow", "lead": "II", "rhythm": true, "t": 6.808, "label": {"ro": "Fără spike atrial", "en": "No atrial spike"}, "dir": "nw", "len": 1.3, "finding": 3}
+ ],
+ "site-01": [
+  {"kind": "bracket", "lead": "V1", "rhythm": true, "t0": 7.712, "t1": 8.536, "side": "above", "ms": true, "finding": 0},
+  {"kind": "arrow", "lead": "V1", "t": 5.29, "snap": "min", "label": "QS", "finding": 1, "len": 0.7},
+  {"kind": "bracket", "lead": "V1", "t0": 6.882, "t1": 7.022, "ms": true, "label": {"ro": "QRS larg", "en": "Wide QRS"}, "finding": 1},
+  {"kind": "arrow", "lead": "aVF", "t": 3.65, "snap": "min", "label": "QS", "finding": 2},
+  {"kind": "tag", "lead": "II", "label": "QS", "finding": 2},
+  {"kind": "tag", "lead": "III", "label": "QS", "finding": 2}
+ ],
+ "site-02": [
+  {"kind": "bracket", "lead": "II", "rhythm": true, "t0": 5.11, "t1": 5.922, "side": "above", "ms": true, "finding": 0},
+  {"kind": "arrow", "lead": "V3", "t": 5.93, "v": 0.22, "dir": "n", "label": {"ro": "Spike dublu", "en": "Double spike"}, "finding": 1},
+  {"kind": "arrow", "lead": "I", "t": 1.98, "snap": "min", "label": "QS", "finding": 2},
+  {"kind": "bracket", "lead": "II", "t0": 1.902, "t1": 2.016, "ms": true, "label": "QRS", "finding": 2},
+  {"kind": "arrow", "lead": "V1", "t": 6.0, "snap": "max", "label": {"ro": "R dominant", "en": "Dominant R"}, "finding": 2},
+  {"kind": "arrow", "lead": "II", "t": 1.78, "snap": "max", "label": {"ro": "Undă P", "en": "P wave"}, "finding": 3}
+ ],
+ "site-03": [
+  {"kind": "arrow", "lead": "II", "rhythm": true, "t": 1.528, "dir": "n", "len": 1.3, "label": {"ro": "Undă P", "en": "P wave"}, "finding": 0},
+  {"kind": "arrow", "lead": "V1", "t": 5.97, "snap": "min", "label": "rS", "finding": 1},
+  {"kind": "arrow", "lead": "aVF", "t": 3.16, "snap": "min", "label": "QS", "finding": 2},
+  {"kind": "tag", "lead": "II", "label": "QS", "finding": 2},
+  {"kind": "tag", "lead": "III", "label": "QS", "finding": 2},
+  {"kind": "arrow", "lead": "I", "t": 1.765, "snap": "max", "label": {"ro": "R înalt", "en": "Tall R"}, "finding": 2}
+ ],
+ "site-04": [
+  {"kind": "bracket", "lead": "V1", "rhythm": true, "t0": 1.622, "t1": 2.482, "side": "above", "ms": true, "finding": 0},
+  {"kind": "arrow", "lead": "V1", "rhythm": true, "t": 4.32, "snap": "min", "dir": "e", "label": "rS", "finding": 1},
+  {"kind": "arrow", "lead": "I", "at": "R", "beat": 0, "label": {"ro": "QRS pozitiv", "en": "Positive QRS"}, "finding": 2},
+  {"kind": "arrow", "lead": "aVF", "at": "S", "beat": 0, "label": "QS", "finding": 2},
+  {"kind": "box", "lead": "V1", "rhythm": true, "t0": 5.67, "t1": 5.91, "label": {"ro": "ESV", "en": "PVC"}, "finding": 3},
+  {"kind": "bracket", "lead": "V1", "rhythm": true, "t0": 5.69, "t1": 6.668, "side": "below", "ms": true, "finding": 3}
+ ],
+ "site-05": [
+  {"kind": "arrow", "lead": "V1", "t": 6.682, "snap": "max", "label": {"ro": "Undă R", "en": "R wave"}, "finding": 1},
+  {"kind": "bracket", "lead": "V5", "t0": 8.52, "t1": 8.622, "ms": true, "label": {"ro": "QRS îngust", "en": "Narrow QRS"}, "finding": 1},
+  {"kind": "tag", "lead": "V5", "label": "QS", "finding": 1},
+  {"kind": "tag", "lead": "V6", "label": "QS", "finding": 1},
+  {"kind": "arrow", "lead": "I", "t": 1.722, "snap": "min", "label": {"ro": "Undă Q", "en": "Q wave"}, "finding": 2},
+  {"kind": "arrow", "lead": "aVF", "t": 3.59, "snap": "min", "label": {"ro": "QRS negativ", "en": "Negative QRS"}, "finding": 2}
+ ],
+ "site-06": [
+  {"kind": "arrow", "lead": "V1", "t": 5.556, "dir": "w", "label": "QS", "finding": 1},
+  {"kind": "bracket", "lead": "V1", "rhythm": true, "t0": 6.362, "t1": 6.515, "side": "above", "ms": true, "label": {"ro": "QRS larg", "en": "Wide QRS"}, "finding": 1},
+  {"kind": "arrow", "lead": "V6", "t": 8.99, "snap": "max", "label": {"ro": "R monofazic", "en": "Monophasic R"}, "finding": 1},
+  {"kind": "arrow", "lead": "aVF", "t": 3.86, "snap": "max", "label": {"ro": "QRS pozitiv", "en": "Positive QRS"}, "finding": 2},
+  {"kind": "tag", "lead": "II", "label": {"ro": "QRS pozitiv", "en": "Positive QRS"}, "finding": 2},
+  {"kind": "tag", "lead": "I", "label": {"ro": "QRS pozitiv", "en": "Positive QRS"}, "finding": 2}
+ ],
+ "site-07": [
+  {"kind": "bracket", "lead": "V1", "rhythm": true, "t0": 8.226, "t1": 8.388, "side": "above", "ms": true, "label": {"ro": "Interval AV", "en": "AV delay"}, "finding": 0},
+  {"kind": "arrow", "lead": "I", "t": 1.49, "snap": "min", "label": "QS", "finding": 1},
+  {"kind": "arrow", "lead": "III", "t": 1.47, "snap": "max", "label": {"ro": "R înalt", "en": "Tall R"}, "finding": 1},
+  {"kind": "bracket", "lead": "III", "t0": 0.394, "t1": 0.571, "ms": true, "label": {"ro": "QRS larg", "en": "Wide QRS"}, "finding": 1},
+  {"kind": "arrow", "lead": "V1", "t": 6.45, "label": "RS", "finding": 1},
+  {"kind": "arrow", "lead": "V2", "t": 6.48, "snap": "min", "label": "QS", "finding": 2}
+ ],
+ "site-08": [
+  {"kind": "arrow", "lead": "V1", "t": 6.283, "v": 1.0, "dir": "w", "label": "Spike", "finding": 1},
+  {"kind": "arrow", "lead": "V1", "t": 5.52, "snap": "min", "dir": "e", "label": "rS", "finding": 1},
+  {"kind": "arrow", "lead": "V6", "t": 8.92, "snap": "max", "dir": "e", "label": {"ro": "R înalt", "en": "Tall R"}, "finding": 1},
+  {"kind": "arrow", "lead": "aVF", "t": 3.83, "snap": "max", "dir": "ne", "label": {"ro": "QRS pozitiv", "en": "Positive QRS"}, "finding": 2},
+  {"kind": "arrow", "lead": "II", "t": 1.25, "snap": "max", "dir": "n", "label": {"ro": "QRS pozitiv", "en": "Positive QRS"}, "finding": 2},
+  {"kind": "box", "lead": "I", "t0": 1.17, "t1": 1.29, "dir": "n", "label": {"ro": "Aproape izoelectric", "en": "Nearly isoelectric"}, "finding": 2}
+ ],
+ "site-09": [
+  {"kind": "bracket", "lead": "II", "rhythm": true, "t0": 6.266, "t1": 6.39, "side": "above", "ms": true, "label": {"ro": "Interval AV", "en": "AV delay"}, "finding": 0},
+  {"kind": "bracket", "lead": "II", "t0": 1.392, "t1": 1.522, "ms": true, "label": "QRS", "finding": 1},
+  {"kind": "arrow", "lead": "V1", "t": 6.465, "snap": "max", "label": {"ro": "R dominant", "en": "Dominant R"}, "finding": 2},
+  {"kind": "arrow", "lead": "I", "t": 1.455, "snap": "min", "label": {"ro": "QRS negativ", "en": "Negative QRS"}, "finding": 2},
+  {"kind": "arrow", "lead": "aVF", "t": 3.48, "snap": "min", "label": "QS", "finding": 2}
+ ],
+ "site-10": [
+  {"kind": "bracket", "lead": "II", "rhythm": true, "t0": 6.346, "t1": 6.476, "side": "below", "ms": true, "label": {"ro": "Interval AV", "en": "AV delay"}, "finding": 1},
+  {"kind": "arrow", "lead": "V1", "t": 6.555, "snap": "min", "label": "QS", "finding": 2},
+  {"kind": "bracket", "lead": "V1", "t0": 5.706, "t1": 5.842, "ms": true, "label": {"ro": "QRS larg", "en": "Wide QRS"}, "finding": 2},
+  {"kind": "arrow", "lead": "III", "t": 1.165, "snap": "max", "label": {"ro": "QRS pozitiv", "en": "Positive QRS"}, "finding": 3},
+  {"kind": "arrow", "lead": "aVF", "t": 3.475, "snap": "max", "label": {"ro": "QRS pozitiv", "en": "Positive QRS"}, "finding": 3},
+  {"kind": "arrow", "lead": "I", "t": 1.94, "snap": "min", "dir": "se", "label": {"ro": "Ușor negativ", "en": "Slightly negative"}, "finding": 3}
+ ],
+ "site-11": [
+  {"kind": "arrow", "lead": "V1", "t": 6.33, "snap": "max", "label": {"ro": "Fără R dominant", "en": "No dominant R"}, "finding": 1},
+  {"kind": "arrow", "lead": "aVF", "t": 3.293, "snap": "min", "label": "QS", "finding": 2},
+  {"kind": "tag", "lead": "II", "label": "QS", "finding": 2},
+  {"kind": "tag", "lead": "III", "label": "QS", "finding": 2},
+  {"kind": "arrow", "lead": "I", "t": 1.775, "snap": "max", "label": {"ro": "Mic, pozitiv", "en": "Small, positive"}, "finding": 2},
+  {"kind": "arrow", "lead": "V1", "rhythm": true, "t": 1.575, "snap": "max", "label": {"ro": "Undă P", "en": "P wave"}, "finding": 3}
+ ],
+ "site-12": [
+  {"kind": "bracket", "lead": "V1", "rhythm": true, "t0": 2.91, "t1": 3.82, "side": "above", "ms": true, "finding": 0},
+  {"kind": "arrow", "lead": "V1", "t": 5.81, "snap": "max", "label": {"ro": "R dominant", "en": "Dominant R"}, "finding": 1},
+  {"kind": "bracket", "lead": "V1", "t0": 5.678, "t1": 5.864, "v": -0.6, "ms": true, "label": {"ro": "QRS larg", "en": "Wide QRS"}, "finding": 1},
+  {"kind": "arrow", "lead": "V4", "t": 8.69, "snap": "min", "label": "QS", "finding": 1},
+  {"kind": "arrow", "lead": "I", "t": 1.36, "snap": "min", "label": "QS", "finding": 2},
+  {"kind": "arrow", "lead": "aVR", "t": 3.92, "snap": "max", "label": {"ro": "QRS pozitiv", "en": "Positive QRS"}, "finding": 2}
+ ],
+ "site-13": [
+  {"kind": "bracket", "lead": "II", "rhythm": true, "t0": 8.076, "t1": 8.206, "side": "above", "ms": true, "label": {"ro": "Interval AV", "en": "AV delay"}, "finding": 0},
+  {"kind": "bracket", "lead": "V5", "t0": 8.206, "t1": 8.256, "side": "above", "ms": true, "finding": 1},
+  {"kind": "arrow", "lead": "V4", "t": 8.256, "snap": "max", "dir": "n", "label": {"ro": "Al doilea spike", "en": "Second spike"}, "finding": 1},
+  {"kind": "arrow", "lead": "V1", "t": 5.955, "snap": "max", "label": {"ro": "R dominant", "en": "Dominant R"}, "finding": 2},
+  {"kind": "bracket", "lead": "V1", "t0": 6.604, "t1": 6.798, "ms": true, "label": {"ro": "QRS larg", "en": "Wide QRS"}, "finding": 2},
+  {"kind": "arrow", "lead": "I", "t": 1.95, "snap": "min", "label": {"ro": "QRS negativ", "en": "Negative QRS"}, "finding": 2}
+ ],
+ "site-14": [
+  {"kind": "bracket", "lead": "V1", "rhythm": true, "t0": 6.182, "t1": 6.304, "side": "above", "ms": true, "label": {"ro": "Interval AV", "en": "AV delay"}, "finding": 0},
+  {"kind": "arrow", "lead": "V1", "t": 6.38, "snap": "max", "label": {"ro": "R dominant", "en": "Dominant R"}, "finding": 1},
+  {"kind": "bracket", "lead": "II", "t0": 1.432, "t1": 1.554, "ms": true, "label": "QRS", "finding": 1},
+  {"kind": "arrow", "lead": "V4", "t": 8.82, "snap": "min", "label": "QS", "finding": 1},
+  {"kind": "arrow", "lead": "aVF", "t": 3.35, "snap": "min", "label": "QS", "finding": 2},
+  {"kind": "tag", "lead": "III", "label": "QS", "finding": 2}
+ ],
+ "trbl-01": [
+  {"kind": "bracket", "lead": "II", "rhythm": true, "t0": 1.322, "t1": 2.392, "ms": true, "finding": 0, "note": "spike to spike (paced beats 2 and 3)", "side": "above", "v": 1.5, "label": {"ro": "Spike–spike", "en": "Spike–spike"}},
+  {"kind": "arrow", "lead": "II", "rhythm": true, "t": 4.29, "snap": "max", "finding": 1, "label": {"ro": "Undă P", "en": "P wave"}},
+  {"kind": "arrow", "lead": "V1", "rhythm": true, "t": 5.5, "snap": "max", "finding": 1, "label": {"ro": "rsR', fără spike", "en": "rsR', no spike"}},
+  {"kind": "arrow", "lead": "II", "rhythm": true, "t": 7.346, "snap": "max", "finding": 2, "label": {"ro": "Undă P", "en": "P wave"}, "dir": "nw"},
+  {"kind": "box", "lead": "II", "rhythm": true, "t0": 7.455, "t1": 7.625, "finding": 2, "dir": "s", "label": {"ro": "Fuziune", "en": "Fusion"}, "v1": 0.35},
+  {"kind": "arrow", "lead": "V1", "rhythm": true, "t": 9.696, "snap": "max", "finding": 3, "label": {"ro": "Pseudofuziune", "en": "Pseudofusion"}}
+ ],
+ "trbl-02": [
+  {"kind": "arrow", "lead": "V1", "rhythm": true, "t": 1.404, "dir": "nw", "finding": 0, "label": {"ro": "Spike atrial", "en": "Atrial spike"}},
+  {"kind": "bracket", "lead": "V1", "rhythm": true, "t0": 1.403, "t1": 1.604, "ms": true, "finding": 0, "note": "atrial spike to QRS onset in V1", "label": {"ro": "Spike–QRS", "en": "Spike–QRS"}},
+  {"kind": "arrow", "lead": "V5", "t": 8.208, "dir": "sw", "finding": 1, "label": {"ro": "Spike ventricular", "en": "Ventricular spike"}},
+  {"kind": "bracket", "lead": "I", "t0": 1.606, "t1": 1.678, "finding": 2, "label": {"ro": "QRS îngust", "en": "Narrow QRS"}},
+  {"kind": "box", "lead": "V5", "t0": 9.236, "t1": 9.312, "dir": "s", "finding": 3, "label": {"ro": "QRS identic, fără spike", "en": "Identical QRS, no spike"}},
+  {"kind": "arrow", "lead": "V1", "rhythm": true, "t": 9.07, "snap": "max", "finding": 3, "label": {"ro": "Undă P proprie", "en": "Native P wave"}}
+ ],
+ "trbl-03": [
+  {"kind": "count", "lead": "II", "rhythm": true, "finding": 0, "times": [0.824, 1.684, 2.544, 3.404, 4.262, 5.122, 5.98, 6.842, 7.702, 8.56, 9.42], "note": "the narrow QRS complexes (R peaks in II), not the spikes"},
+  {"kind": "bracket", "lead": "II", "rhythm": true, "t0": 3.404, "t1": 4.262, "ms": true, "finding": 0, "note": "R to R", "label": "RR"},
+  {"kind": "arrow", "lead": "II", "rhythm": true, "t": 1.426, "dir": "nw", "finding": 1, "label": "Spike"},
+  {"kind": "bracket", "lead": "II", "rhythm": true, "t0": 1.424, "t1": 1.664, "ms": true, "finding": 1, "note": "spike to QRS onset", "label": {"ro": "Spike–QRS", "en": "Spike–QRS"}},
+  {"kind": "bracket", "lead": "I", "t0": 1.658, "t1": 1.73, "finding": 2, "label": {"ro": "QRS îngust", "en": "Narrow QRS"}},
+  {"kind": "box", "lead": "II", "rhythm": true, "t0": 6.34, "t1": 6.565, "dir": "s", "finding": 3, "label": {"ro": "Fără unde F", "en": "No F waves"}}
+ ],
+ "trbl-04": [
+  {"kind": "bracket", "lead": "II", "rhythm": true, "t0": 0.852, "t1": 1.598, "side": "above", "ms": true, "finding": 1, "note": "spike to spike", "label": {"ro": "Spike–spike", "en": "Spike–spike"}},
+  {"kind": "arrow", "lead": "II", "rhythm": true, "t": 2.346, "finding": 3, "label": {"ro": "Spike pe ST/T", "en": "Spike on ST/T"}},
+  {"kind": "bracket", "lead": "II", "rhythm": true, "t0": 3.118, "t1": 4.046, "ms": true, "finding": 0, "note": "native QRS to native QRS (QS nadir)", "label": "RR"},
+  {"kind": "arrow", "lead": "II", "rhythm": true, "t": 3.848, "finding": 2, "label": {"ro": "Fără captură", "en": "No capture"}},
+  {"kind": "arrow", "lead": "II", "rhythm": true, "t": 6.094, "finding": 3, "label": {"ro": "Spike pe ST/T", "en": "Spike on ST/T"}},
+  {"kind": "box", "lead": "II", "rhythm": true, "t0": 7.588, "t1": 7.8, "finding": 1, "label": {"ro": "Probabil fuziune", "en": "Probable fusion"}}
+ ],
+ "trbl-05": [
+  {"kind": "box", "lead": "II", "rhythm": true, "t0": 2.2, "t1": 2.4, "v0": -1.05, "v1": 0.3, "finding": 0, "label": {"ro": "Bătaie nestimulată", "en": "Non-paced beat"}},
+  {"kind": "bracket", "lead": "II", "rhythm": true, "t0": 1.716, "t1": 2.298, "v": -1.3, "ms": true, "finding": 0, "note": "spike to the deepest point of the non-paced QRS", "label": {"ro": "Spike–bătaie", "en": "Spike–beat"}},
+  {"kind": "bracket", "lead": "II", "rhythm": true, "t0": 4.296, "t1": 5.002, "v": -1.3, "ms": true, "finding": 3, "note": "deepest point of the non-paced QRS to the next spike: timing restarts", "label": {"ro": "Bătaie–spike", "en": "Beat–spike"}},
+  {"kind": "bracket", "lead": "II", "rhythm": true, "t0": 5.716, "t1": 6.43, "v": -1.3, "ms": true, "finding": 4, "note": "spike to spike, ignoring the non-paced beat at 6.3 s", "label": {"ro": "Spike–spike", "en": "Spike–spike"}},
+  {"kind": "arrow", "lead": "II", "rhythm": true, "t": 6.432, "v": 0.8, "dir": "nw", "finding": 4, "label": {"ro": "Subdetecție", "en": "Undersensing"}},
+  {"kind": "box", "lead": "V1", "rhythm": true, "t0": 7.85, "t1": 8.03, "v0": -1.3, "v1": 0.3, "dir": "s", "finding": 1, "label": {"ro": "QRS larg", "en": "Wide QRS"}}
+ ],
+ "trbl-06": [
+  {"kind": "bracket", "lead": "V1", "rhythm": true, "t0": 0.206, "t1": 0.916, "side": "above", "ms": true, "finding": 0, "note": "small spikes, first part", "label": {"ro": "Spike–spike", "en": "Spike–spike"}},
+  {"kind": "bracket", "lead": "V1", "rhythm": true, "t0": 5.05, "t1": 6.05, "side": "above", "ms": true, "finding": 0, "note": "large spikes, second part", "label": {"ro": "Spike–spike", "en": "Spike–spike"}},
+  {"kind": "arrow", "lead": "V1", "rhythm": true, "t": 8.19, "snap": "max", "dir": "ne", "finding": 1, "label": {"ro": "Undă R largă, monofazică", "en": "Broad monophasic R wave"}},
+  {"kind": "arrow", "lead": "aVL", "t": 4.208, "snap": "min", "dir": "e", "finding": 1, "label": "QS"},
+  {"kind": "arrow", "lead": "aVR", "t": 4.128, "snap": "max", "dir": "ne", "finding": 1, "label": {"ro": "QRS pozitiv", "en": "Positive QRS"}},
+  {"kind": "arrow", "lead": "aVF", "t": 4.192, "snap": "max", "dir": "ne", "finding": 1, "label": {"ro": "QRS pozitiv", "en": "Positive QRS"}}
+ ]
+}

@@ -7,6 +7,9 @@ export const LEADS = ["I", "II", "III", "aVR", "aVL", "aVF", "V1", "V2", "V3", "
 const SPEED = 25; // mm per second
 const GAIN = 10; // standard mm per mV (readouts in mm always use this)
 const COLS = [["I", "II", "III"], ["aVR", "aVL", "aVF"], ["V1", "V2", "V3"], ["V4", "V5", "V6"]];
+const SVGNS = "http://www.w3.org/2000/svg";
+// where a label sits from the point it explains
+const DIRV = { n: [0, -1], ne: [0.72, -0.72], e: [1, 0], se: [0.72, 0.72], s: [0, 1], sw: [-0.72, 0.72], w: [-1, 0], nw: [-0.72, -0.72] };
 
 /* ------------------------------------------------------------------ data */
 export function decode(json) {
@@ -79,6 +82,8 @@ export class EcgView {
     this.gain = this.opts.gain;
     this.highlight = new Set(opts.highlight || []);
     this.marks = opts.marks || [];
+    this.anns = opts.annotations || []; // teaching arrows and labels, drawn as SVG (see _annotate)
+    this.annFocus = null;
     this.cal = null; // {mode: "time" | "volt", a, b, active}
     this.listeners = [];
 
@@ -92,7 +97,10 @@ export class EcgView {
     this.overlay = document.createElement("canvas");
     this.overlay.className = "ecg-overlay";
     this.overlay.tabIndex = -1;
-    this.stage.append(this.paper, this.overlay);
+    this.annLayer = document.createElementNS(SVGNS, "svg");
+    this.annLayer.setAttribute("class", "ecg-ann");
+    this.annLayer.setAttribute("aria-hidden", "true");
+    this.stage.append(this.paper, this.annLayer, this.overlay);
     this.scroller.append(this.stage);
     host.append(this.scroller);
 
@@ -140,6 +148,28 @@ export class EcgView {
   setMarks(marks) {
     this.marks = marks || [];
     this.draw();
+  }
+
+  /* annotations: [{kind, lead, rhythm?, t, v, label (a string), n?: badge number, finding?}]
+     (built by trainer/annotate.py). focus: a finding index to show at full strength. */
+  setAnnotations(anns, focus = null) {
+    this.anns = anns || [];
+    this.annFocus = focus;
+    this._annotate();
+  }
+
+  /* x (CSS px) of the first annotation of a finding, to scroll it into view */
+  annotationX(finding) {
+    const a = this.anns.find((x) => (finding == null || x.finding === finding) && this._annSeg(x));
+    const s = a && this._annSeg(a);
+    if (!s) return null;
+    const t = a.t ?? a.t0 ?? (a.times && a.times[0]) ?? s.t0;
+    return (s.x0 + (t - s.t0) * SPEED) * this.pxmm;
+  }
+
+  /* Does this layout draw at least one mark of this finding? (a strip shows only some leads) */
+  showsFinding(finding, list = this.anns) {
+    return list.some((a) => a.finding === finding && ((a.kind === "vline" && !a.lead) || !!this._annSeg(a)));
   }
 
   /* -------------------------------------------------------------- drawing */
@@ -190,6 +220,7 @@ export class EcgView {
     ctx.setTransform(dpr * this.pxmm, 0, 0, dpr * this.pxmm, 0, 0);
     this._grid(ctx);
     this._traces(ctx);
+    this._annotate();
     this._drawOverlay();
   }
 
@@ -353,6 +384,189 @@ export class EcgView {
       }
     }
     ctx.restore();
+  }
+
+  /* ----------------------------------------------------------- annotations */
+  _annSeg(a) {
+    const segs = this.layout.segs;
+    const strip = this.opts.layout === "strip";
+    return segs.find((s) => s.lead === a.lead && (strip || !!s.rhythm === !!a.rhythm)) || null;
+  }
+
+  /* Arrows, brackets, boxes and labels over the paper. The SVG uses the paper's own
+     millimetres, so every mark sits on the trace at any zoom or gain; line widths and
+     text are kept at a fixed size on screen. */
+  _annotate() {
+    const g = this.annLayer;
+    if (!g || !this.pxmm) return;
+    const L = this.layout;
+    g.setAttribute("viewBox", `0 0 ${L.w} ${L.h}`);
+    g.style.width = Math.round(L.w * this.pxmm) + "px";
+    g.style.height = Math.round(L.h * this.pxmm) + "px";
+    g.replaceChildren();
+    if (!this.anns.length) return;
+    const u = 1 / this.pxmm; // one screen pixel, in mm
+    const small = this.pxmm < 3; // a whole 12-lead on a phone: smaller labels and arrows
+    const FS = small ? 11 : 12.5; // label size in px
+    const font = `600 ${FS}px ${getComputedStyle(this.host).getPropertyValue("--font-sans").trim() || "sans-serif"}`;
+    const meas = (this._measure ||= document.createElement("canvas").getContext("2d"));
+    meas.font = font;
+    const el = (tag, attrs, parent = g) => {
+      const e = document.createElementNS(SVGNS, tag);
+      for (const [k, v] of Object.entries(attrs)) if (v != null) e.setAttribute(k, v);
+      parent.append(e);
+      return e;
+    };
+    const placed = []; // label boxes already drawn, to step around them
+    const clampX = (x, hw) => Math.min(Math.max(x, hw + 2 * u), L.w - hw - 2 * u);
+    const clampY = (y, hh) => Math.min(Math.max(y, hh + 2 * u), L.h - hh - 2 * u);
+    const hits = (b) => placed.some((p) => b.x0 < p.x1 && b.x1 > p.x0 && b.y0 < p.y1 && b.y1 > p.y0);
+
+    // a label pill centred at (cx, cy); pushes along (dx, dy) while it overlaps another
+    const pill = (parent, text, cx, cy, n, dx = 0, dy = -1, cls = "") => {
+      const tw = meas.measureText(text).width * u;
+      const pad = 6 * u;
+      const badge = n != null ? 16 * u : 0;
+      const w = tw + 2 * pad + (badge ? badge + 3 * u : 0);
+      const hgt = (FS + 9) * u;
+      let x = clampX(cx, w / 2);
+      let y = clampY(cy, hgt / 2);
+      for (let k = 0; k < 6; k++) {
+        const box = { x0: x - w / 2, x1: x + w / 2, y0: y - hgt / 2, y1: y + hgt / 2 };
+        if (!hits(box)) break;
+        x = clampX(x + (dx || 0.35) * (hgt + 2 * u) * (dx ? 1 : 0), w / 2);
+        y = clampY(y + (dy || 1) * (hgt + 2 * u), hgt / 2);
+      }
+      placed.push({ x0: x - w / 2, x1: x + w / 2, y0: y - hgt / 2, y1: y + hgt / 2 });
+      el("rect", { x: x - w / 2, y: y - hgt / 2, width: w, height: hgt, rx: hgt / 2, class: `a-pill ${cls}` }, parent);
+      let tx = x - w / 2 + pad;
+      if (badge) {
+        el("circle", { cx: tx + badge / 2, cy: y, r: badge / 2, class: "a-badge" }, parent);
+        const bt = el("text", { x: tx + badge / 2, y, class: "a-badge-text", "font-size": 10.5 * u }, parent);
+        bt.textContent = String(n);
+        tx += badge + 3 * u;
+      }
+      const te = el("text", { x: tx, y, class: `a-text ${cls}`, "font-size": FS * u }, parent);
+      te.textContent = text;
+      return { x, y, w, h: hgt };
+    };
+
+    // an arrowhead at (x, y) pointing along (dx, dy)
+    const head = (parent, x, y, dx, dy, size = 7) => {
+      const len = Math.hypot(dx, dy) || 1;
+      const ux = dx / len, uy = dy / len;
+      const s = size * u;
+      el("path", {
+        d: `M${x},${y} L${x - ux * s - uy * s * 0.55},${y - uy * s + ux * s * 0.55} L${x - ux * s + uy * s * 0.55},${y - uy * s - ux * s * 0.55} Z`,
+        class: "a-head",
+      }, parent);
+    };
+
+    const order = [...this.anns].sort((a, b) => (a.kind === "tag") - (b.kind === "tag"));
+    for (const a of order) {
+      const s = a.kind === "vline" && !a.lead ? null : this._annSeg(a);
+      if (a.lead && !s) continue;
+      const X = (t) => s.x0 + (t - s.t0) * SPEED;
+      const Y = (v) => s.y - v * this.gain;
+      const inCell = (t) => t >= s.t0 - 1e-6 && t <= s.t1 + 1e-6;
+      const dim = this.annFocus != null && a.finding !== this.annFocus;
+      const grp = el("g", { class: `a a-k-${a.kind}${dim ? " is-dim" : ""}${this.annFocus != null && !dim ? " is-focus" : ""}` });
+      const n = a.n ?? null;
+      const text = a.label || "";
+
+      if (a.kind === "arrow" || a.kind === "dot") {
+        if (!inCell(a.t)) continue;
+        const px = X(a.t), py = Y(a.v);
+        const [dx, dy] = DIRV[a.dir || "n"];
+        const len = (a.kind === "dot" ? 22 : 34) * (a.len || 1) * (small ? 0.75 : 1) * u;
+        const gap = (a.kind === "dot" ? 7 : 2.5) * u;
+        const tx = px + dx * len, ty = py + dy * len;
+        if (a.kind === "dot") el("circle", { cx: px, cy: py, r: 5.5 * u, class: "a-ring" }, grp);
+        el("line", { x1: tx, y1: ty, x2: px + dx * gap, y2: py + dy * gap, class: "a-line" }, grp);
+        if (a.kind === "arrow") head(grp, px + dx * gap, py + dy * gap, -dx, -dy);
+        if (text) {
+          const tw = meas.measureText(text).width * u + 12 * u + (n != null ? 19 * u : 0);
+          const th = (FS + 9) * u;
+          pill(grp, text, tx + dx * (tw / 2 + 2 * u) * Math.abs(dx) ** 2, ty + dy * (th / 2 + 1 * u), n, dx, dy || -1);
+        }
+      } else if (a.kind === "bracket") {
+        const x0 = X(Math.max(a.t0, s.t0)), x1 = X(Math.min(a.t1, s.t1));
+        if (x1 <= x0) continue;
+        const y = Math.min(Math.max(Y(a.v), s.y - s.h / 2 + 3), s.y + s.h / 2 - 3);
+        const tick = (a.side === "above" ? 5 : -5) * u;
+        el("path", { d: `M${x0},${y + tick} L${x0},${y} L${x1},${y} L${x1},${y + tick}`, class: "a-line a-bracket-line" }, grp);
+        if (text) {
+          const th = (FS + 9) * u;
+          pill(grp, text, (x0 + x1) / 2, y + (a.side === "above" ? -1 : 1) * (th / 2 + 2 * u), n, 0, a.side === "above" ? -1 : 1, "a-pill-quiet");
+        }
+      } else if (a.kind === "rise") {
+        if (!inCell(a.t)) continue;
+        const x = X(a.t), y0 = Y(a.v0), y1 = Y(a.v1);
+        el("line", { x1: x - 9 * u, y1: y0, x2: x + 9 * u, y2: y0, class: "a-line a-dash" }, grp);
+        if (Math.abs(y1 - y0) > 4 * u) {
+          el("line", { x1: x, y1: y0, x2: x, y2: y1, class: "a-line" }, grp);
+          head(grp, x, y1, 0, y1 - y0, 6);
+        }
+        const [dx, dy] = DIRV[a.dir || (a.v1 >= a.v0 ? "ne" : "se")];
+        if (text) {
+          const tw = meas.measureText(text).width * u + 12 * u + (n != null ? 19 * u : 0);
+          const th = (FS + 9) * u;
+          const yEnd = dy < 0 ? Math.min(y0, y1) : dy > 0 ? Math.max(y0, y1) : (y0 + y1) / 2;
+          pill(grp, text, x + (dx ? Math.sign(dx) : 0) * (tw / 2 + 8 * u), yEnd + dy * (th / 2 + 6 * u), n, dx, dy || -1);
+        }
+      } else if (a.kind === "baseline") {
+        const x0 = X(Math.max(a.t0, s.t0)), x1 = X(Math.min(a.t1, s.t1));
+        if (x1 <= x0) continue;
+        el("line", { x1: x0, y1: Y(a.v), x2: x1, y2: Y(a.v), class: "a-line a-dash a-base" }, grp);
+        if (text) {
+          const tw = meas.measureText(text).width * u + 12 * u;
+          pill(grp, text, x1 - tw / 2, Y(a.v) + 14 * u, n, 0, 1, "a-pill-quiet");
+        }
+      } else if (a.kind === "box") {
+        const x0 = X(Math.max(a.t0, s.t0)), x1 = X(Math.min(a.t1, s.t1));
+        if (x1 <= x0) continue;
+        const pad = 2 * u;
+        const yTop = Math.max(Y(a.v1) - pad, s.y - s.h / 2 + 1), yBot = Math.min(Y(a.v0) + pad, s.y + s.h / 2 - 1);
+        el("rect", { x: x0 - pad, y: yTop, width: x1 - x0 + 2 * pad, height: Math.max(yBot - yTop, 4 * u), rx: 4 * u, class: "a-box" }, grp);
+        if (text) {
+          const [dx, dy] = DIRV[a.dir || "n"];
+          const th = (FS + 9) * u;
+          const cx = (x0 + x1) / 2 + dx * ((x1 - x0) / 2 + 30 * u);
+          const cy = dy < 0 ? yTop - th / 2 - 3 * u : dy > 0 ? yBot + th / 2 + 3 * u : (yTop + yBot) / 2;
+          pill(grp, text, cx, cy, n, dx, dy || -1);
+        }
+      } else if (a.kind === "count") {
+        (a.times || []).forEach((t, i) => {
+          if (!inCell(t)) return;
+          const x = X(t);
+          const top = s.y - s.h / 2;
+          const y = Math.max(Math.min(Y(a.vs?.[i] ?? 0) - 16 * u, s.y - 6 * u), top + 9 * u);
+          el("circle", { cx: x, cy: y, r: 8.5 * u, class: "a-count" }, grp);
+          const e = el("text", { x, y, class: "a-count-text", "font-size": 10.5 * u }, grp);
+          e.textContent = String(i + 1);
+        });
+      } else if (a.kind === "tag") {
+        // just right of the lead name, at the top of the lead's cell
+        const lf = Math.min(Math.max(3.2, 11 * u), 15 * u);
+        meas.font = `600 ${lf / u}px ${this.col?.font || "monospace"}`;
+        const name = (this.opts.labels || {})[s.lead] || s.lead;
+        const after = s.x0 + 1.2 + meas.measureText(name).width * u + 7 * u;
+        meas.font = font;
+        const tw = meas.measureText(text).width * u + 12 * u + (n != null ? 19 * u : 0);
+        pill(grp, text, after + tw / 2, s.y - s.h / 2 + 1.4 + lf / 2 + 1 * u, n, 1, 0, "a-pill-tag");
+      } else if (a.kind === "vline") {
+        const rows = a.lead ? [s] : L.segs.filter((x) => a.t >= x.t0 && a.t <= x.t1);
+        for (const r of rows) {
+          const x = r.x0 + (a.t - r.t0) * SPEED;
+          el("line", { x1: x, y1: r.y - r.h / 2 + 1, x2: x, y2: r.y + r.h / 2 - 1, class: "a-line a-dash" }, grp);
+        }
+        if (text && rows.length) {
+          const r = rows[0];
+          const x = r.x0 + (a.t - r.t0) * SPEED;
+          pill(grp, text, x, r.y - r.h / 2 + (FS + 9) * u / 2 + 2 * u, n, 1, 0, "a-pill-quiet");
+        }
+      }
+    }
   }
 
   /* -------------------------------------------------------------- calipers */
