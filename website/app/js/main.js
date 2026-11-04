@@ -1022,10 +1022,10 @@ function lessonCheck(l, step) {
       if (k === step.answer || k === i) markOption(b, k === step.answer);
     });
     const ok = i === step.answer;
-    out.replaceChildren(
+    out.replaceChildren(...[
       h("p", { class: `cs-verdict ${ok ? "ok" : "bad"}` }, markIcon(ok), h("strong", { text: t(ok ? "correct" : "wrong") })),
       h("p", { text: tx(step.explain) }),
-      f?.annotations?.length ? h("p", { class: "cs-small", text: t("check_marks") }) : null);
+      f?.annotations?.length && h("p", { class: "cs-small", text: t("check_marks") })].filter(Boolean));
   };
   const ol = h("ol", { class: "cs-options fu-options" }, step.options.map((o, i) => {
     const b = h("button", { type: "button", class: "cs-option",
@@ -1264,7 +1264,10 @@ function findingsList(c, onFinding) {
   if (!marked.size || !onFinding) return [h("ul", { class: "cs-list" }, list.map((f) => h("li", { text: f })))];
   const btns = [];
   const items = list.map((f, i) => {
-    if (!marked.has(i)) return h("li", { class: "cs-finding-plain" }, h("span", { text: f }));
+    if (!marked.has(i)) {
+      return h("li", { class: "cs-finding-plain" },
+        h("span", { class: "cs-finding-n is-quiet", "aria-hidden": "true", text: String(i + 1) }), h("span", { text: f }));
+    }
     const b = h("button", { type: "button", class: "cs-finding", "aria-pressed": "false",
       "aria-label": `${t("finding_show", i + 1)}: ${f}`,
       onclick: () => {

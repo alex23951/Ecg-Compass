@@ -1026,7 +1026,10 @@ p { margin: 0; }
 
 /* findings with marks on the tracing: tap one to see it */
 .cs-findings { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
-.cs-finding-plain { padding: 6px 10px 6px 42px; color: var(--ink); line-height: 1.5; }
+.cs-finding-plain {
+  display: grid; grid-template-columns: 24px minmax(0, 1fr); gap: 10px; align-items: start;
+  padding: 8px 11px; color: var(--ink); line-height: 1.5;
+}
 .cs-finding {
   display: grid; grid-template-columns: 24px minmax(0, 1fr); gap: 10px; align-items: start; width: 100%;
   text-align: left; font: inherit; line-height: 1.5; color: var(--ink); cursor: pointer;
@@ -1038,6 +1041,7 @@ p { margin: 0; }
   display: grid; place-items: center; width: 24px; height: 24px; border-radius: 50%; margin-top: 0.5px;
   background: var(--ecg-ann-fill); color: var(--ecg-ann-on-fill); font: 750 0.8rem/1 var(--font-sans);
 }
+.cs-finding-n.is-quiet { background: none; color: var(--ink-3); box-shadow: inset 0 0 0 1px var(--line); }
 @media (pointer: coarse) { .cs-finding { min-height: 44px; } }
 
 /* a tracing explained frame by frame */
@@ -1058,4 +1062,9 @@ p { margin: 0; }
 .gd-text { display: grid; gap: 8px; }
 .gd-text p { margin: 0; max-width: var(--measure); }
 .gd-nav .btn[disabled] { opacity: 0.4; cursor: default; }
+.gd-nav .btn { white-space: nowrap; flex: none; }
+@media (max-width: 560px) {
+  .gd-nav { flex-wrap: wrap; row-gap: 8px; }
+  .gd-dots { order: 3; flex-basis: 100%; }
+}
 .ls-check .vw { margin-bottom: 4px; }
