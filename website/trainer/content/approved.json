@@ -1,5 +1,5 @@
 {
- "_note": "Snapshot of what Alex approved on the trainer review screen (collection 'reviews' of the trainer preview). The free site with approved_only=true launches only these. Refresh it from the review database whenever Alex approves more.",
+ "_note": "Snapshot of what Alex approved on the trainer review screen (collection 'reviews' of the trainer preview). The free site with approved_only=true launches only these. Refresh it from the review database whenever Alex approves more. \"lessons\" and \"annotations\" list the lessons and the case marks that go live; merging the pull request that adds an id counts as Alex's sign-off on that text.",
  "snapshot_date": "2026-11-03",
  "cases": [
   "blocks-01",
@@ -76,6 +76,47 @@
   "VVI_DEMAND",
   "WELLENS",
   "WPW"
+ ],
+ "lessons": [
+  "basics-start",
+  "basics-rhythm",
+  "basics-rate",
+  "basics-axis",
+  "basics-pr",
+  "basics-qrs",
+  "basics-st",
+  "basics-qt",
+  "basics-read"
+ ],
+ "annotations": [
+  "blocks-01",
+  "blocks-02",
+  "blocks-03",
+  "blocks-04",
+  "blocks-05",
+  "blocks-06",
+  "isch-01",
+  "isch-02",
+  "isch-03",
+  "isch-04",
+  "isch-05",
+  "pace-01",
+  "pace-02",
+  "pace-03",
+  "patt-01",
+  "patt-02",
+  "patt-03",
+  "rhythm-01",
+  "rhythm-02",
+  "rhythm-03",
+  "rhythm-04",
+  "rhythm-05",
+  "tachy-01",
+  "tachy-02",
+  "tachy-03",
+  "tachy-04",
+  "tachy-05",
+  "tachy-06"
  ],
  "layers": []
 }
