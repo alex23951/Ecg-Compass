@@ -178,7 +178,10 @@ def marks_for(bs, idx, show, window):
         elif name == "ST":
             out.append({"t0": b["q_off"], "t1": b["t_on"], "tone": "seg", "label": "ST"})
         elif name == "PRseg":
-            out.append({"t0": b["p_off"], "t1": b["q_on"], "tone": "seg", "label": "PR"})
+            # the PR segment (end of P to start of QRS), named in full so it is never read as the
+            # PR interval, which starts at the beginning of the P wave
+            out.append({"t0": b["p_off"], "t1": b["q_on"], "tone": "seg",
+                        "label": {"ro": "segment PR", "en": "PR segment"}})
         elif name == "TP":
             if not nxt:
                 raise ValueError("TP needs a next beat")
@@ -353,9 +356,12 @@ def main():
             return marks
         marks = s.get("marks", [])
         for m in marks:
-            if m.get("tone") not in TONES or not isinstance(m.get("label"), str) \
+            lab = m.get("label")
+            if m.get("tone") not in TONES \
+                    or not (isinstance(lab, str) or (isinstance(lab, dict) and all(lab.get(l) for l in LANGS))) \
                     or not (win[0] <= m.get("t0", -1) < m.get("t1", -1) <= win[1]):
-                problems.append(f"{where}: hand mark {m} needs t0 < t1 inside the window, a tone and a label")
+                problems.append(f"{where}: hand mark {m} needs t0 < t1 inside the window, a tone and a label "
+                                "(a string, or ro and en)")
         return marks
 
     ids = set()
@@ -535,13 +541,14 @@ def plot(folder, plots, cache):
             x = sig[info.get("leads", ptbxl.LEADS).index(lead)]
             ax.plot(t[m], x[m], "k", lw=1)
             for mk in marks:
+                lab = mk["label"] if isinstance(mk["label"], str) else mk["label"]["en"]
                 if mk.get("bracket"):
                     y = np.nanmin(x[m]) - 0.1 - 0.12 * mk.get("level", 0)
                     ax.plot([mk["t0"], mk["t1"]], [y, y], color=colors[mk["tone"]], lw=2)
-                    ax.text((mk["t0"] + mk["t1"]) / 2, y - 0.06, mk["label"], ha="center", va="top", fontsize=8)
+                    ax.text((mk["t0"] + mk["t1"]) / 2, y - 0.06, lab, ha="center", va="top", fontsize=8)
                 else:
                     ax.axvspan(mk["t0"], mk["t1"], color=colors[mk["tone"]], alpha=0.18)
-                    ax.text((mk["t0"] + mk["t1"]) / 2, np.nanmax(x[m]) + 0.05, mk["label"], ha="center", fontsize=8)
+                    ax.text((mk["t0"] + mk["t1"]) / 2, np.nanmax(x[m]) + 0.05, lab, ha="center", fontsize=8)
             ax.set_xticks(np.arange(win[0], win[1], 0.04), minor=True)
             ax.set_xticks(np.arange(win[0], win[1] + 1e-6, 0.2))
             ax.grid(which="minor", color="#f4c7c3", lw=0.4)
