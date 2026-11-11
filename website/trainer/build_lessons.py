@@ -101,10 +101,14 @@ def qrs_onset(sig, fs, i):
     sample i: the earliest point where the QRS leaves the PR level, taken across the 12 leads
     (the second earliest lead, so one noisy lead cannot pull it early). The PR interval ends
     here and the QT interval starts here: at the first deflection, even a small q wave, never
-    at the bottom of the q. Looks back at most 30 ms and never later than i."""
+    at the bottom of the q. Looks back at most 30 ms and never later than i. A paced beat keeps
+    i: the stimulus is a step in nearly every lead, and the slow drift before it is not QRS."""
     w0, w1 = i - int(0.045 * fs), i - int(0.018 * fs)  # the PR level, just before the QRS
     lo, hi = i - int(0.03 * fs), i + int(0.03 * fs)
     if w0 < 0 or hi > sig.shape[1]:
+        return i
+    steps = np.nanmax(np.abs(np.diff(sig[:, lo:i + int(0.012 * fs)], axis=1)), axis=1)
+    if np.sum(steps > 0.15) >= 6:  # > 0.15 mV from one sample to the next in 6+ leads: a pacing spike
         return i
     ons = []
     for x in sig:
@@ -176,6 +180,7 @@ def beats(sig, fs, pr, qrs, qt):
         while j < len(pseg) - 1 and abs(pseg[j]) > 0.2 * amp:
             j += 1
         p_off = (b0 + j) / fs
+        dq = min(0.0, max(dq, p_off + 0.004 - q_on))  # the QRS cannot start inside the P wave
         # end of P as drawn (the P band, the start of the PR segment band): the same 20 % rule,
         # but against the PR level just before the QRS, which often sits below the level before
         # the P (atrial repolarisation); measured against the level before the P, the end falls
@@ -186,7 +191,7 @@ def beats(sig, fs, pr, qrs, qt):
         j = b0 + pk
         while j < qi - int(0.01 * fs) and abs(ii[j] - prl) > 0.2 * amp2:
             j += 1
-        p_end = max(p_off, j / fs) if np.isfinite(prl) else p_off
+        p_end = min(max(p_off, j / fs) if np.isfinite(prl) else p_off, (qi - int(0.01 * fs)) / fs)
         # start of T: walking back from its peak, where the signal comes within 15 % of the
         # T height of the ST level (taken just after the J point)
         st = np.nanmean(ii[int((q_off + 0.02) * fs):int((q_off + 0.06) * fs)])
@@ -251,6 +256,8 @@ def marks_for(bs, idx, show, window):
     for m in out:
         m["t0"] = round(m["t0"], 3)
         m["t1"] = round(m["t1"], 3)
+        if m["t1"] <= m["t0"]:
+            raise ValueError(f"mark {m['label']} ends before it starts on beat {idx}")
     return out, b, nxt
 
 

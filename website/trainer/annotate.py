@@ -393,12 +393,15 @@ def resolve_one(a, rec, layout, strips, window, where, problems, findings=0):
                     raise ValueError(f"from and to must be named points {sorted(AT)}")
                 b0 = beat()
                 b1 = beat("to_beat") if "to_beat" in a else b0
+                # the height below (above) the trace takes in the whole of both waves, as before
+                reach = (point(rec, lead, b0, a["from"]), point(rec, lead, b1, a["to"]))
                 if {a["from"], a["to"]} <= set(ANCHORED.values()):
                     # an interval (PR, QRS, QT): drawn from the true QRS onset
                     b0, b1 = intervals(b0), intervals(b1)
                 t0, t1 = point(rec, lead, b0, a["from"]), point(rec, lead, b1, a["to"])
             else:
                 t0, t1 = float(a["t0"]), float(a["t1"])
+                reach = (t0, t1)
             if t1 <= t0:
                 raise ValueError("bracket ends before it starts")
             out["t0"], out["t1"] = inside(t0, "start"), inside(t1, "end")
@@ -406,7 +409,8 @@ def resolve_one(a, rec, layout, strips, window, where, problems, findings=0):
             if side not in ("below", "above"):
                 raise ValueError("side must be below or above")
             x = rec.lead(lead)
-            seg = x[int(max(span[0], t0 - 0.06) * rec.fs):int(min(span[1], t1 + 0.06) * rec.fs) + 1]
+            r0, r1 = min(t0, reach[0]), max(t1, reach[1])
+            seg = x[int(max(span[0], r0 - 0.06) * rec.fs):int(min(span[1], r1 + 0.06) * rec.fs) + 1]
             out["side"] = side
             out["v"] = round(float(a["v"]) if isinstance(a.get("v"), (int, float))
                              else float(np.nanmin(seg)) - 0.12 if side == "below" else float(np.nanmax(seg)) + 0.12, 3)
