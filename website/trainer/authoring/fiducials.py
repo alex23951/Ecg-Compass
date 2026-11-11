@@ -85,6 +85,9 @@ def main():
             print(f"          PR {round((b['q_on'] - b['p_on']) * 1000)} ms, QRS {round((b['q_off'] - b['q_on']) * 1000)} ms,"
                   f" QT {round((b['t_end'] - b['q_on']) * 1000)} ms, J-point deviation {(rec.at(lead, b['q_off']) - base) * 10:+.1f} mm,"
                   f" ST at J+60 {(rec.at(lead, annotate.point(rec, lead, b, 'ST')) - base) * 10:+.1f} mm")
+            iv = annotate.intervals(b)
+            print(f"          interval brackets (from the true QRS onset): Pon {iv['p_on']:.3f}, QRSon {iv['q_on']:.3f},"
+                  f" J {iv['q_off']:.3f}, Tend {iv['t_end']:.3f}")
             k += 1
             if k > 30:
                 break

@@ -103,9 +103,11 @@ Step types:
    "sets": [{"label": {"ro": "Undele", "en": "Waves"}, "note": {...}?, "beat": 0, "show": ["P", "QRS", "T"]}]}`
   - `"layout": "standard"` instead of `leads`/`window` shows the full 12-lead.
   - `show` names (PTB-XL cases only, computed automatically on the recording): bands P, QRS, T,
-    ST, TP, PRseg; brackets PR, QRSd, QT, RR. `beat` 0 = the first complete beat in the window.
+    ST, TP, PRseg (labelled "PR segment" / "segment PR"); brackets PR (start of P to start of QRS),
+    QRSd, QT, RR. `beat` 0 = the first complete beat in the window.
   - For MIMIC or monitor cases, give hand marks instead of `show`:
-    `"marks": [{"t0": 1.20, "t1": 1.32, "tone": "qrs", "label": "QRS"}]` with times read off the plot.
+    `"marks": [{"t0": 1.20, "t1": 1.32, "tone": "qrs", "label": "QRS"}]` with times read off the plot
+    (`label` may also be `{"ro": ..., "en": ...}`).
   - `"transform": "la_ra"` (or `ra_ll`, `ra_rl`) shows the same PTB-XL ECG as if two electrodes were
     swapped (computed, labelled as such). Use it on rhythm-01 (ECG 33).
 - `{"type": "task", "case": "rhythm-01", "leads": ["II"], "window": [0, 4], "measure": "rr",

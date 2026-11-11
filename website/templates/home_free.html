@@ -51,30 +51,34 @@
       </div>
       <figure class="start-figure">
         <svg class="start-beat" viewBox="0 0 360 210" role="img" aria-label="{{ fh.basics_figure_alt }}">
+          {# Drawn to scale on its own grid: 1 small square (12 units) = 40 ms and 0.1 mV.
+             P 100 ms; PR 160 ms, from the start of P (x 48) to the start of the QRS (x 96, where
+             the trace leaves the baseline into the q wave); QRS 90 ms (J at x 123); QT 400 ms,
+             from the start of the QRS to the end of T (x 216). #}
           <defs>
-            <pattern id="mm" width="8" height="8" patternUnits="userSpaceOnUse"><path d="M8 0H0V8" class="g-minor"/></pattern>
-            <pattern id="big" width="40" height="40" patternUnits="userSpaceOnUse"><rect width="40" height="40" fill="url(#mm)"/><path d="M40 0H0V40" class="g-major"/></pattern>
+            <pattern id="mm" width="12" height="12" patternUnits="userSpaceOnUse"><path d="M12 0H0V12" class="g-minor"/></pattern>
+            <pattern id="big" width="60" height="60" patternUnits="userSpaceOnUse"><rect width="60" height="60" fill="url(#mm)"/><path d="M60 0H0V60" class="g-major"/></pattern>
             <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" class="a-fill"/></marker>
           </defs>
           <rect width="360" height="210" rx="12" class="g-paper"/>
           <rect width="360" height="210" rx="12" fill="url(#big)"/>
-          <path class="beat" d="M8 120H40C50 120 52 103 60 103S70 120 80 120H100L104 127 110 34 117 146 123 120H158C172 120 181 88 195 88S214 120 232 120H352"/>
+          <path class="beat" d="M8 120H48C54 120 56 105 63 105S72 120 78 120H96L99 128 106 30 114 148 123 120H140C152 120 166 84 182 84S205 120 216 120H352"/>
           <g class="ann">
-            <path d="M36 70L55 98" marker-end="url(#ah)"/>
-            <path d="M152 32L116 36" marker-end="url(#ah)"/>
-            <path d="M236 60L203 84" marker-end="url(#ah)"/>
+            <path d="M40 72L57 99" marker-end="url(#ah)"/>
+            <path d="M150 33L113 35" marker-end="url(#ah)"/>
+            <path d="M232 64L194 82" marker-end="url(#ah)"/>
             <circle cx="123" cy="120" r="6"/>
-            <path d="M123 120L141 98"/>
-            <path d="M40 156V162H104V156"/>
-            <path d="M104 178V184H232V178"/>
+            <path d="M123 120L138 139"/>
+            <path d="M48 156V162H96V156"/>
+            <path d="M96 178V184H216V178"/>
           </g>
           <g class="lbl">
-            <rect x="16" y="54" width="28" height="22" rx="11"/><text x="30" y="65">P</text>
-            <rect x="152" y="21" width="44" height="22" rx="11"/><text x="174" y="32">QRS</text>
-            <rect x="234" y="44" width="28" height="22" rx="11"/><text x="248" y="55">T</text>
-            <rect x="138" y="80" width="26" height="22" rx="11"/><text x="151" y="91">J</text>
+            <rect x="20" y="50" width="28" height="22" rx="11"/><text x="34" y="61">P</text>
+            <rect x="150" y="21" width="44" height="22" rx="11"/><text x="172" y="32">QRS</text>
+            <rect x="228" y="46" width="28" height="22" rx="11"/><text x="242" y="57">T</text>
+            <rect x="134" y="136" width="26" height="22" rx="11"/><text x="147" y="147">J</text>
             <rect x="57" y="164" width="30" height="20" rx="10"/><text x="72" y="174">PR</text>
-            <rect x="153" y="186" width="30" height="20" rx="10"/><text x="168" y="196">QT</text>
+            <rect x="141" y="186" width="30" height="20" rx="10"/><text x="156" y="196">QT</text>
           </g>
         </svg>
       </figure>

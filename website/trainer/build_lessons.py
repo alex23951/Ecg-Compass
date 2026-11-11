@@ -96,6 +96,40 @@ def glasgow():
         return {int(float(r["ecg_id"])): r for r in csv.DictReader(f)}
 
 
+def qrs_onset(sig, fs, i):
+    """The QRS onset (sample) of a complex whose spatial velocity first passes 12 % of its peak at
+    sample i: the earliest point where the QRS leaves the PR level, taken across the 12 leads
+    (the second earliest lead, so one noisy lead cannot pull it early). The PR interval ends
+    here and the QT interval starts here: at the first deflection, even a small q wave, never
+    at the bottom of the q. Looks back at most 30 ms and never later than i. A paced beat keeps
+    i: the stimulus is a step in nearly every lead, and the slow drift before it is not QRS."""
+    w0, w1 = i - int(0.045 * fs), i - int(0.018 * fs)  # the PR level, just before the QRS
+    lo, hi = i - int(0.03 * fs), i + int(0.03 * fs)
+    if w0 < 0 or hi > sig.shape[1]:
+        return i
+    steps = np.nanmax(np.abs(np.diff(sig[:, lo:i + int(0.012 * fs)], axis=1)), axis=1)
+    if np.sum(steps > 0.15) >= 6:  # > 0.15 mV from one sample to the next in 6+ leads: a pacing spike
+        return i
+    ons = []
+    for x in sig:
+        seg = x[w0:w1]
+        if not np.all(np.isfinite(seg)) or not np.all(np.isfinite(x[lo:hi])):
+            continue
+        base = np.median(seg)
+        noise = 1.4826 * np.median(np.abs(seg - base))
+        big = np.where(np.abs(x[lo:hi] - base) > max(0.04, 6 * noise))[0]
+        if not big.size:
+            continue
+        # from the first clear departure (> 40 uV), back to where the lead was still at the PR level
+        j = lo + int(big[0])
+        while j > lo and abs(x[j] - base) > max(0.012, 2.5 * noise):
+            j -= 1
+        ons.append(j)
+    if len(ons) < 2:
+        return i
+    return min(sorted(ons)[1], i)
+
+
 def beats(sig, fs, pr, qrs, qt):
     """Fiducial points (seconds) of every complete beat."""
     ii = sig[1]
@@ -124,6 +158,9 @@ def beats(sig, fs, pr, qrs, qt):
         while on > lo and vel[on] > level:
             on -= 1
         q_on = on / fs
+        # the onset found above sits where the QRS is already well under way (often the bottom of a
+        # small q); dq (<= 0) moves the interval marks to where the QRS really starts
+        dq = (qrs_onset(sig, fs, on) - on) / fs
         q_off = q_on + qrs / 1000
         p_on = q_on - pr / 1000
         t_end = q_on + qt / 1000
@@ -143,6 +180,18 @@ def beats(sig, fs, pr, qrs, qt):
         while j < len(pseg) - 1 and abs(pseg[j]) > 0.2 * amp:
             j += 1
         p_off = (b0 + j) / fs
+        dq = min(0.0, max(dq, p_off + 0.004 - q_on))  # the QRS cannot start inside the P wave
+        # end of P as drawn (the P band, the start of the PR segment band): the same 20 % rule,
+        # but against the PR level just before the QRS, which often sits below the level before
+        # the P (atrial repolarisation); measured against the level before the P, the end falls
+        # on the P downstroke. p_off itself stays as it is: the ST baseline is measured from it.
+        qi = int(round((q_on + dq) * fs))
+        prl = np.nanmedian(ii[qi - int(0.02 * fs):qi - int(0.004 * fs) + 1])
+        amp2 = abs(ii[b0 + pk] - prl)
+        j = b0 + pk
+        while j < qi - int(0.01 * fs) and abs(ii[j] - prl) > 0.2 * amp2:
+            j += 1
+        p_end = min(max(p_off, j / fs) if np.isfinite(prl) else p_off, (qi - int(0.01 * fs)) / fs)
         # start of T: walking back from its peak, where the signal comes within 15 % of the
         # T height of the ST level (taken just after the J point)
         st = np.nanmean(ii[int((q_off + 0.02) * fs):int((q_off + 0.06) * fs)])
@@ -155,7 +204,7 @@ def beats(sig, fs, pr, qrs, qt):
             j -= 1
         t_on = max(q_off + 0.04, (s0 + j) / fs)
         out.append({"p_on": p_on, "p_off": p_off, "q_on": q_on, "r": r, "q_off": q_off,
-                    "t_on": t_on, "t_peak": (s0 + tp) / fs, "t_end": t_end})
+                    "t_on": t_on, "t_peak": (s0 + tp) / fs, "t_end": t_end, "dq": dq, "p_end": p_end})
     return out
 
 
@@ -166,6 +215,7 @@ def marks_for(bs, idx, show, window):
         raise ValueError(f"beat {idx} not in window {window} ({len(inside)} complete beats)")
     b = inside[idx]
     nxt = next((x for x in bs if x["q_on"] > b["q_on"] + 0.2), None)
+    b, nxt = annotate.intervals(b), nxt and annotate.intervals(nxt)
     out = []
     level = 0
     for name in show:
@@ -178,7 +228,10 @@ def marks_for(bs, idx, show, window):
         elif name == "ST":
             out.append({"t0": b["q_off"], "t1": b["t_on"], "tone": "seg", "label": "ST"})
         elif name == "PRseg":
-            out.append({"t0": b["p_off"], "t1": b["q_on"], "tone": "seg", "label": "PR"})
+            # the PR segment (end of P to start of QRS), named in full so it is never read as the
+            # PR interval, which starts at the beginning of the P wave
+            out.append({"t0": b["p_off"], "t1": b["q_on"], "tone": "seg",
+                        "label": {"ro": "segment PR", "en": "PR segment"}})
         elif name == "TP":
             if not nxt:
                 raise ValueError("TP needs a next beat")
@@ -203,6 +256,8 @@ def marks_for(bs, idx, show, window):
     for m in out:
         m["t0"] = round(m["t0"], 3)
         m["t1"] = round(m["t1"], 3)
+        if m["t1"] <= m["t0"]:
+            raise ValueError(f"mark {m['label']} ends before it starts on beat {idx}")
     return out, b, nxt
 
 
@@ -353,9 +408,12 @@ def main():
             return marks
         marks = s.get("marks", [])
         for m in marks:
-            if m.get("tone") not in TONES or not isinstance(m.get("label"), str) \
+            lab = m.get("label")
+            if m.get("tone") not in TONES \
+                    or not (isinstance(lab, str) or (isinstance(lab, dict) and all(lab.get(l) for l in LANGS))) \
                     or not (win[0] <= m.get("t0", -1) < m.get("t1", -1) <= win[1]):
-                problems.append(f"{where}: hand mark {m} needs t0 < t1 inside the window, a tone and a label")
+                problems.append(f"{where}: hand mark {m} needs t0 < t1 inside the window, a tone and a label "
+                                "(a string, or ro and en)")
         return marks
 
     ids = set()
@@ -535,13 +593,14 @@ def plot(folder, plots, cache):
             x = sig[info.get("leads", ptbxl.LEADS).index(lead)]
             ax.plot(t[m], x[m], "k", lw=1)
             for mk in marks:
+                lab = mk["label"] if isinstance(mk["label"], str) else mk["label"]["en"]
                 if mk.get("bracket"):
                     y = np.nanmin(x[m]) - 0.1 - 0.12 * mk.get("level", 0)
                     ax.plot([mk["t0"], mk["t1"]], [y, y], color=colors[mk["tone"]], lw=2)
-                    ax.text((mk["t0"] + mk["t1"]) / 2, y - 0.06, mk["label"], ha="center", va="top", fontsize=8)
+                    ax.text((mk["t0"] + mk["t1"]) / 2, y - 0.06, lab, ha="center", va="top", fontsize=8)
                 else:
                     ax.axvspan(mk["t0"], mk["t1"], color=colors[mk["tone"]], alpha=0.18)
-                    ax.text((mk["t0"] + mk["t1"]) / 2, np.nanmax(x[m]) + 0.05, mk["label"], ha="center", fontsize=8)
+                    ax.text((mk["t0"] + mk["t1"]) / 2, np.nanmax(x[m]) + 0.05, lab, ha="center", fontsize=8)
             ax.set_xticks(np.arange(win[0], win[1], 0.04), minor=True)
             ax.set_xticks(np.arange(win[0], win[1] + 1e-6, 0.2))
             ax.grid(which="minor", color="#f4c7c3", lw=0.4)

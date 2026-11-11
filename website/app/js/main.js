@@ -456,6 +456,8 @@ function makeViewer(c, { look = [], revealed = false, calipers = "off", span = 0
   const st = { zoom: narrow ? 2 : 1, gain: c.gain || 10, cal: calipers, hl: revealed && look.length > 0, revealed,
     anns: annotations, ann: annOn && annotations.length > 0, focus: null, hlNow: null };
   const shownMarks = () => (st.ann ? localMarks(st.anns, numbered) : []);
+  // shaded bands (P, QRS, PR segment...) may carry a label per language
+  const bands = (list) => (list || []).map((m) => ({ ...m, label: tx(m.label) }));
   let view = null;
   const listeners = [];
 
@@ -561,7 +563,7 @@ function makeViewer(c, { look = [], revealed = false, calipers = "off", span = 0
       view = new EcgView(host, ecg, {
         layout: strip ? "strip" : "standard", leads: strip?.leads, window: strip?.window, rowH: strip?.rowH,
         strips: c.strips || ["II"], zoom: st.zoom, gain: st.gain, labels: LEAD_LABELS[lang], maxPxmm: strip && !strip.full ? 8 : null,
-        highlight: st.hlNow ?? (st.hl ? look : []), marks, annotations: shownMarks(),
+        highlight: st.hlNow ?? (st.hl ? look : []), marks: bands(marks), annotations: shownMarks(),
       });
       if (st.focus != null && st.ann) view.setAnnotations(shownMarks(), st.focus);
       view.overlay.setAttribute("aria-label", t("tool_calipers"));
@@ -596,7 +598,7 @@ function makeViewer(c, { look = [], revealed = false, calipers = "off", span = 0
     },
     reading: () => view?.reading() || null,
     onReading: (fn) => listeners.push(fn),
-    setMarks: (m) => view?.setMarks(m),
+    setMarks: (m) => view?.setMarks(bands(m)),
     setHighlight(leads) {
       st.hlNow = leads || [];
       view?.setHighlight(st.hlNow);

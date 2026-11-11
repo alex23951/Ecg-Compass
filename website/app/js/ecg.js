@@ -379,7 +379,16 @@ export class EcgView {
           while (ends[k] != null && ends[k] > mid - half - fs * 0.4) k++;
           ends[k] = mid + half;
           ctx.textBaseline = "top";
-          ctx.fillText(m.label, mid, s.y - s.h / 2 + 1.6 + fs * (1.25 + k * 1.1));
+          const y = s.y - s.h / 2 + 1.6 + fs * (1.25 + k * 1.1);
+          // a halo in the paper colour keeps a longer label ("PR segment") readable where a
+          // tall R wave runs through it
+          ctx.save();
+          ctx.strokeStyle = c.bg;
+          ctx.lineWidth = fs * 0.3;
+          ctx.lineJoin = "round";
+          ctx.strokeText(m.label, mid, y);
+          ctx.restore();
+          ctx.fillText(m.label, mid, y);
         }
       }
     }

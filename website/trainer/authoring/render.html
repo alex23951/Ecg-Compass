@@ -41,7 +41,7 @@ window.drawFigure = async (spec) => {
   const view = new EcgView(host, ecg, {
     layout: spec.layout, leads: spec.leads, window: spec.window, strips: spec.strips || ["II"],
     rowH: spec.rowH, gain: spec.gain || 10, labels: LEAD_LABELS[spec.lang], maxPxmm: spec.layout === "strip" ? 8 : null,
-    marks: spec.marks || [], highlight: spec.highlight || [], annotations: anns,
+    marks: (spec.marks || []).map((m) => ({ ...m, label: tx(m.label, spec.lang) })), highlight: spec.highlight || [], annotations: anns,
   });
   view.draw();
   await document.fonts.ready;

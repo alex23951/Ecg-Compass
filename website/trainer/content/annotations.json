@@ -12,7 +12,7 @@
   {"kind": "bracket", "lead": "II", "rhythm": true, "from": "R", "to": "R", "beat": 0, "to_beat": 1, "side": "above", "ms": true, "finding": 0, "label": "RR"},
   {"kind": "bracket", "lead": "II", "rhythm": true, "from": "QRSon", "to": "J", "beat": 2, "ms": true, "finding": 2, "label": "QRS"},
   {"kind": "arrow", "lead": "II", "rhythm": true, "at": "P", "beat": 5, "dir": "nw", "finding": 1, "label": {"ro": "Undă P", "en": "P wave"}},
-  {"kind": "bracket", "lead": "II", "rhythm": true, "from": "Pon", "to": "QRSon", "beat": 6, "ms": true, "finding": 1, "label": "PR"}
+  {"kind": "bracket", "lead": "II", "rhythm": true, "from": "Pon", "to": "QRSon", "beat": 5, "ms": true, "finding": 1, "label": "PR"}
  ],
  "rhythm-03": [
   {"kind": "bracket", "lead": "II", "rhythm": true, "from": "R", "to": "R", "beat": 8, "to_beat": 9, "side": "above", "finding": 0, "label": {"ro": "FC ~134/min", "en": "Rate ~134/min"}},
@@ -222,7 +222,7 @@
  ],
  "patt-03": [
   {"kind": "bracket", "lead": "II", "rhythm": true, "t0": 3.586, "t1": 3.748, "ms": true, "finding": 1, "label": {"ro": "QRS larg", "en": "Wide QRS"}},
-  {"kind": "bracket", "lead": "II", "rhythm": true, "t0": 6.874, "t1": 6.998, "ms": true, "finding": 0, "label": {"ro": "PR scurt", "en": "Short PR"}},
+  {"kind": "bracket", "lead": "II", "rhythm": true, "t0": 6.874, "t1": 6.998, "ms": true, "finding": 0, "label": "PR"},
   {"kind": "arrow", "lead": "II", "rhythm": true, "t": 7.04, "dir": "nw", "finding": 0, "label": {"ro": "Undă delta", "en": "Delta wave"}},
   {"kind": "arrow", "lead": "V1", "at": "R", "beat": 0, "finding": 2, "label": {"ro": "R dominant", "en": "Dominant R"}},
   {"kind": "arrow", "lead": "V1", "t": 7.044, "dir": "s", "len": 1.5, "finding": 2, "label": {"ro": "Delta pozitivă", "en": "Positive delta"}}
