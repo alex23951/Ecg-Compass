@@ -44,7 +44,9 @@ Where (any kind that needs a time):
     v         a voltage in mV; by default the trace's own value at t
 
     bracket   from + to (named points, "to_beat" for another beat, e.g. R to R of beat 1) or
-              t0 + t1; side below (default) | above; "ms": true appends the duration
+              t0 + t1; side below (default) | above; "ms": true appends the duration.
+              Interval brackets between Pon, QRSon, J and Tend (PR, QRS, QT) are drawn from the
+              true QRS onset (the first deflection, even a small q): see intervals()
     rise      at/t; from the beat's baseline (PR segment) unless "v0"; "mm": true appends the
               height in mm
     baseline  beat (PR segment level, across that beat) or t0 + t1 + v
@@ -190,6 +192,21 @@ def baseline(rec, lead, b):
     if i1 - i0 < int(0.02 * rec.fs):
         i0, i1 = int((b["p_on"] - 0.04) * rec.fs), int(b["p_on"] * rec.fs)
     return float(np.nanmedian(x[max(0, i0):i1 + 1]))
+
+
+# Points of a beat that come from the reference intervals: P onset = QRS onset - PR, J = QRS
+# onset + QRS duration, T end = QRS onset + QT.
+ANCHORED = {"p_on": "Pon", "q_on": "QRSon", "q_off": "J", "t_end": "Tend"}
+
+
+def intervals(b):
+    """Beat b with its interval points counted from the true QRS onset (b["dq"], the first
+    deflection of the QRS, even a small q wave), so a PR bracket ends where the QRS starts and a
+    QRS or QT bracket starts there, with the durations unchanged. Used for interval brackets,
+    bands and boxes. Points read off the signal (P end, R, T start and peak) stay as they are,
+    and so do single points (arrows, dots, ST heights), which keep the earlier anchor. The P
+    wave ends at p_end, read against the PR level (see build_lessons.beats)."""
+    return {**b, **{k: b[k] + b.get("dq", 0.0) for k in ANCHORED}, "p_off": b.get("p_end", b["p_off"])}
 
 
 def point(rec, lead, b, name):
@@ -376,6 +393,9 @@ def resolve_one(a, rec, layout, strips, window, where, problems, findings=0):
                     raise ValueError(f"from and to must be named points {sorted(AT)}")
                 b0 = beat()
                 b1 = beat("to_beat") if "to_beat" in a else b0
+                if {a["from"], a["to"]} <= set(ANCHORED.values()):
+                    # an interval (PR, QRS, QT): drawn from the true QRS onset
+                    b0, b1 = intervals(b0), intervals(b1)
                 t0, t1 = point(rec, lead, b0, a["from"]), point(rec, lead, b1, a["to"])
             else:
                 t0, t1 = float(a["t0"]), float(a["t1"])
@@ -426,7 +446,7 @@ def resolve_one(a, rec, layout, strips, window, where, problems, findings=0):
             if around is not None:
                 if around not in AROUND:
                     raise ValueError(f"around must be one of {sorted(AROUND)}")
-                b = beat()
+                b = intervals(beat())
                 t0, t1 = {
                     "P": (b["p_on"], b["p_off"]), "QRS": (b["q_on"], b["q_off"]), "T": (b["t_on"], b["t_end"]),
                     "PR": (b["p_on"], b["q_on"]), "ST": (b["q_off"], b["t_on"]), "beat": (b["p_on"], b["t_end"]),

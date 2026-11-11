@@ -399,8 +399,8 @@
       ]
     },
     "plain": {
-      "ro": "Interval lung și fix între unda P și complexul QRS",
-      "en": "Long, fixed gap from each P wave to the QRS"
+      "ro": "Interval lung și fix de la începutul undei P până la complexul QRS",
+      "en": "Long, fixed time from the start of each P wave to the QRS"
     },
     "action": {
       "ro": "Toate undele P ajung la ventriculi, dar cu întârziere: intervalul PR depășește 200 ms. Izolat, este de obicei benign și nu necesită măsuri urgente. Se verifică pulsul, tensiunea arterială, simptomele și medicamentele care încetinesc ritmul cardiac. Dacă pacientul este stabil, se consemnează și se semnalează la vizită sau la predare; medicul se anunță imediat dacă apar unde P blocate.",

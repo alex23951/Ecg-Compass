@@ -222,7 +222,7 @@
  ],
  "patt-03": [
   {"kind": "bracket", "lead": "II", "rhythm": true, "t0": 3.586, "t1": 3.748, "ms": true, "finding": 1, "label": {"ro": "QRS larg", "en": "Wide QRS"}},
-  {"kind": "bracket", "lead": "II", "rhythm": true, "t0": 6.874, "t1": 6.998, "ms": true, "finding": 0, "label": {"ro": "PR scurt", "en": "Short PR"}},
+  {"kind": "bracket", "lead": "II", "rhythm": true, "t0": 6.874, "t1": 6.998, "ms": true, "finding": 0, "label": "PR"},
   {"kind": "arrow", "lead": "II", "rhythm": true, "t": 7.04, "dir": "nw", "finding": 0, "label": {"ro": "Undă delta", "en": "Delta wave"}},
   {"kind": "arrow", "lead": "V1", "at": "R", "beat": 0, "finding": 2, "label": {"ro": "R dominant", "en": "Dominant R"}},
   {"kind": "arrow", "lead": "V1", "t": 7.044, "dir": "s", "len": 1.5, "finding": 2, "label": {"ro": "Delta pozitivă", "en": "Positive delta"}}
