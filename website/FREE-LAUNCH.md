@@ -85,8 +85,8 @@ Alex chose **option A** (no sign-up at launch). Built:
   wired yet; add them when B or C happens).
 - Free home page `templates/home_free.html` (text in `content/free.ro.json` / `free.en.json`),
   digest pages `/ecg-saptamanii/` and `/en/ecg-of-the-week/` (`templates/digest_*.html`, read only
-  from `../ecg-digest/issues/`; the live build lists only issues with every paper
-  `checked_by_alex`, the preview lists all), free privacy and terms
+  from `../ecg-digest/issues/`; the live build lists only issues Alex has fully checked, the
+  preview lists all; see README "Weekly digest"), free privacy and terms
   (`content/pages/privacy_free.*.html`, `terms_free.*.html`, drafts for a lawyer's look).
 - Trainer goes live with approved content only: `trainer/content/approved.json` is a snapshot of
   the review database (28 cases, 44 diagnoses, taken 2026-11-03). The build drops unapproved

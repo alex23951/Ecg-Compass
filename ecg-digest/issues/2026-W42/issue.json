@@ -41,7 +41,7 @@
         "Fibrilație atrială cu alură ventriculară rapidă",
         "Tahicardie prin reintrare în nodul atrioventricular (TRNAV)"
       ],
-      "zoom_hint": "Atingeți ECG-ul pentru a-l deschide la dimensiune completă. Răspunsul este la finalul emailului.",
+      "zoom_hint": "Atinge ECG-ul ca să-l deschizi la dimensiune completă. Răspunsul este la finalul emailului.",
       "answer_index": 1,
       "answer_points": [
         "Tahicardie regulată cu QRS îngust, aproximativ 128/min: intervalul RR rămâne la circa 470 ms pe tot traseul.",
@@ -50,8 +50,8 @@
         "Derivația I este aproape plată între complexele QRS: nici acolo nu se vede o undă P clară."
       ],
       "deeper": "Frecvența flutterului este aici de circa 260/min, mai mică decât cei 300/min din manual. Conform raportului original, pacientul primea verapamil–chinidină și digoxină. Medicamentele care încetinesc circuitul de flutter (clasa IA și IC, de exemplu chinidina sau flecainida) pot permite nodului atrioventricular să conducă 1:1, cu o tahicardie brusc foarte rapidă, uneori cu QRS larg. De aceea, în flutter ele se asociază cu un medicament care blochează nodul atrioventricular.",
-      "why_it_matters": "O tahicardie regulată cu QRS îngust, care stă în jur de 150/min (sau puțin mai lent sub tratament) și nu variază, este flutter cu bloc 2:1 până la proba contrarie. Manevrele vagale sau adenozina pot crește pentru scurt timp gradul de bloc și pot demasca undele de flutter; ajută la diagnostic, dar nu opresc flutterul. Prevenția AVC-ului urmează aceleași reguli ca în FA, iar flutterul tipic se vindecă prin ablația istmului cavo-tricuspidian la majoritatea pacienților.",
-      "pearl": "Regulată, în jur de 150/min și nu se schimbă niciodată? Căutați a doua undă de flutter, ascunsă în QRS sau în unda T."
+      "why_it_matters": "O tahicardie regulată cu QRS îngust, care stă în jur de 150/min (sau puțin mai lent sub tratament) și nu variază, gândește-te întâi la flutter cu bloc 2:1. Manevrele vagale sau adenozina pot crește pentru scurt timp gradul de bloc și pot demasca undele de flutter; ajută la diagnostic, dar nu opresc flutterul. Prevenția AVC-ului urmează aceleași reguli ca în FA, iar flutterul tipic se vindecă prin ablația istmului cavo-tricuspidian la majoritatea pacienților.",
+      "pearl": "Regulată, în jur de 150/min și nu se schimbă niciodată? Caută a doua undă de flutter, ascunsă în QRS sau în unda T."
     }
   },
   "papers_intro": {
@@ -110,7 +110,7 @@
       "ro": {
         "headline": "După ablația cu câmp pulsat, o recidivă precoce de FA nu este doar „perioadă de blanking”",
         "summary": "Într-un registru dintr-un singur centru, cu 1.608 pacienți urmăriți un an după ablația FA cu câmp pulsat, 21% au avut FA sau flutter de cel puțin 30 de secunde în primele 90 de zile. Dintre aceștia, 68% au avut o recidivă tardivă, față de 20% dintre cei fără episod precoce (hazard ratio ajustat 4,9). Nu a contat dacă episodul precoce a apărut în prima sau în a treia lună, nici dacă a necesitat cardioversie.",
-        "practice": "Perioada de blanking de 3 luni provine din ablația termică. După ablația cu câmp pulsat, o recidivă precoce este un semnal de alarmă: monitorizați mai atent și planificați din timp controlul. Datele sunt observaționale, dintr-un singur centru."
+        "practice": "Perioada de blanking de 3 luni provine din ablația termică. După ablația cu câmp pulsat, o recidivă precoce este un semnal de alarmă: monitorizează mai atent și planifică din timp controlul. Datele sunt observaționale, dintr-un singur centru."
       }
     }
   ],
@@ -126,14 +126,14 @@
       "action": "Record a 12-lead ECG when the rhythm changes, and call the doctor at once for hypotension, a rate under 50 or a widening QRS."
     },
     "ro": {
-      "title": "Medicament i.v. pentru conversia FA: ce urmăriți la patul pacientului",
+      "title": "Medicament i.v. pentru conversia FA: ce urmărești la patul pacientului",
       "points": [
-        "Țineți pacientul pe monitor pe toată durata perfuziei, cu padelele de defibrilator la îndemână.",
-        "Măsurați tensiunea arterială des (de exemplu la 15 minute sau conform protocolului secției).",
-        "Urmăriți alura lentă, pauzele sau un QRS care se lărgește vizibil; la flecainidă, și apariția unui flutter cu alură brusc foarte rapidă.",
-        "Amiodarona irită venele mici: folosiți o venă mare, verificați des locul branulei și semnalați roșeața sau durerea."
+        "Ține pacientul pe monitor pe toată durata perfuziei, cu padelele de defibrilator la îndemână.",
+        "Măsoară tensiunea arterială des (de exemplu la 15 minute sau conform protocolului secției).",
+        "Urmărește alura lentă, pauzele sau un QRS care se lărgește vizibil; la flecainidă, și apariția unui flutter cu alură brusc foarte rapidă.",
+        "Amiodarona irită venele mici: folosește o venă mare, verifică des locul branulei și semnalează roșeața sau durerea."
       ],
-      "action": "Înregistrați un ECG cu 12 derivații când se schimbă ritmul și anunțați imediat medicul la hipotensiune, alură sub 50/min sau QRS care se lărgește."
+      "action": "Înregistrează un ECG cu 12 derivații când se schimbă ritmul și anunță imediat medicul la hipotensiune, alură sub 50/min sau QRS care se lărgește."
     }
   }
 }

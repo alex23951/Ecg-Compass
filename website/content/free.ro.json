@@ -143,9 +143,8 @@
     "eyebrow": "ECG-ul săptămânii",
     "heading": "Un ECG pe săptămână, plus ce s-a publicat important",
     "intro": "În fiecare număr: un ECG real de citit, trei studii noi rezumate în două minute și un sfat practic pentru asistenți medicali și paramedici.",
-    "empty": "Primul număr apare în curând.",
+    "empty": "Pregătim primul număr. Până atunci, exersează pe ECG-uri reale în aplicație, gratuit și fără cont.",
     "issue_title": "Nr. {n}",
-    "open": "Deschide",
     "back": "Toate numerele",
     "ecg_heading": "ECG-ul",
     "papers_heading": "Trei studii pe scurt",
@@ -154,7 +153,42 @@
     "tip_heading": "Pentru asistenți medicali și paramedici",
     "sample_tag": "număr de probă",
     "sample_note": "Număr de probă, neverificat încă de medic. Apare doar în previzualizare.",
-    "ai_note": "Rezumatele de studii sunt redactate cu ajutorul AI și verificate de medic, cu link spre sursă."
+    "ai_note": "Rezumatele de studii sunt redactate cu ajutorul AI și verificate de medic, cu link spre sursă.",
+    "empty_title": "Primul număr apare în curând",
+    "empty_cta": "Începe să exersezi",
+    "what_heading": "Ce găsești în fiecare număr",
+    "what": [
+      {
+        "icon": "rhythm",
+        "title": "Un ECG real de citit",
+        "text": "Un traseu cu 12 derivații și o întrebare cu variante de răspuns. Alegi, apoi citești explicația: ce se observă, de ce contează și ce merită reținut."
+      },
+      {
+        "icon": "explained",
+        "title": "Trei studii noi, pe scurt",
+        "text": "Studii apărute în ultima săptămână, rezumate în două minute de citit, cu ce înseamnă pentru practică și link spre articol."
+      },
+      {
+        "icon": "shield",
+        "title": "Un sfat practic",
+        "text": "Pentru asistenți medicali și paramedici: ce urmărești la patul pacientului și când anunți medicul."
+      }
+    ],
+    "latest": "Cel mai recent număr",
+    "archive": "Numere anterioare",
+    "samples_group": "Numere de probă",
+    "read_issue": "Deschide numărul",
+    "in_issue": "În acest număr",
+    "in_ecg": "Un ECG de citit, cu răspunsul explicat",
+    "week_of": "Săptămâna {range}",
+    "jump_papers": "Studiile",
+    "jump_tip": "Sfatul practic",
+    "open_pubmed": "Deschide în PubMed",
+    "older": "Numărul anterior",
+    "newer": "Numărul următor",
+    "pager_label": "Alte numere",
+    "feed_link": "Flux RSS",
+    "feed_note": "Urmărește numerele noi într-un cititor RSS, fără cont și fără email."
   },
   "footer": {
     "free_line": "Proiect educațional gratuit, realizat de un medic cardiolog cu pregătire în electrofiziologie.",

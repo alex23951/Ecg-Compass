@@ -3,6 +3,10 @@
 {% set d = s.free.digest %}
 {% block title %}{{ f(s.free.meta.digest_title) }}{% endblock %}
 {% block description %}{{ s.free.meta.digest_description }}{% endblock %}
+{% block head_extra %}
+<link rel="alternate" type="application/atom+xml" title="{{ f(s.free.meta.digest_title) }}" href="{{ url(feed) }}">
+{% if latest and latest.og_image %}<meta property="og:image" content="{{ latest.og_image }}">{% endif %}
+{% endblock %}
 {% block main %}
 <section class="page-head">
   <div class="wrap narrow">
@@ -11,22 +15,82 @@
     <p class="lead">{{ d.intro }}</p>
   </div>
 </section>
-<section class="section prose-section">
+
+{% if latest %}
+<section class="section digest-latest-section" aria-labelledby="latest-title">
+  <div class="wrap">
+    <h2 id="latest-title" class="digest-kicker">{{ d.latest }}</h2>
+    <article class="digest-latest">
+      <a class="digest-latest-ecg" href="{{ url(latest.slug) }}" tabindex="-1" aria-hidden="true">
+        <img src="{{ url(latest.images.image) }}" alt="" width="1200" height="600" loading="lazy">
+      </a>
+      <div class="digest-latest-body">
+        <p class="get-who">{{ f(d.issue_title, n=latest.number) }}{% if latest.dates %} · {{ latest.dates }}{% endif %}{% if latest.sample %} <span class="tag">{{ d.sample_tag }}</span>{% endif %}</p>
+        <h3><a href="{{ url(latest.slug) }}">{{ latest.title }}</a></h3>
+        <p class="digest-teaser">{{ latest.q.prompt }}</p>
+        <p class="digest-in-label">{{ d.in_issue }}</p>
+        <ul class="digest-in">
+          <li>{{ icon("rhythm") }}<span>{{ d.in_ecg }}</span></li>
+          {% for p in latest.papers %}
+          <li>{{ icon("explained") }}<span>{{ p.headline }}</span></li>
+          {% endfor %}
+          {% if latest.tip %}<li>{{ icon("shield") }}<span>{{ latest.tip.title }}</span></li>{% endif %}
+        </ul>
+        <a class="button" href="{{ url(latest.slug) }}">{{ d.read_issue }}{{ icon("arrow") }}</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+{% if groups %}
+<section class="section section-alt" aria-labelledby="archive-title">
   <div class="wrap narrow">
-    {% if issues %}
+    <h2 id="archive-title">{{ d.archive }}</h2>
+    {% for g in groups %}
+    <h3 class="digest-month">{{ g.label }}</h3>
     <ul class="issue-list">
-      {% for i in issues %}
+      {% for i in g.issues %}
       <li>
         <a href="{{ url(i.slug) }}">
-          <span class="get-who">{{ f(d.issue_title, n=i.number) }}{% if i.week %} · {{ i.week }}{% endif %}{% if i.sample %} · {{ d.sample_tag }}{% endif %}</span>
-          <strong>{{ i.subject }}</strong>{{ icon("arrow", "icon issue-go") }}
+          <span class="get-who">{{ f(d.issue_title, n=i.number) }}{% if i.dates %} · {{ i.dates }}{% endif %}{% if i.sample %} · {{ d.sample_tag }}{% endif %}</span>
+          <strong>{{ i.title }}</strong>{{ icon("arrow", "icon issue-go") }}
         </a>
       </li>
       {% endfor %}
     </ul>
-    {% else %}
-    <p>{{ d.empty }}</p>
-    {% endif %}
+    {% endfor %}
+  </div>
+</section>
+{% endif %}
+
+{% else %}
+<section class="section digest-soon" aria-labelledby="soon-title">
+  <div class="wrap">
+    <div class="digest-empty">
+      <h2 id="soon-title">{{ d.empty_title }}</h2>
+      <p>{{ d.empty }}</p>
+      <div class="cta-row digest-empty-cta">
+        <a class="button button-lg" href="{{ app_url() }}">{{ d.empty_cta }}</a>
+        <a class="button button-quiet button-lg" href="{{ link('az') }}">{{ s.free.nav.az }}</a>
+      </div>
+    </div>
+    <h2 class="digest-what-heading">{{ d.what_heading }}</h2>
+    <ul class="get-grid digest-what">
+      {% for w in d.what %}
+      <li>
+        <span class="module-icon">{{ icon(w.icon) }}</span>
+        <h3>{{ w.title }}</h3>
+        <p>{{ w.text }}</p>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+{% endif %}
+
+<section class="section digest-follow">
+  <div class="wrap narrow">
+    <p class="muted"><a href="{{ url(feed) }}">{{ d.feed_link }}</a> · {{ d.feed_note }}</p>
   </div>
 </section>
 {% endblock %}

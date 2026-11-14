@@ -15,12 +15,17 @@ import json
 import posixpath
 import re
 import shutil
+import sys
 from pathlib import Path
+from xml.sax.saxutils import escape as xml_escape
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 from markupsafe import Markup
 
 ROOT = Path(__file__).resolve().parent
+sys.path.insert(0, str(ROOT))
+import digest_issues as weekly  # noqa: E402  (lives next to this file)
+
 DIST = ROOT / "dist"  # replaced by --out
 LANGS = ["ro", "en"]
 UPDATED = "2026-10-12"
@@ -44,67 +49,19 @@ def fill(text, values):
     return re.sub(r"\{(\w+)\}", lambda m: str(values.get(m.group(1), m.group(0))), text)
 
 
-def load_issues(config, preview):
-    """Every weekly issue for the digest pages, newest first.
+def load_issues(config, preview, issues_dir=None):
+    """Every weekly issue the site shows, newest first (see digest_issues.py).
 
-    The real site lists only issues where every paper has checked_by_alex set;
-    the preview also lists unchecked and sample issues (marked as samples).
+    The real site lists only issues Alex has fully checked: "checked_by_alex": true at
+    the top of issue.json and on every paper. The preview also lists unchecked and
+    sample issues, marked as samples.
     """
-    issues_dir = (ROOT / config["issues_dir"]).resolve()
-    out = []
-    for path in sorted(issues_dir.glob("*/issue.json")):
-        try:
-            issue = load_json(path)
-        except (OSError, json.JSONDecodeError):
-            continue
-        if "ecg" not in issue:
-            continue
-        papers = issue.get("papers", [])
-        checked = bool(papers) and all(p.get("checked_by_alex") for p in papers)
-        if not checked and not preview:
-            continue
-        meta = {}
-        meta_file = path.parent / issue["ecg"].get("meta", "ecg.json")
-        if meta_file.exists():
-            meta = load_json(meta_file)
-        out.append({"folder": path.parent, "data": issue, "meta": meta, "checked": checked})
-    # Real issues (with a week) before samples, newest week first.
-    out.sort(key=lambda i: (i["data"].get("week") is not None, i["data"].get("week") or "",
-                            i["data"].get("issue_number", 0)), reverse=True)
-    return out
-
-
-def load_issue(config, preview):
-    """The newest weekly issue to feature on the home page.
-
-    The real site only uses issues where every paper has checked_by_alex set;
-    the preview falls back to the newest issue of any kind (marked as a sample).
-    """
-    issues_dir = (ROOT / config["issues_dir"]).resolve()
-    found = []
-    for path in sorted(issues_dir.glob("*/issue.json")):
-        try:
-            issue = load_json(path)
-        except (OSError, json.JSONDecodeError):
-            continue
-        if "ecg" not in issue:
-            continue
-        papers = issue.get("papers", [])
-        checked = bool(papers) and all(p.get("checked_by_alex") for p in papers)
-        found.append((checked, issue.get("issue_number", 0), path.parent, issue))
-    ready = [f for f in found if f[0]]
-    pool = ready or (found if preview else [])
-    if not pool:
-        return None
-    checked, _, folder, issue = max(pool, key=lambda f: (f[1], f[2].name))
-    meta = {}
-    if (folder / issue["ecg"].get("meta", "ecg.json")).exists():
-        meta = load_json(folder / issue["ecg"].get("meta", "ecg.json"))
-    return {"folder": folder, "data": issue, "meta": meta, "checked": checked}
+    folder = Path(issues_dir) if issues_dir else (ROOT / config["issues_dir"]).resolve()
+    return weekly.select(folder, preview)
 
 
 class Site:
-    def __init__(self, preview, fragment_root=False):
+    def __init__(self, preview, fragment_root=False, issues_dir=None):
         self.preview = preview
         # The claude.ai preview wraps the first page in its own <html>/<head>/<body>.
         self.fragment_root = fragment_root
@@ -119,15 +76,14 @@ class Site:
             if self.free:
                 self.strings[lang]["slugs"]["digest"] = DIGEST_SLUGS[lang]
                 self.strings[lang]["slugs"]["az"] = AZ_SLUGS[lang]
-        self.issues = load_issues(self.config, preview) if self.free else []
+        # Newest first; the home-page quiz uses the newest one.
+        self.issues = load_issues(self.config, preview, issues_dir)
         self.app_data = self.trainer_data()
         self.env = Environment(
             loader=FileSystemLoader(ROOT / "templates"),
             autoescape=select_autoescape(["html"]),
             trim_blocks=True, lstrip_blocks=True)
-        self.issue = load_issue(self.config, preview)
-        if self.free:
-            self.issue = self.issues[0] if self.issues else None
+        self.issue = self.issues[0] if self.issues else None
         self.trace = load_json(ROOT / "static" / "data" / "hero-trace.json")
 
     # Paths ------------------------------------------------------------------
@@ -190,7 +146,9 @@ class Site:
                            {l: self.absolute(self.strings[l]["slugs"][page_key])
                             for l in LANGS if page_key in self.strings[l]["slugs"]}),
             "updated": UPDATED_FREE if self.free else UPDATED, "year": dt.date.today().year,
-            "has_digest": self.free and bool(self.issues),
+            # The digest page always exists on the free site (a placeholder until the
+            # first checked issue); has_issues says whether there is an issue to show.
+            "has_digest": self.free, "has_issues": bool(self.issues),
             "credits": self.credits(),
             "fragment": self.fragment_root and self.page_file(slug) == "index.html",
             "has_quiz": self.issue is not None,
@@ -213,22 +171,11 @@ class Site:
         if not self.issue:
             return None
         data = self.issue["data"]
-        ecg = data["ecg"]
-        folder = self.issue["folder"]
-        dest = DIST / "static" / "img" / "weekly" / folder.name
-        dest.mkdir(parents=True, exist_ok=True)
-        images = {}
-        for key in ("image", "full_image"):
-            name = ecg.get(key)
-            if name and (folder / name).exists():
-                shutil.copy2(folder / name, dest / name)
-                images[key] = f"static/img/weekly/{folder.name}/{name}"
-        meta = self.issue["meta"]
         return {
             "number": data.get("issue_number", 1),
             "sample": not self.issue["checked"],
-            "q": ecg[lang], "images": images,
-            "ecg_id": meta.get("ecg_id", "?"),
+            "q": data["ecg"][lang], "images": self.copy_issue_images(self.issue),
+            "ecg_id": self.issue["meta"].get("ecg_id", "?"),
         }
 
     # Free site -------------------------------------------------------------
@@ -338,9 +285,9 @@ class Site:
         self.render("az.html", lang, "az", groups=list(groups.items()), letters=list(groups))
         return entries
 
-    def issue_view(self, issue, lang):
-        data, folder = issue["data"], issue["folder"]
-        ecg = data["ecg"]
+    def copy_issue_images(self, issue):
+        """Copy an issue's ECG pictures next to the site; returns their site paths."""
+        ecg, folder = issue["data"]["ecg"], issue["folder"]
         dest = DIST / "static" / "img" / "weekly" / folder.name
         dest.mkdir(parents=True, exist_ok=True)
         images = {}
@@ -349,29 +296,86 @@ class Site:
             if name and (folder / name).exists():
                 shutil.copy2(folder / name, dest / name)
                 images[key] = f"static/img/weekly/{folder.name}/{name}"
-        tip = data.get("nurse_tip", {}).get(lang)
+        return images
+
+    def issue_view(self, issue, lang):
+        data = issue["data"]
+        week = data.get("week")
+        papers = [{**p[lang], "type": p.get("type", {}).get(lang, ""),
+                   "citation": p.get("citation", ""), "url": p.get("url"),
+                   "pubmed": "pubmed" in (p.get("url") or "")}
+                  for p in data.get("papers", []) if lang in p]
+        images = self.copy_issue_images(issue)
         return {
-            "number": data.get("issue_number", 1), "week": data.get("week"),
+            "number": data.get("issue_number", 1), "week": week,
+            "dates": weekly.date_range(week, lang), "month": weekly.month_label(week, lang),
             "sample": not issue["checked"],
+            "title": weekly.title(data, lang),
             "subject": data.get("subject", {}).get(lang, ""),
             "preheader": data.get("preheader", {}).get(lang, ""),
-            "q": ecg[lang], "images": images, "ecg_id": issue["meta"].get("ecg_id", "?"),
+            "q": data["ecg"][lang], "images": images, "ecg_id": issue["meta"].get("ecg_id", "?"),
+            "og_image": self.absolute(images["image"]) if images.get("image") else None,
             "papers_intro": data.get("papers_intro", {}).get(lang),
-            "papers": [{**p[lang], "type": p.get("type", {}).get(lang, ""),
-                        "citation": p.get("citation", ""), "url": p.get("url")}
-                       for p in data.get("papers", []) if lang in p],
-            "tip": tip,
+            "papers": papers,
+            "tip": data.get("nurse_tip", {}).get(lang),
         }
 
     def build_digest(self, lang):
-        items = []
+        """The digest page (latest issue + archive, or a placeholder), one page per issue,
+        and an Atom feed."""
+        views = []
         for issue in self.issues:
             slugs = {l: DIGEST_SLUGS[l] + issue["folder"].name + "/" for l in LANGS}
-            view = self.issue_view(issue, lang)
-            self.render("digest_issue.html", lang, "digest", out_slug=slugs[lang],
-                        alt_slugs=slugs, issue=view)
-            items.append({**view, "slug": slugs[lang]})
-        self.render("digest_index.html", lang, "digest", issues=items)
+            views.append({**self.issue_view(issue, lang), "slug": slugs[lang], "slugs": slugs})
+        feed = DIGEST_SLUGS[lang] + "feed.xml"
+        for i, view in enumerate(views):
+            self.render("digest_issue.html", lang, "digest", out_slug=view["slug"],
+                        alt_slugs=view["slugs"], issue=view, feed=feed,
+                        newer=views[i - 1] if i > 0 else None,
+                        older=views[i + 1] if i + 1 < len(views) else None)
+        groups = []
+        for view in views[1:]:
+            label = view["month"] or self.strings[lang]["free"]["digest"]["samples_group"]
+            if not groups or groups[-1]["label"] != label:
+                groups.append({"label": label, "issues": []})
+            groups[-1]["issues"].append(view)
+        self.render("digest_index.html", lang, "digest", latest=views[0] if views else None,
+                    groups=groups, feed=feed)
+        self.write_feed(lang, views, feed)
+        return views
+
+    def write_feed(self, lang, views, feed):
+        """An Atom feed of the issues, so readers can follow without giving an email."""
+        s = self.strings[lang]["free"]
+        name = fill(s["meta"]["digest_title"], self.values(lang))
+        entries = []
+        for view in views[:20]:
+            dates = weekly.week_dates(view["week"])
+            if not dates:  # samples have no week (preview only)
+                continue
+            stamp = dates[0].isoformat() + "T08:00:00Z"
+            url = self.absolute(view["slug"])
+            summary = " · ".join([view["q"]["prompt"]] + [p["headline"] for p in view["papers"]])
+            entries.append(
+                f"<entry><title>{xml_escape(view['title'])}</title>"
+                f'<link rel="alternate" href="{xml_escape(url)}"/><id>{xml_escape(url)}</id>'
+                f"<updated>{stamp}</updated><published>{stamp}</published>"
+                f"<summary>{xml_escape(summary)}</summary></entry>")
+        latest = next((weekly.week_dates(v["week"]) for v in views if weekly.week_dates(v["week"])), None)
+        updated = (latest[0].isoformat() if latest else (UPDATED_FREE if self.free else UPDATED)) + "T08:00:00Z"
+        page = self.absolute(DIGEST_SLUGS[lang])
+        xml = ('<?xml version="1.0" encoding="utf-8"?>\n'
+               f'<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="{lang}">'
+               f"<title>{xml_escape(name)}</title>"
+               f"<subtitle>{xml_escape(s['meta']['digest_description'])}</subtitle>"
+               f'<link rel="alternate" href="{xml_escape(page)}"/>'
+               f'<link rel="self" href="{xml_escape(self.absolute(feed))}"/>'
+               f"<id>{xml_escape(page)}</id><updated>{updated}</updated>"
+               f"<author><name>{xml_escape(self.config['brand'])}</name></author>"
+               + "".join(entries) + "</feed>\n")
+        out = DIST / feed
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_text(xml, encoding="utf-8")
 
     def build(self):
         if DIST.exists():
@@ -454,6 +458,13 @@ class Site:
                 for l in LANGS)
             for lang in LANGS:
                 urls.append(f"<url><loc>{self.absolute(self.strings[lang]['slugs'][key])}</loc>{alts}</url>")
+        if self.free:
+            for issue in self.issues:
+                slugs = {l: DIGEST_SLUGS[l] + issue["folder"].name + "/" for l in LANGS}
+                alts = "".join(f'<xhtml:link rel="alternate" hreflang="{l}" href="{self.absolute(slugs[l])}"/>'
+                               for l in LANGS)
+                for lang in LANGS:
+                    urls.append(f"<url><loc>{self.absolute(slugs[lang])}</loc>{alts}</url>")
         (DIST / "sitemap.xml").write_text(
             '<?xml version="1.0" encoding="UTF-8"?>\n'
             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
@@ -485,9 +496,13 @@ def main():
     pages = sorted(p.relative_to(DIST).as_posix() for p in DIST.rglob("*.html"))
     print(f"Built {len(pages)} pages into {DIST}")
     if site.issue is None:
-        print("Note: no checked weekly issue yet, so the home page has no ECG quiz.")
-    elif not site.issue["checked"]:
-        print(f"Note: home page quiz uses unchecked issue {site.issue['folder'].name} (preview only).")
+        print("Note: no checked weekly issue yet, so the home page has no ECG quiz and the "
+              "ECG of the week page shows its placeholder.")
+    else:
+        live = [i["folder"].name for i in site.issues if i["checked"]]
+        print(f"Weekly issues on the site: {', '.join(live) or 'none checked'}"
+              + ("" if len(live) == len(site.issues) else
+                 f" (preview also shows unchecked: {', '.join(i['folder'].name for i in site.issues if not i['checked'])})"))
 
 
 if __name__ == "__main__":
