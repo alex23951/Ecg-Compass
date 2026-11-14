@@ -19,7 +19,7 @@ import numpy as np
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt  # noqa: E402
 
-DATA = Path("/mnt/project-files/website/app/data")
+DATA = Path(__file__).resolve().parents[2] / "app" / "data"
 COLS = [["I", "II", "III"], ["aVR", "aVL", "aVF"], ["V1", "V2", "V3"], ["V4", "V5", "V6"]]
 
 

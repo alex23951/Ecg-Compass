@@ -62,7 +62,7 @@ service** for one review session; it is about local scope of practice, not ECG r
 | B13 | arrest-05: residual activity under 0.1 mV read as asystole, not a "shock if in doubt" case. Agree? | Asystole |
 | B14 | arrest-06 (PEA) uses a real sinus-tachycardia strip with an invented arrest scenario, labelled as such, with STACH as a distractor. OK? | Keep |
 | B15 | site-02: accept the small second spike in V3–V4 as a second ventricular output? | Accepted |
-| B16 | isch-05: say outright that the residual V2–V3 elevation (~1.8 mm, man of 69) meets STEMI criteria? | Not said |
+| B16 | isch-05: say outright that the residual V2–V3 elevation (re-measured: under 1 mm at the J point, about 2 mm at J+60 ms; man of 69) meets STEMI criteria? | Not said |
 | B17 | blocks-06: EP study for syncope with bifascicular block "is done" → „se ia în considerare (ESC 2021)”? | Not changed yet (I'd change it) |
 | B18 | tachy-02: state the flutter wave polarity and whether it is typical? The new text only says to check polarity first. | Not stated |
 | B19 | tachy-06: EP answer "basal left ventricle" for the ectopic beats. Wording OK? | Keep |
@@ -98,7 +98,7 @@ service** for one review session; it is about local scope of practice, not ECG r
 | D2 | QT thresholds cite AHA/ACCF/HRS 2009 and AHA/ACCF 2010. Keep, or cite ESC 2022? | Keep |
 | D3 | Sinus lesson cites ACC/AHA/HRS 2018 for the 50/min bradycardia cut-off. Keep, or „unii autori folosesc 50/min”? | Keep |
 | D4 | Resident and specialist arrest follow-ups name drugs as options (no doses) and cite ESC 2022 ventricular arrhythmias. OK? | Keep |
-| D5 | Extra leads (V3R/V4R, V7–V9) cited as ESC 2023 ACS class I, C. Please confirm the class. | As written |
+| D5 | Extra leads (V3R/V4R, V7–V9) cited as ESC 2023 ACS. Checked in Recommendation Table 1: class I, level B (not I, C as first noted). The app texts say "recommends" and name no class. | As written |
 | D6 | Tags: ESC 2021 CRT upgrade (IIa B); "EHRA 2023 consensus" for LBBAP criteria. OK? | As written |
 
 Already changed, for your information: the pads diagram and texts now follow ERC 2025 (lateral pad

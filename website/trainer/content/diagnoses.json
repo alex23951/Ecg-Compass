@@ -285,8 +285,8 @@
       "en": "Fast, perfectly regular, narrow QRS, no P waves"
     },
     "action": {
-      "ro": "Tahicardie regulată cu complexe QRS înguste, de obicei 150–250/min, fără unde P vizibile, cu debut și terminare bruște. La semne de instabilitate (hipotensiune, sincopă, durere toracică, insuficiență cardiacă; ERC 2025), se anunță imediat medicul sau se solicită un echipaj cu medic și se aplică electrozii autoadezivi. La pacientul stabil se înregistrează un ECG în 12 derivații; conform protocolului unității, se poate încerca manevra Valsalva modificată, cu înregistrarea continuă a ritmului (ESC 2019 TSV). Medicația se administrează numai la indicația medicului.",
-      "en": "A regular narrow-QRS tachycardia, usually 150–250/min, with no visible P waves, that starts and stops suddenly. With adverse features (low blood pressure, syncope, chest pain, heart failure; ERC 2025), call the doctor now or request physician support, and put the pads on. In a stable patient, record a 12-lead; per your unit's protocol, a modified Valsalva manoeuvre can be tried with the rhythm strip running (ESC 2019 SVT). Drugs are given only on a doctor's order."
+      "ro": "Tahicardie regulată cu complexe QRS înguste, de obicei 150–250/min, fără unde P vizibile, cu debut și terminare bruște. La semne de instabilitate (hipotensiune, sincopă, durere toracică, insuficiență cardiacă; ERC 2025), se anunță imediat medicul sau se solicită un echipaj cu medic și se aplică electrozii autoadezivi. La pacientul stabil se înregistrează un ECG în 12 derivații; la indicația medicului sau conform protocolului unității, se poate încerca manevra Valsalva modificată, cu înregistrarea continuă a ritmului (ESC 2019 TSV). Medicația se administrează numai la indicația medicului.",
+      "en": "A regular narrow-QRS tachycardia, usually 150–250/min, with no visible P waves, that starts and stops suddenly. With adverse features (low blood pressure, syncope, chest pain, heart failure; ERC 2025), call the doctor now or request physician support, and put the pads on. In a stable patient, record a 12-lead; on a doctor's order or per your unit's protocol, a modified Valsalva manoeuvre can be tried with the rhythm strip running (ESC 2019 SVT). Drugs are given only on a doctor's order."
     }
   },
   "PVC": {
@@ -799,8 +799,8 @@
       ]
     },
     "plain": {
-      "ro": "Supradenivelare ST inferioară, cu subdenivelare ST în V1–V3",
-      "en": "Inferior ST elevation with ST depression in V1–V3"
+      "ro": "Supradenivelare ST în DII, DIII, aVF; subdenivelare V1–V3",
+      "en": "ST elevation in II, III, aVF; ST depression in V1–V3"
     },
     "action": {
       "ro": "Supradenivelare de segment ST în DII, DIII, aVF și V5–V6, cu subdenivelare ST în V1–V3: diagnostic prezumtiv de STEMI care cuprinde și peretele posterior. Subdenivelarea din V1–V3 este imaginea în oglindă a supradenivelării ST posterioare, nu o ischemie separată. ECG-ul se arată imediat medicului sau se transmite și se anunță spitalul cu laborator de cateterism (ESC 2023 SCA); V7–V9 și V4R se înregistrează fără a întârzia alerta. Bradicardia este frecventă: pacientul rămâne monitorizat, cu defibrilatorul la îndemână.",
@@ -1317,8 +1317,8 @@
       ]
     },
     "plain": {
-      "ro": "Spike urmat, la interval fix, de un QRS îngust",
-      "en": "A spike, then a narrow QRS at a fixed interval"
+      "ro": "Spike, apoi undă P (adesea greu de văzut) și QRS îngust",
+      "en": "A spike, then a P wave (often hard to see) and a narrow QRS"
     },
     "action": {
       "ro": "Stimulatorul stimulează atriile, iar conducerea proprie a pacientului produce un complex QRS îngust. Este o funcționare normală a stimulatorului, nu o urgență. Frecvența se numără după complexele QRS, deoarece monitorul și aparatul ECG pot număra și spike-urile ca bătăi. Se consemnează; medicul se anunță imediat dacă un spike nu este urmat de complex QRS sau dacă pacientul are simptome.",

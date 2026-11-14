@@ -66,7 +66,7 @@
     },
     "action_set": [
       {
-        "ro": "Începerea SVB cu DEA și alertarea echipei de resuscitare",
+        "ro": "Începerea suportului vital de bază cu DEA și alertarea echipei de resuscitare",
         "en": "Start BLS with the AED and call the arrest team"
       },
       {
@@ -78,8 +78,8 @@
         "en": "Check the electrodes and the patient, then record again"
       },
       {
-        "ro": "Consemnarea traseului și raportarea la vizita medicală",
-        "en": "Document it and report at the ward round"
+        "ro": "Consemnarea traseului și raportarea la vizita medicală sau la predarea turei",
+        "en": "Document it and report at the ward round or at handover"
       }
     ]
   },
@@ -209,8 +209,8 @@
       {
         "id": "acute",
         "name": {
-          "ro": "Urgențe, ATI, medicină internă și de familie",
-          "en": "Emergency, intensive care, internal and family medicine"
+          "ro": "Urgențe și alte specialități",
+          "en": "Emergency and other specialties"
         },
         "stretch": [
           "site-04",

@@ -129,9 +129,9 @@ e.g. `{"id": "first-n", "tiers": ["nurse"], "kind": "first", "question": ..., "o
 
 - nurse: 0 = start BLS/AED and call the arrest team; 1 = call the doctor now, keep the patient
   monitored with the defibrillator at hand, record a 12-lead; 2 = check the electrodes and the
-  patient, record again; 3 = document it and report at the round.
+  patient, record again; 3 = document it and report at the ward round or at handover.
 - paramedic: 0 = shock / CPR per ERC; 1 = pads on, pacing or synchronised cardioversion ready,
-  request physician support (SMURD / echipaj medical); 2 = transmit the 12-lead and pre-alert the
+  request physician support (echipaj cu medic); 2 = transmit the 12-lead and pre-alert the
   PCI centre; 3 = monitor, transport and hand over.
 
 The question can be the tier default (omit nothing: still give `question`, e.g. „Ce faceți mai
@@ -143,6 +143,9 @@ Every case that is core or stretch for nurse gets one nurse `first` follow-up; s
 
 - `vignette`: `{"ro","en"}` one line of clinical context shown above the tracing. Only where the
   diagnosis needs it (PEA). It must say it is an invented scenario on a real tracing.
+- Invented clinical context in a question shown with a real tracing (a case follow-up, or a lesson
+  check about a tracing on screen) starts with „Scenariu:” / "Scenario:". Text-only checks with no
+  tracing do not need the label.
 - `gain` (monitor cases): 5, 10 or 20 mm/mV.
 - Monitor case: `{"id": "arrest-01", "monitor": {"db": "vfdb", "record": "422", "start": 1545.0,
   "channel": 0}, "module": "arrest", "level": 1, "answer": "VF", "options": [4 keys], "look": ["MON"],
