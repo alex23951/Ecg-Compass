@@ -2,13 +2,24 @@
 {% from "icons.html" import icon %}
 {% set d = s.free.digest %}
 {% block title %}{{ issue.subject }} · {{ c.brand }}{% endblock %}
-{% block description %}{{ issue.preheader }}{% endblock %}
+{% block description %}{{ issue.q.prompt }}{% endblock %}
+{% block head_extra %}
+<link rel="alternate" type="application/atom+xml" title="{{ f(s.free.meta.digest_title) }}" href="{{ url(feed) }}">
+{% if issue.og_image %}<meta property="og:image" content="{{ issue.og_image }}">{% endif %}
+{% endblock %}
 {% block main %}
 <section class="page-head">
   <div class="wrap narrow">
-    <p class="eyebrow"><span><a href="{{ link('digest') }}">{{ d.back }}</a> · {{ f(d.issue_title, n=issue.number) }}{% if issue.week %} · {{ issue.week }}{% endif %}</span></p>
-    <h1>{{ issue.subject }}</h1>
+    <p class="eyebrow"><span><a href="{{ link('digest') }}">{{ d.back }}</a> · {{ f(d.issue_title, n=issue.number) }}</span></p>
+    <h1>{{ issue.title }}</h1>
+    {% if issue.dates %}<p class="page-meta">{{ f(d.week_of, range=issue.dates) }}</p>{% endif %}
     {% if issue.sample %}<p><span class="tag">{{ d.sample_tag }}</span> {{ d.sample_note }}</p>{% endif %}
+    <nav class="chips issue-jump" aria-label="{{ d.in_issue }}">
+      <span class="chips-label">{{ d.in_issue }}:</span>
+      <a class="chip" href="#weekly">{{ d.ecg_heading }}</a>
+      {% if issue.papers %}<a class="chip" href="#papers">{{ d.jump_papers }}</a>{% endif %}
+      {% if issue.tip %}<a class="chip" href="#tip">{{ d.jump_tip }}</a>{% endif %}
+    </nav>
   </div>
 </section>
 
@@ -43,7 +54,7 @@
 </section>
 
 {% if issue.papers %}
-<section class="section section-alt" aria-labelledby="papers-title">
+<section class="section section-alt" id="papers" aria-labelledby="papers-title">
   <div class="wrap narrow prose">
     <h2 id="papers-title">{{ d.papers_heading }}</h2>
     {% if issue.papers_intro %}<p class="lead">{{ issue.papers_intro }}</p>{% endif %}
@@ -53,7 +64,7 @@
       <h3>{{ p.headline }}</h3>
       <p>{{ p.summary }}</p>
       {% if p.practice %}<p><strong>{{ d.practice }}:</strong> {{ p.practice }}</p>{% endif %}
-      <p class="credit">{{ p.citation }}{% if p.url %} · <a href="{{ p.url }}" target="_blank" rel="noopener">{{ d.read_source }}</a>{% endif %}</p>
+      <p class="credit">{{ p.citation }}{% if p.url %} · <a href="{{ p.url }}" target="_blank" rel="noopener">{{ d.open_pubmed if p.pubmed else d.read_source }}</a>{% endif %}</p>
     </article>
     {% endfor %}
     <p class="muted">{{ d.ai_note }}</p>
@@ -62,7 +73,7 @@
 {% endif %}
 
 {% if issue.tip %}
-<section class="section" aria-labelledby="tip-title">
+<section class="section" id="tip" aria-labelledby="tip-title">
   <div class="wrap narrow prose">
     <h2 id="tip-title">{{ d.tip_heading }}</h2>
     <h3>{{ issue.tip.title }}</h3>
@@ -71,4 +82,26 @@
   </div>
 </section>
 {% endif %}
+
+<nav class="section section-alt issue-pager-section" aria-label="{{ d.pager_label }}">
+  <div class="wrap narrow">
+    {% if older or newer %}
+    <div class="issue-pager">
+      {% if older %}
+      <a class="issue-pager-link issue-pager-older" rel="prev" href="{{ url(older.slug) }}">
+        <span class="get-who">{{ d.older }} · {{ f(d.issue_title, n=older.number) }}</span>
+        <strong>{{ older.title }}</strong>
+      </a>
+      {% endif %}
+      {% if newer %}
+      <a class="issue-pager-link issue-pager-newer" rel="next" href="{{ url(newer.slug) }}">
+        <span class="get-who">{{ d.newer }} · {{ f(d.issue_title, n=newer.number) }}</span>
+        <strong>{{ newer.title }}</strong>
+      </a>
+      {% endif %}
+    </div>
+    {% endif %}
+    <p class="issue-pager-all"><a class="button button-quiet" href="{{ link('digest') }}">{{ d.back }}</a></p>
+  </div>
+</nav>
 {% endblock %}

@@ -16,6 +16,7 @@
 <meta property="og:title" content="{{ self.title() }}">
 <meta property="og:description" content="{{ self.description() }}">
 <meta property="og:url" content="{{ canonical }}">
+{% block head_extra %}{% endblock %}
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#0e1318" media="(prefers-color-scheme: dark)">
 <link rel="icon" href="{{ url('static/img/icon.svg') }}" type="image/svg+xml">

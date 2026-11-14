@@ -1,5 +1,6 @@
 {
   "issue_number": 1,
+  "checked_by_alex": false,
   "sample_note": {
     "en": "Sample issue. PubMed could not be reached from the build machine, so the three papers are well-known 2023–2024 trials standing in for this week's new papers. Check every number against the abstract before sending.",
     "ro": "Număr de probă. PubMed nu a putut fi accesat de pe serverul de lucru, așa că cele trei articole sunt studii cunoscute din 2023–2024, folosite în locul articolelor noi ale săptămânii. Verificați fiecare cifră în abstract înainte de trimitere."

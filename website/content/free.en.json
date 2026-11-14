@@ -143,9 +143,8 @@
     "eyebrow": "ECG of the week",
     "heading": "One ECG a week, plus the papers that matter",
     "intro": "Every issue: a real ECG to read, three new papers summed up in two minutes and a practical tip for nurses and paramedics.",
-    "empty": "The first issue is coming soon.",
+    "empty": "We are preparing the first issue. Until then, practice on real ECGs in the trainer, free and with no account.",
     "issue_title": "No. {n}",
-    "open": "Open",
     "back": "All issues",
     "ecg_heading": "The ECG",
     "papers_heading": "Three papers in brief",
@@ -154,7 +153,42 @@
     "tip_heading": "For nurses and paramedics",
     "sample_tag": "sample issue",
     "sample_note": "Sample issue, not yet checked by the doctor. It appears only in the preview.",
-    "ai_note": "Paper summaries are drafted with the help of AI and checked by a doctor, with a link to the source."
+    "ai_note": "Paper summaries are drafted with the help of AI and checked by a doctor, with a link to the source.",
+    "empty_title": "The first issue is coming soon",
+    "empty_cta": "Start practicing",
+    "what_heading": "What you get in each issue",
+    "what": [
+      {
+        "icon": "rhythm",
+        "title": "A real ECG to read",
+        "text": "A 12-lead tracing and a multiple-choice question. Pick an answer, then read the explanation: what the tracing shows, why it matters and what to remember."
+      },
+      {
+        "icon": "explained",
+        "title": "Three new papers in brief",
+        "text": "Papers from the past week, summed up in a two-minute read, with what they mean in practice and a link to the paper."
+      },
+      {
+        "icon": "shield",
+        "title": "A practical tip",
+        "text": "For nurses and paramedics: what to watch at the bedside and when to call the doctor."
+      }
+    ],
+    "latest": "Latest issue",
+    "archive": "Earlier issues",
+    "samples_group": "Sample issues",
+    "read_issue": "Read this issue",
+    "in_issue": "In this issue",
+    "in_ecg": "An ECG to read, with the answer explained",
+    "week_of": "Week of {range}",
+    "jump_papers": "The papers",
+    "jump_tip": "Practical tip",
+    "open_pubmed": "Open on PubMed",
+    "older": "Previous issue",
+    "newer": "Next issue",
+    "pager_label": "More issues",
+    "feed_link": "RSS feed",
+    "feed_note": "Follow new issues in a feed reader, with no account and no email."
   },
   "footer": {
     "free_line": "A free educational project by a cardiologist trained in electrophysiology.",

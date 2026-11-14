@@ -12,7 +12,7 @@
       <p class="lead">{{ fh.lead }}</p>
       <div class="cta-card">
         <div class="hero-actions"><a class="button button-lg" href="{{ app_url() }}">{{ fh.cta_trainer }}{{ icon("arrow") }}</a>
-        {% if has_digest %}<a class="button button-quiet button-lg" href="{{ link('digest') }}">{{ fh.cta_digest }}</a>{% endif %}</div>
+        {% if has_issues %}<a class="button button-quiet button-lg" href="{{ link('digest') }}">{{ fh.cta_digest }}</a>{% endif %}</div>
         <div class="hero-notes"><p class="form-note">{{ fh.privacy_line }}</p>
         <p class="form-note"><span class="tag">beta</span> {{ fh.hero_note }}</p></div>
       </div>

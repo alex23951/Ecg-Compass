@@ -70,9 +70,48 @@ Claude reads them and applies the changes to `trainer/content/`, then runs
 | `/confidentialitate/` | `/en/privacy/` | Privacy policy (draft) |
 | `/termeni/` | `/en/terms/` | Terms and company details (draft) |
 
-The home-page quiz uses the newest weekly issue in `../ecg-digest/issues/` where every paper
-has `"checked_by_alex": true`. Until one exists, the live site leaves the quiz out; the preview
-uses the sample issue.
+On the free site (`free_launch: true`) the pages are the home page, `/ecg-a-z/` (`/en/ecg-a-z/`),
+the weekly digest below, privacy and terms.
+
+## Weekly digest: the "ECG of the week" pages
+
+| Romanian | English | What |
+| --- | --- | --- |
+| `/ecg-saptamanii/` | `/en/ecg-of-the-week/` | The newest issue, then the archive by month. Before the first checked issue: a "coming soon" placeholder with what each issue brings and a link to the trainer |
+| `/ecg-saptamanii/<week>/` | `/en/ecg-of-the-week/<week>/` | One issue: the ECG quiz with its answer, three papers, the nurse tip, links to the previous and next issue |
+| `/ecg-saptamanii/feed.xml` | `/en/ecg-of-the-week/feed.xml` | Atom (RSS) feed, a way to follow without an email address |
+
+The issues live in the repo's `ecg-digest/issues/<week>/` (issue.json, ecg.json and the ECG
+pictures). They are written in the digest workspace (`/mnt/project-files/ecg-digest/`) and
+copied here. The home-page quiz uses the newest issue on the site.
+
+**What goes live.** An issue shows on the live site only when Alex has checked all of it:
+`"checked_by_alex": true` at the top of `issue.json` (the ECG, its answer and the nurse tip)
+**and** on every paper (each summary against its abstract). Until then it shows only in the
+preview build, marked as a sample. A broken issue is skipped with a warning; one that is
+already marked as checked stops the build instead, so a mistake never goes live quietly.
+
+**Adding this week's issue** (Claude, after Alex says the issue is approved):
+
+1. In the workspace issue.json, set every `checked_by_alex` to `true` (only on Alex's word):
+   the one at the top and the one on each paper.
+2. `python3 tools/digest.py add 2026-W47` copies the issue from the workspace into
+   `ecg-digest/issues/2026-W47/`, checks it, and says whether it will be live.
+3. Build and test (below), open a PR. Merging it to main publishes the issue.
+
+Alex can also publish from GitHub alone: open `ecg-digest/issues/<week>/issue.json`, change
+every `"checked_by_alex": false` to `true` (one at the top, one per paper), and commit to main.
+Then copy the same check marks into the workspace issue.json, so a later `add` keeps them.
+
+`python3 tools/digest.py list` shows every issue on the site and what is still unchecked;
+`python3 tools/digest.py check` fails if any issue is broken.
+
+**Correcting an issue that is already live.** A change to the ECG answer, a summary or the nurse
+tip needs Alex's OK like the first check. Fix it in the workspace, set the changed part's
+`checked_by_alex` (the top one, or that paper's) back to `false` until Alex checks it, and run
+`add` again; the issue leaves the live site until then. If Alex dictated or approved the exact
+change, keep the check marks and run `add --change-approved` (without it, `add` refuses to replace
+a live issue whose text changed under the old check marks).
 
 ## Build and test (Claude does this)
 
@@ -84,6 +123,8 @@ python3 build.py --preview               # preview: forms send nothing, drafts s
 npm test                                 # endpoint tests
 node tests/e2e_forms.mjs                 # both forms in a real browser, Brevo faked
 python3 tests/check_links.py             # no broken internal links
+python3 -m unittest tests/test_digest.py # weekly digest pages and tools/digest.py
+python3 tools/digest.py check            # every weekly issue in ecg-digest/issues/ reads cleanly
 python3 trainer/build_cases.py           # trainer data; --force rewrites every signal file
 python3 trainer/build_lessons.py         # the course; --plot DIR draws every figure for review
 python3 trainer/preview.py OUT_DIR       # trainer preview bundle for claude.ai
