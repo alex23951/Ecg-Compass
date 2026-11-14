@@ -2,6 +2,10 @@
 
 Written 2026-10-25. Preview: https://claude.ai/artifact/AwDUiVLN2Lj9YToemaKGz1
 
+**Decided 2026-11-14.** Alex asked Claude to do this review. Every answer, with what was measured
+and why, is in `REVIEW-DECISIONS.md` next to this file. The tables below are kept as the
+original questions.
+
 ## What's new in the trainer
 
 - **Six profiles**: student, nurse, paramedic, resident, specialist (with a Cardiology or

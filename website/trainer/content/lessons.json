@@ -7481,7 +7481,7 @@
     "id": "recording",
     "title": {
       "ro": "Un traseu corect: artefacte, electrozi inversați, derivații suplimentare",
-      "en": "A clean recording: artefact, reversal and extra leads"
+      "en": "A clean recording: artifact, reversal and extra leads"
     },
     "summary": {
       "ro": "Ce nu vine de la inimă și când reînregistrezi traseul",
@@ -7583,7 +7583,7 @@
             "Un traseu defectuos nu se interpretează, ci se reînregistrează."
           ],
           "en": [
-            "An artefact is any signal on the tracing that the heart did not make. Four are common.",
+            "An artifact is any signal on the tracing that the heart did not make. Four are common.",
             "Muscle tremor: a fine, irregular fuzz, worse when the patient is cold, tense or shivering. Mains interference: a thick line of tiny, perfectly regular teeth. Baseline wander: the line drifts slowly up and down with breathing or movement. A loose electrode: sudden jumps or a chaotic line in the leads that use it.",
             "A faulty tracing is not read. It is recorded again."
           ]
@@ -7614,7 +7614,7 @@
           ],
           "en": [
             "Look at which leads are affected. The tremor is strongest in I and II and much smaller in III. I and II use the right-arm electrode; III does not. Ask the patient to rest and relax the right arm; if the patient is cold, cover them.",
-            "Near the end, V2 alone swings down and then sharply up while V3 stays steady: artefact from the V2 electrode (poor contact or movement)."
+            "Near the end, V2 alone swings down and then sharply up while V3 stays steady: artifact from the V2 electrode (poor contact or movement)."
           ]
         },
         "sets": [
@@ -7778,7 +7778,7 @@
           },
           {
             "ro": "Artefact: prea rapide ca să fie unde atriale",
-            "en": "Artefact: too fast to be atrial waves"
+            "en": "Artifact: too fast to be atrial waves"
           },
           {
             "ro": "Unde f: fibrilație atrială cu unde fine",
@@ -7792,7 +7792,7 @@
         "answer": 1,
         "explain": {
           "ro": "Artefact. Cel puțin patru unde într-un pătrat mare (200 ms) înseamnă peste 1000/min: undele de flutter au 250–350/min, iar undele f din fibrilația atrială sunt neregulate. Oscilațiile apar și dispar fără ca ritmul să se modifice, iar DI nu le prezintă.",
-          "en": "Artefact. At least four waves in one large square (200 ms) is over 1000/min: flutter waves run at 250–350/min, and the f waves of atrial fibrillation are irregular. The waves come and go without any change in the rhythm, and lead I does not show them."
+          "en": "Artifact. At least four waves in one large square (200 ms) is over 1000/min: flutter waves run at 250–350/min, and the f waves of atrial fibrillation are irregular. The waves come and go without any change in the rhythm, and lead I does not show them."
         }
       },
       {
@@ -8009,7 +8009,7 @@
         "answer": 3,
         "explain": {
           "ro": "Un pacient care vorbește are circulație: linia haotică nu poate fi fibrilație ventriculară și este, cel mai probabil, un artefact. Privește pacientul înaintea ecranului, apoi verifică electrozii și cablurile și confirmă un ritm clar. Nu opri o alarmă fără să îi găsești cauza.",
-          "en": "A patient who talks has a circulation: the chaotic line cannot be ventricular fibrillation and is most likely artefact. Look at the patient before the screen, then fix the electrodes and cables and confirm a clean rhythm. Never silence an alarm without finding its cause."
+          "en": "A patient who talks has a circulation: the chaotic line cannot be ventricular fibrillation and is most likely artifact. Look at the patient before the screen, then fix the electrodes and cables and confirm a clean rhythm. Never silence an alarm without finding its cause."
         },
         "only": [
           "nurse",
@@ -8132,7 +8132,7 @@
             "Un minut are deci 300 de pătrate mari sau 1500 de pătrate mici. De aici vin cele două reguli pentru ritmul regulat."
           ],
           "en": [
-            "The machine prints a rate and the monitor shows one. Both can be wrong: tall T waves, pacing spikes or artefact can be counted as beats, and small QRS complexes can be missed.",
+            "The machine prints a rate and the monitor shows one. Both can be wrong: tall T waves, pacing spikes or artifact can be counted as beats, and small QRS complexes can be missed.",
             "The paper measures time. At 25 mm/s, one small square is 0.04 s (40 ms), one large square is 0.2 s (200 ms), and five large squares make one second.",
             "So one minute holds 300 large squares, or 1500 small squares. That is where the two rules for a regular rhythm come from."
           ]
@@ -8615,7 +8615,7 @@
         "answer": 0,
         "explain": {
           "ro": "12 × 6 = 72/min. Când aparatul și numărătoarea pe traseu nu concordă, ai încredere în numărătoare și caută ce a numărat aparatul în plus: unde T înalte, spike-uri sau artefacte.",
-          "en": "12 × 6 = 72/min. When the device and your count disagree, trust the count and look for what the device counted extra: tall T waves, spikes or artefact."
+          "en": "12 × 6 = 72/min. When the device and your count disagree, trust the count and look for what the device counted extra: tall T waves, spikes or artifact."
         }
       },
       {
@@ -8879,8 +8879,8 @@
               "RR"
             ],
             "note": {
-              "ro": "Intervale RR egale, de aproximativ 380 ms, QRS îngust și nicio undă P clară înaintea complexelor QRS.",
-              "en": "Equal RR intervals of about 380 ms, a narrow QRS, and no clear P wave before the QRS complexes."
+              "ro": "Intervale RR egale, de aproximativ 380 ms, QRS îngust și nicio undă P clară înaintea complexelor QRS. În DII, o undă mică, pozitivă, imediat după fiecare undă T, poate fi o undă P. Pe ECG-ul complet, în 12 derivații, nu este pozitivă în DI, cum ar fi o undă P sinusală. Deci ritmul nu este tahicardie sinusală.",
+              "en": "Equal RR intervals of about 380 ms, a narrow QRS, and no clear P wave before the QRS complexes. In II, a small upright wave just after each T wave may be a P wave. On the full 12-lead ECG it is not upright in I, as a sinus P wave would be. So the rhythm is not sinus tachycardia."
             }
           }
         ]
@@ -10543,7 +10543,7 @@
           },
           {
             "ro": "Ca artefact: verifică mai întâi electrozii",
-            "en": "As artefact: check the electrodes first"
+            "en": "As artifact: check the electrodes first"
           },
           {
             "ro": "Ca tahicardie ventriculară: puls, ajutor, defibrilator",
@@ -10686,7 +10686,7 @@
           },
           {
             "ro": "Artefacte de mișcare ale electrozilor",
-            "en": "Electrode movement artefact"
+            "en": "Electrode movement artifact"
           }
         ],
         "answer": 0,
@@ -12122,7 +12122,7 @@
         "answer": 2,
         "explain": {
           "ro": "Aparatul poate plasa greșit sfârșitul undei T, de exemplu dacă include unda U sau dacă traseul are artefacte. Nici măsurarea manuală nu este perfectă. Când valorile diferă și una depășește 500 ms, decide medicul.",
-          "en": "The machine can misplace the end of the T wave, for example by including a U wave or when the tracing has artefact. A hand measurement is not perfect either. When the values differ and one is over 500 ms, the doctor decides."
+          "en": "The machine can misplace the end of the T wave, for example by including a U wave or when the tracing has artifact. A hand measurement is not perfect either. When the values differ and one is over 500 ms, the doctor decides."
         },
         "only": [
           "nurse"
@@ -13711,7 +13711,7 @@
           },
           {
             "ro": "Artefact: se verifică electrozii și se repetă",
-            "en": "Artefact: check the electrodes and repeat"
+            "en": "Artifact: check the electrodes and repeat"
           },
           {
             "ro": "Pierderea capturii: urgent, se anunță medicul",
@@ -13882,10 +13882,10 @@
             "Interpretarea automată se citește ultima și se verifică față de propria citire. Aparatul poate omite modificări și uneori numără spike-urile sau artefactele ca bătăi."
           ],
           "en": [
-            "1. Quality and calibration: 25 mm/s, 10 mm/mV, no artefact, no reversed electrodes.",
+            "1. Quality and calibration: 25 mm/s, 10 mm/mV, no artifact, no reversed electrodes.",
             "2. Rhythm. 3. Rate. 4. Axis. 5. P wave and PR. 6. QRS: width and shape. 7. ST segment. 8. T wave and QT/QTc.",
             "9. Comparison with an old ECG, if there is one. Then a one-line conclusion.",
-            "Read the machine's statement last and check it against your own read. Machines miss things, and sometimes count spikes or artefact as beats."
+            "Read the machine's statement last and check it against your own read. Machines miss things, and sometimes count spikes or artifact as beats."
           ]
         }
       },
@@ -14125,7 +14125,7 @@
             "Put every ECG into one category, from the most urgent down:",
             "A. Cardiac arrest: resuscitate now (ERC 2025).",
             "B. Emergency: a dangerous arrhythmia, high-grade AV block or a STEMI pattern. Act now.",
-            "C. Technical problem: reversed electrodes or artefact. Record again before you interpret.",
+            "C. Technical problem: reversed electrodes or artifact. Record again before you interpret.",
             "D. Not urgent: document it and follow up.",
             "Rule out A first, then B. Only then consider C or D."
           ]
@@ -14626,7 +14626,7 @@
         "answer": 0,
         "explain": {
           "ro": "Fibrilație ventriculară la un pacient care nu răspunde și nu respiră normal: stop cardiac, RCP și defibrilare imediată (ERC 2025). Un traseu haotic la un pacient conștient sugerează artefact: verifică întâi pacientul.",
-          "en": "Ventricular fibrillation in a patient who is unresponsive and not breathing normally: cardiac arrest, CPR and an immediate shock (ERC 2025). A chaotic trace in a conscious patient suggests artefact: check the patient first."
+          "en": "Ventricular fibrillation in a patient who is unresponsive and not breathing normally: cardiac arrest, CPR and an immediate shock (ERC 2025). A chaotic trace in a conscious patient suggests artifact: check the patient first."
         },
         "only": [
           "student",

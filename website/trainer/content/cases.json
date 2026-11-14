@@ -2254,8 +2254,8 @@
         ],
         "answer": 3,
         "explain": {
-          "ro": "În infarctul de ventricul drept prin ocluzia proximală a arterei coronare drepte, supradenivelarea ST este maximă în V1 și scade spre V3–V4. Aici crește de la câțiva milimetri în V1 la peste 1 cm în V3 și rămâne mare în V4: teritoriul unei artere descendente anterioare lungi, care irigă și peretele inferior. Supradenivelarea din DII, DIII și aVF și subdenivelarea din aVL apar în ambele situații, iar DIII este supradenivelat cât DII (~4 mm fiecare), nu clar mai mult, cum se întâmplă adesea în ocluzia coronarei drepte. Gradientul precordial decide, iar coronarografia confirmă.",
-          "en": "In right ventricular infarction from a proximal right coronary occlusion, ST elevation is greatest in V1 and fades towards V3–V4. Here it rises from a few millimeters in V1 to over 1 cm in V3 and stays high in V4: the territory of a long LAD that also supplies the inferior wall. The elevation in II, III and aVF and the depression in aVL occur with both arteries, and III is about as elevated as II (about 4 mm each), not clearly higher, as it often is with a right coronary occlusion. The precordial gradient decides, and angiography confirms."
+          "ro": "În infarctul de ventricul drept prin ocluzia proximală a arterei coronare drepte, supradenivelarea ST este maximă în V1 și scade spre V3–V4. Aici crește de la câțiva milimetri în V1 la peste 1 cm în V3 și rămâne mare în V4: teritoriul unei artere descendente anterioare lungi, care irigă și peretele inferior. Supradenivelarea din DII, DIII și aVF și subdenivelarea din aVL apar în ambele situații; aici DIII este supradenivelat doar cât DII (~4 mm fiecare), în timp ce în ocluzia coronarei drepte DIII este adesea net mai supradenivelat decât DII. Gradientul precordial decide, iar coronarografia confirmă.",
+          "en": "In right ventricular infarction from a proximal right coronary occlusion, ST elevation is greatest in V1 and fades towards V3–V4. Here it rises from a few millimeters in V1 to over 1 cm in V3 and stays high in V4: the territory of a long LAD that also supplies the inferior wall. The elevation in II, III and aVF and the depression in aVL occur with both arteries; here III is only as elevated as II (about 4 mm each), whereas with a right coronary occlusion III is often clearly higher than II. The precordial gradient decides, and angiography confirms."
         }
       },
       {
@@ -2819,7 +2819,7 @@
       ]
     },
     "deep": {
-      "ro": "Macroreintrare atrială cu ciclu de ~220 ms (~270/min), condusă 4:1 și, la ultima bătaie, 3:1. Un raport 4:1 la un pacient fără medicație care încetinește nodul AV sugerează boală a nodului AV, de aceea tratamentul se verifică înainte de a interpreta raportul. Decizia: anticoagularea se evaluează ca în fibrilația atrială (ESC 2024 FiA), iar ablația istmului cavotricuspidian este tratamentul de elecție în flutterul tipic recurent (ESC 2019 TSV). Polaritatea undelor F susține flutterul tipic, în sens antiorar: în DII, DIII și aVF coboară lent și urcă brusc (negative), iar în V1 sunt predominant pozitive; capcana este încadrarea ca flutter „tipic” doar după aspectul „în dinți de fierăstrău”, fără verificarea polarității.",
+      "ro": "Macroreintrare atrială cu ciclu de ~220 ms (~270/min), condusă 4:1 și, la ultima bătaie, 3:1. Un raport 4:1 la un pacient fără medicație care încetinește nodul AV sugerează boală a nodului AV, de aceea tratamentul se verifică înainte de a interpreta raportul. Decizia: anticoagularea se evaluează ca în fibrilația atrială (ESC 2024 FiA), iar ablația istmului cavotricuspidian este tratamentul de elecție în flutterul tipic recurent (ESC 2019 TSV). Polaritatea undelor F susține flutterul tipic, în sens antiorar: în DII, DIII și aVF, undele F coboară lent și urcă brusc (negative), iar în V1 sunt predominant pozitive; capcana este încadrarea ca flutter „tipic” doar după aspectul „în dinți de fierăstrău”, fără verificarea polarității.",
       "en": "Atrial macro-re-entry with a cycle length of about 220 ms (about 270/min), conducted 4:1 and, on the last beat, 3:1. A 4:1 ratio in a patient on no drug that slows the AV node suggests AV nodal disease, so check the medication before you interpret the ratio. Decision: anticoagulation is assessed as in atrial fibrillation (ESC 2024 AF), and cavotricuspid isthmus ablation is the treatment of choice for recurrent typical flutter (ESC 2019 SVT). The F-wave polarity supports typical, counterclockwise flutter: in II, III and aVF the F waves fall slowly and rise sharply (negative), and in V1 they are mainly positive; the pitfall is calling flutter typical from the sawtooth alone, without checking the polarity."
     },
     "tiers": {
@@ -3143,8 +3143,8 @@
         ],
         "answer": 2,
         "explain": {
-          "ro": "O undă P ascunsă în QRS sugerează TRNAV tipică, iar o undă P retrogradă pe segmentul ST sugerează TRAV. Aici, unda mică de după fiecare undă T poate fi o undă P, cu RP lung. Dacă este, ea este pozitivă în DII, DIII și aVF, ceea ce se potrivește mai bine cu o tahicardie atrială decât cu formele cu RP lung ale TRNAV sau TRAV, în care unda P este negativă în aceste derivații. Răspunsul la adenozină poate orienta, iar studiul electrofiziologic stabilește mecanismul.",
-          "en": "A P wave hidden in the QRS suggests typical AVNRT, and a retrograde P in the ST segment suggests AVRT. Here the small wave just after each T wave may be a P wave with a long RP. If it is, it is upright in II, III and aVF, which fits an atrial tachycardia better than the long-RP forms of AVNRT or AVRT, whose P is negative in these leads. The response to adenosine can help, and an EP study settles the mechanism."
+          "ro": "O undă P ascunsă în QRS sugerează TRNAV tipică, iar o undă P retrogradă pe segmentul ST sugerează TRAV. Aici, unda mică de după fiecare undă T poate fi o undă P, cu RP lung. Dacă este, ea este pozitivă în DII, DIII și aVF, ceea ce se potrivește mai bine cu o tahicardie atrială decât cu formele cu RP lung ale TRNAV sau TRAV, în care unda P este negativă în aceste derivații. Chiar și așa, tahicardia atrială este doar mai probabilă, nu dovedită: răspunsul la adenozină poate orienta, iar studiul electrofiziologic stabilește mecanismul.",
+          "en": "A P wave hidden in the QRS suggests typical AVNRT, and a retrograde P in the ST segment suggests AVRT. Here the small wave just after each T wave may be a P wave with a long RP. If it is, it is upright in II, III and aVF, which fits an atrial tachycardia better than the long-RP forms of AVNRT or AVRT, whose P is negative in these leads. Even then, atrial tachycardia is only favored, not proven: the response to adenosine can help, and an EP study settles the mechanism."
         }
       },
       {
@@ -3449,7 +3449,7 @@
           },
           {
             "ro": "Jumătate dintre complexele QRS de pe monitor sunt artefacte",
-            "en": "Half of the QRS complexes on the monitor are artefact"
+            "en": "Half of the QRS complexes on the monitor are artifact"
           },
           {
             "ro": "Pacientul are un bloc AV 2:1, iar monitorul dublează frecvența",
@@ -3871,7 +3871,7 @@
         "answer": 0,
         "explain": {
           "ro": "Fie că este FV fină, fie asistolă, pacientul este în stop cardiac: suport vital de bază, DEA și alertarea echipei de resuscitare. DEA analizează ritmul și decide dacă recomandă șocul; compresiile nu se întârzie pentru a clarifica traseul.",
-          "en": "Fine VF or asystole, the patient is in cardiac arrest: BLS, the AED and a call to the arrest team. The AED analyses the rhythm and decides whether to advise a shock; do not delay compressions trying to settle the strip yourself."
+          "en": "Fine VF or asystole, the patient is in cardiac arrest: BLS, the AED and a call to the arrest team. The AED analyzes the rhythm and decides whether to advise a shock; do not delay compressions trying to settle the strip yourself."
         }
       },
       {
@@ -3888,7 +3888,7 @@
         "answer": 0,
         "explain": {
           "ro": "Stop cardiac cu FV fină: ritm șocabil. În modul DEA, aparatul analizează ritmul și decide dacă recomandă șocul. Unde protocolul serviciului permite defibrilarea manuală, dacă rămâne îndoiala între FV fină și asistolă, se administrează șocul (ERC 2025). Cine nu poate decide în 5 s dacă ritmul este șocabil folosește modul DEA.",
-          "en": "Cardiac arrest in fine VF: a shockable rhythm. In AED mode, the device analyses the rhythm and decides whether to advise a shock. Where your service protocol allows manual defibrillation and doubt remains between fine VF and asystole, give the shock (ERC 2025). Anyone who cannot decide within 5 s whether the rhythm is shockable uses AED mode."
+          "en": "Cardiac arrest in fine VF: a shockable rhythm. In AED mode, the device analyzes the rhythm and decides whether to advise a shock. Where your service protocol allows manual defibrillation and doubt remains between fine VF and asystole, give the shock (ERC 2025). Anyone who cannot decide within 5 s whether the rhythm is shockable uses AED mode."
         }
       },
       {
@@ -4247,7 +4247,7 @@
         "answer": 0,
         "explain": {
           "ro": "TV fără puls este stop cardiac cu ritm șocabil. Se alertează echipa de resuscitare, se începe suportul vital de bază și se aplică imediat DEA, care analizează ritmul și recomandă șocul.",
-          "en": "Pulseless VT is cardiac arrest with a shockable rhythm. Call the arrest team, start BLS and attach the AED at once; it analyses the rhythm and advises the shock."
+          "en": "Pulseless VT is cardiac arrest with a shockable rhythm. Call the arrest team, start BLS and attach the AED at once; it analyzes the rhythm and advises the shock."
         }
       },
       {
@@ -4687,7 +4687,7 @@
         "options": [
           {
             "ro": "Monitorul numără greșit: complexele sunt artefacte",
-            "en": "The monitor miscounts: the complexes are artefact"
+            "en": "The monitor miscounts: the complexes are artifact"
           },
           {
             "ro": "Activitatea electrică nu mai produce o contracție eficientă",
@@ -6982,8 +6982,8 @@
         ],
         "answer": 2,
         "explain": {
-          "ro": "QRS-ul stimulat are aspect de bloc major de ramură stângă (QS în V1–V3, R în V6), care pledează pentru activare din ventriculul drept; axul intermediar (~+40°), pozitiv în DII și aVF, pledează împotriva apexului, care ar da ax orientat superior. Dintr-o venă a sinusului coronar, V1 ar fi pozitiv și DI negativ; din zona ramurii stângi, V1 ar avea aspect qR sau rSR'. Un QRS stimulat de doar 110–120 ms poate include fuziune cu conducerea AV proprie, care modifică axul, așa că localizarea rămâne orientativă.",
-          "en": "The paced QRS looks like left bundle branch block (QS in V1–V3, R in V6), which points to activation from the right ventricle; the normal axis (about +40°), positive in II and aVF, argues against the apex, which would give a superior axis. From a coronary sinus vein V1 would be positive and I negative; from the left bundle branch area V1 would show qR or rSR'. A paced QRS of only 110 to 120 ms may include fusion with the patient's own AV conduction, which shifts the axis, so this localization is only a clue."
+          "ro": "QRS-ul stimulat are aspect de bloc major de ramură stângă (QS în V1–V3, R în V6), care pledează pentru activare din ventriculul drept; axul intermediar (~+40°), pozitiv în DII și aVF, pledează împotriva apexului, care ar da ax orientat superior. Dintr-o venă a sinusului coronar, V1 ar fi pozitiv și DI negativ; din zona ramurii stângi, V1 ar avea aspect qR sau rSR'. Un QRS stimulat de doar 110–120 ms poate include fuziune cu conducerea AV proprie, care poate aduce axul spre normal chiar dacă sonda este în apex, așa că localizarea rămâne orientativă.",
+          "en": "The paced QRS looks like left bundle branch block (QS in V1–V3, R in V6), which points to activation from the right ventricle; the normal axis (about +40°), positive in II and aVF, argues against the apex, which would give a superior axis. From a coronary sinus vein V1 would be positive and I negative; from the left bundle branch area V1 would show qR or rSR'. A paced QRS of only 110 to 120 ms may include fusion with the patient's own AV conduction, which can pull the axis toward normal even when the lead is at the apex, so this localization is only a clue."
         }
       }
     ],
@@ -7190,7 +7190,7 @@
           },
           {
             "ro": "Un artefact de înregistrare din V3 și V4",
-            "en": "A recording artefact in V3 and V4"
+            "en": "A recording artifact in V3 and V4"
           }
         ],
         "answer": 2,
@@ -7534,8 +7534,8 @@
         ],
         "answer": 3,
         "explain": {
-          "ro": "La stimularea zonei ramurii stângi, V1 are aspect de bloc de ramură dreaptă (qR sau rSR'), DI este pozitiv, iar V5–V6 au unde R, cu un timp scurt până la vârful undei R în V6 (consensul EHRA 2023). Aici DI începe cu o undă Q, iar V5–V6 au aspect QS: activarea ventriculului stâng pornește de pe peretele lateral, ca la stimularea biventriculară.",
-          "en": "With left bundle branch area pacing, V1 shows a right bundle branch block pattern (qR or rSR'), lead I is positive, and V5–V6 have R waves with a short R-wave peak time in V6 (EHRA 2023 consensus). Here lead I starts with a Q wave and V5–V6 are QS: left ventricular activation starts from the lateral wall, as in biventricular pacing."
+          "ro": "La stimularea zonei ramurii stângi, V1 are aspect de bloc de ramură dreaptă (qR sau rSR'), iar în V6 timpul până la vârful undei R este scurt (criteriile consensului EHRA 2023); DI este, de obicei, pozitiv, iar V5–V6 au unde R. Aici DI începe cu o undă Q, iar V5–V6 au aspect QS: activarea ventriculului stâng pornește de pe peretele lateral, ca la stimularea biventriculară.",
+          "en": "With left bundle branch area pacing, V1 shows a right bundle branch block pattern (qR or rSR') and V6 has a short R-wave peak time (EHRA 2023 consensus criteria); lead I is usually positive, and V5–V6 have R waves. Here lead I starts with a Q wave and V5–V6 are QS: left ventricular activation starts from the lateral wall, as in biventricular pacing."
         }
       }
     ],
@@ -7865,7 +7865,7 @@
         "Each ventricular spike is followed by a QRS of about 130 ms, narrower than usually seen with right-only or left-only ventricular pacing.",
         "A tall, narrow dominant R in V1 and V2, with negative complexes in V4–V6; the QRS is negative (QS) in II, III and aVF, small and negative in I and positive in aVR: the axis lies in the right upper quadrant (about −115°). A negative lead I with a dominant R in V1 points to left ventricular capture.",
         "The superior axis recalls right ventricular apical pacing, but that gives a positive lead I and a negative V1; septal pacing would give an inferior axis. Here lead I is negative and V1 has a dominant R; the fairly narrow QRS favors biventricular pacing over left ventricular-only pacing.",
-        "The fine, regular baseline oscillations (about 25 per second, or five per large square, for example between about 2.8 and 3.4 s) are artefact, not flutter waves."
+        "The fine, regular baseline oscillations (about 25 per second, or five per large square, for example between about 2.8 and 3.4 s) are artifact, not flutter waves."
       ]
     },
     "takeaway": {
@@ -8272,7 +8272,7 @@
           },
           {
             "ro": "Nu: al doilea spike este un artefact al aparatului ECG",
-            "en": "No: the second spike is an artefact of the ECG machine"
+            "en": "No: the second spike is an artifact of the ECG machine"
           },
           {
             "ro": "Nu: activarea ventriculului stâng poate domina; decide testarea capturii",
@@ -8830,8 +8830,8 @@
         "options": "action_set",
         "answer": 1,
         "explain": {
-          "ro": "Spike-urile de după unda T, ca cel de la ~3,85 s, nu sunt urmate de QRS: stimulatorul nu capturează. Acum pacientul are ritm propriu, ~65/min, dar dacă acesta încetinește, stimulatorul nu îl poate susține. Pe secție sau în UPU, se evaluează pacientul, se anunță imediat medicul, iar pacientul rămâne monitorizat, cu electrozii autoadezivi aplicați și defibrilatorul la îndemână, până la verificarea stimulatorului în aceeași zi.",
-          "en": "The spikes after the T wave, like the one at about 3.85 s, have no QRS after them: the pacemaker is not capturing. The patient has their own rhythm at about 65/min now, but if it slows, the pacemaker cannot support it. On the ward or in the emergency department, check the patient, call the doctor now and keep the patient monitored, with the pads on and the defibrillator at hand, until the device is checked the same day."
+          "ro": "Spike-urile de după unda T, ca cel de la ~3,85 s, nu sunt urmate de QRS: stimulatorul nu capturează. Acum pacientul are ritm propriu, ~65/min, dar dacă acesta încetinește, stimulatorul nu îl poate susține. Pe secție sau în UPU, se evaluează pacientul, se anunță imediat medicul, iar pacientul rămâne monitorizat, cu electrozii autoadezivi aplicați pentru stimulare transcutanată și defibrilatorul la îndemână, până la verificarea stimulatorului în aceeași zi.",
+          "en": "The spikes after the T wave, like the one at about 3.85 s, have no QRS after them: the pacemaker is not capturing. The patient has their own rhythm at about 65/min now, but if it slows, the pacemaker cannot support it. On the ward or in the emergency department, check the patient, call the doctor now and keep the patient monitored, with the pads on, ready for transcutaneous pacing, and the defibrillator at hand, until the device is checked the same day."
         }
       },
       {
