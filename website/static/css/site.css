@@ -1090,7 +1090,7 @@ input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 2px
   overflow: hidden;
 }
 @media (min-width: 900px) { .digest-latest { grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); } }
-.digest-latest-ecg { display: grid; place-items: center; padding: clamp(10px, 2vw, 20px); background: var(--printout); border-bottom: 1px solid var(--line); }
+.digest-latest-ecg { display: grid; place-items: center; padding: clamp(10px, 2vw, 20px); background: var(--surface); border-bottom: 1px solid var(--line); }
 @media (min-width: 900px) { .digest-latest-ecg { border-bottom: 0; border-right: 1px solid var(--line); } }
 .digest-latest-ecg img { display: block; width: 100%; height: auto; border-radius: 8px; }
 .digest-latest-body { display: grid; gap: 14px; align-content: start; padding: clamp(20px, 3vw, 32px); min-width: 0; }

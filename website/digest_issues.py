@@ -100,9 +100,13 @@ def _is_lines(value, minimum=1):
             and all(_is_text(v) for v in value))
 
 
-def problems(issue, folder):
-    """Everything wrong with one issue folder, as plain sentences (empty list = fine)."""
+def problems(issue, folder, name=None):
+    """Everything wrong with one issue folder, as plain sentences (empty list = fine).
+
+    name: the folder name the issue will have on the site, if not the folder's own.
+    """
     folder = Path(folder)
+    name = name or folder.name
     out = []
 
     def need_text(value, where):
@@ -127,17 +131,25 @@ def problems(issue, folder):
 
     if not isinstance(issue, dict):
         return ["issue.json must hold one JSON object"]
-    if not FOLDER_RE.match(folder.name):
-        out.append(f"folder name {folder.name!r} may use only letters, digits and dashes "
+    if not FOLDER_RE.match(name):
+        out.append(f"folder name {name!r} may use only letters, digits and dashes "
                    "(it becomes the page address)")
     number = issue.get("issue_number")
     if not isinstance(number, int) or isinstance(number, bool) or number < 1:
         out.append("issue_number must be a whole number, 1 or more")
+    if not isinstance(issue.get("checked_by_alex"), bool):
+        out.append('"checked_by_alex" at the top of issue.json (the ECG, its answer and the nurse '
+                   'tip) is missing or not true/false: add "checked_by_alex": false')
     week = issue.get("week")
     if week is not None and not week_dates(week):
         out.append(f"week {week!r} is not a real ISO week such as 2026-W42")
-    if "checked_by_alex" in issue and not isinstance(issue["checked_by_alex"], bool):
-        out.append("checked_by_alex must be true or false")
+    elif week is None and issue.get("checked_by_alex") is True:
+        out.append("week is missing: an issue that goes live needs its ISO week, such as 2026-W47")
+    elif WEEK_RE.match(name) and week != name:
+        out.append(f"week {week!r} does not match the folder name {name!r} (the page address)")
+    for key in ("subject", "title", "preheader", "papers_intro", "nurse_tip"):
+        if issue.get(key) is not None and not isinstance(issue[key], dict):
+            out.append(f"{key} must be an object with ro and en")
     for lang in LANGS:
         need_text(_get(issue, "subject", lang), f"subject.{lang}")
         optional_text(_get(issue, "title", lang), f"title.{lang}")
@@ -241,9 +253,23 @@ def is_checked(issue):
     return not unchecked(issue)
 
 
+def without_checks(issue):
+    """The issue's content with every checked_by_alex taken out (to spot content changes)."""
+    if not isinstance(issue, dict):
+        return issue
+    out = {k: v for k, v in issue.items() if k != "checked_by_alex"}
+    if isinstance(out.get("papers"), list):
+        out["papers"] = [{k: v for k, v in p.items() if k != "checked_by_alex"} if isinstance(p, dict) else p
+                         for p in out["papers"]]
+    return out
+
+
 # Reading --------------------------------------------------------------------
-def read_folder(folder):
-    """One issue folder as a dict: folder, data, meta, problems, checked."""
+def read_folder(folder, name=None):
+    """One issue folder as a dict: folder, data, meta, problems, checked.
+
+    name: the folder name the issue will have on the site, if not the folder's own.
+    """
     folder = Path(folder)
     item = {"folder": folder, "data": None, "meta": {}, "problems": [], "checked": False}
     try:
@@ -252,8 +278,8 @@ def read_folder(folder):
         item["problems"] = [f"issue.json cannot be read: {err}"]
         return item
     item["data"] = data
-    item["problems"] = problems(data, folder)
-    item["checked"] = is_checked(data)
+    item["problems"] = problems(data, folder, name)
+    item["checked"] = isinstance(data, dict) and is_checked(data)
     if not item["problems"]:
         item["meta"] = json.loads((folder / data["ecg"].get("meta", "ecg.json")).read_text(encoding="utf-8"))
     return item
@@ -269,28 +295,40 @@ def read_all(issues_dir):
 
 def sort_key(item):
     """Real issues (with a week) first, newest week first; samples after."""
-    data = item["data"] or {}
+    data = item["data"] if isinstance(item["data"], dict) else {}
     week = data.get("week") if week_dates(data.get("week")) else None
     number = data.get("issue_number") if isinstance(data.get("issue_number"), int) else 0
     return (week is not None, week or "", number, item["folder"].name)
+
+
+def meant_to_go_live(item):
+    """True when Alex has ticked the issue (or tried to): the top-level checked_by_alex is
+    set to anything true-looking, such as true, "true" or 1."""
+    data = item["data"]
+    return isinstance(data, dict) and bool(data.get("checked_by_alex")) and data.get("checked_by_alex") not in ("false", "0")
 
 
 def select(issues_dir, preview, warn=print):
     """The issues the site shows, newest first.
 
     Live build: only issues Alex has checked. Preview: every issue that reads cleanly.
-    A broken issue is skipped with a warning, except one already marked as checked:
-    that stops the build, because it was meant to go live.
+    A broken issue is skipped with a warning, except when it was meant to go live (its
+    top-level checked_by_alex is set) or its issue.json cannot be read at all: then the
+    build stops, so a mistake never hides a checked issue quietly.
     """
     shown = []
     for item in read_all(issues_dir):
         name = item["folder"].name
         if item["problems"]:
-            if item["data"] is not None and is_checked(item["data"]):
-                raise SystemExit(f"Weekly issue {name} is marked as checked but has problems:\n  - "
+            if item["data"] is None or meant_to_go_live(item):
+                raise SystemExit(f"Weekly issue {name} cannot be published:\n  - "
                                  + "\n  - ".join(item["problems"]))
             warn(f"Skipping weekly issue {name}: " + "; ".join(item["problems"]))
             continue
+        if not item["checked"]:
+            todo = unchecked(item["data"])
+            if len(todo) < 1 + len(item["data"]["papers"]):  # partly checked: say what is left
+                warn(f"Weekly issue {name} is not live yet; still to check: " + "; ".join(todo))
         if item["checked"] or preview:
             shown.append(item)
     shown.sort(key=sort_key, reverse=True)

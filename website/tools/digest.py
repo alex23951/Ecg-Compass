@@ -7,6 +7,9 @@
     python3 tools/digest.py list                every issue on the site and whether it is live
     python3 tools/digest.py check               fail if any issue on the site is broken
 
+Replacing an issue that is already live with changed text but the same check marks is refused,
+unless Alex approved that exact change (--change-approved).
+
 Only issue.json, ecg.json and the ECG pictures are copied (not the emails, the paper
 shortlist or the candidates). An issue goes live once Alex has checked all of it:
 "checked_by_alex": true at the top of issue.json and on every paper. Until then it is
@@ -35,12 +38,14 @@ def site_issues_dir():
 
 
 def status_line(item):
-    data = item["data"] or {}
+    data = item["data"] if isinstance(item["data"], dict) else {}
     name = item["folder"].name
     week = data.get("week")
     when = weekly.date_range(week, "en") if week else "sample (no week)"
     if item["problems"]:
-        return f"{name}: BROKEN, not shown\n    - " + "\n    - ".join(item["problems"])
+        head = ("BROKEN and marked as checked: the site build stops until this is fixed"
+                if item["data"] is None or weekly.meant_to_go_live(item) else "BROKEN, not shown")
+        return f"{name}: {head}\n    - " + "\n    - ".join(item["problems"])
     if item["checked"]:
         return f"{name}: LIVE · No. {data.get('issue_number')} · {when}"
     return (f"{name}: waiting for Alex's check, preview only · No. {data.get('issue_number')} · {when}\n"
@@ -69,27 +74,38 @@ def resolve_source(arg):
 
 def cmd_add(args):
     source = resolve_source(args.issue)
-    item = weekly.read_folder(source)
+    name = args.name or source.name
+    item = weekly.read_folder(source, name)
     if item["problems"]:
         print(f"Not copied: {source} has problems:")
         for p in item["problems"]:
             print("  -", p)
         return 1
     target_root = Path(args.to).resolve() if args.to else site_issues_dir()
-    name = args.name or source.name
-    if not weekly.FOLDER_RE.match(name):
-        raise SystemExit(f"Folder name {name!r} may use only letters, digits and dashes.")
     target = target_root / name
+    data = item["data"]
     if target.resolve() == source:
         print(f"{source} is already the site's copy; nothing to copy.")
     else:
         others = [i for i in weekly.read_all(target_root)
-                  if i["folder"].name != name and i["data"] and i["data"].get("week")
-                  and i["data"].get("issue_number") == item["data"].get("issue_number")]
-        if others and item["data"].get("week"):
-            print(f"Warning: issue number {item['data']['issue_number']} is also used by "
-                  + ", ".join(o["folder"].name for o in others))
+                  if i["folder"].name != name and isinstance(i["data"], dict) and i["data"].get("week")]
+        for key, label in (("week", "week"), ("issue_number", "issue number")):
+            same = [o["folder"].name for o in others if o["data"].get(key) == data.get(key)]
+            if same and data.get("week"):
+                print(f"Warning: {label} {data.get(key)} is also used by {', '.join(same)}")
         existed = target.exists()
+        old = weekly.read_folder(target) if existed else None
+        if old and old["checked"]:
+            changed = weekly.without_checks(old["data"]) != weekly.without_checks(data)
+            if item["checked"] and changed and not args.change_approved:
+                print(f"Not copied: {name} is live and its text changed since Alex checked it, but the new "
+                      "copy still carries the old check marks. Set the changed part's checked_by_alex to "
+                      "false (until Alex checks it), or, if Alex approved this exact change, run again "
+                      "with --change-approved.")
+                return 1
+            if not item["checked"]:
+                print(f"Warning: {name} was live; this copy is not fully checked, so it comes off the "
+                      "live site until Alex checks it again.")
         if existed:
             shutil.rmtree(target)
         target.mkdir(parents=True)
@@ -125,6 +141,9 @@ def main(argv=None):
     add = sub.add_parser("add", help="copy an issue into the site")
     add.add_argument("issue", help="a week such as 2026-W47 (looked up in the digest workspace) or an issue folder")
     add.add_argument("--name", help="folder name on the site (default: the source folder's name)")
+    add.add_argument("--change-approved", action="store_true",
+                     help="replace a live issue whose text changed, keeping its check marks "
+                          "(only when Alex approved this exact change)")
     add.add_argument("--to", help=argparse.SUPPRESS)  # tests: another issues folder
     add.set_defaults(func=cmd_add)
     for name, func, text in (("list", cmd_list, "show every issue on the site"),

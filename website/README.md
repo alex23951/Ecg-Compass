@@ -93,17 +93,25 @@ already marked as checked stops the build instead, so a mistake never goes live 
 
 **Adding this week's issue** (Claude, after Alex says the issue is approved):
 
-1. In the workspace issue.json, set every `checked_by_alex` to `true` (only on Alex's word).
+1. In the workspace issue.json, set every `checked_by_alex` to `true` (only on Alex's word):
+   the one at the top and the one on each paper.
 2. `python3 tools/digest.py add 2026-W47` copies the issue from the workspace into
    `ecg-digest/issues/2026-W47/`, checks it, and says whether it will be live.
 3. Build and test (below), open a PR. Merging it to main publishes the issue.
 
 Alex can also publish from GitHub alone: open `ecg-digest/issues/<week>/issue.json`, change
-every `"checked_by_alex": false` to `true`, and commit to main.
+every `"checked_by_alex": false` to `true` (one at the top, one per paper), and commit to main.
+Then copy the same check marks into the workspace issue.json, so a later `add` keeps them.
 
 `python3 tools/digest.py list` shows every issue on the site and what is still unchecked;
-`python3 tools/digest.py check` fails if any issue is broken. Correcting an issue that is
-already live: fix it in the workspace and run `add` again (it replaces the site's copy).
+`python3 tools/digest.py check` fails if any issue is broken.
+
+**Correcting an issue that is already live.** A change to the ECG answer, a summary or the nurse
+tip needs Alex's OK like the first check. Fix it in the workspace, set the changed part's
+`checked_by_alex` (the top one, or that paper's) back to `false` until Alex checks it, and run
+`add` again; the issue leaves the live site until then. If Alex dictated or approved the exact
+change, keep the check marks and run `add --change-approved` (without it, `add` refuses to replace
+a live issue whose text changed under the old check marks).
 
 ## Build and test (Claude does this)
 

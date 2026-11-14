@@ -1,6 +1,7 @@
 {
   "issue_number": 1,
   "week": "2026-W42",
+  "checked_by_alex": false,
   "subject": {
     "en": "ECG of the week: regular tachycardia at 128/min, what is it? + pacing after AV node ablation",
     "ro": "ECG-ul săptămânii: tahicardie regulată la 128/min – ce ritm este? + stimularea după ablația nodului AV"
@@ -50,7 +51,7 @@
         "Derivația I este aproape plată între complexele QRS: nici acolo nu se vede o undă P clară."
       ],
       "deeper": "Frecvența flutterului este aici de circa 260/min, mai mică decât cei 300/min din manual. Conform raportului original, pacientul primea verapamil–chinidină și digoxină. Medicamentele care încetinesc circuitul de flutter (clasa IA și IC, de exemplu chinidina sau flecainida) pot permite nodului atrioventricular să conducă 1:1, cu o tahicardie brusc foarte rapidă, uneori cu QRS larg. De aceea, în flutter ele se asociază cu un medicament care blochează nodul atrioventricular.",
-      "why_it_matters": "O tahicardie regulată cu QRS îngust, care stă în jur de 150/min (sau puțin mai lent sub tratament) și nu variază, gândește-te întâi la flutter cu bloc 2:1. Manevrele vagale sau adenozina pot crește pentru scurt timp gradul de bloc și pot demasca undele de flutter; ajută la diagnostic, dar nu opresc flutterul. Prevenția AVC-ului urmează aceleași reguli ca în FA, iar flutterul tipic se vindecă prin ablația istmului cavo-tricuspidian la majoritatea pacienților.",
+      "why_it_matters": "La o tahicardie regulată cu QRS îngust, care stă în jur de 150/min (sau puțin mai lent sub tratament) și nu variază, gândește-te întâi la flutter cu bloc 2:1. Manevrele vagale sau adenozina pot crește pentru scurt timp gradul de bloc și pot demasca undele de flutter; ajută la diagnostic, dar nu opresc flutterul. Prevenția AVC-ului urmează aceleași reguli ca în FA, iar flutterul tipic se vindecă prin ablația istmului cavo-tricuspidian la majoritatea pacienților.",
       "pearl": "Regulată, în jur de 150/min și nu se schimbă niciodată? Caută a doua undă de flutter, ascunsă în QRS sau în unda T."
     }
   },

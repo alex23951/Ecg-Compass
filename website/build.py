@@ -301,7 +301,7 @@ class Site:
     def issue_view(self, issue, lang):
         data = issue["data"]
         week = data.get("week")
-        papers = [{**p[lang], "type": p.get("type", {}).get(lang, ""),
+        papers = [{**p[lang], "type": p["type"][lang],
                    "citation": p.get("citation", ""), "url": p.get("url"),
                    "pubmed": "pubmed" in (p.get("url") or "")}
                   for p in data.get("papers", []) if lang in p]
@@ -311,13 +311,12 @@ class Site:
             "dates": weekly.date_range(week, lang), "month": weekly.month_label(week, lang),
             "sample": not issue["checked"],
             "title": weekly.title(data, lang),
-            "subject": data.get("subject", {}).get(lang, ""),
-            "preheader": data.get("preheader", {}).get(lang, ""),
+            "subject": data["subject"][lang],
             "q": data["ecg"][lang], "images": images, "ecg_id": issue["meta"].get("ecg_id", "?"),
             "og_image": self.absolute(images["image"]) if images.get("image") else None,
-            "papers_intro": data.get("papers_intro", {}).get(lang),
+            "papers_intro": (data.get("papers_intro") or {}).get(lang),
             "papers": papers,
-            "tip": data.get("nurse_tip", {}).get(lang),
+            "tip": (data.get("nurse_tip") or {}).get(lang),
         }
 
     def build_digest(self, lang):

@@ -125,6 +125,47 @@ class CheckingTest(unittest.TestCase):
                     "point at different answers"):
             self.assertIn(bit, text)
 
+    def test_missing_top_level_check_is_not_live(self):
+        folder = make_issue(self.root, "2026-W43", "2026-W43", 2, edit=lambda d: d.pop("checked_by_alex"))
+        item = weekly.read_folder(folder)
+        self.assertFalse(item["checked"])
+        self.assertTrue(any("checked_by_alex" in p for p in item["problems"]))
+        self.assertEqual(weekly.select(self.root, preview=False, warn=lambda _: None), [])
+
+    def test_string_true_stops_the_build(self):
+        make_issue(self.root, "2026-W43", "2026-W43", 2, edit=lambda d: d.update(checked_by_alex="true"))
+        with self.assertRaises(SystemExit):
+            weekly.select(self.root, preview=False, warn=lambda _: None)
+
+    def test_unreadable_issue_stops_the_build(self):
+        folder = make_issue(self.root, "2026-W43", "2026-W43", 2)
+        (folder / "issue.json").write_text('{"checked_by_alex": True}')
+        with self.assertRaises(SystemExit):
+            weekly.select(self.root, preview=False, warn=lambda _: None)
+
+    def test_partly_checked_issue_is_reported(self):
+        make_issue(self.root, "2026-W43", "2026-W43", 2, top=False, papers=True)
+        warnings = []
+        self.assertEqual(weekly.select(self.root, preview=False, warn=warnings.append), [])
+        self.assertTrue(any("still to check" in w for w in warnings))
+
+    def test_checked_issue_needs_a_matching_week(self):
+        no_week = make_issue(self.root, "a", None, 2)
+        self.assertTrue(any("week is missing" in p for p in weekly.read_folder(no_week)["problems"]))
+        wrong = make_issue(self.root, "2026-W44", "2026-W43", 2, top=False)
+        self.assertTrue(any("does not match the folder name" in p for p in weekly.read_folder(wrong)["problems"]))
+
+    def test_null_and_wrong_types_are_problems_not_crashes(self):
+        folder = make_issue(self.root, "2026-W43", "2026-W43", 2, top=False,
+                            edit=lambda d: d.update(nurse_tip=None, papers_intro="x"))
+        probs = weekly.read_folder(folder)["problems"]
+        self.assertEqual(probs, ["papers_intro must be an object with ro and en"])
+        folder = make_issue(self.root, "2026-W44", "2026-W44", 3, edit=lambda d: d.update(nurse_tip=None))
+        self.assertEqual(weekly.read_folder(folder)["problems"], [])
+        (self.root / "list").mkdir()
+        (self.root / "list" / "issue.json").write_text("[]")
+        self.assertEqual(weekly.read_folder(self.root / "list")["problems"], ["issue.json must hold one JSON object"])
+
     def test_checked_but_broken_stops_the_build(self):
         make_issue(self.root, "2026-W43", "2026-W43", 2,
                    edit=lambda d: d["ecg"]["en"].pop("prompt"))
@@ -151,6 +192,7 @@ class PagesTest(unittest.TestCase):
                    edit=lambda d: d["subject"].update(ro="ECG-ul săptămânii: al doilea număr",
                                                       en="ECG of the week: the second issue"))
         make_issue(cls.issues, "2026-W44", "2026-W44", 3, top=False)  # waiting for Alex
+        make_issue(cls.issues, "2026-W40", "2026-W40", 1, edit=lambda d: d.update(nurse_tip=None))
         cls.live = Built(cls.issues)
         cls.preview = Built(cls.issues, preview=True)
         cls.empty_dir = root / "empty"
@@ -182,6 +224,19 @@ class PagesTest(unittest.TestCase):
         self.assertIn("Octombrie 2026", index)
         self.assertIn("19–25 October 2026", self.live.page("en/ecg-of-the-week/index.html"))
 
+    def test_archive_lists_older_issues_by_month(self):
+        index = self.live.page("en/ecg-of-the-week/index.html")
+        self.assertIn("October 2026", index)
+        self.assertLess(index.index('href="2026-W42/"'), index.index('href="2026-W40/"'))
+        page = self.live.page("en/ecg-of-the-week/2026-W40/index.html")
+        self.assertNotIn('id="tip"', page)  # no nurse tip that week
+
+    def test_home_page_uses_the_newest_checked_issue(self):
+        home = self.live.page("index.html")
+        self.assertIn('class="quiz"', home)
+        self.assertIn("static/img/weekly/2026-W43/", home)
+        self.assertIn('class="button button-quiet button-lg" href="ecg-saptamanii/"', home)
+
     def test_issue_pages_link_to_each_other(self):
         newer = self.live.page("ecg-saptamanii/2026-W43/index.html")
         older = self.live.page("ecg-saptamanii/2026-W42/index.html")
@@ -212,7 +267,7 @@ class PagesTest(unittest.TestCase):
     def test_feed_and_sitemap(self):
         feed = xml.dom.minidom.parse(str(self.live.dist / "ecg-saptamanii/feed.xml"))
         entries = feed.getElementsByTagName("entry")
-        self.assertEqual(len(entries), 2)
+        self.assertEqual(len(entries), 3)
         self.assertIn("Al doilea număr", entries[0].getElementsByTagName("title")[0].firstChild.data)
         empty = xml.dom.minidom.parse(str(self.empty.dist / "en/ecg-of-the-week/feed.xml"))
         self.assertEqual(len(empty.getElementsByTagName("entry")), 0)
@@ -260,6 +315,46 @@ class ToolTest(unittest.TestCase):
         code, out = self.run_tool("add", str(source), "--to", str(self.site))
         self.assertEqual(code, 1)
         self.assertFalse((self.site / "2026-W45").exists())
+
+    def test_add_finds_a_week_in_the_workspace(self):
+        workspace = self.root / "workspace"
+        make_issue(workspace, "2026-W45", "2026-W45", 4)
+        old = digest.WORKSPACE
+        digest.WORKSPACE = workspace
+        try:
+            code, out = self.run_tool("add", "2026-W45", "--to", str(self.site))
+        finally:
+            digest.WORKSPACE = old
+        self.assertEqual(code, 0)
+        self.assertIn("2026-W45: LIVE", out)
+
+    def test_add_renames_with_name(self):
+        source = make_issue(self.root / "workspace", "week 45", "2026-W45", 4)
+        code, out = self.run_tool("add", str(source), "--to", str(self.site), "--name", "2026-W45")
+        self.assertEqual(code, 0, out)
+        self.assertTrue((self.site / "2026-W45" / "issue.json").exists())
+
+    def test_add_protects_a_live_issue(self):
+        source = make_issue(self.root / "workspace", "2026-W45", "2026-W45", 4)
+        self.assertEqual(self.run_tool("add", str(source), "--to", str(self.site))[0], 0)
+        data = json.loads((source / "issue.json").read_text(encoding="utf-8"))
+        data["ecg"]["en"]["pearl"] = "A changed pearl."
+        (source / "issue.json").write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
+        code, out = self.run_tool("add", str(source), "--to", str(self.site))
+        self.assertEqual(code, 1)
+        self.assertIn("text changed since Alex checked it", out)
+        code, out = self.run_tool("add", str(source), "--to", str(self.site), "--change-approved")
+        self.assertEqual(code, 0)
+        data["checked_by_alex"] = False
+        (source / "issue.json").write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
+        code, out = self.run_tool("add", str(source), "--to", str(self.site))
+        self.assertEqual(code, 0)
+        self.assertIn("comes off the live site", out)
+
+    def test_list_marks_a_checked_broken_issue(self):
+        make_issue(self.site, "2026-W46", "2026-W46", 5, edit=lambda d: d.pop("subject"))
+        code, out = self.run_tool("list", "--dir", str(self.site))
+        self.assertIn("build stops", out)
 
     def test_check(self):
         make_issue(self.site, "2026-W45", "2026-W45", 4)
