@@ -111,7 +111,7 @@
       "en": [
         "At fast rates the P wave can merge into the preceding T wave.",
         "At around 150/min think of flutter with 2:1 block: look for flutter waves in II, III, aVF and V1.",
-        "Treat the cause: fever, pain, hypovolaemia, anaemia, pulmonary embolism, sepsis, thyrotoxicosis."
+        "Treat the cause: fever, pain, hypovolemia, anemia, pulmonary embolism, sepsis, thyrotoxicosis."
       ]
     },
     "plain": {
@@ -180,7 +180,7 @@
       ],
       "en": [
         "RR intervals irregularly irregular, with no pattern.",
-        "No organised P waves; the baseline shows fine or coarse f waves (best in V1 and II) or looks flat.",
+        "No organized P waves; the baseline shows fine or coarse f waves (best in V1 and II) or looks flat.",
         "Ventricular rate varies: controlled if under 110/min at rest, rapid if above."
       ]
     },
@@ -234,7 +234,7 @@
       ],
       "en": [
         "Any regular narrow tachycardia at about 150/min is flutter with 2:1 block until proven otherwise.",
-        "With 2:1 block one F wave hides in the QRS or the T wave; vagal manoeuvres or adenosine can reveal it.",
+        "With 2:1 block one F wave hides in the QRS or the T wave; vagal maneuvers or adenosine can reveal it.",
         "Stroke risk is assessed as in atrial fibrillation."
       ]
     },
@@ -286,7 +286,7 @@
     },
     "action": {
       "ro": "Tahicardie regulată cu complexe QRS înguste, de obicei 150–250/min, fără unde P vizibile, cu debut și terminare bruște. La semne de instabilitate (hipotensiune, sincopă, durere toracică, insuficiență cardiacă; ERC 2025), se anunță imediat medicul sau se solicită un echipaj cu medic și se aplică electrozii autoadezivi. La pacientul stabil se înregistrează un ECG în 12 derivații; la indicația medicului sau conform protocolului unității, se poate încerca manevra Valsalva modificată, cu înregistrarea continuă a ritmului (ESC 2019 TSV). Medicația se administrează numai la indicația medicului.",
-      "en": "A regular narrow-QRS tachycardia, usually 150–250/min, with no visible P waves, that starts and stops suddenly. With adverse features (low blood pressure, syncope, chest pain, heart failure; ERC 2025), call the doctor now or request physician support, and put the pads on. In a stable patient, record a 12-lead; on a doctor's order or per your unit's protocol, a modified Valsalva manoeuvre can be tried with the rhythm strip running (ESC 2019 SVT). Drugs are given only on a doctor's order."
+      "en": "A regular narrow-QRS tachycardia, usually 150–250/min, with no visible P waves, that starts and stops suddenly. With adverse features (low blood pressure, syncope, chest pain, heart failure; ERC 2025), call the doctor now or request physician support, and put the pads on. In a stable patient, record a 12-lead; on a doctor's order or per your unit's protocol, a modified Valsalva maneuver can be tried with the rhythm strip running (ESC 2019 SVT). Drugs are given only on a doctor's order."
     }
   },
   "PVC": {
@@ -355,7 +355,7 @@
       ],
       "en": [
         "The pulse and pulse oximeters may count only half of the beats.",
-        "Look for causes: ischaemia, electrolytes, digoxin, cardiomyopathy; Holter and echo if they are frequent."
+        "Look for causes: ischemia, electrolytes, digoxin, cardiomyopathy; Holter and echo if they are frequent."
       ]
     },
     "plain": {
@@ -607,7 +607,7 @@
         "Preexcitația ventriculară și stimularea ventriculară pot avea un aspect asemănător."
       ],
       "en": [
-        "It hides ischaemia: use the Sgarbossa criteria (concordant ST elevation ≥ 1 mm, concordant ST depression ≥ 1 mm in V1–V3, excessive discordance).",
+        "It hides ischemia: use the Sgarbossa criteria (concordant ST elevation ≥ 1 mm, concordant ST depression ≥ 1 mm in V1–V3, excessive discordance).",
         "LBBB often signals structural heart disease: ask for an echo.",
         "Pre-excitation and ventricular pacing can look similar."
       ]
@@ -618,7 +618,7 @@
     },
     "action": {
       "ro": "Conducerea pe ramura stângă este blocată: complexul QRS este larg, iar segmentul ST este orientat opus acestuia. Blocul maschează semnele obișnuite de infarct. La durere toracică persistentă, se consideră un posibil STEMI, fie că blocul este nou, fie că este cunoscut (ESC 2023 SCA): în spital se anunță imediat medicul, în ambulanță se transmite ECG-ul și se anunță spitalul cu laborator de cateterism. Fără simptome, traseul se compară cu un ECG anterior și se semnalează medicului.",
-      "en": "Conduction down the left bundle is blocked: the QRS is wide, and the ST segment points the opposite way. The block hides the usual signs of infarction. With ongoing chest pain, treat it as a possible STEMI whether the block is new or already known (ESC 2023 ACS): in hospital call the doctor now; in the ambulance transmit the ECG and pre-alert the PCI centre. Without symptoms, compare it with an earlier ECG and report it to the doctor."
+      "en": "Conduction down the left bundle is blocked: the QRS is wide, and the ST segment points the opposite way. The block hides the usual signs of infarction. With ongoing chest pain, treat it as a possible STEMI whether the block is new or already known (ESC 2023 ACS): in hospital call the doctor now; in the ambulance transmit the ECG and pre-alert the PCI center. Without symptoms, compare it with an earlier ECG and report it to the doctor."
     }
   },
   "LAFB": {
@@ -648,7 +648,7 @@
         "Hemiblocul anterior stâng asociat cu bloc major de ramură dreaptă constituie un bloc bifascicular."
       ],
       "en": [
-        "Other causes of left axis deviation: inferior MI (Q waves in II, III, aVF), pre-excitation, ventricular pacing, hyperkalaemia.",
+        "Other causes of left axis deviation: inferior MI (Q waves in II, III, aVF), pre-excitation, ventricular pacing, hyperkalemia.",
         "LAFB plus RBBB is bifascicular block."
       ]
     },
@@ -724,7 +724,7 @@
     },
     "action": {
       "ro": "Supradenivelare de segment ST în DII, DIII și aVF: diagnostic prezumtiv de STEMI inferior. Bradicardia, blocurile AV și infarctul de ventricul drept sunt frecvente. În spital, ECG-ul se arată imediat medicului; în ambulanță, se transmite și se anunță spitalul cu laborator de cateterism (ESC 2023 SCA). Înaintea oricărui nitrat se înregistrează V4R, iar pacientul rămâne monitorizat, cu defibrilatorul la îndemână.",
-      "en": "ST elevation in II, III and aVF: a presumed inferior STEMI. Bradycardia, AV block and right ventricular infarction are common. In hospital, show the ECG to the doctor at once; in the ambulance, transmit it and pre-alert the PCI centre (ESC 2023 ACS). Record V4R before any nitrate, and keep the patient monitored with the defibrillator at hand."
+      "en": "ST elevation in II, III and aVF: a presumed inferior STEMI. Bradycardia, AV block and right ventricular infarction are common. In hospital, show the ECG to the doctor at once; in the ambulance, transmit it and pre-alert the PCI center (ESC 2023 ACS). Record V4R before any nitrate, and keep the patient monitored with the defibrillator at hand."
     }
   },
   "STEMI_ANTLAT": {
@@ -755,7 +755,7 @@
       ],
       "en": [
         "Sinus tachycardia in an anterior STEMI suggests a large infarct or heart failure.",
-        "Look-alikes: LV aneurysm (persistent elevation with Q waves), early repolarisation, LBBB, LVH, pericarditis (diffuse, with PR depression)."
+        "Look-alikes: LV aneurysm (persistent elevation with Q waves), early repolarization, LBBB, LVH, pericarditis (diffuse, with PR depression)."
       ]
     },
     "plain": {
@@ -764,7 +764,7 @@
     },
     "action": {
       "ro": "Supradenivelare de segment ST în V2–V5, DI și aVL: diagnostic prezumtiv de STEMI anterolateral, de obicei prin ocluzia arterei descendente anterioare. Infarctul este întins, cu risc mare de fibrilație ventriculară, șoc cardiogen și insuficiență cardiacă. În spital, ECG-ul se arată imediat medicului; în ambulanță, se transmite și se anunță spitalul cu laborator de cateterism (ESC 2023 SCA). Pacientul rămâne monitorizat, cu defibrilatorul la îndemână.",
-      "en": "ST elevation in V2–V5, I and aVL: a presumed anterolateral STEMI, usually from a blocked left anterior descending artery. The infarct is large, with a high risk of ventricular fibrillation, cardiogenic shock and heart failure. In hospital, show the ECG to the doctor at once; in the ambulance, transmit it and pre-alert the PCI centre (ESC 2023 ACS). Keep the patient monitored with the defibrillator at hand."
+      "en": "ST elevation in V2–V5, I and aVL: a presumed anterolateral STEMI, usually from a blocked left anterior descending artery. The infarct is large, with a high risk of ventricular fibrillation, cardiogenic shock and heart failure. In hospital, show the ECG to the doctor at once; in the ambulance, transmit it and pre-alert the PCI center (ESC 2023 ACS). Keep the patient monitored with the defibrillator at hand."
     }
   },
   "STEMI_INF_POST": {
@@ -804,7 +804,7 @@
     },
     "action": {
       "ro": "Supradenivelare de segment ST în DII, DIII, aVF și V5–V6, cu subdenivelare ST în V1–V3: diagnostic prezumtiv de STEMI care cuprinde și peretele posterior. Subdenivelarea din V1–V3 este imaginea în oglindă a supradenivelării ST posterioare, nu o ischemie separată. ECG-ul se arată imediat medicului sau se transmite și se anunță spitalul cu laborator de cateterism (ESC 2023 SCA); V7–V9 și V4R se înregistrează fără a întârzia alerta. Bradicardia este frecventă: pacientul rămâne monitorizat, cu defibrilatorul la îndemână.",
-      "en": "ST elevation in II, III, aVF and V5–V6 with ST depression in V1–V3: a presumed STEMI that also involves the posterior wall. The depression in V1–V3 is the mirror image of posterior ST elevation, not separate ischaemia. Show the ECG to the doctor at once, or transmit it and pre-alert the PCI centre (ESC 2023 ACS); record V7–V9 and V4R without delaying the alert. Bradycardia is common: keep the patient monitored with the defibrillator at hand."
+      "en": "ST elevation in II, III, aVF and V5–V6 with ST depression in V1–V3: a presumed STEMI that also involves the posterior wall. The depression in V1–V3 is the mirror image of posterior ST elevation, not separate ischemia. Show the ECG to the doctor at once, or transmit it and pre-alert the PCI center (ESC 2023 ACS); record V7–V9 and V4R without delaying the alert. Bradycardia is common: keep the patient monitored with the defibrillator at hand."
     }
   },
   "STEMI_ANT_INF": {
@@ -844,7 +844,7 @@
     },
     "action": {
       "ro": "Supradenivelare de segment ST în V1–V4 și în DII, DIII și aVF: diagnostic prezumtiv de STEMI într-un teritoriu întins, adesea prin ocluzia unei artere descendente anterioare lungi. Riscul de fibrilație ventriculară și de șoc cardiogen este mare. În spital, ECG-ul se arată imediat medicului; în ambulanță, se transmite și se anunță spitalul cu laborator de cateterism (ESC 2023 SCA). Pacientul rămâne monitorizat, cu defibrilatorul la îndemână.",
-      "en": "ST elevation in V1–V4 and in II, III and aVF: a presumed STEMI over a large territory, often from a blocked long left anterior descending artery. The risk of ventricular fibrillation and cardiogenic shock is high. In hospital, show the ECG to the doctor at once; in the ambulance, transmit it and pre-alert the PCI centre (ESC 2023 ACS). Keep the patient monitored with the defibrillator at hand."
+      "en": "ST elevation in V1–V4 and in II, III and aVF: a presumed STEMI over a large territory, often from a blocked long left anterior descending artery. The risk of ventricular fibrillation and cardiogenic shock is high. In hospital, show the ECG to the doctor at once; in the ambulance, transmit it and pre-alert the PCI center (ESC 2023 ACS). Keep the patient monitored with the defibrillator at hand."
     }
   },
   "MI_ANT_RECENT": {
@@ -906,7 +906,7 @@
   "EARLY_REPOL": {
     "name": {
       "ro": "Repolarizare precoce",
-      "en": "Early repolarisation"
+      "en": "Early repolarization"
     },
     "tell": {
       "ro": "Supradenivelare ST modestă, concavă în sus, cu croșetarea punctului J, stabilă în timp, fără subdenivelare ST în oglindă.",
@@ -920,7 +920,7 @@
   "NSTE_ISCH": {
     "name": {
       "ro": "Ischemie subendocardică (fără supradenivelare ST)",
-      "en": "Subendocardial ischaemia (no ST elevation)"
+      "en": "Subendocardial ischemia (no ST elevation)"
     },
     "tell": {
       "ro": "Subdenivelare de segment ST, fără supradenivelare ST (cu excepția aVR); criteriile de STEMI nu sunt îndeplinite.",
@@ -988,7 +988,7 @@
       ],
       "en": [
         "Voltage criteria are unreliable in young and thin people; sensitivity is low, and echo is the reference test.",
-        "The strain pattern can mimic lateral ischaemia.",
+        "The strain pattern can mimic lateral ischemia.",
         "Large complexes overlap the next row: switch the gain to 5 mm/mV to read them."
       ]
     },
@@ -1031,7 +1031,7 @@
         "PR under 120 ms.",
         "Delta wave: the first part of the QRS rises slowly, slurred.",
         "Widened QRS (usually over 110–120 ms) with secondary ST-T changes opposite to the delta wave.",
-        "Delta-wave polarity localises the pathway: a dominant R in V1 means a left-sided pathway; a negative delta in the inferior leads means a posteroseptal pathway."
+        "Delta-wave polarity localizes the pathway: a dominant R in V1 means a left-sided pathway; a negative delta in the inferior leads means a posteroseptal pathway."
       ]
     },
     "pitfalls": {
@@ -1076,9 +1076,9 @@
         "Fără puls, TV este ritm șocabil, ca FV (ERC 2025). Cu puls, conduita depinde de semnele de instabilitate."
       ],
       "en": [
-        "At least three consecutive ventricular complexes at over 100/min; VT is sustained if it lasts over 30 s or has to be terminated sooner because of haemodynamic compromise.",
+        "At least three consecutive ventricular complexes at over 100/min; VT is sustained if it lasts over 30 s or has to be terminated sooner because of hemodynamic compromise.",
         "Wide QRS (120 ms or more), usually regular. Monomorphic VT: every complex is the same. Polymorphic VT: the shape changes from beat to beat.",
-        "On a 12-lead ECG, AV dissociation, capture beats and fusion beats favour VT.",
+        "On a 12-lead ECG, AV dissociation, capture beats and fusion beats favor VT.",
         "Without a pulse, VT is a shockable rhythm, like VF (ERC 2025). With a pulse, management depends on adverse features."
       ]
     },
@@ -1091,14 +1091,14 @@
       ],
       "en": [
         "A wide-QRS tachycardia is VT until proven otherwise, especially after a myocardial infarction or in cardiomyopathy.",
-        "A conscious patient with a normal blood pressure can be in VT: haemodynamic tolerance does not rule it out.",
+        "A conscious patient with a normal blood pressure can be in VT: hemodynamic tolerance does not rule it out.",
         "At very fast rates the QRS and T wave merge into a sine wave (a ventricular flutter shape) that is easy to mistake for VF. In VT the complexes stay identical and regular.",
         "A single monitor lead rarely shows AV dissociation and cannot rule out SVT with aberrant conduction. If the patient is stable, record a 12-lead ECG."
       ]
     },
     "action": {
       "ro": "Tahicardia ventriculară poate evolua oricând spre stop cardiac. Se evaluează imediat pacientul: răspunde, respiră normal, are puls? Fără puls, este stop cardiac: resuscitare cardiopulmonară (RCP) și defibrilare, ca în fibrilația ventriculară (ERC 2025). Cu puls, se anunță imediat medicul sau se solicită echipaj cu medic, se aplică electrozii autoadezivi și se urmăresc semnele de instabilitate (hipotensiune cu semne de șoc, sincopă, insuficiență cardiacă, ischemie miocardică); cardioversia și medicația se fac numai la indicația medicului sau conform protocolului.",
-      "en": "Ventricular tachycardia can turn into cardiac arrest at any moment. Check the patient at once: responsive, breathing normally, a pulse? Without a pulse it is cardiac arrest: cardiopulmonary resuscitation (CPR) and defibrillation, as for ventricular fibrillation (ERC 2025). With a pulse, call the doctor now or request physician support, put the pads on and watch for adverse features (low blood pressure with signs of shock, syncope, heart failure, myocardial ischaemia); cardioversion and drugs only on a doctor's order or per protocol."
+      "en": "Ventricular tachycardia can turn into cardiac arrest at any moment. Check the patient at once: responsive, breathing normally, a pulse? Without a pulse it is cardiac arrest: cardiopulmonary resuscitation (CPR) and defibrillation, as for ventricular fibrillation (ERC 2025). With a pulse, call the doctor now or request physician support, put the pads on and watch for adverse features (low blood pressure with signs of shock, syncope, heart failure, myocardial ischemia); cardioversion and drugs only on a doctor's order or per protocol."
     }
   },
   "AT": {
@@ -1175,7 +1175,7 @@
       "en": [
         "A pacing spike (a narrow vertical line) before each QRS at equal intervals: the programmed lower rate.",
         "The paced QRS is wide; from the right ventricle it looks like left bundle branch block (negative in V1).",
-        "No organised P waves: the atria fibrillate, so only the ventricle is paced and sensed (VVI)."
+        "No organized P waves: the atria fibrillate, so only the ventricle is paced and sensed (VVI)."
       ]
     },
     "pitfalls": {
@@ -1186,7 +1186,7 @@
       ],
       "en": [
         "A fusion beat (spike plus a partly native QRS) is a coincidence of timing, not a malfunction.",
-        "ST-T in paced beats is secondary; judge ischaemia with the modified Sgarbossa criteria.",
+        "ST-T in paced beats is secondary; judge ischemia with the modified Sgarbossa criteria.",
         "Check every spike: is it followed by a QRS (capture)? Does it come at the right interval after the previous beat (sensing)?"
       ]
     },
@@ -1342,7 +1342,7 @@
       ],
       "en": [
         "A spike at the expected time, outside the myocardial refractory period, not followed by a QRS (ventricular spike) or a P wave (atrial spike).",
-        "Spike intervals stay as programmed: the device fires, but the impulse does not depolarise the muscle.",
+        "Spike intervals stay as programmed: the device fires, but the impulse does not depolarize the muscle.",
         "It can be intermittent or permanent; without an escape rhythm it causes pauses or asystole."
       ]
     },
@@ -1354,7 +1354,7 @@
       ],
       "en": [
         "A spike that falls in the refractory period (straight after a native QRS) cannot capture: that is a sensing problem, not a capture problem.",
-        "Causes: a rise in capture threshold (in the first weeks after implant, ischaemia, hyperkalaemia, antiarrhythmic drugs), lead dislodgement, perforation or fracture, an output programmed too low, a depleted battery.",
+        "Causes: a rise in capture threshold (in the first weeks after implant, ischemia, hyperkalemia, antiarrhythmic drugs), lead dislodgement, perforation or fracture, an output programmed too low, a depleted battery.",
         "Loss of capture in a pacemaker-dependent patient is an emergency: prepare temporary pacing and interrogate the device."
       ]
     },
@@ -1436,7 +1436,7 @@
       ],
       "en": [
         "The QS complexes in II, III, aVF and V1–V3 look like an old infarct but come from pacing: Q waves in paced beats are not a reliable sign of infarction.",
-        "ST-T changes are secondary (discordant); judge ischaemia with the modified Sgarbossa criteria.",
+        "ST-T changes are secondary (discordant); judge ischemia with the modified Sgarbossa criteria.",
         "Frequent right ventricular pacing (especially above 20% of beats) can, over time, impair left ventricular function (pacing-induced cardiomyopathy)."
       ]
     },
@@ -1473,7 +1473,7 @@
         "Ca la orice ritm electrostimulat, modificările ST-T sunt secundare."
       ],
       "en": [
-        "The ECG localises the lead only roughly: an inferior axis shows that pacing starts high in the right ventricle, not the exact spot.",
+        "The ECG localizes the lead only roughly: an inferior axis shows that pacing starts high in the right ventricle, not the exact spot.",
         "The same shape (left bundle branch block with an inferior axis) is seen in right ventricular outflow tract ectopy and VT; the pacing spike tells them apart.",
         "As in any paced rhythm, ST-T changes are secondary."
       ]
@@ -1513,7 +1513,7 @@
       "en": [
         "A negative V1 does not exclude biventricular pacing: it depends on the lead positions (a left ventricular lead in the anterior interventricular or middle cardiac vein, a right ventricular lead on the septum or outflow tract) and on where V1 is placed (for example too high).",
         "If a CRT patient loses the Q in I and the dominant R in V1, and the QRS looks like right ventricular pacing, suspect loss of left ventricular capture.",
-        "Resynchronisation works best when nearly every beat is biventricularly paced (ideally 98% or more): native beats, fusion and frequent ectopy reduce the benefit; a common cause is atrial fibrillation with a fast ventricular rate."
+        "Resynchronization works best when nearly every beat is biventricularly paced (ideally 98% or more): native beats, fusion and frequent ectopy reduce the benefit; a common cause is atrial fibrillation with a fast ventricular rate."
       ]
     },
     "plain": {
@@ -1671,7 +1671,7 @@
       ],
       "en": [
         "At faster rates the P waves can be small or hidden in the previous T wave; look for them in II and V1.",
-        "A P wave followed by neither a ventricular spike nor a native QRS (outside refractory periods and upper-rate behaviour) suggests atrial undersensing.",
+        "A P wave followed by neither a ventricular spike nor a native QRS (outside refractory periods and upper-rate behavior) suggests atrial undersensing.",
         "If the patient has their own AV conduction, a long programmed AV delay allows native or fusion beats.",
         "A paced tachycardia at the upper tracking rate, started by a ventricular ectopic beat with a retrograde P wave, suggests pacemaker-mediated tachycardia; a magnet stops it."
       ]
@@ -1697,8 +1697,8 @@
         "Apar când frecvența proprie este apropiată de frecvența minimă de stimulare: spike-ul vine înainte ca bătaia proprie să fie detectată, deoarece detecția are loc abia când activarea ajunge la vârful sondei."
       ],
       "en": [
-        "Fusion: the device impulse and the native impulse depolarise the ventricles together, and the QRS is midway in shape between paced and native.",
-        "Pseudofusion: the spike lands on a native QRS that has already begun, without changing its shape; the stimulus has no effect because the muscle is already depolarised.",
+        "Fusion: the device impulse and the native impulse depolarize the ventricles together, and the QRS is midway in shape between paced and native.",
+        "Pseudofusion: the spike lands on a native QRS that has already begun, without changing its shape; the stimulus has no effect because the muscle is already depolarized.",
         "They occur when the native rate is close to the lower rate: the spike fires before the native beat is sensed, because sensing happens only when activation reaches the lead tip."
       ]
     },
@@ -1754,7 +1754,7 @@
       "en": [
         "Programmed hysteresis gives longer escape intervals after native beats; it is not oversensing.",
         "In a pacemaker-dependent patient, oversensing can cause long pauses and syncope.",
-        "With a pacemaker (not an implantable defibrillator), a magnet switches the device to asynchronous pacing and stops the inhibition: a useful emergency manoeuvre.",
+        "With a pacemaker (not an implantable defibrillator), a magnet switches the device to asynchronous pacing and stops the inhibition: a useful emergency maneuver.",
         "In a dual-chamber (DDD) device, oversensing on the atrial channel tends to cause fast ventricular pacing (the device tracks the false signals) or inappropriate mode switching rather than pauses."
       ]
     },
@@ -1795,12 +1795,12 @@
       "en": [
         "Artefact (movement, tremor, shivering, a loose electrode) can mimic VF. Look at the patient first: a patient who is talking is not in VF.",
         "Fine VF can be mistaken for asystole. Check the gain and a second lead without prolonging the pause in compressions. If doubt remains, ERC 2025 recommends a shock.",
-        "Polymorphic VT has recognisable QRS complexes whose shape changes from beat to beat; in torsades de pointes the amplitude waxes and wanes. Without a pulse, both are treated as VF."
+        "Polymorphic VT has recognizable QRS complexes whose shape changes from beat to beat; in torsades de pointes the amplitude waxes and wanes. Without a pulse, both are treated as VF."
       ]
     },
     "plain": {
       "ro": "Linie haotică, fără bătăi recunoscute",
-      "en": "Chaotic line, no recognisable beats"
+      "en": "Chaotic line, no recognizable beats"
     },
     "action": {
       "ro": "Fibrilația ventriculară nu produce puls: este stop cardiac. Se confirmă în câteva secunde că pacientul nu răspunde și nu respiră normal, se alertează echipa de resuscitare (în prespital, se solicită sprijin medical, conform protocolului SAJ/SMURD) și se începe resuscitarea cardiopulmonară (RCP). Se aplică imediat defibrilatorul extern automat (DEA) sau electrozii defibrilatorului: ritmul este șocabil, iar șocul se administrează cât mai repede, cu întreruperi minime ale compresiilor (ERC 2025).",
@@ -1858,7 +1858,7 @@
     },
     "tell": {
       "ro": "Ritm organizat pe monitor, dar fără puls.",
-      "en": "An organised rhythm on the monitor, but no pulse."
+      "en": "An organized rhythm on the monitor, but no pulse."
     },
     "criteria": {
       "ro": [
@@ -1868,7 +1868,7 @@
         "Ritm neșocabil (ERC 2025)."
       ],
       "en": [
-        "The monitor shows an organised rhythm, with repeating QRS complexes, that would normally produce a pulse.",
+        "The monitor shows an organized rhythm, with repeating QRS complexes, that would normally produce a pulse.",
         "The patient is unresponsive, not breathing normally and has no palpable central pulse.",
         "The diagnosis is clinical: the tracing alone cannot establish PEA, however normal the rhythm looks.",
         "Non-shockable rhythm (ERC 2025)."
@@ -1882,8 +1882,8 @@
       ],
       "en": [
         "A rhythm that looks normal on the monitor does not prove there is a circulation. Always assess the patient, not just the screen.",
-        "Do not shock an organised rhythm without a pulse: PEA is non-shockable, and synchronised cardioversion has no role.",
-        "Look for the reversible causes (4 Hs and 4 Ts): hypoxia, hypovolaemia, hypo-/hyperkalaemia and other metabolic disorders, hypo-/hyperthermia; coronary or pulmonary thrombosis, cardiac tamponade, toxins, tension pneumothorax."
+        "Do not shock an organized rhythm without a pulse: PEA is non-shockable, and synchronized cardioversion has no role.",
+        "Look for the reversible causes (4 Hs and 4 Ts): hypoxia, hypovolemia, hypo-/hyperkalemia and other metabolic disorders, hypo-/hyperthermia; coronary or pulmonary thrombosis, cardiac tamponade, toxins, tension pneumothorax."
       ]
     },
     "plain": {

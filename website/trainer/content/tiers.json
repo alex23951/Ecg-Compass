@@ -49,7 +49,7 @@
       ],
       "en": [
         "Record a correct 12-lead, with V4R and V7–V9 when they are needed.",
-        "Recognise arrest rhythms and the ECGs that cannot wait, and know whom to call.",
+        "Recognize arrest rhythms and the ECGs that cannot wait, and know whom to call.",
         "Check the rate and the QTc on the tracing, and tell artefact from arrhythmia."
       ]
     },
@@ -101,7 +101,7 @@
       ],
       "en": [
         "Call a rhythm shockable or non-shockable within the brief rhythm check.",
-        "Recognise STEMI and its equivalents, transmit the ECG and pre-alert the PCI centre.",
+        "Recognize STEMI and its equivalents, transmit the ECG and pre-alert the PCI center.",
         "Judge bradycardia and tachycardia by adverse features, and put the pads on in time."
       ]
     },
@@ -122,11 +122,11 @@
       },
       {
         "ro": "Electrozi autoadezivi aplicați, stimulare sau cardioversie sincronă pregătite, medic solicitat",
-        "en": "Pads on, pacing or synchronised cardioversion ready, request physician support"
+        "en": "Pads on, pacing or synchronized cardioversion ready, request physician support"
       },
       {
         "ro": "Transmiterea ECG-ului în 12 derivații și anunțarea spitalului cu laborator de cateterism",
-        "en": "Transmit the 12-lead and pre-alert the PCI centre"
+        "en": "Transmit the 12-lead and pre-alert the PCI center"
       },
       {
         "ro": "Monitorizare, transport și predarea pacientului la spital",
@@ -152,8 +152,8 @@
       ],
       "en": [
         "Write a complete report with measurements, on your own.",
-        "Localise the culprit artery, the level of an AV block and an accessory pathway.",
-        "Recognise pacing modes, and know the next step in the ESC and ERC guidelines."
+        "Localize the culprit artery, the level of an AV block and an accessory pathway.",
+        "Recognize pacing modes, and know the next step in the ESC and ERC guidelines."
       ]
     },
     "explain": "standard",
@@ -184,8 +184,8 @@
       ],
       "en": [
         "Read ECGs from every module fast, without hints, well enough to decide.",
-        "Recognise STEMI equivalents and the patterns that mimic STEMI.",
-        "Tell device malfunction from normal behaviour, and decide on referral for pacing, CRT or ablation."
+        "Recognize STEMI equivalents and the patterns that mimic STEMI.",
+        "Tell device malfunction from normal behavior, and decide on referral for pacing, CRT or ablation."
       ]
     },
     "explain": "deep",
@@ -244,7 +244,7 @@
       "en": [
         "Measure the pacing cycles on the tracing: pacing interval, escape interval, programmed AV delay.",
         "Judge pacing site and biventricular capture from the ECG, and know what only interrogation can show.",
-        "Choose the programming fix, and localise accessory pathways and the origin of ectopic beats."
+        "Choose the programming fix, and localize accessory pathways and the origin of ectopic beats."
       ]
     },
     "explain": "deep",
