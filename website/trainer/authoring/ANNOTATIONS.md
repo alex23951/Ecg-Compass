@@ -44,6 +44,10 @@ V1–V3 at 5–7.5 s; V4–V6 at 7.5–10 s; the rhythm strip(s) underneath run 
 - A number in a label must agree with the bullet (within 0.5 mm or 20 ms) and with the
   resolver's measurement (it prints `mm` and `ms`). If they disagree, leave the number out and
   report the disagreement; do not change the case text.
+- How the resolver measures: ST and other heights are read at the J point as seen in that lead
+  (the end of its QRS, never on the QRS slope) against the PR level just before the QRS; PR, QRS
+  and QT brackets run from the true QRS onset (the first deflection, or the start of a delta
+  wave) and show the case table's values, the mean of the Glasgow and GE 12SL measurements.
 - The label must not hide the feature it explains: choose `dir` and `len` and check the PNG.
 
 ## Which kind for which finding
