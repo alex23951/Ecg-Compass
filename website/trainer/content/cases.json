@@ -3001,7 +3001,7 @@
   },
   {
     "id": "tachy-04",
-    "ecg_id": 2051,
+    "ecg_id": 14286,
     "module": "tachy",
     "level": 2,
     "answer": "SVT",
@@ -3017,32 +3017,33 @@
       "II"
     ],
     "rhythm": {
-      "ro": "Tahicardie regulată cu QRS îngust, FC ~156/min",
-      "en": "Regular narrow-complex tachycardia, about 156/min"
+      "ro": "Tahicardie regulată cu QRS îngust, FC ~200/min, fără unde P vizibile",
+      "en": "Regular narrow-complex tachycardia, about 200/min, no visible P waves"
     },
     "measure_override": {
       "pr": null,
-      "qt": null,
       "qtc_b": null,
       "qtc_f": null
     },
     "findings": {
       "ro": [
-        "Ritm perfect regulat, ~156/min, cu QRS îngust (~75 ms).",
-        "Nicio undă P clară înaintea complexelor QRS. O undă mică, pozitivă, imediat după fiecare undă T, în DII, DIII și aVF, poate fi o undă P.",
-        "Fără unde „în dinți de fierăstrău” în DII, DIII, aVF sau V1.",
-        "Ax QRS ~−45° (deviație axială stângă)."
+        "Ritm perfect regulat: intervale RR egale, de ~300 ms, adică 7,5 pătrate mici, iar 1500/7,5 = 200/min. QRS îngust, ~70 ms.",
+        "Nicio undă P vizibilă: între unda T și complexul QRS următor, linia izoelectrică este plată. Fără unde F în DII, DIII, aVF sau V1. Flutterul atrial cu conducere AV 2:1 are de obicei o alură ventriculară de ~150/min, nu de 200/min.",
+        "În V1, fiecare QRS se termină cu o undă mică, pozitivă, de ~1 mm (r'). Poate fi o undă P retrogradă (pseudo-r') sau doar sfârșitul complexului QRS. Comparația cu un ECG în ritm sinusal lămurește diferența. În DII, QRS se termină cu o undă s mică, dar în DIII și aVF nu: nu există un pseudo-S clar.",
+        "Ax QRS verticalizat, ~+85°: QRS izodifazic în DI și pozitiv în aVF.",
+        "Subdenivelare ST de ~1 mm în V3–V5, undă T negativă în DIII și aplatizată în aVF: modificări ST-T nespecifice. Subdenivelarea ST în timpul tahicardiei este frecventă și, singură, nu indică boală coronariană."
       ],
       "en": [
-        "A perfectly regular rhythm at about 156/min with a narrow QRS (about 75 ms).",
-        "No clear P wave before the QRS. A small upright wave just after each T wave in II, III and aVF may be a P wave.",
-        "No sawtooth waves in II, III, aVF or V1.",
-        "Axis about −45°."
+        "A perfectly regular rhythm: equal RR intervals of about 300 ms, or 7.5 small squares, and 1500/7.5 = 200/min. Narrow QRS, about 70 ms.",
+        "No visible P wave: between the T wave and the next QRS the baseline is flat. No F waves in II, III, aVF or V1. Flutter with 2:1 conduction usually has a ventricular rate of about 150/min, not 200/min.",
+        "In V1 each QRS ends with a small upright wave of about 1 mm (r'). It may be a retrograde P wave (pseudo-r') or just the end of the QRS. Comparing with an ECG in sinus rhythm settles it. II ends each QRS with a small s, but III and aVF do not: there is no clear pseudo-S.",
+        "Vertical axis, about +85°: the QRS is equiphasic in I and upright in aVF.",
+        "ST depression of about 1 mm in V3–V5, an inverted T wave in III and a flat T wave in aVF: non-specific ST-T changes. ST depression is common during the tachycardia and on its own does not point to coronary disease."
       ]
     },
     "takeaway": {
-      "ro": "Ritm regulat, QRS îngust, 150–250/min, fără unde P clare: tahicardie supraventriculară. Se încearcă manevrele vagale, apoi adenozina, sub înregistrare ECG continuă.",
-      "en": "Regular, narrow, 150–250/min, no clear P waves: SVT. Try vagal maneuvers, then adenosine, with a rhythm strip running."
+      "ro": "Ritm regulat, QRS îngust, 150–250/min, fără unde P vizibile: tahicardie paroxistică supraventriculară, cel mai des o tahicardie prin reintrare în nodul AV (TRNAV). Se încearcă manevrele vagale, apoi adenozina, sub înregistrare ECG continuă.",
+      "en": "Regular, narrow, 150–250/min, no visible P waves: SVT, most often AV nodal re-entry (AVNRT). Try vagal maneuvers, then adenosine, with a rhythm strip running."
     },
     "followups": [
       {
@@ -3075,8 +3076,8 @@
         ],
         "answer": 1,
         "explain": {
-          "ro": "La pacientul stabil cu tahicardie regulată cu QRS îngust, primul pas sunt manevrele vagale (ERC 2025), făcute conform protocolului serviciului. Varianta modificată (efort expirator forțat în poziție semișezândă, apoi culcat, cu picioarele ridicate) reușește mai des decât cea clasică. Traseul înregistrat în timpul manevrei arată cum se oprește tahicardia și ajută diagnosticul; cardioversia este rezervată instabilității.",
-          "en": "In a stable patient with a regular narrow-complex tachycardia, vagal maneuvers come first (ERC 2025), done per your service protocol. The modified version (a forced expiratory strain while semi-recumbent, then lying flat with the legs raised) works more often than the standard one. The strip recorded during the maneuver shows how the tachycardia stops and helps the diagnosis; cardioversion is kept for instability."
+          "ro": "Tahicardie regulată cu QRS îngust, ~200/min, la o pacientă stabilă: primul pas sunt manevrele vagale (ERC 2025), făcute conform protocolului serviciului. Varianta modificată (efort expirator forțat în poziție semișezândă, apoi culcat, cu picioarele ridicate) reușește mai des decât cea clasică. Traseul înregistrat în timpul manevrei arată cum se oprește tahicardia și ajută diagnosticul; cardioversia este rezervată instabilității.",
+          "en": "A regular narrow-complex tachycardia at about 200/min in a stable patient: vagal maneuvers come first (ERC 2025), done per your service protocol. The modified version (a forced expiratory strain while semi-recumbent, then lying flat with the legs raised) works more often than the standard one. The strip recorded during the maneuver shows how the tachycardia stops and helps the diagnosis; cardioversion is kept for instability."
         }
       },
       {
@@ -3086,7 +3087,7 @@
         ],
         "kind": "decision",
         "question": {
-          "ro": "Scenariu: pacienta este stabilă. În ce ordine tratați?",
+          "ro": "Scenariu: pacienta este stabilă. În ce ordine tratezi?",
           "en": "Scenario: the patient is stable. In what order do you treat?"
         },
         "options": [
@@ -3109,8 +3110,8 @@
         ],
         "answer": 3,
         "explain": {
-          "ro": "ESC 2019 TSV: la pacientul stabil se încep manevrele vagale, de preferat Valsalva modificată, apoi se administrează adenozină intravenos, conform protocolului unității. ECG-ul în 12 derivații înregistrat în acest timp arată cum se oprește tahicardia: oprirea cu o undă P retrogradă neurmată de QRS pledează pentru o tahicardie dependentă de nodul AV, iar apariția undelor F sau P în timpul blocului AV arată un flutter sau o tahicardie atrială. Cardioversia sincronă este rezervată instabilității sau eșecului tratamentului medicamentos.",
-          "en": "ESC 2019 SVT: in a stable patient start with vagal maneuvers, preferably the modified Valsalva, then give intravenous adenosine per your unit's protocol. A 12-lead recorded meanwhile shows how the tachycardia ends: ending on a retrograde P with no QRS after it favors an AV-node-dependent tachycardia, while F or P waves appearing during AV block reveal flutter or atrial tachycardia. Synchronized cardioversion is kept for instability or failed drug treatment."
+          "ro": "ESC 2019 TSV: la pacientul stabil se încep manevrele vagale, de preferat Valsalva modificată, apoi se administrează adenozină intravenos, conform protocolului unității. Pe acest traseu nu se vede nicio undă P, iar ECG-ul în 12 derivații înregistrat în timpul tratamentului poate arăta mecanismul: oprirea cu o undă P retrogradă neurmată de QRS pledează pentru o tahicardie dependentă de nodul AV, iar apariția undelor F sau P în timpul blocului AV arată un flutter sau o tahicardie atrială. Cardioversia sincronă este rezervată instabilității sau eșecului tratamentului medicamentos.",
+          "en": "ESC 2019 SVT: in a stable patient start with vagal maneuvers, preferably the modified Valsalva, then give intravenous adenosine per your unit's protocol. No P wave is visible on this tracing, and a 12-lead recorded during treatment can show the mechanism: ending on a retrograde P with no QRS after it favors an AV-node-dependent tachycardia, while F or P waves appearing during AV block reveal flutter or atrial tachycardia. Synchronized cardioversion is kept for instability or failed drug treatment."
         }
       },
       {
@@ -3120,31 +3121,31 @@
         ],
         "kind": "limits",
         "question": {
-          "ro": "Înaintea complexelor QRS nu se vede nicio undă P clară. În DII, DIII și aVF apare o undă mică, pozitivă, imediat după fiecare undă T, în a doua jumătate a intervalului RR. Ce poți concluziona despre mecanism?",
-          "en": "No clear P wave is seen before the QRS. In II, III and aVF a small upright wave sits just after each T wave, in the second half of the RR interval. What can you conclude about the mechanism?"
+          "ro": "Nu se vede nicio undă P. În V1, fiecare QRS se termină cu o undă mică, pozitivă (r'), iar în DIII și aVF nu există pseudo-S. Ce poți concluziona despre mecanism?",
+          "en": "No P wave is visible. In V1 each QRS ends with a small upright wave (r'), and III and aVF show no pseudo-S. What can you conclude about the mechanism?"
         },
         "options": [
           {
-            "ro": "TRNAV tipică este dovedită: unda P retrogradă este ascunsă în QRS",
-            "en": "Typical AVNRT is proven: the retrograde P is hidden in the QRS"
+            "ro": "TRNAV tipică este dovedită: r' din V1 este cu siguranță o undă P retrogradă",
+            "en": "Typical AVNRT is proven: the r' in V1 is surely a retrograde P wave"
           },
           {
-            "ro": "TRAV ortodromică este dovedită: unda mică este o undă P retrogradă după QRS",
-            "en": "Orthodromic AVRT is proven: the small wave is a retrograde P after the QRS"
+            "ro": "TRAV ortodromică este cea mai probabilă: unda P retrogradă este ascunsă în QRS",
+            "en": "Orthodromic AVRT is most likely: its retrograde P hides in the QRS"
           },
           {
-            "ro": "Niciun mecanism nu este dovedit: unda mică poate fi o undă P sau o parte a undei T",
-            "en": "No mechanism is proven: the small wave may be a P wave or part of the T wave"
+            "ro": "TRNAV tipică este cea mai probabilă, dar nedovedită: r' poate face parte din QRS",
+            "en": "Typical AVNRT is most likely but not proven: the r' may be part of the QRS"
           },
           {
-            "ro": "Tahicardia atrială focală este dovedită: unda mică este o undă P ectopică",
-            "en": "Focal atrial tachycardia is proven: the small wave is an ectopic P wave"
+            "ro": "Tahicardia atrială focală este exclusă: înaintea QRS nu se vede nicio undă P",
+            "en": "Focal atrial tachycardia is ruled out: no P wave is seen before the QRS"
           }
         ],
         "answer": 2,
         "explain": {
-          "ro": "O undă P ascunsă în QRS sugerează TRNAV tipică, iar o undă P retrogradă pe segmentul ST sugerează TRAV. Aici, unda mică de după fiecare undă T poate fi o undă P, cu RP lung. Dacă este, ea este pozitivă în DII, DIII și aVF, ceea ce se potrivește mai bine cu o tahicardie atrială decât cu formele cu RP lung ale TRNAV sau TRAV, în care unda P este negativă în aceste derivații. Chiar și așa, tahicardia atrială este doar mai probabilă, nu dovedită: răspunsul la adenozină poate orienta, iar studiul electrofiziologic stabilește mecanismul.",
-          "en": "A P wave hidden in the QRS suggests typical AVNRT, and a retrograde P in the ST segment suggests AVRT. Here the small wave just after each T wave may be a P wave with a long RP. If it is, it is upright in II, III and aVF, which fits an atrial tachycardia better than the long-RP forms of AVNRT or AVRT, whose P is negative in these leads. Even then, atrial tachycardia is only favored, not proven: the response to adenosine can help, and an EP study settles the mechanism."
+          "ro": "Înaintea QRS și pe segmentul ST nu se vede nicio undă P, deci unda P este probabil ascunsă în QRS, cu RP foarte scurt: aspectul obișnuit al TRNAV tipice, în timp ce în TRAV ortodromică unda P retrogradă apare de obicei pe segmentul ST. Unda r' din V1 poate fi o undă P retrogradă, dar în DIII și aVF nu există un pseudo-S corespunzător, deci poate fi doar sfârșitul complexului QRS: numai un ECG în ritm sinusal arată dacă dispare (pseudo-r'). Tahicardia atrială focală are de obicei o undă P înaintea fiecărui QRS, dar o undă P ascunsă în unda T nu poate fi exclusă: răspunsul la adenozină orientează, iar studiul electrofiziologic stabilește mecanismul.",
+          "en": "No P wave shows before the QRS or on the ST segment, so the P is probably hidden in the QRS, with a very short RP: the usual picture of typical AVNRT, whereas in orthodromic AVRT the retrograde P usually sits on the ST segment. The r' in V1 may be a retrograde P, but III and aVF show no matching pseudo-S, so it may be just the end of the QRS: only an ECG in sinus rhythm shows whether it disappears (pseudo-r'). Focal atrial tachycardia usually shows a P wave before each QRS, but a P hidden in the T wave cannot be excluded: the response to adenosine helps, and an EP study settles the mechanism."
         }
       },
       {
@@ -3159,8 +3160,8 @@
         },
         "options": [
           {
-            "ro": "Ritm perfect regulat ~156/min, fără unde P clare înaintea QRS",
-            "en": "Perfectly regular at about 156/min, no clear P waves before the QRS"
+            "ro": "Ritm perfect regulat ~200/min, fără unde P vizibile",
+            "en": "Perfectly regular at about 200/min, with no visible P waves"
           },
           {
             "ro": "Undă P clară, pozitivă în DI și DII, înaintea fiecărui QRS",
@@ -3177,8 +3178,8 @@
         ],
         "answer": 0,
         "explain": {
-          "ro": "Intervalele RR sunt egale (~385 ms) pe tot traseul, iar înaintea complexelor QRS nu se vede nicio undă P clară. Cel mult, o undă mică, imediat după unda T, în DII, DIII și aVF, poate fi o undă P, dar nu este pozitivă în DI, cum ar fi o undă P sinusală. Tahicardia sinusală ar avea o undă P clară, pozitivă în DI și DII, înaintea fiecărui QRS, iar flutterul unde F regulate. Frecvența de 150–250/min se potrivește, dar nu este suficientă singură.",
-          "en": "The RR intervals are equal (about 385 ms) across the strip, and no clear P wave is seen before the QRS. At most, a small wave just after the T wave in II, III and aVF may be a P wave, but it is not upright in I, as a sinus P would be. Sinus tachycardia would have a clear P wave, upright in I and II, before every QRS, and flutter regular F waves. A rate of 150–250/min fits but is not enough on its own."
+          "ro": "Intervalele RR sunt egale (~300 ms) pe tot traseul, iar între unda T și QRS-ul următor linia izoelectrică este plată: nu se vede nicio undă P. Tahicardia sinusală ar avea o undă P pozitivă în DI și DII înaintea fiecărui QRS și, la adult în repaus, depășește rar 150/min. Flutterul ar avea unde F regulate, iar fibrilația atrială un ritm complet neregulat.",
+          "en": "The RR intervals are equal (about 300 ms) across the strip, and the baseline between the T wave and the next QRS is flat: no P wave is seen. Sinus tachycardia would have a P wave upright in I and II before every QRS, and in an adult at rest it rarely goes above 150/min. Flutter would show regular F waves, and atrial fibrillation an irregularly irregular rhythm."
         }
       },
       {
@@ -3188,14 +3189,14 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Monitorul arată ~156/min, ritm perfect regulat. Ce faci mai întâi?",
-          "en": "The monitor shows about 156/min, perfectly regular. What do you do first?"
+          "ro": "Monitorul arată ~200/min, ritm perfect regulat. Ce faci mai întâi?",
+          "en": "The monitor shows about 200/min, perfectly regular. What do you do first?"
         },
         "options": "action_set",
         "answer": 1,
         "explain": {
-          "ro": "Tahicardie perfect regulată ~156/min, cu QRS îngust și fără unde P clare: tahicardie supraventriculară. O frecvență de peste 150/min nu poate aștepta vizita. Se anunță medicul acum; pacientul rămâne monitorizat, cu defibrilatorul la îndemână, iar ECG-ul în 12 derivații se înregistrează și în timpul manevrelor vagale sau al administrării adenozinei.",
-          "en": "A perfectly regular tachycardia at about 156/min, with a narrow QRS and no clear P waves: supraventricular tachycardia. A rate over 150/min cannot wait for the ward round. Call the doctor now; keep the patient monitored with the defibrillator at hand, and keep the 12-lead recording during vagal maneuvers or adenosine."
+          "ro": "Tahicardie perfect regulată ~200/min, cu QRS îngust și fără unde P vizibile: tahicardie supraventriculară. O frecvență de peste 150/min nu poate aștepta vizita. Se anunță medicul acum; pacientul rămâne monitorizat, cu defibrilatorul la îndemână, iar ECG-ul în 12 derivații se înregistrează înaintea manevrelor vagale sau a administrării adenozinei și în timpul lor.",
+          "en": "A perfectly regular tachycardia at about 200/min, with a narrow QRS and no visible P waves: supraventricular tachycardia. A rate over 150/min cannot wait for the ward round. Call the doctor now; keep the patient monitored with the defibrillator at hand, and record the 12-lead before and during vagal maneuvers or adenosine."
         }
       },
       {
@@ -3205,14 +3206,14 @@
         ],
         "kind": "first",
         "question": {
-          "ro": "Scenariu: pacientă de 72 de ani, cu palpitații; monitorul arată ~156/min, ritm perfect regulat. Ce faci mai întâi?",
-          "en": "Scenario: a 72-year-old woman with palpitations; the monitor shows about 156/min, perfectly regular. What do you do first?"
+          "ro": "Scenariu: pacientă de 29 de ani, cu palpitații apărute brusc; monitorul arată ~200/min, ritm perfect regulat. Ce faci mai întâi?",
+          "en": "Scenario: a 29-year-old woman with palpitations that started suddenly; the monitor shows about 200/min, perfectly regular. What do you do first?"
         },
         "options": "action_set",
         "answer": 1,
         "explain": {
-          "ro": "Tahicardie regulată cu QRS îngust, ~156/min, fără unde P clare: tahicardie supraventriculară. Se aplică electrozii de defibrilare, se pregătește cardioversia sincronă pentru cazul în care apar semne de instabilitate și se solicită echipajul cu medic pentru adenozină. La pacienta stabilă se poate încerca, între timp, manevra Valsalva modificată, conform protocolului serviciului, cu traseul înregistrat.",
-          "en": "A regular narrow tachycardia at about 156/min with no clear P waves: supraventricular tachycardia. Put the pads on, have synchronized cardioversion ready in case adverse features appear, and request a physician-staffed crew for adenosine. Meanwhile, if the patient is stable, a modified Valsalva maneuver can be tried per your service protocol, with the strip recording."
+          "ro": "Tahicardie regulată cu QRS îngust, ~200/min, fără unde P vizibile: tahicardie supraventriculară, care are nevoie de tratament, nu doar de monitorizare și transport. Se aplică electrozii autoadezivi, se pregătește cardioversia sincronă pentru cazul în care apar semne de instabilitate (ERC 2025) și se solicită echipajul cu medic pentru adenozină. La pacienta stabilă se poate încerca, între timp, manevra Valsalva modificată, conform protocolului serviciului, cu traseul înregistrat.",
+          "en": "A regular narrow tachycardia at about 200/min with no visible P waves: supraventricular tachycardia, which needs treatment, not only monitoring and transport. Put the pads on, have synchronized cardioversion ready in case adverse features appear (ERC 2025), and request a physician-staffed crew for adenosine. Meanwhile, if the patient is stable, a modified Valsalva maneuver can be tried per your service protocol, with the strip recording."
         }
       }
     ],
@@ -3231,14 +3232,14 @@
       ],
       "specialist": [
         "SVT",
-        "STACH",
+        "AT",
         "AFL",
-        "AF"
+        "STACH"
       ]
     },
     "deep": {
-      "ro": "Mecanismul nu poate fi dovedit pe acest traseu: QRS îngust ~75 ms, RR fix ~384 ms, fără unde P clare înaintea complexelor. O undă mică, pozitivă, imediat după fiecare undă T, în DII, DIII și aVF (negativă în aVL), poate fi o undă P, cu interval RP lung; dacă este, se potrivește mai bine cu o tahicardie atrială decât cu TRNAV sau TRAV, ale căror forme cu RP lung au unda P negativă în aceste derivații. Decizia: manevre vagale, apoi adenozină sub ECG în 12 derivații; undele P care continuă în timpul blocului AV arată un ritm atrial, iar ablația prin cateter este tratamentul de primă intenție în TRNAV, TRAV sau tahicardia atrială focală recurente și simptomatice (ESC 2019 TSV). Capcana: axul de ~−45° nu se raportează ca hemibloc anterior stâng înaintea unui traseu în ritm sinusal.",
-      "en": "The mechanism is not proven from this tracing: narrow QRS about 75 ms, fixed RR about 384 ms, no clear P wave before the QRS. A small upright wave just after each T wave in II, III and aVF (negative in aVL) may be a P wave with a long RP; if it is, it fits an atrial tachycardia better than AVNRT or AVRT, whose long-RP forms have a negative P in these leads. Decision: vagal maneuvers, then adenosine with a 12-lead running; P waves that continue through AV block show an atrial rhythm, and catheter ablation is first-line for recurrent symptomatic AVNRT, AVRT or focal atrial tachycardia (ESC 2019 SVT). Pitfall: do not report the axis of about −45° as left anterior fascicular block before you see a sinus-rhythm ECG."
+      "ro": "Înaintea QRS și pe segmentul ST nu se vede nicio undă P, deci unda P este probabil ascunsă în QRS sau la sfârșitul lui: aspectul pledează pentru forma tipică de tahicardie prin reintrare în nodul AV (TRNAV), nu pentru o tahicardie prin reintrare atrioventriculară (TRAV) ortodromică, în care unda P retrogradă apare de obicei pe segmentul ST. Unda r' mică de la sfârșitul QRS în V1 (cu un r terminal în aVR) poate fi un pseudo-r', dar în DIII și aVF nu există pseudo-S, iar doar un ECG în ritm sinusal arată dacă r' este o undă P. Decizia: manevre vagale, apoi adenozină sub ECG în 12 derivații; oprirea cu o undă P retrogradă pledează pentru o tahicardie dependentă de nodul AV, iar ablația prin cateter este tratamentul de primă intenție în TRNAV recurentă și simptomatică (ESC 2019 TSV). Capcana: la 200/min, o undă P se poate ascunde în unda T, deci tahicardia atrială focală nu este exclusă; invers, unda T poate fi luată drept undă P, iar interpretarea automată poate raporta atunci o tahicardie sinusală.",
+      "en": "No P wave is visible before the QRS or on the ST segment, so the P is probably hidden in or at the end of the QRS: this favors typical AVNRT over orthodromic AVRT, whose retrograde P usually sits on the ST segment. The small terminal r' in V1 (with a terminal r in aVR) may be a pseudo-r', but III and aVF show no pseudo-S, and only an ECG in sinus rhythm shows whether the r' is a P wave. Decision: vagal maneuvers, then adenosine with a 12-lead running; ending on a retrograde P favors an AV-node-dependent tachycardia, and catheter ablation is first-line for recurrent symptomatic AVNRT (ESC 2019 SVT). Pitfall: at 200/min a P wave can hide in the T wave, so focal atrial tachycardia is not excluded; the T wave can also pass for a P wave, and an automatic read may then report sinus tachycardia."
     },
     "tiers": {
       "student": "core",

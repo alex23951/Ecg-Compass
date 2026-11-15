@@ -8865,8 +8865,8 @@
           2.6
         ],
         "heading": {
-          "ro": "3. TPSV, aproximativ 156/min",
-          "en": "3. SVT, about 156/min"
+          "ro": "3. TPSV, aproximativ 200/min",
+          "en": "3. SVT, about 200/min"
         },
         "sets": [
           {
@@ -8879,8 +8879,8 @@
               "RR"
             ],
             "note": {
-              "ro": "Intervale RR egale, de aproximativ 380 ms, QRS îngust și nicio undă P clară înaintea complexelor QRS. În DII, o undă mică, pozitivă, imediat după fiecare undă T, poate fi o undă P. Pe ECG-ul complet, în 12 derivații, nu este pozitivă în DI, cum ar fi o undă P sinusală. Deci ritmul nu este tahicardie sinusală.",
-              "en": "Equal RR intervals of about 380 ms, a narrow QRS, and no clear P wave before the QRS complexes. In II, a small upright wave just after each T wave may be a P wave. On the full 12-lead ECG it is not upright in I, as a sinus P wave would be. So the rhythm is not sinus tachycardia."
+              "ro": "Intervale RR egale, de aproximativ 300 ms (200/min), și QRS îngust. În DII, între două complexe se vede doar unda T, apoi linia izoelectrică plată: nicio undă P și nicio undă F. Frecvența ajută și ea: la adult, în repaus, tahicardia sinusală depășește rar 150/min.",
+              "en": "Equal RR intervals of about 300 ms (200/min) and a narrow QRS. In II, between two complexes there is only the T wave, then a flat baseline: no P wave and no F waves. The rate helps too: in an adult at rest, sinus tachycardia rarely goes above 150/min."
             }
           }
         ]
@@ -14642,6 +14642,14 @@
         "heading": {
           "ro": "Traseul 4",
           "en": "ECG 4"
+        },
+        "body": {
+          "ro": [
+            "Scenariu didactic: femeie de 29 de ani, cu palpitații apărute brusc. Este conștientă."
+          ],
+          "en": [
+            "Teaching scenario: a 29-year-old woman with palpitations that started suddenly. She is alert."
+          ]
         }
       },
       {
@@ -14670,8 +14678,8 @@
         ],
         "answer": 1,
         "explain": {
-          "ro": "Tahicardie regulată cu QRS îngust, ~156/min, fără unde P clare: tahicardie supraventriculară. Anunță medicul acum, cu pacientul monitorizat și defibrilatorul la îndemână. ECG-ul în 12 derivații înregistrat în timpul tahicardiei este esențial pentru diagnostic.",
-          "en": "A regular narrow-QRS tachycardia at about 156/min with no clear P waves: supraventricular tachycardia. Call the doctor now, with the patient monitored and the defibrillator at hand. A 12-lead recorded during the tachycardia is key to the diagnosis."
+          "ro": "Tahicardie regulată cu QRS îngust, ~200/min, fără unde P vizibile: tahicardie supraventriculară. O frecvență de peste 150/min nu poate aștepta. Anunță medicul acum, cu pacienta monitorizată și defibrilatorul la îndemână. ECG-ul în 12 derivații înregistrat în timpul tahicardiei este esențial pentru diagnostic.",
+          "en": "A regular narrow-QRS tachycardia at about 200/min with no visible P waves: supraventricular tachycardia. A rate over 150/min cannot wait. Call the doctor now, with the patient monitored and the defibrillator at hand. A 12-lead recorded during the tachycardia is key to the diagnosis."
         },
         "only": [
           "nurse"
@@ -14703,8 +14711,8 @@
         ],
         "answer": 1,
         "explain": {
-          "ro": "Tahicardie supraventriculară ~156/min. Caută semnele de instabilitate. Aplică electrozii, pregătește cardioversia sincronă pentru cazul în care pacientul devine instabil și solicită medic. Manevrele vagale și medicația se aplică conform protocolului (ERC 2025).",
-          "en": "Supraventricular tachycardia at about 156/min. Look for adverse features. Put the pads on, have synchronized cardioversion ready in case the patient becomes unstable and request physician support. Vagal maneuvers and drugs follow your protocol (ERC 2025)."
+          "ro": "Tahicardie supraventriculară ~200/min, fără unde P vizibile: are nevoie de tratament, nu doar de monitorizare și transport. Caută semnele de instabilitate. Aplică electrozii autoadezivi, pregătește cardioversia sincronă pentru cazul în care pacienta devine instabilă și solicită medic. Manevrele vagale și medicația se aplică conform protocolului (ERC 2025).",
+          "en": "Supraventricular tachycardia at about 200/min, with no visible P waves: it needs treatment, not only monitoring and transport. Look for adverse features. Put the pads on, have synchronized cardioversion ready in case the patient becomes unstable and request physician support. Vagal maneuvers and drugs follow your protocol (ERC 2025)."
         },
         "only": [
           "paramedic"
@@ -14736,8 +14744,8 @@
         ],
         "answer": 1,
         "explain": {
-          "ro": "Tahicardie supraventriculară ~156/min. Chiar dacă pacientul este stabil, tahicardia se tratează acum: manevre vagale, apoi adenozină, sub înregistrare ECG continuă; cardioversie sincronă dacă pacientul este instabil (ESC 2019 TSV).",
-          "en": "Supraventricular tachycardia at about 156/min. Even in a stable patient it is treated now: vagal maneuvers, then adenosine with a continuous ECG recording; synchronized cardioversion if the patient is unstable (ESC 2019 SVT)."
+          "ro": "Tahicardie supraventriculară ~200/min: o frecvență de peste 150/min nu poate aștepta. Chiar dacă pacienta este stabilă, tahicardia se tratează acum: manevre vagale, apoi adenozină, sub înregistrare ECG continuă; cardioversie sincronă dacă pacienta devine instabilă (ESC 2019 TSV).",
+          "en": "Supraventricular tachycardia at about 200/min: a rate over 150/min cannot wait. Even in a stable patient it is treated now: vagal maneuvers, then adenosine with a continuous ECG recording; synchronized cardioversion if the patient becomes unstable (ESC 2019 SVT)."
         },
         "only": [
           "student",
