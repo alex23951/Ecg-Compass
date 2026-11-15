@@ -186,6 +186,7 @@ The last column gives n/5 (supporting reports) followed by the source numbers. C
 | Escape rhythm | ritm de scăpare | – | ritm de înlocuire (older) | ritm de evadare | 5 · 8,11,40 |
 | AIVR | ritm idioventricular accelerat | RIVA | – | AIVR | 2 · 8,15 |
 | MAT | tahicardie atrială multifocală | TAM | tahicardie atrială haotică | – | 5 · 8,18 |
+| Regularly / irregularly irregular | ritm neregulat cu periodicitate (intervalele RR variază după un model care se repetă) / complet neregulat, fără nicio periodicitate | – | – | neregulat cu tipar (calc după „pattern”) | – · house decision 2026-11-14 |
 
 ### 5.4 Supraventricular arrhythmias
 | Concept | Romanian to use | Abbr. | Also acceptable | Avoid | Sources |
@@ -307,6 +308,20 @@ The last column gives n/5 (supporting reports) followed by the source numbers. C
 | Demand pacing | stimulare „la cerere”, inhibată de activitatea spontană | – | – | pe cerere | 5 · 28,30 |
 | Paced QRS | QRS larg, cu aspect de BRS | – | – | morfologie tip LBBB | 5 · 7,28 |
 | Device follow-up | sindrom de pacemaker; procent de stimulare; interogarea stimulatorului | – | – | – | 1 · 17 |
+| Device ID card | cardul de identificare al stimulatorului | – | card de identitate al stimulatorului (Arrhythmia Alliance RO patient leaflet) | – | – · aa-ro.org leaflet |
+
+### 5.12 Cardiac arrest and resuscitation
+*Added 2026-11-14 (review items C1–C5). Sources [41] and [42].*
+
+| Concept | Romanian to use | Abbr. | Also acceptable | Avoid | Sources |
+|---|---|---|---|---|---|
+| Asystole | asistolă | – | – | asistolie (the DEX headword, but not used in [41] or [42]) | – · 41,42 |
+| PEA | activitate electrică fără puls | AEP | – | AEFP (older texts) | – · 41,42 |
+| Shockable / non-shockable | ritm șocabil / neșocabil | – | defibrilabil / non-defibrilabil (the terms of the ERC 2025 RO posters [41]) | nonșocabil | – · 41,42 |
+| CPR | resuscitare cardiopulmonară | RCP | – | – | – · 41,42 |
+| BLS | suport vital de bază: spelled out on nurse screens and in the nurse action labels | SVB (after a first spelled-out mention) | BLS (the abbreviation in [41]) | – | – · 41 |
+| AED | defibrilator extern automat | DEA | modul DEA (a manual defibrillator used in AED mode) | DAE (the app uses DEA, as in [41]) | – · 41 |
+| Defibrillation pads | electrozi autoadezivi (de defibrilare) | – | electrozii de defibrilare; patch-uri de defibrilare [41] | padele (in Romanian these are the hand-held paddles) | – · 41 |
 
 ## 6. Translated-sounding phrases and replacements
 
@@ -446,3 +461,5 @@ The last column gives n/5 (supporting reports) followed by the source numbers. C
 38. ROmedic, Tulburări de conducere intraventriculare — romedic.ro
 39. Practica Medicală 2011, artefacte ECG — rjmp.com.ro
 40. UMF Craiova, Semiologie curs 2, tulburări de ritm și conducere — suportcursonline.umfcv.ro
+41. CNRR, Protocoale și ghiduri de resuscitare ERC 2025 (Romanian translation of the ERC 2025 posters), published by CMR, July 2026 — https://www.cmr.ro/wp-content/uploads/2026/07/01-Postere_ERC_2025_in_Romana_CNRR_CMR.pdf
+42. Ordinul MS nr. 1170/2014, Anexa 5A (protocol de resuscitare pentru adult) and 5B (copil) — transplant.ro
