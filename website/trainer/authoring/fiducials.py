@@ -84,7 +84,7 @@ def main():
                 pts.append(f"{n} {t:.3f}/{rec.at(lead, t):+.2f}")
             print(f"  beat {k}: base {base:+.2f} mV | " + " | ".join(pts))
             print(f"          PR {round((b['q_on'] - b['p_on']) * 1000)} ms, QRS {round((b['q_off'] - b['q_on']) * 1000)} ms,"
-                  f" QT {round((b['t_end'] - b['q_on']) * 1000)} ms, J-point deviation {(rec.at(lead, b['q_off']) - base) * 10:+.1f} mm,"
+                  f" QT {round((b['t_end'] - b['q_on']) * 1000)} ms, J-point deviation {(rec.at(lead, annotate.point(rec, lead, b, 'J')) - base) * 10:+.1f} mm,"
                   f" ST at J+60 {(rec.at(lead, annotate.point(rec, lead, b, 'ST')) - base) * 10:+.1f} mm")
             k += 1
             if k > 30:

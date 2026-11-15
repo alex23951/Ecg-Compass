@@ -270,20 +270,23 @@ def point(rec, lead, b, name, own=True):
         return min(point(rec, lead, b, "J", own) + 0.06, b["t_end"] - 0.02)
     if name == "P":
         return arg(b["p_on"], b["p_off"], "abs")
-    # R, S and Q are searched in this lead's own QRS: from the onset to its J point (lead_j), so a
-    # wide ectopic QRS that outlasts the reference width is still found whole, and R or S never
-    # lands on the ST segment after the J
+    # R, S and Q are searched in this lead's QRS, from the onset to the J that the mark uses (the
+    # lead's own J for a single point, the beat's J for a bracket): a QRS that runs a little past
+    # the reference width (a wide ectopic beat) is still searched to its end, R or S never lands on
+    # the ST segment after the J, and an R-to-J bracket never ends before it starts
     if name == "R":
-        return arg(b["q_on"], lead_j(rec, lead, b), "max")
+        return arg(b["q_on"], point(rec, lead, b, "J", own), "max")
     if name == "QRS":
         return arg(b["q_on"], b["q_off"], "abs")
     if name == "S":
-        return arg(point(rec, lead, b, "R"), lead_j(rec, lead, b), "min")
+        return arg(point(rec, lead, b, "R", own), point(rec, lead, b, "J", own), "min")
     if name == "Q":
-        # the lowest point before the R; with no R before the nadir (a QS complex, the highest point
-        # is the onset itself), the lowest point of the whole QRS
-        r = point(rec, lead, b, "R")
-        return arg(b["q_on"], r if r - b["q_on"] >= 0.012 else lead_j(rec, lead, b), "min")
+        # the lowest point before the R (in its first 12 ms at least); in a QS complex, where no
+        # R rises 1 mm above the baseline before the nadir, the lowest point of the whole QRS
+        r = point(rec, lead, b, "R", own)
+        early = int(round((r - b["q_on"]) * fs)) < int(round(0.012 * fs))
+        qs = early and rec.at(lead, r) - base < 0.1
+        return arg(b["q_on"], point(rec, lead, b, "J", own) if qs else max(r, b["q_on"] + 0.012), "min")
     if name == "T":
         return arg(b["t_on"], b["t_end"], "abs")
     raise ValueError(f"unknown point {name}")
