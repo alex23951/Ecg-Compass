@@ -30,8 +30,10 @@ first time.
 
 - 5 to 8 minutes, 8 to 14 steps. `"course": "basics"`, `"step": N` (0 for basics-start),
   `"teaches": []` unless the lesson really teaches a diagnosis key (e.g. basics-rhythm may list
-  "AF"; basics-pr "1AVB"), tiers: student, nurse, paramedic "required"; resident, specialist,
-  ep "optional".
+  "AF"; basics-pr "1AVB"), tiers: student "required"; nurse, paramedic, resident, specialist,
+  ep "optional" (review of 2026-11-14: the module is written for medical students; nurses and
+  paramedics keep it as an option, and their required path is the 17-lesson course, with its
+  escalation wording).
 - Open with one short text step: what this step answers and why it matters.
 - At least two annotated tracings: a `figure` with `sets` (each set has `annotations`; set labels
   1–2 words) or a `guided` figure (frames with a title, 1–3 short sentences and their marks).

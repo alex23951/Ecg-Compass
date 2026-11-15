@@ -26,8 +26,8 @@
     },
     "tiers": {
       "student": "required",
-      "nurse": "required",
-      "paramedic": "required",
+      "nurse": "optional",
+      "paramedic": "optional",
       "resident": "optional",
       "specialist": "optional",
       "ep": "optional"
@@ -579,8 +579,8 @@
     },
     "tiers": {
       "student": "required",
-      "nurse": "required",
-      "paramedic": "required",
+      "nurse": "optional",
+      "paramedic": "optional",
       "resident": "optional",
       "specialist": "optional",
       "ep": "optional"
@@ -1411,8 +1411,8 @@
     },
     "tiers": {
       "student": "required",
-      "nurse": "required",
-      "paramedic": "required",
+      "nurse": "optional",
+      "paramedic": "optional",
       "resident": "optional",
       "specialist": "optional",
       "ep": "optional"
@@ -1997,8 +1997,8 @@
     },
     "tiers": {
       "student": "required",
-      "nurse": "required",
-      "paramedic": "required",
+      "nurse": "optional",
+      "paramedic": "optional",
       "resident": "optional",
       "specialist": "optional",
       "ep": "optional"
@@ -2552,8 +2552,8 @@
     },
     "tiers": {
       "student": "required",
-      "nurse": "required",
-      "paramedic": "required",
+      "nurse": "optional",
+      "paramedic": "optional",
       "resident": "optional",
       "specialist": "optional",
       "ep": "optional"
@@ -2957,7 +2957,7 @@
               "en": "Delta wave"
             },
             "note": {
-              "ro": "În DI, QRS-ul urcă întâi lent (unda delta), apoi brusc. PR scurt cu undă delta: preexcitație ventriculară (aspect WPW). Nu este o urgență în sine, dar contează: calea accesorie poate conduce aritmii rapide, uneori periculoase.",
+              "ro": "În DI, QRS-ul urcă întâi lent (unda delta), apoi brusc. PR scurt cu undă delta: preexcitație ventriculară (aspect WPW). Nu este o urgență în sine, dar contează: calea accesorie poate fi implicată în aritmii rapide, uneori periculoase.",
               "en": "In lead I the QRS first rises slowly (the delta wave), then steeply. A short PR with a delta wave is ventricular pre-excitation (the WPW pattern). It is not an emergency in itself, but it matters: the accessory pathway can carry fast, sometimes dangerous arrhythmias."
             },
             "annotations": [
@@ -3051,8 +3051,8 @@
     },
     "tiers": {
       "student": "required",
-      "nurse": "required",
-      "paramedic": "required",
+      "nurse": "optional",
+      "paramedic": "optional",
       "resident": "optional",
       "specialist": "optional",
       "ep": "optional"
@@ -3656,8 +3656,8 @@
     },
     "tiers": {
       "student": "required",
-      "nurse": "required",
-      "paramedic": "required",
+      "nurse": "optional",
+      "paramedic": "optional",
       "resident": "optional",
       "specialist": "optional",
       "ep": "optional"
@@ -4120,6 +4120,11 @@
             },
             {
               "kind": "tag",
+              "lead": "V1",
+              "label": "ST ↑"
+            },
+            {
+              "kind": "tag",
               "lead": "V2",
               "label": "ST ↑"
             },
@@ -4166,8 +4171,8 @@
             "en": "II, III and aVF (mostly in III)"
           },
           {
-            "ro": "V2–V6, DI și aVL (discret în DII)",
-            "en": "V2–V6, I and aVL (slight in II)"
+            "ro": "V2–V6, DI și aVL (discret în V1 și DII)",
+            "en": "V2–V6, I and aVL (slight in V1 and II)"
           },
           {
             "ro": "DIII și aVR (mai ales în aVR)",
@@ -4180,8 +4185,8 @@
         ],
         "answer": 1,
         "explain": {
-          "ro": "Supradenivelare ST marcată în V2–V4 (până la ~11 mm în V3), care continuă în V5–V6, și supradenivelare ST în DI și aVL. DII are și el o supradenivelare ST discretă (~1,5–2 mm). În DIII apare o subdenivelare ST discretă, în oglindă. Diagnostic prezumtiv: STEMI anterolateral. Supradenivelarea nu se oprește la V4: marcajele arată toate derivațiile. Este o urgență: o zonă întinsă de mușchi cardiac este în pericol, iar fiecare minut contează.",
-          "en": "Marked ST elevation in V2–V4 (up to about 11 mm in V3), continuing into V5–V6, and ST elevation in I and aVL. Lead II shows slight ST elevation too (about 1.5–2 mm). Lead III shows slight reciprocal ST depression. A presumed diagnosis: anterolateral STEMI. The elevation does not stop at V4: the marks show every lead. This is an emergency: a large area of heart muscle is at risk, and every minute counts."
+          "ro": "Supradenivelare ST marcată în V2–V4 (până la ~11 mm în V3), care continuă în V5–V6, și supradenivelare ST în DI și aVL. Supradenivelare ST discretă apare și în V1 (~1,5 mm) și în DII (~1,5–2 mm). În DIII apare o subdenivelare ST discretă, în oglindă. Diagnostic prezumtiv: STEMI anterolateral. Supradenivelarea nu se oprește la V4: marcajele arată toate derivațiile. Este o urgență: o zonă întinsă de mușchi cardiac este în pericol, iar fiecare minut contează.",
+          "en": "Marked ST elevation in V2–V4 (up to about 11 mm in V3), continuing into V5–V6, and ST elevation in I and aVL. V1 and lead II show slight ST elevation too (about 1.5 mm in V1 and 1.5–2 mm in II). Lead III shows slight reciprocal ST depression. A presumed diagnosis: anterolateral STEMI. The elevation does not stop at V4: the marks show every lead. This is an emergency: a large area of heart muscle is at risk, and every minute counts."
         }
       },
       {
@@ -4194,12 +4199,12 @@
           "ro": [
             "Unda T normală este pozitivă în DI, DII și V3–V6. În aVR este în mod normal negativă. În DIII și V1 poate fi negativă și la un om sănătos.",
             "O undă T negativă în alte derivații este un semn de urmărit. Poate apărea în ischemie, după un infarct sau în alte boli, de exemplu în hipertrofia ventriculară sau în blocul de ramură.",
-            "Undele T negative, adânci și simetrice, în mai multe derivații adiacente sunt un semn de alarmă: pot semnala ischemie. În V2–V3 pot fi semnul precoce al unei stenoze critice a arterei descendente anterioare (semnul Wellens)."
+            "Undele T negative, adânci și simetrice, în mai multe derivații adiacente sunt un semn de alarmă: pot semnala ischemie. În V2–V3, după un episod de durere toracică, pot fi semnul precoce al unei stenoze critice a arterei descendente anterioare (semnul Wellens). Este urgent chiar dacă durerea a trecut: artera se poate închide complet."
           ],
           "en": [
             "A normal T wave is upright in I, II and V3–V6. In aVR it is normally negative. In III and V1 it can be negative in a healthy person.",
             "An inverted T wave in other leads is a finding to follow up. It can come with ischemia, after an infarct or in other conditions, for example ventricular hypertrophy or bundle branch block.",
-            "Deep, symmetrical T inversion in several neighboring leads is a red flag: it can signal ischemia. In V2–V3 it can be an early sign of a critical narrowing of the left anterior descending artery (the Wellens pattern)."
+            "Deep, symmetrical T inversion in several neighboring leads is a red flag: it can signal ischemia. In V2–V3, after an episode of chest pain, it can be an early sign of a critical narrowing of the left anterior descending artery (the Wellens pattern). This is urgent even when the pain has gone: the artery can close completely."
           ]
         }
       },
@@ -4283,8 +4288,8 @@
       {
         "type": "check",
         "question": {
-          "ro": "Pe ECG-ul unui pacient vezi supradenivelare ST de 2 mm în DII, DIII și aVF. Ce sugerează și cât de urgent este?",
-          "en": "A patient's ECG shows 2 mm of ST elevation in II, III and aVF. What does it suggest, and how urgent is it?"
+          "ro": "Pe ECG-ul unui pacient cu durere toracică vezi supradenivelare ST de 2 mm în DII, DIII și aVF. Ce sugerează și cât de urgent este?",
+          "en": "The ECG of a patient with chest pain shows 2 mm of ST elevation in II, III and aVF. What does it suggest, and how urgent is it?"
         },
         "options": [
           {
@@ -4356,8 +4361,8 @@
     },
     "tiers": {
       "student": "required",
-      "nurse": "required",
-      "paramedic": "required",
+      "nurse": "optional",
+      "paramedic": "optional",
       "resident": "optional",
       "specialist": "optional",
       "ep": "optional"
@@ -4857,8 +4862,8 @@
     },
     "tiers": {
       "student": "required",
-      "nurse": "required",
-      "paramedic": "required",
+      "nurse": "optional",
+      "paramedic": "optional",
       "resident": "optional",
       "specialist": "optional",
       "ep": "optional"
@@ -5825,7 +5830,7 @@
   {
     "id": "heart",
     "title": {
-      "ro": "Cum scrie inima ECG-ul",
+      "ro": "Cum ia naștere ECG-ul",
       "en": "How the heart writes the ECG"
     },
     "summary": {
@@ -5840,8 +5845,8 @@
         "Reține că ECG-ul înregistrează activitatea electrică, nu pulsul: verifică întotdeauna pacientul."
       ],
       "en": [
-        "Trace the impulse: sinus node, atria, AV node, bundle of His, bundle branches and Purkinje fibres.",
-        "Match the P wave, the QRS complex and the T wave to atrial depolarisation, ventricular depolarisation and ventricular repolarisation.",
+        "Trace the impulse: sinus node, atria, AV node, bundle of His, bundle branches and Purkinje fibers.",
+        "Match the P wave, the QRS complex and the T wave to atrial depolarization, ventricular depolarization and ventricular repolarization.",
         "Remember that the ECG records electricity, not the pulse: always check the patient."
       ]
     },
@@ -5870,7 +5875,7 @@
           "en": [
             "Every heartbeat starts as an electrical impulse. It is born in the sinus node, a small cluster of cells high in the right atrium.",
             "The impulse spreads through both atria, which contract. It then reaches the atrioventricular (AV) node, the only normal passage to the ventricles. The AV node holds it back for a moment.",
-            "Next it runs down the bundle of His, splits into the right and left bundle branches and spreads through the Purkinje fibres. The ventricles contract."
+            "Next it runs down the bundle of His, splits into the right and left bundle branches and spreads through the Purkinje fibers. The ventricles contract."
           ]
         }
       },
@@ -5895,9 +5900,9 @@
             "Apoi ventriculii se repolarizează (revin la starea de repaus) și apare unda T. Și atriile se repolarizează, dar unda lor este ascunsă în complexul QRS."
           ],
           "en": [
-            "The ECG draws this electrical activity as waves. When the atria depolarise (are activated), the ECG shows the P wave, a small rounded bump.",
-            "While the AV node holds the impulse back, the line is flat: this is the PR segment. The ventricles depolarise next and draw the QRS complex, tall and narrow.",
-            "Then the ventricles repolarise (recover) and draw the T wave. The atria also repolarise, but their wave is hidden inside the QRS."
+            "The ECG draws this electrical activity as waves. When the atria depolarize (are activated), the ECG shows the P wave, a small rounded bump.",
+            "While the AV node holds the impulse back, the line is flat: this is the PR segment. The ventricles depolarize next and draw the QRS complex, tall and narrow.",
+            "Then the ventricles repolarize (recover) and draw the T wave. The atria also repolarize, but their wave is hidden inside the QRS."
           ]
         }
       },
@@ -5937,7 +5942,7 @@
             ],
             "note": {
               "ro": "P: activarea atriilor. QRS: activarea ventriculilor. T: revenirea ventriculilor (repolarizarea).",
-              "en": "P: the atria are activated. QRS: the ventricles are activated. T: the ventricles recover (repolarise)."
+              "en": "P: the atria are activated. QRS: the ventricles are activated. T: the ventricles recover (repolarize)."
             }
           },
           {
@@ -6004,12 +6009,12 @@
         "type": "check",
         "question": {
           "ro": "Pe bătaia fără etichete, ce reprezintă unda mică ce precedă complexul înalt?",
-          "en": "On the unlabelled beat, what does the small wave just before the tall complex show?"
+          "en": "On the unlabeled beat, what does the small wave just before the tall complex show?"
         },
         "options": [
           {
             "ro": "Repolarizarea ventriculilor",
-            "en": "Repolarisation of the ventricles"
+            "en": "Repolarization of the ventricles"
           },
           {
             "ro": "Trecerea impulsului prin nodul AV",
@@ -6017,11 +6022,11 @@
           },
           {
             "ro": "Depolarizarea atriilor",
-            "en": "Depolarisation of the atria"
+            "en": "Depolarization of the atria"
           },
           {
             "ro": "Depolarizarea ventriculilor",
-            "en": "Depolarisation of the ventricles"
+            "en": "Depolarization of the ventricles"
           }
         ],
         "answer": 2,
@@ -6034,7 +6039,7 @@
         "type": "check",
         "question": {
           "ro": "Ce parte a traseului corespunde depolarizării ventriculilor?",
-          "en": "Which part of the ECG shows depolarisation of the ventricles?"
+          "en": "Which part of the ECG shows depolarization of the ventricles?"
         },
         "options": [
           {
@@ -6166,7 +6171,7 @@
       "ro": "Cât valorează un pătrat și ce verifici înainte de a citi",
       "en": "What a square is worth, and what to check before you read"
     },
-    "minutes": 7,
+    "minutes": 8,
     "objectives": {
       "ro": [
         "Transformă pătratele în timp și voltaj: un pătrat mic = 40 ms și 0,1 mV; un pătrat mare = 200 ms.",
@@ -6210,7 +6215,7 @@
           },
           {
             "ro": "În rețeaua Purkinje",
-            "en": "In the Purkinje fibres"
+            "en": "In the Purkinje fibers"
           }
         ],
         "answer": 2,
@@ -6228,15 +6233,15 @@
         "options": [
           {
             "ro": "Depolarizarea atriilor",
-            "en": "Depolarisation of the atria"
+            "en": "Depolarization of the atria"
           },
           {
             "ro": "Repolarizarea ventriculilor",
-            "en": "Repolarisation of the ventricles"
+            "en": "Repolarization of the ventricles"
           },
           {
             "ro": "Depolarizarea ventriculilor",
-            "en": "Depolarisation of the ventricles"
+            "en": "Depolarization of the ventricles"
           },
           {
             "ro": "Întârzierea din nodul AV",
@@ -6246,7 +6251,7 @@
         "answer": 1,
         "explain": {
           "ro": "Unda T corespunde revenirii ventriculilor (repolarizării). Activarea lor dă complexul QRS, iar activarea atriilor, unda P.",
-          "en": "The T wave is the recovery (repolarisation) of the ventricles. Their activation is the QRS, and that of the atria is the P wave."
+          "en": "The T wave is the recovery (repolarization) of the ventricles. Their activation is the QRS, and that of the atria is the P wave."
         }
       },
       {
@@ -6410,7 +6415,7 @@
           8.2
         ],
         "measure": "volt",
-        "ref": 35,
+        "ref": 36,
         "tol": 2,
         "prompt": {
           "ro": "Măsoară înălțimea undei R în V5.",
@@ -6427,8 +6432,8 @@
           ]
         },
         "explain": {
-          "ro": "Aproximativ 35 mm (3,5 mV). Pe hârtie, la 5 mm/mV, ai măsura jumătate (17,5 mm) și ai dubla valoarea. Compasul din aplicație afișează întotdeauna valoarea la 10 mm/mV. Criteriile de voltaj, de exemplu cele pentru hipertrofia ventriculară stângă, presupun etalonarea standard.",
-          "en": "About 35 mm (3.5 mV). On paper at 5 mm/mV you would measure half (17.5 mm) and double it. The calipers in the app always give the value at 10 mm/mV. Voltage criteria, for example those for left ventricular hypertrophy, assume the standard calibration."
+          "ro": "Aproximativ 36 mm (3,6 mV). Pe hârtie, la 5 mm/mV, ai măsura jumătate (18 mm) și ai dubla valoarea. Compasul din aplicație afișează întotdeauna valoarea la 10 mm/mV. Criteriile de voltaj, de exemplu cele pentru hipertrofia ventriculară stângă, presupun etalonarea standard.",
+          "en": "About 36 mm (3.6 mV). On paper at 5 mm/mV you would measure half (18 mm) and double it. The calipers in the app always give the value at 10 mm/mV. Voltage criteria, for example those for left ventricular hypertrophy, assume the standard calibration."
         }
       },
       {
@@ -6549,7 +6554,7 @@
       "ro": "Numele fiecărei părți a unei bătăi și valorile normale",
       "en": "The name of every part of a beat, and the normal values"
     },
-    "minutes": 7,
+    "minutes": 8,
     "objectives": {
       "ro": [
         "Identifică unda P, intervalul și segmentul PR, complexul QRS, punctul J, segmentul ST, unda T, unda U, intervalul QT și segmentul TP.",
@@ -7056,7 +7061,7 @@
       "en": [
         "Know that 10 electrodes give 12 leads, and that a wave moving towards a lead's positive pole is upright.",
         "Group the leads: inferior (II, III, aVF), lateral (I, aVL, V5–V6), septal (V1–V2), anterior (V3–V4); in sinus rhythm aVR is negative.",
-        "Nurses and paramedics: place the electrodes correctly, using the IEC colours."
+        "Nurses and paramedics: place the electrodes correctly, using the IEC colors."
       ]
     },
     "tiers": {
@@ -7153,7 +7158,7 @@
         "name": "limb_leads",
         "caption": {
           "ro": "Electrozii membrelor, în culorile IEC: R roșu (braț drept), L galben (braț stâng), F verde (picior stâng), N negru (picior drept, neutru). DI, DII și DIII formează un triunghi în jurul inimii.",
-          "en": "Limb electrodes in IEC colours: R red (right arm), L yellow (left arm), F green (left leg), N black (right leg, neutral). Leads I, II and III form a triangle around the heart."
+          "en": "Limb electrodes in IEC colors: R red (right arm), L yellow (left arm), F green (left leg), N black (right leg, neutral). Leads I, II and III form a triangle around the heart."
         }
       },
       {
@@ -7177,7 +7182,7 @@
             "Dacă sunt plasați prea sus, V1 și V2 pot arăta un fals aspect rSr' și unde T negative. La femei, așază V4–V6 sub sân, nu pe sân."
           ],
           "en": [
-            "Limb electrodes, IEC colours: red on the right arm, yellow on the left arm, green on the left leg, black on the right leg.",
+            "Limb electrodes, IEC colors: red on the right arm, yellow on the left arm, green on the left leg, black on the right leg.",
             "Chest electrodes: V1 red, V2 yellow, V3 green, V4 brown, V5 black, V6 violet. Find the angle of Louis (the sternal angle), slide down into the 2nd intercostal space, then count down to the 4th for V1 and V2.",
             "Placed too high, V1 and V2 can show a false rSr' and negative T waves. In women, place V4–V6 under the breast, not on it."
           ]
@@ -7192,7 +7197,7 @@
         "name": "monitor",
         "caption": {
           "ro": "Monitorizare cu 3 sau 5 electrozi, în aceleași culori: roșu sub clavicula dreaptă, galben sub clavicula stângă, verde pe rebordul costal stâng, negru pe rebordul costal drept, iar electrodul toracic alb, de obicei în poziția V1. O derivație de monitor nu înlocuiește ECG-ul în 12 derivații.",
-          "en": "Monitoring with 3 or 5 electrodes, in the same colours: red below the right clavicle, yellow below the left, green on the left lower ribs, black on the right lower ribs, and the white chest electrode, usually in the V1 position. A monitor lead does not replace a 12-lead ECG."
+          "en": "Monitoring with 3 or 5 electrodes, in the same colors: red below the right clavicle, yellow below the left, green on the left lower ribs, black on the right lower ribs, and the white chest electrode, usually in the V1 position. A monitor lead does not replace a 12-lead ECG."
         },
         "only": [
           "nurse",
@@ -7476,7 +7481,7 @@
     "id": "recording",
     "title": {
       "ro": "Un traseu corect: artefacte, electrozi inversați, derivații suplimentare",
-      "en": "A clean recording: artefact, reversal and extra leads"
+      "en": "A clean recording: artifact, reversal and extra leads"
     },
     "summary": {
       "ro": "Ce nu vine de la inimă și când reînregistrezi traseul",
@@ -7490,8 +7495,8 @@
         "Știi unde se plasează V4R și V7–V9 și când se înregistrează; reînregistrează un traseu defectuos în loc să îl interpretezi."
       ],
       "en": [
-        "Recognise muscle tremor, 50 Hz mains interference, baseline wander and a loose electrode.",
-        "Recognise swapped arm electrodes (lead I inverted, aVR and aVL swapped, II and III swapped, chest leads unchanged) and a right arm–right leg swap (lead II almost flat).",
+        "Recognize muscle tremor, 50 Hz mains interference, baseline wander and a loose electrode.",
+        "Recognize swapped arm electrodes (lead I inverted, aVR and aVL swapped, II and III swapped, chest leads unchanged) and a right arm–right leg swap (lead II almost flat).",
         "Know where V4R and V7–V9 go and when to record them; record again rather than interpret a faulty tracing."
       ]
     },
@@ -7578,7 +7583,7 @@
             "Un traseu defectuos nu se interpretează, ci se reînregistrează."
           ],
           "en": [
-            "An artefact is any signal on the tracing that the heart did not make. Four are common.",
+            "An artifact is any signal on the tracing that the heart did not make. Four are common.",
             "Muscle tremor: a fine, irregular fuzz, worse when the patient is cold, tense or shivering. Mains interference: a thick line of tiny, perfectly regular teeth. Baseline wander: the line drifts slowly up and down with breathing or movement. A loose electrode: sudden jumps or a chaotic line in the leads that use it.",
             "A faulty tracing is not read. It is recorded again."
           ]
@@ -7609,7 +7614,7 @@
           ],
           "en": [
             "Look at which leads are affected. The tremor is strongest in I and II and much smaller in III. I and II use the right-arm electrode; III does not. Ask the patient to rest and relax the right arm; if the patient is cold, cover them.",
-            "Near the end, V2 alone swings down and then sharply up while V3 stays steady: artefact from the V2 electrode (poor contact or movement)."
+            "Near the end, V2 alone swings down and then sharply up while V3 stays steady: artifact from the V2 electrode (poor contact or movement)."
           ]
         },
         "sets": [
@@ -7773,7 +7778,7 @@
           },
           {
             "ro": "Artefact: prea rapide ca să fie unde atriale",
-            "en": "Artefact: too fast to be atrial waves"
+            "en": "Artifact: too fast to be atrial waves"
           },
           {
             "ro": "Unde f: fibrilație atrială cu unde fine",
@@ -7787,7 +7792,7 @@
         "answer": 1,
         "explain": {
           "ro": "Artefact. Cel puțin patru unde într-un pătrat mare (200 ms) înseamnă peste 1000/min: undele de flutter au 250–350/min, iar undele f din fibrilația atrială sunt neregulate. Oscilațiile apar și dispar fără ca ritmul să se modifice, iar DI nu le prezintă.",
-          "en": "Artefact. At least four waves in one large square (200 ms) is over 1000/min: flutter waves run at 250–350/min, and the f waves of atrial fibrillation are irregular. The waves come and go without any change in the rhythm, and lead I does not show them."
+          "en": "Artifact. At least four waves in one large square (200 ms) is over 1000/min: flutter waves run at 250–350/min, and the f waves of atrial fibrillation are irregular. The waves come and go without any change in the rhythm, and lead I does not show them."
         }
       },
       {
@@ -7980,8 +7985,8 @@
       {
         "type": "check",
         "question": {
-          "ro": "Scenariu: monitorul alarmează și afișează o linie haotică. Pacientul este conștient și îți vorbește. Ce faci mai întâi?",
-          "en": "Scenario: the monitor alarms and shows a chaotic line. The patient is awake and talking to you. What do you do first?"
+          "ro": "Monitorul alarmează și afișează o linie haotică. Pacientul este conștient și îți vorbește. Ce faci mai întâi?",
+          "en": "The monitor alarms and shows a chaotic line. The patient is awake and talking to you. What do you do first?"
         },
         "options": [
           {
@@ -8004,7 +8009,7 @@
         "answer": 3,
         "explain": {
           "ro": "Un pacient care vorbește are circulație: linia haotică nu poate fi fibrilație ventriculară și este, cel mai probabil, un artefact. Privește pacientul înaintea ecranului, apoi verifică electrozii și cablurile și confirmă un ritm clar. Nu opri o alarmă fără să îi găsești cauza.",
-          "en": "A patient who talks has a circulation: the chaotic line cannot be ventricular fibrillation and is most likely artefact. Look at the patient before the screen, then fix the electrodes and cables and confirm a clean rhythm. Never silence an alarm without finding its cause."
+          "en": "A patient who talks has a circulation: the chaotic line cannot be ventricular fibrillation and is most likely artifact. Look at the patient before the screen, then fix the electrodes and cables and confirm a clean rhythm. Never silence an alarm without finding its cause."
         },
         "only": [
           "nurse",
@@ -8127,7 +8132,7 @@
             "Un minut are deci 300 de pătrate mari sau 1500 de pătrate mici. De aici vin cele două reguli pentru ritmul regulat."
           ],
           "en": [
-            "The machine prints a rate and the monitor shows one. Both can be wrong: tall T waves, pacing spikes or artefact can be counted as beats, and small QRS complexes can be missed.",
+            "The machine prints a rate and the monitor shows one. Both can be wrong: tall T waves, pacing spikes or artifact can be counted as beats, and small QRS complexes can be missed.",
             "The paper measures time. At 25 mm/s, one small square is 0.04 s (40 ms), one large square is 0.2 s (200 ms), and five large squares make one second.",
             "So one minute holds 300 large squares, or 1500 small squares. That is where the two rules for a regular rhythm come from."
           ]
@@ -8516,7 +8521,7 @@
           "rhythm-02",
           "rhythm-03",
           "tachy-01",
-          "trbl-03"
+          "rhythm-05"
         ]
       }
     ]
@@ -8610,7 +8615,7 @@
         "answer": 0,
         "explain": {
           "ro": "12 × 6 = 72/min. Când aparatul și numărătoarea pe traseu nu concordă, ai încredere în numărătoare și caută ce a numărat aparatul în plus: unde T înalte, spike-uri sau artefacte.",
-          "en": "12 × 6 = 72/min. When the device and your count disagree, trust the count and look for what the device counted extra: tall T waves, spikes or artefact."
+          "en": "12 × 6 = 72/min. When the device and your count disagree, trust the count and look for what the device counted extra: tall T waves, spikes or artifact."
         }
       },
       {
@@ -8860,8 +8865,8 @@
           2.6
         ],
         "heading": {
-          "ro": "3. TPSV, aproximativ 156/min",
-          "en": "3. SVT, about 156/min"
+          "ro": "3. TPSV, aproximativ 200/min",
+          "en": "3. SVT, about 200/min"
         },
         "sets": [
           {
@@ -8874,8 +8879,8 @@
               "RR"
             ],
             "note": {
-              "ro": "Intervale RR egale, de aproximativ 380 ms, QRS îngust și nicio undă P înaintea complexelor QRS, în niciuna dintre derivații.",
-              "en": "Equal RR intervals of about 380 ms, a narrow QRS, and no P wave before the QRS complexes in either lead."
+              "ro": "Intervale RR egale, de aproximativ 300 ms (200/min), și QRS îngust. În DII, între două complexe se vede doar unda T, apoi linia izoelectrică plată: nicio undă P și nicio undă F. Frecvența ajută și ea: la adult, în repaus, tahicardia sinusală depășește rar 150/min.",
+              "en": "Equal RR intervals of about 300 ms (200/min) and a narrow QRS. In II, between two complexes there is only the T wave, then a flat baseline: no P wave and no F waves. The rate helps too: in an adult at rest, sinus tachycardia rarely goes above 150/min."
             }
           }
         ]
@@ -8919,7 +8924,7 @@
           },
           {
             "ro": "Scade frecvența prin manevre vagale",
-            "en": "Slow the rate down with vagal manoeuvres"
+            "en": "Slow the rate down with vagal maneuvers"
           },
           {
             "ro": "Repetă ECG-ul: ritmul sinusal nu ajunge la 134/min",
@@ -8929,7 +8934,7 @@
         "answer": 0,
         "explain": {
           "ro": "Aspectul este de tahicardie sinusală, răspunsul organismului la o altă problemă. Scăderea frecvenței în sine nu ajută; ajută găsirea și tratarea cauzei. Manevrele vagale se folosesc în TPSV.",
-          "en": "This is sinus tachycardia, a response to something else. Slowing the rate itself does not help; finding and treating the cause does. Vagal manoeuvres are for SVT."
+          "en": "This is sinus tachycardia, a response to something else. Slowing the rate itself does not help; finding and treating the cause does. Vagal maneuvers are for SVT."
         }
       },
       {
@@ -8986,20 +8991,20 @@
       "en": "Irregular rhythms and early beats"
     },
     "summary": {
-      "ro": "Ritm regulat, neregulat cu tipar sau complet neregulat; fibrilația atrială; extrasistolele ventriculare și bigeminismul.",
+      "ro": "Ritm regulat, neregulat cu periodicitate sau complet neregulat; fibrilația atrială; extrasistolele ventriculare și bigeminismul.",
       "en": "Regular, regularly irregular or irregularly irregular; atrial fibrillation; premature ventricular complexes and bigeminy."
     },
     "minutes": 8,
     "objectives": {
       "ro": [
-        "Deosebește ritmul regulat, ritmul neregulat cu tipar care se repetă și ritmul complet neregulat.",
+        "Deosebește ritmul regulat, ritmul neregulat cu periodicitate și ritmul complet neregulat.",
         "Recunoaște fibrilația atrială: fără unde P, intervale RR complet neregulate, unde f vizibile mai ales în V1.",
         "Recunoaște extrasistola ventriculară (precoce, largă, fără undă P, urmată de pauză compensatorie) și bigeminismul ventricular."
       ],
       "en": [
         "Tell regular, regularly irregular and irregularly irregular rhythms apart.",
-        "Recognise atrial fibrillation: no P waves, irregularly irregular RR intervals, f waves best seen in V1.",
-        "Recognise a premature ventricular complex (early, wide, no P wave, followed by a compensatory pause) and ventricular bigeminy."
+        "Recognize atrial fibrillation: no P waves, irregularly irregular RR intervals, f waves best seen in V1.",
+        "Recognize a premature ventricular complex (early, wide, no P wave, followed by a compensatory pause) and ventricular bigeminy."
       ]
     },
     "tiers": {
@@ -9081,7 +9086,7 @@
         "body": {
           "ro": [
             "Înainte de a numi ritmul, privește intervalele RR pe toată lungimea traseului. Marchează două unde R pe marginea unei foi de hârtie sau deschide compasul și deplasează-l de-a lungul traseului.",
-            "Regulat: toate intervalele RR sunt egale. Neregulat cu tipar: intervalele RR variază, dar după un model care se repetă, ca în bigeminism sau în complexele QRS grupate.",
+            "Regulat: toate intervalele RR sunt egale. Neregulat cu periodicitate: intervalele RR variază, dar după un model care se repetă, ca în bigeminism sau în complexele QRS grupate.",
             "Complet neregulat: fiecare interval RR este diferit și niciun model nu se repetă. Cea mai frecventă cauză este fibrilația atrială. Extrasistolele frecvente pot da un aspect asemănător, de aceea caută și undele P."
           ],
           "en": [
@@ -9423,7 +9428,7 @@
         "type": "cases",
         "body": {
           "ro": [
-            "Exersează. Începe cu intervalele RR: regulate, neregulate cu tipar sau complet neregulate?"
+            "Exersează. Începe cu intervalele RR: regulate, neregulate cu periodicitate sau complet neregulate?"
           ],
           "en": [
             "Practice. Start with the RR intervals: regular, regularly irregular or irregularly irregular?"
@@ -9457,8 +9462,8 @@
         "Știi că o frecvență mică, cu unde P blocate sau cu un ritm de scăpare lent și larg, este periculoasă și ce trebuie pregătit."
       ],
       "en": [
-        "Measure the PR and recognise first-degree AV block: PR over 200 ms and constant, with every P wave conducted.",
-        "Recognise blocked P waves: a PR that lengthens until a P is blocked (Wenckebach), and complete AV block, where P waves and QRS complexes are regular but unrelated.",
+        "Measure the PR and recognize first-degree AV block: PR over 200 ms and constant, with every P wave conducted.",
+        "Recognize blocked P waves: a PR that lengthens until a P is blocked (Wenckebach), and complete AV block, where P waves and QRS complexes are regular but unrelated.",
         "Know that a slow rate with blocked P waves, or a slow, wide escape rhythm, is dangerous, and what to prepare."
       ]
     },
@@ -10071,8 +10076,8 @@
       {
         "type": "check",
         "question": {
-          "ro": "Scenariu: bloc atrioventricular complet, 40/min, cu QRS larg; pacientul acuză amețeli. Ce pregătești?",
-          "en": "Scenario: complete AV block at 40/min with a wide QRS; the patient is dizzy. What do you prepare?"
+          "ro": "Bloc atrioventricular complet, 40/min, cu QRS larg; pacientul acuză amețeli. Ce pregătești?",
+          "en": "Complete AV block at 40/min with a wide QRS; the patient is dizzy. What do you prepare?"
         },
         "options": [
           {
@@ -10090,8 +10095,8 @@
         ],
         "answer": 1,
         "explain": {
-          "ro": "Un ritm de scăpare lent, cu QRS larg, se poate opri. Pacientul rămâne monitorizat, cu electrozii autoadezivi și stimularea pregătite, iar ajutorul se cheamă imediat: asistentul medical anunță medicul, echipajul de ambulanță solicită echipajul cu medic. Medicația și setările stimulării se aleg conform protocolului unității.",
-          "en": "A slow, wide escape rhythm can stop. Keep the patient monitored with the pads and pacing ready, and get help at once: the nurse calls the doctor, the ambulance crew requests a physician crew. Drugs and pacing settings follow your unit's protocol."
+          "ro": "Un ritm de scăpare lent, cu QRS larg, se poate opri. Pacientul rămâne monitorizat, cu electrozii autoadezivi aplicați și stimularea pregătită, iar ajutorul se cheamă imediat: asistentul medical anunță medicul, echipajul de ambulanță solicită echipajul cu medic. Tratamentul medicamentos și stimularea se inițiază numai la indicația medicului sau conform protocolului.",
+          "en": "A slow, wide escape rhythm can stop. Keep the patient monitored with the pads on and pacing ready, and get help at once: the nurse calls the doctor, the ambulance crew requests a physician crew. Drugs and pacing are started only on a doctor's order or per protocol."
         },
         "only": [
           "nurse",
@@ -10218,7 +10223,7 @@
           ],
           "en": [
             "A normal QRS lasts under 120 ms, less than three small squares. The impulse reaches both ventricles quickly through the His bundle and its branches.",
-            "A QRS of 120 ms or more is wide. The ventricles are activated slowly, from one muscle fibre to the next: a bundle branch block, a beat that starts in the ventricle, a paced beat or pre-excitation.",
+            "A QRS of 120 ms or more is wide. The ventricles are activated slowly, from one muscle fiber to the next: a bundle branch block, a beat that starts in the ventricle, a paced beat or pre-excitation.",
             "A wide QRS changes how you read the rest of the ECG. A fast, regular, wide rhythm is ventricular tachycardia (VT) until proven otherwise."
           ]
         }
@@ -10516,7 +10521,7 @@
         "answer": 0,
         "explain": {
           "ro": "În blocul major de ramură stângă și repolarizarea este anormală: ST-T are sens opus QRS-ului (modificări secundare de fază terminală). În V1–V3 QRS-ul este negativ, deci ST-ul urcă. Supradenivelarea ST în același sens cu QRS-ul nu este de așteptat (criteriile Sgarbossa).",
-          "en": "In left bundle branch block repolarisation is abnormal too: the ST-T goes opposite to the QRS (secondary changes). In V1–V3 the QRS is negative, so the ST rises. ST elevation in the same direction as the QRS is not expected (Sgarbossa)."
+          "en": "In left bundle branch block repolarization is abnormal too: the ST-T goes opposite to the QRS (secondary changes). In V1–V3 the QRS is negative, so the ST rises. ST elevation in the same direction as the QRS is not expected (Sgarbossa)."
         },
         "only": [
           "student",
@@ -10538,7 +10543,7 @@
           },
           {
             "ro": "Ca artefact: verifică mai întâi electrozii",
-            "en": "As artefact: check the electrodes first"
+            "en": "As artifact: check the electrodes first"
           },
           {
             "ro": "Ca tahicardie ventriculară: puls, ajutor, defibrilator",
@@ -10618,7 +10623,7 @@
         "Deosebește FV fină de asistolă și TV rapidă de FV și verifică întotdeauna pacientul, nu doar monitorul."
       ],
       "en": [
-        "Recognise ventricular fibrillation, ventricular tachycardia, asystole and pulseless electrical activity on a monitor lead.",
+        "Recognize ventricular fibrillation, ventricular tachycardia, asystole and pulseless electrical activity on a monitor lead.",
         "Sort the rhythms within seconds into shockable (VF, pulseless VT) and non-shockable (asystole, PEA), per ERC 2025.",
         "Tell fine VF from asystole and fast VT from VF, and always check the patient, not just the monitor."
       ]
@@ -10681,7 +10686,7 @@
           },
           {
             "ro": "Artefacte de mișcare ale electrozilor",
-            "en": "Electrode movement artefact"
+            "en": "Electrode movement artifact"
           }
         ],
         "answer": 0,
@@ -10707,7 +10712,7 @@
           "en": [
             "A patient who is unresponsive and not breathing normally is treated as cardiac arrest: call for help, start cardiopulmonary resuscitation (CPR) and attach the defibrillator.",
             "The monitor then shows one of four rhythms. Ventricular fibrillation (VF) and pulseless ventricular tachycardia (VT) are shockable: give an external electric shock (defibrillation). Asystole and pulseless electrical activity (PEA) are non-shockable: continue CPR without a shock (ERC 2025).",
-            "The decision is made in a brief pause in compressions. With a manual defibrillator, ERC 2025 asks rescuers to recognise a shockable rhythm in under 5 s; anyone who cannot decide that fast uses the defibrillator in AED mode (automated external defibrillator).",
+            "The decision is made in a brief pause in compressions. With a manual defibrillator, ERC 2025 asks rescuers to recognize a shockable rhythm in under 5 s; anyone who cannot decide that fast uses the defibrillator in AED mode (automated external defibrillator).",
             "Nurses start basic life support (BLS) with the AED and call the arrest team; ambulance crews follow the ERC algorithm and the SAJ/SMURD protocols. Drugs are given per your unit's protocol.",
             "The strips in this lesson are real monitor recordings of a single lead. The patients' pulse was not recorded."
           ]
@@ -10737,7 +10742,7 @@
             "Unde mari, rapide și neregulate. Nu se recunoaște niciun complex QRS, nicio undă T și nicio linie izoelectrică."
           ],
           "en": [
-            "Large, fast, irregular waves. No QRS complex, no T wave and no baseline can be recognised."
+            "Large, fast, irregular waves. No QRS complex, no T wave and no baseline can be recognized."
           ]
         },
         "caption": {
@@ -11153,13 +11158,13 @@
           },
           {
             "ro": "Se administrează un șoc sincron pe undele cele mai mari",
-            "en": "Give a synchronised shock on the largest waves"
+            "en": "Give a synchronized shock on the largest waves"
           }
         ],
         "answer": 1,
         "explain": {
           "ro": "ERC 2025 schimbă recomandarea din 2015: în caz de îndoială între FV fină și asistolă, se administrează șocul, iar FV de orice amplitudine se defibrilează imediat. Cine nu poate decide în 5 s folosește modul DEA. Un șoc sincron nu are sens fără complexe QRS.",
-          "en": "ERC 2025 changes the 2015 advice: if in doubt between fine VF and asystole, give the shock, and VF of any amplitude is defibrillated at once. Anyone who cannot decide within 5 s uses AED mode. A synchronised shock makes no sense without QRS complexes."
+          "en": "ERC 2025 changes the 2015 advice: if in doubt between fine VF and asystole, give the shock, and VF of any amplitude is defibrillated at once. Anyone who cannot decide within 5 s uses AED mode. A synchronized shock makes no sense without QRS complexes."
         }
       },
       {
@@ -11171,11 +11176,11 @@
         "options": [
           {
             "ro": "Defibrilare imediată, pentru că ritmul este organizat",
-            "en": "Immediate defibrillation, because the rhythm is organised"
+            "en": "Immediate defibrillation, because the rhythm is organized"
           },
           {
             "ro": "Cardioversie electrică sincronă, sub sedare",
-            "en": "Synchronised electrical cardioversion under sedation"
+            "en": "Synchronized electrical cardioversion under sedation"
           },
           {
             "ro": "RCP fără șoc: este activitate electrică fără puls",
@@ -11189,7 +11194,7 @@
         "answer": 2,
         "explain": {
           "ro": "Un ritm organizat fără puls este AEP, ritm neșocabil (ERC 2025): RCP fără șoc și căutarea cauzelor reversibile. Cardioversia sincronă se face numai la pacientul cu puls.",
-          "en": "An organised rhythm without a pulse is PEA, a non-shockable rhythm (ERC 2025): CPR without a shock and a search for the reversible causes. Synchronised cardioversion is only for a patient with a pulse."
+          "en": "An organized rhythm without a pulse is PEA, a non-shockable rhythm (ERC 2025): CPR without a shock and a search for the reversible causes. Synchronized cardioversion is only for a patient with a pulse."
         }
       },
       {
@@ -11263,7 +11268,7 @@
       "en": [
         "Know that the normal QRS axis lies between −30° and +90°.",
         "Find the quadrant from I and aVF, use II for the zone between 0° and −30°, then refine with the most equiphasic lead.",
-        "Recognise that left axis deviation with rS in the inferior leads points to left anterior fascicular block, not an old inferior MI."
+        "Recognize that left axis deviation with rS in the inferior leads points to left anterior fascicular block, not an old inferior MI."
       ]
     },
     "tiers": {
@@ -11585,7 +11590,7 @@
           "en": [
             "Left anterior fascicular block (LAFB) is a common cause of marked left axis deviation. Activation starts low in the left ventricle and travels upwards, so the inferior leads show rS: a small r, then a deep S. aVL shows qR.",
             "An old inferior infarct also pushes the axis to the left, but the inferior leads then start with a Q wave (QS or Qr), not with an r.",
-            "So check the first deflection in II, III and aVF: a small r favours LAFB, a Q wave an old infarct."
+            "So check the first deflection in II, III and aVF: a small r favors LAFB, a Q wave an old infarct."
           ]
         }
       },
@@ -11593,7 +11598,7 @@
         "type": "check",
         "question": {
           "ro": "Deviație axială stângă. Ce aspect în derivațiile inferioare pledează pentru HBAS, nu pentru un infarct inferior vechi?",
-          "en": "Left axis deviation. Which pattern in the inferior leads favours LAFB over an old inferior MI?"
+          "en": "Left axis deviation. Which pattern in the inferior leads favors LAFB over an old inferior MI?"
         },
         "options": [
           {
@@ -11654,7 +11659,7 @@
       "en": [
         "Measure the QT in II or V5, from the start of the QRS to the end of the T wave, with the tangent method.",
         "Correct the QT for rate: Bazett over-corrects at fast rates, where Fridericia is more accurate.",
-        "Recognise a prolonged QTc (over 450 ms in men, over 460 ms in women) and the alarm level: 500 ms, or a rise of more than 60 ms."
+        "Recognize a prolonged QTc (over 450 ms in men, over 460 ms in women) and the alarm level: 500 ms, or a rise of more than 60 ms."
       ]
     },
     "tiers": {
@@ -11760,7 +11765,7 @@
           },
           {
             "ro": "Cardioversie sincronă, după sedare",
-            "en": "Synchronised cardioversion after sedation"
+            "en": "Synchronized cardioversion after sedation"
           },
           {
             "ro": "Monitorizare și un ECG în 12 derivații",
@@ -11770,7 +11775,7 @@
         "answer": 1,
         "explain": {
           "ro": "Tahicardia ventriculară (TV) fără puls este un ritm șocabil și se tratează ca fibrilația ventriculară (FV): RCP și defibrilare cât mai repede (ERC 2025). Cardioversia sincronă se face numai la pacientul cu puls.",
-          "en": "Pulseless ventricular tachycardia (VT) is a shockable rhythm and is treated as ventricular fibrillation (VF): CPR and defibrillation as soon as possible (ERC 2025). Synchronised cardioversion is only for a patient with a pulse."
+          "en": "Pulseless ventricular tachycardia (VT) is a shockable rhythm and is treated as ventricular fibrillation (VF): CPR and defibrillation as soon as possible (ERC 2025). Synchronized cardioversion is only for a patient with a pulse."
         }
       },
       {
@@ -11820,7 +11825,7 @@
             "Partea dificilă este sfârșitul undei T. Trasează o tangentă la porțiunea cea mai abruptă a pantei descendente a undei T. Unda T se termină în punctul în care tangenta întâlnește linia izoelectrică."
           ],
           "en": [
-            "The QT runs from the start of the QRS to the end of the T wave. It covers the whole electrical activity of the ventricles: depolarisation and repolarisation.",
+            "The QT runs from the start of the QRS to the end of the T wave. It covers the whole electrical activity of the ventricles: depolarization and repolarization.",
             "Measure it in II or V5, where the end of the T wave is usually clearest. Do not include a U wave.",
             "The end of the T wave is the hard part. Draw a tangent along the steepest part of the T wave's downslope. The T wave ends where this line meets the baseline."
           ]
@@ -12008,7 +12013,7 @@
         "answer": 2,
         "explain": {
           "ro": "La frecvențe mari, Bazett supraestimează QTc: aici dă ~442 ms, aproape de limită, iar Fridericia dă ~386 ms, normal. Diferența vine din formula de corecție, nu din repolarizare.",
-          "en": "At fast rates Bazett overestimates the QTc: here it gives about 442 ms, close to the limit, while Fridericia gives about 386 ms, normal. The difference comes from the correction formula, not from repolarisation."
+          "en": "At fast rates Bazett overestimates the QTc: here it gives about 442 ms, close to the limit, while Fridericia gives about 386 ms, normal. The difference comes from the correction formula, not from repolarization."
         }
       },
       {
@@ -12117,7 +12122,7 @@
         "answer": 2,
         "explain": {
           "ro": "Aparatul poate plasa greșit sfârșitul undei T, de exemplu dacă include unda U sau dacă traseul are artefacte. Nici măsurarea manuală nu este perfectă. Când valorile diferă și una depășește 500 ms, decide medicul.",
-          "en": "The machine can misplace the end of the T wave, for example by including a U wave or when the tracing has artefact. A hand measurement is not perfect either. When the values differ and one is over 500 ms, the doctor decides."
+          "en": "The machine can misplace the end of the T wave, for example by including a U wave or when the tracing has artifact. A hand measurement is not perfect either. When the values differ and one is over 500 ms, the doctor decides."
         },
         "only": [
           "nurse"
@@ -12136,8 +12141,7 @@
         "cases": [
           "rhythm-01",
           "rhythm-03",
-          "rhythm-02",
-          "tachy-04"
+          "rhythm-02"
         ]
       }
     ]
@@ -12146,7 +12150,7 @@
     "id": "st",
     "title": {
       "ro": "Segmentul ST și unda T: ischemie și STEMI",
-      "en": "ST and T: ischaemia and STEMI"
+      "en": "ST and T: ischemia and STEMI"
     },
     "summary": {
       "ro": "Unde se măsoară ST, pragurile STEMI și derivațiile suplimentare",
@@ -12238,7 +12242,14 @@
         "explain": {
           "ro": "La frecvențe mari, Bazett supraestimează QTc. Fridericia este mai exactă, deci ~386 ms, un QTc normal.",
           "en": "At fast rates Bazett overestimates the QTc. Fridericia is more accurate, so about 386 ms: a normal QTc."
-        }
+        },
+        "only": [
+          "student",
+          "nurse",
+          "resident",
+          "specialist",
+          "ep"
+        ]
       },
       {
         "type": "text",
@@ -12415,10 +12426,10 @@
         },
         "body": {
           "ro": [
-            "Supradenivelare ST în V2–V6 și în DI și aVL, iar DII are și el o supradenivelare ST discretă. DIII arată o subdenivelare ST discretă, în oglindă. Aspectul sugerează o ocluzie proximală a arterei descendente anterioare."
+            "Supradenivelare ST în V2–V6 și în DI și aVL, cu supradenivelare ST discretă și în V1 și DII. DIII arată o subdenivelare ST discretă, în oglindă. Aspectul sugerează o ocluzie proximală a arterei descendente anterioare."
           ],
           "en": [
-            "ST elevation in V2–V6 and in I and aVL, with slight ST elevation in II too. Lead III shows slight reciprocal ST depression. The pattern suggests a proximal occlusion of the left anterior descending artery."
+            "ST elevation in V2–V6 and in I and aVL, with slight ST elevation in V1 and II too. Lead III shows slight reciprocal ST depression. The pattern suggests a proximal occlusion of the left anterior descending artery."
           ]
         }
       },
@@ -12444,7 +12455,7 @@
             "Supradenivelare ST în DII, DIII, aVF și V5–V6: teritoriu inferolateral. În V2–V3, subdenivelare ST orizontală de ~3 mm, cu unde T pozitive. Este peretele posterior văzut în oglindă: extensie posterioară, nu o ischemie separată."
           ],
           "en": [
-            "ST elevation in II, III, aVF and V5–V6: an inferolateral territory. In V2–V3, horizontal ST depression of about 3 mm with upright T waves. This is the posterior wall seen in a mirror: posterior extension, not separate ischaemia."
+            "ST elevation in II, III, aVF and V5–V6: an inferolateral territory. In V2–V3, horizontal ST depression of about 3 mm with upright T waves. This is the posterior wall seen in a mirror: posterior extension, not separate ischemia."
           ]
         }
       },
@@ -12464,7 +12475,7 @@
           "en": [
             "ST depression in V1–V3 with an inferior STEMI: record V7–V9. ST elevation of 0.5 mm or more there confirms posterior involvement.",
             "In an inferior STEMI, record V3R and V4R too. ST elevation of 0.5 mm or more in V4R suggests right ventricular infarction.",
-            "Some ECGs need the same urgency without classic ST elevation: left or right bundle branch block or a ventricular paced rhythm with ongoing ischaemic symptoms, and isolated posterior infarction.",
+            "Some ECGs need the same urgency without classic ST elevation: left or right bundle branch block or a ventricular paced rhythm with ongoing ischemic symptoms, and isolated posterior infarction.",
             "Record and interpret the ECG within 10 minutes of first medical contact (ESC 2023 ACS)."
           ]
         }
@@ -12513,7 +12524,7 @@
         },
         "options": [
           {
-            "ro": "Începerea SVB cu DEA și alertarea echipei de resuscitare",
+            "ro": "Începerea suportului vital de bază cu DEA și alertarea echipei de resuscitare",
             "en": "Start BLS with the AED and call the arrest team"
           },
           {
@@ -12525,8 +12536,8 @@
             "en": "Check the electrodes and the patient, then record again"
           },
           {
-            "ro": "Consemnarea traseului și raportarea la vizita medicală",
-            "en": "Document it and report at the ward round"
+            "ro": "Consemnarea traseului și raportarea la vizita medicală sau la predarea turei",
+            "en": "Document it and report at the ward round or at handover"
           }
         ],
         "answer": 1,
@@ -12551,11 +12562,11 @@
           },
           {
             "ro": "Electrozi autoadezivi aplicați, stimulare sau cardioversie sincronă pregătite, medic solicitat",
-            "en": "Pads on, pacing or synchronised cardioversion ready, request physician support"
+            "en": "Pads on, pacing or synchronized cardioversion ready, request physician support"
           },
           {
             "ro": "Transmiterea ECG-ului în 12 derivații și anunțarea spitalului cu laborator de cateterism",
-            "en": "Transmit the 12-lead and pre-alert the PCI centre"
+            "en": "Transmit the 12-lead and pre-alert the PCI center"
           },
           {
             "ro": "Monitorizare, transport și predarea pacientului la spital",
@@ -12565,7 +12576,7 @@
         "answer": 2,
         "explain": {
           "ro": "Diagnostic prezumtiv de STEMI inferior. Traseul se transmite și se anunță spitalul cu laborator de cateterism, ca pacientul să fie dus direct în sala de cateterism (ESC 2023 SCA). În infarctul inferior se înregistrează și V4R.",
-          "en": "Presumed inferior STEMI. Transmit the ECG and pre-alert the PCI centre, so the patient goes straight to the cath lab (ESC 2023 ACS). In an inferior infarct, record V4R as well."
+          "en": "Presumed inferior STEMI. Transmit the ECG and pre-alert the PCI center, so the patient goes straight to the cath lab (ESC 2023 ACS). In an inferior infarct, record V4R as well."
         },
         "only": [
           "paramedic"
@@ -12588,7 +12599,7 @@
           },
           {
             "ro": "Tratează-o ca ischemie anterioară separată",
-            "en": "Treat it as separate anterior ischaemia"
+            "en": "Treat it as separate anterior ischemia"
           },
           {
             "ro": "Înregistrează V7–V9, pe peretele posterior",
@@ -12597,8 +12608,8 @@
         ],
         "answer": 3,
         "explain": {
-          "ro": "Subdenivelarea ST din V1–V3 este, de obicei, imaginea în oglindă a peretelui posterior. Supradenivelarea ST ≥ 0,5 mm în V7–V9 confirmă extensia posterioară (ESC 2023 SCA).",
-          "en": "ST depression in V1–V3 is usually the posterior wall seen in a mirror. ST elevation of 0.5 mm or more in V7–V9 confirms posterior extension (ESC 2023 ACS)."
+          "ro": "Subdenivelarea ST din V1–V3 este, de obicei, imaginea în oglindă a peretelui posterior. Supradenivelarea ST ≥ 0,5 mm în V7–V9 confirmă extensia posterioară (definiția universală a infarctului, 2018).",
+          "en": "ST depression in V1–V3 is usually the posterior wall seen in a mirror. ST elevation of 0.5 mm or more in V7–V9 confirms posterior extension (Universal Definition of MI, 2018)."
         }
       },
       {
@@ -12641,7 +12652,7 @@
       ],
       "en": [
         "Apply the voltage criteria: Sokolow-Lyon (S in V1 + R in V5 or V6 of 35 mm or more) and Cornell (R in aVL + S in V3 over 28 mm in men, over 20 mm in women). Voltage suggests LVH; echocardiography confirms it.",
-        "Recognise pre-excitation: a short PR, a delta wave and a wide QRS; negative delta waves can mimic Q waves (the pseudo-infarct pattern).",
+        "Recognize pre-excitation: a short PR, a delta wave and a wide QRS; negative delta waves can mimic Q waves (the pseudo-infarct pattern).",
         "Remember that in pre-excited atrial fibrillation, AV-nodal blocking drugs are avoided."
       ]
     },
@@ -13050,7 +13061,7 @@
         "answer": 1,
         "explain": {
           "ro": "Blocarea nodului AV (adenozină, verapamil, diltiazem, betablocante, digoxin) lasă calea accesorie să conducă mai multe impulsuri. Alura ventriculară poate crește atât de mult încât ritmul degenerează în fibrilație ventriculară (ESC 2019 TSV). Pacientul instabil necesită cardioversie electrică sincronă.",
-          "en": "Blocking the AV node (adenosine, verapamil, diltiazem, beta-blockers, digoxin) lets the pathway conduct more impulses. The ventricular rate can rise until it degenerates into ventricular fibrillation (ESC 2019 SVT). An unstable patient needs synchronised electrical cardioversion."
+          "en": "Blocking the AV node (adenosine, verapamil, diltiazem, beta-blockers, digoxin) lets the pathway conduct more impulses. The ventricular rate can rise until it degenerates into ventricular fibrillation (ESC 2019 SVT). An unstable patient needs synchronized electrical cardioversion."
         }
       },
       {
@@ -13092,7 +13103,7 @@
       "en": [
         "Find the spikes and tell atrial, ventricular and dual-chamber pacing apart; read the mode code (AAI, VVI, DDD, VDD).",
         "Apply the three checks: capture after every spike, timing that restarts after every native beat, and the rate. Inhibition and fusion are normal.",
-        "Recognise loss of capture (a spike after the T wave with no complex) as urgent, and check the rate by counting the QRS complexes when the machine counts spikes as beats."
+        "Recognize loss of capture (a spike after the T wave with no complex) as urgent, and check the rate by counting the QRS complexes when the machine counts spikes as beats."
       ]
     },
     "tiers": {
@@ -13700,7 +13711,7 @@
           },
           {
             "ro": "Artefact: se verifică electrozii și se repetă",
-            "en": "Artefact: check the electrodes and repeat"
+            "en": "Artifact: check the electrodes and repeat"
           },
           {
             "ro": "Pierderea capturii: urgent, se anunță medicul",
@@ -13854,7 +13865,7 @@
         "answer": 2,
         "explain": {
           "ro": "Spike-ul și activarea proprie sosesc aproape simultan și depolarizează împreună ventriculii. Fuziunea ține de sincronizare, nu de o disfuncție.",
-          "en": "The spike and the native activation arrive almost together and depolarise the ventricles jointly. Fusion is about timing, not a malfunction."
+          "en": "The spike and the native activation arrive almost together and depolarize the ventricles jointly. Fusion is about timing, not a malfunction."
         }
       },
       {
@@ -13871,10 +13882,10 @@
             "Interpretarea automată se citește ultima și se verifică față de propria citire. Aparatul poate omite modificări și uneori numără spike-urile sau artefactele ca bătăi."
           ],
           "en": [
-            "1. Quality and calibration: 25 mm/s, 10 mm/mV, no artefact, no reversed electrodes.",
+            "1. Quality and calibration: 25 mm/s, 10 mm/mV, no artifact, no reversed electrodes.",
             "2. Rhythm. 3. Rate. 4. Axis. 5. P wave and PR. 6. QRS: width and shape. 7. ST segment. 8. T wave and QT/QTc.",
             "9. Comparison with an old ECG, if there is one. Then a one-line conclusion.",
-            "Read the machine's statement last and check it against your own read. Machines miss things, and sometimes count spikes or artefact as beats."
+            "Read the machine's statement last and check it against your own read. Machines miss things, and sometimes count spikes or artifact as beats."
           ]
         }
       },
@@ -14051,7 +14062,7 @@
             "A. Începerea suportului vital de bază (SVB) cu defibrilatorul extern automat (DEA) și alertarea echipei de resuscitare.",
             "B. Anunțarea imediată a medicului; monitorizare, defibrilator la îndemână, ECG în 12 derivații.",
             "C. Verificarea electrozilor și a pacientului, apoi reînregistrarea traseului.",
-            "D. Consemnarea traseului și raportarea la vizita medicală.",
+            "D. Consemnarea traseului și raportarea la vizita medicală sau la predarea turei.",
             "Exclude întâi A, apoi B. Abia apoi ia în calcul C sau D."
           ],
           "en": [
@@ -14059,7 +14070,7 @@
             "A. Start basic life support (BLS) with the automated external defibrillator (AED) and call the arrest team.",
             "B. Call the doctor now; keep the patient monitored, defibrillator at hand, record a 12-lead.",
             "C. Check the electrodes and the patient, then record again.",
-            "D. Document it and report at the ward round.",
+            "D. Document it and report at the ward round or at handover.",
             "Rule out A first, then B. Only then consider C or D."
           ]
         },
@@ -14077,7 +14088,7 @@
           "ro": [
             "Fiecare traseu primește una dintre cele patru acțiuni, de la cea mai urgentă:",
             "A. RCP, cu defibrilare dacă ritmul este șocabil, conform algoritmului ERC.",
-            "B. Electrozi autoadezivi aplicați, stimulare sau cardioversie sincronă pregătite, medic solicitat (SMURD sau echipaj medical).",
+            "B. Electrozi autoadezivi aplicați, stimulare sau cardioversie sincronă pregătite, medic solicitat.",
             "C. Transmiterea ECG-ului în 12 derivații și anunțarea spitalului cu laborator de cateterism.",
             "D. Monitorizare, transport și predarea pacientului la spital.",
             "Un traseu cu defect tehnic nu intră în nicio categorie: verifică electrozii și reînregistrează înainte de a decide."
@@ -14085,8 +14096,8 @@
           "en": [
             "Every ECG gets one of your four actions, from the most urgent down:",
             "A. CPR, with a shock if the rhythm is shockable, per the ERC algorithm.",
-            "B. Pads on, pacing or synchronised cardioversion ready, request physician support (SMURD or a physician-led crew).",
-            "C. Transmit the 12-lead and pre-alert the PCI centre.",
+            "B. Pads on, pacing or synchronized cardioversion ready, request physician support.",
+            "C. Transmit the 12-lead and pre-alert the PCI center.",
             "D. Monitor, transport and hand over at the hospital.",
             "A technically faulty ECG fits no category: check the electrodes and record again before you decide."
           ]
@@ -14114,7 +14125,7 @@
             "Put every ECG into one category, from the most urgent down:",
             "A. Cardiac arrest: resuscitate now (ERC 2025).",
             "B. Emergency: a dangerous arrhythmia, high-grade AV block or a STEMI pattern. Act now.",
-            "C. Technical problem: reversed electrodes or artefact. Record again before you interpret.",
+            "C. Technical problem: reversed electrodes or artifact. Record again before you interpret.",
             "D. Not urgent: document it and follow up.",
             "Rule out A first, then B. Only then consider C or D."
           ]
@@ -14134,7 +14145,7 @@
         },
         "options": [
           {
-            "ro": "Începerea SVB cu DEA și alertarea echipei de resuscitare",
+            "ro": "Începerea suportului vital de bază cu DEA și alertarea echipei de resuscitare",
             "en": "Start BLS with the AED and call the arrest team"
           },
           {
@@ -14146,8 +14157,8 @@
             "en": "Check the electrodes and the patient, then record again"
           },
           {
-            "ro": "Consemnarea traseului și raportarea la vizita medicală",
-            "en": "Document it and report at the ward round"
+            "ro": "Consemnarea traseului și raportarea la vizita medicală sau la predarea turei",
+            "en": "Document it and report at the ward round or at handover"
           }
         ],
         "answer": 1,
@@ -14172,11 +14183,11 @@
           },
           {
             "ro": "Electrozi autoadezivi aplicați, stimulare sau cardioversie sincronă pregătite, medic solicitat",
-            "en": "Pads on, pacing or synchronised cardioversion ready, request physician support"
+            "en": "Pads on, pacing or synchronized cardioversion ready, request physician support"
           },
           {
             "ro": "Transmiterea ECG-ului în 12 derivații și anunțarea spitalului cu laborator de cateterism",
-            "en": "Transmit the 12-lead and pre-alert the PCI centre"
+            "en": "Transmit the 12-lead and pre-alert the PCI center"
           },
           {
             "ro": "Monitorizare, transport și predarea pacientului la spital",
@@ -14186,7 +14197,7 @@
         "answer": 2,
         "explain": {
           "ro": "Diagnostic prezumtiv de STEMI inferior: transmite traseul și anunță spitalul cu laborator de cateterism, pentru angioplastie primară. Înregistrează și V4R.",
-          "en": "Presumed inferior STEMI: transmit the ECG and pre-alert the PCI centre for primary PCI. Record V4R as well."
+          "en": "Presumed inferior STEMI: transmit the ECG and pre-alert the PCI center for primary PCI. Record V4R as well."
         },
         "only": [
           "paramedic"
@@ -14245,7 +14256,7 @@
         },
         "options": [
           {
-            "ro": "Începerea SVB cu DEA și alertarea echipei de resuscitare",
+            "ro": "Începerea suportului vital de bază cu DEA și alertarea echipei de resuscitare",
             "en": "Start BLS with the AED and call the arrest team"
           },
           {
@@ -14257,8 +14268,8 @@
             "en": "Check the electrodes and the patient, then record again"
           },
           {
-            "ro": "Consemnarea traseului și raportarea la vizita medicală",
-            "en": "Document it and report at the ward round"
+            "ro": "Consemnarea traseului și raportarea la vizita medicală sau la predarea turei",
+            "en": "Document it and report at the ward round or at handover"
           }
         ],
         "answer": 1,
@@ -14283,11 +14294,11 @@
           },
           {
             "ro": "Electrozi autoadezivi aplicați, stimulare sau cardioversie sincronă pregătite, medic solicitat",
-            "en": "Pads on, pacing or synchronised cardioversion ready, request physician support"
+            "en": "Pads on, pacing or synchronized cardioversion ready, request physician support"
           },
           {
             "ro": "Transmiterea ECG-ului în 12 derivații și anunțarea spitalului cu laborator de cateterism",
-            "en": "Transmit the 12-lead and pre-alert the PCI centre"
+            "en": "Transmit the 12-lead and pre-alert the PCI center"
           },
           {
             "ro": "Monitorizare, transport și predarea pacientului la spital",
@@ -14349,8 +14360,8 @@
         },
         "transform": "la_ra",
         "caption": {
-          "ro": "Traseu modificat în scop didactic: același ECG normal, calculat ca și cum electrozii de pe brațe ar fi fost inversați.",
-          "en": "Modified for teaching: the same normal ECG, computed as if the arm electrodes had been swapped."
+          "ro": "Traseu modificat în scop didactic, calculat dintr-o înregistrare reală.",
+          "en": "Modified for teaching, computed from a real recording."
         }
       },
       {
@@ -14361,7 +14372,7 @@
         },
         "options": [
           {
-            "ro": "Începerea SVB cu DEA și alertarea echipei de resuscitare",
+            "ro": "Începerea suportului vital de bază cu DEA și alertarea echipei de resuscitare",
             "en": "Start BLS with the AED and call the arrest team"
           },
           {
@@ -14373,8 +14384,8 @@
             "en": "Check the electrodes and the patient, then record again"
           },
           {
-            "ro": "Consemnarea traseului și raportarea la vizita medicală",
-            "en": "Document it and report at the ward round"
+            "ro": "Consemnarea traseului și raportarea la vizita medicală sau la predarea turei",
+            "en": "Document it and report at the ward round or at handover"
           }
         ],
         "answer": 2,
@@ -14403,7 +14414,7 @@
           },
           {
             "ro": "Anunță spitalul cu laborator de cateterism: aspect de infarct lateral",
-            "en": "Pre-alert the PCI centre: it looks like a lateral infarct"
+            "en": "Pre-alert the PCI center: it looks like a lateral infarct"
           },
           {
             "ro": "Transmite-l și lasă medicul să decidă",
@@ -14489,7 +14500,7 @@
             },
             "note": {
               "ro": "Undele diferă ca formă, amplitudine (de la ~5 la ~18 mm) și distanță (de la ~170 la ~290 ms). Nu se recunoaște niciun complex QRS și nicio linie izoelectrică.",
-              "en": "The waves differ in shape, amplitude (from about 5 to about 18 mm) and spacing (from about 170 to about 290 ms). No QRS complex and no baseline can be recognised."
+              "en": "The waves differ in shape, amplitude (from about 5 to about 18 mm) and spacing (from about 170 to about 290 ms). No QRS complex and no baseline can be recognized."
             },
             "marks": [
               {
@@ -14531,7 +14542,7 @@
         },
         "options": [
           {
-            "ro": "Începerea SVB cu DEA și alertarea echipei de resuscitare",
+            "ro": "Începerea suportului vital de bază cu DEA și alertarea echipei de resuscitare",
             "en": "Start BLS with the AED and call the arrest team"
           },
           {
@@ -14543,8 +14554,8 @@
             "en": "Check the electrodes and the patient, then record again"
           },
           {
-            "ro": "Consemnarea traseului și raportarea la vizita medicală",
-            "en": "Document it and report at the ward round"
+            "ro": "Consemnarea traseului și raportarea la vizita medicală sau la predarea turei",
+            "en": "Document it and report at the ward round or at handover"
           }
         ],
         "answer": 0,
@@ -14569,11 +14580,11 @@
           },
           {
             "ro": "Electrozi autoadezivi aplicați, stimulare sau cardioversie sincronă pregătite, medic solicitat",
-            "en": "Pads on, pacing or synchronised cardioversion ready, request physician support"
+            "en": "Pads on, pacing or synchronized cardioversion ready, request physician support"
           },
           {
             "ro": "Transmiterea ECG-ului în 12 derivații și anunțarea spitalului cu laborator de cateterism",
-            "en": "Transmit the 12-lead and pre-alert the PCI centre"
+            "en": "Transmit the 12-lead and pre-alert the PCI center"
           },
           {
             "ro": "Monitorizare, transport și predarea pacientului la spital",
@@ -14616,7 +14627,7 @@
         "answer": 0,
         "explain": {
           "ro": "Fibrilație ventriculară la un pacient care nu răspunde și nu respiră normal: stop cardiac, RCP și defibrilare imediată (ERC 2025). Un traseu haotic la un pacient conștient sugerează artefact: verifică întâi pacientul.",
-          "en": "Ventricular fibrillation in a patient who is unresponsive and not breathing normally: cardiac arrest, CPR and an immediate shock (ERC 2025). A chaotic trace in a conscious patient suggests artefact: check the patient first."
+          "en": "Ventricular fibrillation in a patient who is unresponsive and not breathing normally: cardiac arrest, CPR and an immediate shock (ERC 2025). A chaotic trace in a conscious patient suggests artifact: check the patient first."
         },
         "only": [
           "student",
@@ -14632,6 +14643,14 @@
         "heading": {
           "ro": "Traseul 4",
           "en": "ECG 4"
+        },
+        "body": {
+          "ro": [
+            "Scenariu didactic: femeie de 29 de ani, cu palpitații apărute brusc. Este conștientă."
+          ],
+          "en": [
+            "Teaching scenario: a 29-year-old woman with palpitations that started suddenly. She is alert."
+          ]
         }
       },
       {
@@ -14642,7 +14661,7 @@
         },
         "options": [
           {
-            "ro": "Începerea SVB cu DEA și alertarea echipei de resuscitare",
+            "ro": "Începerea suportului vital de bază cu DEA și alertarea echipei de resuscitare",
             "en": "Start BLS with the AED and call the arrest team"
           },
           {
@@ -14654,14 +14673,14 @@
             "en": "Check the electrodes and the patient, then record again"
           },
           {
-            "ro": "Consemnarea traseului și raportarea la vizita medicală",
-            "en": "Document it and report at the ward round"
+            "ro": "Consemnarea traseului și raportarea la vizita medicală sau la predarea turei",
+            "en": "Document it and report at the ward round or at handover"
           }
         ],
         "answer": 1,
         "explain": {
-          "ro": "Tahicardie regulată cu QRS îngust, ~156/min, fără unde P: tahicardie supraventriculară. Anunță medicul acum, cu pacientul monitorizat și defibrilatorul la îndemână. ECG-ul în 12 derivații înregistrat în timpul tahicardiei este esențial pentru diagnostic.",
-          "en": "A regular narrow-QRS tachycardia at about 156/min with no P waves: supraventricular tachycardia. Call the doctor now, with the patient monitored and the defibrillator at hand. A 12-lead recorded during the tachycardia is key to the diagnosis."
+          "ro": "Tahicardie regulată cu QRS îngust, ~200/min, fără unde P vizibile: tahicardie supraventriculară. O frecvență de peste 150/min nu poate aștepta. Anunță medicul acum, cu pacienta monitorizată și defibrilatorul la îndemână. ECG-ul în 12 derivații înregistrat în timpul tahicardiei este esențial pentru diagnostic.",
+          "en": "A regular narrow-QRS tachycardia at about 200/min with no visible P waves: supraventricular tachycardia. A rate over 150/min cannot wait. Call the doctor now, with the patient monitored and the defibrillator at hand. A 12-lead recorded during the tachycardia is key to the diagnosis."
         },
         "only": [
           "nurse"
@@ -14680,11 +14699,11 @@
           },
           {
             "ro": "Electrozi autoadezivi aplicați, stimulare sau cardioversie sincronă pregătite, medic solicitat",
-            "en": "Pads on, pacing or synchronised cardioversion ready, request physician support"
+            "en": "Pads on, pacing or synchronized cardioversion ready, request physician support"
           },
           {
             "ro": "Transmiterea ECG-ului în 12 derivații și anunțarea spitalului cu laborator de cateterism",
-            "en": "Transmit the 12-lead and pre-alert the PCI centre"
+            "en": "Transmit the 12-lead and pre-alert the PCI center"
           },
           {
             "ro": "Monitorizare, transport și predarea pacientului la spital",
@@ -14693,8 +14712,8 @@
         ],
         "answer": 1,
         "explain": {
-          "ro": "Tahicardie supraventriculară ~156/min. Caută semnele de instabilitate. Aplică electrozii, pregătește cardioversia sincronă pentru cazul în care pacientul devine instabil și solicită medic. Manevrele vagale și medicația se aplică conform protocolului (ERC 2025).",
-          "en": "Supraventricular tachycardia at about 156/min. Look for adverse features. Put the pads on, have synchronised cardioversion ready in case the patient becomes unstable and request physician support. Vagal manoeuvres and drugs follow your protocol (ERC 2025)."
+          "ro": "Tahicardie supraventriculară ~200/min, fără unde P vizibile: are nevoie de tratament, nu doar de monitorizare și transport. Caută semnele de instabilitate. Aplică electrozii autoadezivi, pregătește cardioversia sincronă pentru cazul în care pacienta devine instabilă și solicită medic. Manevrele vagale și medicația se aplică conform protocolului (ERC 2025).",
+          "en": "Supraventricular tachycardia at about 200/min, with no visible P waves: it needs treatment, not only monitoring and transport. Look for adverse features. Put the pads on, have synchronized cardioversion ready in case the patient becomes unstable and request physician support. Vagal maneuvers and drugs follow your protocol (ERC 2025)."
         },
         "only": [
           "paramedic"
@@ -14726,8 +14745,8 @@
         ],
         "answer": 1,
         "explain": {
-          "ro": "Tahicardie supraventriculară ~156/min: manevre vagale, apoi adenozină, sub înregistrare ECG continuă; cardioversie sincronă dacă pacientul este instabil (ESC 2019 TSV).",
-          "en": "Supraventricular tachycardia at about 156/min: vagal manoeuvres, then adenosine with a continuous ECG recording; synchronised cardioversion if the patient is unstable (ESC 2019 SVT)."
+          "ro": "Tahicardie supraventriculară ~200/min: o frecvență de peste 150/min nu poate aștepta. Chiar dacă pacienta este stabilă, tahicardia se tratează acum: manevre vagale, apoi adenozină, sub înregistrare ECG continuă; cardioversie sincronă dacă pacienta devine instabilă (ESC 2019 TSV).",
+          "en": "Supraventricular tachycardia at about 200/min: a rate over 150/min cannot wait. Even in a stable patient it is treated now: vagal maneuvers, then adenosine with a continuous ECG recording; synchronized cardioversion if the patient becomes unstable (ESC 2019 SVT)."
         },
         "only": [
           "student",
@@ -14761,7 +14780,7 @@
         },
         "options": [
           {
-            "ro": "Începerea SVB cu DEA și alertarea echipei de resuscitare",
+            "ro": "Începerea suportului vital de bază cu DEA și alertarea echipei de resuscitare",
             "en": "Start BLS with the AED and call the arrest team"
           },
           {
@@ -14773,8 +14792,8 @@
             "en": "Check the electrodes and the patient, then record again"
           },
           {
-            "ro": "Consemnarea traseului și raportarea la vizita medicală",
-            "en": "Document it and report at the ward round"
+            "ro": "Consemnarea traseului și raportarea la vizita medicală sau la predarea turei",
+            "en": "Document it and report at the ward round or at handover"
           }
         ],
         "answer": 3,
@@ -14799,11 +14818,11 @@
           },
           {
             "ro": "Electrozi autoadezivi aplicați, stimulare sau cardioversie sincronă pregătite, medic solicitat",
-            "en": "Pads on, pacing or synchronised cardioversion ready, request physician support"
+            "en": "Pads on, pacing or synchronized cardioversion ready, request physician support"
           },
           {
             "ro": "Transmiterea ECG-ului în 12 derivații și anunțarea spitalului cu laborator de cateterism",
-            "en": "Transmit the 12-lead and pre-alert the PCI centre"
+            "en": "Transmit the 12-lead and pre-alert the PCI center"
           },
           {
             "ro": "Monitorizare, transport și predarea pacientului la spital",
@@ -14812,8 +14831,8 @@
         ],
         "answer": 3,
         "explain": {
-          "ro": "Bradicardie sinusală la un pacient fără simptome și fără semne de instabilitate: monitorizare, transport și predare. Reevaluează dacă apar simptome.",
-          "en": "Sinus bradycardia in a patient with no symptoms and no adverse features: monitor, transport and hand over. Reassess if symptoms appear."
+          "ro": "Bradicardie sinusală la un pacient fără simptome și fără semne de instabilitate: monitorizare, transport și predare. Reevaluează dacă apar simptome. Rămânerea la domiciliu, fără transport, se decide numai conform protocolului serviciului.",
+          "en": "Sinus bradycardia in a patient with no symptoms and no adverse features: monitor, transport and hand over. Reassess if symptoms appear. Leaving the patient at home without transport is decided only per your service protocol."
         },
         "only": [
           "paramedic"
@@ -14880,7 +14899,7 @@
         },
         "options": [
           {
-            "ro": "Începerea SVB cu DEA și alertarea echipei de resuscitare",
+            "ro": "Începerea suportului vital de bază cu DEA și alertarea echipei de resuscitare",
             "en": "Start BLS with the AED and call the arrest team"
           },
           {
@@ -14892,8 +14911,8 @@
             "en": "Check the electrodes and the patient, then record again"
           },
           {
-            "ro": "Consemnarea traseului și raportarea la vizita medicală",
-            "en": "Document it and report at the ward round"
+            "ro": "Consemnarea traseului și raportarea la vizita medicală sau la predarea turei",
+            "en": "Document it and report at the ward round or at handover"
           }
         ],
         "answer": 3,
@@ -14918,11 +14937,11 @@
           },
           {
             "ro": "Electrozi autoadezivi aplicați, stimulare sau cardioversie sincronă pregătite, medic solicitat",
-            "en": "Pads on, pacing or synchronised cardioversion ready, request physician support"
+            "en": "Pads on, pacing or synchronized cardioversion ready, request physician support"
           },
           {
             "ro": "Transmiterea ECG-ului în 12 derivații și anunțarea spitalului cu laborator de cateterism",
-            "en": "Transmit the 12-lead and pre-alert the PCI centre"
+            "en": "Transmit the 12-lead and pre-alert the PCI center"
           },
           {
             "ro": "Monitorizare, transport și predarea pacientului la spital",
