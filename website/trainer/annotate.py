@@ -34,8 +34,11 @@ Content form of one annotation (hand-written):
 
 Where (any kind that needs a time):
     at        a named point of one beat, found on the recording (PTB-XL ECGs only):
-              Pon, P (P peak in this lead), Poff, QRSon, Q, R, S, QRS (largest QRS deflection
-              in this lead), J (end of QRS), ST (J + 60 ms), T (T peak in this lead), Tend
+              Pon, P (P peak in this lead), Poff, QRSon, Q (lowest point before the R; in a QS
+              complex, its nadir), R (highest point of this lead's QRS, up to its own J), S,
+              QRS (largest QRS deflection in this lead), J (the J point as seen in this lead:
+              the end of its QRS, where ST is measured; see lead_j), ST (J + 60 ms), T (T peak
+              in this lead), Tend
     beat      which complete beat: 0 = the first complete beat visible in this lead's cell
               (or in the strip window). Default 0.
     t         instead of at: a time in seconds, read off the tracing (any recording)
@@ -45,10 +48,11 @@ Where (any kind that needs a time):
 
     bracket   from + to (named points, "to_beat" for another beat, e.g. R to R of beat 1) or
               t0 + t1; side below (default) | above; "ms": true appends the duration.
-              Interval brackets between Pon, QRSon, J and Tend (PR, QRS, QT) are drawn from the
-              true QRS onset (the first deflection, even a small q): see intervals()
-    rise      at/t; from the beat's baseline (PR segment) unless "v0"; "mm": true appends the
-              height in mm
+              Each beat is laid out from its true QRS onset (the first deflection, even a small
+              q, or the start of a delta wave), with the reference PR, QRS and QT of the case
+              table: so Pon-QRSon shows the table's PR, QRSon-J its QRS and QRSon-Tend its QT
+    rise      at/t; from the beat's baseline (the PR level just before the QRS) unless "v0";
+              "mm": true appends the height in mm
     baseline  beat (PR segment level, across that beat) or t0 + t1 + v
     box       around P | QRS | T | PR | ST | beat (or t0 + t1); padded to the trace
     count     no position needed: every QRS in the cell; or "times": [t, ...]
@@ -138,9 +142,9 @@ class Recording:
 
 
 @lru_cache(maxsize=1)
-def _glasgow():
-    from build_lessons import glasgow
-    return glasgow()
+def _references():
+    from build_lessons import references
+    return references()
 
 
 def load(key, folder=None):
@@ -149,12 +153,9 @@ def load(key, folder=None):
     base = str(key).split("-")[0]
     if base.isdigit() and rec.leads[:2] == ["I", "II"] and len(rec.leads) == 12:
         from build_lessons import beats
-        u = _glasgow().get(int(base)) or {}
-        try:
-            pr, qrs, qt = (float(u[k]) for k in ("PR_Int_Global", "QRS_Dur_Global", "QT_Int_Global"))
-        except (KeyError, TypeError, ValueError):
-            pr = qrs = qt = None
-        if None not in (pr, qrs, qt) and all(np.isfinite([pr, qrs, qt])):
+        u = _references().get(int(base)) or {}
+        pr, qrs, qt = u.get("pr"), u.get("qrs"), u.get("qt")
+        if None not in (pr, qrs, qt):
             rec.beats = beats(rec.sig, rec.fs, pr, qrs, qt)
     return rec
 
@@ -187,36 +188,65 @@ def pick_beat(rec, span, idx):
 
 
 def baseline(rec, lead, b):
+    """The level of the end of the PR segment, just before the QRS (the 20 ms up to 2 ms before
+    its onset): the reference for ST deviation and for heights. Against GE 12SL's ST-at-J values
+    on our ECGs this gives a mean difference of 0.18 mm, with no lead off by 1 mm."""
     x = rec.lead(lead)
-    i0, i1 = int(b["p_off"] * rec.fs), int(b["q_on"] * rec.fs)
-    if i1 - i0 < int(0.02 * rec.fs):
-        i0, i1 = int((b["p_on"] - 0.04) * rec.fs), int(b["p_on"] * rec.fs)
+    i0, i1 = int(round((b["q_on"] - 0.02) * rec.fs)), int(round((b["q_on"] - 0.002) * rec.fs))
     return float(np.nanmedian(x[max(0, i0):i1 + 1]))
 
 
-# Points of a beat that come from the reference intervals: P onset = QRS onset - PR, J = QRS
-# onset + QRS duration, T end = QRS onset + QT.
-ANCHORED = {"p_on": "Pon", "q_on": "QRSon", "q_off": "J", "t_end": "Tend"}
+# The interval points of a beat: from the true QRS onset (the first deflection, even a small q
+# wave, or the start of a delta wave), P onset = onset - PR, end of QRS = onset + QRS and T end =
+# onset + QT, with the reference values of the case table (build_lessons.references).
+INTERVAL = {"Pon", "QRSon", "J", "Tend"}
 
 
 def intervals(b):
-    """Beat b with its interval points counted from the true QRS onset (b["dq"], the first
-    deflection of the QRS, even a small q wave), so a PR bracket ends where the QRS starts and a
-    QRS or QT bracket starts there, with the durations unchanged. Used for interval brackets,
-    bands and boxes. Points read off the signal (P end, R, T start and peak) stay as they are,
-    and so do single points (arrows, dots, ST heights), which keep the earlier anchor. The P
-    wave ends at p_end, read against the PR level (see build_lessons.beats)."""
-    return {**b, **{k: b[k] + b.get("dq", 0.0) for k in ANCHORED}, "p_off": b.get("p_end", b["p_off"])}
+    """Beat b as drawn in interval brackets (PR, QRS, QT), bands and boxes: the QRS ends at onset +
+    reference QRS width (q_off), so the bracket shows the table's value, and the P wave ends at
+    p_end, read against the PR level just before the QRS (see build_lessons.beats). As a single
+    point (arrows, dots, ST heights), J is b["j"]: the same end of QRS, moved past the steep part
+    of the QRS when the leads are still on it (by 20 ms at most)."""
+    return {**b, "j": b["q_off"], "p_off": b.get("p_end", b["p_off"])}
 
 
-def point(rec, lead, b, name):
-    """Time (s) of a named point of beat b in this lead."""
+def lead_j(rec, lead, b, frac=0.05, most=0.02):
+    """The J point as seen in one lead: the beat's J (b["j"], the end of its QRS across all leads),
+    moved later, by `most` seconds at most, while this lead is still on the steep part of its own
+    QRS (its slope above its ST slope plus `frac` of the range between the two). A lead whose
+    S wave ends late (often III, or the leads facing an infarct) is then read where its QRS
+    really ends, as a reader does on paper, not on the upstroke. On our ECGs, ST at this point
+    agrees better with GE 12SL and Glasgow ST-at-J (0.17 and 0.22 mm on average, where the two
+    machines agree) than ST at the beat's J (0.19 and 0.27 mm)."""
+    j = b.get("j", b["q_off"])
+    fs = rec.fs
+    x = rec.lead(lead)
+    oi, ji = int(round(b["q_on"] * fs)), int(round(j * fs))
+    k = max(1, int(0.01 * fs))
+    i0, i1 = oi - k, ji + int(0.08 * fs) + k
+    if i0 < 0 or i1 > len(x) or not np.all(np.isfinite(x[i0:i1])):
+        return j
+    d = np.abs(np.convolve(np.diff(x[i0:i1]), np.ones(k) / k, mode="same"))
+    on, end = oi - i0, ji - i0
+    steep, flat = d[on:end].max(), np.median(d[end + int(0.04 * fs):end + int(0.08 * fs)])
+    i = end
+    while i < end + int(most * fs) and d[i] > flat + frac * (steep - flat):
+        i += 1
+    return (i0 + i) / fs
+
+
+def point(rec, lead, b, name, own=True):
+    """Time (s) of a named point of beat b in this lead. With own (single points: arrows, dots,
+    ST heights), J is the J point as seen in this lead (lead_j); without it (the ends of a
+    bracket, which measures an interval), J is the beat's J."""
     x = rec.lead(lead)
     fs = rec.fs
     base = baseline(rec, lead, b)
 
     def arg(t0, t1, how):
-        i0, i1 = int(t0 * fs), max(int(t0 * fs) + 1, int(t1 * fs))
+        i0 = int(round(t0 * fs))
+        i1 = max(i0 + 1, int(round(t1 * fs)) + 1)
         seg = x[i0:i1]
         if how == "max":
             k = np.nanargmax(seg)
@@ -233,21 +263,27 @@ def point(rec, lead, b, name):
     if name == "QRSon":
         return b["q_on"]
     if name == "J":
-        return b["q_off"]
+        return lead_j(rec, lead, b) if own else b.get("j", b["q_off"])
     if name == "Tend":
         return b["t_end"]
     if name == "ST":
-        return min(b["q_off"] + 0.06, b["t_end"] - 0.02)
+        return min(point(rec, lead, b, "J", own) + 0.06, b["t_end"] - 0.02)
     if name == "P":
         return arg(b["p_on"], b["p_off"], "abs")
+    # R, S and Q are searched in this lead's own QRS: from the onset to its J point (lead_j), so a
+    # wide ectopic QRS that outlasts the reference width is still found whole, and R or S never
+    # lands on the ST segment after the J
     if name == "R":
-        return arg(b["q_on"], b["q_off"], "max")
+        return arg(b["q_on"], lead_j(rec, lead, b), "max")
     if name == "QRS":
         return arg(b["q_on"], b["q_off"], "abs")
     if name == "S":
-        return arg(point(rec, lead, b, "R"), b["q_off"], "min")
+        return arg(point(rec, lead, b, "R"), lead_j(rec, lead, b), "min")
     if name == "Q":
-        return arg(b["q_on"], max(point(rec, lead, b, "R"), b["q_on"] + 0.012), "min")
+        # the lowest point before the R; with no R before the nadir (a QS complex, the highest point
+        # is the onset itself), the lowest point of the whole QRS
+        r = point(rec, lead, b, "R")
+        return arg(b["q_on"], r if r - b["q_on"] >= 0.012 else lead_j(rec, lead, b), "min")
     if name == "T":
         return arg(b["t_on"], b["t_end"], "abs")
     raise ValueError(f"unknown point {name}")
@@ -393,12 +429,11 @@ def resolve_one(a, rec, layout, strips, window, where, problems, findings=0):
                     raise ValueError(f"from and to must be named points {sorted(AT)}")
                 b0 = beat()
                 b1 = beat("to_beat") if "to_beat" in a else b0
-                # the height below (above) the trace takes in the whole of both waves, as before
-                reach = (point(rec, lead, b0, a["from"]), point(rec, lead, b1, a["to"]))
-                if {a["from"], a["to"]} <= set(ANCHORED.values()):
-                    # an interval (PR, QRS, QT): drawn from the true QRS onset
+                if {a["from"], a["to"]} <= INTERVAL:
+                    # an interval (PR, QRS, QT): its ends are the reference interval points
                     b0, b1 = intervals(b0), intervals(b1)
-                t0, t1 = point(rec, lead, b0, a["from"]), point(rec, lead, b1, a["to"])
+                t0, t1 = point(rec, lead, b0, a["from"], own=False), point(rec, lead, b1, a["to"], own=False)
+                reach = (t0, t1)
             else:
                 t0, t1 = float(a["t0"]), float(a["t1"])
                 reach = (t0, t1)

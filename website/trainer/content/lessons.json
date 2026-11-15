@@ -14516,7 +14516,8 @@
                 "t1": 4.58,
                 "tone": "rr",
                 "label": "~290 ms",
-                "bracket": true
+                "bracket": true,
+                "level": 1
               }
             ]
           }

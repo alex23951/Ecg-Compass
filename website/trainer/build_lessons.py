@@ -30,10 +30,11 @@ A lesson can list "teaches": [diagnosis keys]; a wrong answer on those links bac
 
 Marks ("show") name what to draw on beat number "beat" (0 = first complete beat in
 the window): P, QRS, T, ST, TP (bands), PR, QRSd, QT, RR (brackets under the trace),
-PRseg (the PR segment). The waves are found on the recording itself: QRS onset from
-the spatial velocity of all 12 leads, then the PR, QRS and QT durations of the PTB-XL+
-Glasgow measurement (so the numbers shown match the trainer's reference values), and
-the end of P and start of T from lead II.
+PRseg (the PR segment). The waves are found on the recording itself: the QRS onset where
+the 12 leads first leave the PR level (the start of a delta wave in pre-excitation), then
+the reference PR, QRS and QT durations counted from it (the mean of the two PTB-XL+
+algorithms, Glasgow and GE 12SL, exactly as the case tables show them, so a bracket's
+label always matches the table), and the end of P and start of T from lead II.
 """
 import argparse
 import base64
@@ -54,7 +55,7 @@ import signals  # noqa: E402
 
 CONTENT = HERE / "content"
 OUT = WEBSITE / "app" / "data"
-PLUS = WEBSITE / "cache" / "ptbxl-plus" / "unig_global.csv"
+PLUS = WEBSITE / "cache" / "ptbxl-plus"
 LANGS = ("ro", "en")
 TIERS = ("student", "nurse", "paramedic", "resident", "specialist", "ep")
 DIAGRAMS = {"paper", "beat", "conduction", "limb_leads", "chest_leads", "extra_leads", "monitor", "pads",
@@ -91,25 +92,49 @@ def swap(sig, kind):
     return out
 
 
-def glasgow():
-    with open(PLUS, newline="") as f:
+def _plus(name):
+    path = PLUS / name
+    if not path.exists():
+        from build_cases import load_plus  # downloads the file once
+        load_plus(name)
+    with open(path, newline="") as f:
         return {int(float(r["ecg_id"])): r for r in csv.DictReader(f)}
 
 
-def qrs_onset(sig, fs, i):
-    """The QRS onset (sample) of a complex whose spatial velocity first passes 12 % of its peak at
-    sample i: the earliest point where the QRS leaves the PR level, taken across the 12 leads
-    (the second earliest lead, so one noisy lead cannot pull it early). The PR interval ends
-    here and the QT interval starts here: at the first deflection, even a small q wave, never
-    at the bottom of the q. Looks back at most 30 ms and never later than i. A paced beat keeps
-    i: the stimulus is a step in nearly every lead, and the slow drift before it is not QRS."""
-    w0, w1 = i - int(0.045 * fs), i - int(0.018 * fs)  # the PR level, just before the QRS
-    lo, hi = i - int(0.03 * fs), i + int(0.03 * fs)
+def references():
+    """The reference PR, QRS and QT (ms) and rate (/min) of every PTB-XL ECG, as the case tables
+    show them (build_cases.measurements): the mean of the two PTB-XL+ algorithms, Glasgow and
+    GE 12SL, rounded to whole ms, or the one value there is. The marks are drawn with these same
+    durations, so a bracket's label always matches the table."""
+    unig, ge = _plus("unig_global.csv"), _plus("12sl_global.csv")
+
+    def num(row, key):
+        try:
+            v = float(row[key])
+        except (KeyError, TypeError, ValueError):
+            return None
+        return None if np.isnan(v) else v
+
+    out = {}
+    for ecg_id in set(unig) | set(ge):
+        ref = {}
+        for name, key in (("pr", "PR_Int_Global"), ("qrs", "QRS_Dur_Global"), ("qt", "QT_Int_Global"),
+                          ("hr", "HR__Global")):
+            a, b = num(unig.get(ecg_id, {}), key), num(ge.get(ecg_id, {}), key)
+            ref[name] = round((a + b) / 2) if a is not None and b is not None else \
+                round(a if a is not None else b) if (a, b) != (None, None) else None
+        out[ecg_id] = ref
+    return out
+
+
+def _leave(sig, fs, a):
+    """Samples where the leads leave the PR level just before sample a (the level over a-45 to
+    a-18 ms; the departure searched from a-30 to a+30 ms): per lead, the first clear departure
+    (> 40 uV), followed back to where the lead was still at the PR level. Sorted."""
+    w0, w1 = a - int(0.045 * fs), a - int(0.018 * fs)
+    lo, hi = a - int(0.03 * fs), a + int(0.03 * fs)
     if w0 < 0 or hi > sig.shape[1]:
-        return i
-    steps = np.nanmax(np.abs(np.diff(sig[:, lo:i + int(0.012 * fs)], axis=1)), axis=1)
-    if np.sum(steps > 0.15) >= 6:  # > 0.15 mV from one sample to the next in 6+ leads: a pacing spike
-        return i
+        return []
     ons = []
     for x in sig:
         seg = x[w0:w1]
@@ -120,18 +145,94 @@ def qrs_onset(sig, fs, i):
         big = np.where(np.abs(x[lo:hi] - base) > max(0.04, 6 * noise))[0]
         if not big.size:
             continue
-        # from the first clear departure (> 40 uV), back to where the lead was still at the PR level
         j = lo + int(big[0])
         while j > lo and abs(x[j] - base) > max(0.012, 2.5 * noise):
             j -= 1
         ons.append(j)
+    return sorted(ons)
+
+
+def _ramping(sig, fs, a, b, ahead, least, k):
+    """How many leads drift steadily between samples a and b, toward the QRS: the straight line
+    fitted over a..b changes by more than `least` mV (and k times the scatter around it), in the
+    direction the lead then takes (from b to sample ahead). The slur of a delta wave."""
+    n = 0
+    t = np.arange(b - a + 1)
+    for x in sig:
+        seg = x[a:b + 1]
+        if not np.all(np.isfinite(seg)) or not np.isfinite(x[ahead]):
+            continue
+        fit = np.polyfit(t, seg, 1)
+        drift = fit[0] * t[-1]
+        res = seg - np.polyval(fit, t)
+        noise = 1.4826 * np.median(np.abs(res - np.median(res)))
+        if abs(drift) > max(least, k * noise) and np.sign(drift) == np.sign(x[ahead] - x[b]):
+            n += 1
+    return n
+
+
+def qrs_onset(sig, fs, i):
+    """The QRS onset (sample) of a complex whose spatial velocity first passes 12 % of its peak at
+    sample i: the earliest point where the QRS leaves the PR level, taken across the 12 leads
+    (the second earliest lead, so one noisy lead cannot pull it early). The PR interval ends
+    here and the QT interval starts here: at the first deflection, even a small q wave, never
+    at the bottom of the q. Looks back at most 30 ms and never later than i. A paced beat keeps
+    i: the stimulus is a step in nearly every lead, and the slow drift before it is not QRS.
+    A delta wave starts earlier still: see delta_onsets."""
+    lo = i - int(0.03 * fs)
+    if i - int(0.045 * fs) < 0 or i + int(0.03 * fs) > sig.shape[1]:
+        return i
+    steps = np.nanmax(np.abs(np.diff(sig[:, lo:i + int(0.012 * fs)], axis=1)), axis=1)
+    if np.sum(steps > 0.15) >= 6:  # > 0.15 mV from one sample to the next in 6+ leads: a pacing spike
+        return i
+    ons = _leave(sig, fs, i)
     if len(ons) < 2:
         return i
-    return min(sorted(ons)[1], i)
+    return min(ons[1], i)
+
+
+def delta_onsets(sig, fs, ons):
+    """Onsets (samples) of a recording's complexes, moved back to the start of the delta wave
+    when the QRS is pre-excited.
+
+    A delta wave is a slow slur that starts the QRS 30-60 ms before its steep part, with no flat
+    PR segment in between: the PR level that qrs_onset compares against lies on the slur itself,
+    so the onset it finds sits in the middle of the delta. A beat counts as pre-excited when 9 or
+    more leads are still sloping toward the QRS over the 20 ms before that onset (on our ECGs:
+    10-12 leads on every beat of both WPW tracings, at most 7 on any other beat, paced ones
+    included). For each such beat, the PR level is looked for 10, 20 ... 60 ms further back, and
+    the first onset found there with flat leads before it (fewer than 5 sloping) is the start of
+    the delta. The delta keeps its width from beat to beat, so every pre-excited beat is moved by
+    the median of these shifts, which also covers a beat whose own slur is too faint to follow.
+    Applied only when at least 3 beats (and half of them) are pre-excited; others never move."""
+    ms = lambda v: int(round(v * fs / 1000))  # noqa: E731
+    n = sig.shape[1]
+    pre, shifts = [], []
+    for k, on in enumerate(ons):
+        if on - ms(130) < 0 or on + ms(45) > n or _ramping(sig, fs, on - ms(20), on, on + ms(15), 0.03, 4) < 9:
+            continue
+        pre.append(k)
+        for d in range(0, 70, 10):
+            cand = _leave(sig, fs, on - ms(d))
+            if len(cand) < 2:
+                continue
+            c = min(cand[1], on)
+            if _ramping(sig, fs, c - ms(20), c, c + ms(15), 0.03, 4) < 5:
+                shifts.append(c - on)
+                break
+    if len(pre) < 3 or 2 * len(pre) < len(ons) or not shifts:
+        return list(ons)
+    shift = int(np.median(shifts))
+    return [on + shift if k in pre else on for k, on in enumerate(ons)]
 
 
 def beats(sig, fs, pr, qrs, qt):
-    """Fiducial points (seconds) of every complete beat."""
+    """Fiducial points (seconds) of every complete beat. pr, qrs, qt: the reference durations (ms,
+    see references()). Each beat is laid out from its true QRS onset (qrs_onset: the first
+    deflection, or the start of a delta wave): P onset = onset - PR, J point (end of QRS) =
+    onset + QRS, T end = onset + QT. So the PR, QRS and QT brackets show the reference values.
+    The J point where ST is measured ("j") is the end of the QRS, made sure to lie past the steep
+    part of the QRS (see below)."""
     ii = sig[1]
     vel = np.nansum(np.abs(np.diff(sig, axis=1)), axis=0)
     k = max(1, int(0.01 * fs))
@@ -145,8 +246,8 @@ def beats(sig, fs, pr, qrs, qt):
                 peaks[-1] = i
         else:
             peaks.append(i)
-    out = []
     n = sig.shape[1]
+    crossings = []
     for p in peaks:
         if p < 0.35 * fs or p > n - 0.6 * fs:
             continue
@@ -157,14 +258,17 @@ def beats(sig, fs, pr, qrs, qt):
         on = p
         while on > lo and vel[on] > level:
             on -= 1
-        q_on = on / fs
-        # the onset found above sits where the QRS is already well under way (often the bottom of a
-        # small q); dq (<= 0) moves the interval marks to where the QRS really starts
-        dq = (qrs_onset(sig, fs, on) - on) / fs
+        crossings.append(on)
+    # the threshold crossing sits where the QRS is already well under way (often the bottom of a
+    # small q, or the middle of a delta wave): each beat starts where its QRS really starts
+    onsets = delta_onsets(sig, fs, [qrs_onset(sig, fs, on) for on in crossings])
+    out = []
+    for on, q in zip(crossings, onsets):
+        q_on = q / fs
         q_off = q_on + qrs / 1000
         p_on = q_on - pr / 1000
         t_end = q_on + qt / 1000
-        if not np.isfinite(ii[int(p_on * fs)]) or not np.isfinite(ii[min(n - 1, int(t_end * fs))]):
+        if p_on < 0 or not np.isfinite(ii[int(p_on * fs)]) or not np.isfinite(ii[min(n - 1, int(t_end * fs))]):
             continue
         # R: the tallest point of lead II inside the QRS
         seg = ii[int(q_on * fs):int(q_off * fs)]
@@ -172,24 +276,31 @@ def beats(sig, fs, pr, qrs, qt):
         # baseline: just before the P wave
         b0 = int(p_on * fs)
         bl = np.nanmedian(ii[max(0, b0 - int(0.05 * fs)):b0 + 1])
-        # end of P: after its peak, where the signal is back within 20 % of its height
-        pseg = ii[b0:int((q_on - 0.02) * fs)] - bl
+        # end of P: after its peak, where the signal is back within 20 % of its height, or has
+        # crossed the baseline (searched up to 10 ms before the QRS onset). Heights are read
+        # from a line running from the level before the P to the PR level just before the QRS,
+        # so a PR segment that sits well below the level before the P (atrial repolarisation, or
+        # the end of a T wave still falling) is not taken for the P wave.
+        qi = int(round(q_on * fs))
+        prl = np.nanmedian(ii[qi - int(0.02 * fs):qi - int(0.004 * fs) + 1])
+        pseg = ii[b0:int((q_on - 0.01) * fs)]
+        if pseg.size < 2 or not np.any(np.isfinite(pseg)):
+            continue
+        slope = (prl - bl) / max(1, qi - b0) if np.isfinite(prl) else 0.0
+        pseg = pseg - (bl + slope * np.arange(pseg.size))
         pk = int(np.nanargmax(np.abs(pseg)))
-        amp = abs(pseg[pk])
+        amp, sgn = abs(pseg[pk]), np.sign(pseg[pk])
         j = pk
-        while j < len(pseg) - 1 and abs(pseg[j]) > 0.2 * amp:
+        while j < len(pseg) - 1 and sgn * pseg[j] > 0.2 * amp:
             j += 1
         p_off = (b0 + j) / fs
-        dq = min(0.0, max(dq, p_off + 0.004 - q_on))  # the QRS cannot start inside the P wave
         # end of P as drawn (the P band, the start of the PR segment band): the same 20 % rule,
         # but against the PR level just before the QRS, which often sits below the level before
         # the P (atrial repolarisation); measured against the level before the P, the end falls
-        # on the P downstroke. p_off itself stays as it is: the ST baseline is measured from it.
-        qi = int(round((q_on + dq) * fs))
-        prl = np.nanmedian(ii[qi - int(0.02 * fs):qi - int(0.004 * fs) + 1])
+        # on the P downstroke. p_off itself stays as it is (the named point Poff).
         amp2 = abs(ii[b0 + pk] - prl)
         j = b0 + pk
-        while j < qi - int(0.01 * fs) and abs(ii[j] - prl) > 0.2 * amp2:
+        while j < qi - int(0.01 * fs) and sgn * (ii[j] - prl) > 0.2 * amp2:
             j += 1
         p_end = min(max(p_off, j / fs) if np.isfinite(prl) else p_off, (qi - int(0.01 * fs)) / fs)
         # start of T: walking back from its peak, where the signal comes within 15 % of the
@@ -203,8 +314,20 @@ def beats(sig, fs, pr, qrs, qt):
         while j > 0 and abs(tseg[j]) > 0.15 * abs(tseg[tp]):
             j -= 1
         t_on = max(q_off + 0.04, (s0 + j) / fs)
-        out.append({"p_on": p_on, "p_off": p_off, "q_on": q_on, "r": r, "q_off": q_off,
-                    "t_on": t_on, "t_peak": (s0 + tp) / fs, "t_end": t_end, "dq": dq, "p_end": p_end})
+        # the J point, where ST is measured: the end of the QRS (onset + reference width), moved
+        # later, by 20 ms at most, while the leads are still in the steep part of the QRS there
+        # (the spatial velocity above the ST level plus 8 % of the QRS's range), so ST is never
+        # read on a QRS slope. With it, ST at J matches GE 12SL's ST-at-J values on our ECGs to
+        # 0.14 mm on average (0.18 mm without it).
+        oi, ji = int(round(q_on * fs)), int(np.ceil(q_off * fs - 1e-6))
+        vq = vel[oi:ji].max()
+        vst = np.median(vel[ji + int(0.04 * fs):min(n - 1, ji + int(0.08 * fs))])
+        jj = ji
+        while jj < ji + int(0.02 * fs) and vel[jj] > vst + 0.08 * (vq - vst):
+            jj += 1
+        out.append({"p_on": p_on, "p_off": p_off, "q_on": q_on, "r": r, "q_off": q_off, "j": jj / fs,
+                    "t_on": t_on, "t_peak": (s0 + tp) / fs, "t_end": t_end, "p_end": p_end,
+                    "q_cross": on / fs})
     return out
 
 
@@ -309,7 +432,7 @@ def main():
             built[c["id"]] = {"id": c["id"], "ecg_id": f"{m['db']}-{m['record']}-{round(m['start'] * 10)}",
                               "layout": "monitor", "source": {"dataset": m["db"], "record": m["record"],
                                                               "start": m["start"], "channel": m.get("channel", 0)}}
-    plus = glasgow()
+    plus = references()
     db = ptbxl.database()
     problems = []
     cache = {}
@@ -355,8 +478,7 @@ def main():
             if not dest.exists():
                 (sigdir / f"{ecg_id}.json").write_text(json.dumps(signals.encode(sig, fs, ecg_id), separators=(",", ":")))
             u = plus.get(ecg_id) or {}
-            num = lambda k: float(u[k]) if u.get(k) not in (None, "", "nan") else None  # noqa: E731
-            pr, qrs, qt, hr = num("PR_Int_Global"), num("QRS_Dur_Global"), num("QT_Int_Global"), num("HR__Global")
+            pr, qrs, qt, hr = u.get("pr"), u.get("qrs"), u.get("qt"), u.get("hr")
             bs = beats(sig, fs, pr or 160, qrs or 90, qt or 380) if None not in (pr, qrs, qt) else []
             cache[ecg_id] = {"sig": sig, "fs": fs, "beats": bs, "pr": pr, "qrs": qrs, "qt": qt, "hr": hr}
         return ecg_id

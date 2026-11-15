@@ -8,8 +8,9 @@ for an annotation, or to read times for hand-placed marks ("t").
     python3 trainer/authoring/fiducials.py CASE_ID --strip II --window 0.5,3.5   a strip figure
     python3 trainer/authoring/fiducials.py --ecg 1484 --strip II --window 0,10   any PTB-XL ECG
                                                                      (signal file must exist)
-Times in seconds, voltages in mV (10 mm/mV: 0.1 mV = 1 small square), "base" is the PR
-segment level of that beat in that lead (the baseline for ST and heights). Without PTB-XL+
+Times in seconds, voltages in mV (10 mm/mV: 0.1 mV = 1 small square), "base" is the level at
+the end of the PR segment of that beat in that lead, just before the QRS (the baseline for ST
+and heights). Without PTB-XL+
 measurements (MIMIC, monitor strips) there are no named points: the QRS times are listed
 so you can place marks with "t" (and "snap").
 """
@@ -85,9 +86,6 @@ def main():
             print(f"          PR {round((b['q_on'] - b['p_on']) * 1000)} ms, QRS {round((b['q_off'] - b['q_on']) * 1000)} ms,"
                   f" QT {round((b['t_end'] - b['q_on']) * 1000)} ms, J-point deviation {(rec.at(lead, b['q_off']) - base) * 10:+.1f} mm,"
                   f" ST at J+60 {(rec.at(lead, annotate.point(rec, lead, b, 'ST')) - base) * 10:+.1f} mm")
-            iv = annotate.intervals(b)
-            print(f"          interval brackets (from the true QRS onset): Pon {iv['p_on']:.3f}, QRSon {iv['q_on']:.3f},"
-                  f" J {iv['q_off']:.3f}, Tend {iv['t_end']:.3f}")
             k += 1
             if k > 30:
                 break
